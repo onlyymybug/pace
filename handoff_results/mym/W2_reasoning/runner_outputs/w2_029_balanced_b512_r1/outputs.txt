@@ -1,0 +1,19 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Michael rolls three fair dice, what is the probability that he will roll at least two 1's? Express your answer as a common fraction.<|im_end|>
+<|im_start|>assistant
+To solve this problem, we first need to determine the total number of possible outcomes when rolling three dice. Since each die has 6 faces, the total number of outcomes is 6^3 = 216.
+
+Next, we need to find the number of outcomes where Michael rolls at least two 1's. This can happen in two ways: either he rolls exactly two 1's or all three dice show a 1.
+
+1. Exactly two 1's: There are 3 ways to choose which die shows the 1, and the remaining die can show any of the 5 other numbers. So, there are 3 * 5 = 15 outcomes for this case.
+2. All three dice show a 1: There is only 1 way this can happen.
+
+So, the total number of favorable outcomes is 15 + 1 = 16.
+
+The probability is then the number of favorable outcomes divided by the total number of outcomes, which is 16/216. This fraction can be simplified by dividing both the numerator and denominator by their greatest common divisor, which is 4.
+
+Therefore, the simplified fraction is 4/54, which further simplifies to 2/27.
+
+The answer is 2/27.<|im_end|>

@@ -1,0 +1,96 @@
+$ run_qnn_pte --device 10.29.195.116:35759 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 370 --temperature 0.0 --htp-performance-mode 5 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_024_low_saver_b256_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rani has ten more crabs than Monic, who has 4 fewer crabs than Bo. If Bo has 40 crabs, calculate the total number of crabs the three have together.'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:35759 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001442 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 5
+I 00:00:00.001496 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001525 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001552 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784447930.423674   27599 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.300817 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:02.074428 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:02.079326 executorch:runner.cpp:363] creating io_memory
+I 00:00:02.081389 executorch:prompt_processor.cpp:273] Prompt Processor: total 114 prompt tokens (AR-128 * 1 iters)
+I 00:00:02.483215 executorch:runner.cpp:476] RSS after prompt prefill: 1003.644531 MiB (0 if unsupported)
+I 00:00:23.447400 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:23.447478 executorch:runner.cpp:493] RSS after finishing text generation: 1003.644531 MiB (0 if unsupported)
+I 00:00:23.447560 executorch:stats.h:161] 	Prompt Tokens: 114    Generated Tokens: 151
+I 00:00:23.447569 executorch:stats.h:167] 	Model Load Time:		2.078000 (seconds)
+I 00:00:23.447577 executorch:stats.h:176] 	Total inference time:		21.368000 (seconds)		 Rate: 	7.066642 (tokens/second)
+I 00:00:23.447587 executorch:stats.h:185] 		Prompt evaluation:	0.403000 (seconds)		 Rate: 	282.878412 (tokens/second)
+I 00:00:23.447596 executorch:stats.h:197] 		Generated 151 tokens:	20.965000 (seconds)		 Rate: 	7.202480 (tokens/second)
+I 00:00:23.447606 executorch:stats.h:205] 	Time to first generated token:	0.403000 (seconds)
+I 00:00:23.447614 executorch:stats.h:212] 	Sampling time over 265 tokens:	0.288000 (seconds)
+I 00:00:23.448615 executorch:qnn_llama_runner.cpp:192] Saved 153 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":282.878,"decode_token_per_sec":7.20248,"prompt_tokens":114,"generated_tokens":151,"model_load_start_ms":1784447930205,"model_load_end_ms":1784447932283,"inference_start_ms":1784447932283,"inference_end_ms":1784447953651,"prompt_eval_end_ms":1784447932686,"first_token_ms":1784447932686,"aggregate_sampling_time_ms":288,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.1 MB/s (878 bytes in 0.011s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.010s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 0.7 MB/s (14622 bytes in 0.019s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rani has ten more crabs than Monic, who has 4 fewer crabs than Bo. If Bo has 40 crabs, calculate the total number of crabs the three have together.<|im_end|>
+<|im_start|>assistant
+First, let's find out how many crabs Monic has. Since Bo has 40 crabs and Monic has 4 fewer crabs than Bo, Monic has 40 - 4 = 36 crabs.
+
+Now, Rani has ten more crabs than Monic. Since Monic has 36 crabs, Rani has 36 + 10 = 46 crabs.
+
+To find the total number of crabs the three have together, we add up the crabs each one has: 40 (Bo) + 36 (Monica) + 46 (Rani) = 122 crabs.
+
+The answer is 122.<|im_end|>
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

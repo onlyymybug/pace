@@ -1,0 +1,327 @@
+{"index":0,"timestamp_ms":1784192857578,"delta_ms":0,"prompt_echo":true,"piece":"<|im_start|>user\nWhy does first-token latency matter in streaming chat?<|im_end|>\n<|im_start|>assistant\n"}
+{"index":1,"timestamp_ms":1784192857975,"delta_ms":397,"prompt_echo":false,"piece":"First"}
+{"index":2,"timestamp_ms":1784192858122,"delta_ms":544,"prompt_echo":false,"piece":"-token"}
+{"index":3,"timestamp_ms":1784192858265,"delta_ms":687,"prompt_echo":false,"piece":" latency"}
+{"index":4,"timestamp_ms":1784192858393,"delta_ms":815,"prompt_echo":false,"piece":" in"}
+{"index":5,"timestamp_ms":1784192858537,"delta_ms":959,"prompt_echo":false,"piece":" streaming"}
+{"index":6,"timestamp_ms":1784192858683,"delta_ms":1105,"prompt_echo":false,"piece":" chat"}
+{"index":7,"timestamp_ms":1784192858813,"delta_ms":1235,"prompt_echo":false,"piece":" is"}
+{"index":8,"timestamp_ms":1784192858951,"delta_ms":1373,"prompt_echo":false,"piece":" crucial"}
+{"index":9,"timestamp_ms":1784192859095,"delta_ms":1517,"prompt_echo":false,"piece":" because"}
+{"index":10,"timestamp_ms":1784192859241,"delta_ms":1663,"prompt_echo":false,"piece":" it"}
+{"index":11,"timestamp_ms":1784192859387,"delta_ms":1809,"prompt_echo":false,"piece":" directly"}
+{"index":12,"timestamp_ms":1784192859501,"delta_ms":1923,"prompt_echo":false,"piece":" impacts"}
+{"index":13,"timestamp_ms":1784192859614,"delta_ms":2036,"prompt_echo":false,"piece":" the"}
+{"index":14,"timestamp_ms":1784192859739,"delta_ms":2161,"prompt_echo":false,"piece":" user"}
+{"index":15,"timestamp_ms":1784192859865,"delta_ms":2287,"prompt_echo":false,"piece":" experience"}
+{"index":16,"timestamp_ms":1784192860006,"delta_ms":2428,"prompt_echo":false,"piece":" and"}
+{"index":17,"timestamp_ms":1784192860149,"delta_ms":2571,"prompt_echo":false,"piece":" the"}
+{"index":18,"timestamp_ms":1784192860294,"delta_ms":2716,"prompt_echo":false,"piece":" perceived"}
+{"index":19,"timestamp_ms":1784192860440,"delta_ms":2862,"prompt_echo":false,"piece":" responsiveness"}
+{"index":20,"timestamp_ms":1784192860587,"delta_ms":3009,"prompt_echo":false,"piece":" of"}
+{"index":21,"timestamp_ms":1784192860730,"delta_ms":3152,"prompt_echo":false,"piece":" the"}
+{"index":22,"timestamp_ms":1784192860877,"delta_ms":3299,"prompt_echo":false,"piece":" chat"}
+{"index":23,"timestamp_ms":1784192861020,"delta_ms":3442,"prompt_echo":false,"piece":" system"}
+{"index":24,"timestamp_ms":1784192861166,"delta_ms":3588,"prompt_echo":false,"piece":"."}
+{"index":25,"timestamp_ms":1784192861314,"delta_ms":3736,"prompt_echo":false,"piece":" Here"}
+{"index":26,"timestamp_ms":1784192861457,"delta_ms":3879,"prompt_echo":false,"piece":"’s"}
+{"index":27,"timestamp_ms":1784192861604,"delta_ms":4026,"prompt_echo":false,"piece":" why"}
+{"index":28,"timestamp_ms":1784192861747,"delta_ms":4169,"prompt_echo":false,"piece":":\n\n"}
+{"index":29,"timestamp_ms":1784192861894,"delta_ms":4316,"prompt_echo":false,"piece":"1"}
+{"index":30,"timestamp_ms":1784192862038,"delta_ms":4460,"prompt_echo":false,"piece":"."}
+{"index":31,"timestamp_ms":1784192862185,"delta_ms":4607,"prompt_echo":false,"piece":" **"}
+{"index":32,"timestamp_ms":1784192862329,"delta_ms":4751,"prompt_echo":false,"piece":"Immediate"}
+{"index":33,"timestamp_ms":1784192862476,"delta_ms":4898,"prompt_echo":false,"piece":" Feedback"}
+{"index":34,"timestamp_ms":1784192862619,"delta_ms":5041,"prompt_echo":false,"piece":"**:"}
+{"index":35,"timestamp_ms":1784192862766,"delta_ms":5188,"prompt_echo":false,"piece":" In"}
+{"index":36,"timestamp_ms":1784192862913,"delta_ms":5335,"prompt_echo":false,"piece":" real"}
+{"index":37,"timestamp_ms":1784192863057,"delta_ms":5479,"prompt_echo":false,"piece":"-time"}
+{"index":38,"timestamp_ms":1784192863204,"delta_ms":5626,"prompt_echo":false,"piece":" communication"}
+{"index":39,"timestamp_ms":1784192863347,"delta_ms":5769,"prompt_echo":false,"piece":","}
+{"index":40,"timestamp_ms":1784192863482,"delta_ms":5904,"prompt_echo":false,"piece":" users"}
+{"index":41,"timestamp_ms":1784192863619,"delta_ms":6041,"prompt_echo":false,"piece":" expect"}
+{"index":42,"timestamp_ms":1784192863764,"delta_ms":6186,"prompt_echo":false,"piece":" immediate"}
+{"index":43,"timestamp_ms":1784192863908,"delta_ms":6330,"prompt_echo":false,"piece":" feedback"}
+{"index":44,"timestamp_ms":1784192864056,"delta_ms":6478,"prompt_echo":false,"piece":"."}
+{"index":45,"timestamp_ms":1784192864201,"delta_ms":6623,"prompt_echo":false,"piece":" If"}
+{"index":46,"timestamp_ms":1784192864347,"delta_ms":6769,"prompt_echo":false,"piece":" the"}
+{"index":47,"timestamp_ms":1784192864493,"delta_ms":6915,"prompt_echo":false,"piece":" chat"}
+{"index":48,"timestamp_ms":1784192864638,"delta_ms":7060,"prompt_echo":false,"piece":" system"}
+{"index":49,"timestamp_ms":1784192864786,"delta_ms":7208,"prompt_echo":false,"piece":" takes"}
+{"index":50,"timestamp_ms":1784192864930,"delta_ms":7352,"prompt_echo":false,"piece":" too"}
+{"index":51,"timestamp_ms":1784192865076,"delta_ms":7498,"prompt_echo":false,"piece":" long"}
+{"index":52,"timestamp_ms":1784192865220,"delta_ms":7642,"prompt_echo":false,"piece":" to"}
+{"index":53,"timestamp_ms":1784192865368,"delta_ms":7790,"prompt_echo":false,"piece":" respond"}
+{"index":54,"timestamp_ms":1784192865511,"delta_ms":7933,"prompt_echo":false,"piece":" to"}
+{"index":55,"timestamp_ms":1784192865657,"delta_ms":8079,"prompt_echo":false,"piece":" the"}
+{"index":56,"timestamp_ms":1784192865803,"delta_ms":8225,"prompt_echo":false,"piece":" first"}
+{"index":57,"timestamp_ms":1784192865947,"delta_ms":8369,"prompt_echo":false,"piece":" token"}
+{"index":58,"timestamp_ms":1784192866094,"delta_ms":8516,"prompt_echo":false,"piece":" ("}
+{"index":59,"timestamp_ms":1784192866238,"delta_ms":8660,"prompt_echo":false,"piece":"the"}
+{"index":60,"timestamp_ms":1784192866385,"delta_ms":8807,"prompt_echo":false,"piece":" first"}
+{"index":61,"timestamp_ms":1784192866527,"delta_ms":8949,"prompt_echo":false,"piece":" message"}
+{"index":62,"timestamp_ms":1784192866675,"delta_ms":9097,"prompt_echo":false,"piece":" or"}
+{"index":63,"timestamp_ms":1784192866792,"delta_ms":9214,"prompt_echo":false,"piece":" command"}
+{"index":64,"timestamp_ms":1784192866930,"delta_ms":9352,"prompt_echo":false,"piece":"),"}
+{"index":65,"timestamp_ms":1784192867077,"delta_ms":9499,"prompt_echo":false,"piece":" users"}
+{"index":66,"timestamp_ms":1784192867221,"delta_ms":9643,"prompt_echo":false,"piece":" may"}
+{"index":67,"timestamp_ms":1784192867367,"delta_ms":9789,"prompt_echo":false,"piece":" feel"}
+{"index":68,"timestamp_ms":1784192867510,"delta_ms":9932,"prompt_echo":false,"piece":" that"}
+{"index":69,"timestamp_ms":1784192867657,"delta_ms":10079,"prompt_echo":false,"piece":" the"}
+{"index":70,"timestamp_ms":1784192867801,"delta_ms":10223,"prompt_echo":false,"piece":" system"}
+{"index":71,"timestamp_ms":1784192867949,"delta_ms":10371,"prompt_echo":false,"piece":" is"}
+{"index":72,"timestamp_ms":1784192868093,"delta_ms":10515,"prompt_echo":false,"piece":" slow"}
+{"index":73,"timestamp_ms":1784192868240,"delta_ms":10662,"prompt_echo":false,"piece":" or"}
+{"index":74,"timestamp_ms":1784192868384,"delta_ms":10806,"prompt_echo":false,"piece":" unreliable"}
+{"index":75,"timestamp_ms":1784192868531,"delta_ms":10953,"prompt_echo":false,"piece":".\n\n"}
+{"index":76,"timestamp_ms":1784192868660,"delta_ms":11082,"prompt_echo":false,"piece":"2"}
+{"index":77,"timestamp_ms":1784192868802,"delta_ms":11224,"prompt_echo":false,"piece":"."}
+{"index":78,"timestamp_ms":1784192868949,"delta_ms":11371,"prompt_echo":false,"piece":" **"}
+{"index":79,"timestamp_ms":1784192869094,"delta_ms":11516,"prompt_echo":false,"piece":"User"}
+{"index":80,"timestamp_ms":1784192869241,"delta_ms":11663,"prompt_echo":false,"piece":" Expect"}
+{"index":81,"timestamp_ms":1784192869383,"delta_ms":11805,"prompt_echo":false,"piece":"ations"}
+{"index":82,"timestamp_ms":1784192869530,"delta_ms":11952,"prompt_echo":false,"piece":"**:"}
+{"index":83,"timestamp_ms":1784192869670,"delta_ms":12092,"prompt_echo":false,"piece":" Modern"}
+{"index":84,"timestamp_ms":1784192869818,"delta_ms":12240,"prompt_echo":false,"piece":" users"}
+{"index":85,"timestamp_ms":1784192869962,"delta_ms":12384,"prompt_echo":false,"piece":" have"}
+{"index":86,"timestamp_ms":1784192870108,"delta_ms":12530,"prompt_echo":false,"piece":" high"}
+{"index":87,"timestamp_ms":1784192870255,"delta_ms":12677,"prompt_echo":false,"piece":" expectations"}
+{"index":88,"timestamp_ms":1784192870398,"delta_ms":12820,"prompt_echo":false,"piece":" for"}
+{"index":89,"timestamp_ms":1784192870544,"delta_ms":12966,"prompt_echo":false,"piece":" instant"}
+{"index":90,"timestamp_ms":1784192870689,"delta_ms":13111,"prompt_echo":false,"piece":" responses"}
+{"index":91,"timestamp_ms":1784192870837,"delta_ms":13259,"prompt_echo":false,"piece":","}
+{"index":92,"timestamp_ms":1784192870982,"delta_ms":13404,"prompt_echo":false,"piece":" especially"}
+{"index":93,"timestamp_ms":1784192871128,"delta_ms":13550,"prompt_echo":false,"piece":" in"}
+{"index":94,"timestamp_ms":1784192871271,"delta_ms":13693,"prompt_echo":false,"piece":" applications"}
+{"index":95,"timestamp_ms":1784192871418,"delta_ms":13840,"prompt_echo":false,"piece":" like"}
+{"index":96,"timestamp_ms":1784192871563,"delta_ms":13985,"prompt_echo":false,"piece":" live"}
+{"index":97,"timestamp_ms":1784192871699,"delta_ms":14121,"prompt_echo":false,"piece":" chats"}
+{"index":98,"timestamp_ms":1784192871836,"delta_ms":14258,"prompt_echo":false,"piece":","}
+{"index":99,"timestamp_ms":1784192871976,"delta_ms":14398,"prompt_echo":false,"piece":" messaging"}
+{"index":100,"timestamp_ms":1784192872123,"delta_ms":14545,"prompt_echo":false,"piece":","}
+{"index":101,"timestamp_ms":1784192872267,"delta_ms":14689,"prompt_echo":false,"piece":" and"}
+{"index":102,"timestamp_ms":1784192872415,"delta_ms":14837,"prompt_echo":false,"piece":" voice"}
+{"index":103,"timestamp_ms":1784192872558,"delta_ms":14980,"prompt_echo":false,"piece":" assistants"}
+{"index":104,"timestamp_ms":1784192872704,"delta_ms":15126,"prompt_echo":false,"piece":"."}
+{"index":105,"timestamp_ms":1784192872847,"delta_ms":15269,"prompt_echo":false,"piece":" Any"}
+{"index":106,"timestamp_ms":1784192872994,"delta_ms":15416,"prompt_echo":false,"piece":" delay"}
+{"index":107,"timestamp_ms":1784192873142,"delta_ms":15564,"prompt_echo":false,"piece":" can"}
+{"index":108,"timestamp_ms":1784192873285,"delta_ms":15707,"prompt_echo":false,"piece":" lead"}
+{"index":109,"timestamp_ms":1784192873431,"delta_ms":15853,"prompt_echo":false,"piece":" to"}
+{"index":110,"timestamp_ms":1784192873575,"delta_ms":15997,"prompt_echo":false,"piece":" frustration"}
+{"index":111,"timestamp_ms":1784192873711,"delta_ms":16133,"prompt_echo":false,"piece":" and"}
+{"index":112,"timestamp_ms":1784192873847,"delta_ms":16269,"prompt_echo":false,"piece":" a"}
+{"index":113,"timestamp_ms":1784192873992,"delta_ms":16414,"prompt_echo":false,"piece":" negative"}
+{"index":114,"timestamp_ms":1784192874135,"delta_ms":16557,"prompt_echo":false,"piece":" perception"}
+{"index":115,"timestamp_ms":1784192874283,"delta_ms":16705,"prompt_echo":false,"piece":" of"}
+{"index":116,"timestamp_ms":1784192874430,"delta_ms":16852,"prompt_echo":false,"piece":" the"}
+{"index":117,"timestamp_ms":1784192874573,"delta_ms":16995,"prompt_echo":false,"piece":" service"}
+{"index":118,"timestamp_ms":1784192874722,"delta_ms":17144,"prompt_echo":false,"piece":".\n\n"}
+{"index":119,"timestamp_ms":1784192874866,"delta_ms":17288,"prompt_echo":false,"piece":"3"}
+{"index":120,"timestamp_ms":1784192875011,"delta_ms":17433,"prompt_echo":false,"piece":"."}
+{"index":121,"timestamp_ms":1784192875154,"delta_ms":17576,"prompt_echo":false,"piece":" **"}
+{"index":122,"timestamp_ms":1784192875301,"delta_ms":17723,"prompt_echo":false,"piece":"Eng"}
+{"index":123,"timestamp_ms":1784192875446,"delta_ms":17868,"prompt_echo":false,"piece":"agement"}
+{"index":124,"timestamp_ms":1784192875594,"delta_ms":18016,"prompt_echo":false,"piece":"**:"}
+{"index":125,"timestamp_ms":1784192875735,"delta_ms":18157,"prompt_echo":false,"piece":" High"}
+{"index":126,"timestamp_ms":1784192875882,"delta_ms":18304,"prompt_echo":false,"piece":" latency"}
+{"index":127,"timestamp_ms":1784192876030,"delta_ms":18452,"prompt_echo":false,"piece":" can"}
+{"index":128,"timestamp_ms":1784192876174,"delta_ms":18596,"prompt_echo":false,"piece":" significantly"}
+{"index":129,"timestamp_ms":1784192876322,"delta_ms":18744,"prompt_echo":false,"piece":" reduce"}
+{"index":130,"timestamp_ms":1784192876466,"delta_ms":18888,"prompt_echo":false,"piece":" user"}
+{"index":131,"timestamp_ms":1784192876614,"delta_ms":19036,"prompt_echo":false,"piece":" engagement"}
+{"index":132,"timestamp_ms":1784192876757,"delta_ms":19179,"prompt_echo":false,"piece":"."}
+{"index":133,"timestamp_ms":1784192876904,"delta_ms":19326,"prompt_echo":false,"piece":" Users"}
+{"index":134,"timestamp_ms":1784192877046,"delta_ms":19468,"prompt_echo":false,"piece":" might"}
+{"index":135,"timestamp_ms":1784192877194,"delta_ms":19616,"prompt_echo":false,"piece":" leave"}
+{"index":136,"timestamp_ms":1784192877336,"delta_ms":19758,"prompt_echo":false,"piece":" the"}
+{"index":137,"timestamp_ms":1784192877483,"delta_ms":19905,"prompt_echo":false,"piece":" chat"}
+{"index":138,"timestamp_ms":1784192877630,"delta_ms":20052,"prompt_echo":false,"piece":" or"}
+{"index":139,"timestamp_ms":1784192877774,"delta_ms":20196,"prompt_echo":false,"piece":" service"}
+{"index":140,"timestamp_ms":1784192877922,"delta_ms":20344,"prompt_echo":false,"piece":" if"}
+{"index":141,"timestamp_ms":1784192878065,"delta_ms":20487,"prompt_echo":false,"piece":" they"}
+{"index":142,"timestamp_ms":1784192878213,"delta_ms":20635,"prompt_echo":false,"piece":" feel"}
+{"index":143,"timestamp_ms":1784192878358,"delta_ms":20780,"prompt_echo":false,"piece":" their"}
+{"index":144,"timestamp_ms":1784192878506,"delta_ms":20928,"prompt_echo":false,"piece":" input"}
+{"index":145,"timestamp_ms":1784192878649,"delta_ms":21071,"prompt_echo":false,"piece":" isn"}
+{"index":146,"timestamp_ms":1784192878794,"delta_ms":21216,"prompt_echo":false,"piece":"'t"}
+{"index":147,"timestamp_ms":1784192878915,"delta_ms":21337,"prompt_echo":false,"piece":" being"}
+{"index":148,"timestamp_ms":1784192879059,"delta_ms":21481,"prompt_echo":false,"piece":" processed"}
+{"index":149,"timestamp_ms":1784192879205,"delta_ms":21627,"prompt_echo":false,"piece":" promptly"}
+{"index":150,"timestamp_ms":1784192879349,"delta_ms":21771,"prompt_echo":false,"piece":","}
+{"index":151,"timestamp_ms":1784192879496,"delta_ms":21918,"prompt_echo":false,"piece":" leading"}
+{"index":152,"timestamp_ms":1784192879641,"delta_ms":22063,"prompt_echo":false,"piece":" to"}
+{"index":153,"timestamp_ms":1784192879787,"delta_ms":22209,"prompt_echo":false,"piece":" a"}
+{"index":154,"timestamp_ms":1784192879928,"delta_ms":22350,"prompt_echo":false,"piece":" drop"}
+{"index":155,"timestamp_ms":1784192880058,"delta_ms":22480,"prompt_echo":false,"piece":" in"}
+{"index":156,"timestamp_ms":1784192880178,"delta_ms":22600,"prompt_echo":false,"piece":" user"}
+{"index":157,"timestamp_ms":1784192880301,"delta_ms":22723,"prompt_echo":false,"piece":" retention"}
+{"index":158,"timestamp_ms":1784192880450,"delta_ms":22872,"prompt_echo":false,"piece":".\n\n"}
+{"index":159,"timestamp_ms":1784192880593,"delta_ms":23015,"prompt_echo":false,"piece":"4"}
+{"index":160,"timestamp_ms":1784192880741,"delta_ms":23163,"prompt_echo":false,"piece":"."}
+{"index":161,"timestamp_ms":1784192880882,"delta_ms":23304,"prompt_echo":false,"piece":" **"}
+{"index":162,"timestamp_ms":1784192881018,"delta_ms":23440,"prompt_echo":false,"piece":"Technical"}
+{"index":163,"timestamp_ms":1784192881164,"delta_ms":23586,"prompt_echo":false,"piece":" Challenges"}
+{"index":164,"timestamp_ms":1784192881311,"delta_ms":23733,"prompt_echo":false,"piece":"**:"}
+{"index":165,"timestamp_ms":1784192881458,"delta_ms":23880,"prompt_echo":false,"piece":" Ens"}
+{"index":166,"timestamp_ms":1784192881602,"delta_ms":24024,"prompt_echo":false,"piece":"uring"}
+{"index":167,"timestamp_ms":1784192881749,"delta_ms":24171,"prompt_echo":false,"piece":" low"}
+{"index":168,"timestamp_ms":1784192881894,"delta_ms":24316,"prompt_echo":false,"piece":" latency"}
+{"index":169,"timestamp_ms":1784192882041,"delta_ms":24463,"prompt_echo":false,"piece":" involves"}
+{"index":170,"timestamp_ms":1784192882184,"delta_ms":24606,"prompt_echo":false,"piece":" optimizing"}
+{"index":171,"timestamp_ms":1784192882332,"delta_ms":24754,"prompt_echo":false,"piece":" various"}
+{"index":172,"timestamp_ms":1784192882475,"delta_ms":24897,"prompt_echo":false,"piece":" aspects"}
+{"index":173,"timestamp_ms":1784192882622,"delta_ms":25044,"prompt_echo":false,"piece":" of"}
+{"index":174,"timestamp_ms":1784192882766,"delta_ms":25188,"prompt_echo":false,"piece":" the"}
+{"index":175,"timestamp_ms":1784192882913,"delta_ms":25335,"prompt_echo":false,"piece":" system"}
+{"index":176,"timestamp_ms":1784192883060,"delta_ms":25482,"prompt_echo":false,"piece":","}
+{"index":177,"timestamp_ms":1784192883203,"delta_ms":25625,"prompt_echo":false,"piece":" including"}
+{"index":178,"timestamp_ms":1784192883350,"delta_ms":25772,"prompt_echo":false,"piece":" network"}
+{"index":179,"timestamp_ms":1784192883495,"delta_ms":25917,"prompt_echo":false,"piece":" latency"}
+{"index":180,"timestamp_ms":1784192883641,"delta_ms":26063,"prompt_echo":false,"piece":","}
+{"index":181,"timestamp_ms":1784192883785,"delta_ms":26207,"prompt_echo":false,"piece":" server"}
+{"index":182,"timestamp_ms":1784192883929,"delta_ms":26351,"prompt_echo":false,"piece":" performance"}
+{"index":183,"timestamp_ms":1784192884057,"delta_ms":26479,"prompt_echo":false,"piece":","}
+{"index":184,"timestamp_ms":1784192884203,"delta_ms":26625,"prompt_echo":false,"piece":" and"}
+{"index":185,"timestamp_ms":1784192884350,"delta_ms":26772,"prompt_echo":false,"piece":" message"}
+{"index":186,"timestamp_ms":1784192884494,"delta_ms":26916,"prompt_echo":false,"piece":" processing"}
+{"index":187,"timestamp_ms":1784192884641,"delta_ms":27063,"prompt_echo":false,"piece":" speed"}
+{"index":188,"timestamp_ms":1784192884785,"delta_ms":27207,"prompt_echo":false,"piece":"."}
+{"index":189,"timestamp_ms":1784192884932,"delta_ms":27354,"prompt_echo":false,"piece":" These"}
+{"index":190,"timestamp_ms":1784192885077,"delta_ms":27499,"prompt_echo":false,"piece":" challenges"}
+{"index":191,"timestamp_ms":1784192885224,"delta_ms":27646,"prompt_echo":false,"piece":" can"}
+{"index":192,"timestamp_ms":1784192885367,"delta_ms":27789,"prompt_echo":false,"piece":" be"}
+{"index":193,"timestamp_ms":1784192885514,"delta_ms":27936,"prompt_echo":false,"piece":" complex"}
+{"index":194,"timestamp_ms":1784192885656,"delta_ms":28078,"prompt_echo":false,"piece":" and"}
+{"index":195,"timestamp_ms":1784192885803,"delta_ms":28225,"prompt_echo":false,"piece":" costly"}
+{"index":196,"timestamp_ms":1784192885950,"delta_ms":28372,"prompt_echo":false,"piece":" to"}
+{"index":197,"timestamp_ms":1784192886094,"delta_ms":28516,"prompt_echo":false,"piece":" overcome"}
+{"index":198,"timestamp_ms":1784192886241,"delta_ms":28663,"prompt_echo":false,"piece":".\n\n"}
+{"index":199,"timestamp_ms":1784192886385,"delta_ms":28807,"prompt_echo":false,"piece":"5"}
+{"index":200,"timestamp_ms":1784192886514,"delta_ms":28936,"prompt_echo":false,"piece":"."}
+{"index":201,"timestamp_ms":1784192886657,"delta_ms":29079,"prompt_echo":false,"piece":" **"}
+{"index":202,"timestamp_ms":1784192886805,"delta_ms":29227,"prompt_echo":false,"piece":"Quality"}
+{"index":203,"timestamp_ms":1784192886948,"delta_ms":29370,"prompt_echo":false,"piece":" of"}
+{"index":204,"timestamp_ms":1784192887094,"delta_ms":29516,"prompt_echo":false,"piece":" Service"}
+{"index":205,"timestamp_ms":1784192887239,"delta_ms":29661,"prompt_echo":false,"piece":" ("}
+{"index":206,"timestamp_ms":1784192887385,"delta_ms":29807,"prompt_echo":false,"piece":"Q"}
+{"index":207,"timestamp_ms":1784192887533,"delta_ms":29955,"prompt_echo":false,"piece":"oS"}
+{"index":208,"timestamp_ms":1784192887677,"delta_ms":30099,"prompt_echo":false,"piece":")**"}
+{"index":209,"timestamp_ms":1784192887823,"delta_ms":30245,"prompt_echo":false,"piece":":"}
+{"index":210,"timestamp_ms":1784192887967,"delta_ms":30389,"prompt_echo":false,"piece":" In"}
+{"index":211,"timestamp_ms":1784192888113,"delta_ms":30535,"prompt_echo":false,"piece":" high"}
+{"index":212,"timestamp_ms":1784192888256,"delta_ms":30678,"prompt_echo":false,"piece":"-"}
+{"index":213,"timestamp_ms":1784192888403,"delta_ms":30825,"prompt_echo":false,"piece":"traffic"}
+{"index":214,"timestamp_ms":1784192888545,"delta_ms":30967,"prompt_echo":false,"piece":" scenarios"}
+{"index":215,"timestamp_ms":1784192888693,"delta_ms":31115,"prompt_echo":false,"piece":","}
+{"index":216,"timestamp_ms":1784192888826,"delta_ms":31248,"prompt_echo":false,"piece":" first"}
+{"index":217,"timestamp_ms":1784192888966,"delta_ms":31388,"prompt_echo":false,"piece":"-token"}
+{"index":218,"timestamp_ms":1784192889094,"delta_ms":31516,"prompt_echo":false,"piece":" latency"}
+{"index":219,"timestamp_ms":1784192889236,"delta_ms":31658,"prompt_echo":false,"piece":" can"}
+{"index":220,"timestamp_ms":1784192889383,"delta_ms":31805,"prompt_echo":false,"piece":" be"}
+{"index":221,"timestamp_ms":1784192889526,"delta_ms":31948,"prompt_echo":false,"piece":" a"}
+{"index":222,"timestamp_ms":1784192889674,"delta_ms":32096,"prompt_echo":false,"piece":" critical"}
+{"index":223,"timestamp_ms":1784192889816,"delta_ms":32238,"prompt_echo":false,"piece":" factor"}
+{"index":224,"timestamp_ms":1784192889962,"delta_ms":32384,"prompt_echo":false,"piece":" in"}
+{"index":225,"timestamp_ms":1784192890109,"delta_ms":32531,"prompt_echo":false,"piece":" maintaining"}
+{"index":226,"timestamp_ms":1784192890252,"delta_ms":32674,"prompt_echo":false,"piece":" the"}
+{"index":227,"timestamp_ms":1784192890398,"delta_ms":32820,"prompt_echo":false,"piece":" quality"}
+{"index":228,"timestamp_ms":1784192890541,"delta_ms":32963,"prompt_echo":false,"piece":" of"}
+{"index":229,"timestamp_ms":1784192890686,"delta_ms":33108,"prompt_echo":false,"piece":" service"}
+{"index":230,"timestamp_ms":1784192890830,"delta_ms":33252,"prompt_echo":false,"piece":"."}
+{"index":231,"timestamp_ms":1784192890973,"delta_ms":33395,"prompt_echo":false,"piece":" It"}
+{"index":232,"timestamp_ms":1784192891109,"delta_ms":33531,"prompt_echo":false,"piece":" affects"}
+{"index":233,"timestamp_ms":1784192891257,"delta_ms":33679,"prompt_echo":false,"piece":" the"}
+{"index":234,"timestamp_ms":1784192891402,"delta_ms":33824,"prompt_echo":false,"piece":" overall"}
+{"index":235,"timestamp_ms":1784192891547,"delta_ms":33969,"prompt_echo":false,"piece":" user"}
+{"index":236,"timestamp_ms":1784192891695,"delta_ms":34117,"prompt_echo":false,"piece":" experience"}
+{"index":237,"timestamp_ms":1784192891824,"delta_ms":34246,"prompt_echo":false,"piece":" and"}
+{"index":238,"timestamp_ms":1784192891945,"delta_ms":34367,"prompt_echo":false,"piece":" can"}
+{"index":239,"timestamp_ms":1784192892089,"delta_ms":34511,"prompt_echo":false,"piece":" differentiate"}
+{"index":240,"timestamp_ms":1784192892236,"delta_ms":34658,"prompt_echo":false,"piece":" between"}
+{"index":241,"timestamp_ms":1784192892378,"delta_ms":34800,"prompt_echo":false,"piece":" a"}
+{"index":242,"timestamp_ms":1784192892526,"delta_ms":34948,"prompt_echo":false,"piece":" good"}
+{"index":243,"timestamp_ms":1784192892672,"delta_ms":35094,"prompt_echo":false,"piece":" and"}
+{"index":244,"timestamp_ms":1784192892816,"delta_ms":35238,"prompt_echo":false,"piece":" a"}
+{"index":245,"timestamp_ms":1784192892962,"delta_ms":35384,"prompt_echo":false,"piece":" bad"}
+{"index":246,"timestamp_ms":1784192893105,"delta_ms":35527,"prompt_echo":false,"piece":" service"}
+{"index":247,"timestamp_ms":1784192893252,"delta_ms":35674,"prompt_echo":false,"piece":".\n\n"}
+{"index":248,"timestamp_ms":1784192893397,"delta_ms":35819,"prompt_echo":false,"piece":"6"}
+{"index":249,"timestamp_ms":1784192893544,"delta_ms":35966,"prompt_echo":false,"piece":"."}
+{"index":250,"timestamp_ms":1784192893687,"delta_ms":36109,"prompt_echo":false,"piece":" **"}
+{"index":251,"timestamp_ms":1784192893834,"delta_ms":36256,"prompt_echo":false,"piece":"Compet"}
+{"index":252,"timestamp_ms":1784192893976,"delta_ms":36398,"prompt_echo":false,"piece":"itive"}
+{"index":253,"timestamp_ms":1784192894123,"delta_ms":36545,"prompt_echo":false,"piece":" Edge"}
+{"index":254,"timestamp_ms":1784192894252,"delta_ms":36674,"prompt_echo":false,"piece":"**:"}
+{"index":255,"timestamp_ms":1784192894395,"delta_ms":36817,"prompt_echo":false,"piece":" For"}
+{"index":256,"timestamp_ms":1784192894541,"delta_ms":36963,"prompt_echo":false,"piece":" businesses"}
+{"index":257,"timestamp_ms":1784192894686,"delta_ms":37108,"prompt_echo":false,"piece":" and"}
+{"index":258,"timestamp_ms":1784192894834,"delta_ms":37256,"prompt_echo":false,"piece":" platforms"}
+{"index":259,"timestamp_ms":1784192894977,"delta_ms":37399,"prompt_echo":false,"piece":" competing"}
+{"index":260,"timestamp_ms":1784192895123,"delta_ms":37545,"prompt_echo":false,"piece":" in"}
+{"index":261,"timestamp_ms":1784192895267,"delta_ms":37689,"prompt_echo":false,"piece":" the"}
+{"index":262,"timestamp_ms":1784192895415,"delta_ms":37837,"prompt_echo":false,"piece":" market"}
+{"index":263,"timestamp_ms":1784192895560,"delta_ms":37982,"prompt_echo":false,"piece":","}
+{"index":264,"timestamp_ms":1784192895705,"delta_ms":38127,"prompt_echo":false,"piece":" fast"}
+{"index":265,"timestamp_ms":1784192895853,"delta_ms":38275,"prompt_echo":false,"piece":" response"}
+{"index":266,"timestamp_ms":1784192895995,"delta_ms":38417,"prompt_echo":false,"piece":" times"}
+{"index":267,"timestamp_ms":1784192896144,"delta_ms":38566,"prompt_echo":false,"piece":" can"}
+{"index":268,"timestamp_ms":1784192896287,"delta_ms":38709,"prompt_echo":false,"piece":" be"}
+{"index":269,"timestamp_ms":1784192896433,"delta_ms":38855,"prompt_echo":false,"piece":" a"}
+{"index":270,"timestamp_ms":1784192896577,"delta_ms":38999,"prompt_echo":false,"piece":" key"}
+{"index":271,"timestamp_ms":1784192896724,"delta_ms":39146,"prompt_echo":false,"piece":" different"}
+{"index":272,"timestamp_ms":1784192896867,"delta_ms":39289,"prompt_echo":false,"piece":"iator"}
+{"index":273,"timestamp_ms":1784192897015,"delta_ms":39437,"prompt_echo":false,"piece":"."}
+{"index":274,"timestamp_ms":1784192897159,"delta_ms":39581,"prompt_echo":false,"piece":" Users"}
+{"index":275,"timestamp_ms":1784192897305,"delta_ms":39727,"prompt_echo":false,"piece":" often"}
+{"index":276,"timestamp_ms":1784192897452,"delta_ms":39874,"prompt_echo":false,"piece":" choose"}
+{"index":277,"timestamp_ms":1784192897597,"delta_ms":40019,"prompt_echo":false,"piece":" services"}
+{"index":278,"timestamp_ms":1784192897745,"delta_ms":40167,"prompt_echo":false,"piece":" that"}
+{"index":279,"timestamp_ms":1784192897888,"delta_ms":40310,"prompt_echo":false,"piece":" feel"}
+{"index":280,"timestamp_ms":1784192898035,"delta_ms":40457,"prompt_echo":false,"piece":" more"}
+{"index":281,"timestamp_ms":1784192898177,"delta_ms":40599,"prompt_echo":false,"piece":" responsive"}
+{"index":282,"timestamp_ms":1784192898323,"delta_ms":40745,"prompt_echo":false,"piece":" and"}
+{"index":283,"timestamp_ms":1784192898467,"delta_ms":40889,"prompt_echo":false,"piece":" reliable"}
+{"index":284,"timestamp_ms":1784192898614,"delta_ms":41036,"prompt_echo":false,"piece":".\n\n"}
+{"index":285,"timestamp_ms":1784192898761,"delta_ms":41183,"prompt_echo":false,"piece":"In"}
+{"index":286,"timestamp_ms":1784192898905,"delta_ms":41327,"prompt_echo":false,"piece":" summary"}
+{"index":287,"timestamp_ms":1784192899053,"delta_ms":41475,"prompt_echo":false,"piece":","}
+{"index":288,"timestamp_ms":1784192899195,"delta_ms":41617,"prompt_echo":false,"piece":" first"}
+{"index":289,"timestamp_ms":1784192899326,"delta_ms":41748,"prompt_echo":false,"piece":"-token"}
+{"index":290,"timestamp_ms":1784192899463,"delta_ms":41885,"prompt_echo":false,"piece":" latency"}
+{"index":291,"timestamp_ms":1784192899610,"delta_ms":42032,"prompt_echo":false,"piece":" is"}
+{"index":292,"timestamp_ms":1784192899753,"delta_ms":42175,"prompt_echo":false,"piece":" critical"}
+{"index":293,"timestamp_ms":1784192899901,"delta_ms":42323,"prompt_echo":false,"piece":" because"}
+{"index":294,"timestamp_ms":1784192900045,"delta_ms":42467,"prompt_echo":false,"piece":" it"}
+{"index":295,"timestamp_ms":1784192900192,"delta_ms":42614,"prompt_echo":false,"piece":" directly"}
+{"index":296,"timestamp_ms":1784192900338,"delta_ms":42760,"prompt_echo":false,"piece":" affects"}
+{"index":297,"timestamp_ms":1784192900479,"delta_ms":42901,"prompt_echo":false,"piece":" user"}
+{"index":298,"timestamp_ms":1784192900626,"delta_ms":43048,"prompt_echo":false,"piece":" satisfaction"}
+{"index":299,"timestamp_ms":1784192900770,"delta_ms":43192,"prompt_echo":false,"piece":" and"}
+{"index":300,"timestamp_ms":1784192900918,"delta_ms":43340,"prompt_echo":false,"piece":" the"}
+{"index":301,"timestamp_ms":1784192901062,"delta_ms":43484,"prompt_echo":false,"piece":" perceived"}
+{"index":302,"timestamp_ms":1784192901209,"delta_ms":43631,"prompt_echo":false,"piece":" quality"}
+{"index":303,"timestamp_ms":1784192901354,"delta_ms":43776,"prompt_echo":false,"piece":" of"}
+{"index":304,"timestamp_ms":1784192901501,"delta_ms":43923,"prompt_echo":false,"piece":" the"}
+{"index":305,"timestamp_ms":1784192901646,"delta_ms":44068,"prompt_echo":false,"piece":" service"}
+{"index":306,"timestamp_ms":1784192901793,"delta_ms":44215,"prompt_echo":false,"piece":"."}
+{"index":307,"timestamp_ms":1784192901942,"delta_ms":44364,"prompt_echo":false,"piece":" Ens"}
+{"index":308,"timestamp_ms":1784192902083,"delta_ms":44505,"prompt_echo":false,"piece":"uring"}
+{"index":309,"timestamp_ms":1784192902230,"delta_ms":44652,"prompt_echo":false,"piece":" low"}
+{"index":310,"timestamp_ms":1784192902374,"delta_ms":44796,"prompt_echo":false,"piece":" latency"}
+{"index":311,"timestamp_ms":1784192902522,"delta_ms":44944,"prompt_echo":false,"piece":" is"}
+{"index":312,"timestamp_ms":1784192902664,"delta_ms":45086,"prompt_echo":false,"piece":" essential"}
+{"index":313,"timestamp_ms":1784192902811,"delta_ms":45233,"prompt_echo":false,"piece":" for"}
+{"index":314,"timestamp_ms":1784192902954,"delta_ms":45376,"prompt_echo":false,"piece":" maintaining"}
+{"index":315,"timestamp_ms":1784192903101,"delta_ms":45523,"prompt_echo":false,"piece":" a"}
+{"index":316,"timestamp_ms":1784192903247,"delta_ms":45669,"prompt_echo":false,"piece":" smooth"}
+{"index":317,"timestamp_ms":1784192903394,"delta_ms":45816,"prompt_echo":false,"piece":" and"}
+{"index":318,"timestamp_ms":1784192903541,"delta_ms":45963,"prompt_echo":false,"piece":" enjoyable"}
+{"index":319,"timestamp_ms":1784192903684,"delta_ms":46106,"prompt_echo":false,"piece":" user"}
+{"index":320,"timestamp_ms":1784192903830,"delta_ms":46252,"prompt_echo":false,"piece":" experience"}
+{"index":321,"timestamp_ms":1784192903974,"delta_ms":46396,"prompt_echo":false,"piece":" in"}
+{"index":322,"timestamp_ms":1784192904121,"delta_ms":46543,"prompt_echo":false,"piece":" streaming"}
+{"index":323,"timestamp_ms":1784192904266,"delta_ms":46688,"prompt_echo":false,"piece":" chat"}
+{"index":324,"timestamp_ms":1784192904410,"delta_ms":46832,"prompt_echo":false,"piece":" applications"}
+{"index":325,"timestamp_ms":1784192904537,"delta_ms":46959,"prompt_echo":false,"piece":"."}
+{"index":326,"timestamp_ms":1784192904684,"delta_ms":47106,"prompt_echo":false,"piece":"<|im_end|>"}

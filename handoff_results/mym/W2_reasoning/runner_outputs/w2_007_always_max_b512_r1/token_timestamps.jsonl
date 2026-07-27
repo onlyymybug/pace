@@ -1,0 +1,78 @@
+{"index":0,"timestamp_ms":1784439792535,"delta_ms":0,"prompt_echo":true,"piece":"<|im_start|>user\nSolve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.\n\nProblem: Jeremy saw 12 birds in their backyard and threw a stone at them, scaring away 1/3 of that number. A few minutes later, 20 more birds joined the fearless birds. How many birds are now in the backyard?<|im_end|>\n<|im_start|>assistant\n"}
+{"index":1,"timestamp_ms":1784439792657,"delta_ms":122,"prompt_echo":false,"piece":"First"}
+{"index":2,"timestamp_ms":1784439792701,"delta_ms":166,"prompt_echo":false,"piece":","}
+{"index":3,"timestamp_ms":1784439792742,"delta_ms":207,"prompt_echo":false,"piece":" calculate"}
+{"index":4,"timestamp_ms":1784439792783,"delta_ms":248,"prompt_echo":false,"piece":" how"}
+{"index":5,"timestamp_ms":1784439792823,"delta_ms":288,"prompt_echo":false,"piece":" many"}
+{"index":6,"timestamp_ms":1784439792864,"delta_ms":329,"prompt_echo":false,"piece":" birds"}
+{"index":7,"timestamp_ms":1784439792905,"delta_ms":370,"prompt_echo":false,"piece":" were"}
+{"index":8,"timestamp_ms":1784439792946,"delta_ms":411,"prompt_echo":false,"piece":" scared"}
+{"index":9,"timestamp_ms":1784439792987,"delta_ms":452,"prompt_echo":false,"piece":" away"}
+{"index":10,"timestamp_ms":1784439793027,"delta_ms":492,"prompt_echo":false,"piece":":"}
+{"index":11,"timestamp_ms":1784439793068,"delta_ms":533,"prompt_echo":false,"piece":" "}
+{"index":12,"timestamp_ms":1784439793109,"delta_ms":574,"prompt_echo":false,"piece":"1"}
+{"index":13,"timestamp_ms":1784439793150,"delta_ms":615,"prompt_echo":false,"piece":"2"}
+{"index":14,"timestamp_ms":1784439793190,"delta_ms":655,"prompt_echo":false,"piece":" birds"}
+{"index":15,"timestamp_ms":1784439793231,"delta_ms":696,"prompt_echo":false,"piece":" *"}
+{"index":16,"timestamp_ms":1784439793272,"delta_ms":737,"prompt_echo":false,"piece":" "}
+{"index":17,"timestamp_ms":1784439793313,"delta_ms":778,"prompt_echo":false,"piece":"1"}
+{"index":18,"timestamp_ms":1784439793354,"delta_ms":819,"prompt_echo":false,"piece":"/"}
+{"index":19,"timestamp_ms":1784439793399,"delta_ms":864,"prompt_echo":false,"piece":"3"}
+{"index":20,"timestamp_ms":1784439793444,"delta_ms":909,"prompt_echo":false,"piece":" ="}
+{"index":21,"timestamp_ms":1784439793488,"delta_ms":953,"prompt_echo":false,"piece":" "}
+{"index":22,"timestamp_ms":1784439793533,"delta_ms":998,"prompt_echo":false,"piece":"4"}
+{"index":23,"timestamp_ms":1784439793576,"delta_ms":1041,"prompt_echo":false,"piece":" birds"}
+{"index":24,"timestamp_ms":1784439793621,"delta_ms":1086,"prompt_echo":false,"piece":".\n"}
+{"index":25,"timestamp_ms":1784439793666,"delta_ms":1131,"prompt_echo":false,"piece":"Then"}
+{"index":26,"timestamp_ms":1784439793709,"delta_ms":1174,"prompt_echo":false,"piece":" subtract"}
+{"index":27,"timestamp_ms":1784439793749,"delta_ms":1214,"prompt_echo":false,"piece":" those"}
+{"index":28,"timestamp_ms":1784439793786,"delta_ms":1251,"prompt_echo":false,"piece":" from"}
+{"index":29,"timestamp_ms":1784439793824,"delta_ms":1289,"prompt_echo":false,"piece":" the"}
+{"index":30,"timestamp_ms":1784439793861,"delta_ms":1326,"prompt_echo":false,"piece":" original"}
+{"index":31,"timestamp_ms":1784439793898,"delta_ms":1363,"prompt_echo":false,"piece":" amount"}
+{"index":32,"timestamp_ms":1784439793936,"delta_ms":1401,"prompt_echo":false,"piece":":"}
+{"index":33,"timestamp_ms":1784439793975,"delta_ms":1440,"prompt_echo":false,"piece":" "}
+{"index":34,"timestamp_ms":1784439794016,"delta_ms":1481,"prompt_echo":false,"piece":"1"}
+{"index":35,"timestamp_ms":1784439794056,"delta_ms":1521,"prompt_echo":false,"piece":"2"}
+{"index":36,"timestamp_ms":1784439794097,"delta_ms":1562,"prompt_echo":false,"piece":" birds"}
+{"index":37,"timestamp_ms":1784439794138,"delta_ms":1603,"prompt_echo":false,"piece":" -"}
+{"index":38,"timestamp_ms":1784439794179,"delta_ms":1644,"prompt_echo":false,"piece":" "}
+{"index":39,"timestamp_ms":1784439794220,"delta_ms":1685,"prompt_echo":false,"piece":"4"}
+{"index":40,"timestamp_ms":1784439794261,"delta_ms":1726,"prompt_echo":false,"piece":" birds"}
+{"index":41,"timestamp_ms":1784439794301,"delta_ms":1766,"prompt_echo":false,"piece":" ="}
+{"index":42,"timestamp_ms":1784439794342,"delta_ms":1807,"prompt_echo":false,"piece":" "}
+{"index":43,"timestamp_ms":1784439794382,"delta_ms":1847,"prompt_echo":false,"piece":"8"}
+{"index":44,"timestamp_ms":1784439794423,"delta_ms":1888,"prompt_echo":false,"piece":" birds"}
+{"index":45,"timestamp_ms":1784439794463,"delta_ms":1928,"prompt_echo":false,"piece":" remained"}
+{"index":46,"timestamp_ms":1784439794504,"delta_ms":1969,"prompt_echo":false,"piece":".\n"}
+{"index":47,"timestamp_ms":1784439794545,"delta_ms":2010,"prompt_echo":false,"piece":"Then"}
+{"index":48,"timestamp_ms":1784439794585,"delta_ms":2050,"prompt_echo":false,"piece":" add"}
+{"index":49,"timestamp_ms":1784439794626,"delta_ms":2091,"prompt_echo":false,"piece":" the"}
+{"index":50,"timestamp_ms":1784439794667,"delta_ms":2132,"prompt_echo":false,"piece":" "}
+{"index":51,"timestamp_ms":1784439794708,"delta_ms":2173,"prompt_echo":false,"piece":"2"}
+{"index":52,"timestamp_ms":1784439794749,"delta_ms":2214,"prompt_echo":false,"piece":"0"}
+{"index":53,"timestamp_ms":1784439794790,"delta_ms":2255,"prompt_echo":false,"piece":" new"}
+{"index":54,"timestamp_ms":1784439794830,"delta_ms":2295,"prompt_echo":false,"piece":" birds"}
+{"index":55,"timestamp_ms":1784439794871,"delta_ms":2336,"prompt_echo":false,"piece":":"}
+{"index":56,"timestamp_ms":1784439794912,"delta_ms":2377,"prompt_echo":false,"piece":" "}
+{"index":57,"timestamp_ms":1784439794953,"delta_ms":2418,"prompt_echo":false,"piece":"8"}
+{"index":58,"timestamp_ms":1784439794994,"delta_ms":2459,"prompt_echo":false,"piece":" birds"}
+{"index":59,"timestamp_ms":1784439795035,"delta_ms":2500,"prompt_echo":false,"piece":" +"}
+{"index":60,"timestamp_ms":1784439795075,"delta_ms":2540,"prompt_echo":false,"piece":" "}
+{"index":61,"timestamp_ms":1784439795116,"delta_ms":2581,"prompt_echo":false,"piece":"2"}
+{"index":62,"timestamp_ms":1784439795157,"delta_ms":2622,"prompt_echo":false,"piece":"0"}
+{"index":63,"timestamp_ms":1784439795198,"delta_ms":2663,"prompt_echo":false,"piece":" birds"}
+{"index":64,"timestamp_ms":1784439795239,"delta_ms":2704,"prompt_echo":false,"piece":" ="}
+{"index":65,"timestamp_ms":1784439795280,"delta_ms":2745,"prompt_echo":false,"piece":" "}
+{"index":66,"timestamp_ms":1784439795320,"delta_ms":2785,"prompt_echo":false,"piece":"2"}
+{"index":67,"timestamp_ms":1784439795360,"delta_ms":2825,"prompt_echo":false,"piece":"8"}
+{"index":68,"timestamp_ms":1784439795401,"delta_ms":2866,"prompt_echo":false,"piece":" birds"}
+{"index":69,"timestamp_ms":1784439795442,"delta_ms":2907,"prompt_echo":false,"piece":".\n"}
+{"index":70,"timestamp_ms":1784439795483,"delta_ms":2948,"prompt_echo":false,"piece":"The"}
+{"index":71,"timestamp_ms":1784439795524,"delta_ms":2989,"prompt_echo":false,"piece":" answer"}
+{"index":72,"timestamp_ms":1784439795564,"delta_ms":3029,"prompt_echo":false,"piece":" is"}
+{"index":73,"timestamp_ms":1784439795605,"delta_ms":3070,"prompt_echo":false,"piece":" "}
+{"index":74,"timestamp_ms":1784439795645,"delta_ms":3110,"prompt_echo":false,"piece":"2"}
+{"index":75,"timestamp_ms":1784439795686,"delta_ms":3151,"prompt_echo":false,"piece":"8"}
+{"index":76,"timestamp_ms":1784439795727,"delta_ms":3192,"prompt_echo":false,"piece":"."}
+{"index":77,"timestamp_ms":1784439795768,"delta_ms":3233,"prompt_echo":false,"piece":"<|im_end|>"}

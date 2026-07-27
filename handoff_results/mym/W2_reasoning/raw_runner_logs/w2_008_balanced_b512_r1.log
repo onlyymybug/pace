@@ -1,0 +1,116 @@
+$ run_qnn_pte --device 10.29.195.116:37907 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 644 --temperature 0.0 --htp-performance-mode 8 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_008_balanced_b512_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elvis has a monthly saving target of $1125. In April, he wants to save twice as much daily in the second half as he saves in the first half in order to hit his target. How much does he have to save for each day in the second half of the month?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:37907 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001333 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 8
+I 00:00:00.001391 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001401 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001407 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784444160.490059   21028 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.299701 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.390299 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.395299 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.397564 executorch:prompt_processor.cpp:273] Prompt Processor: total 132 prompt tokens (AR-128 * 2 iters)
+I 00:00:01.761662 executorch:runner.cpp:476] RSS after prompt prefill: 1002.406250 MiB (0 if unsupported)
+I 00:00:22.065288 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:22.065389 executorch:runner.cpp:493] RSS after finishing text generation: 1002.406250 MiB (0 if unsupported)
+I 00:00:22.065460 executorch:stats.h:161] 	Prompt Tokens: 132    Generated Tokens: 304
+I 00:00:22.065469 executorch:stats.h:167] 	Model Load Time:		1.394000 (seconds)
+I 00:00:22.065477 executorch:stats.h:176] 	Total inference time:		20.670000 (seconds)		 Rate: 	14.707305 (tokens/second)
+I 00:00:22.065487 executorch:stats.h:185] 		Prompt evaluation:	0.366000 (seconds)		 Rate: 	360.655738 (tokens/second)
+I 00:00:22.065497 executorch:stats.h:197] 		Generated 304 tokens:	20.304000 (seconds)		 Rate: 	14.972419 (tokens/second)
+I 00:00:22.065506 executorch:stats.h:205] 	Time to first generated token:	0.366000 (seconds)
+I 00:00:22.065514 executorch:stats.h:212] 	Sampling time over 436 tokens:	0.576000 (seconds)
+I 00:00:22.067321 executorch:qnn_llama_runner.cpp:192] Saved 306 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":360.656,"decode_token_per_sec":14.9724,"prompt_tokens":132,"generated_tokens":304,"model_load_start_ms":1784444160275,"model_load_end_ms":1784444161669,"inference_start_ms":1784444161669,"inference_end_ms":1784444182339,"prompt_eval_end_ms":1784444162035,"first_token_ms":1784444162035,"aggregate_sampling_time_ms":576,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (1496 bytes in 0.006s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 1.8 MB/s (29121 bytes in 0.015s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elvis has a monthly saving target of $1125. In April, he wants to save twice as much daily in the second half as he saves in the first half in order to hit his target. How much does he have to save for each day in the second half of the month?<|im_end|>
+<|im_start|>assistant
+To solve this problem, we need to determine how much Elvis saves daily in the second half of April to meet his monthly target of $1125, given that he saves twice as much daily in the second half as in the first half.
+
+1. Let's denote the daily savings in the first half of April as \( x \).
+2. Therefore, the daily savings in the second half of April would be \( 2x \).
+3. There are 30 days in April, so the first half consists of 15 days and the second half also consists of 15 days.
+4. The total savings for the month can be expressed as:
+   \[
+   15x + 15(2x) = 1125
+   \]
+5. Simplifying the equation:
+   \[
+   15x + 30x = 1125
+   \]
+   \[
+   45x = 1125
+   \]
+6. Solving for \( x \):
+   \[
+   x = \frac{1125}{45} = 25
+   \]
+7. Therefore, the daily savings in the first half of April is $25.
+8. The daily savings in the second half of April is twice that amount:
+   \[
+   2 \times 25 = 50
+   \]
+
+The answer is 50.<|im_end|>
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

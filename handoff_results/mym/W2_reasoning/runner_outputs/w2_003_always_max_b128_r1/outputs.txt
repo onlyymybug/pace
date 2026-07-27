@@ -1,0 +1,8 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Laurel's friend gave her 24 baby outfits that her child no longer needed.  At her baby shower, Laurel received twice the amount of new baby outfits.  Then, Laurel's mom gifted her with another 15 baby outfits.  How many outfits does she have for her baby?<|im_end|>
+<|im_start|>assistant
+First, we calculate the total number of outfits Laurel received. She initially got 24 outfits from her friend and then received twice that amount from her baby shower, which is 2 * 24 = 48 outfits. Adding the 15 outfits from her mom, the total number of outfits is 24 + 48 + 15 = 81 outfits.
+
+The answer is 81.<|im_end|>

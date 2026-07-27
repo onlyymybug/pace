@@ -1,0 +1,102 @@
+$ run_qnn_pte --device 10.29.195.116:37907 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 392 --temperature 0.0 --htp-performance-mode 8 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_011_balanced_b256_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Howard spends $8 dollars at the arcade on Monday. On Tuesday, he spends twice as much at the arcade as he did on Monday. On Wednesday, he spends 4 times as much at the arcade as he spent on Tuesday. If he originally had $100, how much money does he have left?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:37907 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001427 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 8
+I 00:00:00.001576 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001599 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001606 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784442493.562562   18085 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.305224 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.442853 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.446674 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.448208 executorch:prompt_processor.cpp:273] Prompt Processor: total 136 prompt tokens (AR-128 * 2 iters)
+I 00:00:01.811656 executorch:runner.cpp:476] RSS after prompt prefill: 1002.093750 MiB (0 if unsupported)
+I 00:00:12.803587 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:12.809703 executorch:runner.cpp:493] RSS after finishing text generation: 1002.093750 MiB (0 if unsupported)
+I 00:00:12.809795 executorch:stats.h:161] 	Prompt Tokens: 136    Generated Tokens: 165
+I 00:00:12.809805 executorch:stats.h:167] 	Model Load Time:		1.446000 (seconds)
+I 00:00:12.809813 executorch:stats.h:176] 	Total inference time:		11.362000 (seconds)		 Rate: 	14.522091 (tokens/second)
+I 00:00:12.809822 executorch:stats.h:185] 		Prompt evaluation:	0.364000 (seconds)		 Rate: 	373.626374 (tokens/second)
+I 00:00:12.809832 executorch:stats.h:197] 		Generated 165 tokens:	10.998000 (seconds)		 Rate: 	15.002728 (tokens/second)
+I 00:00:12.809841 executorch:stats.h:205] 	Time to first generated token:	0.364000 (seconds)
+I 00:00:12.809849 executorch:stats.h:212] 	Sampling time over 301 tokens:	0.316000 (seconds)
+I 00:00:12.810724 executorch:qnn_llama_runner.cpp:192] Saved 167 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":373.626,"decode_token_per_sec":15.0027,"prompt_tokens":136,"generated_tokens":165,"model_load_start_ms":1784442493338,"model_load_end_ms":1784442494784,"inference_start_ms":1784442494784,"inference_end_ms":1784442506146,"prompt_eval_end_ms":1784442495148,"first_token_ms":1784442495148,"aggregate_sampling_time_ms":316,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (1131 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.010s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 1.1 MB/s (16075 bytes in 0.015s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Howard spends $8 dollars at the arcade on Monday. On Tuesday, he spends twice as much at the arcade as he did on Monday. On Wednesday, he spends 4 times as much at the arcade as he spent on Tuesday. If he originally had $100, how much money does he have left?<|im_end|>
+<|im_start|>assistant
+First, let's calculate how much money Howard spends at the arcade each day:
+
+- On Monday, he spends $8.
+- On Tuesday, he spends twice as much as Monday, so $8 * 2 = $16.
+- On Wednesday, he spends 4 times as much as Tuesday, so $16 * 4 = $64.
+
+Now, let's sum up the total amount spent over the three days:
+Total spent = $8 (Monday) + $16 (Tuesday) + $64 (Wednesday) = $88.
+
+He originally had $100. To find out how much money he has left, we subtract the total amount spent from his original amount:
+$100 - $88 = $12.
+
+The answer is 12.<|im_end|>
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

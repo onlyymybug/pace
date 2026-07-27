@@ -1,0 +1,10 @@
+task_group,runtime,model,backend,performance_mode,htp_performance_mode,htp_performance_mode_name,reasoning_budget_tokens,num_rows,num_unique_physical_runs,num_measured_physical_runs,start_temp_mean_c,end_temp_mean_c,skin_temp_delta_mean_c,max_observed_skin_temp_c,start_npu_temp_mean_c,end_npu_temp_mean_c,npu_temp_delta_mean_c,max_observed_npu_temp_c,max_thermal_status
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,always_max,2,kHtpBurst,128,120,30,30,44.023,44.645,0.622,49.278,63.027,65.087,2.06,69.6,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,always_max,2,kHtpBurst,256,120,30,30,46.093,46.853,0.76,53.896,65.323,67.82,2.497,76.5,1.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,always_max,2,kHtpBurst,512,120,30,30,46.683,47.538,0.855,56.892,65.677,68.29,2.613,80.7,2.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,balanced,8,kHtpBalanced,128,120,30,30,37.068,37.337,0.268,39.215,43.327,44.293,0.967,46.1,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,balanced,8,kHtpBalanced,256,120,30,30,37.733,38.049,0.316,40.553,44.05,44.94,0.89,47.3,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,balanced,8,kHtpBalanced,512,120,30,30,37.918,38.255,0.337,41.149,44.063,45.12,1.057,48.4,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,low_saver,5,kHtpLowPowerSaver,128,120,30,30,34.063,34.206,0.142,35.208,36.47,36.847,0.377,38.0,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,low_saver,5,kHtpLowPowerSaver,256,120,30,30,34.261,34.409,0.149,35.541,36.697,37.117,0.42,38.4,0.0
+W2_reasoning,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,low_saver,5,kHtpLowPowerSaver,512,120,30,30,34.404,34.561,0.157,35.755,36.807,37.25,0.443,38.4,0.0

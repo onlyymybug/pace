@@ -1,0 +1,25 @@
+{"index":0,"timestamp_ms":1784467626345,"delta_ms":0,"prompt_echo":true,"piece":"<|im_start|>user\nYou are a function-calling assistant. Return exactly one JSON object and no other text. The object must contain exactly two keys: action and arguments. Choose the single action whose meaning best matches the user's request. Include exactly every argument defined for that action and no others. Infer and normalize argument values from the request instead of relying on identical wording. Ignore irrelevant details, and if the user corrects a value, use the last stated value. Preserve JSON-native types: strings stay quoted, integers are unquoted whole numbers, booleans are true or false, and arrays are JSON arrays. Normalize clock times to 24-hour HH:MM, calendar start times to YYYY-MM-DD HH:MM, durations to minutes or seconds as named by the argument, and repeat_days to three-letter English day names such as Mon and Tue; use an empty array for a one-time alarm.\n\nAction schema:\n{\n  \"add_calendar_event\": {\n    \"attendees\": \"array\",\n    \"duration_minutes\": \"integer\",\n    \"online\": \"boolean\",\n    \"start_time\": \"string\",\n    \"title\": \"string\"\n  },\n  \"click_element\": {\n    \"click_count\": \"integer\",\n    \"element_id\": \"string\"\n  },\n  \"find_ui_element\": {\n    \"description\": \"string\",\n    \"visible_only\": \"boolean\"\n  },\n  \"open_app\": {\n    \"app_name\": \"string\"\n  },\n  \"open_url\": {\n    \"url\": \"string\"\n  },\n  \"search_app_store\": {\n    \"app_query\": \"string\",\n    \"free_only\": \"boolean\",\n    \"max_results\": \"integer\"\n  },\n  \"search_calendar\": {\n    \"days_ahead\": \"integer\",\n    \"keyword\": \"string\"\n  },\n  \"search_contacts\": {\n    \"favorites_only\": \"boolean\",\n    \"name\": \"string\"\n  },\n  \"search_web\": {\n    \"query\": \"string\",\n    \"result_limit\": \"integer\",\n    \"safe_search\": \"boolean\"\n  },\n  \"send_email\": {\n    \"body\": \"string\",\n    \"high_priority\": \"boolean\",\n    \"recipient\": \"string\",\n    \"subject\": \"string\"\n  },\n  \"send_message\": {\n    \"contact\": \"string\",\n    \"text\": \"string\",\n    \"urgent\": \"boolean\"\n  },\n  \"set_alarm\": {\n    \"label\": \"string\",\n    \"repeat_days\": \"array\",\n    \"time\": \"string\",\n    \"vibrate\": \"boolean\"\n  },\n  \"set_timer\": {\n    \"duration_seconds\": \"integer\",\n    \"label\": \"string\",\n    \"sound\": \"boolean\"\n  },\n  \"type_text\": {\n    \"replace_existing\": \"boolean\",\n    \"text\": \"string\"\n  }\n}\n\nRequired output form:\n{\"action\":\"<action_name>\",\"arguments\":{\"<argument_name>\":<value>}}\n\nUser request:\nThis is urgent: send Alice the message Server is back online.<|im_end|>\n<|im_start|>assistant\n"}
+{"index":1,"timestamp_ms":1784467628301,"delta_ms":1956,"prompt_echo":false,"piece":"{\""}
+{"index":2,"timestamp_ms":1784467628462,"delta_ms":2117,"prompt_echo":false,"piece":"action"}
+{"index":3,"timestamp_ms":1784467628602,"delta_ms":2257,"prompt_echo":false,"piece":"\":\""}
+{"index":4,"timestamp_ms":1784467628741,"delta_ms":2396,"prompt_echo":false,"piece":"send"}
+{"index":5,"timestamp_ms":1784467628878,"delta_ms":2533,"prompt_echo":false,"piece":"_message"}
+{"index":6,"timestamp_ms":1784467629017,"delta_ms":2672,"prompt_echo":false,"piece":"\",\""}
+{"index":7,"timestamp_ms":1784467629155,"delta_ms":2810,"prompt_echo":false,"piece":"arguments"}
+{"index":8,"timestamp_ms":1784467629295,"delta_ms":2950,"prompt_echo":false,"piece":"\":{\""}
+{"index":9,"timestamp_ms":1784467629432,"delta_ms":3087,"prompt_echo":false,"piece":"text"}
+{"index":10,"timestamp_ms":1784467629572,"delta_ms":3227,"prompt_echo":false,"piece":"\":\""}
+{"index":11,"timestamp_ms":1784467629708,"delta_ms":3363,"prompt_echo":false,"piece":"Server"}
+{"index":12,"timestamp_ms":1784467629848,"delta_ms":3503,"prompt_echo":false,"piece":" is"}
+{"index":13,"timestamp_ms":1784467629988,"delta_ms":3643,"prompt_echo":false,"piece":" back"}
+{"index":14,"timestamp_ms":1784467630124,"delta_ms":3779,"prompt_echo":false,"piece":" online"}
+{"index":15,"timestamp_ms":1784467630264,"delta_ms":3919,"prompt_echo":false,"piece":".\",\""}
+{"index":16,"timestamp_ms":1784467630402,"delta_ms":4057,"prompt_echo":false,"piece":"urgent"}
+{"index":17,"timestamp_ms":1784467630541,"delta_ms":4196,"prompt_echo":false,"piece":"\":"}
+{"index":18,"timestamp_ms":1784467630679,"delta_ms":4334,"prompt_echo":false,"piece":"true"}
+{"index":19,"timestamp_ms":1784467630819,"delta_ms":4474,"prompt_echo":false,"piece":",\""}
+{"index":20,"timestamp_ms":1784467630959,"delta_ms":4614,"prompt_echo":false,"piece":"contact"}
+{"index":21,"timestamp_ms":1784467631096,"delta_ms":4751,"prompt_echo":false,"piece":"\":\""}
+{"index":22,"timestamp_ms":1784467631235,"delta_ms":4890,"prompt_echo":false,"piece":"Alice"}
+{"index":23,"timestamp_ms":1784467631372,"delta_ms":5027,"prompt_echo":false,"piece":"\"}}"}
+{"index":24,"timestamp_ms":1784467631512,"delta_ms":5167,"prompt_echo":false,"piece":"<|im_end|>"}

@@ -1,0 +1,8 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dominick went to his team's changing room and saw half as many robots as helmets and half as many helmets as footballs kept there. If there were 20 helmets, calculate the total number of items Dominick saw.<|im_end|>
+<|im_start|>assistant
+If there were 20 helmets and Dominick saw half as many robots as helmets, then there were 10 robots. Additionally, since there were half as many helmets as footballs, there must have been 40 footballs. Adding these up, 10 robots + 20 helmets + 40 footballs = 70 items.
+
+The answer is 70.<|im_end|>

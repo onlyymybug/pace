@@ -1,0 +1,12 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rani has ten more crabs than Monic, who has 4 fewer crabs than Bo. If Bo has 40 crabs, calculate the total number of crabs the three have together.<|im_end|>
+<|im_start|>assistant
+First, let's find out how many crabs Monic has. Since Bo has 40 crabs and Monic has 4 fewer crabs than Bo, Monic has 40 - 4 = 36 crabs.
+
+Now, Rani has ten more crabs than Monic. Since Monic has 36 crabs, Rani has 36 + 10 = 46 crabs.
+
+To find the total number of crabs the three have together, we add up the crabs each one has: 40 (Bo) + 36 (Monica) + 46 (Rani) = 122 crabs.
+
+The answer is 122.<|im_end|>

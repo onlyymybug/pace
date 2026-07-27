@@ -1,0 +1,146 @@
+$ cd /home/jai195/All/lby/executorch
+$ /home/jai195/All/lby/executorch/.venv/bin/python -m examples.qualcomm.oss_scripts.llama.llama_direct --build_folder /home/jai195/All/lby/executorch/build-android --device 10.29.195.116:40461 --soc_model SM8750 --temperature 0.0 --model_mode hybrid --prefill_ar_len 128 --max_seq_len 532 --decoder_model qwen2_5-3b_instruct --prompt What makes a chatbot response feel smooth to a user? --artifact /home/jai195/All/lby/executorch/llama_qnn_qwen25_3b_instruct --pre_gen_pte /home/jai195/All/lby/executorch/llama_qnn_qwen25_3b_instruct --htp_performance_mode 2 --skip_push
+
+W0716 15:00:43.817000 475209 .venv/lib/python3.12/site-packages/torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+I tokenizers:regex.cpp:27] Registering override fallback regex
+/home/jai195/All/lby/executorch/.venv/lib/python3.12/site-packages/torchtune/__init__.py:18: UserWarning: The 'torch' module has already been imported. Setting PYTORCH_CUDA_ALLOC_CONF may not have an effect.For best results, set PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True before importing 'torch'.
+  warnings.warn(
+[QNN] Using QNN SDK at /home/jai195/All/lby/QNN_SDK/2.37.0.250724 (from QNN_SDK_ROOT)
+WARNING:root:The backend_opinfo module couldn't be imported, so the abstract implementation will be used instead. This might be because $QNN_SDK_ROOT/lib/python isn't included in your PYTHONPATH, or the `BackendOpInfo` API isn't available in your QNN SDK version. Note that the `BackendOpInfo` API is supported starting from QNN SDK 2.41 and above.
+W0716 15:00:49.918000 475209 .venv/lib/python3.12/site-packages/torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+INFO:root:*** qwen2_5-3b_instruct ***
++-----------------------+--------------------------+
+| Config                | Value                    |
++=======================+==========================+
+| decoder_model_version | qwen2_5_instruct         |
++-----------------------+--------------------------+
+| instruct_model        | True                     |
++-----------------------+--------------------------+
+| masked_softmax        | True                     |
++-----------------------+--------------------------+
+| num_sharding          | 4                        |
++-----------------------+--------------------------+
+| quant_recipe          | Qwen2_5_1_5BQuantRecipe  |
++-----------------------+--------------------------+
+| r1                    | False                    |
++-----------------------+--------------------------+
+| r2                    | False                    |
++-----------------------+--------------------------+
+| r3                    | True                     |
++-----------------------+--------------------------+
+| repo_id               | Qwen/Qwen2.5-3B-Instruct |
++-----------------------+--------------------------+
+| seq_mse_candidates    | 0                        |
++-----------------------+--------------------------+
+| transform_weight      | False                    |
++-----------------------+--------------------------+
+INFO:root:Using local tokenizer from /home/jai195/All/lby/executorch/llama_qnn_qwen25_3b_instruct
+INFO:root:Running direct prompt_eval with pre-generated PTE; skipping HybridTextDecoder initialization.
+INFO:root:Using parser's config
+INFO:root:Pregenerated pte path given. Using pre_gen_pte path: ['/home/jai195/All/lby/executorch/llama_qnn_qwen25_3b_instruct/hybrid_llama_qnn.pte']
+INFO:root:Using parser's config
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001783 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 2
+I 00:00:00.001922 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001932 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001938 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784185252.947366   10472 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.347776 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.291181 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.297509 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.299350 executorch:prompt_processor.cpp:273] Prompt Processor: total 20 prompt tokens (AR-128 * 1 iters)
+I 00:00:01.419573 executorch:runner.cpp:476] RSS after prompt prefill: 1004.234375 MiB (0 if unsupported)
+I 00:00:15.745223 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:15.745254 executorch:runner.cpp:493] RSS after finishing text generation: 1004.234375 MiB (0 if unsupported)
+I 00:00:15.745282 executorch:stats.h:161] 	Prompt Tokens: 20    Generated Tokens: 350
+I 00:00:15.745284 executorch:stats.h:167] 	Model Load Time:		1.296000 (seconds)
+I 00:00:15.745286 executorch:stats.h:176] 	Total inference time:		14.447000 (seconds)		 Rate: 	24.226483 (tokens/second)
+I 00:00:15.745289 executorch:stats.h:185] 		Prompt evaluation:	0.122000 (seconds)		 Rate: 	163.934426 (tokens/second)
+I 00:00:15.745292 executorch:stats.h:197] 		Generated 350 tokens:	14.325000 (seconds)		 Rate: 	24.432810 (tokens/second)
+I 00:00:15.745296 executorch:stats.h:205] 	Time to first generated token:	0.122000 (seconds)
+I 00:00:15.745298 executorch:stats.h:212] 	Sampling time over 370 tokens:	0.163000 (seconds)
+I 00:00:15.745847 executorch:qnn_llama_runner.cpp:192] Saved 352 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":163.934,"decode_token_per_sec":24.4328,"prompt_tokens":20,"generated_tokens":350,"model_load_start_ms":1784185252690,"model_load_end_ms":1784185253986,"inference_start_ms":1784185253986,"inference_end_ms":1784185268433,"prompt_eval_end_ms":1784185254108,"first_token_ms":1784185254108,"aggregate_sampling_time_ms":163,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (1909 bytes in 0.008s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.012s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 2.2 MB/s (33590 bytes in 0.015s)
+INFO:root:Device Inference Results[0]:
+<|im_start|>user
+What makes a chatbot response feel smooth to a user?<|im_end|>
+<|im_start|>assistant
+A chatbot response feels smooth to a user when it is:
+
+1. **Contextual**: The response is relevant to the user's query and fits the context of the conversation. It should feel like the bot understands the user's intent and is providing a helpful answer.
+
+2. **Consistent**: The bot's responses should be consistent with its brand and the information it has been programmed with. Consistency builds trust and makes the interaction feel natural.
+
+3. **Timely**: The bot should respond quickly and efficiently. Users expect immediate or near-immediate responses, especially in customer service contexts.
+
+4. **Personalized**: Where appropriate, the bot should tailor its responses to the user's preferences and past interactions. Personalization can make the interaction feel more human-like.
+
+5. **Clear and Concise**: The response should be clear and to the point. Avoid overly complex language or jargon that might confuse the user.
+
+6. **Friendly and Helpful**: The tone should be friendly and helpful. Users appreciate a bot that is polite and supportive.
+
+7. **Consistent with Brand Voice**: If the bot represents a brand, its responses should align with the brand's voice and personality.
+
+8. **Error Handling**: If the bot cannot provide an answer, it should gracefully handle errors and provide a helpful fallback message or direct the user to another resource.
+
+9. **Relevant Information**: The bot should provide relevant information that directly addresses the user's query without unnecessary digressions.
+
+10. **Consistent with Industry Standards**: If the bot is in a specific industry, its responses should adhere to the industry standards and best practices.
+
+By focusing on these aspects, a chatbot can enhance user experience and make interactions feel more natural and satisfying.<|im_end|>
+Finish the running pre_gen_pte from /home/jai195/All/lby/executorch/llama_qnn_qwen25_3b_instruct
+
+[pace_eval.runner] returncode = 0

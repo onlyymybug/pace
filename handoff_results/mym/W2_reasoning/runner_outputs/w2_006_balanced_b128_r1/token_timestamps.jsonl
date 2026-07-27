@@ -1,0 +1,129 @@
+{"index":0,"timestamp_ms":1784441273801,"delta_ms":0,"prompt_echo":true,"piece":"<|im_start|>user\nSolve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.\n\nProblem: John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calories per ounce.  How many calories is the omelet?<|im_end|>\n<|im_start|>assistant\n"}
+{"index":1,"timestamp_ms":1784441274167,"delta_ms":366,"prompt_echo":false,"piece":"First"}
+{"index":2,"timestamp_ms":1784441274248,"delta_ms":447,"prompt_echo":false,"piece":","}
+{"index":3,"timestamp_ms":1784441274315,"delta_ms":514,"prompt_echo":false,"piece":" let"}
+{"index":4,"timestamp_ms":1784441274381,"delta_ms":580,"prompt_echo":false,"piece":"'s"}
+{"index":5,"timestamp_ms":1784441274447,"delta_ms":646,"prompt_echo":false,"piece":" calculate"}
+{"index":6,"timestamp_ms":1784441274514,"delta_ms":713,"prompt_echo":false,"piece":" the"}
+{"index":7,"timestamp_ms":1784441274580,"delta_ms":779,"prompt_echo":false,"piece":" total"}
+{"index":8,"timestamp_ms":1784441274647,"delta_ms":846,"prompt_echo":false,"piece":" calories"}
+{"index":9,"timestamp_ms":1784441274714,"delta_ms":913,"prompt_echo":false,"piece":" from"}
+{"index":10,"timestamp_ms":1784441274780,"delta_ms":979,"prompt_echo":false,"piece":" the"}
+{"index":11,"timestamp_ms":1784441274847,"delta_ms":1046,"prompt_echo":false,"piece":" eggs"}
+{"index":12,"timestamp_ms":1784441274914,"delta_ms":1113,"prompt_echo":false,"piece":"."}
+{"index":13,"timestamp_ms":1784441274981,"delta_ms":1180,"prompt_echo":false,"piece":" John"}
+{"index":14,"timestamp_ms":1784441275047,"delta_ms":1246,"prompt_echo":false,"piece":" uses"}
+{"index":15,"timestamp_ms":1784441275114,"delta_ms":1313,"prompt_echo":false,"piece":" "}
+{"index":16,"timestamp_ms":1784441275180,"delta_ms":1379,"prompt_echo":false,"piece":"6"}
+{"index":17,"timestamp_ms":1784441275247,"delta_ms":1446,"prompt_echo":false,"piece":" eggs"}
+{"index":18,"timestamp_ms":1784441275313,"delta_ms":1512,"prompt_echo":false,"piece":","}
+{"index":19,"timestamp_ms":1784441275379,"delta_ms":1578,"prompt_echo":false,"piece":" and"}
+{"index":20,"timestamp_ms":1784441275446,"delta_ms":1645,"prompt_echo":false,"piece":" each"}
+{"index":21,"timestamp_ms":1784441275512,"delta_ms":1711,"prompt_echo":false,"piece":" egg"}
+{"index":22,"timestamp_ms":1784441275579,"delta_ms":1778,"prompt_echo":false,"piece":" has"}
+{"index":23,"timestamp_ms":1784441275646,"delta_ms":1845,"prompt_echo":false,"piece":" "}
+{"index":24,"timestamp_ms":1784441275712,"delta_ms":1911,"prompt_echo":false,"piece":"7"}
+{"index":25,"timestamp_ms":1784441275779,"delta_ms":1978,"prompt_echo":false,"piece":"5"}
+{"index":26,"timestamp_ms":1784441275845,"delta_ms":2044,"prompt_echo":false,"piece":" calories"}
+{"index":27,"timestamp_ms":1784441275911,"delta_ms":2110,"prompt_echo":false,"piece":"."}
+{"index":28,"timestamp_ms":1784441275977,"delta_ms":2176,"prompt_echo":false,"piece":" So"}
+{"index":29,"timestamp_ms":1784441276044,"delta_ms":2243,"prompt_echo":false,"piece":","}
+{"index":30,"timestamp_ms":1784441276110,"delta_ms":2309,"prompt_echo":false,"piece":" the"}
+{"index":31,"timestamp_ms":1784441276177,"delta_ms":2376,"prompt_echo":false,"piece":" total"}
+{"index":32,"timestamp_ms":1784441276244,"delta_ms":2443,"prompt_echo":false,"piece":" calories"}
+{"index":33,"timestamp_ms":1784441276311,"delta_ms":2510,"prompt_echo":false,"piece":" from"}
+{"index":34,"timestamp_ms":1784441276377,"delta_ms":2576,"prompt_echo":false,"piece":" eggs"}
+{"index":35,"timestamp_ms":1784441276443,"delta_ms":2642,"prompt_echo":false,"piece":" is"}
+{"index":36,"timestamp_ms":1784441276509,"delta_ms":2708,"prompt_echo":false,"piece":" "}
+{"index":37,"timestamp_ms":1784441276576,"delta_ms":2775,"prompt_echo":false,"piece":"6"}
+{"index":38,"timestamp_ms":1784441276642,"delta_ms":2841,"prompt_echo":false,"piece":" *"}
+{"index":39,"timestamp_ms":1784441276709,"delta_ms":2908,"prompt_echo":false,"piece":" "}
+{"index":40,"timestamp_ms":1784441276776,"delta_ms":2975,"prompt_echo":false,"piece":"7"}
+{"index":41,"timestamp_ms":1784441276843,"delta_ms":3042,"prompt_echo":false,"piece":"5"}
+{"index":42,"timestamp_ms":1784441276910,"delta_ms":3109,"prompt_echo":false,"piece":".\n\n"}
+{"index":43,"timestamp_ms":1784441276976,"delta_ms":3175,"prompt_echo":false,"piece":"Then"}
+{"index":44,"timestamp_ms":1784441277044,"delta_ms":3243,"prompt_echo":false,"piece":","}
+{"index":45,"timestamp_ms":1784441277111,"delta_ms":3310,"prompt_echo":false,"piece":" we"}
+{"index":46,"timestamp_ms":1784441277177,"delta_ms":3376,"prompt_echo":false,"piece":" calculate"}
+{"index":47,"timestamp_ms":1784441277244,"delta_ms":3443,"prompt_echo":false,"piece":" the"}
+{"index":48,"timestamp_ms":1784441277310,"delta_ms":3509,"prompt_echo":false,"piece":" total"}
+{"index":49,"timestamp_ms":1784441277378,"delta_ms":3577,"prompt_echo":false,"piece":" calories"}
+{"index":50,"timestamp_ms":1784441277445,"delta_ms":3644,"prompt_echo":false,"piece":" from"}
+{"index":51,"timestamp_ms":1784441277511,"delta_ms":3710,"prompt_echo":false,"piece":" the"}
+{"index":52,"timestamp_ms":1784441277577,"delta_ms":3776,"prompt_echo":false,"piece":" cheese"}
+{"index":53,"timestamp_ms":1784441277644,"delta_ms":3843,"prompt_echo":false,"piece":"."}
+{"index":54,"timestamp_ms":1784441277710,"delta_ms":3909,"prompt_echo":false,"piece":" John"}
+{"index":55,"timestamp_ms":1784441277777,"delta_ms":3976,"prompt_echo":false,"piece":" uses"}
+{"index":56,"timestamp_ms":1784441277844,"delta_ms":4043,"prompt_echo":false,"piece":" "}
+{"index":57,"timestamp_ms":1784441277911,"delta_ms":4110,"prompt_echo":false,"piece":"2"}
+{"index":58,"timestamp_ms":1784441277977,"delta_ms":4176,"prompt_echo":false,"piece":" oz"}
+{"index":59,"timestamp_ms":1784441278044,"delta_ms":4243,"prompt_echo":false,"piece":" of"}
+{"index":60,"timestamp_ms":1784441278110,"delta_ms":4309,"prompt_echo":false,"piece":" cheese"}
+{"index":61,"timestamp_ms":1784441278177,"delta_ms":4376,"prompt_echo":false,"piece":","}
+{"index":62,"timestamp_ms":1784441278244,"delta_ms":4443,"prompt_echo":false,"piece":" and"}
+{"index":63,"timestamp_ms":1784441278311,"delta_ms":4510,"prompt_echo":false,"piece":" each"}
+{"index":64,"timestamp_ms":1784441278377,"delta_ms":4576,"prompt_echo":false,"piece":" ounce"}
+{"index":65,"timestamp_ms":1784441278444,"delta_ms":4643,"prompt_echo":false,"piece":" has"}
+{"index":66,"timestamp_ms":1784441278510,"delta_ms":4709,"prompt_echo":false,"piece":" "}
+{"index":67,"timestamp_ms":1784441278575,"delta_ms":4774,"prompt_echo":false,"piece":"1"}
+{"index":68,"timestamp_ms":1784441278641,"delta_ms":4840,"prompt_echo":false,"piece":"2"}
+{"index":69,"timestamp_ms":1784441278708,"delta_ms":4907,"prompt_echo":false,"piece":"0"}
+{"index":70,"timestamp_ms":1784441278774,"delta_ms":4973,"prompt_echo":false,"piece":" calories"}
+{"index":71,"timestamp_ms":1784441278842,"delta_ms":5041,"prompt_echo":false,"piece":"."}
+{"index":72,"timestamp_ms":1784441278914,"delta_ms":5113,"prompt_echo":false,"piece":" So"}
+{"index":73,"timestamp_ms":1784441278981,"delta_ms":5180,"prompt_echo":false,"piece":","}
+{"index":74,"timestamp_ms":1784441279048,"delta_ms":5247,"prompt_echo":false,"piece":" the"}
+{"index":75,"timestamp_ms":1784441279115,"delta_ms":5314,"prompt_echo":false,"piece":" total"}
+{"index":76,"timestamp_ms":1784441279181,"delta_ms":5380,"prompt_echo":false,"piece":" calories"}
+{"index":77,"timestamp_ms":1784441279248,"delta_ms":5447,"prompt_echo":false,"piece":" from"}
+{"index":78,"timestamp_ms":1784441279315,"delta_ms":5514,"prompt_echo":false,"piece":" cheese"}
+{"index":79,"timestamp_ms":1784441279382,"delta_ms":5581,"prompt_echo":false,"piece":" is"}
+{"index":80,"timestamp_ms":1784441279450,"delta_ms":5649,"prompt_echo":false,"piece":" "}
+{"index":81,"timestamp_ms":1784441279516,"delta_ms":5715,"prompt_echo":false,"piece":"2"}
+{"index":82,"timestamp_ms":1784441279583,"delta_ms":5782,"prompt_echo":false,"piece":" *"}
+{"index":83,"timestamp_ms":1784441279650,"delta_ms":5849,"prompt_echo":false,"piece":" "}
+{"index":84,"timestamp_ms":1784441279716,"delta_ms":5915,"prompt_echo":false,"piece":"1"}
+{"index":85,"timestamp_ms":1784441279783,"delta_ms":5982,"prompt_echo":false,"piece":"2"}
+{"index":86,"timestamp_ms":1784441279849,"delta_ms":6048,"prompt_echo":false,"piece":"0"}
+{"index":87,"timestamp_ms":1784441279916,"delta_ms":6115,"prompt_echo":false,"piece":".\n\n"}
+{"index":88,"timestamp_ms":1784441279983,"delta_ms":6182,"prompt_echo":false,"piece":"Lastly"}
+{"index":89,"timestamp_ms":1784441280048,"delta_ms":6247,"prompt_echo":false,"piece":","}
+{"index":90,"timestamp_ms":1784441280114,"delta_ms":6313,"prompt_echo":false,"piece":" we"}
+{"index":91,"timestamp_ms":1784441280180,"delta_ms":6379,"prompt_echo":false,"piece":" calculate"}
+{"index":92,"timestamp_ms":1784441280246,"delta_ms":6445,"prompt_echo":false,"piece":" the"}
+{"index":93,"timestamp_ms":1784441280311,"delta_ms":6510,"prompt_echo":false,"piece":" total"}
+{"index":94,"timestamp_ms":1784441280379,"delta_ms":6578,"prompt_echo":false,"piece":" calories"}
+{"index":95,"timestamp_ms":1784441280445,"delta_ms":6644,"prompt_echo":false,"piece":" from"}
+{"index":96,"timestamp_ms":1784441280512,"delta_ms":6711,"prompt_echo":false,"piece":" the"}
+{"index":97,"timestamp_ms":1784441280579,"delta_ms":6778,"prompt_echo":false,"piece":" ham"}
+{"index":98,"timestamp_ms":1784441280646,"delta_ms":6845,"prompt_echo":false,"piece":"."}
+{"index":99,"timestamp_ms":1784441280713,"delta_ms":6912,"prompt_echo":false,"piece":" John"}
+{"index":100,"timestamp_ms":1784441280782,"delta_ms":6981,"prompt_echo":false,"piece":" uses"}
+{"index":101,"timestamp_ms":1784441280848,"delta_ms":7047,"prompt_echo":false,"piece":" an"}
+{"index":102,"timestamp_ms":1784441280915,"delta_ms":7114,"prompt_echo":false,"piece":" equal"}
+{"index":103,"timestamp_ms":1784441280982,"delta_ms":7181,"prompt_echo":false,"piece":" amount"}
+{"index":104,"timestamp_ms":1784441281048,"delta_ms":7247,"prompt_echo":false,"piece":" of"}
+{"index":105,"timestamp_ms":1784441281115,"delta_ms":7314,"prompt_echo":false,"piece":" ham"}
+{"index":106,"timestamp_ms":1784441281182,"delta_ms":7381,"prompt_echo":false,"piece":" as"}
+{"index":107,"timestamp_ms":1784441281250,"delta_ms":7449,"prompt_echo":false,"piece":" cheese"}
+{"index":108,"timestamp_ms":1784441281318,"delta_ms":7517,"prompt_echo":false,"piece":","}
+{"index":109,"timestamp_ms":1784441281384,"delta_ms":7583,"prompt_echo":false,"piece":" which"}
+{"index":110,"timestamp_ms":1784441281451,"delta_ms":7650,"prompt_echo":false,"piece":" is"}
+{"index":111,"timestamp_ms":1784441281518,"delta_ms":7717,"prompt_echo":false,"piece":" "}
+{"index":112,"timestamp_ms":1784441281585,"delta_ms":7784,"prompt_echo":false,"piece":"2"}
+{"index":113,"timestamp_ms":1784441281652,"delta_ms":7851,"prompt_echo":false,"piece":" oz"}
+{"index":114,"timestamp_ms":1784441281718,"delta_ms":7917,"prompt_echo":false,"piece":","}
+{"index":115,"timestamp_ms":1784441281785,"delta_ms":7984,"prompt_echo":false,"piece":" and"}
+{"index":116,"timestamp_ms":1784441281853,"delta_ms":8052,"prompt_echo":false,"piece":" each"}
+{"index":117,"timestamp_ms":1784441281923,"delta_ms":8122,"prompt_echo":false,"piece":" ounce"}
+{"index":118,"timestamp_ms":1784441281990,"delta_ms":8189,"prompt_echo":false,"piece":" has"}
+{"index":119,"timestamp_ms":1784441282056,"delta_ms":8255,"prompt_echo":false,"piece":" "}
+{"index":120,"timestamp_ms":1784441282122,"delta_ms":8321,"prompt_echo":false,"piece":"4"}
+{"index":121,"timestamp_ms":1784441282189,"delta_ms":8388,"prompt_echo":false,"piece":"0"}
+{"index":122,"timestamp_ms":1784441282256,"delta_ms":8455,"prompt_echo":false,"piece":" calories"}
+{"index":123,"timestamp_ms":1784441282323,"delta_ms":8522,"prompt_echo":false,"piece":"."}
+{"index":124,"timestamp_ms":1784441282389,"delta_ms":8588,"prompt_echo":false,"piece":" So"}
+{"index":125,"timestamp_ms":1784441282456,"delta_ms":8655,"prompt_echo":false,"piece":","}
+{"index":126,"timestamp_ms":1784441282523,"delta_ms":8722,"prompt_echo":false,"piece":" the"}
+{"index":127,"timestamp_ms":1784441282589,"delta_ms":8788,"prompt_echo":false,"piece":" total"}
+{"index":128,"timestamp_ms":1784441282655,"delta_ms":8854,"prompt_echo":false,"piece":" calories"}

@@ -1,0 +1,101 @@
+$ run_qnn_pte --device 10.29.195.116:35759 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 275 --temperature 0.0 --htp-performance-mode 5 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_023_low_saver_b128_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Shania is designing her own dress, and decides to make it a longer dress by extending the dress by 50% of its original length. She also adds 20cm to the bottom of the dress with a lace trim. If the final design is 140cm long then how long, in centimeters, was the dress in its original design?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:35759 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.000466 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 5
+I 00:00:00.000500 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.000502 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.000504 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784451319.798759   32346 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.274603 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:02.057496 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:02.064504 executorch:runner.cpp:363] creating io_memory
+I 00:00:02.066451 executorch:prompt_processor.cpp:273] Prompt Processor: total 147 prompt tokens (AR-128 * 2 iters)
+I 00:00:02.856096 executorch:runner.cpp:476] RSS after prompt prefill: 1002.613281 MiB (0 if unsupported)
+I 00:00:20.767865 executorch:token_generator.cpp:358] Warning: Generation stopped at seq_len limit (275) without reaching EOS token. Response may be incomplete.
+I 00:00:20.769330 executorch:token_generator.cpp:372] - seq_len (275) is less than compiled max_context_len (1024). Consider increasing --seq_len (up to 1024).
+I 00:00:20.769435 executorch:runner.cpp:493] RSS after finishing text generation: 1002.613281 MiB (0 if unsupported)
+I 00:00:20.769647 executorch:stats.h:161] 	Prompt Tokens: 147    Generated Tokens: 127
+I 00:00:20.769792 executorch:stats.h:167] 	Model Load Time:		2.064000 (seconds)
+I 00:00:20.769833 executorch:stats.h:176] 	Total inference time:		18.705000 (seconds)		 Rate: 	6.789628 (tokens/second)
+I 00:00:20.769844 executorch:stats.h:185] 		Prompt evaluation:	0.791000 (seconds)		 Rate: 	185.840708 (tokens/second)
+I 00:00:20.769853 executorch:stats.h:197] 		Generated 127 tokens:	17.914000 (seconds)		 Rate: 	7.089427 (tokens/second)
+I 00:00:20.769863 executorch:stats.h:205] 	Time to first generated token:	0.791000 (seconds)
+I 00:00:20.769870 executorch:stats.h:212] 	Sampling time over 274 tokens:	0.243000 (seconds)
+I 00:00:20.771114 executorch:qnn_llama_runner.cpp:192] Saved 129 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":185.841,"decode_token_per_sec":7.08943,"prompt_tokens":147,"generated_tokens":127,"model_load_start_ms":1784451319602,"model_load_end_ms":1784451321666,"inference_start_ms":1784451321666,"inference_end_ms":1784451340371,"prompt_eval_end_ms":1784451322457,"first_token_ms":1784451322457,"aggregate_sampling_time_ms":243,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.1 MB/s (995 bytes in 0.013s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.023s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 0.3 MB/s (12573 bytes in 0.042s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Shania is designing her own dress, and decides to make it a longer dress by extending the dress by 50% of its original length. She also adds 20cm to the bottom of the dress with a lace trim. If the final design is 140cm long then how long, in centimeters, was the dress in its original design?<|im_end|>
+<|im_start|>assistant
+Let's denote the original length of the dress as x cm. According to the problem, Shania extends the dress by 50% of its original length and then adds 20cm to the bottom. The final length is 140cm.
+
+So, the equation representing this situation is:
+\[ x + 0.5x + 20 = 140 \]
+
+Simplifying the left side:
+\[ 1.5x + 20 = 140 \]
+
+Subtract 20 from both sides:
+\[ 1.5x = 120 \]
+
+Div
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

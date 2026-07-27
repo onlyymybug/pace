@@ -1,0 +1,94 @@
+$ run_qnn_pte --device 10.29.195.116:37907 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 263 --temperature 0.0 --htp-performance-mode 8 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_006_balanced_b128_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calories per ounce.  How many calories is the omelet?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:37907 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001568 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 8
+I 00:00:00.001633 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001642 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001647 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784441272.552611   15488 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.319797 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.480594 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.483470 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.484876 executorch:prompt_processor.cpp:273] Prompt Processor: total 135 prompt tokens (AR-128 * 2 iters)
+I 00:00:01.850662 executorch:runner.cpp:476] RSS after prompt prefill: 1002.351562 MiB (0 if unsupported)
+I 00:00:10.339066 executorch:token_generator.cpp:358] Warning: Generation stopped at seq_len limit (263) without reaching EOS token. Response may be incomplete.
+I 00:00:10.339818 executorch:token_generator.cpp:372] - seq_len (263) is less than compiled max_context_len (1024). Consider increasing --seq_len (up to 1024).
+I 00:00:10.339899 executorch:runner.cpp:493] RSS after finishing text generation: 1002.351562 MiB (0 if unsupported)
+I 00:00:10.340301 executorch:stats.h:161] 	Prompt Tokens: 135    Generated Tokens: 127
+I 00:00:10.340399 executorch:stats.h:167] 	Model Load Time:		1.482000 (seconds)
+I 00:00:10.340459 executorch:stats.h:176] 	Total inference time:		8.856000 (seconds)		 Rate: 	14.340560 (tokens/second)
+I 00:00:10.340518 executorch:stats.h:185] 		Prompt evaluation:	0.367000 (seconds)		 Rate: 	367.847411 (tokens/second)
+I 00:00:10.340576 executorch:stats.h:197] 		Generated 127 tokens:	8.489000 (seconds)		 Rate: 	14.960537 (tokens/second)
+I 00:00:10.340633 executorch:stats.h:205] 	Time to first generated token:	0.367000 (seconds)
+I 00:00:10.340704 executorch:stats.h:212] 	Sampling time over 262 tokens:	0.241000 (seconds)
+I 00:00:10.341601 executorch:qnn_llama_runner.cpp:192] Saved 129 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":367.847,"decode_token_per_sec":14.9605,"prompt_tokens":135,"generated_tokens":127,"model_load_start_ms":1784441272318,"model_load_end_ms":1784441273800,"inference_start_ms":1784441273800,"inference_end_ms":1784441282656,"prompt_eval_end_ms":1784441274167,"first_token_ms":1784441274167,"aggregate_sampling_time_ms":241,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (1016 bytes in 0.006s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.005s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 1.2 MB/s (12511 bytes in 0.010s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John makes himself a 6 egg omelet with 2 oz of cheese and an equal amount of ham.  Eggs are 75 calories each.  Cheese is 120 calories per ounce.  Ham is 40 calories per ounce.  How many calories is the omelet?<|im_end|>
+<|im_start|>assistant
+First, let's calculate the total calories from the eggs. John uses 6 eggs, and each egg has 75 calories. So, the total calories from eggs is 6 * 75.
+
+Then, we calculate the total calories from the cheese. John uses 2 oz of cheese, and each ounce has 120 calories. So, the total calories from cheese is 2 * 120.
+
+Lastly, we calculate the total calories from the ham. John uses an equal amount of ham as cheese, which is 2 oz, and each ounce has 40 calories. So, the total calories
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

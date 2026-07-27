@@ -1,0 +1,25 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brinley is in Mr. Bert's math class. Mr. Bert gives six tests each semester. He allows the students to remove the lowest score from the average each semester. If Brinley has scores of 89, 71, 92, 100 and 86 on the first five tests, what score does she need on the sixth test to get an average of 93?<|im_end|>
+<|im_start|>assistant
+To solve this, we need to find the score Brinley needs on her sixth test to achieve an average of 93 across all six tests.
+
+First, let's calculate the sum of her current scores:
+89 + 71 + 92 + 100 + 86 = 438
+
+Let's denote the score on her sixth test as \( x \).
+
+To have an average of 93 over six tests, the total sum of her scores should be:
+93 * 6 = 558
+
+So, the equation to find \( x \) is:
+438 + \( x \) = 558
+
+Solving for \( x \):
+\( x = 558 - 438 \)
+\( x = 120
+
+Therefore, Brinley needs to score 120 on her sixth test to achieve an average of 93.
+
+The answer is 120.<|im_end|>

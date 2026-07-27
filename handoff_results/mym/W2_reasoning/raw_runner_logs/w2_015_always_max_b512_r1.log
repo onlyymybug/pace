@@ -1,0 +1,104 @@
+$ run_qnn_pte --device 10.29.195.116:37907 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 656 --temperature 0.0 --htp-performance-mode 2 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_015_always_max_b512_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kenny is selling his Pokemon cards to buy a ticket to an amusement park, which costs $100. He has a collection of cards and plans to sell them for $1.5 each. He keeps 1/3 of them and gets to go to the amusement park with $50 in spending cash. How many cards did he start with?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:37907 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.000792 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 2
+I 00:00:00.000848 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.000854 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.000858 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784439853.791600   13151 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.395030 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.389034 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.392568 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.394172 executorch:prompt_processor.cpp:273] Prompt Processor: total 144 prompt tokens (AR-128 * 2 iters)
+I 00:00:01.635157 executorch:runner.cpp:476] RSS after prompt prefill: 1002.156250 MiB (0 if unsupported)
+I 00:00:08.941911 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:08.941928 executorch:runner.cpp:493] RSS after finishing text generation: 1002.156250 MiB (0 if unsupported)
+I 00:00:08.941956 executorch:stats.h:161] 	Prompt Tokens: 144    Generated Tokens: 180
+I 00:00:08.941958 executorch:stats.h:167] 	Model Load Time:		1.392000 (seconds)
+I 00:00:08.941961 executorch:stats.h:176] 	Total inference time:		7.549000 (seconds)		 Rate: 	23.844218 (tokens/second)
+I 00:00:08.941963 executorch:stats.h:185] 		Prompt evaluation:	0.242000 (seconds)		 Rate: 	595.041322 (tokens/second)
+I 00:00:08.941966 executorch:stats.h:197] 		Generated 180 tokens:	7.307000 (seconds)		 Rate: 	24.633913 (tokens/second)
+I 00:00:08.941969 executorch:stats.h:205] 	Time to first generated token:	0.242000 (seconds)
+I 00:00:08.941972 executorch:stats.h:212] 	Sampling time over 324 tokens:	0.066000 (seconds)
+I 00:00:08.942287 executorch:qnn_llama_runner.cpp:192] Saved 182 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":595.041,"decode_token_per_sec":24.6339,"prompt_tokens":144,"generated_tokens":180,"model_load_start_ms":1784439853518,"model_load_end_ms":1784439854910,"inference_start_ms":1784439854910,"inference_end_ms":1784439862459,"prompt_eval_end_ms":1784439855152,"first_token_ms":1784439855152,"aggregate_sampling_time_ms":66,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.1 MB/s (1044 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.008s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 1.1 MB/s (17310 bytes in 0.015s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kenny is selling his Pokemon cards to buy a ticket to an amusement park, which costs $100. He has a collection of cards and plans to sell them for $1.5 each. He keeps 1/3 of them and gets to go to the amusement park with $50 in spending cash. How many cards did he start with?<|im_end|>
+<|im_start|>assistant
+Let's denote the total number of cards Kenny started as x. He keeps 1/3 of them, so he sells 2/3 of them. He sells each card for $1.5 and ends up with $50 after buying the ticket for $100. 
+
+So, the equation for the total money he makes from selling cards is: (2/3)x * 1.5 = 50 + 100
+
+Let's solve for x:
+
+(2/3)x * 1.5 = 150
+(2/3)x = 150 / 1.5
+(2/3)x = 100
+x = 100 * (3/2)
+x = 150
+
+Kenny started with 150 cards.
+
+The answer is 150.<|im_end|>
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

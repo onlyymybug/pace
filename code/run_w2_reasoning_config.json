@@ -1,0 +1,70 @@
+{
+    "assignee": "mym",
+    "task_group": "W2_reasoning",
+    "paths": {
+        "repo_root": "../..",
+        "handoff_root": "final/handoff_results",
+        "samples_jsonl": "final/code/data/w2_reasoning_samples.jsonl",
+        "tokenizer_path": "executorch/llama_qnn_qwen25_3b_instruct/tokenizer.json",
+        "tokenizer_config_path": "executorch/llama_qnn_qwen25_3b_instruct/tokenizer_config.json",
+        "pre_gen_pte": "executorch/llama_qnn_qwen25_3b_instruct"
+    },
+    "runtime": {
+        "name": "executorch_qnn",
+        "backend": "QNN_HTP",
+        "device": "10.29.195.116:35759",
+        "soc_model": "SM8750",
+        "model_name": "Qwen2.5-3B-Instruct",
+        "quantization": "Qwen2_5_1_5BQuantRecipe"
+    },
+    "runner": {
+        "temperature": 0.0,
+        "model_mode": "hybrid",
+        "prefill_ar_len": 128,
+        "max_seq_len": 1024,
+        "decoder_model": "qwen2_5-3b_instruct",
+        "system_prompt": ""
+    },
+    "thermal": {
+        "enabled": true,
+        "adb_path": "adb",
+        "baseline_temp_c": 30.480,
+        "command_timeout_seconds": 10,
+        "poll_interval_seconds": 10,
+        "stable_samples": 4,
+        "stability_range_c": 0.5,
+        "baseline_tolerance_c": 0.5,
+        "cooldown_timeout_seconds": 7200,
+        "max_consecutive_read_failures": 3
+    },
+    "energy": {
+        "enabled": true,
+        "adb_path": "adb",
+        "command_timeout_seconds": 15,
+        "counter_step_uah": 2000,
+        "minimum_counter_ticks": 10
+    },
+    "experiment": {
+        "performance_configs": [
+            {
+                "name": "low_saver",
+                "htp_performance_mode": 5,
+                "htp_performance_mode_name": "kHtpLowPowerSaver"
+            }
+        ],
+        "reasoning_budgets": [
+            128
+        ],
+        "budget_execution_mode": "physical",
+        "deadlines_ms": [
+            5000,
+            10000,
+            20000,
+            30000
+        ],
+        "repeats": 1,
+        "dynamic_max_seq_len": true,
+        "max_seq_len_cap": 1024,
+        "prompt_template": "Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.\n\nProblem: {question}"
+    }
+}

@@ -1,0 +1,122 @@
+$ run_qnn_pte --device 10.29.195.116:37907 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 347 --temperature 0.0 --htp-performance-mode 2 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_030_always_max_b256_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: How many positive integers less than 103 have an odd number of positive divisors?'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:37907 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001500 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 2
+I 00:00:00.001629 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001684 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001692 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784437129.536336    9992 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.576602 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.381106 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.384715 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.386592 executorch:prompt_processor.cpp:273] Prompt Processor: total 91 prompt tokens (AR-128 * 1 iters)
+I 00:00:01.503831 executorch:runner.cpp:476] RSS after prompt prefill: 1002.339844 MiB (0 if unsupported)
+I 00:00:11.403177 executorch:token_generator.cpp:358] Warning: Generation stopped at seq_len limit (347) without reaching EOS token. Response may be incomplete.
+I 00:00:11.403287 executorch:token_generator.cpp:372] - seq_len (347) is less than compiled max_context_len (1024). Consider increasing --seq_len (up to 1024).
+I 00:00:11.403306 executorch:runner.cpp:493] RSS after finishing text generation: 1002.339844 MiB (0 if unsupported)
+I 00:00:11.403347 executorch:stats.h:161] 	Prompt Tokens: 91    Generated Tokens: 255
+I 00:00:11.403363 executorch:stats.h:167] 	Model Load Time:		1.383000 (seconds)
+I 00:00:11.403378 executorch:stats.h:176] 	Total inference time:		10.018000 (seconds)		 Rate: 	25.454182 (tokens/second)
+I 00:00:11.403394 executorch:stats.h:185] 		Prompt evaluation:	0.119000 (seconds)		 Rate: 	764.705882 (tokens/second)
+I 00:00:11.403409 executorch:stats.h:197] 		Generated 255 tokens:	9.899000 (seconds)		 Rate: 	25.760178 (tokens/second)
+I 00:00:11.403424 executorch:stats.h:205] 	Time to first generated token:	0.119000 (seconds)
+I 00:00:11.403439 executorch:stats.h:212] 	Sampling time over 346 tokens:	0.121000 (seconds)
+I 00:00:11.403766 executorch:qnn_llama_runner.cpp:192] Saved 257 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":764.706,"decode_token_per_sec":25.7602,"prompt_tokens":91,"generated_tokens":255,"model_load_start_ms":1784437129116,"model_load_end_ms":1784437130499,"inference_start_ms":1784437130499,"inference_end_ms":1784437140517,"prompt_eval_end_ms":1784437130618,"first_token_ms":1784437130618,"aggregate_sampling_time_ms":121,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (1150 bytes in 0.006s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 1.6 MB/s (24199 bytes in 0.014s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: How many positive integers less than 103 have an odd number of positive divisors?<|im_end|>
+<|im_start|>assistant
+To determine how many positive integers less than 103 have an odd number of positive divisors, we need to understand a key property: a number has an odd number of positive divisors if and only if it is a perfect square. This is because divisors generally come in pairs, except when the divisor equals the square root, which happens only for perfect squares.
+
+First, we identify the perfect squares less than 103. We do this by finding the largest integer whose square is less than 103.
+
+\[
+10^2 = 100
+\]
+\[
+11^2 = 121 \quad (\text{which is greater than 103})
+\]
+
+So, the perfect squares less than 103 are:
+\[
+1^2, 2^2, 3^2, 4^2, 5^2, 6^2
+\]
+
+Calculating these squares:
+\[
+1^2 = 1
+\]
+\[
+2^2 = 4
+\]
+\[
+3^2 = 9
+\]
+\[
+4^2 = 16
+\]
+\[
+5^2 = 25
+\]
+
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

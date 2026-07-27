@@ -1,0 +1,125 @@
+$ run_qnn_pte --device 10.29.195.116:35759 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 684 --temperature 0.0 --htp-performance-mode 5 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W2_reasoning/runner_outputs/w2_026_low_saver_b512_r1 --prompt 'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Let $\mathbf{a}$ and $\mathbf{b}$ be vectors such that
+\[\mathbf{v} = \operatorname{proj}_{\mathbf{a}} \mathbf{v} + \operatorname{proj}_{\mathbf{b}} \mathbf{v}\]for all vectors $\mathbf{v}.$  Enter all possible values of $\mathbf{a} \cdot \mathbf{b},$ separated by commas.'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:35759 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.000534 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 5
+I 00:00:00.000595 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.000622 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.000646 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784449786.810532   30470 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.283684 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:02.094308 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:02.100344 executorch:runner.cpp:363] creating io_memory
+I 00:00:02.103129 executorch:prompt_processor.cpp:273] Prompt Processor: total 172 prompt tokens (AR-128 * 2 iters)
+I 00:00:02.878485 executorch:runner.cpp:476] RSS after prompt prefill: 1003.347656 MiB (0 if unsupported)
+I 00:01:15.023173 executorch:token_generator.cpp:358] Warning: Generation stopped at seq_len limit (684) without reaching EOS token. Response may be incomplete.
+I 00:01:15.023950 executorch:token_generator.cpp:372] - seq_len (684) is less than compiled max_context_len (1024). Consider increasing --seq_len (up to 1024).
+I 00:01:15.024036 executorch:runner.cpp:493] RSS after finishing text generation: 1003.347656 MiB (0 if unsupported)
+I 00:01:15.024177 executorch:stats.h:161] 	Prompt Tokens: 172    Generated Tokens: 511
+I 00:01:15.024246 executorch:stats.h:167] 	Model Load Time:		2.099000 (seconds)
+I 00:01:15.024307 executorch:stats.h:176] 	Total inference time:		72.924000 (seconds)		 Rate: 	7.007295 (tokens/second)
+I 00:01:15.024370 executorch:stats.h:185] 		Prompt evaluation:	0.778000 (seconds)		 Rate: 	221.079692 (tokens/second)
+I 00:01:15.024432 executorch:stats.h:197] 		Generated 511 tokens:	72.146000 (seconds)		 Rate: 	7.082860 (tokens/second)
+I 00:01:15.024494 executorch:stats.h:205] 	Time to first generated token:	0.778000 (seconds)
+I 00:01:15.024553 executorch:stats.h:212] 	Sampling time over 683 tokens:	0.957000 (seconds)
+I 00:01:15.027085 executorch:qnn_llama_runner.cpp:192] Saved 513 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":221.08,"decode_token_per_sec":7.08286,"prompt_tokens":172,"generated_tokens":511,"model_load_start_ms":1784449786612,"model_load_end_ms":1784449788711,"inference_start_ms":1784449788711,"inference_end_ms":1784449861635,"prompt_eval_end_ms":1784449789489,"first_token_ms":1784449789489,"aggregate_sampling_time_ms":957,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.3 MB/s (1876 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (6 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 2.2 MB/s (48542 bytes in 0.021s)
+Device Inference Results[0]:
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Let $\mathbf{a}$ and $\mathbf{b}$ be vectors such that
+\[\mathbf{v} = \operatorname{proj}_{\mathbf{a}} \mathbf{v} + \operatorname{proj}_{\mathbf{b}} \mathbf{v}\]for all vectors $\mathbf{v}.$  Enter all possible values of $\mathbf{a} \cdot \mathbf{b},$ separated by commas.<|im_end|>
+<|im_start|>assistant
+To solve this problem, we need to understand the projection of a vector \(\mathbf{v}\) onto another vector \(\mathbf{u}\). The projection of \(\mathbf{v}\) onto \(\mathbf{u}\) is given by:
+
+\[
+\operatorname{proj}_{\mathbf{u}} \mathbf{v} = \frac{\mathbf{v} \cdot \mathbf{u}}{\mathbf{u} \cdot \mathbf{u}} \mathbf{u}
+\]
+
+Given the equation:
+
+\[
+\mathbf{v} = \operatorname{proj}_{\mathbf{a}} \mathbf{v} + \operatorname{proj}_{\mathbf{b}} \mathbf{v}
+\]
+
+We substitute the projection formula:
+
+\[
+\mathbf{v} = \left(\frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} \mathbf{a}\right) + \left(\frac{\mathbf{v} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}\right)
+\]
+
+This simplifies to:
+
+\[
+\mathbf{v} = \frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} \mathbf{a} + \frac{\mathbf{v} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}
+\]
+
+For this to hold for all vectors \(\mathbf{v}\), the coefficients of \(\mathbf{a}\) and \(\mathbf{b}\) must be equal. Therefore, we equate the coefficients:
+
+\[
+\frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} = \frac{\mathbf{v} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}}
+\]
+
+This implies:
+
+\[
+\frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{v} \cdot \mathbf{v}} \cdot \mathbf{a} = \
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

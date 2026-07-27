@@ -1,0 +1,19 @@
+<|im_start|>user
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Deandre caught 3 tunas last Monday, the first tuna he caught weighs 56 kilograms, the second tuna he caught weighs 46 kilograms, and the last tuna he caught weighs 26 kilograms. If a kilogram of tuna costs $0.50, how much will he earn after selling all the tunas to the market?<|im_end|>
+<|im_start|>assistant
+First, let's calculate the total weight of the tunas Deandre caught:
+
+1st tuna: 56 kg
+2nd tuna: 46 kg
+3rd tuna: 26 kg
+
+Total weight = 56 kg + 46 kg + 26 kg = 128 kg
+
+Now, we know that a kilogram of tuna costs $0.50. Therefore, to find out how much he earns, we multiply the total weight by the price per kilogram:
+
+Total earnings = 128 kg * $0.50/kg
+
+Let's calculate that.
+1

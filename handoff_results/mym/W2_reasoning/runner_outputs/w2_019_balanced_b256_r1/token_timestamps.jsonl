@@ -1,0 +1,64 @@
+{"index":0,"timestamp_ms":1784442588951,"delta_ms":0,"prompt_echo":true,"piece":"<|im_start|>user\nSolve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.\n\nProblem: On average Joe throws 25 punches per minute.  A fight lasts 5 rounds of 3 minutes.  How many punches did he throw?<|im_end|>\n<|im_start|>assistant\n"}
+{"index":1,"timestamp_ms":1784442589139,"delta_ms":188,"prompt_echo":false,"piece":"To"}
+{"index":2,"timestamp_ms":1784442589219,"delta_ms":268,"prompt_echo":false,"piece":" solve"}
+{"index":3,"timestamp_ms":1784442589286,"delta_ms":335,"prompt_echo":false,"piece":" this"}
+{"index":4,"timestamp_ms":1784442589352,"delta_ms":401,"prompt_echo":false,"piece":","}
+{"index":5,"timestamp_ms":1784442589419,"delta_ms":468,"prompt_echo":false,"piece":" first"}
+{"index":6,"timestamp_ms":1784442589485,"delta_ms":534,"prompt_echo":false,"piece":" calculate"}
+{"index":7,"timestamp_ms":1784442589552,"delta_ms":601,"prompt_echo":false,"piece":" the"}
+{"index":8,"timestamp_ms":1784442589619,"delta_ms":668,"prompt_echo":false,"piece":" total"}
+{"index":9,"timestamp_ms":1784442589686,"delta_ms":735,"prompt_echo":false,"piece":" time"}
+{"index":10,"timestamp_ms":1784442589753,"delta_ms":802,"prompt_echo":false,"piece":" of"}
+{"index":11,"timestamp_ms":1784442589819,"delta_ms":868,"prompt_echo":false,"piece":" the"}
+{"index":12,"timestamp_ms":1784442589887,"delta_ms":936,"prompt_echo":false,"piece":" fight"}
+{"index":13,"timestamp_ms":1784442589953,"delta_ms":1002,"prompt_echo":false,"piece":":"}
+{"index":14,"timestamp_ms":1784442590019,"delta_ms":1068,"prompt_echo":false,"piece":" "}
+{"index":15,"timestamp_ms":1784442590087,"delta_ms":1136,"prompt_echo":false,"piece":"5"}
+{"index":16,"timestamp_ms":1784442590154,"delta_ms":1203,"prompt_echo":false,"piece":" rounds"}
+{"index":17,"timestamp_ms":1784442590220,"delta_ms":1269,"prompt_echo":false,"piece":" *"}
+{"index":18,"timestamp_ms":1784442590288,"delta_ms":1337,"prompt_echo":false,"piece":" "}
+{"index":19,"timestamp_ms":1784442590354,"delta_ms":1403,"prompt_echo":false,"piece":"3"}
+{"index":20,"timestamp_ms":1784442590424,"delta_ms":1473,"prompt_echo":false,"piece":" minutes"}
+{"index":21,"timestamp_ms":1784442590491,"delta_ms":1540,"prompt_echo":false,"piece":" per"}
+{"index":22,"timestamp_ms":1784442590557,"delta_ms":1606,"prompt_echo":false,"piece":" round"}
+{"index":23,"timestamp_ms":1784442590624,"delta_ms":1673,"prompt_echo":false,"piece":" ="}
+{"index":24,"timestamp_ms":1784442590690,"delta_ms":1739,"prompt_echo":false,"piece":" "}
+{"index":25,"timestamp_ms":1784442590757,"delta_ms":1806,"prompt_echo":false,"piece":"1"}
+{"index":26,"timestamp_ms":1784442590824,"delta_ms":1873,"prompt_echo":false,"piece":"5"}
+{"index":27,"timestamp_ms":1784442590891,"delta_ms":1940,"prompt_echo":false,"piece":" minutes"}
+{"index":28,"timestamp_ms":1784442590958,"delta_ms":2007,"prompt_echo":false,"piece":".\n\n"}
+{"index":29,"timestamp_ms":1784442591025,"delta_ms":2074,"prompt_echo":false,"piece":"Joe"}
+{"index":30,"timestamp_ms":1784442591092,"delta_ms":2141,"prompt_echo":false,"piece":" throws"}
+{"index":31,"timestamp_ms":1784442591160,"delta_ms":2209,"prompt_echo":false,"piece":" "}
+{"index":32,"timestamp_ms":1784442591226,"delta_ms":2275,"prompt_echo":false,"piece":"2"}
+{"index":33,"timestamp_ms":1784442591293,"delta_ms":2342,"prompt_echo":false,"piece":"5"}
+{"index":34,"timestamp_ms":1784442591360,"delta_ms":2409,"prompt_echo":false,"piece":" punches"}
+{"index":35,"timestamp_ms":1784442591427,"delta_ms":2476,"prompt_echo":false,"piece":" per"}
+{"index":36,"timestamp_ms":1784442591494,"delta_ms":2543,"prompt_echo":false,"piece":" minute"}
+{"index":37,"timestamp_ms":1784442591560,"delta_ms":2609,"prompt_echo":false,"piece":","}
+{"index":38,"timestamp_ms":1784442591627,"delta_ms":2676,"prompt_echo":false,"piece":" so"}
+{"index":39,"timestamp_ms":1784442591694,"delta_ms":2743,"prompt_echo":false,"piece":" in"}
+{"index":40,"timestamp_ms":1784442591761,"delta_ms":2810,"prompt_echo":false,"piece":" "}
+{"index":41,"timestamp_ms":1784442591827,"delta_ms":2876,"prompt_echo":false,"piece":"1"}
+{"index":42,"timestamp_ms":1784442591894,"delta_ms":2943,"prompt_echo":false,"piece":"5"}
+{"index":43,"timestamp_ms":1784442591960,"delta_ms":3009,"prompt_echo":false,"piece":" minutes"}
+{"index":44,"timestamp_ms":1784442592027,"delta_ms":3076,"prompt_echo":false,"piece":" he"}
+{"index":45,"timestamp_ms":1784442592093,"delta_ms":3142,"prompt_echo":false,"piece":" throws"}
+{"index":46,"timestamp_ms":1784442592160,"delta_ms":3209,"prompt_echo":false,"piece":" "}
+{"index":47,"timestamp_ms":1784442592227,"delta_ms":3276,"prompt_echo":false,"piece":"2"}
+{"index":48,"timestamp_ms":1784442592294,"delta_ms":3343,"prompt_echo":false,"piece":"5"}
+{"index":49,"timestamp_ms":1784442592360,"delta_ms":3409,"prompt_echo":false,"piece":" *"}
+{"index":50,"timestamp_ms":1784442592427,"delta_ms":3476,"prompt_echo":false,"piece":" "}
+{"index":51,"timestamp_ms":1784442592494,"delta_ms":3543,"prompt_echo":false,"piece":"1"}
+{"index":52,"timestamp_ms":1784442592560,"delta_ms":3609,"prompt_echo":false,"piece":"5"}
+{"index":53,"timestamp_ms":1784442592627,"delta_ms":3676,"prompt_echo":false,"piece":" punches"}
+{"index":54,"timestamp_ms":1784442592693,"delta_ms":3742,"prompt_echo":false,"piece":".\n\n"}
+{"index":55,"timestamp_ms":1784442592759,"delta_ms":3808,"prompt_echo":false,"piece":"The"}
+{"index":56,"timestamp_ms":1784442592826,"delta_ms":3875,"prompt_echo":false,"piece":" answer"}
+{"index":57,"timestamp_ms":1784442592893,"delta_ms":3942,"prompt_echo":false,"piece":" is"}
+{"index":58,"timestamp_ms":1784442592960,"delta_ms":4009,"prompt_echo":false,"piece":" "}
+{"index":59,"timestamp_ms":1784442593026,"delta_ms":4075,"prompt_echo":false,"piece":"3"}
+{"index":60,"timestamp_ms":1784442593093,"delta_ms":4142,"prompt_echo":false,"piece":"7"}
+{"index":61,"timestamp_ms":1784442593160,"delta_ms":4209,"prompt_echo":false,"piece":"5"}
+{"index":62,"timestamp_ms":1784442593227,"delta_ms":4276,"prompt_echo":false,"piece":"."}
+{"index":63,"timestamp_ms":1784442593294,"delta_ms":4343,"prompt_echo":false,"piece":"<|im_end|>"}

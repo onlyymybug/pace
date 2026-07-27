@@ -1,0 +1,236 @@
+$ run_qnn_pte --device 10.29.195.116:46301 --model-mode hybrid --decoder-model qwen2_5-3b_instruct --max-seq-len 728 --temperature 0.0 --htp-performance-mode 2 --output-dir /home/jai195/All/lby/executorch/two_week_task/handoff_results/mym/W3_action/runner_outputs/w3v2_010_always_max_b96_r1 --prompt 'You are a function-calling assistant. Return exactly one JSON object and no other text. The object must contain exactly two keys: action and arguments. Choose the single action whose meaning best matches the user'"'"'s request. Include exactly every argument defined for that action and no others. Infer and normalize argument values from the request instead of relying on identical wording. Ignore irrelevant details, and if the user corrects a value, use the last stated value. Preserve JSON-native types: strings stay quoted, integers are unquoted whole numbers, booleans are true or false, and arrays are JSON arrays. Normalize clock times to 24-hour HH:MM, calendar start times to YYYY-MM-DD HH:MM, durations to minutes or seconds as named by the argument, and repeat_days to three-letter English day names such as Mon and Tue; use an empty array for a one-time alarm.
+
+Action schema:
+{
+  "add_calendar_event": {
+    "attendees": "array",
+    "duration_minutes": "integer",
+    "online": "boolean",
+    "start_time": "string",
+    "title": "string"
+  },
+  "click_element": {
+    "click_count": "integer",
+    "element_id": "string"
+  },
+  "find_ui_element": {
+    "description": "string",
+    "visible_only": "boolean"
+  },
+  "open_app": {
+    "app_name": "string"
+  },
+  "open_url": {
+    "url": "string"
+  },
+  "search_app_store": {
+    "app_query": "string",
+    "free_only": "boolean",
+    "max_results": "integer"
+  },
+  "search_calendar": {
+    "days_ahead": "integer",
+    "keyword": "string"
+  },
+  "search_contacts": {
+    "favorites_only": "boolean",
+    "name": "string"
+  },
+  "search_web": {
+    "query": "string",
+    "result_limit": "integer",
+    "safe_search": "boolean"
+  },
+  "send_email": {
+    "body": "string",
+    "high_priority": "boolean",
+    "recipient": "string",
+    "subject": "string"
+  },
+  "send_message": {
+    "contact": "string",
+    "text": "string",
+    "urgent": "boolean"
+  },
+  "set_alarm": {
+    "label": "string",
+    "repeat_days": "array",
+    "time": "string",
+    "vibrate": "boolean"
+  },
+  "set_timer": {
+    "duration_seconds": "integer",
+    "label": "string",
+    "sound": "boolean"
+  },
+  "type_text": {
+    "replace_existing": "boolean",
+    "text": "string"
+  }
+}
+
+Required output form:
+{"action":"<action_name>","arguments":{"<argument_name>":<value>}}
+
+User request:
+In the app store, look for a photo editor; return at most six results and show free apps only.'
+
+[qnn_pte_runner] mode=hybrid device=10.29.195.116:46301 pte=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.001856 executorch:qnn_llama_runner.cpp:411] Setting runtime HTP performance mode: 2
+I 00:00:00.001943 executorch:runner.cpp:151] creating module: model_path=/data/local/tmp/jai195/executorch/static_llm/hybrid_llama_qnn.pte
+I 00:00:00.001952 executorch:runner.cpp:152] creating runner: tokenizer_path=/data/local/tmp/jai195/executorch/static_llm
+I 00:00:00.001958 executorch:runner.cpp:153] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1784464821.733500   13205 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.373330 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.356490 executorch:runner.cpp:231] Reading metadata from model
+I 00:00:01.360054 executorch:runner.cpp:363] creating io_memory
+I 00:00:01.362410 executorch:prompt_processor.cpp:273] Prompt Processor: total 632 prompt tokens (AR-128 * 5 iters)
+I 00:00:01.964325 executorch:runner.cpp:476] RSS after prompt prefill: 1003.480469 MiB (0 if unsupported)
+I 00:00:03.007711 executorch:token_generator.cpp:347] 
+Reached to the end of generation
+I 00:00:03.007739 executorch:runner.cpp:493] RSS after finishing text generation: 1003.480469 MiB (0 if unsupported)
+I 00:00:03.007773 executorch:stats.h:161] 	Prompt Tokens: 632    Generated Tokens: 25
+I 00:00:03.007775 executorch:stats.h:167] 	Model Load Time:		1.359000 (seconds)
+I 00:00:03.007777 executorch:stats.h:176] 	Total inference time:		1.647000 (seconds)		 Rate: 	15.179114 (tokens/second)
+I 00:00:03.007779 executorch:stats.h:185] 		Prompt evaluation:	0.604000 (seconds)		 Rate: 	1046.357616 (tokens/second)
+I 00:00:03.007782 executorch:stats.h:197] 		Generated 25 tokens:	1.043000 (seconds)		 Rate: 	23.969319 (tokens/second)
+I 00:00:03.007783 executorch:stats.h:205] 	Time to first generated token:	0.604000 (seconds)
+I 00:00:03.007785 executorch:stats.h:212] 	Sampling time over 657 tokens:	0.009000 (seconds)
+I 00:00:03.007948 executorch:qnn_llama_runner.cpp:192] Saved 27 token timestamp records to /data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":1046.36,"decode_token_per_sec":23.9693,"prompt_tokens":632,"generated_tokens":25,"model_load_start_ms":1784464821470,"model_load_end_ms":1784464822829,"inference_start_ms":1784464822829,"inference_end_ms":1784464824476,"prompt_eval_end_ms":1784464823433,"first_token_ms":1784464823433,"aggregate_sampling_time_ms":9,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+/data/local/tmp/jai195/executorch/static_llm/outputs/outputs.txt: 1 file pulled, 0 skipped. 0.2 MB/s (2582 bytes in 0.016s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/inference_speed.txt: 1 file pulled, 0 skipped. 0.0 MB/s (7 bytes in 0.007s)
+/data/local/tmp/jai195/executorch/static_llm/outputs/token_timestamps.jsonl: 1 file pulled, 0 skipped. 0.7 MB/s (5237 bytes in 0.007s)
+Device Inference Results[0]:
+<|im_start|>user
+You are a function-calling assistant. Return exactly one JSON object and no other text. The object must contain exactly two keys: action and arguments. Choose the single action whose meaning best matches the user's request. Include exactly every argument defined for that action and no others. Infer and normalize argument values from the request instead of relying on identical wording. Ignore irrelevant details, and if the user corrects a value, use the last stated value. Preserve JSON-native types: strings stay quoted, integers are unquoted whole numbers, booleans are true or false, and arrays are JSON arrays. Normalize clock times to 24-hour HH:MM, calendar start times to YYYY-MM-DD HH:MM, durations to minutes or seconds as named by the argument, and repeat_days to three-letter English day names such as Mon and Tue; use an empty array for a one-time alarm.
+
+Action schema:
+{
+  "add_calendar_event": {
+    "attendees": "array",
+    "duration_minutes": "integer",
+    "online": "boolean",
+    "start_time": "string",
+    "title": "string"
+  },
+  "click_element": {
+    "click_count": "integer",
+    "element_id": "string"
+  },
+  "find_ui_element": {
+    "description": "string",
+    "visible_only": "boolean"
+  },
+  "open_app": {
+    "app_name": "string"
+  },
+  "open_url": {
+    "url": "string"
+  },
+  "search_app_store": {
+    "app_query": "string",
+    "free_only": "boolean",
+    "max_results": "integer"
+  },
+  "search_calendar": {
+    "days_ahead": "integer",
+    "keyword": "string"
+  },
+  "search_contacts": {
+    "favorites_only": "boolean",
+    "name": "string"
+  },
+  "search_web": {
+    "query": "string",
+    "result_limit": "integer",
+    "safe_search": "boolean"
+  },
+  "send_email": {
+    "body": "string",
+    "high_priority": "boolean",
+    "recipient": "string",
+    "subject": "string"
+  },
+  "send_message": {
+    "contact": "string",
+    "text": "string",
+    "urgent": "boolean"
+  },
+  "set_alarm": {
+    "label": "string",
+    "repeat_days": "array",
+    "time": "string",
+    "vibrate": "boolean"
+  },
+  "set_timer": {
+    "duration_seconds": "integer",
+    "label": "string",
+    "sound": "boolean"
+  },
+  "type_text": {
+    "replace_existing": "boolean",
+    "text": "string"
+  }
+}
+
+Required output form:
+{"action":"<action_name>","arguments":{"<argument_name>":<value>}}
+
+User request:
+In the app store, look for a photo editor; return at most six results and show free apps only.<|im_end|>
+<|im_start|>assistant
+{"action":"search_app_store","arguments":{"app_query":"photo editor","max_results":6,"free_only":true}}<|im_end|>
+[qnn_pte_runner] finished hybrid inference
+
+[qnn_pte_runner] returncode = 0

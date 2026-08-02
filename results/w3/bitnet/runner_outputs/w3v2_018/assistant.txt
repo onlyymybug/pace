@@ -1,0 +1,11 @@
+```json
+{
+  "action": "set_alarms",
+  "arguments": {
+    "label": "Yoga alarm",
+    "repeat_days": ["Mon", "Sun"],
+    "time": "09:00",
+    "vibrate": true
+  }
+}
+```

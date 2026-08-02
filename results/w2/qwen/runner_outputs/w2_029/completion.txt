@@ -1,0 +1,7 @@
+To solve this problem, we need to calculate the probability of that Michael rolls at least two 1's when he rolls three dice. 
+
+First, we calculate the total number of possible outcomes when rolling three dice. Each die has 6 faces, so the total number of outcomes is 6^3 = 21.
+
+Next, we calculate the number of favorable outcomes where Michael rolls at least two 1's. This can happen in two ways: either he rolls exactly two 1's or all three dice show 1's.
+
+- For exactly two 1's, there are 3 ways to choose which die shows the

@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Howard spends $8 dollars at the arcade on Monday. On Tuesday, he spends twice as much at the arcade as he did on Monday. On Wednesday, he spends 4 times as much at the arcade as he spent on Tuesday. If he originally had $100, how much money does he have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount Howard spent at the arcade and then subtract that from his original amount of money.
+
+1. On Monday, Howard spends $8.
+2. On Tuesday, he spends twice as much as Monday, which is $8 * 2 = $16.
+3. On Wednesday, he spends 4 times as much as Tuesday, which is $16 * 4 = $64.
+4. Total spent at the arcade is $8 + $16 + $64 = $88.
+5. Howard originally had $100.
+6. Money left is $100 - $88 = $12

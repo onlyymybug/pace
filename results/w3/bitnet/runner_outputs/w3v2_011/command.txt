@@ -1,0 +1,81 @@
+/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe -s 3B15B800A0R00000 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'You are a function-calling assistant. Return exactly one JSON object and no other text. The object must contain exactly two keys: action and arguments. Choose the single action whose meaning best matches the user'"'"'"'"'"'"'"'"'s request. Include exactly every argument defined for that action and no others. Infer and normalize argument values from the request instead of relying on identical wording. Ignore irrelevant details, and if the user corrects a value, use the last stated value. Preserve JSON-native types: strings stay quoted, integers are unquoted whole numbers, booleans are true or false, and arrays are JSON arrays. Normalize clock times to 24-hour HH:MM, calendar start times to YYYY-MM-DD HH:MM, durations to minutes or seconds as named by the argument, and repeat_days to three-letter English day names such as Mon and Tue; use an empty array for a one-time alarm.
+
+Action schema:
+{
+  "add_calendar_event": {
+    "attendees": "array",
+    "duration_minutes": "integer",
+    "online": "boolean",
+    "start_time": "string",
+    "title": "string"
+  },
+  "click_element": {
+    "click_count": "integer",
+    "element_id": "string"
+  },
+  "find_ui_element": {
+    "description": "string",
+    "visible_only": "boolean"
+  },
+  "open_app": {
+    "app_name": "string"
+  },
+  "open_url": {
+    "url": "string"
+  },
+  "search_app_store": {
+    "app_query": "string",
+    "free_only": "boolean",
+    "max_results": "integer"
+  },
+  "search_calendar": {
+    "days_ahead": "integer",
+    "keyword": "string"
+  },
+  "search_contacts": {
+    "favorites_only": "boolean",
+    "name": "string"
+  },
+  "search_web": {
+    "query": "string",
+    "result_limit": "integer",
+    "safe_search": "boolean"
+  },
+  "send_email": {
+    "body": "string",
+    "high_priority": "boolean",
+    "recipient": "string",
+    "subject": "string"
+  },
+  "send_message": {
+    "contact": "string",
+    "text": "string",
+    "urgent": "boolean"
+  },
+  "set_alarm": {
+    "label": "string",
+    "repeat_days": "array",
+    "time": "string",
+    "vibrate": "boolean"
+  },
+  "set_timer": {
+    "duration_seconds": "integer",
+    "label": "string",
+    "sound": "boolean"
+  },
+  "type_text": {
+    "replace_existing": "boolean",
+    "text": "string"
+  }
+}
+
+Required output form:
+{"action":"<action_name>","arguments":{"<argument_name>":<value>}}
+
+User request:
+Search the app store for weather apps, including paid ones. I first thought ten results, but use four, and change the search phrase to radar weather.'"'"' --system_prompt '"'"''"'"' --seq_len 853 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w3_hybrid_1024/comparison_20260802_223000_w3/w3v2_011_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w3_hybrid_1024/comparison_20260802_223000_w3/w3v2_011_inference_speed.txt'

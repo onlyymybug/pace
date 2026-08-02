@@ -1,0 +1,9 @@
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Laurel's friend gave her 24 baby outfits that her child no longer needed.  At her baby shower, Laurel received twice the amount of new baby outfits.  Then, Laurel's mom gifted her with another 15 baby outfits.  How many outfits does she have for her baby? 
+Reasoning: Start with friend's 24 outfits, then add baby shower's 2 * 24 outfits, then add mom's 15 outfits. Total outfits: 24 + 48 + 15 = 87 outfits.
+
+The answer is 87. To solve the problem, we need to follow the steps outlined in the reasoning:
+
+1. Start with the number of outfits given by the friend: 24 outfits.
+2. Add the number of outfits received at the baby shower, which is twice the amount given by the friend: \(2 \times 24 = 

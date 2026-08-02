@@ -1,0 +1,25 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Given that $x$ is an integer such that $x\sqrt{x}-5x-9\sqrt{x}=35$, find $x$.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the equation $x\sqrt{x}-5x-9\sqrt{x}=35$, we first factor out $\sqrt{x}$:
+
+$x\sqrt{x}-5x-9\sqrt{x}=35$
+
+$(x-9)\sqrt{x}-5x=35$
+
+Now, isolate $\sqrt{x}$:
+
+$(x-9)\sqrt{x}=5x+35$
+
+Divide both sides by $(x-9)$:
+
+$\sqrt{x}=5+\frac{35}{x-9}$
+
+Square both sides to eliminate the square root:
+
+$x=(5+\frac{35}{x-9})^2$
+
+Expand

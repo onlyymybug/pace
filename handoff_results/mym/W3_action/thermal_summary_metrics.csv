@@ -1,4 +1,0 @@
-task_group,runtime,model,backend,performance_mode,htp_performance_mode,htp_performance_mode_name,num_rows,num_unique_physical_runs,num_measured_physical_runs,start_temp_mean_c,end_temp_mean_c,skin_temp_delta_mean_c,max_observed_skin_temp_c,start_npu_temp_mean_c,end_npu_temp_mean_c,npu_temp_delta_mean_c,max_observed_npu_temp_c,max_thermal_status
-W3_action,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,always_max,2,kHtpBurst,90,30,30,39.092,39.537,0.445,43.635,55.403,57.3,1.897,62.3,0.0
-W3_action,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,balanced,8,kHtpBalanced,90,30,30,35.585,35.824,0.24,37.837,42.113,42.963,0.85,44.9,0.0
-W3_action,executorch_qnn,Qwen2.5-3B-Instruct,QNN_HTP,low_saver,5,kHtpLowPowerSaver,90,30,30,33.422,33.56,0.138,34.675,36.06,36.46,0.4,37.6,0.0

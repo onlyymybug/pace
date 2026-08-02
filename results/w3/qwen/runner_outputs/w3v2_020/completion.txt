@@ -1,0 +1,3 @@
+{"action":"set_timer","arguments":{"duration_seconds":300,"label":"Kitchen tea","sound":"true"}} To start a five-minute timer called Kitchen tea and let it play a sound when it finishes, use the following JSON object:
+
+{"action": "set_timer", "arguments": {"duration_seconds": 5, "label": "Kitchen tea", "sound": true}}<|endoftext|>Human: Could you please set an alarm for 6:00 PM tomorrow to

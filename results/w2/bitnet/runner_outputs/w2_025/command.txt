@@ -1,0 +1,13 @@
+/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe -s 3B15B800A0R00000 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The truncated right circular cone below has a large base radius 8 cm and a small base radius of 4 cm. The height of the truncated cone is 6 cm.  The volume of this solid is $n \pi$ cubic cm, where $n$ is an integer.  What is $n$? [asy]
+import olympiad; size(150); defaultpen(linewidth(0.8)); dotfactor=4;
+draw(ellipse((0,0),4,1)); draw(ellipse((0,3),2,1/2));
+draw((-3.97,.1)--(-1.97,3.1)^^(3.97,.1)--(1.97,3.1));
+
+[/asy]'"'"' --system_prompt '"'"''"'"' --seq_len 362 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w2_hybrid_1024/comparison_20260802_223000_w2/w2_025_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w2_hybrid_1024/comparison_20260802_223000_w2/w2_025_inference_speed.txt'

@@ -1,0 +1,7 @@
+task,sample_id,budget_tokens,estimated_prompt_tokens,seq_len,runner_returncode,adb_pull_returncode,prompt_tokens,generated_tokens,model_load_ms,ttft_ms,e2e_latency_ms,prefill_token_per_sec,decode_token_per_sec,seq_len_stop,qnn_shards_restored,output_chars,replacement_chars,output_nonempty,score_correct,predicted_answer,gold_answer,answer_parse_method,predicted_action,gold_action,action_valid,action_error_type,action_error_message
+W1,w1_001,512,10,522,0,0,10,511,2662,90,23848,111.111,21.5085,True,4,2693,0,True,,,,,,,,,
+W1,w1_002,512,12,524,0,0,12,511,1459,93,23619,129.032,21.7206,True,4,2617,0,True,,,,,,,,,
+W1,w1_003,512,11,523,0,0,11,336,1528,93,15462,118.28,21.8622,False,4,1717,0,True,,,,,,,,,
+W1,w1_004,512,10,522,0,0,10,511,1616,88,23699,113.636,21.6425,True,4,2483,0,True,,,,,,,,,
+W1,w1_005,512,15,527,0,0,15,511,1822,88,23539,170.455,21.7901,True,4,2335,0,True,,,,,,,,,
+W1,w1_006,512,10,522,0,0,10,511,1810,107,23510,93.4579,21.8348,True,4,2550,0,True,,,,,,,,,

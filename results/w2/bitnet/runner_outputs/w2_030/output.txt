@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: How many positive integers less than 103 have an odd number of positive divisors?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of positive integers less than 103 that have an odd number of positive divisors, we need to understand the relationship between the prime factorization of a number and the number of its divisors.
+
+A positive integer \( n \) has an odd number of positive divisors if and only if it is a perfect square. This is because divisors of a number come in pairs except for the square root of the number, which is only paired once.
+
+Let's count the perfect squares less than 103:
+
+1. \( 1^2 = 1 \)
+2. \( 2^2 = 4 \)

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A $2000 watch was put on sale so that Mr. Rogers bought it at 75% of its original price. He then sold the watch to his friend at 120% of the price that he bought it. What is the percentage discount obtained by Mr. Roger's friend from the original price?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the percentage discount obtained by Mr. Roger's friend, we first need to calculate the price at which he bought the watch and the price at which he sold it.
+
+1. Calculate the price at which Mr. Rogers bought the watch:
+   \[
+   \text{Price bought} = 2000 \times 0.75 = 1500
+   \]
+
+2. Calculate the price at which Mr. Rogers sold the watch:
+   \[
+   \text{Price sold} = 1500 \times 1.20 = 1800
+   \]
+
+3. Calculate the discount from the original price:

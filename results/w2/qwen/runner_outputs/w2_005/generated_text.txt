@@ -1,0 +1,15 @@
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Martin eats Cheerios every day for breakfast, he'll lose 1.25 pounds/week. If he eats donuts every day for breakfast, he'll gain 1.75 pounds/week. What will be the difference in his weight at the end of 5 weeks between the two breakfast options? To solve this problem, calculate the weight difference after 5 weeks.
+
+First, calculate the weight change for Cheerios:
+- Martin loses 1.25 pounds per week.
+
+Total weight loss for Cheerios in 5 weeks:
+- \( 1.25 \text{ pounds/week} \times 5 \text{ weeks} = 6.25 \text{ pounds} \)
+
+Next, calculate the weight change for donuts:
+- Martin gains 1.75 pounds per week.
+
+Total weight gain for donuts in 5 weeks:
+- \( 1.75 \text{ pounds/

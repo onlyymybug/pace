@@ -1,0 +1,15 @@
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dominick went to his team's changing room and saw half as many robots as helmets and half as many helmets as footballs kept there. If there were 20 helmets, calculate the total number of items Dominick saw. To solve this problem, let's start by defining the relationships given in the problem.
+
+1. Let \( R \) be the number of robots.
+2. Let \( H \) be the number of helmets.
+3. Let \( F \) be the number of footballs.
+
+From the problem, we know:
+\[ H = 20 \]
+\[ R = \frac{1}{2}H \]
+\[ H = \frac{1}{2}F \]
+
+First, we calculate the number of robots:
+\[ R = \frac{1}{2}H = \frac{1}{2} \times

@@ -1,0 +1,11 @@
+Notify me if I have an event on Friday, Saturday, or Sunday. If I do, send me an email with the subject "Reminder" and the message "Please review the project.".
+{
+ "action": "set_timer",
+ "arguments": {
+ "duration_seconds": 14 * 24 * 60
+}
+} {
+ "action": "set_alarm",
+ "arguments": {
+ "time": "14:00",
+ "repeat_days": ["

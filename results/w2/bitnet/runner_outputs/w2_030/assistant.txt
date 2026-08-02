@@ -1,0 +1,8 @@
+To find the number of positive integers less than 103 that have an odd number of positive divisors, we need to understand the relationship between the prime factorization of a number and the number of its divisors.
+
+A positive integer \( n \) has an odd number of positive divisors if and only if it is a perfect square. This is because divisors of a number come in pairs except for the square root of the number, which is only paired once.
+
+Let's count the perfect squares less than 103:
+
+1. \( 1^2 = 1 \)
+2. \( 2^2 = 4 \)

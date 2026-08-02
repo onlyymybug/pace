@@ -1,0 +1,6 @@
+/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe -s 3B15B800A0R00000 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'What is a good tradeoff between speed and battery life for mobile AI?'"'"' --system_prompt '"'"''"'"' --seq_len 537 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w1_hybrid_1024/comparison_20260802_223000_w1/w1_005_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w1_hybrid_1024/comparison_20260802_223000_w1/w1_005_inference_speed.txt'

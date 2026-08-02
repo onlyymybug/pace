@@ -1,0 +1,77 @@
+{
+    "assignee": "mym",
+    "task_group": "W1_streaming_chat",
+    "paths": {
+        "repo_root": "..",
+        "handoff_root": "handoff_results",
+        "samples_jsonl": "code/data/w1_streaming_samples.jsonl",
+        "tokenizer_path": "../qwen25_3b_phone_bundle/model/tokenizer.json",
+        "tokenizer_config_path": "../qwen25_3b_phone_bundle/model/tokenizer_config.json",
+        "pre_gen_pte": "../qwen25_3b_phone_bundle/model"
+    },
+    "runtime": {
+        "name": "executorch_qnn",
+        "backend": "QNN_HTP",
+        "device": "3B15B800A0R00000",
+        "soc_model": "SM8750",
+        "model_name": "Qwen2.5-3B-Instruct",
+        "quantization": "Qwen2_5_1_5BQuantRecipe"
+    },
+    "runner": {
+        "temperature": 0.0,
+        "model_mode": "hybrid",
+        "prefill_ar_len": 128,
+        "max_seq_len": 1024,
+        "decoder_model": "qwen2_5-3b_instruct",
+        "system_prompt": "",
+        "adb_path": "/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe",
+        "adb_server_port": 5037,
+        "device_workspace": "/data/local/tmp/lyy/executorch/qwen25_3b_qnn237_block16",
+        "device_tokenizer_path": "tokenizer.json",
+        "supports_token_timestamps": false,
+        "supports_htp_performance_mode": false,
+        "qnn_op_package_paths": "",
+        "prompt_token_count_mode": "raw_hf"
+    },
+    "thermal": {
+        "enabled": true,
+        "adb_path": "/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe",
+        "adb_server_port": 5037,
+        "baseline_temp_c": 32.005,
+        "command_timeout_seconds": 10,
+        "poll_interval_seconds": 10,
+        "stable_samples": 4,
+        "stability_range_c": 0.5,
+        "baseline_tolerance_c": 0.5,
+        "cooldown_timeout_seconds": 7200,
+        "max_consecutive_read_failures": 3
+    },
+    "energy": {
+        "enabled": true,
+        "adb_path": "/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe",
+        "adb_server_port": 5037,
+        "command_timeout_seconds": 15,
+        "counter_step_uah": 2000,
+        "minimum_counter_ticks": 10
+    },
+    "experiment": {
+        "performance_configs": [
+            {
+                "name": "default",
+                "htp_performance_mode_name": "unsupported_by_runner"
+            }
+        ],
+        "target_output_tokens": 512,
+        "budget_execution_mode": "physical",
+        "repeats": 3,
+        "dynamic_max_seq_len": true,
+        "max_seq_len_cap": 1024,
+        "stall_threshold_ms": 208.0,
+        "reading_thresholds_ms": {
+            "average_reading": 208.0,
+            "tight_reading": 167.0,
+            "high_end_chatbot": 100.0
+        },
+        "prompt_template": "{prompt}"
+    }
+}

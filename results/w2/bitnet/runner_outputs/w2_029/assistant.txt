@@ -1,0 +1,3 @@
+To solve this problem, we need to calculate the probability of rolling at least two 1's when rolling three fair dice. This can be broken down into two parts: the probability of rolling exactly two 1's and the probability of rolling exactly three 1's.
+
+First, let's calculate the probability of rolling exactly two 1's. There are 3 ways to choose which two of the three dice will show a 1. For each of these ways, there are 6 possible outcomes for each of the remaining dice (since they cannot be a 1), giving us a total of \(6 \times 6 = 36

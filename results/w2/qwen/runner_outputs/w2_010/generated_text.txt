@@ -1,0 +1,10 @@
+Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Josie grows grapes on her 10-acre farm.  Each acre produces 5 tons of grapes per year, and each ton of grapes makes 2 barrels of wine.  How many barrels of wine does her farm produce per year? To find the total barrels of of wine Josie's farm produces per year, we need to follow these steps:
+
+1. Calculate the total tons of of grapes produced per year.
+2. Calculate the total barrels of of wine produced per year from those tons.
+
+First, we calculate the total tons of of grapes produced per year:
+\[ \text{Total tons of grapes} = \text{Number of acres} \times \text{Tons per acre} \]
+\[ \text{Total tons tons grapes} = 10 \text{ acres} \times 5 \text{ tons/acre} = 50 \

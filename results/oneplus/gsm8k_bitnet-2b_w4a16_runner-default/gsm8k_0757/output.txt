@@ -1,0 +1,7 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A council met to vote on a new regulation. The vote passed with twice as many votes in favor of the new regulation as there were against it. If there are 33 people on the council, what was the number of votes in favor of the new regulation?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of votes against the new regulation as x. Since there are twice as many votes in favor as against, the number of votes in favor is 2x. The total number of votes is the sum of the votes for and against the regulation, which is x + 2x = 3x. We know that the total number of votes is 33, so we can set up the equation 3x = 33. Solving for x gives x = 33 / 3 = 11. Since the number of votes in favor is twice the number of votes against, the number of votes in

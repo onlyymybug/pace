@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alice is 7 years older than Beth, who is 5 years older than Erica. What is the difference between the ages of Alice and Erica, if Erica is 30 years old?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the age difference between Alice and Erica, we first need to determine the ages of Alice and Beth based on the information given.
+
+1. Erica is 30 years old.
+2. Beth is 5 years older than Erica, so Beth is 30 + 5 = 35 years old.
+3. Alice is 7 years older than Beth, so Alice is 35 + 7 = 42 years old.
+
+Now, we find the difference between Alice's age and Erica's age:
+Difference = Alice's age - Erica's age = 42 - 30 = 12 years.
+
+The answer is 12.<|eot_id|>

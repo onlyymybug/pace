@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Steve decides to start eating more tomatoes and decides to grows his own cherry tomatoes.  He eats twice as much as his girlfriend.  He eats 6 per day.  If a vine can produce 3 tomatoes per week how many vines does he need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many tomatoes Steve eats per week. Since he eats twice as much as his girlfriend and she eats 6 tomatoes per day, we first find out how many tomatoes she eats per week:
+
+6 tomatoes/day * 7 days/week = 42 tomatoes/week
+
+Since Steve eats twice as much as his girlfriend, we multiply her weekly consumption by 2:
+
+42 tomatoes/week * 2 = 84 tomatoes/week
+
+Now, we know that one vine can produce 3 tomatoes per week. To find out how many vines Steve needs, we divide the total number of tomatoes

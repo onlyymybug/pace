@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kayla is having her birthday party at a movie theater. The fee to rent the theater is $125 for a party of 20, plus $6 for each additional guest. Kayla invited her 25 classmates and the 7 girls in her dance class, as well as 13 family members. Only 4 people said they could not come. How much will the party cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost of the party, we first need to determine the number of guests who will attend. Kayla invited 25 classmates and 7 girls in her dance class, which totals to 25 + 7 = 32 guests. Additionally, she invited 13 family members, making the total number of guests 32 + 13 = 45 guests. However, 4 people said they could not come, so we need to subtract these from the total. This leaves us with 45 - 4 = 41 guests.
+
+The base fee for renting the theater is $125 for a party of 20, so

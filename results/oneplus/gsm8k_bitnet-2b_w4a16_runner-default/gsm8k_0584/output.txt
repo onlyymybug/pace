@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Judy bought a dozen cups and twice as many dishes as cups to take to the church's charity event. At the event, she found out that her friend had brought 40 cups and 20 more dishes than she had brought. What's the total number of utensils brought by the two?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Judy bought a dozen cups, which is 12 cups. She also bought twice as many dishes as cups, so she bought 2 * 12 = 24 dishes.
+
+Judy's friend brought 40 cups. Judy brought 12 cups, so her friend brought 40 - 12 = 28 more cups than Judy.
+
+Judy's friend brought 20 more dishes than Judy. Since Judy brought 24 dishes, her friend brought 24 + 20 = 44 dishes.
+
+The total number of utensils brought by the two is Judy's cups plus Judy's dishes plus her friend's cups plus her friend's dishes

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.HealthManagement.shareHealthData","description":"Share the user's health data through a third-party app","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Choose Socials To Share Single Post"},"name":{"type":"string","description":"Friend name"}},"required":["media","name"]}}
+{"name":"OfficeSoftware.Conferencing.shareScreen","description":"Share your screen in a meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+{"name":"NewsMagazines.News.shareNews","description":"Share news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"to":{"type":"string","description":"WeChat/qq/TikTok"}},"required":["news_name","to"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:My name is Li Ming. The team building activity of our company is scheduled for 9 am tomorrow. The place is the city gymnasium. Remember to bring sports equipment. If you have any questions, you can contact me anytime. Looking forward to a great day with you!
+query:I want to share my health data with the person mentioned in the text message, can I send it to him via QQ?<|im_end|>
+<|im_start|>assistant

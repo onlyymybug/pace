@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.deleteEmergencyContact","description":"Delete emergency contact","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Name of emergency contact"},"phone_number":{"type":"string","description":"Emergency contact's phone number"}},"required":["user_name","phone_number"]}}
+{"name":"Navigation.MapNavigation.deleteCommonAddress","description":"Delete the specified Primary Address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address to delete"}},"required":["address"]}}
+{"name":"UtilityTools.Calendar.deleteCalendarschedule","description":"Delete a schedule based on the schedule name","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"OnlineShopping.Mall.deleteDeliveryAddress","description":"Delete designated shipping address based on address, logo","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OnlineShopping.ExpressDelivery.removeAddress","description":"Remove the specified address from the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Recipient's name"},"phone":{"type":"string","description":"Recipient phone number"},"address":{"type":"string","description":"To"}},"required":["name","phone","address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Wang Xiaomei will come to the office at 9 am this morning to discuss the progress of the new project. Please make sure the meeting materials are prepared and arrive in the meeting room 10 minutes in advance.
+query:Please help me delete the emergency contact mentioned in the notepad at 15678901234.<|im_end|>
+<|im_start|>assistant

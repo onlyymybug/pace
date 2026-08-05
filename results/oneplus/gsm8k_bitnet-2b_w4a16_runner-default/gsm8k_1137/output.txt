@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob has a certain number of marbles. If he receives 2 dozen more marbles, he will have 60 marbles. If he loses 10 of the marbles he has, how many marbles will Bob have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the initial number of marbles Bob has as \( x \).
+
+If Bob receives 2 dozen more marbles, he will have \( x + 2 \times 12 \) marbles because 2 dozen equals 24 marbles.
+
+We are given that after receiving 2 dozen marbles, Bob has 60 marbles. So, we can write the equation:
+\[ x + 24 = 60 \]
+
+To find \( x \), we subtract 24 from both sides of the equation:
+\[ x = 60 - 24 \]
+\[ x = 36 \]
+
+So, Bob initially has

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.searchDrugInfo","description":"Search for drug information based on keywords such as drug name","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurantDiscounts","description":"Enter keywords to search for deals","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords related to offers"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobApplicantsForPosition","description":"Get information about people applying for specific roles","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"}},"required":["position_name"]}}
+{"name":"SystemTools.SystemSettings.aboutSystemPhone","description":"View your phone's configuration information","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.AutoLife.getCarMaintenanceTips","description":"Get service advice for specific car models.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I just saw a new Audi A8L in the luxury car market. The exterior design is really attractive, the interior is luxurious, and the configuration is very high, especially the intelligent driver assistance system, which makes people feel full of technology. The sales consultant said that there are still discounts on car purchases now. I don't know if you are interested in the Audi A8L, would you like to take a look together?
+query:I want to know the maintenance advice of A4L, can you check it for me?<|im_end|>
+<|im_start|>assistant

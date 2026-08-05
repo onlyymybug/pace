@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"Navigation.TrafficViolations.viewTrafficEvent","description":"View notifications about traffic events","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Additional conditions, such as area of occurrence, duration of impact, etc."}},"required":["keyword"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotEventInfo","description":"Get upcoming event schedules for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Ming! Let's go to Shanghai Disneyland this weekend. I heard that the new Marvel theme area there is super cool, and there are many new projects that we can experience. You can also go to a fireworks show in the afternoon, which should be very romantic. When are you free? Let's make an appointment in advance and feel the joy of childhood together!
+query:Is there any recent activity at the locations mentioned in the QQ message Xiaoming sent me?<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.Community.getCommunityNotifications","parameters":{"community_name":"QQ"}}<|im_end|>

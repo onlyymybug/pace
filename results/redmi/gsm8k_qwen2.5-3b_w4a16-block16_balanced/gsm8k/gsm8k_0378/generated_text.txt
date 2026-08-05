@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lucy sells apples from her orchard at $4 per piece. On Monday, she sold all the apples picked. On Tuesday, she picked 12 apples. Come Wednesday, Lucy picked double the number of apples she did the previous day. If Lucy got $56 from selling the apples picked on Monday, how many apples did she pick over the three days? Step 1: Calculate the number of apples sold on Monday.
+- Price per apple: $4
+- Total money made on Monday: $56
+- Number of apples sold on Monday: 56 / 4 = 14 apples
+
+Step 2: Calculate the total number of apples picked over the three days.
+- Number of apples picked on Monday: 14 apples
+- Number of apples picked on Tuesday: 12 apples
+- Number of apples picked on Wednesday: 2 * 12 = 24 apples
+- Total number of apples picked: 14 + 12

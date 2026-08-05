@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calc_absolute_pressure", "description": "Calculates the absolute pressure from gauge and atmospheric pressures. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"atm_pressure": {"type": "integer", "description": "The atmospheric pressure in atmospheres (atm). Default is 1 atm if not provided."}, "gauge_pressure": {"type": "integer", "description": "The gauge pressure in atmospheres (atm). Must be provided."}}, "required": ["gauge_pressure"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the absolute pressure in pascals given atmospheric pressure of 1 atm and a gauge pressure of 2 atm.<|im_end|>
+<|im_start|>assistant

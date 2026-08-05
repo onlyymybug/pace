@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Diane gave a number train a starting value of 20. This starting value plus half the number was divided by 5 and the resulting value was multiplied by the starting value minus 12. What was the final value of the number train? Let's break down the problem step by step.
+
+1. **Starting Value**: Diane starts with a number \( x = 20 \).
+
+2. **First Operation**: Add half the number to the starting value.
+   \[
+   \text{Intermediate Value} = x + \frac{1}{2}x = 20 + \frac{1}{2} \times 20 = 20 + 10 = 30
+   \]
+
+3. **Second Operation**: Divide the intermediate value by 5.
+   \[
+   \text{Intermediate Value} = \frac{30

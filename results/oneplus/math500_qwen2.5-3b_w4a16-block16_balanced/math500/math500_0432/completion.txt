@@ -1,0 +1,7 @@
+To find the range of of of \( f(x) = (\arccos x)^2 + (\arcsin x)^2 \), we start by using the relationship between \(\arccos x\) and \(\arcsin x\). Recall that \(\arccos x + \arcsin x = \frac{\pi}{2}\). Let \( \theta = \arccos x \). Then, \(\arcsin x = \frac{\pi}{2} - \theta\). Thus, we can rewrite \( f(x) \) as follows:
+
+\[
+f(x) = \theta^2 + \left( \frac{\pi}{2} - \theta \right)^2
+\]
+
+Let \( y = \theta \). Then, \( y \in [0, \pi] \) because \(\arccos x\) is defined for \( x \in [-1, 1] \) and its range is \([0, \pi]\). Therefore, we need to find the range of of of \( f(y) = y^2 + \left( \frac{\pi}{2} - y \right)^2 \) for \( y \in [0,

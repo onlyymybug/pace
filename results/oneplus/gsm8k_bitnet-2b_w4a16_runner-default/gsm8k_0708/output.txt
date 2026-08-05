@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Colorado City uses 40% of the water from the Colorado River. If 80% of that water is used for industrial purposes, what percent of the river's total water is used by the city for non-industrial purposes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the percentage of the river's total water used by the city for non-industrial purposes, we first need to determine what percentage of the 40% water is used for industrial purposes.
+
+1. Calculate the percentage of the river's water used for industrial purposes:
+   - 80% of 40% = 0.8 * 0.4 = 0.32
+
+2. Subtract the percentage used for industrial purposes from the total percentage used for city purposes:
+   - 40% - 0.32 = 0.48
+
+So, the city uses 0.48 of the river's total

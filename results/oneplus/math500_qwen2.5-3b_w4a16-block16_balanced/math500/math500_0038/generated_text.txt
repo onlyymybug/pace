@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A regular pentagon is rotated counterclockwise about its center. What is the minimum number of degrees it must be rotated until it coincides with its original position? To determine the minimum number of degrees a regular pentagon must be rotated counterclockwise about its center to coincide with its original position, we need to understand the symmetry properties of of a regular pentagon.
+
+A regular pentagon has rotational symmetry. This means that if you rotate the pentagon by a certain angle, it will look exactly the same as it did before the rotation. The key is to find the smallest angle of that, when the pentagon is rotated, it returns to its original position.
+
+A regular pentagon has 5 sides and 5 vertices. The total angle around a point is \(360^\circ\). For a regular pentagon, the number of times the pentagon must be rotated to coincide with itself is equal to the number of sides (or vertices) of pentagon has, which is 5.
+
+To find the smallest angle of of rotation, we divide the total degrees in a circle by the number of sides (or vertices) of pentagon has:
+
+\[
+\text{Rotation angle} = \frac{360^\circ}{5} = 72^\circ
+\]
+
+Thus, the minimum number of degrees the pentagon must be rotated to coincide with its original position is \(72^\circ

@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nani is 8 years old. His brother is twice his age. Nani's sister is 25% younger than him. What is the total age of all three of the family members? Step 1: Determine brother's age
+Brother's age = 2 * Nani's age
+Brother's age = 2 * 8
+Brother's age = 16
+
+Step 2: Determine sister's age
+Sister's age = Nani's age - 25% of Nani's age
+Sister's age = 8 - (0.25 * 8)
+Sister's age = 8 - 2
+Sister's age = 6
+
+Step 3: Calculate total age
+Total age = Nani's age + Brother's age + Sister

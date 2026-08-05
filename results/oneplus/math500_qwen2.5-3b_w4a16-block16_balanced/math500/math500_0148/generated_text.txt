@@ -1,0 +1,24 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $x,$ $y,$ and $z$ be positive real numbers such that $xyz = 2.$  Find the minimum value of
+\[x^4 + 4y^2 + 4z^4.\] To find the minimum value of of \(x^4 + 4y^2 + 4z^4\) given that \(xyz = 2\) and \(x, y, z\) are positive real numbers, we will use the method of of Lagrange multipliers and the AM-GM inequality.
+
+First, we introduce the Lagrange function:
+\[
+\mathcal{L}(x, y, z, \lambda) = x^4 + 4y^2 + 4z^4 + \lambda (xyz - 2)
+\]
+We need to find the critical points by setting the partial derivatives of to zero:
+\[
+\frac{\partial \mathcal{L}}{\partial x} = 4x^3 + \lambda xyz = 0
+\]
+\[
+\frac{\partial \mathcal{L}}{\partial y} = 8y + \lambda xyz = 0
+\]
+\[
+\frac{\partial \mathcal{L}}{\partial z} = 16z^3 + \lambda xyz = 0
+\]
+\[
+\frac{\partial \mathcal{L}}{\partial \lambda} = xyz - 2 = 0
+\]
+
+From

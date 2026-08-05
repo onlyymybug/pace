@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Hunter counted 50 cars packed in their school parking lot when entering class one morning. During the first break, he counted 20 more cars in the parking lot. When he got out of class for the lunch break, he realized that 1/2 the number of cars in the parking lot had gone. What's the total number of cars he counted during lunch break?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the number of cars remaining after half of them left. Hunter initially counted 50 cars. Half of 50 is 25. So, 25 cars remained after the first break. During the lunch break, he counted 20 more cars. To find the total number of cars he counted during lunch break, we add the cars remaining after the first break to the cars counted during lunch break:
+
+50 (cars after the first break) + 20 (cars counted during lunch break) = 70 cars.
+
+The answer is 70.<|eot_id|>

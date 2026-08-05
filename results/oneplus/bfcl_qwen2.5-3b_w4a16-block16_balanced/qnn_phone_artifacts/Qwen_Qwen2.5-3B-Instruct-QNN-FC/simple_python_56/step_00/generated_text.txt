@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "cellbio.get_proteins", "description": "Get the list of proteins in a specific cell compartment. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"cell_compartment": {"type": "string", "description": "The specific cell compartment."}, "include_description": {"type": "boolean", "description": "Set true if you want a brief description of each protein.", "default": "false"}}, "required": ["cell_compartment"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the names of proteins found in the plasma membrane?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "cellbio.get_proteins", "parameters": {"cell_compartment": "plasma membrane", "include_description": false}}
+</tool_call><|im_end|>

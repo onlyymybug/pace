@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ingrid drinks 8 cups of water every day.  If there are 16 cups in a gallon, how many gallons of water does she drink in 30 days? To solve this problem, we need to find out how many gallons of of water Ingrid drinks in 30 days.
+
+1. First, we calculate the total number of cups of water Ingrid drinks in 30 days. Since she drinks 8 cups a day, we multiply 8 cups/day by 30 days: 
+   8 cups/day * 30 days = 240 cups
+
+2. Next, we need to convert this total number of cups into gallons. Given that there are 16 cups in a gallon, we divide the total cups by 16 to get the total gallons

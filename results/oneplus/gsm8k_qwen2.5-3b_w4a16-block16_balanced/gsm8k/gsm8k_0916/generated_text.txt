@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bruce works for 5 hours on Tuesday. On Wednesday he works twice the time he works on Tuesday. On Thursday he works 2 hours less than the time he works on Wednesday. How many hours does Bruce work in all these three days? To find the total hours Bruce works, we calculate as follows:
+
+On Tuesday, Bruce works 5 hours.
+
+On Wednesday, he works twice the time of he did on Tuesday, so:
+\[ 2 \times 5 = 10 \text{ hours} \]
+
+On Thursday, he works 2 hours less than Wednesday, so:
+\[ 10 - 2 = 8 \text{ hours} \]
+
+Now, we sum up the hours worked over the three days:
+\[ 5 \text{ (Tuesday)} + 10 \text{ (Wednesday)} + 8 \text{ (Thursday)}

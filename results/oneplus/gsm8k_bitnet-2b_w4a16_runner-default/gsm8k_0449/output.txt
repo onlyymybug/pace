@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A salesman bought a case of 48 sneakers for $576. He sold 17 of them for $20 at a flash sale on Monday, and the rest were sold to a department store for $25 each throughout the rest of the week. How much money, in dollars, was the salesman's profit?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit, we first need to calculate the total revenue and the total cost.
+
+Total cost = $576
+Number of sneakers sold at $20 = 17
+Number of sneakers sold at $25 = 48 - 17 = 31
+
+Total revenue from the flash sale = 17 * $20 = $340
+Total revenue from the department store = 31 * $25 = $775
+
+Total revenue = $340 + $775 = $1115
+
+Profit = Total revenue - Total cost = $1115 - $576 = $439
+
+The answer is $439.<|eot_id|>

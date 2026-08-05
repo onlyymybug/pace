@@ -1,0 +1,27 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A class of 200 students is split into 3 groups such that 2 of them are equal in number and the last one (which is the smallest) is 10 less than each of the other groups. How many students are in this (smallest) group?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of students in the two equal groups as x. Since the smallest group has 10 fewer students than each of the equal groups, it will have x - 10 students.
+
+The total number of students is given as 200. Therefore, we can write the equation:
+
+2x + (x - 10) = 200
+
+Combine like terms:
+
+3x - 10 = 200
+
+Add 10 to both sides:
+
+3x = 210
+
+Divide by 3:
+
+x = 70
+
+So, the smallest group has x - 10 students:
+
+70 - 10 = 60

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.followNewsSource","description":"Follow designated news sources","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"}},"required":["source_name"]}}
+{"name":"MusicRadio.Karaoke.manageAccount","description":"Manage your account by following the steps in Account Management","parameters":{"type":"object","properties":{"action":{"type":"string","description":"Account management actions"}},"required":["action"]}}
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+{"name":"NewsMagazines.NewspapersMagazines.subscribeMagazine","description":"Subscribe to magazine by magazine name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+{"name":"MusicRadio.OnlineMusic.followUser","description":"Follow user by username","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Username"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:A meeting was held today with the New York Times' marketing department to discuss advertising strategies for the next quarter. We plan to increase video ad placement on The New York Times' digital platform to increase brand exposure. During the meeting, the New York Times team also shared their latest readership insights, which will help us target ads more accurately. As a next step, we will adjust the ad content and timing based on this data in order to achieve the best market response. At the end of the meeting, we agreed to meet again in two weeks to evaluate the initial advertising performance.
+query:Follow news sources with company names mentioned in Notepad<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.News.followNewsSource","parameters":{"source_name":"Notepad"}}<|im_end|>

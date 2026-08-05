@@ -1,0 +1,22 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Three teenagers are playing soccer on the weekend. Richie, the first teenager, scored 20 more goals than Mark and scored 45 more goals than Anna. If Richie scored 80 goals, how many goals did all three teenagers score?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of goals scored by Mark as \( M \) and by Anna as \( A \). According to the problem, Richie scored 20 more goals than Mark, so we can write:
+
+\[ R = M + 20 \]
+
+Given that Richie scored 80 goals, we substitute \( R \) with 80:
+
+\[ 80 = M + 20 \]
+
+Solving for \( M \):
+
+\[ M = 80 - 20 \]
+\[ M = 60 \]
+
+Next, we know that Richie scored 45 more goals than Anna, so we can write:
+
+\[ R = A + 

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"Navigation.FlightTickets.getFlightDetails","description":"Get details for a specific flight, including takeoff and landing times, fares, and more","parameters":{"type":"object","properties":{"flight_number":{"type":"string","description":"e.g. CA1234"},"date":{"type":"string","description":"Specify a date, such as 2024-07-05"},"line":{"type":"string","description":"Routes such as Beijing-Shanghai"}},"required":["flight_number","date","line"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:On Christmas Day, December 25th, we went to the church downtown together for a midnight Christmas prayer and then enjoyed a delicious Christmas feast at a nearby restaurant for a cozy and unforgettable evening.
+query:I want to check CZ330 flight, the one from Guangzhou to New York. The time mentioned in the QQ message sent to me by Xiao Ming, can you help me check the takeoff and landing time and fare?<|im_end|>
+<|im_start|>assistant

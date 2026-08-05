@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getHousingEstateInfo","description":"View information about the neighborhood in which your home is located","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Neighborhood location"}},"required":["location"]}}
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","description":"Get the conditions and requirements to use a city's services","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Ok, let's go for a walk in the community park of the Sunshine Garden neighborhood on the weekend. The environment is really good there, and you can also go to the supermarket in the neighborhood to buy something. If it's convenient for you, we can meet at the north gate of the neighborhood at 2pm.
+query:I want to see how the environment and facilities of the neighborhood mentioned in the WeChat sent to me by Xiao Li are, can you help me check it?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.BuyingRentingHomes.getHousingEstateInfo","parameters":{"location":"Sunshine Garden"}}<|im_end|>

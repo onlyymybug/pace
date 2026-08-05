@@ -1,0 +1,19 @@
+To solve the problem, we need to find the largest integer \( x \) less than 2010 that satisfies the following system of of congruences:
+\[
+x \equiv 5 \pmod{7}
+\]
+\[
+x \equiv 10 \pmod{11}
+\]
+\[
+x \equiv 10 \pmod{13}
+\]
+We start by noting that the last two congruences imply that \( x - 10 \) is divisible by both 11 and 13. Since 11 and 13 are coprime, \( x - 10 \) must be divisible by \( 11 \times 13 = 143 \). Thus, we can write:
+\[
+x = 143k + 10
+\]
+for some integer \( k \). We substitute this into the first congruence:
+\[
+143k + 10 \equiv 5 \pmod{7}
+\]
+Since \( 143 \equiv 5 \pmod{7} \) (because \( 143 = 20 \times 7 + 5 \)),

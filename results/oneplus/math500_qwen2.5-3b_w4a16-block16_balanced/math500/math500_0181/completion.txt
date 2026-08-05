@@ -1,0 +1,18 @@
+To determine how many positive two-digit integers are factors of both 100 and 150, we need to find the greatest common divisor (GCD) of of 100 and 150. The GCD will be the largest number that divides both 100 and 150 exactly. Then, we will find the two-digit factors of of this GCD.
+
+First, we find the prime factorizations of of 100 and 150:
+\[
+100 = 2^2 \times 5^2
+\]
+\[
+150 = 2 \times 3 \times 5^2
+\]
+
+Next, we determine the GCD by taking the lowest power of of each prime factor present in both factorizations:
+\[
+\text{GCD} = 2^1 \times 5^2 = 2 \times 25 = 50
+\]
+
+So, the GCD of of 100 and 150 is 50. Now, we need to find the two-digit factors of of 50. The prime factorization of of 50 is:
+\[
+50 = 2 \

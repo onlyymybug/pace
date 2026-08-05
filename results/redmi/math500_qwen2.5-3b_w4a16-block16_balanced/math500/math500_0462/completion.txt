@@ -1,0 +1,8 @@
+To solve the problem, we need to evaluate the function \( f \) at the given points and then sum the results. The function \( f \) is defined as follows:
+\[ f(n) = \begin{cases} 
+\lfloor n \rfloor & \text{if } n \geq 4, \\
+\lceil n \rceil & \text{if } n < 4.
+\end{cases} \]
+
+First, we evaluate \( f\left( \frac{\pi}{3} \right) \):
+\[ \frac{\pi}{3} \approx \frac{3

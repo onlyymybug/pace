@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Susan orders 3 magazines that send 12 issues a year.  She has 1 magazine that sends 6 issues a year.  Her last magazine sends her 4 times the amount of the 6 issue magazine.  How many magazines does she get every year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to understand the number of issues each magazine sends per year:
+
+1. The first magazine sends 12 issues a year.
+2. The second magazine sends 6 issues a year.
+3. The third magazine sends 4 times the amount of the second magazine, which means it sends \(4 \times 6 = 24\) issues a year.
+4. The fourth magazine sends the same amount as the third magazine, which is 24 issues a year.
+
+Now, we add up the total number of issues sent by all the magazines:
+
+\[12 + 6 + 24 + 24 =

@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Suzanne sold 80 cookies for $1 each and 60 cupcakes for $4 each. She gave her two sisters $10 each for helping her. How much money does she have left from her earnings? Step 1: Calculate total earnings from cookies
+Earnings from cookies = Number of cookies * Price per cookie
+Earnings from cookies = 80 * 1
+Earnings from cookies = 80
+
+Step 2: Calculate total earnings from cupcakes
+Earnings from cupcakes = Number of cupcakes * Price per cupcake
+Earnings from cupcakes = 60 * 4
+Earnings from cupcakes = 240
+
+Step 3: Calculate total earnings
+Total earnings = Earnings from cookies + Earnings from cupcakes
+Total earnings = 80 + 240
+Total earnings = 3

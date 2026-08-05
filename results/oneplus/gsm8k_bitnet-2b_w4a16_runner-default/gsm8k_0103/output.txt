@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John likes to have a glass of water with breakfast, lunch and dinner.  Finally, he has one before he goes to bed as well.  John does this every weekday, but on the weekends he likes to relax and have a soda with dinner instead.  How many glasses of water does John drink in a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the number of weekdays John drinks water. Since there are 5 weekdays in a week, John drinks water 5 times a week.
+
+On the weekends, John drinks soda instead of water. There are 2 weekend days, so John drinks soda 2 times a week.
+
+Now, we subtract the number of times John drinks soda from the total number of times he drinks water to find out how many times he drinks water on weekdays:
+
+5 (weekdays) - 2 (weekends) = 3 times
+
+So, John drinks water 3 times a week. Since each time he drinks

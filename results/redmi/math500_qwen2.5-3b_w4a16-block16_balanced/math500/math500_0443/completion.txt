@@ -1,0 +1,13 @@
+To solve the problem, we need to evaluate the function \( f(x) = 2^x \) step by step, starting from the innermost function and working our way out.
+
+First, we need to find \( f(1) \):
+\[
+f(1) = 2^1 = 2
+\]
+
+Next, we need to find \( f(f(1)) \), which is \( f(2) \):
+\[
+f(2) = 2^2 = 4
+\]
+
+Then, we need to find \( f(f(f(1))) \), which is \( f

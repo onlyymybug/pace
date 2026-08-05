@@ -1,0 +1,9 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The Fibonacci sequence is the sequence 1, 1, 2, 3, 5, $\ldots$ where each term is the sum of the previous two terms. What is the remainder when the $100^{\mathrm{th}}$ term of the sequence is divided by 4? To solve the problem, we need to find the remainder when the \(100^{\text{th}}\) term of of the Fibonacci sequence is divided by 4. Let's denote the Fibonacci sequence as \(F_n\), where \(F_1 = 1\), \(F_2 = 1\), and \(F_n = F_{n-1} + F_{n-2}\) for \(n \geq 3\).
+
+First, we will compute the initial terms of of the Fibonacci sequence modulo 4 to identify any patterns:
+
+\[
+\begin{aligned}
+F_1 &

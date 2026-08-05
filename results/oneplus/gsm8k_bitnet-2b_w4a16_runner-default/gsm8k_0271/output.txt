@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mary buys 3 bags of M&Ms. The first bag has 300 M&Ms in it. The second bag has 12 more M&Ms than the first, and the third bag has a hole in it, so it only has half the number of M&Ms that the first bag had. How many M&Ms did Mary get total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of M&Ms Mary got, we need to calculate the number of M&Ms in each bag and then add them together.
+
+- The first bag has 300 M&Ms.
+- The second bag has 12 more M&Ms than the first, so it has 300 + 12 = 312 M&Ms.
+- The third bag has half the number of M&Ms that the first bag had, so it has 300 / 2 = 150 M&Ms.
+
+Now, we add the M&Ms from all three bags together:
+
+300 (from the first bag) + 

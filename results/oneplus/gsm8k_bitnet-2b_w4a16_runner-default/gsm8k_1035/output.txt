@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ted starts with $200. He buys 3 books for 16 dollars each and 3 pencils for 6 dollars each. How much did he spend in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Ted spent in total, we need to calculate the cost of the books and the pencils separately and then add those amounts together.
+
+First, calculate the total cost of the books:
+- Each book costs $16.
+- Ted buys 3 books.
+- Total cost for books = 3 books * $16/book = $48.
+
+Next, calculate the total cost of the pencils:
+- Each pencil costs $6.
+- Ted buys 3 pencils.
+- Total cost for pencils = 3 pencils * $6/pencil = $18.
+
+Now, add the total cost of the books and the pencils to find the

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Four books are arranged on a shelf. The first book is 31 mm thick while the second book is 50 mm thick. The third book is 5 mm less thick than the second book, and the fourth book is twice as thick as the first book. What is the total thickness of the four books?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total thickness of the four books, we need to calculate the thickness of each book and then add them together.
+
+1. The first book is 31 mm thick.
+2. The second book is 50 mm thick.
+3. The third book is 5 mm less thick than the second book, so its thickness is 50 - 5 = 45 mm.
+4. The fourth book is twice as thick as the first book, so its thickness is 2 * 31 = 62 mm.
+
+Now, we add the thicknesses of all four books together:
+
+31 mm + 50 mm + 45 mm

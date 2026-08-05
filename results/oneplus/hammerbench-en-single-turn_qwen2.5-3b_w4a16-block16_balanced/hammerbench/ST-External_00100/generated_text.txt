@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"SocialCommunication.InstantMessaging.sendMessage","description":"Send a text message to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the message"},"message_content":{"type":"string","description":"Text content to send"}},"required":["receiver_name","message_content"]}}
+{"name":"Navigation.TrainTickets.searchWaitlistTrain","description":"Search for alternate train numbers based on the criteria entered by the user","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["ride_date","departure_station","destination_station"]}}
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go biking on the East Lake Greenway in Wuhan on the weekend. The scenery there is very beautiful, you can enjoy the color of the lake while riding. Wuhan's East Lake Scenic Area is a national 5A tourist attraction, so you won't be disappointed. In the afternoon, we can also go to Hubu Alley to try authentic Wuhan snacks, such as hot and dry noodles and bean skins. How about it, Wuhan's plan sounds good, right? I look forward to exploring Wuhan with you!
+query:I want to go from Guangzhou to the place mentioned in Tom's text message to me. What are the options for the train on October 1?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrainTickets.searchWaitlistTrain","parameters":{"departure_station":"Guangzhou","destination_station":"Wuhan","ride_date":"2023-10-01"}}<|im_end|>

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"Travel.ItineraryServices.getTravelWarnings","description":"Get travel safety warnings for your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"SystemTools.SystemSettings.setSystemNotification","description":"Set notification permissions and reminder methods for your phone","parameters":{"type":"object","properties":{"app_name":{"type":"string","description":"Αpp Name"},"notification_enable":{"type":"boolean","description":"Whether to allow notifications"},"notification_sound":{"type":"boolean","description":"Notification sounds, such as default, mute"}},"required":["app_name","notification_enable","notification_sound"]}}
+{"name":"UtilityTools.Weather.getWeatherAlert","description":"Get upcoming weather warnings for selected locations","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"time":{"type":"string","description":"Time range"}},"required":["location","time"]}}
+{"name":"ConvenientLiving.UtilityPayments.notifyPaymentDue","description":"Turn on or off the notification function for payment expiration, such as water, electricity and fuel","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"enable_notification":{"type":"boolean","description":"Whether to turn on the notification, true is on, false is off"}},"required":["service_type","enable_notification"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, we are planning to go to Lotus Hill Park in Shenzhen this weekend for an outdoor activity. I heard that the scenery there is very good, and the Shenzhen Reform and Opening up Exhibition Hall, you can learn about the history of Shenzhen. If you are free, be sure to come along!
+query:Was there a recent frost or freezing weather warning at the location mentioned in Xiao Li's message to me?<|im_end|>
+<|im_start|>assistant

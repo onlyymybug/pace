@@ -1,0 +1,7 @@
+To solve the problem of where we need to arrange 6 books with 2 math books such that they are not next to each other, we can use the following steps:
+
+1. **Arrange the Non-Math Books:**
+   - We have 4 non-math books (since there are 6 books in total and 2 are math books).
+   - The number of ways to arrange 4 non-math books is given by the factorial of function:
+     \[
+     4!

@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: How many zeroes are at the end of $42!$ (42 factorial)?  (Reminder: The number $n!$ is the product of the integers from 1 to $n$.  For example, $5!=5\cdot 4\cdot3\cdot2\cdot 1= 120$.) To determine the number of trailing zeroes in \(42!\), we need to find the highest power of \(10\) that divides \(42!\). Since \(10 = 2 \times 5\), and there are generally more factors of \(2\) than \(5\) in factorials, the number of trailing zeroes is determined by the number of times \(5\) is a factor in \(42!\).
+
+To find the number of times \(5\) is a factor in \(42!\), we use the formula for the highest power of \(p\) dividing \(n!\), which is given by:
+\

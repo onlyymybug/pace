@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rose went to the store on Monday and bought 4 cakes. Tuesday she went to a different store and bought three times that number of cakes. On Wednesday she went to another store and bought 5 times the number of cakes she did on Tuesday. How many cakes did she buy after all three days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of cakes Rose bought, we need to calculate the number of cakes she bought each day and then add them together.
+
+On Monday, Rose bought 4 cakes.
+On Tuesday, she bought three times the number of cakes she bought on Monday, which is 3 * 4 = 12 cakes.
+On Wednesday, she bought 5 times the number of cakes she bought on Tuesday, which is 5 * 12 = 60 cakes.
+
+Now, we add the number of cakes she bought each day to find the total:
+4 (Monday) + 12 (Tuesday) + 60 (Wednesday) =

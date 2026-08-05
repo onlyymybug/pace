@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: When Marcus wakes up, his house is 40 degrees. He spends 3 hours baking, and every hour the oven is on it raises the house's temperature by 5 degrees. Then Marcus opens a window for 30 minutes, and the house cools down 2 degrees for every 10 minutes the window is open. What is the house's final temperature?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. **Initial Temperature**: The house starts at 40 degrees.
+
+2. **Temperature Increase**: Marcus spends 3 hours baking. Each hour, the oven raises the temperature by 5 degrees. So, for 3 hours:
+   \[
+   3 \text{ hours} \times 5 \text{ degrees/hour} = 15 \text{ degrees}
+   \]
+   Adding this to the initial temperature:
+   \[
+   40 \text{ degrees} + 15 \text{ degrees} = 55 \text{ degrees

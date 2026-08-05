@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Matteo traveled at 55 miles per hour for 4 hours. Shandy traveled at 45 miles per hour for 10 hours. How many miles farther did Shandy drive than Matteo?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the distance each person traveled and then find the difference between those distances.
+
+First, calculate the distance Matteo traveled:
+Distance = Speed × Time
+Distance Matteo = 55 miles/hour × 4 hours = 220 miles
+
+Next, calculate the distance Shandy traveled:
+Distance Shandy = 45 miles/hour × 10 hours = 450 miles
+
+Now, find out how many miles farther Shandy drove than Matteo:
+Difference = Distance Shandy - Distance Matteo
+Difference = 450 miles - 220 miles = 230 miles
+
+The answer is 230 miles

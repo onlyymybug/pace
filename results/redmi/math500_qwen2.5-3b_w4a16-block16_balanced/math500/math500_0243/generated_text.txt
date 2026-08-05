@@ -1,0 +1,13 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: An investment of $\$24,\!000$ is made in a government bond that will pay $1\%$ bi-monthly interest (meaning that the investment will increase by $1\%$ every two months). At the end of five years, what is the total number of dollars in this investment?
+
+Express your answer to the nearest whole number. To solve the problem, we need to calculate the future value of of of an investment that grows at a rate of every two months. Given the initial investment and the interest rate, we can use the formula for compound interest:
+
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+where:
+- \( A \) is the amount of money accumulated after \( t \) periods,
+- \( P \) is the principal amount (initial investment),
+- \( r \) is the annual interest rate (decimal),
+- \( n \) is the number of times interest is compounded per

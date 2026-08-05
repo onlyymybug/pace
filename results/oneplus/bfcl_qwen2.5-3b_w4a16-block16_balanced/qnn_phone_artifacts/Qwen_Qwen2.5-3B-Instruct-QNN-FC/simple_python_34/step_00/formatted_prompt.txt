@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "travel_itinerary_generator", "description": "Generate a travel itinerary based on specific destination, duration and daily budget, with preferred exploration type. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"destination": {"type": "string", "description": "Destination city of the trip."}, "days": {"type": "integer", "description": "Number of days for the trip."}, "daily_budget": {"type": "integer", "description": "The maximum daily budget for the trip."}, "exploration_type": {"type": "string", "enum": ["nature", "urban", "history", "culture"], "description": "The preferred exploration type.", "default": "urban"}}, "required": ["destination", "days", "daily_budget"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Create an itinerary for a 7 days trip to Tokyo with daily budgets not exceeding $100 and prefer exploring nature.<|im_end|>
+<|im_start|>assistant

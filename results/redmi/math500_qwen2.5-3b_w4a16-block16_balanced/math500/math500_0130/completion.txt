@@ -1,0 +1,10 @@
+To find the area of of triangle \(ACD\), we first need to determine the area of of triangle \(ABC\). We can use Heron's formula to find the area of of triangle \(ABC\). Heron's formula states that the area of of a triangle with sides \(a\), \(b\), and \(c\) is given by:
+
+\[
+\text{Area} = \sqrt{s(s-a)(s-b)(s-c)}
+\]
+
+where \(s\) is the semi-perimeter of of of the triangle, calculated as:
+
+\[
+s = \frac{a + b + c}{2

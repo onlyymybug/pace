@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: From her science class study, Brady learned that each whale in the sea has 40 gallons of blood. She also learned that a shark has three times as much blood as a whale. Calculate the number of gallons of blood that ten sharks swimming in the sea have.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much blood one shark has. Since a shark has three times as much blood as a whale, and each whale has 40 gallons of blood, we can calculate the amount of blood one shark has as follows:
+
+1. Calculate the amount of blood one shark has:
+   \[
+   \text{Blood per shark} = 3 \times \text{Blood per whale} = 3 \times 40 = 120 \text{ gallons}
+   \]
+
+2. Now, we need to find out how much blood ten sharks have:
+   \[
+   \text{

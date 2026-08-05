@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Grandma walks 3 miles every day on her favorite walking trail, which includes 2 miles of walking on the beach and 1 mile of walking on the sidewalk.  On the sidewalk, Grandma walks at twice the rate of speed that she does on the beach.  If 40 minutes of her walk is spent on the beach, how long does it take for her to complete the entire 3-mile walk, in minutes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the speed at which Grandma walks on the beach and on the sidewalk. We know that she walks 2 miles on the beach in 40 minutes. Since speed is distance divided by time, we can calculate her speed on the beach as follows:
+
+Speed on the beach = Distance on the beach / Time on the beach
+Speed on the beach = 2 miles / 40 minutes
+Speed on the beach = 0.05 miles per minute
+
+Since she walks at twice the rate on the sidewalk, her speed on the sidewalk is:
+Speed on the sidewalk = 2 * Speed

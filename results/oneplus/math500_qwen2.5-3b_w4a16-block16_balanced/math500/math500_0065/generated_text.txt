@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: There exist constants $a$, $b$, $c$, and $d$ such that
+\[(\sin x)^7 = a \sin 7x + b \sin 5x + c \sin 3x + d \sin x\]for all angles $x$.  Find $d$. To solve the problem, we need to express \((\sin x)^7\) in terms of involving \(\sin 7x\), \(\sin 5x\), \(\sin 3x\), and \(\sin x\). We will use the multiple angle formulas and properties of of sine functions to find the coefficients \(a\), \(b\), \(c\), and \(d\).
+
+First, recall the multiple angle formula for \(\sin 7x\):
+\[
+\sin 7x = 7 \sin x - 56 \sin^3 x + 112 \sin^5 x - 84 \sin^7 x
+\]
+We need to express \(\sin^7 x\) in terms of involving \(\sin 7x\), \(\sin 5x\), \(\sin 3x\), and \(\sin x\). To do this, we will use the fact that \(\sin 7x\) is a linear combination of \(\sin 5x\), \(\sin 3x\), and \(\sin x\).
+
+We start by expressing \(\sin 7x\) in terms of involving \(\sin 

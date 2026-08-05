@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Caroline is three times older than Ben. Ben is two times older than Chris. If Chris is 4, how old is Caroline?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Caroline's age, we need to work backwards from Chris's age using the relationships given.
+
+1. Chris is 4 years old.
+2. Ben is two times older than Chris, so Ben is 2 * 4 = 8 years old.
+3. Caroline is three times older than Ben, so Caroline is 3 * 8 = 24 years old.
+
+The answer is 24.<|eot_id|>

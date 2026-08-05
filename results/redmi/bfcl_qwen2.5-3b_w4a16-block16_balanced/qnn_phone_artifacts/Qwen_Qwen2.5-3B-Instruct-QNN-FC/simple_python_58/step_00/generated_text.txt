@@ -1,0 +1,25 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "cell_biology.function_lookup", "description": "Look up the function of a given molecule in a specified organelle. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"molecule": {"type": "string", "description": "The molecule of interest."}, "organelle": {"type": "string", "description": "The organelle of interest."}, "specific_function": {"type": "boolean", "description": "If set to true, a specific function of the molecule within the organelle will be provided, if such information exists."}}, "required": ["molecule", "organelle", "specific_function"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the function of ATP synthase in mitochondria?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+"name": "cell_biology.function_lookup",
+"arguments": {
+"molecule": "ATP synthase",
+"organelle": "mitochondria",
+"specific_function": true
+}
+</tool_call><|im_end|>

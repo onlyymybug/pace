@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The red car is 40% cheaper than the blue car. The price of the blue car is $100. How much do both cars cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the price of the red car, we first need to calculate 40% of the price of the blue car and then subtract that amount from the price of the blue car.
+
+40% of $100 is calculated as:
+0.40 * $100 = $40
+
+Now, subtract this amount from the price of the blue car:
+$100 - $40 = $60
+
+So, the red car costs $60.
+
+To find the total cost of both cars, we add the price of the blue car to the price of the red car:
+$100 + $60 = $160
+
+The answer is 160.<|eot_id|>

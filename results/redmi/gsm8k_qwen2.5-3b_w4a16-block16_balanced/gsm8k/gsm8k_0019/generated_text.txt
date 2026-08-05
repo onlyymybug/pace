@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Claire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks? Step 1: Calculate total eggs eaten in 4 weeks
+Claire makes 3 eggs per omelet and eats one every morning. There are 7 days in a week.
+
+Total eggs eaten in 4 weeks = 3 eggs/omelet * 30 omelets (4 weeks * 7 days/week)
+
+Step 2: Convert eggs to dozens
+There are 12 eggs in a dozen.
+
+Total dozens eaten = Total eggs eaten / 12 eggs/dozen
+
+Step 3: Perform calculations
+Total omelets in 4 weeks = 3 * 30 = 9

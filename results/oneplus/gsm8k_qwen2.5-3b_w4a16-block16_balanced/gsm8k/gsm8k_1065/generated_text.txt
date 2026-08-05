@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Science Center hosted field trips Monday through Friday last week. On Monday, 32 classes visited. Twice as many visited on Tuesday and three times as many visited on Wednesday. Another 30 classes visited on Thursday and 25 visited on Friday. In all, how many classes visited the Science Center last week? Step 1: Calculate the number of classes on Tuesday.
+Number of classes on Monday = 3
+Number of classes on Tuesday = 2 * Number of classes on Monday
+Number of classes on Tuesday = 2 * 3 = 6
+
+Step 2: Calculate the number of classes on Wednesday.
+Number of classes on Wednesday = 3 * Number of classes on Tuesday
+Number of classes on Wednesday = 3 * 6 = 18
+
+Step 3: Sum up all the classes from Monday to Friday.
+Total number of classes = Number of classes on Monday + Number of classes on Tuesday + Number of classes

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two track teams are competing against each other in a 4 by 400 meter relay; a race where each competing team has four members that each run 400 meters, or one lap, around a standard track.  One of the two teams is very well-rounded and each of their members will run their 400 meter leg in precisely 55 seconds.  The other team is less well-rounded; their first runner will run their 400 meter leg in 60 seconds then each subsequent runner will be 3 seconds faster than the previous runner.  Using this information, how many seconds will the faster team win by?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total time it takes for each team to complete the 4 laps.
+
+For the well-rounded team:
+- Each member runs 400 meters in 55 seconds.
+- There are 4 members, so the total time is 4 * 55 = 220 seconds.
+
+For the less well-rounded team:
+- The first runner takes 60 seconds.
+- Each subsequent runner is 3 seconds faster than the previous runner.
+- This forms an arithmetic sequence where the first term (a) is 60 seconds, and the common difference (d) is -3 seconds

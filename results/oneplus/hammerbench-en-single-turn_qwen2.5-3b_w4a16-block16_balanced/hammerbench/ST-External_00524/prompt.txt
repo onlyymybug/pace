@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.countPhoneCallDuration","description":"Count call duration over time","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Timeframe, call within the default day"}},"required":["time"]}}
+{"name":"UtilityTools.AlarmClock.editTimer","description":"Modify timer ring settings","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer Name:      {0}"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+{"name":"SocialCommunication.Calling.quickPhoneCallReply","description":"Set up some common response statements ahead of time, or set them up individually for a contact to send quickly during a call","parameters":{"type":"object","properties":{"reply_content":{"type":"string","description":"Quick replies"},"contact_name":{"type":"string","description":"Contact person"}},"required":["reply_content","contact_name"]}}
+{"name":"SystemTools.SystemSettings.timerOnorOff","description":"Set the phone to power on and off regularly","parameters":{"type":"object","properties":{"on_time":{"type":"string","description":"Up time"},"off_time":{"type":"string","description":"Shutdown time"}},"required":["on_time","off_time"]}}
+{"name":"Health.Fitness.setExerciseReminder","description":"Set fitness reminders based on time and frequency of reminders, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Reminder time"},"frequency":{"type":"string","description":"Reminder Repetition"}},"required":["time","frequency"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Good morning, darling! The alarm goes off again at 6:30 every morning, and we hope you'll be in a good mood for the new day. Remember to eat well for breakfast. Today's weather forecast says that there will be rain. Bring an umbrella when you go out. Have a great day and enjoy your work!
+query:I want to set my phone to turn on at the time mentioned in Xiaoming's QQ message to me, and then turn it off at 10:45 pm. How do I do that?<|im_end|>
+<|im_start|>assistant

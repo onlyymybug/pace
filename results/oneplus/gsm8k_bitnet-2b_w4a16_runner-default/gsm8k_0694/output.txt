@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brittany's quilted comforter has many 1-foot by 1-foot colored squares. The comforter had 14 red squares, 4 more blue squares than red squares, 6 more green squares than blue squares, and 12 fewer white squares than green squares.  How many square feet is Brittany's comforter?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of square feet in Brittany's comforter, we need to first determine the number of squares of each color and then calculate the total area.
+
+1. Red squares: 14
+2. Blue squares: 14 + 4 = 18
+3. Green squares: 18 + 6 = 24
+4. White squares: 24 - 12 = 12
+
+Now, we add up all the squares:
+14 (red) + 18 (blue) + 24 (green) + 12 (white) = 68
+
+The answer is 68 square feet.

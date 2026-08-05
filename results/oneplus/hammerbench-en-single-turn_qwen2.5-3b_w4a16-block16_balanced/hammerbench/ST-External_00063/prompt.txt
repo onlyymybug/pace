@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.evaluateTaxiOrder","description":"Rate the driver who completed the trip","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"},"rating":{"type":"string","description":"Review Score"}},"required":["time","destination","rating"]}}
+{"name":"SocialCommunication.Calling.setCallRingtone","description":"Set a ringtone for the specified contact","parameters":{"type":"object","properties":{"ringtone":{"type":"string","description":"*Ringtones"},"contact_name":{"type":"string","description":"Contact person"}},"required":["ringtone","contact_name"]}}
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"MusicRadio.Karaoke.publishRecord","description":"Publish recorded or uploaded songs","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"}},"required":["name"]}}
+{"name":"SystemTools.SystemSettings.setSystemRingtone","description":"set the ringtone","parameters":{"type":"object","properties":{"ringtoneType":{"type":"string","description":"Ringtone type, such as mobile phone ringtone, notification tone, etc."},"ringtone":{"type":"string","description":"Ringtone file path or URL"}},"required":["ringtoneType","ringtone"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Last Friday at 8pm, we met at the old place and went to eat the newly opened Sichuan restaurant together, the dishes were really spicy, but everyone enjoyed it. After dinner, we also went to a nearby cafe to sit down and chat until it was almost 11 o'clock. I hope to eat out again next time.
+query:I want to rate the driver who took me from the city center to the old friend's café last time. The trip time is the one mentioned in the notebook. I gave him a score of 5.<|im_end|>
+<|im_start|>assistant

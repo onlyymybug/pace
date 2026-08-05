@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Health.HealthManagement.shareHealthPlan","description":"Share a health plan","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["goal_title","media","name"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"ConvenientLiving.AutoLife.searchCarAccessories","description":"Find accessories for specific car models.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:hey, Xiao Zhang, recently planning to change the car, I saw a Subaru Forester, 2022 model. You also have a good understanding of the car. I heard that the four-wheel drive system of this car is very good, the fuel consumption is not high, and it is especially suitable for outing. What do you think of the car? Is there anything in particular that needs attention? I hope you can give me some advice!
+query:Where can I buy the original rearview mirror of the forest people mentioned in the QQ message sent to me by Xiao Ming?<|im_end|>
+<|im_start|>assistant

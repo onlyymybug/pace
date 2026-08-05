@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Amy is taking a history test. She correctly answers 80% of the multiple-choice questions, 90% of the true/false questions, and 60% of the long-answer questions. The multiple-choice and true/false questions are worth 1 point each, and the long answer questions are worth 5 points each. How many points does Amy score if there are 10 multiple-choice questions, 20 true/false questions, and 5 long answer questions?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Amy's total score, we need to calculate the points she earns from each type of question and then sum them up.
+
+1. Multiple-Choice Questions:
+   - Number of questions: 10
+   - Percentage correct: 80%
+   - Points per question: 1
+   - Points earned: \(10 \times \frac{80}{100} = 8\) points
+
+2. True/False Questions:
+   - Number of questions: 20
+   - Percentage correct: 90%
+   - Points per question: 1
+   - Points earned: \(20

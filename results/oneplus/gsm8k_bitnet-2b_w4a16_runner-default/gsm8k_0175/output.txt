@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Billy is peeling and cutting potatoes in preparation for making potato salad for his big family reunion barbecue. It's a big event, so he has 60 potatoes to get through. The potatoes are roughly the same size, so it takes about the same amount of time to peel and cut each one. It takes Billy about a minute and a half to peel a potato, but only about 5 seconds to cut it up. How long will it take Billy to finish prepping the potatoes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how long it will take Billy to finish prepping the potatoes, we need to calculate the total time spent peeling and cutting all 60 potatoes.
+
+First, let's calculate the time spent peeling the potatoes:
+- Time to peel one potato = 1.5 minutes
+- Total time to peel 60 potatoes = 1.5 minutes/potato * 60 potatoes = 90 minutes
+
+Next, let's calculate the time spent cutting the potatoes:
+- Time to cut one potato = 5 seconds
+- Total time to cut 60 potatoes = 5 seconds/potato * 60 potatoes =

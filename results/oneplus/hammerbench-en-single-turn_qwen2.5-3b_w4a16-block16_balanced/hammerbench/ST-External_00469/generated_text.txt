@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.addScenicSpotComment","description":"Comment on user-specified scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"MusicRadio.OnlineMusic.commentMusic","description":"Review music by song title and review content","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"NewsMagazines.NewspapersMagazines.commentArticle","description":"Comment on an article","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Comments"},"article":{"type":"string","description":"Articles"}},"required":["content","article"]}}
+{"name":"SocialCommunication.SocialMedia.mediumComment","description":"Comment on a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow, I plan to go to the roof of Mount Huangshan to see the sunrise. The departure time is scheduled at 4 am, and it is estimated that it will take two hours on the road. Please make sure you bring enough warm clothing, as well as a flashlight and water. The meeting address is set at the tourist service center at the southern gate of Huangshan, so don't be late.
+query:The sea of clouds and sunrise of the Huangshan Mountains are truly unparalleled. Each climb to the top has a different surprise. Can you comment on this scenic spot for me?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ScenicAreaServices.addScenicSpotComment","parameters":{"name":"Huangshan","comment":"The sea sea clouds and sunrise of of the Huangshan Mountains are truly unparalleled. Each climb to the top has a different surprise."}}<|im_end|>

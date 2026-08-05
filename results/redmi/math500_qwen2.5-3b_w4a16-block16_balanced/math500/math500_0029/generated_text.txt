@@ -1,0 +1,5 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A $90^\circ$ rotation around the origin in the counter-clockwise direction is applied to $7 + 2i.$  What is the resulting complex number? To solve the problem of of, we need to understand how a rotation in the complex plane corresponds to multiplication by a complex number. A rotation by an angle \(\theta\) counter-clockwise around the origin is represented by multiplication by \(e^{i\theta}\). For a \(90^\circ\) rotation, \(\theta = 90^\circ = \frac{\pi}{2}\), and \(e^{i\pi/2} = i\).
+
+Given the complex number \(7 + 2i\), we need to multiply it by \(i\) to find the result of of the \(90^\

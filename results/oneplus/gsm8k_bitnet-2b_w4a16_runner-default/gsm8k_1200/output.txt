@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Fred was preparing for a party to be held in four days.  So, he made 24 gallons of root beer on the first day and put them in the refrigerator cooler.  But later that evening, his children discovered the delicious nectar and robbed the cooler, drinking 4 of those gallons of root beer.  On the second day, his wife Barbie also discovered the root beer and accidentally spilled 7 gallons. On the third day, Fred's friend Ronnie visited Fred's house and helped himself to the root beer, further reducing the amount remaining by 5 gallons.  On the fourth day, 3 people showed up for the party.  If Fred and the others shared the remaining root beer equally, how much was available for each to drink during the party?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how much root beer is left after each day and then divide that amount by the number of people sharing it.
+
+1. **Day 1:** Fred made 24 gallons of root beer.
+2. **Day 2:** His children drank 4 gallons, so 24 - 4 = 20 gallons remained.
+3. **Day 3:** His wife spilled 7 gallons, so 20 - 7 = 13 gallons remained.
+4. **Day 4:** Fred's friend Ronnie drank 5 gallons, so 13 - 5 = 8 gallons remained.
+
+On

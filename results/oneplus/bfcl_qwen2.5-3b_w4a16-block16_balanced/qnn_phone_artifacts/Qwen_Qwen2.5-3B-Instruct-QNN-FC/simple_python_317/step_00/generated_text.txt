@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_team_rank", "description": "Get the team ranking in a sports league based on season and type. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team_name": {"type": "string", "description": "The name of the sports team."}, "league": {"type": "string", "description": "The name of the league in which the team competes."}, "season": {"type": "string", "description": "The season for which the team's ranking is sought."}, "type": {"type": "string", "description": "Type of the season: regular or playoff.", "enum": ["regular", "playoff"]}}, "required": ["team_name", "league", "season", "type"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the ranking of LA Lakers in the NBA 2021 regular season.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_team_rank", "arguments": {"team_name": "LA Lakers", "league": "NBA", "season": "2021", "type": "regular"}}
+</tool_call><|im_end|>

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "find_concert", "description": "Locate a concert in a specified location within a certain budget. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city where you are looking for a concert. In the format City, State."}, "price": {"type": "integer", "description": "Maximum ticket price."}, "genre": {"type": "string", "description": "Music genre of the concert. Default to 'Jazz'. ", "enum": ["Rock", "Pop", "Country", "Jazz", "Classical"]}}, "required": ["location", "price"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me a Rock concert in Chicago with ticket availability under $100.<|im_end|>
+<|im_start|>assistant

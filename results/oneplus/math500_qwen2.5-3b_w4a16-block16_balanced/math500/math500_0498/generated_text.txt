@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: An equiangular octagon has four sides of length $1$ and four sides of length $\frac{\sqrt{2}}{2}$, arranged so that no two consecutive sides have the same length. What is the area of the octagon? To solve the problem, we need to determine the area of of of an equiangular octagon with sides of lengths \(1\) and \(\frac{\sqrt{2}}{2}\), arranged such that no two consecutive sides have the same length. We will use geometric properties and symmetry to find the area.
+
+1. **Understanding the Geometry:**
+   - An equiangular octagon has all internal angles equal. For an octagon, the internal angle is \(135^\circ\) (since \(180^\circ - 135^\circ = 45^\circ\)).
+   - The sides are divided into segments of \(1\) and \(\frac{\sqrt{2}}{2}\).
+
+2. **Visualizing the Octagon:**
+   - Consider the octagon as composed of two squares and two right triangles, each with angles \(45^\circ\), \(45^\circ\), and \(90^\circ\).
+
+3. **Constructing the Octagon:**
+   - Place two squares side by side, each with side length \(1\). This forms a \(2 \times 1\) rectangle.
+   - Attach two right triangles to the sides of of \(\frac{\sqrt

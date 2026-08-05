@@ -1,0 +1,36 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A rectangular field is enclosed in an athletic track, as shown below.  The track consists of two edges of the field, and two semicircles.  The length of the track is 400 meters.  What is the largest possible area of the field, in square meters?
+
+[asy]
+unitsize(1 cm);
+
+filldraw((0,0)--(3,0)--(3,2)--(0,2)--cycle,lightgreen);
+draw((0,0)--(3,0),linewidth(2*bp));
+draw((0,2)--(3,2),linewidth(2*bp));
+draw(arc((3,1),1,-90,90),linewidth(2*bp));
+draw(arc((0,1),1,90,270),linewidth(2*bp));
+[/asy] To solve the problem, we need to determine the dimensions of of the rectangular field that maximize its area given the total length of of the track.
+
+1. **Define Variables:**
+   Let \( l \) be the length of of of the rectangle and \( w \) be the width of of the rectangle.
+
+2. **Track Length Calculation:**
+   The track consists of two edges of of the rectangle and two semicircles. The total length of of of the track is given as 400 meters. The track includes:
+   - Two lengths of \( l \)
+   - Two widths \( w \)
+   - Two semicircles with diameter \( w \)
+
+   Therefore, the total length of of of the track can be expressed as:
+   \[
+   2l + 2w + 2\pi \left(\frac{w}{2}\right) = 400
+   \]
+   Simplifying, we get:
+   \[
+   2l + 2w + \pi w = 400
+   \]
+
+3. **Simplify the Equation:**
+   Simplify the equation to solve for \( l \):
+   \[
+   2l + 2w + \pi

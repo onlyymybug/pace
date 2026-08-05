@@ -1,0 +1,6 @@
+To determine the number of ways to seat 8 people around a square table with 2 people per side, we need to consider the properties of of circular permutations and accounting for rotational symmetry.
+
+1. **Circular Permutations**:
+   - For \( n \) people seated around a circular table, the number of distinct arrangements (ignoring rotations) is \((n-1)!\). This is because one person can be fixed to break the circular symmetry, and the remaining \( n-1 \) people can be arranged in \((n-1)!\) ways.
+
+2. **Applying to 8 People**:

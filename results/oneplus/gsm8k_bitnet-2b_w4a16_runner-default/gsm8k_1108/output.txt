@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: How many girls are in the school if 40% of a school population is made up of 240 boys?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of girls in the school, we first need to determine the total school population. We know that 240 boys represent 40% of the school population. Let's denote the total school population as P.
+
+We can set up the equation:
+240 = 0.4 * P
+
+To find P, we divide both sides of the equation by 0.4:
+P = 240 / 0.4
+P = 600
+
+Now that we know the total school population is 600, we can find the number of girls by subtracting the number of boys from the total population:
+Number of girls

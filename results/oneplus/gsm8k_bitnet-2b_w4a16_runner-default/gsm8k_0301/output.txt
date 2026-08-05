@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Tuesday, Peter wants to exercise for twice the amount of time he did on Monday and Sunday combined. On Sunday he exercised for 23 minutes. On Monday he exercised for 16 minutes. How many minutes does he have to exercise on Tuesday to reach his goal?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, first, we need to find the total time Peter exercised on Monday and Sunday combined. On Monday, he exercised for 16 minutes, and on Sunday, he exercised for 23 minutes. So, the total time for Monday and Sunday is:
+
+16 minutes (Monday) + 23 minutes (Sunday) = 39 minutes
+
+Next, we need to determine how much time Peter wants to exercise on Tuesday, which is twice the amount of time he exercised on Monday and Sunday combined. So, we multiply the total time for Monday and Sunday by 2:
+
+39 minutes * 2 = 78 minutes
+
+Therefore

@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Morgan's dad said that she had $90 budgeted for her birthday party. She wants to make sure she and her friends all get to play one round of mini-golf, have $5 in arcade tokens, and get to ride the go-karts twice. A round of mini-golf is $5. The Go-karts cost $10 a ride. How many friends can she invite? To solve this, we need to subtract the cost of of the activities Morgan wants to do for herself and her friends from her total budget. 
+
+First, we subtract the cost of of mini-golf for Morgan and her friends. Since she wants to play once herself, that's $5, and she wants to do it again for each of her friends, that's $5 per friend. So the total cost for mini-golf is $5 + $5(friends) = $5(friends + 1).
+
+Next, we subtract the cost of arcade tokens. She wants $5 in tokens, so that's $5.
+

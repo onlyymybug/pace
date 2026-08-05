@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurantDiscounts","description":"Enter keywords to search for deals","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords related to offers"}},"required":["keyword"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobApplicantsForPosition","description":"Get information about people applying for specific roles","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"}},"required":["position_name"]}}
+{"name":"Travel.ItineraryServices.getTraveCheckInLocations","description":"Get travel hotspots (influencers)","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey Hua, let's go hiking on Sydney's Harbour Bridge next weekend. I heard that the scenery there is super beautiful and you can see the beautiful sunset. I checked it, it is quite convenient from the center of the city, and the subway can reach it directly. Are you free? How about we go together?
+query:What are some of the places mentioned in Xiao Li's WeChat that can take pictures of holy places?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.startNavigation","description":"Start navigating to your destination","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OfficeSoftware.Documents.importDocument","description":"Import an external document into a document","parameters":{"type":"object","properties":{"import_path":{"type":"string","description":"Document path to import, required"}},"required":["import_path"]}}
+{"name":"Navigation.TaxiCarRental.issueTaxiInvoice","description":"Invoicing taxi rides","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"SocialCommunication.Community.reportCommunityPost","description":"Report a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be reported"},"comment_name":{"type":"string","description":"Post title to report"}},"required":["community_name","comment_name"]}}
+{"name":"ConvenientLiving.JobRecruitment.applyForJob","description":"Submitting an Application to a Designated Position","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The Global Investment Group's financial report for this month has been compiled, which provides a detailed analysis of the returns of each investment in the previous quarter, as well as recommendations for future investment strategies. Heads of departments are requested to complete the review by Friday of this week and summarize the review comments to the Finance Department. Global Investment Group will continue to work to improve investment efficiency, ensure fund security and create greater value for shareholders.
+query:I would like to apply for the position of Chief Financial Officer of the company mentioned in the notepad, can I attach my financial analysis report?<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Documents.importDocument","parameters":{"import_path":"financial_analysis_report.pdf"}}<|im_end|>

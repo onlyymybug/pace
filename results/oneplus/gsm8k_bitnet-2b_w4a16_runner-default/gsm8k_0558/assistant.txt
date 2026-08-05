@@ -1,0 +1,10 @@
+To find the total number of holes, we need to calculate the number of holes contributed by the two-holed buttons and the number of holes contributed by the four-holed buttons separately, then add them together.
+
+First, calculate the number of two-holed buttons:
+Total buttons = 21
+Number of two-holed buttons = 7
+Number of four-holed buttons = Total buttons - Number of two-holed buttons = 21 - 7 = 14
+
+Next, calculate the total number of holes contributed by the two-holed buttons:
+Number of two-holed buttons = 7
+Number of holes per two-holed

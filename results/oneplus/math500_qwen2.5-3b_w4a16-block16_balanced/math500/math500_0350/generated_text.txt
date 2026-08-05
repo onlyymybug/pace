@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In how many ways can 8 people be seated around a square table with 2 people on a side?  (Two configurations are considered equivalent if one is a rotation of another.) To determine the number of ways to seat 8 people around a square table with 2 people per side, we need to consider the properties of of circular permutations and accounting for rotational symmetry.
+
+1. **Circular Permutations**:
+   - For \( n \) people seated around a circular table, the number of distinct arrangements (ignoring rotations) is \((n-1)!\). This is because one person can be fixed to break the circular symmetry, and the remaining \( n-1 \) people can be arranged in \((n-1)!\) ways.
+
+2. **Applying to 8 People**:
+   - Here, \( n = 8 \). Thus, the number of distinct circular arrangements, ignoring rotations, is:
+     \[
+     (8-1)! = 7!
+     \]
+
+3. **Calculating \( 7!

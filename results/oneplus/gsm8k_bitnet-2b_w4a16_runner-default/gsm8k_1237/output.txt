@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Madeline ate 6 grapes. Her brother wanted to make grape juice and used up 5 times as many grapes then Madeline to make a full glass. Their mother then used the remaining grapes to make 4 pies. How many grapes were there at the beginning if the pie recipe calls for 12 grapes per pie?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of grapes Madeline ate as \( G \). According to the problem, Madeline ate 6 grapes, so \( G = 6 \).
+
+Her brother used 5 times as many grapes as Madeline to make grape juice. Therefore, the number of grapes her brother used is \( 5G = 5 \times 6 = 30 \).
+
+The total number of grapes used for the grape juice is the sum of the grapes Madeline ate and the grapes her brother used: \( G + 5G = 6 + 30 = 36 \).
+
+Their mother then used the remaining grapes

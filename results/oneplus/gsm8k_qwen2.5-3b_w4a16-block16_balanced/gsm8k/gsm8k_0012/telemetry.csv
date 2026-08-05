@@ -1,0 +1,12 @@
+timestamp_ms,host_timestamp_ms,adb_latency_ms,voltage_v,current_a,power_w,skin_temp_c,thermal_status,runner_pid,rss_kb,vmhwm_kb,valid_power,error
+1785772607714.500,1785772607008.038,228.650,4.387,0.011,0.048256999999999994,35.926,0,31151,8896,11720,True,
+1785772608180.000,1785772607492.742,197.534,4.385,0.024,0.10524,35.956,0,31151,29748,79316,True,
+1785772608703.500,1785772608003.080,217.612,4.349,0.073,0.317477,35.962,0,31151,368892,1027636,True,
+1785772609497.500,1785772608648.414,507.812,4.283,0.122,0.522526,35.986,0,31151,34568,1027636,True,
+1785772609655.500,1785772608981.745,157.810,4.378,0.011,0.048158,35.992,0,31151,35336,1027636,True,
+1785772610269.500,1785772609552.780,299.250,4.361,0.015,0.065415,35.992,0,31151,35336,1027636,True,
+1785772610755.500,1785772610036.667,266.696,4.354,0.015,0.06530999999999999,35.986,0,31151,35336,1027636,True,
+1785772615410.525,1785772615410.525,10013.641,,,,,,,,,False,"TimeoutExpired: Command '['adb', '-P', '5037', '-s', '10.29.195.116:5555', 'shell', 'printf \'__PACE_TS_BEGIN__=\'; date +%s%3N\ndumpsys thermalservice\nprintf \'__PACE_MEMORY__\\n\'\npid=""$(pidof qnn_llama_runner 2>/dev/null | awk \'{print $1}\')""\nif [ -n ""$pid"" ] && [ -r ""/proc/$pid/status"" ]; then\n  printf \'pid=%s\\n\' ""$pid""\n  awk \'/^VmRSS:/{print ""rss_kb="" $2} /^VmHWM:/{print ""vmhwm_kb="" $2}\' ""/proc/$pid/status""\nfi\nprintf \'__PACE_TS_END__=\'; date +%s%3N']' timed out after 10 seconds"
+1785772625422.448,1785772625422.448,10009.946,,,,,,,,,False,"TimeoutExpired: Command '['adb', '-P', '5037', '-s', '10.29.195.116:5555', 'shell', 'printf \'__PACE_TS_BEGIN__=\'; date +%s%3N\ndumpsys thermalservice\nprintf \'__PACE_MEMORY__\\n\'\npid=""$(pidof qnn_llama_runner 2>/dev/null | awk \'{print $1}\')""\nif [ -n ""$pid"" ] && [ -r ""/proc/$pid/status"" ]; then\n  printf \'pid=%s\\n\' ""$pid""\n  awk \'/^VmRSS:/{print ""rss_kb="" $2} /^VmHWM:/{print ""vmhwm_kb="" $2}\' ""/proc/$pid/status""\nfi\nprintf \'__PACE_TS_END__=\'; date +%s%3N']' timed out after 10 seconds"
+1785772631276.000,1785772630708.348,561.724,4.379,0.016,0.070064,34.234,0,,,,True,
+1785772631822.500,1785772631114.791,249.936,4.391,0.008,0.035128,34.176,0,,,,True,

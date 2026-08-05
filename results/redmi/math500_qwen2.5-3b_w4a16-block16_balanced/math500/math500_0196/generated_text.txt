@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $p(x)$ be a monic polynomial of degree 4.  Three of the roots of $p(x)$ are 1, 2, and 3.  Find $p(0) + p(4).$ Given that \( p(x) \) is a monic polynomial of of degree 4, we can express it in the form:
+\[ p(x) = x^4 + ax^3 + bx^2 + cx + d. \]
+We know three of the roots of \( p(x) \) are \( 1, 2, \) and \( 3 \). Since \( p(x) \) is a monic polynomial of degree 4, it must have one more root, say \( r \). Thus, we can write:
+\[ p(x) = (x-1)(x-2)(

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.setSystemTurnOnConnect2Win","description":"Open connection to windows","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"NewsMagazines.News.followNewsSource","description":"Follow designated news sources","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"}},"required":["source_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.subscribeMagazine","description":"Subscribe to magazine by magazine name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"SocialCommunication.Calling.makePhoneCall","description":"Used to call designated contacts","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to call"},"phone_number":{"type":"string","description":"Call the number directly"}},"required":["contact_name","phone_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Zhang San, let's go mountain climbing this weekend. I heard that the scenery there is very good and the air is very fresh. Let's meet at the school entrance at 8 am, remember to wear comfortable shoes, bring some water and dry food, and don't forget to bring sunscreen if you have it. I hope you can come, we haven't been out together for a long time.
+query:Call the friend mentioned in the WeChat 138-1234-1234<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","parameters":{"medium_name":"WeChat","nick_name":"EK","account_number":"13812341234"}}<|im_end|>

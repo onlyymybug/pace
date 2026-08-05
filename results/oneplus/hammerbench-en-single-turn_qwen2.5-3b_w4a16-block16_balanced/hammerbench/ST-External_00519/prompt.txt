@@ -1,0 +1,26 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.addContact","description":"Add New Contact","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Contact person"},"phone":{"type":"string","description":"Cellphone"}},"required":["name","phone"]}}
+{"name":"SystemTools.SystemSettings.addEmergencyContact","description":"Add emergency contact","parameters":{"type":"object","properties":{"phone_number":{"type":"string","description":"Emergency contact's phone number"},"user_name":{"type":"string","description":"Name of emergency contact"}},"required":["phone_number","user_name"]}}
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"NewsMagazines.News.followNewsSource","description":"Follow designated news sources","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"}},"required":["source_name"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskAddAddresbookFriend","description":"Add friends to Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Arrangements for next week's meeting
+
+Dear Colleagues,
+
+Hello everyone! My name is Li Hua, and I am responsible for the coordination of this project.In order to ensure that our team can move the project forward smoothly, I have scheduled a meeting next Tuesday at 10am in the meeting room on the third floor of the company.I hope you can attend on time. If you have any questions or suggestions, please contact me in advance.
+
+We would like to inform you that we look forward to seeing you.
+
+Best regards,
+Li Hua
+query:I want to add the person mentioned in the email as the emergency contact, his phone number is 15888889999.<|im_end|>
+<|im_start|>assistant

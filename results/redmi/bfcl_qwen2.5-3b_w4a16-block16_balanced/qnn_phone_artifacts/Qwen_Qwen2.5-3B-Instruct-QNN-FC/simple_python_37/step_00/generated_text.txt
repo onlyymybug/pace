@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "route.estimate_time", "description": "Estimate the travel time for a specific route with optional stops. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"start_location": {"type": "string", "description": "The starting point for the journey. It should be format as city name such as Boston."}, "end_location": {"type": "string", "description": "The destination for the journey. It should be format as city name such as Boston."}, "stops": {"type": "array", "items": {"type": "string"}, "description": "Additional cities or points of interest to stop at during the journey. Default is an empty list."}}, "required": ["start_location", "end_location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the estimated travel time by car from San Francisco to Los Angeles with stops at Santa Barbara and Monterey.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "route.estimate_time", "arguments": {"start_location": "San Francisco", "end_location": "Los Angeles", "stops": ["Santa Barbara", "Monterey"]}}
+</tool_call><|im_end|>

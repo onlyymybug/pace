@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John adopts a dog.  He takes the dog to the groomer, which costs $100.  The groomer offers him a 30% discount for being a new customer.  How much does the grooming cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the discounted cost of the grooming, we need to calculate 30% of $100 and then subtract that from the original price.
+
+First, calculate 30% of $100:
+\[ 30\% \text{ of } 100 = 0.30 \times 100 = 30 \]
+
+Now, subtract the discount from the original price:
+\[ 100 - 30 = 70 \]
+
+The grooming cost is $70.
+
+The answer is 70.<|eot_id|>

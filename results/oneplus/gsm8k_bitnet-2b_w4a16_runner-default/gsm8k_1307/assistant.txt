@@ -1,0 +1,14 @@
+To solve this problem, let's first define the variables for the number of each item Igor actually placed on the lab bench:
+
+- Let \( t \) be the number of test tubes Igor actually placed.
+- Let \( b \) be the number of beakers Igor actually placed.
+- Let \( p \) be the number of Petri dishes Igor actually placed.
+
+From the problem, we know the following:
+
+1. Igor gathered half as many test tubes as requested:
+   \[
+   t = \frac{16}{2} = 8
+   \]
+
+2. Igor gathered two more Petri dishes than requested:

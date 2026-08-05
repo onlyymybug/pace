@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.addScenicSpotComment","description":"Comment on user-specified scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getHousePriceTrend","description":"See price trends for homes in selected areas","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"}},"required":["location"]}}
+{"name":"Education.OnlineClasses.postCourseReview","description":"User commented on a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"},"content":{"type":"string","description":"Review Content"}},"required":["course_name","teacher_name","content"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At the weekend, we gathered at the entrance of Century Park in Shanghai's Pudong New Area to participate in the marathon. Remember to put on comfortable sneakers and clothes, rest early, and nourish your spirits. The meeting time is 7am, don't be late!
+query:I would like to see the price movement of the house in the place mentioned in the text message that Tom sent me.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.BuyingRentingHomes.getHousePriceTrend","parameters":{"location:"Pudong New Area"}}<|im_end|>

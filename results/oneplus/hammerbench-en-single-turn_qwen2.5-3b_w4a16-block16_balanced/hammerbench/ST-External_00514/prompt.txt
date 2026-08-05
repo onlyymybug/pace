@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.queryPhoneCallCharges","description":"View charges for this or a recent call","parameters":{"type":"object","properties":{"query_period":{"type":"string","description":"The time period of the query, such as this month, this week, etc."}},"required":["query_period"]}}
+{"name":"VideoPlayback.ShortVideos.shareShortVideo","description":"Share a short video to other media platforms","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.sendSystemMessage","description":"Send a system text message to a specific number or contact","parameters":{"type":"object","properties":{"receiver_number":{"type":"string","description":"Phone number to receive SMS messages"},"receiver_name":{"type":"string","description":"Username to receive SMS"},"message_content":{"type":"string","description":"Text content of the text message to be sent"},"attachment_path":{"type":"string","description":"Image or file URL"}},"required":["receiver_number","receiver_name","message_content","attachment_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey Ming, remember when we planned to go mountain climbing together on March 15, 2023? The weather forecast said it would be a big sunny day, perfect for outdoor activities. We plan to meet at the school gate at 8am and then leave together. Don't forget to bring plenty of water, some simple food, and sun protection. Looking forward to that day, I hope we can have a good memory!
+query:Xiao Ming sent me the time mentioned in the QQ message, can I see the call cost during that time?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mrs. Jameson's bamboo in the backyard grows up to 30 inches a day. Today, its height is 20 feet. In how many days will its height be 600 inches?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to convert the height of the bamboo from feet to inches, since the growth rate is given in inches per day. We know that 1 foot equals 12 inches. So, the bamboo's current height in inches is:
+
+20 feet * 12 inches/foot = 240 inches
+
+The bamboo needs to grow from 240 inches to 600 inches. To find out how many days it will take for this growth, we subtract the current height from the target height:
+
+600 inches - 240 inches = 360 inches
+
+Since the bamboo grows at a rate of 30 inches per day,

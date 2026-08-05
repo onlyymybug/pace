@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "predict_house_price", "arguments": {"bedrooms": 3, "bathrooms": 2, "area": 1800, "location": "San Francisco"}}
+</tool_call><|im_end|>

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "map_routing.fastest_route", "description": "Finds the fastest route from one location to another, with an option to avoid toll roads. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"start_location": {"type": "string", "description": "The starting location for the journey."}, "end_location": {"type": "string", "description": "The destination for the journey."}, "avoid_tolls": {"type": "boolean", "description": "Option to avoid toll roads during the journey. Default is false."}}, "required": ["start_location", "end_location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the fastest route from San Francisco to Los Angeles with toll roads avoided.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "map_routing.fastest_route", "arguments": {"start_location": "San Francisco", "end_location": "Los Angeles", "avoid_tolls": true}}
+</tool_call><|im_end|>

@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sara wants to buy herself a new jacket and 2 pairs of shoes. The jacket she wants costs $30 and each pair of shoes cost $20. Sara babysits the neighbor's kids 4 times, earning $5 each time she babysits them. Her parents pay her $4 each time she mows the lawn. If Sara already had $10 saved before she started babysitting, how many times must she mow the lawn before she can afford the jacket and shoes? Step 1: Calculate total cost of of items Sara wants to buy
+Cost ofJacket = $30
+CostCostShoesPerPair = $20
+NumberOfPairsOfShoes = 2
+
+TotalCost = CostCostJacket + (CostCostShoesPerPair * NumberOfPairsOfShoes)
+
+Step 2: Calculate total earnings from babysitting
+EarningsBabysittingPerTime = $5
+NumberTimesBabysitting = 4
+
+TotalEarningsBabysitting = EarningsBabysittingPerTime * NumberTimesBabysitting
+
+Step 3:

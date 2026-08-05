@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleMessage","description":"View message list by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"ConvenientLiving.AutoLife.viewCarDetails","description":"View the details of the specified car model.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"Health.MedicalServices.viewDoctorDetails","description":"View details for assigned physician","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"location":{"type":"string","description":"Area"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","location","doctor_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer, Thank you for your interest in our latest Porsche 911 Carrera. This model not only inherits Porsche's classic sports car design, but also incorporates the latest technological elements, including advanced driver assistance systems and efficient engine performance. Right now, we're running a limited-time promotion to get an exclusive deal on your purchase. Come to the exhibition hall to experience a test drive and feel the charm of Porsche! We look forward to welcoming you.
+query:I would like to see the details of the model mentioned in the text message that Tom sent me.<|im_end|>
+<|im_start|>assistant

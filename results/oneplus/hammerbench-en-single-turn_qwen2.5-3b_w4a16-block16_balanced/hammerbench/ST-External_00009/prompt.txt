@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"Navigation.TrafficViolations.reportAccident","description":"Report traffic accidents and violations","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"location":{"type":"string","description":"Site"}},"required":["plate_number","location"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Your vehicle, Su E67890, has successfully passed the annual inspection and is valid until December 31, 2024. Please take good care of your documents and drive safely!
+query:I found an illegally modified car near Zhongshan Mausoleum in Nanjing. The license plate number was mentioned in the text message sent to me by Tom. Can you help me deal with it?<|im_end|>
+<|im_start|>assistant

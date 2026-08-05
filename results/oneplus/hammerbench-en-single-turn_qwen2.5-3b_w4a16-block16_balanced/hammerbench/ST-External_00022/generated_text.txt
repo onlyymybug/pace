@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Navigation.PublicTransit.viewBusRouteDetail","description":"View route details for a given bus (default current city)","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today, I spent a wonderful day with my friends on the Bund, took a walk along the river and watched the beautiful night view and felt very comfortable. The historical architecture of the Bund and the modern Pudong skyline intersect, which is really a moving picture. Next time you come to Shanghai, we must go to the Bund together.
+query:I want to go from the People's Square to the place mentioned in the WeChat that Xiao Li sent me. Can you help me find a bus route that is less walkable?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.PublicTransit.viewBusRouteDetail","parameters":{"departure":"People's Square","destination":"Xiao Li sent place","preferred_line":"less walking"}}<|im_end|>

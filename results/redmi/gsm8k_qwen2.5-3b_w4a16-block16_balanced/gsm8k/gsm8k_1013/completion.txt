@@ -1,0 +1,12 @@
+Let's break down the problem step by step.
+
+1. **Initial Charge Calculation:**
+   - Maria's power bank loses 9% of its capacity each hour initially.
+   - After 5 hours, the remaining charge can be calculated as:
+     \[
+     \text{Remaining charge} = \text{Initial charge} \times (1 - 0.09)^5
+     \]
+   - Let \( x \) be the initial charge percentage. Then:
+     \[
+     x \times (0.91)^5 = 0.9126561x
+     \]

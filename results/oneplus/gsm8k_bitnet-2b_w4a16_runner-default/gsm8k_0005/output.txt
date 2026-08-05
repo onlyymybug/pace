@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives the chickens their feed in three separate meals. In the morning, she gives her flock of chickens 15 cups of feed.  In the afternoon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many cups of feed each chicken gets in the final meal, we first need to determine the total amount of feed given to the chickens in the morning and afternoon, and then divide that by the number of chickens.
+
+In the morning, Wendi gives her chickens 15 cups of feed. In the afternoon, she gives another 25 cups of feed. So, the total amount of feed given to the chickens in the morning and afternoon is:
+
+15 cups (morning) + 25 cups (afternoon) = 40 cups of feed
+
+Now, we need to divide this total amount of feed by the number of

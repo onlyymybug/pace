@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jonathan was sad to learn he needed 2 more toys than he already had to have enough toys to make a sorted play set five times larger than James's play set, which had 80 toys. How many toys does Jonathan currently have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of toys Jonathan currently has as \( x \).
+
+Since Jonathan needs 2 more toys than he currently has to make a play set five times larger than James's, we can express the number of toys needed for one play set as \( x + 2 \).
+
+James's play set has 80 toys, so five times that amount is \( 5 \times 80 = 400 \) toys.
+
+Since Jonathan's play set is five times larger than James's, the number of toys needed for Jonathan's play set is also 400 toys.
+
+Therefore, we set up the equation:
+\[ x + 

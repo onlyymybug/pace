@@ -1,0 +1,7 @@
+To solve this problem, we first need to determine how long it takes John to complete an extreme sudoku puzzle. Since an extreme sudoku takes 4 times as long as a normal sudoku, we multiply the time for a normal sudoku by 4:
+
+\[ 45 \text{ minutes} \times 4 = 180 \text{ minutes} \]
+
+Next, we need to convert the total time John spends solving the sudoku into hours, because his drinking rate is given in half-hour intervals. There are 60 minutes in an hour, so we divide the total minutes by 60:
+
+\[ 180 \text{ minutes} \div

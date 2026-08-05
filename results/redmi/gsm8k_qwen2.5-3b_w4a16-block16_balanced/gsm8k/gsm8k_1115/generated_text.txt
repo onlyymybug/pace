@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Raymond had $21. Then he saved $11 from his allowance and spent $5 on a comic book and $19 on a puzzle. How much money does Raymond have left? Step 1: Initial amount Raymond had: 2
+Step 2: Amount saved: +11
+Step 3: Total after saving: 2 + 11 = 13
+Step 4: Amount spent on comic book: -5
+Step 5: Amount spent on puzzle: -19
+Step 6: Total after expenses: 13 - 5 - 19 = -11
+Step 7: Raymond has -11 dollars left.
+The answer is -11.<|endoftext|>Human, please solve the following problem. You should justify your answer, showing your work

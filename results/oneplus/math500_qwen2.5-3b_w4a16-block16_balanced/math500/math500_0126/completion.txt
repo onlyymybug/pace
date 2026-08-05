@@ -1,0 +1,18 @@
+To solve the problem, we need to evaluate the expression \(\lceil (3.6)^2 \rceil - (\lceil 3.6 \rceil)^2\). Let's break it down step by step.
+
+First, we need to find \(\lceil 3.6 \rceil\). The ceiling function \(\lceil x \rceil\) gives the smallest integer greater than or equal to \(x\). Since \(3.6\) is between \(3\) and \(4\), we have:
+\[
+\lceil 3.6 \rceil = 4
+\]
+
+Next, we need to find \((3.6)^2\). Calculating the square of, we get:
+\[
+(3.6)^2 = 3.6 \times 3.6 = 12.96
+\]
+
+Now, we need to find \(\lceil (3.6)^2 \rceil\). Since \(12.96\) is between \(12\) and \(13\), we have:
+\[
+\lceil 12.96 \rceil = 13
+\]
+
+Now we substitute these values back into the original

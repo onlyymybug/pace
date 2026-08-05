@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Consider the function $z(x,y)$ describing the paraboloid
+\[z = (2x - y)^2 - 2y^2 - 3y.\]Archimedes and Brahmagupta are playing a game.  Archimedes first chooses $x.$  Afterwards, Brahmagupta chooses $y.$  Archimedes wishes to minimize $z$ while Brahmagupta wishes to maximize $z.$  Assuming that Brahmagupta will play optimally, what value of $x$ should Archimedes choose? To solve the problem, we need to analyze the function \( z(x, y) = (2x - y)^2 - 2y^2 - 3y \) and determine the optimal strategy for both Archimedes and Brahmagupta. We will start by finding the critical points of of the function with respect to \( y \) for a fixed \( x \).
+
+First, we compute the partial derivative of \( z \) with respect to \( y \):
+\[
+z(x, y) = (2x - y)^2 - 2y^2 - 3y
+\]
+\[

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.realTimeTraffic","description":"Get real-time traffic information for a specified area","parameters":{"type":"object","properties":{"area":{"type":"string","description":"The name or address of the area where you want to get traffic"}},"required":["area"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"SocialCommunication.InstantMessaging.sendSystemMessage","description":"Send a system text message to a specific number or contact","parameters":{"type":"object","properties":{"receiver_number":{"type":"string","description":"Phone number to receive SMS messages"},"receiver_name":{"type":"string","description":"Username to receive SMS"},"message_content":{"type":"string","description":"Text content of the text message to be sent"},"attachment_path":{"type":"string","description":"Image or file URL"}},"required":["receiver_number","receiver_name","message_content","attachment_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The meeting has been scheduled for tomorrow morning at 10am in the conference room on the 23rd floor of the Center Building in Beijing CBD, please be on time.
+query:Can you check the current road conditions at the location mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant

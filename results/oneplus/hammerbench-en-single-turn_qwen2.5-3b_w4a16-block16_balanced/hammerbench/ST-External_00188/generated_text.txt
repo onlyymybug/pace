@@ -1,0 +1,35 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.reportCarProblem","description":"Report a malfunction or problem with your car to the platform.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"problem_description":{"type":"string","description":"Problem description"},"name":{"type":"string","description":"Contact person"}},"required":["brand","problem_description","name"]}}
+{"name":"SocialCommunication.Community.reportCommunityPost","description":"Report a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be reported"},"comment_name":{"type":"string","description":"Post title to report"}},"required":["community_name","comment_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","description":"Reporting tax evasion","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"},"description":{"type":"string","description":"Problem description"}},"required":["company_name","description"]}}
+{"name":"Navigation.TrafficViolations.reportAccident","description":"Report traffic accidents and violations","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"location":{"type":"string","description":"Site"}},"required":["plate_number","location"]}}
+{"name":"Navigation.Bicycles.submitBikeFault","description":"Submit a bicycle malfunction","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Vehicle number"}},"required":["number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Arrangements for next Monday's meeting
+
+Dear Manager Wang,
+
+Hello!
+
+My name is Li Xiao from the Administration Department, and I will be attending a departmental coordination meeting next Monday at 10 am in the multifunctional conference hall on the second floor of the company.Please prepare relevant materials in advance and arrive on time.Also, considering that the meeting may last a long time, I have booked lunch in advance to ensure that everyone can eat in time after the meeting.
+
+Please don't hesitate to let me know if you have any questions or additional needs for coordination.Looking forward to Manager Wang's valuable comments.
+
+Good luck with your work!
+
+Sincerely,
+Salute
+
+Little Li
+Administrative Department
+October 12, 2023
+query:My Tesla Model S touchscreen is not responding, can you report it to Manager Wang for me? The email address is manager.wang@example.com.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.reportCarProblem","parameters":{"brand":"Tesla Model S","problem_description":"The touchscreen is not responding","name":"Little Li"}}<|im_end|>

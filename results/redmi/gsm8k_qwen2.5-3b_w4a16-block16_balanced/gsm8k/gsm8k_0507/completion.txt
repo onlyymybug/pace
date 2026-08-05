@@ -1,0 +1,14 @@
+Step 1: Calculate total number of legs
+Number ofLegs = NumberofDogs * LegsPerDog
+NumberofLegs = 6 * 4
+
+Step 2: Calculate total cost
+TotalCost = NumberofLegs / NumberofPairsPerCost * CostPerPair
+NumberofPairsPerCost = 4
+CostPerPair = 12
+
+Step 1 result: NumberofLegs = 24
+
+Step 2 result: TotalCost = 24 / 4 * 12 = 6
+
+The answer is 6.<|endoftext|>Human, I need you to provide

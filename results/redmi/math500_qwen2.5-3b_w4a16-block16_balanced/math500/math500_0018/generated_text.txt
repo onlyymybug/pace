@@ -1,0 +1,30 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Below is the graph of $y = a \sin (bx + c) + d$ for some positive constants $a,$ $b,$ $c,$ and $d.$  Find the smallest possible value of $c.$
+
+[asy]import TrigMacros;
+
+size(400);
+
+real f(real x)
+{
+	return 2*sin(3*x + pi) + 1;
+}
+
+draw(graph(f,-3*pi,3*pi,n=700,join=operator ..),red);
+trig_axes(-3*pi,3*pi,-4,4,pi/2,1);
+layer();
+rm_trig_labels(-5,5, 2);
+
+label("$1$", (0,1), E);
+label("$2$", (0,2), E);
+label("$3$", (0,3), E);
+label("$-1$", (0,-1), E);
+label("$-2$", (0,-2), E);
+label("$-3$", (0,-3), E);
+[/asy] To solve the problem, we need to analyze the given graph of \( y = a \sin (bx + c) + d \) and determine the values of of \( a \), \( b \), \( c \), and \( d \).
+
+From the graph, we can observe the following:
+- The amplitude \( a \) is 2.
+- The vertical shift \( d \) is 1.
+- The period of of \( T \) is \( \frac{2\pi}{b} \). From the graph, the period appears to be \( 2\pi \), so \( b = 3

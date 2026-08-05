@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.commentArticle","description":"Comment on an article","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Comments"},"article":{"type":"string","description":"Articles"}},"required":["content","article"]}}
+{"name":"VideoPlayback.OnlineVideos.commentOnlineVideo","description":"Comment on a video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"Education.OnlineClasses.postCourseReview","description":"User commented on a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"},"content":{"type":"string","description":"Review Content"}},"required":["course_name","teacher_name","content"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Teacher Zhang! This is Li Hua, I would like to confirm with you about the next meeting. I took a look at my schedule from 3pm to 5pm on May 10th. Please let me know when it's convenient for you, so I can prepare accordingly. Thank you!
+query:I would like to make a comment on the advanced financial management course of the person mentioned in the text message. The theory and practice are well combined, but the course is difficult and beginners are careful to choose.<|im_end|>
+<|im_start|>assistant
+{"name":"Education.OnlineClasses.postCourseReview","parameters":{"course_name":"advanced financial management course","teacher_name":"Teacher Zhang","content":"EK:Hello, Teacher Zhang! This is Li Hua, I would like to confirm with you about the next meeting. I took a look at my schedule from 3pm to 5pm on May 10th. Please let me know when it's convenient for you, so I can prepare accordingly. Thank you!\nquery:I would like to make a comment on the advanced financial management course\u3000\u3000\u3000\u3

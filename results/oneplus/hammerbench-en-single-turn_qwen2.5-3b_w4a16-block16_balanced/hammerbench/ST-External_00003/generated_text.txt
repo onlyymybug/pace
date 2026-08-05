@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.viewViolationDetail","description":"View details of the specified traffic violation record","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"}},"required":["plate_number","city","time"]}}
+{"name":"Navigation.TrafficViolations.queryViolation","description":"Query traffic violation records by conditions","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"}},"required":["plate_number","city","time"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryTrafficViolations","description":"Check the traffic violation information of the user's vehicle","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"Vehicle license plate"}},"required":["plate_number"]}}
+{"name":"Health.MedicalServices.getPatientMedicalRecord","description":"Obtain the patient's medical record information based on the patient's name, etc.","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"Travel.ScenicAreaServices.checkScenicSpotAvailability","description":"View the current availability of selected scenic spots by scenic spot name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The day before yesterday, at 3pm, our team held a discussion in the conference room on the progress of the project, which lasted for about 2 hours, and everyone expressed their satisfaction with the current progress and made a detailed plan for the next work.
+query:I want to check the vehicle with Nanjing license plate number Su E98765. Regarding the violation record of speeding, can you help me check it?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.queryViolation","parameters":{"plate_number":"Su E98765","city":"Nanjing","time":"day_before_yesterday_15:00"}}<|im_end|>

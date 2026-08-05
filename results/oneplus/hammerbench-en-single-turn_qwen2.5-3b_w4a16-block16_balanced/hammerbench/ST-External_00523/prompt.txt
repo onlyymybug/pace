@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.countPhoneCallDuration","description":"Count call duration over time","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Timeframe, call within the default day"}},"required":["time"]}}
+{"name":"UtilityTools.AlarmClock.editTimer","description":"Modify timer ring settings","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer Name:      {0}"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+{"name":"Finance.Funds.setFundAutoPurchase","description":"Set auto-requisition for specified funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Value (Unit: yuan)"},"frequency":{"type":"string","description":"Frequency, default is monthly, value is monthly, weekly or daily"}},"required":["fund_name","fund_code","amount","frequency"]}}
+{"name":"SystemTools.SystemSettings.timerOnorOff","description":"Set the phone to power on and off regularly","parameters":{"type":"object","properties":{"on_time":{"type":"string","description":"Up time"},"off_time":{"type":"string","description":"Shutdown time"}},"required":["on_time","off_time"]}}
+{"name":"SocialCommunication.Calling.quickPhoneCallReply","description":"Set up some common response statements ahead of time, or set them up individually for a contact to send quickly during a call","parameters":{"type":"object","properties":{"reply_content":{"type":"string","description":"Quick replies"},"contact_name":{"type":"string","description":"Contact person"}},"required":["reply_content","contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10pm, remember to be on time for our virtual meeting, we will discuss the market strategy for the next quarter, we hope that you can go online on time and have the relevant information ready.
+query:I want to set my phone to turn on automatically at 8am every morning, and then turn it off automatically at the time mentioned in the text message. How do I set it?<|im_end|>
+<|im_start|>assistant

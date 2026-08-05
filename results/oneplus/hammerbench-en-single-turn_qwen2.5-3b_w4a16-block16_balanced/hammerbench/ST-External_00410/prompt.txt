@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","description":"Delete travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"UtilityTools.Search.deleteWebBookmark","description":"Delete bookmarks specified in favorites; delete bookmarks specified in favorites; delete all bookmarks in favorites","parameters":{"type":"object","properties":{"bookmark":{"type":"string","description":"Bookmark title, defaults to all bookmarks from the current collection"}},"required":["bookmark"]}}
+{"name":"SocialCommunication.SocialMedia.deleteMediumTrends","description":"Delete the specified activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","time"]}}
+{"name":"SocialCommunication.Community.deleteCommunityPost","description":"Delete a post from a specific community based on the title of the post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be deleted"},"post_name":{"type":"string","description":"Title of the post to be deleted"}},"required":["community_name","post_name"]}}
+{"name":"SystemTools.SystemSettings.clearSystemRubbish","description":"Clean your phone's memory","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The meeting was held at the Marriott Hotel near the Champs-Elysées in Paris to discuss our new market expansion plans. Please make sure to arrive early to allow time to familiarize yourself with the meeting venue and equipment.
+query:Can you help me delete the itinerary for the travel location mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

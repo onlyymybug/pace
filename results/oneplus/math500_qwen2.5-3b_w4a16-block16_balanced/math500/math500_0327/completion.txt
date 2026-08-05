@@ -1,0 +1,19 @@
+To solve the given problem, we need to evaluate the expression \(\sin (\arcsin 0.4 + \arcsin 0.5) \cdot \sin (\arcsin 0.5 - \arcsin 0.4)\).
+
+First, let's denote:
+\[ x = \arcsin 0.4 \]
+\[ y = \arcsin 0.5 \]
+
+By definition of \(x\) and \(y\), we have:
+\[ \sin x = 0.4 \]
+\[ \sin y = 0.5 \]
+
+We need to find \(\sin (x + y) \cdot \sin (y - x)\).
+
+### Step 1: Evaluate \(\sin (x + y)\)
+
+Using the sine addition formula:
+\[ \sin (x + y) = \sin x \cos y + \cos x \sin y \]
+
+We already know \(\sin x = 0.4\). To find \(\cos x\), we use the Pythagorean identity:
+\[ \cos^2 x = 1 - \sin^2 x = 1 - 0.4^2 = 1 - 0.16 =

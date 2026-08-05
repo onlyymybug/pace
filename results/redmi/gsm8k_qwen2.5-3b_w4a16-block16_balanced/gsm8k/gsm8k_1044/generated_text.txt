@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 26 countries in South America and, in each country, there are 5 cities with 1000 people living in each city.  If the whole population lives in these cities, how many people are there in South America? To find the total population of of South America, we need to multiply the number of countries by the number of cities in each country and then multiply that by the number of people living in each city.
+
+Number of of countries = 26
+Number of of cities in each country = 5
+Number of of people in each city = 1000
+
+Total population = Number of of countries × Number of of cities in each country × Number of of people in each city
+
+Total population = 26 × 5 × 1000
+
+Now, let's calculate the total population:
+Total population = 2

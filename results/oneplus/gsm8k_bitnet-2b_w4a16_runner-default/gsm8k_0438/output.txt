@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sitti and Juris bought 34 and 22 oranges, respectively. If both of them decide to share them equally with their 6 other friends, how many oranges will everyone get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to find the total number of oranges Sitti and Juris have together. Then, we divide this total by the number of people sharing the oranges.
+
+1. Calculate the total number of oranges:
+   - Sitti has 34 oranges.
+   - Juris has 22 oranges.
+   - Total oranges = 34 + 22 = 56 oranges.
+
+2. Calculate the number of people sharing the oranges:
+   - Sitti and Juris share with their 6 other friends.
+   - Total people = 2 (Sitti and Juris) + 6 friends = 8 people

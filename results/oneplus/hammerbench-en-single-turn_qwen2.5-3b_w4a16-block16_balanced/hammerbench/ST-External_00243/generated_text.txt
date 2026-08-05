@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.CloudStorage.netdiskSetRecycleBinAutoEmpty","description":"Set when the Drive Recycle Bin automatically empties","parameters":{"type":"object","properties":{"interval_days":{"type":"string","description":"Time automatically emptied"}},"required":["interval_days"]}}
+{"name":"SystemTools.SystemSettings.setSystemScreenTimeout","description":"Set the auto message screen time for your phone screen","parameters":{"type":"object","properties":{"timeout_duration":{"type":"integer","description":"Maximum duration of screen inactivity, in seconds"}},"required":["timeout_duration"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOrderDeliveryEstimate","description":"Estimated time to get deliveries based on orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"}},"required":["order_name"]}}
+{"name":"Photography.PhotoTaking.takePhotoDelay","description":"Take photos after a set period of time","parameters":{"type":"object","properties":{"delay":{"type":"integer","description":"Delay duration, in seconds"}},"required":["delay"]}}
+{"name":"Finance.Funds.setFundAutoRedeem","description":"Set auto-redemption for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Value (Unit: yuan)"},"triggering_conditions":{"type":"string","description":"Trigger conditions, such as net worth reaching a certain value"}},"required":["fund_name","fund_code","amount","triggering_conditions"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends, how are you? I've been going to the gym every two weeks recently to keep my body active and healthy. Why don't you come with me? We can encourage each other to make fitness a part of our lives.
+query:I want to set the time for the automatic emptying of the Cloud Disk Recycle Bin to the number of days mentioned in the WeChat message. How do I do this?<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.CloudStorage.netdiskSetRecycleBinAutoEmpty","parameters":{"interval_days":"message.interval_days"}}<|im_end|>

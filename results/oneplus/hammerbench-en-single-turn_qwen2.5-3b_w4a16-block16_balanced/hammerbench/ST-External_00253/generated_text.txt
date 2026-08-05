@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Sales Representative Xiao Li released the latest sales policy in the group. Zhang Hua of the customer service team has sorted out the updated FAQs. You can go to the knowledge base to check the latest version. If you have any questions, you can contact the sales representative Xiao Li or Zhang Hua of the customer service team directly.
+query:There is a training on customer relationship management system at 2:30 pm on Wednesday. The meeting ID is 2333. Can you help me send the invitation to the friends mentioned in the QQ message?<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","parameters":{"meeting_id":"2333","title":"Customer Relationship Management System Training","time":"Wednesday 2:30 pm","participant_list":"QQ好友"}}<|im_end|>

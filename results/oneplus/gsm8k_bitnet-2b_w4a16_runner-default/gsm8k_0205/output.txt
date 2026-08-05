@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet had 22 green pens and 10 yellow pens. Then she bought 6 bags of blue pens and 2 bags of red pens. There were 9 pens in each bag of blue and 6 pens in each bag of red. How many pens does Janet have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of pens Janet has now, we need to calculate the number of blue pens and red pens she bought, and then add these to the initial number of green and yellow pens.
+
+First, calculate the number of blue pens:
+- Janet bought 6 bags of blue pens.
+- Each bag contains 9 blue pens.
+- Total blue pens = 6 bags * 9 pens/bag = 54 blue pens.
+
+Next, calculate the number of red pens:
+- Janet bought 2 bags of red pens.
+- Each bag contains 6 red pens.
+- Total red pens = 2 bags * 6 pens

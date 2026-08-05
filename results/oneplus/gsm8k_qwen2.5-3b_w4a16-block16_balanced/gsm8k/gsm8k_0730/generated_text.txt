@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At 8:00, 5000 people lined up at a polling station to cast their vote on election day. By midday 2/5 of the people had voted and by 16:00 2/3 of the remaining people had voted. What's the number of those who had not voted by 16:00? Step 1: At 8:00, there were 5000 people lined up.
+Step 2: By midday, 2/5 of of the people had voted.
+Step 3: Calculate the number of people who voted by midday: (2/5) * 5000 = 2000 people.
+Step 4: Subtract the number of people who voted by midday from the total to find the remaining people: 5000 - 2000 = 3000 people remaining.
+Step 5: By 16:0

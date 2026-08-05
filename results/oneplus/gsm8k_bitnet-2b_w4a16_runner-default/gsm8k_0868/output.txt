@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Daisy bought a bag of potatoes that weighed 5 pounds. She also bought a bag of sweet potatoes that weighed 2 times as much as the potatoes and a bag of carrots that weighed 3 pounds fewer than the sweet potatoes. How many pounds of carrots did Daisy buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many pounds of carrots Daisy bought, we first need to determine the weight of the sweet potatoes. Since the sweet potatoes weigh 2 times as much as the potatoes, we multiply the weight of the potatoes by 2:
+
+Weight of sweet potatoes = 2 * Weight of potatoes
+Weight of sweet potatoes = 2 * 5 pounds
+Weight of sweet potatoes = 10 pounds
+
+Next, we calculate the weight of the carrots, which is 3 pounds fewer than the weight of the sweet potatoes:
+
+Weight of carrots = Weight of sweet potatoes - 3 pounds
+Weight of carrots = 10 pounds - 3

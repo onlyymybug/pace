@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The farm has 30 cows and the zoo has 20 sheep.  The zoo has twice as many cows as the farm does.  The farm has half as many sheep as the zoo does.  How many animals do the farm and zoo have combined?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cows in the farm as F and the number of cows in the zoo as Z. We know from the problem that Z = 2F. We also know that F = 0.5Z. Since F = 30 (from the problem statement) and Z = 20 (from the problem statement), we can substitute these values into the equations.
+
+First, we verify the given information:
+- The farm has 30 cows: F = 30.
+- The zoo has 20 sheep: Z = 20.
+
+Now, we use the information that Z = 2F to find F:

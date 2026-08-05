@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A water tank is filled with 120 liters of water. Celine used 90 liters of water from the tank to water her small garden. She was then able to collect rainwater that is twice as much as what was left. How many liters of water are in the tank now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Determine how much water is left in the tank after Celine used some for her garden.
+2. Calculate the amount of rainwater collected.
+3. Add the rainwater to the remaining water in the tank.
+
+Let's go through the steps:
+
+1. **Initial amount of water in the tank**: 120 liters
+2. **Water used by Celine**: 90 liters
+   - Water left after using for the garden: \( 120 - 90 = 30 \) liters
+3. **Rainwater collected**: Twice the amount left after using for

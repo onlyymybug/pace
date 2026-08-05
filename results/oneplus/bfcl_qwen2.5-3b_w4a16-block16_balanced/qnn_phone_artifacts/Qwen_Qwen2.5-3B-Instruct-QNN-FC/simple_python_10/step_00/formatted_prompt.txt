@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_area", "description": "Calculate the area of a right-angled triangle given the lengths of its base and height. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base": {"type": "integer", "description": "The length of the base of the right-angled triangle."}, "height": {"type": "integer", "description": "The height of the right-angled triangle."}, "unit": {"type": "string", "description": "The unit of measure used. Defaults to 'cm'."}}, "required": ["base", "height"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the area of a right-angled triangle given the lengths of its base and height as 6cm and 10cm.<|im_end|>
+<|im_start|>assistant

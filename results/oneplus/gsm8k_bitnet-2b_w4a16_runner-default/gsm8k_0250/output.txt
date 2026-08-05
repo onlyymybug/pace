@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Monday, Sue ate 4 times as many cookies as her sister. On Tuesday, she ate twice as many cookies as her sister. Her sister ate 5 cookies on Monday and 13 the next day. If 1 cookie has 200 calories, how many more calories did Sue consume than her sister?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cookies Sue's sister ate on Monday as \( x \). According to the problem, her sister ate 5 cookies on Monday, so \( x = 5 \).
+
+On Monday, Sue ate 4 times as many cookies as her sister, so Sue ate \( 4x = 4 \times 5 = 20 \) cookies.
+
+On Tuesday, Sue ate twice as many cookies as her sister, so Sue ate \( 2x = 2 \times 5 = 10 \) cookies.
+
+In total, Sue ate \( 20 + 10 = 30 \) cookies.
+

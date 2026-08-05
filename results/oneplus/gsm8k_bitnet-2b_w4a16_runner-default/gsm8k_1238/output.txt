@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Last Friday, 13 of the 82 teachers at Rydell Elementary School were sick. There were 9 substitute teachers called in to help. How many teachers were at school that day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many teachers were at school that day, we need to subtract the number of sick teachers from the total number of teachers at the school.
+
+Total teachers at school = 82
+Number of sick teachers = 13
+
+Teachers at school that day = Total teachers at school - Number of sick teachers
+Teachers at school that day = 82 - 13
+Teachers at school that day = 69
+
+The answer is 69.<|eot_id|>

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Education.OnlineClasses.viewTeacherDetail","description":"View teacher's profile","parameters":{"type":"object","properties":{"teacher_name":{"type":"string","description":"Educator name:"}},"required":["teacher_name"]}}
+{"name":"Health.MedicalServices.viewDoctorDetails","description":"View details for assigned physician","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"location":{"type":"string","description":"Area"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","location","doctor_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"SocialCommunication.SocialMedia.viewMediumFriendInfo","description":"View details of selected friends in selected media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","account_number"]}}
+{"name":"Health.MedicalServices.rateDoctor","description":"Evaluate visiting physicians","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"content":{"type":"string","description":"Review Content"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","content","doctor_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Li Ming, I'm Zhang Hua. Last time we talked about project cooperation, I want to take some time this week to discuss it in detail. How convenient is it for you? If you can, I hope we can meet this weekend at a location you can decide. Looking forward to hearing from you, Li Ming!
+query:Can you check the profile of the teacher mentioned in the text?<|im_end|>
+<|im_start|>assistant
+{"name":"Education.OnlineClasses.viewTeacherDetail","parameters":{"teacher_name":"Li Ming"}}<|im_end|>

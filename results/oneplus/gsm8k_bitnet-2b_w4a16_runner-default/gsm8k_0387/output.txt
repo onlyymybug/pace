@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: To have the car for the weekend, Wilson's report card needs to show that he received 80 or higher in his math class.  His math grade is calculated by the average of 5 test scores.  On those tests, he received: 65, 94, 81, 86 and 74.  What is his current math grade?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Wilson's current math grade, we need to calculate the average of his 5 test scores. 
+
+First, we add up all the test scores: 
+65 + 94 + 81 + 86 + 74 = 410
+
+Next, we divide the total by the number of tests, which is 5:
+410 / 5 = 82
+
+Wilson's current math grade is 82. The answer is 82.<|eot_id|>

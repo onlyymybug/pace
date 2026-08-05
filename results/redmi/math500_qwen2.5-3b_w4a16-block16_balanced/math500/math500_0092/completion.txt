@@ -1,0 +1,9 @@
+To determine the smallest possible integer value for \(x\) such that \(f(x) = \frac{\sqrt{x-1}}{x-2}\) has a real number value, we need to ensure that both the numerator and the denominator are defined and that the denominator is not zero.
+
+1. **Numerator Condition:**
+   The numerator is \(\sqrt{x-1}\). For the square root to be defined, the expression inside the square root must be non-negative:
+   \[
+   x - 1 \geq 0 \implies x \geq 1
+   \]
+
+2. **Den

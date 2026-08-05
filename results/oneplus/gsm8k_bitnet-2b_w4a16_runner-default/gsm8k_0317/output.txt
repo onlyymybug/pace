@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Solomon bought 20 marbles from his friend Johanna and added them to a store that had 50. If his father also gave him 2/5 times as many marbles as he bought from Johanna, and each marble weighs 2kgs, calculate the total weight of marbles Solomon has in the store.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Calculate the number of marbles Solomon's father gave him.
+2. Add the marbles from Johanna, the marbles from his father, and the marbles he already had.
+3. Calculate the total weight of the marbles.
+
+Let's start with step 1:
+
+1. Solomon bought 20 marbles from Johanna. His father gave him 2/5 times as many marbles as he bought from Johanna. So, the number of marbles from his father is:
+   \[
+   \frac{2}{5} \times 

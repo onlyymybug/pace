@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John buys 10 bottles of scotch for a total cost of $600.  He also buys twice as many bottles of cognac that cost 50% more per bottle.  How much does he spend on everything?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the cost of one bottle of scotch as \( C \) and the cost of one bottle of cognac as \( C_{c} \). We know that John buys 10 bottles of scotch for $600, so we can write the equation:
+
+\[ 10C = 600 \]
+
+Solving for \( C \), we get:
+
+\[ C = \frac{600}{10} = 60 \]
+
+So, one bottle of scotch costs $60.
+
+Since John buys twice as many bottles of cognac, he buys \( 2 \times 10 = 20 \) bottles of cogn

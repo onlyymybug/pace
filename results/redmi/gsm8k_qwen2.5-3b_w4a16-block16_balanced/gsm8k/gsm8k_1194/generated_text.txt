@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jason was told he could earn $3.00 for doing his laundry,  $1.50 for cleaning his room, $0.75 for taking the trash to the curb each week and $0.50 for emptying the dishwasher.  In a two week period, Jason emptied the dishwasher 6 times, did his laundry once, took the trash out twice and cleaned his room once.  How much money did Jason earn? Step 1: Calculate earnings for each task:
+- Laundry: $3.00
+- Cleaning room: $1.50
+- Taking trash: $0.75
+- Emptying dishwasher: $0.50
+
+Step 2: Calculate total earnings for the tasks Jason did:
+- Laundry: $3.00
+- Cleaning room: $1.50
+- Taking trash: $0.75 * 2 (since he did twice) = $1.50
+- Emptying dishwasher: $0.50 * 6 (since he did 6 times)

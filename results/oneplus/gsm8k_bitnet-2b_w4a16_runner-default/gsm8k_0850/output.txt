@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A farmer has 900 eggs. He placed them on a tray, which holds 30 eggs each. How much will the farmer earn if he sells it for $2.5 per tray?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many trays the farmer can fill with 900 eggs and then calculate the total earnings based on the price per tray.
+
+1. Calculate the number of trays:
+   \[
+   \text{Number of trays} = \frac{900 \text{ eggs}}{30 \text{ eggs/tray}} = 30 \text{ trays}
+   \]
+
+2. Calculate the total earnings:
+   \[
+   \text{Total earnings} = 30 \text{ trays} \times \$2.5 \text{ per tray} = \$75
+   \]
+
+The answer

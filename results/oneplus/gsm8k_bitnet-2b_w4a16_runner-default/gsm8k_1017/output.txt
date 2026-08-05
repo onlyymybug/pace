@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mrs. Tatiana owns a grocery store that sells different fruits and vegetables, which includes carrots. The price of carrots in the grocery store increases by 5% of the original price every year. What would be the price of carrots after three years if it was $120 initially? (Round to the nearest integer)<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the price of carrots after three years, we need to calculate the price increase each year and apply it to the previous year's price.
+
+1. Initial price of carrots: $120
+2. Increase rate: 5% per year
+
+Let's calculate the price after each year:
+
+- After the first year:
+  Increase = 5% of $120 = 0.05 * $120 = $6
+  New price = $120 + $6 = $126
+
+- After the second year:
+  Increase = 5% of $126 = 0.05 * $126 = $6.30

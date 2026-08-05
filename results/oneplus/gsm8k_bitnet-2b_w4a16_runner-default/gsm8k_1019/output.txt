@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It takes James 10 minutes to read 3 pages of his book before he goes to bed. He reads 18 pages of his book and then decides to go to sleep. How long does James spend reading, in minutes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine how long it takes James to read one page of his book. Since it takes him 10 minutes to read 3 pages, it takes him 10 / 3 minutes to read one page. 
+
+Next, we calculate the time it takes him to read 18 pages. Since it takes him 10 / 3 minutes to read one page, it will take him 18 * (10 / 3) minutes to read 18 pages.
+
+Now, we simplify the expression: 18 * (10 / 3) = (18 * 10) / 3 = 180

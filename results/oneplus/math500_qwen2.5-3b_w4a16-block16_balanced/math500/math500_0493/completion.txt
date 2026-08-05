@@ -1,0 +1,16 @@
+To solve the problem, we need to understand the projection of operation and the given condition. The projection of of a vector \(\mathbf{v}\) onto a vector \(\mathbf{a}\) is given by:
+
+\[
+\operatorname{proj}_{\mathbf{a}} \mathbf{v} = \frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} \mathbf{a}
+\]
+
+Here, \(\mathbf{a} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\). The condition given is:
+
+\[
+\operatorname{proj}_{\begin{pmatrix} 2 \\ 1 \end{pmatrix}} \mathbf{v} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\]
+
+This implies:
+
+\[
+\frac{\mathbf{v} \cdot \begin{pmatrix} 2 \\ 1 \end{pmatrix}}{\begin{pmatrix} 2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 1 \end{pm

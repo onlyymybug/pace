@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a family, there are 2 brothers and 3 sisters. All sisters are the same age, which is 16. One of the brothers is 12 years old, which is half the age of the older brother. What is the total age of all these siblings? To solve this, we first calculate the age of the older brother, then add all the siblings' ages together.
+
+1. The problem states that one sister is 16 years old.
+2. The age of the older brother is given as 12, which is half the age of of the older brother. Therefore, the age of the older brother is 12 * 2 = 24 years.
+3. Now we add all the siblings' ages together:
+   - 2 sisters aged 16 each: 16 * 2 = 32
+   - 2 brothers aged 12

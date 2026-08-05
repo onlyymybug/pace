@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cody eats three times as many cookies as Amir eats. If Amir eats 5 cookies, how many cookies do both of them eat together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many cookies Cody eats. Since Cody eats three times as many cookies as Amir eats, and Amir eats 5 cookies, we multiply Amir's cookies by 3 to find Cody's cookies.
+
+Cody's cookies = 3 * Amir's cookies
+Cody's cookies = 3 * 5
+Cody's cookies = 15
+
+Now, we add the number of cookies Amir eats to the number of cookies Cody eats to find the total number of cookies they eat together.
+
+Total cookies = Amir's cookies + Cody's cookies
+Total cookies = 5 + 15

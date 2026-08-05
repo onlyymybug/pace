@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Thursday, Joe caught 3 pounds of crawfish.  He caught 4 times that amount on Friday and half the amount of his Friday's catch on Saturday.  If 1 serving of crawfish is 3 pounds, how many servings does he have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. Joe caught 3 pounds of crawfish on Thursday.
+2. On Friday, he caught 4 times the amount he caught on Thursday. So, he caught \(4 \times 3 = 12\) pounds of crawfish on Friday.
+3. On Saturday, he caught half the amount he caught on Friday. So, he caught \(\frac{12}{2} = 6\) pounds of crawfish on Saturday.
+4. To find the total amount of crawfish Joe caught over the three days, we add the amounts from Thursday, Friday

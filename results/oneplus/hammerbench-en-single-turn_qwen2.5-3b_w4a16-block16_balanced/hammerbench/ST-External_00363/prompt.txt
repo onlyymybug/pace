@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Calendar.addCalendarClock","description":"Set a schedule reminder","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule Reminder Time"}},"required":["date_name","start_date"]}}
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"Education.OnlineClasses.scheduleCourses","description":"Set course start reminder","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","teacher_name"]}}
+{"name":"UtilityTools.Memo.setNotesReminders","description":"Set a reminder at a certain time","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Memo Title"},"time":{"type":"string","description":"Reminder time"},"category":{"type":"string","description":"Classify"}},"required":["title","time","category"]}}
+{"name":"Health.HealthManagement.createHealthReminder","description":"Create health reminders by reminder content and reminder time","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Alert Content"},"time":{"type":"string","description":"Reminder time"}},"required":["content","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Ming, don't forget the weekend party. We are scheduled to be at 2 pm. The place is the old place. The last time that restaurant, remember to bring the report you mentioned last week, everyone is waiting to see it. Come a little earlier if you have time, and we can discuss it first. We look forward to welcoming you!
+query:Can you help me set up a reminder? As mentioned in my friend's WeChat, the basic Python programming course he taught is about to begin.<|im_end|>
+<|im_start|>assistant

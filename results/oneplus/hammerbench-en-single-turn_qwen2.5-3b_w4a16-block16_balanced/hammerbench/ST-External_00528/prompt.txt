@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.SecondhandTrading.buySecondhandSaleCommodity","description":"Goods purchased","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Trade Name/Keywords"}},"required":["search_name"]}}
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The good night story book you purchased has been sent by courier and is expected to arrive within 2 days. This book features a selection of intimate and moving stories, each of which will bring you peace and beauty before you go to bed. Please keep the phone open to receive courier information. Enjoy!
+query:I would like to buy the product mentioned in Tom's text message, he said that the story is positive and suitable for children over 5 years old.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,24 @@
+To solve the functional equation \( f(x) + f(y) = f(x + y) - xy - 1 \) with the initial condition \( f(1) = 1 \), we start by analyzing the equation with specific values for \( x \) and \( y \).
+
+First, let's set \( y = 0 \):
+\[
+f(x) + f(0) = f(x + 0) - x \cdot 0 - 1
+\]
+This simplifies to:
+\[
+f(x) + f(0) = f(x) - 1
+\]
+By subtracting \( f(x) \) from both sides, we get:
+\[
+f(0) = -1
+\]
+
+Next, we use the initial condition \( f(1) = 1 \). Let's substitute \( x = 1 \) and \( y = 1 \) into the original equation:
+\[
+f(1) + f(1) = f(1 + 1) - 1 \cdot 1 - 1
+\]
+This simplifies to:
+\[
+2f(1) = f(2) - 2
+\]
+Given \( f(1) = 

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Memo.viewUpcoming","description":"View current to-do","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"Navigation.TrainTickets.queryHighSpeedRailRoutes","description":"Find high-speeded rail routes from and to specific destinations","parameters":{"type":"object","properties":{"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"max_results":{"type":"integer","description":"Returns the maximum number of results, optional, default is 5"}},"required":["departure_station","destination_station","max_results"]}}
+{"name":"OfficeSoftware.Documents.readDocument","description":"Read the specified document based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 9 am in front of the Nankai University Library in Tianjin, we will visit the University History Museum to learn about the history and development of Nankai University. At 2pm, we will gather at Tianjin Ancient Culture Street to taste local specialties and experience the traditional culture of Tianjin. Remember to bring your camera and student ID.
+query:I would like to check the high-speed rail line from Beijing to the place mentioned in the notepad, showing up to 3.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.HighSpeedRailTickets.queryHighSpeedRailRoutes","parameters":{"departure_station":"Beijing","max_results":3,"departure":"Tianjin"}}<|im_end|>

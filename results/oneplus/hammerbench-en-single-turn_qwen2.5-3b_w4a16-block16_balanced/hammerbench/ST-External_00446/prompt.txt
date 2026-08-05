@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.getHopitalReviews","description":"Query hospital reviews by hospital name","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["hospital_name"]}}
+{"name":"OnlineShopping.Mall.viewCommodityEvaluation","description":"View a list of user reviews for an item based on its name","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantCustomerSatisfactionRate","description":"Get customer satisfaction data for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"Travel.HotelServices.getHotelReviews","description":"Get reviews based on specific hotel names","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"location":{"type":"string","description":"Address"}},"required":["name","location"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotComment","description":"Get user reviews for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Ming, I'm going to visit The Palace Museum this weekend. I heard that there is a special exhibition on the history of the Ming and Qing Dynasties. Are you interested in going with me? We can meet at the noon gate of The Palace Museum at 10am to avoid some morning rush. If you have time, please reply to me sooner!
+query:Can I check the user reviews and reviews of the attraction mentioned by Xiao Li in the QQ message?<|im_end|>
+<|im_start|>assistant

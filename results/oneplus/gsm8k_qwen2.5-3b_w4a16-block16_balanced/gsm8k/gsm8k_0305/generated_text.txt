@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Watson works a 10-hour shift each day, five days a week. He earns $10 per hour and gets a $300 bonus each week if the company performs well. How much money did Watson make in April if the company performed very well for the whole month? Step 1: Calculate total hours worked in April
+Watson works 10 hours/day for 5 days/week, so:
+Total hours per week = 10 hours/day * 5 days/week = 50 hours/week
+Total weeks in April = 4 weeks
+Total hours in April = 50 hours/week * 4 weeks = 200 hours
+
+Step 2: Calculate earnings from hours worked
+Earnings from hours = Total hours * Hourly wage
+Earnings from hours = 200 hours * $10/hour = $2000
+

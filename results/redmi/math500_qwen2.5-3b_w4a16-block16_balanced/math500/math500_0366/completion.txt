@@ -1,0 +1,5 @@
+To solve the problem, we start by expressing \(a\) and \(b\) in terms of involving their greatest common divisor (gcd). Given that \(\gcd(a, b) = 210\), we can write \(a = 210m\) and \(b = 210n\) where \(m\) and \(n\) are coprime integers (i.e., \(\gcd(m, n) = 1\)).
+
+The least common multiple (lcm) of of[ab] is given by:
+\[
+\mathop{\text{lcm}}[a, b] =

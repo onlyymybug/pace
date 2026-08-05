@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: For the children's day celebration, children are to perform mass drills in the presence of the President of the country. They stand 8 in a row and there are 7 rows each for 5 different Schools. How many children can there be in the drill? To solve this, we first calculate the number of children in one row, then multiply by the number of rows per school, and finally multiply by the number of schools.
+
+Number of children in one row: 8
+
+Number of rows per school: 7
+
+Number of schools: 5
+
+Total number of children in the drill: 
+
+\[ 8 \times 7 \times 5 = 28 \times 5 = 140 \]
+
+The answer is 140. The answer is 140.<|endoftext|>Human: Given the problem, calculate the total number of children participating in the drill

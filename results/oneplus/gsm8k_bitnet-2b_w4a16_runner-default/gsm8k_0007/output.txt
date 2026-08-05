@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Toulouse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of sheep each city has and then add them together.
+
+1. Let the number of sheep in Seattle be \( S \). We are given that \( S = 20 \).
+
+2. Charleston has 4 times as many sheep as Seattle. Therefore, the number of sheep in Charleston is \( C = 4S \).
+
+3. Toulouse has twice as many sheep as Charleston. Therefore, the number of sheep in Toulouse is \( T = 2C \).
+
+Now, we substitute the value of \( S \) into the equations for \( C \) and \(

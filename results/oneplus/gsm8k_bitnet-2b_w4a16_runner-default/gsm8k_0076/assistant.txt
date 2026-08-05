@@ -1,0 +1,11 @@
+To find the average square footage of each level, we first need to determine the square footage of each level in the sandcastle.
+
+Given:
+- The top level (4th level) has a square footage of 16.
+
+Since each level has half the square footage as the level below it, we can calculate the square footage of each level as follows:
+
+- Level 4: 16 square feet
+- Level 3: 16 / 2 = 8 square feet
+- Level 2: 8 / 2 = 4 square feet
+- Level 1: 4 / 2 = 2 square feet

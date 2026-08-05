@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: After Andrea saved some money, she then spent the rest of her money on an $11 sweater and gave her brother $4. If she had $36 in the beginning, how much did Andrea save? Step-by-step reasoning:
+1/ Andrea started with $36.
+2/ After spending some money, she had $36 - remaining amount left.
+3/ She then spent $11 on a sweater.
+4/ She also gave $4 to her brother.
+5/ Total amount spent/spent on brother: $11 + $4 = $15.
+6/ So far, total amount spent: $36 - remaining amount - $15.
+7/ We know that remaining amount is what she saved, so:
+Remaining amount = $36 - ($15)
+8/ Simplifying: Remaining amount =

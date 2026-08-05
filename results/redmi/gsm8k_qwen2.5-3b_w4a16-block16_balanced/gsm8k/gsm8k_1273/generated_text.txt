@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Helen went on a trip through Germany. She booked a hotel for 3 nights and rode the bus 7 times during that trip. One night at the hotel was a cost of $80, and every bus trip was 10% of the price of one night at the hotel. How much did Helen pay for the hotel and bus travels during that trip? Step 1: Calculate the total cost for hotel nights.
+One night at the hotel costs $80, and Helen stayed for 3 nights.
+Total hotel cost = 80 * 3
+
+Step 2: Calculate the cost for bus rides.
+One bus trip costs 10% of the hotel cost.
+Total bus cost = (80 * 0.1) * 7
+
+Step 3: Sum up the total costs.
+Total cost = Total hotel cost + Total bus cost
+
+Step 4: Perform the calculations.
+Total hotel cost = 80 * 3
+Total bus cost = (8

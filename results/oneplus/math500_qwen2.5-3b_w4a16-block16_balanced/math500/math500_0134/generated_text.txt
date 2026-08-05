@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In a convex quadrilateral, the measure of the largest angle is twice the measure of the smallest angle, and the other two angles are both right angles. How many degrees are in the largest angle? Let the four angles of of the quadrilateral be \(A\), \(B\), \(C\), and \(D\) such that \(A \leq B \leq C \leq D\). Given that \(D\) is the largest angle and it is twice the measure of of the smallest angle \(A\), and the other two angles \(B\) and \(C\) are both right angles, we can write:
+\[ B = 90^\circ \]
+\[ C = 90^\circ \]
+\[ D = 2A \]
+
+Since the sum of of the interior angles of of a quadrilateral is \(360^\circ\), we have:
+\[ A + B + C + D = 360^\circ \]
+Substituting the known values:
+\[ A + 90^\circ + 90^\circ + 2A = 360^\circ \]
+\[ 3A + 180^\circ = 360^\circ \]
+\[ 3A = 180^\circ \]
+\[ A = 60^\circ \]
+
+Since \(D = 2A\), we have:
+\[ D = 2 \times 

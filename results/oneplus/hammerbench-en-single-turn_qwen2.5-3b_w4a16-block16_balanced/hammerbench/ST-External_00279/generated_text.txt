@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.HealthManagement.updateDietRecord","description":"Changing dietary records based on updated conditions","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"},"update_content":{"type":"string","description":"Updates, such as changes to food names, meal types, meal times, etc."}},"required":["food_name","meal_type","time","update_content"]}}
+{"name":"Health.Fitness.updateExerciseRecord","description":"Change sports records based on update criteria","parameters":{"type":"object","properties":{"exercise_record":{"type":"string","description":"Original Motion Record"},"time":{"type":"string","description":"Release Date"}},"required":["exercise_record","time"]}}
+{"name":"Health.MedicalServices.updatePatientMedicalRecord","description":"Update patient history based on patient name and update criteria","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"OnlineShopping.Mall.modifyCommodityOrders","description":"Modify the contents of the order according to the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"OfficeSoftware.Documents.updateDocument","description":"Updates the specified document content based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to update, required"},"new_content":{"type":"string","description":"New document content, required"}},"required":["document_name","new_content"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:This morning at 8 o'clock, I ran for 40 minutes in the morning in the park and felt that the whole person was much more energetic. After the run, I also enjoyed a latte at a nearby cafe, which was a wonderful start!
+query:Assistant, can you change the sandwich in my dietary record from breakfast this morning to yesterday morning? The time is the one mentioned in Xiao Li's WeChat.<|im_end|>
+<|im_start|>assistant
+{"name":"Health.HealthManagement.updateDietRecord","parameters":{"food_name":"sandwich","meal_type":"breakfast","time":"yesterday morning","update_content":"changed to lunch yesterday"}}<|im_end|>

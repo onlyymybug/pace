@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the real roots of
+\[\frac{( x+ 1)(x - 3)}{5(x + 2)(x - 4)} + \frac{(x + 3)(x - 5)}{9(x + 4)(x - 6)} - \frac{2(x + 5)(x - 7)}{13(x + 6)(x - 8)} = \frac{92}{585}.\]Enter the real roots, separated by commas. 1. **Identify the common denominator:**
+   The given equation is:
+   \[
+   \frac{(x+1)(x-3)}{5(x+2)(x-4)} + \frac{(x+3)(x-5)}{9(x+4)(x-6)} - \frac{2(x+5)(x-7)}{13(x+6)(x-8)} = \frac{92}{585}
+   \]
+   The common denominator is:
+   \[
+   5 \cdot 9 \cdot 13 \cdot (x+

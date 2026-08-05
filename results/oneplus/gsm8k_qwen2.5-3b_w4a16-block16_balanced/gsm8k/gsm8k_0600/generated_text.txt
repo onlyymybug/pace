@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A pet store currently has 5 dogs, 2 cats, and 10 birds. How many legs in total do the pets in the store have? Step 1: Count the legs for each type of pet.
+- Dogs: Each dog has 4 legs, so 5 dogs * 4 legs = 20 legs total.
+- Cats: Each cat has 4 legs, so 2 cats * 4 legs = 8 legs total.
+- Birds: Each bird has 2 legs, so 10 birds * 2 legs = 20 legs total.
+
+Step 2: Add up all the legs.
+Total legs = legs from dogs + legs from cats + legs from birds
+Total legs = 20 + 8 + 20
+
+Step

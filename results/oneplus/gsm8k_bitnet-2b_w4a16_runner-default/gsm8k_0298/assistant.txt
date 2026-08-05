@@ -1,0 +1,14 @@
+To find out how many crates Sam was off from his target, we first need to calculate the total number of crates he sold during the week. 
+
+Sam's sales for each day:
+- Tuesday: 15 crates
+- Wednesday: 12 crates
+- Thursday: 18 crates
+- Saturday: 20 crates (since he was closed on Friday)
+
+Total crates sold = 15 + 12 + 18 + 20 = 65 crates
+
+Sam's target was 120 crates. To find out how many crates he was off from his target:
+
+Off by = Target - Total sold
+= 120 - 65

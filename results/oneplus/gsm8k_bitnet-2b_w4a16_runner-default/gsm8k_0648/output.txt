@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bill is trying to dig a well in his backyard. He can dig 4 feet/hour through soil and half that fast through clay. If he has to dig through 24 feet of soil and 8 feet of clay, how long will it take him to dig the well?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the time it takes Bill to dig through the soil and the clay separately, and then add those times together.
+
+1. **Soil**: Bill digs 4 feet per hour through soil. He needs to dig 24 feet of soil.
+   \[
+   \text{Time for soil} = \frac{\text{Distance}}{\text{Speed}} = \frac{24 \text{ feet}}{4 \text{ feet/hour}} = 6 \text{ hours}
+   \]
+
+2. **Clay**: Bill digs half as fast through clay as he does through

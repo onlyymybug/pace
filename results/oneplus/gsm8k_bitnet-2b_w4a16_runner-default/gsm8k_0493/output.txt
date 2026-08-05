@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sally buys one small pizza at $8 and one family-size pizza that costs 3 times as much as the small pizza. How much does she spend in all?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the cost of the family-size pizza. Since it costs 3 times as much as the small pizza, which is $8, we multiply $8 by 3:
+
+$8 * 3 = $24
+
+Now, we add the cost of the small pizza to the cost of the family-size pizza to find the total amount spent:
+
+$8 + $24 = $32
+
+The answer is 32.<|eot_id|>

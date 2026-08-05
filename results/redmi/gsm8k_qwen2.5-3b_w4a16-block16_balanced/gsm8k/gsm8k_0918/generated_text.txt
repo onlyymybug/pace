@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kira bought 3 apples, 5 bananas and 6 oranges at the grocery store. Lola ate 2 pieces of the fruit. How many pieces are left? Step 1: Calculate total number of fruits Kira bought.
+Kira bought 3 apples + 5 bananas + 6 oranges = 14 fruits in total.
+
+Step 2: Calculate how many fruits were eaten.
+Lola ate 2 pieces of of fruit, but we don't know which type. Since the problem doesn't specify, we assume it's a typo and should be 2 pieces total. So, 2 fruits were eaten.
+
+Step 3: Calculate the number of fruits left.
+Total fruits - Fruits eaten = 14 - 2 = 12 fruits left.
+
+The answer is 

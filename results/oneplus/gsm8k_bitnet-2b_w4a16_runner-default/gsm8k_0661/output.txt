@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lee rears only sheep and geese on his farm.  If the total number of animal legs is 70, and the total number of animal heads is 20, how many sheep live on Lee's farm?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of sheep as \( S \) and the number of geese as \( G \).
+
+Sheep have 4 legs and 1 head, while geese have 2 legs and 1 head.
+
+Given:
+- Total number of animal legs = 70
+- Total number of animal heads = 20
+
+We can set up the following equations based on the given information:
+
+1. \( 4S + 2G = 70 \) (since each sheep has 4 legs and each goose has 2 legs)
+2. \( S + G = 20 \) (since each animal has

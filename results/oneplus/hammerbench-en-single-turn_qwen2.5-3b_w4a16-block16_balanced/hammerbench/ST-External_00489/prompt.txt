@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.likeCommunityPost","description":"Like a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to like the post"},"post_name":{"type":"string","description":"Title of the post to like"}},"required":["community_name","post_name"]}}
+{"name":"SocialCommunication.SocialMedia.mediumLikes","description":"Like a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"VideoPlayback.OnlineVideos.likeOnlineVideo","description":"Like/Click to step on a video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"like":{"type":"boolean","description":"Like"}},"required":["name","like"]}}
+{"name":"VideoPlayback.ShortVideos.likeShortVideo","description":"Like or unlike a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"like":{"type":"boolean","description":"Like"}},"required":["name","like"]}}
+{"name":"Photography.PhotoEditing.beautifyPicture","description":"Comprehensive beauty treatments for your photos","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"Photo name or path"}},"required":["name_or_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Last night at 8pm, we had dinner at the newly opened restaurant downstairs of the company. I remember that you ordered that specialty and it tasted really good. After dinner, we also went for a walk in the nearby park and talked about a lot of work things, which was very pleasant. Let's keep going today!
+query:I would like to like the dynamics of Li Si's travel diary on WeChat circle of friends.<|im_end|>
+<|im_start|>assistant

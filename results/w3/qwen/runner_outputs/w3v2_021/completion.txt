@@ -1,7 +1,0 @@
-{"action":"set_timer","arguments":{"duration_seconds":180}}
-
-The request seems to be for a silent timer for 90 seconds, but the user actually wants two minutes (120 seconds). I will adjust the seconds accordingly.
-
-{"action":"set_timer","arguments":{"duration_seconds":120}} ```json
-{"action":"set_timer","arguments":{"duration_seconds":120}}
-```<|endoftext|>You are tasked with creating a function that calculates the total

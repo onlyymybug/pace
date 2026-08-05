@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mary and John got married last weekend.  There were 20 private cars and 12 buses parked outside the church.  After the ceremony, each bus carried 35 people and each car carried 3 people. How many people were inside the church?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of people inside the church, we need to calculate the number of people in the buses and the number of people in the cars, then add these two numbers together.
+
+First, calculate the number of people in the buses:
+Number of buses = 12
+Number of people per bus = 35
+Total people in buses = Number of buses * Number of people per bus
+Total people in buses = 12 * 35
+Total people in buses = 420
+
+Next, calculate the number of people in the cars:
+Number of cars = 20
+Number of people per car = 3
+Total people

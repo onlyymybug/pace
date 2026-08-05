@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jane counts two zebras with 17 stripes each, a zebra with 36 stripes, and another zebra with half that many stripes. How many stripes do the zebras have on average?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average number of stripes, we first need to calculate the total number of stripes for all the zebras and then divide by the number of zebras.
+
+1. Calculate the total number of stripes:
+   - Two zebras with 17 stripes each: \(2 \times 17 = 34\) stripes
+   - One zebra with 36 stripes: \(36\) stripes
+   - Another zebra with half the number of stripes as the first zebra: \(\frac{17}{2} = 8.5\) stripes
+
+2. Sum the stripes:
+   \(34 + 36 + 8

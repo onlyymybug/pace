@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.InstantMessaging.searchMessage","description":"Search historical messages for a specific contact or group based on keywords","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group to search for the message"},"keyword":{"type":"string","description":"Keywords for search"}},"required":["receiver_name","keyword"]}}
+{"name":"ConvenientLiving.UtilityPayments.queryBillInfo","description":"Used to get billing details for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"time":{"type":"string","description":"Bill Time"}},"required":["service_type","user_name","time"]}}
+{"name":"OfficeSoftware.Email.searchMail","description":"Search messages by email keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"KEYWORDS"},"max_results":{"type":"integer","description":"Maximum number of returned results, default is 10"}},"required":["keyword","max_results"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Xiaomi Technology friends! Today at 3pm, we will hold a preparatory meeting on the launch of the new function of "Xiaomi Mi 13 mobile phone" in the large conference room on the second floor of the R&D center. Please join us on time to discuss and finalize the specific arrangements for this launch. Please let me know in advance if you have any suggestions or issues to discuss. Looking forward to everyone's active participation, let's work together to contribute to the next glorious chapter of Xiaomi Technology!
+query:What is the name of the company mentioned in Xiao Li's WeChat message to me? I'd like to check out the basics of it.<|im_end|>
+<|im_start|>assistant

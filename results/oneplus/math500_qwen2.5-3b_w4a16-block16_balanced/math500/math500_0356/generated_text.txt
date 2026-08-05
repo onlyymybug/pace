@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $a,$ $b,$ and $c$ be positive real numbers.  Find the minimum value of
+\[\frac{(a + b + c)[(a + b)^2 + (a + b + 4c)^2]}{abc}.\] To find the minimum value of of \(\frac{(a + b + c)[(a + b)^2 + (a + b + 4c)^2]}{abc}\), we start by simplifying the expression. Let's denote the expression by \(E\):
+
+\[ E = \frac{(a + b + c)[(a + b)^2 + (a + b + 4c)^2]}{abc}. \]
+
+First, we expand the terms in the expression:
+
+\[ (a + b + c)[(a + b)^2 + (a + b + 4c)^2]. \]
+
+We need to simplify the expression inside the brackets. Let's denote \(x = a + b\). Then the expression becomes:
+
+\[ E = \frac{(x + c)[x^2 + (x + 4c)^2]}{abc}. \]
+
+Expanding \((x + 4c)^2\):
+
+\[ (x + 4c)^2 = x^2 + 8cx + 16c^2. \]
+
+So the expression becomes:
+
+\[ E = \frac{(x + c)[x^2 + x^2 + 8cx + 16c^

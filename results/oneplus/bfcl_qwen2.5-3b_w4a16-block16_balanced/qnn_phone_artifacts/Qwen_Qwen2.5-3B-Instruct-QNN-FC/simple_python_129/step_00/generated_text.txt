@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_discounted_cash_flow", "description": "Calculate the discounted cash flow of a bond for a given annual coupon payment, time frame and discount rate. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"coupon_payment": {"type": "integer", "description": "The annual coupon payment."}, "period": {"type": "integer", "description": "The time frame in years for which coupon payment is made."}, "discount_rate": {"type": "float", "description": "The discount rate."}, "face_value": {"type": "integer", "description": "The face value of the bond, default is 1000."}}, "required": ["coupon_payment", "period", "discount_rate"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the discounted cash flow of a bond that is giving a coupon payment of $100 annually for next 5 years with discount rate 4%.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_discounted_cash_flow", "arguments": {"coupon_payment": 100, "period": 5, "discount_rate": 0.04}}
+</tool_call><|im_end|>

@@ -1,0 +1,9 @@
+Step  Step  Define variables:
+- Let \( x \) be the number of students needing size extra-small.
+
+Step  - Number needing size small: \( 2x \)
+- Number needing size medium: \( 2x - 4 \)
+- Number needing size large: \( \frac{2x - 4}{2} = x - 2 \)
+- Number needing size extra-large: \( (x - 2) + 6 = x + 4 \)
+
+Step  - Total number of students: \( x + 2x + (2x - 4) + (x - 

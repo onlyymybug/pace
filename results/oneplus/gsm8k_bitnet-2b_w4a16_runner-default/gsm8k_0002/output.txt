@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we first determine the amount of white fiber needed for the robe. Since it takes half as much white fiber as blue fiber, we calculate:
+
+White fiber = 1/2 * Blue fiber
+White fiber = 1/2 * 2 bolts
+White fiber = 1 bolt
+
+Now, we add the blue fiber and white fiber together to find the total number of bolts needed:
+
+Total bolts = Blue fiber + White fiber
+Total bolts = 2 bolts + 1 bolt
+Total bolts = 3 bolts
+
+The answer is 3 bolts.<|eot_id|>

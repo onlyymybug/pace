@@ -1,0 +1,20 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The area of triangle $ABC$ is equal to $a^2 - (b - c)^2,$ where $a,$ $b,$ and $c$ are the sides of triangle $ABC,$ as usual.  Compute $\tan A.$
+To solve the problem, we start by using the given information about the area of of triangle \(ABC\). The area of of triangle \(ABC\) is given by \(a^2 - (b - c)^2\). We need to express this area in terms of the sides \(a\), \(b\), and \(c\) and then use the area formula involving the sine of of the angle \(A\) to find \(\tan A\).
+
+The area of of triangle \(ABC\) can also be expressed as:
+\[
+\text{Area} = \frac{1}{2}bc \sin A
+\]
+Given that the area is also equal to \(a^2 - (b - c)^2\), we have:
+\[
+\frac{1}{2}bc \sin A = a^2 - (b - c)^2
+\]
+We need to simplify the right-hand side of:
+\[
+a^2 - (b - c)^2 = a^2 - (b^2 - 2bc + c^2) = a^2 - b^2 + 2bc - c^2
+\]
+Thus, we have:
+\[
+\frac{1}{2}bc \

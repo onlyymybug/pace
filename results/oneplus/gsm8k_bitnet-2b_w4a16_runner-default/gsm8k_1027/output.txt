@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: One dwarf can mine 12 pounds of ore per day with his bare hands. He can mine twice as much with an iron pickaxe and 50% more with a steel pickaxe than with an iron pickaxe. How many pounds of ore can 40 dwarves with steel pickaxes mine in a month with 30 days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to first determine how much ore one dwarf can mine per day with a steel pickaxe. We know that one dwarf can mine 12 pounds of ore per day with his bare hands. With an iron pickaxe, he can mine twice as much, which is 12 * 2 = 24 pounds per day. With a steel pickaxe, he can mine 50% more than with an iron pickaxe, which is 24 * 1.5 = 36 pounds per day.
+
+Now, we need to find out how much ore 40 dwarves with steel pickaxes can mine in

@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $F_1$ and $F_2$ be the foci of the ellipse $kx^2 + y^2 = 1,$ where $k > 1$ is a constant. Suppose that there is a circle which passes through $F_1$ and $F_2$ and which lies tangent to the ellipse at two points on the $x$-axis. Compute $k.$
+To solve the problem, we start by identifying the key components of of the ellipse \(kx^2 + y^2 = 1\). The standard form of of an ellipse is \(\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\). Here, \(b^2 = 1\) and \(a^2 = \frac{1}{k}\). Since \(k > 1\), we have \(a^2 = \frac{1}{k}\) and \(b^2 = 1\). The distance between the foci \(F_1\) and \(F_2\) is \(2c\) where \(c = \sqrt{b^2 - a^2} = \sqrt{1 - \frac{1}{k}}\). Thus, the foci are located at \((\pm \sqrt{1 - \frac{1}{k}}, 0)\).
+
+The circle that passes through the foci and is tangent to the ellipse at two points on the \(x\)-axis must have its center on the \(y\)-axis and its radius equal to the distance from the center to the \(x\)-axis

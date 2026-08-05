@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.createCarRentalOrder","description":"Book a rental car","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByStyle","description":"Get music recommendations based on style","parameters":{"type":"object","properties":{"style":{"type":"string","description":"Music Style"}},"required":["style"]}}
+{"name":"UtilityTools.AlarmClock.restartTimer","description":"Reset the current timer or continue with the paused timer","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Funds.purchaseFund","description":"Subscription for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Amount"}},"required":["fund_name","fund_code","amount"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Li! I just landed at Beijing Capital International Airport and everything is fine! The weather is nice here, what about you? Prepare the meeting materials for tomorrow. I will go back to the hotel in the afternoon to tidy up. I want to find a restaurant near the airport for dinner in the evening. Do you have any suggestions?
+query:I want to rent an economy car. The place is the place mentioned in Xiao Li's message sent to me through QQ. The time is from 8 am on April 5, 2023 to 6 pm on April 10, 2023. Is there any car I can rent?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The ice cream parlor was offering a deal, buy 2 scoops of ice cream, get 1 scoop free.  Each scoop cost $1.50.  If Erin had  $6.00, how many scoops of ice cream should she buy? Step 1: Calculate the cost per free scoop
+The cost of for 2 scoops is $1.50 * 2 = $3.00
+So, for every 3 scoops, 1 is free. Therefore, the cost per free scoop is $3.00 / 3 = $1.00
+
+Step 2: Determine how many free scoops she can get
+Total money she has is $6.00
+Cost per scoop is $1.50
+So, she can buy 6 / 1.50 = 4 scoops
+
+Step 

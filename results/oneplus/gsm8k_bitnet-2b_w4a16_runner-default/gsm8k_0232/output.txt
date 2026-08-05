@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kylie and Robert enjoy going to the beach to collect shells. On Monday, Kylie collects 5 more shells than Robert, who collects 20 shells. On Tuesday, Kylie collects 2 times more shells than she did on Monday. How many shells does Kylie collect on Tuesday?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many shells Kylie collected on Monday. Since Robert collected 20 shells and Kylie collected 5 more shells than Robert on Monday, we can calculate Kylie's Monday collection as follows:
+
+Kylie's Monday collection = Robert's Monday collection + 5
+Kylie's Monday collection = 20 + 5
+Kylie's Monday collection = 25 shells
+
+Next, we need to find out how many shells Kylie collected on Tuesday. According to the problem, Kylie collected 2 times more shells on Tuesday than she did on Monday. So, we multiply her Monday collection by 2:
+

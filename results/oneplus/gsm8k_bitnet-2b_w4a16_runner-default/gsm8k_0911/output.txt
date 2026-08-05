@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Farmer Brown's farm is 200 acres, and Farmer Smith's farm is 100 acres more than twice that. How many acres do the two farms have, together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of acres for both farms, we first need to determine how many acres Farmer Smith's farm has. We know that Farmer Brown's farm is 200 acres, and Farmer Smith's farm is 100 acres more than twice that amount. 
+
+First, calculate twice the acres of Farmer Brown's farm:
+\[ 2 \times 200 = 400 \]
+
+Then, add 100 acres to this amount to find the total acres for Farmer Smith's farm:
+\[ 400 + 100 = 500 \]
+
+Now, add the acres of both farms together to find the total:
+\[ 200 + 500

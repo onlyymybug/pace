@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bernie has 4 dogs. They each need a certain amount of exercise per day. The first needs to walk 1 mile. The second needs to walk 4 miles. The third needs to walk 3 miles. On average, they need to walk 3 miles per day. How many miles does the last dog need? To find how many miles the last dog needs to walk, we first sum the miles needed for the known dogs, then subtract from the total needed per day.
+
+First dog: 1 mile
+Second dog: 4 miles
+Third dog: 3 miles
+
+Total known miles: 1 + 4 + 3 = 8 miles
+
+Total miles needed per day: 3 miles
+
+Total known miles + last dog's miles = total needed miles
+8 + last dog's miles = 3
+
+Solving for last dog's miles:
+last dog's miles = 3 - 8
+last dog's miles = -

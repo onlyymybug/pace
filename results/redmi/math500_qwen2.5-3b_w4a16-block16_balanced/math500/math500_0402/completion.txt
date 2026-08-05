@@ -1,0 +1,8 @@
+To solve the problem, we need to find the maximum value of of \(|1 + z| + |1 - z + z^2|\) where \(z\) is a complex number such that \(|z| = 1\).
+
+1. **Express \(z\) in exponential form:**
+   Since \(|z| = 1\), we can write \(z\) as \(z = e^{i\theta}\) for some real number \(\theta\).
+
+2. **Simplify the expression \(1 - z + z^2\):**
+   \[
+   1 - z + z^

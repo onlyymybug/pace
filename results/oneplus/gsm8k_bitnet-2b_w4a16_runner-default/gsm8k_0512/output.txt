@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gerald works at a daycare that pays him $30 every day. He worked for an entire week and spent a total of $100. How much does he have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Gerald has left, we need to calculate his total earnings for the week and then subtract the amount he spent.
+
+1. Calculate Gerald's total earnings for the week:
+   - Gerald earns $30 per day.
+   - There are 7 days in a week.
+   - Total earnings = $30/day * 7 days = $210.
+
+2. Subtract the amount he spent from his total earnings:
+   - Gerald spent $100.
+   - Amount left = Total earnings - Amount spent = $210 - $100 = $110.
+
+The answer is $110.<|eot_id|>

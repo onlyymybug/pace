@@ -1,0 +1,19 @@
+To solve the problem, we need to find the points of of \((x, y)\) that satisfy both equations \(y = x^2 - 8\) and \(y^2 = -5x + 44\). We will substitute \(y\) from the first equation into the second equation and solve for \(x\).
+
+First, substitute \(y = x^2 - 8\) into \(y^2 = -5x + 44\):
+\[
+(x^2 - 8)^2 = -5x + 44
+\]
+Expanding the left side, we get:
+\[
+x^4 - 16x^2 + 64 = -5x + 44
+\]
+Rearrange all terms to one side to form a polynomial equation:
+\[
+x^4 - 16x^2 + 5x + 64 - 44 = 0
+\]
+Simplify the constant terms:
+\[
+x^4 - 16x^2 + 5x + 20 = 0
+\]
+We need to find the roots of of of this polynomial equation. Let's test some possible rational roots using the Rational Root The

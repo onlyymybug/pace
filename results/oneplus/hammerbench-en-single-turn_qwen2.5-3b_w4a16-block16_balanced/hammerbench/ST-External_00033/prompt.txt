@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","description":"Reporting tax evasion","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"},"description":{"type":"string","description":"Problem description"}},"required":["company_name","description"]}}
+{"name":"Navigation.Bicycles.submitBikeFault","description":"Submit a bicycle malfunction","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Vehicle number"}},"required":["number"]}}
+{"name":"SocialCommunication.Community.pinCommunityPost","description":"Pin a post to a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to pin the post to"},"post_name":{"type":"string","description":"Title of the post to sticky"}},"required":["community_name","post_name"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskUploadFiles","description":"Upload local files/folders to the specified cloud disk directory","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"},"target_path":{"type":"string","description":"Upload path"}},"required":["file_path","target_path"]}}
+{"name":"VideoPlayback.ShortVideos.publishShortVideo","description":"Post a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"filepath":{"type":"string","description":"Video"}},"required":["name","filepath"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Reminder: The annual inspection of your vehicle Beijing A88888 is about to expire last week. Please take time to complete the annual inspection at the designated inspection station to ensure that the vehicle is running normally. If you have any questions, please contact our customer service. Enjoy your trip!
+query:The car with the license plate number mentioned in the WeChat message Xiao Li sent to me now has an abnormal sound in the chain and needs to submit a fault.<|im_end|>
+<|im_start|>assistant

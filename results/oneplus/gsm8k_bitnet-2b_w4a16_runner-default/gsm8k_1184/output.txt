@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two apples fell out of the tree, and one of them landed on Newton's head.  Newton picked up the two apples, put one in his pocket and threw the other apple into the tree, causing 5 more apples to fall out of the tree.  Newton picked up these apples, put all but one in his pocket and threw the remaining one at the tree.  This caused another 6 apples to fall out of the tree.  Newton picked up all of the remaining apples and went home to make a pie.  How many apples did he bring home?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. Initially, two apples fell out of the tree.
+2. Newton picked up one apple and put it in his pocket, leaving one apple in the tree.
+3. This caused 5 more apples to fall out of the tree, so now there are 6 apples in the tree.
+4. Newton picked up these 6 apples and put all but one in his pocket, leaving one apple in the tree.
+5. This caused another 6 apples to fall out of the tree, so now there are 7 apples in the tree.
+6. Newton picked

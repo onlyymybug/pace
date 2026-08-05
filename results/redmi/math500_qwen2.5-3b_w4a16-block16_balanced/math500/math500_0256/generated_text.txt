@@ -1,0 +1,23 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the curve defined by the equation
+\[r^2 \cos 2 \theta = 4.\](A) Line
+(B) Circle
+(C) Parabola
+(D) Ellipse
+(E) Hyperbola
+
+Enter the letter of the correct option. To determine the type of curve defined by the equation \(r^2 \cos 2\theta = 4\), we need to analyze the given equation step by step.
+
+First, recall the double-angle identity for cosine:
+\[
+\cos 2\theta = \cos^2 \theta - \sin^2 \theta
+\]
+However, we can also use the identity:
+\[
+\cos 2\theta = 2\cos^2 \theta - 1
+\]
+But for our purposes, we will use the form involving \(\cos 2\theta\) directly.
+
+Given:
+\[

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A company sold 4000 gallons of milk in jars to Mr. Marcellus' store at the cost of $3.5 per gallon. However, Mr. Marcellus later realized 2/5 of the amount of milk he purchased had passed the expiry date and could not be sold. He returned the sour milk to the company and ordered a refund. Calculate how much he got in refunds. Step 1: Calculate the total cost of of milk purchased.
+Total cost = 4000 gallons * $3.5 per gallon
+
+Step 2: Calculate the amount of milk that passed the expiry date.
+Amount passed expiry = 2/5 * 4000 gallons
+
+Step 3: Calculate the refund amount.
+Refund amount = Amount passed expiry * $3.5 per gallon
+
+Step 4: Perform the calculations.
+Total cost = 4000 * 3.5 = 14000
+Amount passed expiry = 2/5 * 4000

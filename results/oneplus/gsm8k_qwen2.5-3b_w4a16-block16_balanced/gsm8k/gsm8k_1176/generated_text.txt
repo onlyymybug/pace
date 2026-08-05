@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In the first half of a soccer match, team A scores 4 goals while team B scores 2 goals fewer than team A. In the second half, team A scores 1/4 of the number of goals scored by team B, which scores 4 times the number of goals it scored in the first half. What's the total number of goals scored in the match? To solve this problem, we need to calculate the goals scored by both teams in both halves of of the match and then sum them up.
+
+First half:
+- Team A scores 4 goals
+- Team B scores 2 goals fewer than Team A, so Team B scores 4 - 2 = 2 goals
+
+Second half:
+- Team B scores 4 times the number of goals it scored in the first half, so Team B scores 4 * 2 = 8 goals
+- Team A scores 1/4 the number of goals Team B scores, so Team A scores 1/4 * 8 =

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.UtilityPayments.verifyBill","description":"Verify the accuracy of bills such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.notifyPaymentDue","description":"Turn on or off the notification function for payment expiration, such as water, electricity and fuel","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"enable_notification":{"type":"boolean","description":"Whether to turn on the notification, true is on, false is off"}},"required":["service_type","enable_notification"]}}
+{"name":"Navigation.TaxiCarRental.reportCarRentalFault","description":"Escalate vehicle issue based on order","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Booking Order ID"},"content":{"type":"string","description":"Questions"}},"required":["order_id","content"]}}
+{"name":"OfficeSoftware.Documents.setFolderPermissions","description":"Set access rights for the specified folder","parameters":{"type":"object","properties":{"folder_name":{"type":"string","description":"Folder name to set permissions, required"}},"required":["folder_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Zhang San! We met at the company's annual meeting last week and had a great chat. I would like to organize a small party this weekend and hope you can come. The time is 2pm on Saturday, it is my home, the address is xx xx road. If it is convenient, I hope that you can bring your latest camera, which is of great interest to everyone. Looking forward to hearing from you!
+query:Help me check the electricity bill of the person mentioned in the text message from Chaoyang District, Beijing.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.UtilityPayments.verifyBill","parameters":{"service_type":"electricity","user_name":"Zhang San"}}<|im_end|>

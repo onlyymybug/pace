@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $a$ and $b$ are positive integers such that $\gcd(a,b)=210$, $\mathop{\text{lcm}}[a,b]=210^3$, and $a<b$, how many possible values are there for $a$? To solve the problem, we start by expressing \(a\) and \(b\) in terms of involving their greatest common divisor (gcd). Given that \(\gcd(a, b) = 210\), we can write \(a = 210m\) and \(b = 210n\) where \(m\) and \(n\) are coprime integers (i.e., \(\gcd(m, n) = 1\)).
+
+The least common multiple (lcm) of of[ab] is given by:
+\[
+\mathop{\text{lcm}}[a, b] = \frac{ab}{\gcd(a, b)}
+\]
+Substituting the given values:
+\[
+\mathop{\text{lcm}}[a, b] = \frac{210mn}{2110} = \frac{210mn}{10 \cdot 11} = \frac{21mn}{11}
+\]
+We are given that \(\mathop{\text{lcm}}[a, b] = 2110^3\). Therefore:
+\[
+\frac{21mn}{11} = 210^3

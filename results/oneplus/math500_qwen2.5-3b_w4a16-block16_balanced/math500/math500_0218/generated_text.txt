@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the smallest positive multiple of 450 whose digits are all zeroes and ones? To find the smallest positive multiple of of 450 whose digits are all zeroes and ones, we need to find the smallest number composed of only the digits 0 and 1 that is a multiple of of 450. Since 450 = 2 * 3^2 * 5^2, the number must be divisible by 8, 9, and 10. 
+
+1. **Divisibility by 10**: A number is divisible by 10 if its last digit is 0. Since we are restricted to using only 0 and 1, the number must end in 0. However, since the number must also be composed of only 0 and 1, the only way to satisfy this is to have the number end in 00000000... (all zeros). 
+
+2. **Divisibility by 8**: A number is divisible by 8 if its last three digits form a number divisible by 8. We need to find the smallest number composed of only 0 and 1 that is divisible by 8. We can check the numbers 111, 110, 101, 100, 

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "restaurant.find_nearby", "description": "Locate nearby restaurants based on specific dietary preferences. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city and state, e.g. Los Angeles, CA"}, "dietary_preference": {"type": "array", "items": {"type": "string", "enum": ["Vegan", "Vegetarian", "Gluten-free", "Dairy-free", "Nut-free"]}, "description": "Dietary preference. Default is empty list."}}, "required": ["location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find a nearby restaurant that serves vegan food in Los Angeles.<|im_end|>
+<|im_start|>assistant

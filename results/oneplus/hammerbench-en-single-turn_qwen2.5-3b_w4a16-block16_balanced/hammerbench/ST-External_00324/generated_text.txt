@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.getWeatherInfo","description":"Get the current weather information for a given day","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"}},"required":["location"]}}
+{"name":"UtilityTools.Weather.getWeatherForecast","description":"Get weather forecasts for specific locations within a timeframe","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"period":{"type":"string","description":"Forecasted Time Range"}},"required":["location","period"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","description":"Find information about public city services in selected cities","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"Name of the city to query"}},"required":["city_name"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+{"name":"Finance.Stocks.viewStockoperate","description":"Query the stock market on the day of trading; the day of consignment; historical trading; historical consignment; T operation","parameters":{"type":"object","properties":{"transaction_today":{"type":"boolean","description":"Deal of the day Default: 0 No"},"entrust_today":{"type":"boolean","description":"Delegation of the day default: 0 No"},"transaction_his":{"type":"boolean","description":"History Closing Default: 0 No"},"entrust_his":{"type":"boolean","description":"Historical delegation default: 0 No"},"T_operate":{"type":"boolean","description":"T Operation default: 0 No"}},"required":["transaction_today","entrust_today","transaction_his","entrust_his","T_operate"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi there, Thank you for your support and attention.We are pleased to inform you that our company will hold the annual technology exchange conference at the Shenzhen International Convention and Exhibition Center from October 15 to October 17, 2023.The conference will feature industry experts and technology leaders from around the world around the theme of “Innovation for the Future” to discuss industry trends and cutting-edge technologies.
+
+Here, we invite you to come to Shenzhen and share this event with us.During the conference, we will arrange a private transfer service from Shenzhen Baoan International Airport and Shenzhen North Station to the Convention and Exhibition Center.At the same time, we have prepared a nearby hotel reservation service for guests who come from afar to ensure that your trip is worry-free.
+
+If you have any questions or need further information, please feel free to contact our customer service center at +86-755-12345678 or service@alibabacloud.com.We look forward to welcoming you and witnessing this feast of technology together!
+
+Sincerely,
+Salute!
+
+Alibaba Cloud Team
+September 20, 2023
+query:What was the weather like today at the location mentioned in the email?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.getWeatherInfo","parameters":{"location":"Shenzhen"}}<|im_end|>

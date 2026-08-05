@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.modifyTrainPassengerOrder","description":"Modify rider information or seat type for a specific order, etc.","parameters":{"type":"object","properties":{"before_number":{"type":"string","description":"Booked trips"},"before_name":{"type":"string","description":"Original rider name"},"after_number":{"type":"string","description":"Booked trips"},"after_name":{"type":"string","description":"Rider's name"},"after_ride_date":{"type":"string","description":"Date of trip"},"after_seat_type":{"type":"string","description":"Seat Type"}},"required":["before_number","before_name","after_number","after_name","after_ride_date","after_seat_type"]}}
+{"name":"Health.MedicalServices.updatePatientMedicalRecord","description":"Update patient history based on patient name and update criteria","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"OfficeSoftware.Conferencing.setMeetingOptions","description":"Change the title, time, whether the video is turned on, whether the audio is turned on, etc. settings of the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"OnlineShopping.Mall.modifyDeliveryAddress","description":"Change address based on consignee","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Receiver"}},"required":["receiver"]}}
+{"name":"SystemTools.SystemSettings.modifyuserAccounts","description":"Modify the current user's information","parameters":{"type":"object","properties":{"phone_number":{"type":"string","description":"Phone No."},"nickname":{"type":"string","description":"Nickname"}},"required":["phone_number","nickname"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi! How's the project we discussed last week? Did you receive the information on Zhang San's side? If there is any problem, you can contact me directly and we will solve it together. I hope this project goes well.
+query:I want to modify the order, change the rider's friend's name mentioned in WeChat to Li Si, change the train number from Z789 to Z7890, change the seat type to soft sleeping, and change the ride date to Christmas.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrainTickets.modifyTrainPassengerOrder","parameters":{"before_number":"Z789","before_name":"Zhang San","after_number":"Z7890","after_name":"Li Si","after_ride_date":"Christmas","after_seat_type":"soft sleeping"}}<|im_end|>

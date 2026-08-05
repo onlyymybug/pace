@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In a class of 50 students, 28 participate in MATHCOUNTS, 21 participate in science club, and 6 students participate in neither. How many students participate in both MATHCOUNTS and science club? Let's denote the total number of students in the class as \( N = 50 \). Let \( M \) be the number of students who participate in MATHCOUNTS, so \( M = 28 \). Let \( S \) be the number of students who participate in the science club, so \( S = 2 \). Let \( B \) be the number of students who participate in both MATHCOUNTS and the science club, so we need to find \( B \). Let \( N_{\text{neither}} = 6 \) be the number of students who participate in neither MATHCOUNTS nor the science club.
+
+The number of students who participate in at least one of the activities (MATHCOUNTS or the science club) is \( N - N_{\text{neither}} = 50 - 6 = 44 \).
+
+The number of students who participate in at least one of the activities can also be expressed using the principle of of inclusion and exclusion as follows:
+\[ M + S - B = 44 \]
+Substituting the known values \( M = 28 \) and \( S = 2 \):
+\[ 28 + 2 - B

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Photography.PhotoTaking.takePhotoDelay","description":"Take photos after a set period of time","parameters":{"type":"object","properties":{"delay":{"type":"integer","description":"Delay duration, in seconds"}},"required":["delay"]}}
+{"name":"Health.Fitness.updateExerciseRecord","description":"Change sports records based on update criteria","parameters":{"type":"object","properties":{"exercise_record":{"type":"string","description":"Original Motion Record"},"time":{"type":"string","description":"Release Date"}},"required":["exercise_record","time"]}}
+{"name":"VideoPlayback.ShortVideos.shareShortVideo","description":"Share a short video to other media platforms","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"SystemTools.SystemSettings.setSystemScreenTimeout","description":"Set the auto message screen time for your phone screen","parameters":{"type":"object","properties":{"timeout_duration":{"type":"integer","description":"Maximum duration of screen inactivity, in seconds"}},"required":["timeout_duration"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, the day after tomorrow at 15:30, we invite you to participate in the cosmetics free trial on the 3rd floor of our mall. We hope you have a pleasant experience! If you have any questions about our products, please do not hesitate to contact us.
+query:Can I reduce my running time from 60 minutes to 45 minutes? I have to spare the time mentioned in the text.<|im_end|>
+<|im_start|>assistant

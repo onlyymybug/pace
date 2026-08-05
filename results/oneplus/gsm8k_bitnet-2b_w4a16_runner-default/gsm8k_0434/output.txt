@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: 15 gallons of gas were equally divided into 5 different containers. Josey needed 1/4 of a container to run her lawnmower. How many pints of gasoline did Josey need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much gasoline is in each container. Since 15 gallons were equally divided into 5 containers, we divide 15 gallons by 5:
+
+15 gallons / 5 containers = 3 gallons per container
+
+Next, we need to convert gallons to pints. We know that 1 gallon is equal to 8 pints. Therefore, we multiply the number of gallons in each container by 8:
+
+3 gallons per container * 8 pints per gallon = 24 pints per container
+
+Josey needed 1/4 of a container for her lawnmower. To

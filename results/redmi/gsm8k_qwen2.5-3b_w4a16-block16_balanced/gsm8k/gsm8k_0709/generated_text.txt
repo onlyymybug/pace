@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Given a 7-day week, how much does Alex charge for 2 weeks of tutoring if she charges $12 per day? To solve this, we first calculate the cost for one week, then multiply by two for two weeks.
+
+Cost for one week = 7 days * $12/day = $84
+
+Cost for two weeks = $84/week * 2 weeks = $168
+
+The answer is 168. The answer is 168.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a fraction.
+
+Problem: Calculate the total cost for 

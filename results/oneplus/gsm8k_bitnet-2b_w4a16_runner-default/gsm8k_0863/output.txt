@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every hour, Paige can bake 2 banana bread loaves in the oven.  Each banana bread loaf is cut into 8 slices and wrapped individually for sale.  Each slice is sold for 50 cents for a fundraiser.  If she baked from 1:00 PM - 6:00 PM straight, and sold all the slices, how much did she raise in dollars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of banana bread loaves Paige baked and then calculate the total number of slices. Finally, we will find out how much money she raised by selling all the slices.
+
+1. Calculate the total number of hours Paige baked:
+   - She baked from 1:00 PM to 6:00 PM.
+   - This is a total of 6 hours.
+
+2. Calculate the total number of banana bread loaves baked:
+   - Paige bakes 2 loaves per hour.
+   - Over 6 hours, she bakes \(2 \text{ loaves/hour

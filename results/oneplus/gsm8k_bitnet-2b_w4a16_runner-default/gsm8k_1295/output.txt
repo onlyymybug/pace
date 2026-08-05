@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jake is shopping at a clothing store. The store has a buy one get one 50% off deal on T-shirts. Jake buys 2 T-shirts. The original price of each T-shirt is $8. Then, Jake buys a pair of shoes that is 40% off the original price. The original price of the shoes is $40. What is the total amount of money Jake spends at the store?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the cost of the T-shirts and the shoes separately and then add them together.
+
+First, let's calculate the cost of the T-shirts:
+- Jake buys 2 T-shirts, and the original price of each T-shirt is $8.
+- With the 50% off deal, each T-shirt costs half of its original price.
+- Half of $8 is $4.
+- So, the cost of one T-shirt after the discount is $4.
+- For two T-shirts, the total cost is $4 * 2 = $8.
+
+Next, let

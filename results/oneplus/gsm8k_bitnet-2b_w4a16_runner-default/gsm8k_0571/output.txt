@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Peter has $70 and wishes to spend an equal amount each day for one week. From Sunday through Wednesday, he spent his money on wooden action figures which cost $5 each. For the rest of the week, he will buy plastic action figures which cost $2 each. How many total action figures will he have by the end of the week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much money Peter will spend each day for the first three days. Since he spends $5 each day for three days, the total amount spent during this period is:
+
+\[ 3 \times 5 = 15 \text{ dollars} \]
+
+Next, we calculate how much money Peter will have left for the remaining four days of the week. Since he started with $70 and spent $15, the remaining amount is:
+
+\[ 70 - 15 = 55 \text{ dollars} \]
+
+For the remaining four days, Peter will spend $2 each day. The

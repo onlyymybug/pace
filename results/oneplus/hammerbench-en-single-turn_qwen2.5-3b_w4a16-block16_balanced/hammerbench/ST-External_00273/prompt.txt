@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Education.OnlineClasses.viewCourseDetails","description":"View course details by course name","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"UtilityTools.Reading.openReadingBook","description":"Open book with specified name","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"type":{"type":"string","description":"Look, listen; default reading"}},"required":["book_name","type"]}}
+{"name":"OfficeSoftware.Email.openDraftMail","description":"Open message draft","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To open the drafts box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"UtilityTools.Search.openWebPage","description":"Open the specified webpage or website","parameters":{"type":"object","properties":{"url":{"type":"string","description":"Web Url"},"site":{"type":"string","description":"Website name, e.g. Bing Search, China Industrial and Commercial Network"}},"required":["url","site"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskGetFileDetails","description":"View the specified file details in the cloud drive","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"}},"required":["file_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi! Regarding the weekly report from our team, I see you haven't submitted it yet. This week's weekly report must be sent to team_email@company.com by 5pm today. If you have any questions or need help, you can contact me anytime. Thank you for your cooperation! Come on!
+query:Help me open the draft email, the title is "weekly meeting minutes", the recipient is the name of the friend mentioned in the WeChat, the content is "attachments contain details, please check."<|im_end|>
+<|im_start|>assistant

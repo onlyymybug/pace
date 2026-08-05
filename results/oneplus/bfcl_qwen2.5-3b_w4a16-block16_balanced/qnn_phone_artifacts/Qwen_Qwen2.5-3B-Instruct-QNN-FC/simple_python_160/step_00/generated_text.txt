@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_case_info", "description": "Retrieve case details using a specific case docket number and court location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"docket": {"type": "string", "description": "Docket number for the specific court case."}, "court": {"type": "string", "description": "Court in which the case was heard."}, "info_type": {"type": "string", "description": "Specify the information type needed for the case. i.e., victim, accused, verdict etc."}}, "required": ["docket", "court", "info_type"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who was the victim in the case docket numbered 2022/AL2562 in California?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+"name": "get_case_info", "arguments": {"docket": "2022/AL266", "court": "California", "info_type": "victim"}
+</tool_call><|im_end|>

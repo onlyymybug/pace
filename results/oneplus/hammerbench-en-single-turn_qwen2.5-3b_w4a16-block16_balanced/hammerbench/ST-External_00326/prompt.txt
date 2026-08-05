@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"UtilityTools.Weather.getWeatherForecast","description":"Get weather forecasts for specific locations within a timeframe","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"period":{"type":"string","description":"Forecasted Time Range"}},"required":["location","period"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, next Wednesday (July 12th) at 3pm, we have a project meeting and need you to be on time. The meeting is expected to last 1.5 hours and will mainly discuss the work plan and personnel allocation for the second phase of the project. Please prepare relevant materials in advance. If you have any questions, you can contact me anytime. We look forward to your participation!
+query:What is the weather forecast for Shenzhen at the time mentioned in the QQ message sent by Xiao Ming to me?<|im_end|>
+<|im_start|>assistant

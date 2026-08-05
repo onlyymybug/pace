@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marissa bought a ball at the store for $20. If she had $80 on her and used the rest of the money to buy her brother Jimmy, candy bars sold at $5 each, how many candy bars did Marissa buy for Jimmy? Step 1. Calculate total money spent on ball.
+Money spent on ball = $20
+
+Step 2. Calculate remaining money after buying ball.
+Total money = $80
+Money left = Total money - Money spent on ball
+Money left = $80 - $20 = $60
+
+Step 3. Determine how many candy bars can be bought with remaining money.
+Each candy bar costs $5, so number of candy bars = Money left ÷ Cost per candy bar
+Number ofCandyBars = $60 ÷ $5 = 12
+
+The answer is 12.<|endoftext|>

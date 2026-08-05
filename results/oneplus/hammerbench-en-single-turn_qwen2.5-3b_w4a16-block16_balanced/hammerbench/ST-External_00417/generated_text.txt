@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.HotelServices.searchHotel","description":"Search for hotels that match the criteria entered by the user","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"},"checkin_date":{"type":"string","description":"Check-in date (default today)"},"checkout_date":{"type":"string","description":"DEPARTURE DATE"},"price_range":{"type":"string","description":"Price range: 0 ~ 300; 300 ~ 600; 600 ~ 1000; 1000 to Shenyang"}},"required":["destination","checkin_date","checkout_date","price_range"]}}
+{"name":"ConvenientLiving.JobRecruitment.searchJobs","description":"Enter job title and other criteria to search for job information","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"}},"required":["job_name"]}}
+{"name":"Health.MedicalServices.getNearbyHospitals","description":"Find a hospital near your location","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.MapNavigation.searchSurrounding","description":"Search for nearby points of interest, including shops, food, gas stations, office buildings, hotels, shopping malls, etc.","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The name or address of the central location of the search, the default current location"},"category":{"type":"string","description":"Categories of points of interest, such as restaurants, hotels, shopping malls, etc."},"radius":{"type":"integer","description":"Search radius, in meters, defaults to 500"}},"required":["location","category","radius"]}}
+{"name":"Health.HealthManagement.setHealthGoal","description":"Set health goals based on target type, target weight, target time, etc.","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Detailed description of the goal, such as weight loss of 10kg, body fat rate reduction of 5%, etc."},"time_limit":{"type":"string","description":"Time to complete goal"}},"required":["goal_title","goal_content","time_limit"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Ming! Let's go to the newly opened shopping mall on October 1st, I heard that there are many interesting things in it. How about meeting at the subway station at 9am? Looking forward to a great day with you!
+query:Help me find a hotel in Shanghai, the price is between 300 and 600, it is best to be close to the subway station, the check-in time is the time mentioned in the Xiaoming QQ message, and the check-out is on October 5.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.HotelServices.searchHotel","parameters":{"destination":"Shanghai","checkin_date":"October 1","checkout_date":"October 5","price_range":"300 to 600"}}<|im_end|>

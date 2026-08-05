@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Memo.deleteUpcoming","description":"Delete a to-do; delete multiple to-dos","parameters":{"type":"object","properties":{"upcoming_name":{"type":"array","description":"To-do name; default delete current to-do not filled"}},"required":["upcoming_name"]}}
+{"name":"UtilityTools.Reading.deleteReadingBookFromShelf","description":"Remove books from shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","description":"Delete travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"OfficeSoftware.Documents.deleteDocument","description":"Delete the specified document based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to be deleted, required"}},"required":["document_name"]}}
+{"name":"SystemTools.SystemSettings.deleteEmergencyContact","description":"Delete emergency contact","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Name of emergency contact"},"phone_number":{"type":"string","description":"Emergency contact's phone number"}},"required":["user_name","phone_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Khaled Hosseini will be attending our annual Writers' Workshop this morning at 9am. The meeting place is in the conference room on the third floor of the city library. Please make sure to arrive on time and prepare a short introduction to Khaled Hosseini's work so that it can be shared at the beginning of the meeting.
+query:I want to delete "Kite Chaser" from the bookshelf, the author is the name mentioned in the notepad.<|im_end|>
+<|im_start|>assistant

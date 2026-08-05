@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $a,$ $b,$ $c,$ $d$ be distinct complex numbers such that $|a| = |b| = |c| = |d| = 1$ and $a + b + c + d = 0.$  Find the maximum value of
+\[|(a + b)(a + c)(a + d)(b + c)(b + d)(c + d)|.\] To solve the problem, we start by noting that \(a, b, c, d\) are distinct complex numbers on the unit circle, meaning \(|a| = |b| = |c| = |d| = 1\). This implies that \(a, b, c, d\) can be written as \(e^{i\theta_1}, e^{i\theta_2}, e^{i\theta_3}, e^{i\theta_4}\) for some real numbers \(\theta_1, \theta_2, \theta_3, \theta_4\).
+
+Given \(a + b + c + d = 0\), we can consider the geometric interpretation of of these points as vertices of of a parallelogram inscribed in the unit circle. This is because the sum of of the vertices of of a parallelogram inscribed in the unit circle is zero.
+
+We need to find the maximum value of of \(|(a + b)(a + c)(a + d)(b + c)(b + d)(c + d)|\).
+
+First, let's consider the case where \(a, b, c, d\) are the vertices of of a square inscribed in the unit circle

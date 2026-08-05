@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.ShortVideos.shareShortVideo","description":"Share a short video to other media platforms","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskShareFiles","description":"Share Drive Files","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"},"share_to":{"type":"string","description":"Shared with (Drive Friends)"}},"required":["file_path","share_to"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskSetRecycleBinAutoEmpty","description":"Set when the Drive Recycle Bin automatically empties","parameters":{"type":"object","properties":{"interval_days":{"type":"string","description":"Time automatically emptied"}},"required":["interval_days"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, we have identified a monthly virtual meeting, scheduled for the second Tuesday of each month, from 3pm to 5pm. Remember to be on time, the meeting is important and involves discussions about the progress of the project and what to do next. If you have any questions, you can contact me in advance. Looking forward to interacting with you!
+query:The time mentioned in the QQ message sent by Xiao Ming to me. I want to set this time as the number of days between automatic emptying of the cloud disk recycling bin. How to set it?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sports.match_schedule", "description": "Retrieve the match schedule for a specific sports team. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team_name": {"type": "string", "description": "The name of the sports team."}, "num_matches": {"type": "integer", "description": "The number of upcoming matches you want to get."}, "league": {"type": "string", "description": "The sports league of the team. This is an optional parameter. Default is 'English Premier League'."}}, "required": ["team_name", "num_matches"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the next five matches for Manchester United and who are they playing against in the English Premier League?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "sports.match_schedule", "arguments": {"team_name": "Manchester United", "num_matches": 5, "league": "English Premier League"}}
+</tool_call><|im_end|>

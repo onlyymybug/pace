@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two trains leave San Rafael at the same time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to consider the total distance each train travels over the two days.
+
+On the first day, both trains travel westward for 80 miles each. On the second day, they travel northward for 150 miles each.
+
+The total distance covered by each train is the sum of the distances traveled on the first and second days.
+
+For the first train:
+- Distance on the first day = 80 miles
+- Distance on the second day = 150 miles
+- Total distance = 80 + 150 = 230 miles
+
+For the second train:
+- Distance on the first day = 80 miles

@@ -1,0 +1,5 @@
+To find the greatest possible value of of \(\gcd(n + 7, 2n + 1)\), we start by letting \(d\) be the greatest common divisor of of \(n + 7\) and \(2n + 1\). This means \(d\) divides both \(n + 7\) and \(2n + 1\). Therefore, \(d\) must also divide any linear combination of of \(n + 7\) and \(2n + 1\).
+
+First, express \(2n + 1\) in terms of involving \(n + 7\):
+\[
+2n

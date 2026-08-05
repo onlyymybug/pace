@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"ConvenientLiving.UtilityPayments.payBill","description":"Payment of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"pay":{"type":"float","description":"Contribution Amount, Default Billing Amount"},"address":{"type":"string","description":"user address, default address"}},"required":["service_type","user_name","pay","address"]}}
+{"name":"ConvenientLiving.UtilityPayments.verifyBill","description":"Verify the accuracy of bills such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"Navigation.TrafficViolations.viewCarInsurance","description":"View Vehicle Insurance Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Tuesday! You must come to the weekend party, everyone is looking forward to seeing you. The place is in the old place, the time is 2 pm, don't be late. If you have time, you can come a little earlier and we will prepare together.
+query:Friends, can you help me find out what the security fee is in Futian, Shenzhen? As mentioned in WeChat, you need to pay 180.<|im_end|>
+<|im_start|>assistant
+{"name":"Finance.Funds.getFundSubscriptionFee","parameters":{"fund_name":"Futian","fund_code":"Shenzhen"}}<|im_end|>

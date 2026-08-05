@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Amy had two eyeshadow palettes with four colors each and three makeup sets that came with six eyeshadow colors each. Her sister steals one of the palettes. Amy uses up half of the colors from one makeup set. How many eyeshadow colors does she have left? Step 1: Calculate total eyeshadow colors initially
+Amy had 2 palettes with 4 colors each and 3 makeup sets with 6 colors each. So initially, she had 2*4 + 3*6 eyeshadow colors.
+
+Step 2: Adjust for the palette stolen
+Her sister steals one palette, so we subtract one palette from the total.
+
+Step 3: Adjust for the colors used
+Amy uses up half of the colors from one makeup set, so we subtract half of the 6 colors from the makeup set.
+
+Step 4: Calculate the final number of of eyeshadow colors

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Banking.modifyFinancialProductOrder","description":"Modify a subscribed order for a bank wealth management product","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Purchase Order Number"},"product":{"type":"string","description":"Financing product"},"modify":{"type":"string","description":"Modified content, such as additional amount, revision deadline, etc."}},"required":["order_id","product","modify"]}}
+{"name":"Navigation.TrainTickets.updateTrainWaitlistOrder","description":"Used to modify submitted train ticket waiting list information","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Booked trips"},"passenger_name":{"type":"string","description":"Rider's name"},"after_number":{"type":"string","description":"Booked trips"},"new_departure_date":{"type":"string","description":"New departure date, format 'YYYY-MM-DD', optional if modified"},"new_seat_type":{"type":"string","description":"Seat Type"}},"required":["train_number","passenger_name","after_number","new_departure_date","new_seat_type"]}}
+{"name":"OnlineShopping.Mall.modifyCommodityOrders","description":"Modify the contents of the order according to the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"ConvenientLiving.FoodDelivery.updateRestaurantOrder","description":"Updating order information based on the order, such as delivery address, notes, etc.","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"},"delivery_address":{"type":"string","description":"Delivery address"},"delivery_time":{"type":"string","description":"Expected delivery time in HH: mm format"},"note":{"type":"string","description":"Remarks"}},"required":["order_name","delivery_address","delivery_time","note"]}}
+{"name":"Health.HealthManagement.updateDietRecord","description":"Changing dietary records based on updated conditions","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"},"update_content":{"type":"string","description":"Updates, such as changes to food names, meal types, meal times, etc."}},"required":["food_name","meal_type","time","update_content"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, tomorrow's meeting is agreed at 12:15, the place is still the same, don't forget to bring the last project report, let's discuss the next step.
+query:I want to update my order information, the order name is "Company Training Lunch", the delivery address is changed to "New District Training Center", the note is added with "prepare more vegetarian food", and the delivery time is according to the time mentioned in the QQ message sent to me by Xiao Ming.<|im_end|>
+<|im_start|>assistant

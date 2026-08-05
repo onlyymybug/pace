@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","description":"Add a note to your favorite address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address for note"},"remake":{"type":"string","description":"Comment Message Content"}},"required":["address","remake"]}}
+{"name":"OfficeSoftware.Documents.addDocumentComment","description":"Add a comment for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to add comment, required"},"comment_content":{"type":"string","description":"Comment (required)"}},"required":["document_name","comment_content"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"MusicRadio.OnlineMusic.commentMusic","description":"Review music by song title and review content","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"NewsMagazines.NewspapersMagazines.commentArticle","description":"Comment on an article","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Comments"},"article":{"type":"string","description":"Articles"}},"required":["content","article"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear family,
+
+Hello! As the footsteps of the Spring Festival are getting closer, my thoughts of my hometown are getting stronger and stronger.It is planned to return to our hometown, Anyang City, Henan Province, in the first few days of the Lunar New Year, around January 25.In the meantime, I have arranged the trip ahead of time to ensure a smooth return home and reunion.
+
+This time, in addition to being able to spend the holiday with my family, I also plan to take time to take a walk to several attractions near my hometown, such as the famous Yin Ruins.I heard that there are some new cultural exhibitions there recently, and I hope to have the opportunity to visit and learn more about the rich history and culture of our hometown.
+
+In addition, I also prepared some small gifts, hoping to bring some holiday surprises to the elders and children in the family.If time permits, I hope to be able to go with my family to buy some new year's goods at my hometown's market and feel the lively atmosphere that has been missing for a long time.
+
+Looking forward to seeing you all and believing it will be a warm and unforgettable New Year.Please let me know if there is anything else I need to do or if any relatives need to visit in advance.
+
+Best regards,
+
+[Your name]
+query:Add a note to the place mentioned in the email "Every Spring Festival must be returned"<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","parameters":{"address":"Every Spring Festival must be returned","remake":"Looking forward to seeing you all and believing it will be a warm and unforgettable New Year."}}<|im_end|>

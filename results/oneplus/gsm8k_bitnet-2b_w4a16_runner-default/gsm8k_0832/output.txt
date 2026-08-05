@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: An interior design firm offers installation for $129.00.  It includes hanging 4 mirrors, 2 shelves, 1 chandelier, and 10 pictures.  They will install additional items for an extra $15.00 per item.  Angela has 6 mirrors and 2 chandeliers and 20 pictures that she needs installed/hung.  How much will this cost her?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost, first calculate the cost of the items Angela needs installed:
+
+- Mirrors: 6 mirrors * $129.00/mirror = $774.00
+- Shelves: 2 shelves * $129.00/shelf = $258.00
+- Chandeliers: 1 chandelier * $129.00/chandelier = $129.00
+- Pictures: 20 pictures * $15.00/picture = $300.00
+
+Now, add all these costs together:
+
+$774.00 (mirrors) + $258.00 (shelves) + $129.00

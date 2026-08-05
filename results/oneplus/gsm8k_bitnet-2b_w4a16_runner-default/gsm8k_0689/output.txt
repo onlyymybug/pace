@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John is very tired. He decides to take a nap, but he wants to finish his homework first. If John has 20 minutes of math homework, 40 minutes of reading homework, and 20 minutes of history homework and 3 hours before he has to eat dinner, how many minutes does John have to nap?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many minutes John has to nap, we first need to calculate the total time he has available for homework and then subtract the time he will spend on his other activities.
+
+John has a total of 3 hours for homework. We need to convert this to minutes because his homework times are given in minutes. 
+
+3 hours = 3 * 60 minutes = 180 minutes
+
+Now, we add up the time he will spend on each type of homework:
+
+Math homework: 20 minutes
+Reading homework: 40 minutes
+History homework: 20 minutes
+Total homework time = 20 + 40 + 20

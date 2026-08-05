@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: As Sally walked to school, she was holding the strings to 25 red balloons, 7 green balloons, and 12 yellow balloons. Suddenly, a gust of wind caused 40% of the red balloons to burst.  The shockingly loud sound startled Sally, and she accidentally released half of the yellow balloons.  But as she neared the school grounds, she found 8 blue balloons caught in a tree, and she added 75% of them to her remaining clutch of balloons, which she carried into the school.  What number of balloons did she finally carry into the school?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the number of balloons Sally had after each event and then add them up.
+
+Initially, Sally had:
+- 25 red balloons
+- 7 green balloons
+- 12 yellow balloons
+
+First, calculate the number of red balloons that burst:
+- 40% of 25 red balloons = 0.4 * 25 = 10 red balloons burst
+
+So, the remaining red balloons are:
+- 25 - 10 = 15 red balloons
+
+Next, calculate the number of yellow balloons that were released:
+- Half of 12 yellow balloons = 12 / 2 =

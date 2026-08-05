@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If a bag of marbles costs $20 and the price increases by 20% of the original price every two months, how much would a bag of marbles cost after 36 months? To solve this problem, we need to calculate the price increase over time and apply it to the original price.
+
+1. **Determine the number of price increases:**
+   - The price increases every 2 months.
+   - Total time period: 36 months.
+   - Number of increases = Total time / Interval between increases
+   - Number of increases = 36 / 2 = 18 increases
+
+2. **Calculate the multiplier for each increase:**
+   - Original price increase is 20%.
+   - Multiplier for each increase = 1 + (increase percentage / 100)

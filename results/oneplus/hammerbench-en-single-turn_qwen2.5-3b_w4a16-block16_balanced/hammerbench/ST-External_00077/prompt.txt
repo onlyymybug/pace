@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Photography.PhotoEditing.searchPicture","description":"Query photos according to the specified time, shooting location, file name, scene type, etc.","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date of shooting"},"location":{"type":"string","description":"PlaceTaken"}},"required":["date","location"]}}
+{"name":"OnlineShopping.ExpressDelivery.complaintExpress","description":"Make a complaint about a courier issue","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"complaint_content":{"type":"string","description":"Complaint Contents"}},"required":["express_id","signing_date","complaint_content"]}}
+{"name":"SocialCommunication.InstantMessaging.searchMessage","description":"Search historical messages for a specific contact or group based on keywords","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group to search for the message"},"keyword":{"type":"string","description":"Keywords for search"}},"required":["receiver_name","keyword"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotList","description":"Search for scenic spots by preference, region, category, etc.","parameters":{"type":"object","properties":{"preference":{"type":"string","description":"User preferences such as family-friendly, couple-friendly, etc."},"region":{"type":"string","description":"Area Names"},"category":{"type":"string","description":"Categories of scenic spots, such as natural landscapes, cultural landscapes, etc."}},"required":["preference","region","category"]}}
+{"name":"Navigation.FlightTickets.searchCheapFlights","description":"Search cheap flights by specified criteria","parameters":{"type":"object","properties":{"type":{"type":"string","description":"One way, round trip"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"travel_date":{"type":"string","description":"Specify date, next month, next three months, etc."}},"required":["type","departure","destination","travel_date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet tomorrow at 9am in London's Trafalgar Square, where we can visit nearby museums and art galleries together, and have lunch at an Italian restaurant near the square at noon. Looking forward to a great day with you!
+query:I want to find a round-trip ticket from New York to the place mentioned in Tom's text message. The time is July this year. Is there a cheap ticket?<|im_end|>
+<|im_start|>assistant

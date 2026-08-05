@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Insurance.payInsurancePremium","description":"Contribute to insurance premiums","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"Health.HealthManagement.setHealthGoal","description":"Set health goals based on target type, target weight, target time, etc.","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Detailed description of the goal, such as weight loss of 10kg, body fat rate reduction of 5%, etc."},"time_limit":{"type":"string","description":"Time to complete goal"}},"required":["goal_title","goal_content","time_limit"]}}
+{"name":"UtilityTools.Calendar.addCalendarschedule","description":"Create a new schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"ConvenientLiving.JobRecruitment.setPursuringJob","description":"Set job preferences based on job title, salary level, work location, etc.","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"salary":{"type":"string","description":"Salary Level"},"location":{"type":"string","description":"Work Location"}},"required":["job_name","salary","location"]}}
+{"name":"Navigation.FlightTickets.searchCheapFlights","description":"Search cheap flights by specified criteria","parameters":{"type":"object","properties":{"type":{"type":"string","description":"One way, round trip"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"travel_date":{"type":"string","description":"Specify date, next month, next three months, etc."}},"required":["type","departure","destination","travel_date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, let's go to Baiyun Mountain in Guangzhou this weekend. I heard that the scenery there is very good, and you can also watch the sunrise on the top of the mountain. I checked. From downtown Guangzhou, take subway line 2 to Jiahe Wanggang station, then transfer to line 3 to Tonghe station. After leaving the station, take bus 66 directly to the foot of Baiyun Mountain, which is very convenient. Before you go, how about we confirm the specific time and meeting place?
+query:Help me find a one-way ticket to Tokyo, the departure date is May Day vacation, the price is as low as possible.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.viewCarInsurance","description":"View Vehicle Insurance Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+{"name":"ConvenientLiving.AutoLife.getCarInsuranceOptions","description":"Get insurance for selected car models.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"Finance.Insurance.getInsuranceCoverage","description":"Check the coverage of insurance products","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"Travel.ItineraryServices.getTravelWarnings","description":"Get travel safety warnings for your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today, I saw a Tesla Model 3, which is really good performance, with a range of up to 580 kilometers, and is equipped with Autopilot. Considering this, it is necessary to understand the distribution of maintenance costs and charging stations.
+query:I would like to know about the insurance plan for the Model 3 mentioned in the notepad.<|im_end|>
+<|im_start|>assistant
+{"name":"Finance.Insurance.getInsuranceCoverage","parameters":{"insurance_name":"Model 3","insurance_type":"car"}}<|im_end|>

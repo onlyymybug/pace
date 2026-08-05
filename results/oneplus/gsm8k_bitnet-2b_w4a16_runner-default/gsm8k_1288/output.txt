@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a family, there are 2 brothers and 3 sisters. All sisters are the same age, which is 16. One of the brothers is 12 years old, which is half the age of the older brother. What is the total age of all these siblings?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the age of the older brother as \( B \) and the age of the younger brother as \( Y \). We know that \( Y = 12 \) and \( Y = \frac{1}{2}B \). Solving for \( B \), we get \( B = 2Y = 2 \times 12 = 24 \).
+
+The total age of the siblings is the sum of the ages of the brothers and sisters:
+- The older brother is 24 years old.
+- The younger brother is 12 years old.
+- There are 3 sisters, each 16 years old.
+

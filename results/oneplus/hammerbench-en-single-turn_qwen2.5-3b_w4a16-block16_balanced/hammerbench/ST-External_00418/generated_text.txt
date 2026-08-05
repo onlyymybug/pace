@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotTicketPrice","description":"Get ticket prices for selected attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ItineraryServices.estimateTravelCost","description":"Estimate the approximate cost of a given trip","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+{"name":"Travel.HotelServices.getHotelRoomPrice","description":"Get prices for selected hotel rooms or all room types","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"room_type":{"type":"string","description":"Room types"},"checkin_date":{"type":"string","description":"Check-in Date"},"checkout_date":{"type":"string","description":"DEPARTURE DATE"}},"required":["name","room_type","checkin_date","checkout_date"]}}
+{"name":"ConvenientLiving.AutoLife.calculateCarLoan","description":"The loan program is calculated based on information such as the purchase price of the car.","parameters":{"type":"object","properties":{"car_price":{"type":"float","description":"Car price, required"},"down_payment":{"type":"float","description":"First installment payment"}},"required":["car_price","down_payment"]}}
+{"name":"ConvenientLiving.UtilityPayments.estimateNextBill","description":"Estimated next-period bill for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."}},"required":["service_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, remember we have an important meeting on April 15th at 9am in the meeting room on the 3rd floor of the company. Please be on time, the meeting will discuss the market strategy for the second quarter and look forward to your valuable comments.
+query:I would like to check the price of the executive suite at the Hilton hotel on April 20th, the time mentioned in the text message is the check-in date.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.HotelServices.getHotelRoomPrice","parameters":{"name":"Hilton","room_type":"executive suite","checkin_date":"2022-04-20","checkout_date":"2022-04-20"}}<|im_end|>

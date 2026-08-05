@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If 6 potatoes makes 36 hash browns, how many hash browns can you make out of 96 potatoes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we can use a proportion. If 6 potatoes make 36 hash browns, then 96 potatoes will make x hash browns. We set up the proportion as follows:
+
+6 potatoes / 36 hash browns = 96 potatoes / x hash browns
+
+Cross-multiplying gives us:
+
+6 * x = 36 * 96
+
+Solving for x:
+
+x = (36 * 96) / 6
+
+x = 36 * 16
+
+x = 576
+
+The answer is 576 hash browns.<|eot_id|>

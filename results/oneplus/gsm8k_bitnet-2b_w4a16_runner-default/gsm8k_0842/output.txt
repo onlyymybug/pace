@@ -1,0 +1,22 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gabriel wants to buy a car for $10000 and a phone for $800. Gabriel has $5000 from working on weekends and his brother gave him $200 to help him. How much money does he still need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Gabriel still needs, we first need to calculate the total amount he has.
+
+Gabriel has:
+- $5000 from working on weekends
+- $200 from his brother
+
+Total money Gabriel has = $5000 + $200 = $5200
+
+Now, we subtract the total money he has from the total cost of the car and the phone.
+
+Total cost of the car and the phone = $10000 + $800 = $10800
+
+Money Gabriel still needs = Total cost - Total money he has
+Money Gabriel still needs = $10800 - $5200 = $5800
+
+The

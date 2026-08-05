@@ -1,0 +1,31 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.OnlineMusic.followUser","description":"Follow user by username","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Username"}},"required":["name"]}}
+{"name":"MusicRadio.OnlineMusic.getUserInfo","description":"Get user information by username","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Username"}},"required":["name"]}}
+{"name":"Finance.Payment.viewPayUserInfo","description":"View user information for your account","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+{"name":"SocialCommunication.Community.getCommunityUserInfo","description":"Get user details for a specific community based on user nickname","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to get user information"},"user_nickname":{"type":"string","description":"User's nickname"}},"required":["community_name","user_nickname"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear CodeMaster,
+
+Hello, I'm Zhang Hua from the Technology R&D Department.Recently, our team has been working on a code optimization project with some technical difficulties.We know your exceptional capabilities and experience in programming and code optimization, so we're here to help.
+
+We would like to invite you to a technical workshop this Friday at 2pm in the multifunctional conference hall on the 4th floor of the company.The main purpose of this meeting is to discuss how to improve the efficiency and stability of code execution and how to make better use of the latest programming tools and technologies.If you are available, or have any suggestions and ideas, feel free to share them at the meeting.
+
+At the same time, we have prepared a detailed report on the progress of the current project and hope to send you a preview before the meeting starts.Please check the attachments and prepare your comments in advance.
+
+We look forward to your arrival and believe that your participation will greatly contribute to the progress of our project.Feel free to contact me if you have any questions.
+
+Best regards,
+
+Zhang Hua
+Technology R&D Department
+query:I want to follow the person mentioned in the email on GitHub, can you help me find his username?<|im_end|>
+<|im_start|>assistant
+{"name":"MusicRadio.OnlineMusic.followUser","parameters":{"name":"ZhangHua"}}<|im_end|>

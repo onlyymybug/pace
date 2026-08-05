@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A customs officer at the main port of SeaSide clearances counted 2 containers of imported vehicles, each having 5 vehicles inside. The next day, more containers were brought in, and the total number of vehicles at the port became 30. Calculate the number of containers that were imported on the second day, assuming all the containers contain 5 vehicles. 
+Solution: Let's denote the number of containers imported on the second day as \( x \).
+
+Given:
+- Each container has 5 vehicles.
+- On the first day, 2 containers were imported.
+- Total vehicles on the first day: \( 2 \times 5 = 10 \) vehicles.
+- Total vehicles on the second day: \( x \times 5 \).
+
+The total number of vehicles at the port after the second day is 30.
+
+Equation formed:
+\[ 10 + 5x = 30 \]
+
+Solving for \( x \):
+\[ 5x =

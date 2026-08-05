@@ -1,0 +1,10 @@
+Given the polynomial equation \(8x^3 + 4ax^2 + 2bx + a = 0\) with roots \(r_1, r_2, r_3\), we know from Vieta's formulas that:
+
+\[
+r_1 + r_2 + r_3 = -\frac{4a}{8} = -\frac{a}{2}
+\]
+\[
+r_1 r_2 + r_2 r_3 + r_3 r_1 = \frac{2b}{8} = \frac{b}{4}
+\]
+\[
+r

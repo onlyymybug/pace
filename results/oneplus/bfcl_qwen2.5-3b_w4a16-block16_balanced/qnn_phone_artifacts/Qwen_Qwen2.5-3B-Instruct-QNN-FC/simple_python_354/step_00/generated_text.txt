@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_vegan_recipe", "description": "Retrieve a vegan soup recipe based on the provided cooking time. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"dish_type": {"type": "string", "description": "The type of dish, e.g. soup, dessert, etc.", "enum": ["soup", "main dish", "dessert", "salad"]}, "cooking_time": {"type": "integer", "description": "The maximum cooking time for the recipe in minutes."}, "ingredient_preference": {"type": "array", "items": {"type": "string"}, "description": "Preferred ingredients to be included in the recipe, if any. Default to not use it if not provided."}}, "required": ["dish_type", "cooking_time"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find a vegan soup recipe that takes under 30 minutes to make.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_vegan_recipe", "arguments": {"dish_type": "soup", "cooking_time": 30}}
+</tool_call><|im_end|>

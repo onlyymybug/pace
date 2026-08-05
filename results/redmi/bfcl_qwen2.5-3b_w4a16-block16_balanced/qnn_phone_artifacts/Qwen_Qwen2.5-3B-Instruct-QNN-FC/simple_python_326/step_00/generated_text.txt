@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_team_score", "description": "Retrieves the latest game score, individual player stats, and team stats for a specified sports team. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team_name": {"type": "string", "description": "The name of the sports team."}, "league": {"type": "string", "description": "The league that the team is part of."}, "include_player_stats": {"type": "boolean", "default": false, "description": "Indicates if individual player statistics should be included in the result. Default is false."}}, "required": ["team_name", "league"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get the latest game score and statistics for Los Angeles Lakers in NBA.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_team_score", "arguments": {"team_name": "Los Angeles Lakers", "league": "NBA", "include_player_stats": false}}
+</tool_call><|im_end|>

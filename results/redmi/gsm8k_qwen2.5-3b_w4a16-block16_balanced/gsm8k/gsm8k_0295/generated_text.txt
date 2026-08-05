@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Will buys 15 oranges. When he gets home, he asks his 2 sons to wash as many oranges as they are years old. The oldest son is 8 years old, the youngest is half as old as the oldest. How many oranges are left unwashed? Step 1: Determine the number of oranges washed by sons
+- Oldest son's age: 8 years
+- Youngest son's age: 8 / 2 = 4 years
+- Total oranges washed: 8 + 4 = 12 oranges
+
+Step 2: Calculate the number of oranges left unwashed
+- Total oranges bought: 15 oranges
+- Oranges washed: 12 oranges
+- Oranges left: 15 - 12 = 3 oranges
+
+The answer is 3.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly.

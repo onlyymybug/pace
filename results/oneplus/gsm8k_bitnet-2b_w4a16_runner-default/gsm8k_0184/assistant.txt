@@ -1,0 +1,10 @@
+To solve this problem, we first need to determine the total time it takes for each team to complete the 4 laps.
+
+For the well-rounded team:
+- Each member runs 400 meters in 55 seconds.
+- There are 4 members, so the total time is 4 * 55 = 220 seconds.
+
+For the less well-rounded team:
+- The first runner takes 60 seconds.
+- Each subsequent runner is 3 seconds faster than the previous runner.
+- This forms an arithmetic sequence where the first term (a) is 60 seconds, and the common difference (d) is -3 seconds

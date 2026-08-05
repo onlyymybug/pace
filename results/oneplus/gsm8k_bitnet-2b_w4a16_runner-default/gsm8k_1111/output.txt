@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Although Soledad works in a windowless office, she loves the outdoors. She will be on vacation for the entire month of June and cannot wait to hike 9,300 miles within that month. She is thinking of walking twice a day, covering 125 miles each time. How many more miles per day must Soledad hike to complete her journey on time?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many miles Soledad needs to hike per day, we first divide the total miles by the number of days in June. June has 30 days, so we divide 9,300 miles by 30 days:
+
+9,300 miles / 30 days = 310 miles per day.
+
+Soledad plans to walk 125 miles each time she hikes. To find out how many days she will need to hike to cover 9,300 miles, we divide the total miles by the miles per hike:
+
+9,300 miles / 125 miles per hike = 72 hikes.
+
+Since she plans to hike 

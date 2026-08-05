@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Memo.searchNotes","description":"Search memos by keyword (see all by default)","parameters":{"type":"object","properties":{"key_words":{"type":"string","description":"KEYWORDS"}},"required":["key_words"]}}
+{"name":"OfficeSoftware.Conferencing.listMeetings","description":"List all meetings","parameters":{"type":"object","properties":{"max_results":{"type":"integer","description":"Maximum number of results, default is 10"},"time":{"type":"string","description":"Default Same Day/Specific Date Range"}},"required":["max_results","time"]}}
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleMessage","description":"View message list by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.searchRentingHouses","description":"Search for rentals by criteria","parameters":{"type":"object","properties":{"price":{"type":"string","description":"Rents"},"house_area":{"type":"string","description":"Area"},"level":{"type":"string","description":"Floor"},"age":{"type":"integer","description":"fixed number of years"},"house_type":{"type":"string","description":"Layout"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"},"indoor_decoration":{"type":"string","description":"decorate"},"furniture":{"type":"string","description":"Furniture"}},"required":["price","house_area","level","age","house_type","housing_estate","location","indoor_decoration","furniture"]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:From the 15th of this month to the end of the month, every day from 2pm to 5pm, the library will be adjusted for summer opening hours, during which only the reading areas on the first and third floors will be open. Please schedule in advance for readers who need it.
+query:What kind of meetings are mentioned in the notepad, up to 8?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Together Lily, David, and Bodhi collected 43 insects. Lily found 7 more than David. David found half of what Bodhi found. How many insects did Lily find? Let's denote the number of insects David found as \( D \). According to the problem, Lily found \( D + 7 \) insects and \( D/2 \) insects, which is the number Bodhi found. The total number of insects collected by Lily, David, and Bodhi is 43. Therefore, we can write the equation:
+
+\[ D + (D + 7) + \frac{D}{2} = 43 \]
+
+To solve for \( D \), we first combine like terms:
+
+\[ D + D + \frac{D}{2} + 7 = 43

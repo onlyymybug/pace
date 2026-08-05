@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Katarina has 5 less cookies than Max has. Max has 12 more cookies than the Cookie Monster, and Summer has 23 more cookies than Max. If Katarina has 68 cookies, how many cookies do they have in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cookies Max has as \( M \), the number of cookies the Cookie Monster has as \( C \), and the number of cookies Katarina has as \( K \).
+
+From the problem, we have the following relationships:
+1. \( K = M - 5 \)
+2. \( M = C + 12 \)
+3. \( K = C + 23 \)
+4. \( K = 68 \)
+
+First, we use the information that Katarina has 68 cookies:
+\[ K = 68 \]
+
+Next, we use the information that Katarina has 5

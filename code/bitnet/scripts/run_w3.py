@@ -98,7 +98,7 @@ def main() -> int:
     max_seq_len = int(required_env("MAX_SEQ_LEN"))
     target_output_tokens = int(required_env("W3_TARGET_OUTPUT_TOKENS"))
     run_id = args.run_id or f"w3_{datetime.now():%Y%m%d_%H%M%S}"
-    result_dir = root / "results" / run_id
+    result_dir = Path(required_env("RESULTS_ROOT")).resolve() / run_id
     result_dir.mkdir(parents=True, exist_ok=False)
 
     code_root = Path(__file__).resolve().parents[1]

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are twice as many boys as girls at Dr. Wertz's school. If there are 60 girls and 5 students to every teacher, how many teachers are there?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of girls as G and the number of boys as B. According to the problem, B = 2G. We are given that G = 60.
+
+First, we find the number of boys:
+B = 2G
+B = 2 * 60
+B = 120
+
+Now, we know there are 5 students to every teacher. Let's denote the number of teachers as T. So, we have:
+5 students/T = 1 teacher
+
+The total number of students is the sum of the number of girls and boys:
+Total students = G + B
+Total students = 

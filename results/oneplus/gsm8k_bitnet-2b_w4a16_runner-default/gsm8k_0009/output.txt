@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John drives for 3 hours at a speed of 60 mph and then turns around because he realizes he forgot something very important at home.  He tries to get home in 4 hours but spends the first 2 hours in standstill traffic.  He spends the next half-hour driving at a speed of 30mph, before being able to drive the remaining time of the 4 hours going at 80 mph.  How far is he from home at the end of those 4 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total distance John travels and then subtract it from the distance to his home.
+
+First, let's calculate the distance John travels during each segment of his trip:
+
+1. For the first 3 hours at 60 mph:
+   Distance = Speed × Time = 60 mph × 3 hours = 180 miles
+
+2. For the next 2 hours in standstill traffic:
+   Distance = Speed × Time = 0 mph × 2 hours = 0 miles
+
+3. For the next half-hour (0.5 hours) at 30 mph:
+   Distance = Speed

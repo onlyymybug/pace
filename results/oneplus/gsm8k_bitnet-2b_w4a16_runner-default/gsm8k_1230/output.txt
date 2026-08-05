@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In November, a toy was $40. In December, the price increased by 80%. In January, the price decreased by 50%. What was the price of the toy after it was discounted in January?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the price of the toy after the price changes in December and January.
+
+1. **Price in December:**
+   - The price in November is $40.
+   - The price increased by 80% in December.
+   - To find the increased price, we calculate 80% of $40 and add it to the original price.
+   - \( 80\% \text{ of } 40 = 0.8 \times 40 = 32 \)
+   - So, the price in December is \( 40 + 32 = 72 \)
+
+2. **

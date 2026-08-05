@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There were 50 cats on a rock. Four boats came and carried away 5 cats each, and later, 3/5 of the remaining cats ran after a mouse they'd seen. How many cats were left on the rock? Step 1: Initially, there were 50 cats on the rock.
+Step 2: Four boats came and carried away 5 cats each, so 4 * 5 = 20 cats were taken away.
+Step 3: Subtract the taken cats from the initial count: 50 - 20 = 30 cats remaining.
+Step 4: Then, 3/5 of of the remaining cats ran away, which is 3/5 * 30 = 18 cats.
+Step 5: Subtract the cats that ran away from the remaining cats: 30 - 1

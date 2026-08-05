@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Four friends ordered four pizzas for a total of 64 dollars. If two of the pizzas cost 30 dollars, how much did each of the other two pizzas cost if they cost the same amount?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the cost of the two pizzas that cost 30 dollars. Since the total cost for four pizzas is 64 dollars, the cost of the other two pizzas can be found by subtracting the cost of the two pizzas from the total cost:
+
+64 dollars (total cost) - 30 dollars (cost of two pizzas) = 34 dollars (cost of the other two pizzas)
+
+Since the other two pizzas cost the same amount, we divide the total cost of these two pizzas by 2 to find the cost of each pizza:
+
+34 dollars / 2 = 17 dollars
+
+Therefore, each of

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Doxa sliced an apple into 8 pieces. She ate 1 slice, her sister ate 1 more than her, and her brother ate 1 more than her sister. How many slices of apple did they all eat? To solve this problem, we need to calculate the total number of slices eaten by Doxa, her sister, and her brother.
+
+1. Doxa ate 1 slice.
+2. Her sister ate 1 more than Doxa, so her sister ate 1 + 1 = 2 slices.
+3. Her brother ate 1 more than her sister, so her brother ate 2 + 1 = 3 slices.
+
+Now, we sum up the slices eaten by each of of:
+- Doxa: 1 slice
+- Sister: 2 slices
+- Brother: 3 slices
+
+Total slices eaten = 1

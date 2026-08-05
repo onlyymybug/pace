@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tom gets 4 car washes a month.  If each car wash costs $15 how much does he pay in a year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Tom pays in a year, we need to multiply the number of car washes he gets in a month by the cost per car wash and then multiply that by the number of months in a year.
+
+Number of car washes per month = 4
+Cost per car wash = $15
+Number of months in a year = 12
+
+Total cost per year = Number of car washes per month * Cost per car wash * Number of months in a year
+Total cost per year = 4 * $15 * 12
+Total cost per year = $720
+
+The answer is $720.<|eot_id|>

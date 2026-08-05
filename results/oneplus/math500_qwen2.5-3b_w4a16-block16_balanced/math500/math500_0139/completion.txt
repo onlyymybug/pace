@@ -1,0 +1,19 @@
+To solve the problem, we need to determine the probability that after the described process, the contents of in both bags are the same. Let's denote the colors as \( B \) (blue), \( G \) (green), \( O \) (orange), \( R \) (red), and \( V \) (violet).
+
+### Step-by-Step Solution:
+
+1. **Initial Setup:**
+   - Both Bob and Alice start with one ball of of each color: \( B, G, O, R, V \).
+
+2. **Alice's Action:**
+   - Alice randomly selects one ball from her bag and puts it into Bob's bag.
+   - There are 5 possible outcomes for Alice's action, each with equal probability \( \frac{1}{5} \).
+
+3. **Bob's Action:**
+   - Bob then randomly selects one ball from his bag and puts it into Alice's bag.
+   - After this, Bob's bag will have 4 balls, and Alice's bag will have 4 balls.
+
+4. **Final Contents:**
+   - For the contents of both bags to be the same, the final contents of Bob's bag must be the same as Alice's bag after the process.
+
+5.

@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Molly is catering a birthday party for her sister and invited 16 people. 10 people want the chicken salad which is $6.50 per person and 6 people want the pasta salad at $6 per person. What is the total amount Molly will pay for the catering?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount Molly will pay for the catering, we need to calculate the cost for both the chicken salad and the pasta salad separately and then add them together.
+
+First, calculate the cost for the chicken salad:
+10 people * $6.50 per person = $65.00
+
+Next, calculate the cost for the pasta salad:
+6 people * $6 per person = $36.00
+
+Now, add the two amounts together to find the total cost:
+$65.00 + $36.00 = $101.00
+
+The answer is $101.00.<|eot_id|>

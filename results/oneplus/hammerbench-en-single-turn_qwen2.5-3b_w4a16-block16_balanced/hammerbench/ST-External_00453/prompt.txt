@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotMap","description":"Get a map of selected attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotCheckInLocations","description":"Get popular punch card (influencer) locations in scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.searchScenicSpotByLocation","description":"Search nearby attractions based on user-provided location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location"}},"required":["location"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotParkingInfo","description":"Get parking information for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotEntertainment","description":"Get information about entertainment in designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to the West Lake for flowers on the weekend. The cherry blossoms there are about to bloom, and the scenery should be beautiful. We can walk from the broken bridge to Su Di, look at the lake view and feel the smell of spring. In the afternoon, you can also find a tea house by the lake to sit down and rest. What do you think?
+query:Can you help me find the map of the scenic spot mentioned in Tom's text message?<|im_end|>
+<|im_start|>assistant

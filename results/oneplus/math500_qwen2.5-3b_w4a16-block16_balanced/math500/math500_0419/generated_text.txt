@@ -1,0 +1,18 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the shortest distance from the point $(6, 0)$ to the line $y = 2x-2$? Express your answer in simplest radical form. To find the shortest distance from the point \((6, 0)\) to the line \(y = 2x - 2\), we can use the formula for the distance from a point to a line. The formula for the distance \(d\) from a point \((x_1, y_1)\) to a line \(Ax + By + C = 0\) is given by:
+
+\[
+d = \frac{|Ax_1 + By_1 + C|}{\sqrt{A^2 + B^2}}
+\]
+
+First, we need to rewrite the line equation \(y = 2x - 2\) in the standard form \(Ax + By + C = 0\). The standard form of of the line is:
+
+\[
+2x - y - 2 = 0
+\]
+
+Here, \(A = 2\), \(B = -1\), and \(C = -2\). The point \((x_1, y_1)\) is \((6, 0)\). Substituting these values into the distance formula, we get:
+
+\[
+d = \frac{|2(6) + (-1)(0) + (-2)|}{\sqrt

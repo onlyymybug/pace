@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Seth gave half of his stickers to Luis. Luis used half of the stickers and gave the rest to Kris.  Kris kept 9 of the stickers and gave the remaining 7 stickers to Rob. How many stickers did Seth have in the beginning?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of stickers Seth had initially as S.
+
+1. Seth gave half of his stickers to Luis, so Luis received S/2 stickers.
+2. Luis used half of the stickers he received, so Luis used (S/2)/2 = S/4 stickers.
+3. Luis gave the rest to Kris, which is S/4 stickers.
+4. Kris kept 9 stickers and gave the remaining 7 stickers to Rob.
+
+Since Kris gave 7 stickers to Rob, these 7 stickers are the ones Luis gave to Kris after using half of them. Therefore, the 7 stickers Kris received from Luis are

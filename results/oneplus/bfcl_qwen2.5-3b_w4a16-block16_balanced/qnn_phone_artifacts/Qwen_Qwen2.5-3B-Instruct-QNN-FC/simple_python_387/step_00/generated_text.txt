@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "hotel_booking", "description": "Books a hotel room for a specific date range. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"hotel_name": {"type": "string", "description": "The name of the hotel."}, "location": {"type": "string", "description": "The city and state, e.g. New York, NY."}, "start_date": {"type": "string", "description": "The start date of the reservation. Use format 'YYYY-MM-DD'."}, "end_date": {"type": "string", "description": "The end date of the reservation. Use format 'YYYY-MM-DD'."}, "rooms": {"type": "integer", "default": 1, "description": "The number of rooms to reserve."}}, "required": ["hotel_name", "location", "start_date", "end_date"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Book a hotel room at the Plaza Hotel in New York for 3 nights starting from 1st June 2022<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "hotel_booking", "arguments": {"hotel_name": "Plaza Hotel", "location": "New York, NY", "start_date": "2022-06-01", "end_date": "2022-06-03", "rooms": 1}}
+</tool_call><|im_end|>

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A chef bought 4 bags of onions. Each bag weighs 50 pounds. A pound of onions cost $1.50. How much did the chef spend?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much the chef spent, we need to calculate the total weight of the onions and then multiply that by the cost per pound.
+
+First, calculate the total weight of the onions:
+4 bags * 50 pounds/bag = 200 pounds
+
+Next, calculate the total cost:
+200 pounds * $1.50/pound = $300
+
+The answer is $300.<|eot_id|>

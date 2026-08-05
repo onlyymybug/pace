@@ -1,0 +1,11 @@
+To find the number of good oranges, we first need to determine the total number of oranges that are not good. We know there is 1 bad orange and 20% of the oranges are unripe. Since there are 25 oranges in total, we calculate the number of unripe oranges as follows:
+
+20% of 25 oranges = 0.20 * 25 = 5 oranges
+
+Now, we add the bad and unripe oranges together:
+
+1 bad orange + 5 unripe oranges = 6 oranges
+
+Next, we subtract this total from the overall number of oranges to find the number of good oranges:
+
+25

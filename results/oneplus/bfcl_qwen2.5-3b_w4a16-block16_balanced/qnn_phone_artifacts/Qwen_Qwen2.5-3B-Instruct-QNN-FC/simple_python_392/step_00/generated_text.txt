@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "latest_exchange_rate", "description": "Retrieve the latest exchange rate between two specified currencies. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"source_currency": {"type": "string", "description": "The currency you are converting from."}, "target_currency": {"type": "string", "description": "The currency you are converting to."}, "amount": {"type": "float", "description": "The amount to be converted. If omitted, default to exchange rate of 1 unit source currency"}}, "required": ["source_currency", "target_currency"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get me the latest exchange rate from British Pounds to Japanese Yen.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "latest_exchange_rate", "arguments": {"source_currency": "GBP", "target_currency": "JPY"}}
+</tool_call><|im_end|>

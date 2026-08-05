@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Robert wants to buy a bookshelf and a sofa and has received two offers. Furniture United's offer includes a $1,350 advance payment and 6 monthly installments of $350 each. Cozy Homes' offer includes a $1,100 advance payment and 9 monthly installments of $250 each. What is the cost difference between the two offers?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the cost difference between the two offers, we first need to calculate the total cost of each offer.
+
+For Furniture United:
+- Initial advance payment: $1,350
+- Monthly installments: 6 * $350 = $2,100
+- Total cost: $1,350 + $2,100 = $3,450
+
+For Cozy Homes:
+- Initial advance payment: $1,100
+- Monthly installments: 9 * $250 = $2,250
+- Total cost: $1,100 + $2,250 = $3,350
+
+Now, we find the cost difference

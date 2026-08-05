@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Johnny's dad brought him to watch some horse racing and his dad bet money. On the first race, he lost $5. On the second race, he won $1 more than twice the amount he previously lost. On the third race, he lost 1.5 times as much as he won in the second race. How much did he lose on average that day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average loss, we need to calculate the total loss and then divide it by the number of races.
+
+1. Johnny lost $5 on the first race.
+2. On the second race, he won $1 more than twice the amount he lost on the first race. So, he won $2 * $5 + $1 = $11.
+3. On the third race, he lost 1.5 times as much as he won in the second race. So, he lost $1.5 * $11 = $16.50.
+
+Total loss = $5 (first race) + $11 (second

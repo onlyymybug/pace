@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sophia and Rose went together to the market to buy onions and potatoes. Rose bought 4 times the number of onions and potatoes Sophia bought. If Rose bought 12 onions and 4 potatoes, how many onions and potatoes in total did Sophia buy at the market?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many onions and potatoes Sophia bought. We know that Rose bought 12 onions and 4 potatoes. Since Rose bought 4 times the number of onions and potatoes Sophia bought, we can set up the following equations:
+
+Let \( x \) be the number of onions Sophia bought.
+Let \( y \) be the number of potatoes Sophia bought.
+
+From the problem, we have:
+\[ 4x = 12 \]
+\[ 4y = 4 \]
+
+Solving for \( x \) and \( y \):
+\[ x = \frac{12}{4} =

@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the equation of the plane containing the points $(0,-1,-1),$ $(-4,4,4),$ and $(4,5,1).$  Enter your answer in the form
+\[Ax + By + Cz + D = 0,\]where $A,$ $B,$ $C,$ $D$ are integers such that $A > 0$ and $\gcd(|A|,|B|,|C|,|D|) = 1.$
+To find the equation of of of the plane containing the points \((0, -1, -1)\), \((-4, 4, 4)\), and \((4, 5, 1)\), we need to determine the coefficients \(A\), \(B\), \(C\), and \(D\) such that the equation \(Ax + By + Cz + D = 0\) holds for all three points. We will use the determinant method to find these coefficients.
+
+The general form of of the plane equation is \(Ax + By + Cz + D = 0\). We can

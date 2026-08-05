@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark makes custom dog beds. A bed for a Rottweiler takes 8 pounds of stuffing, a bed for a chihuahua takes 2 pounds of stuffing, and a bed for a collie takes the average amount of stuffing between the first two kinds of beds. How many pounds of stuffing does Mark need to make 4 chihuahua beds and 3 collie beds?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the amount of stuffing needed for a collie bed. Since a collie bed takes the average amount of stuffing between a Rottweiler bed and a chihuahua bed, we calculate the average as follows:
+
+- Rottweiler bed: 8 pounds
+- Chihuahua bed: 2 pounds
+
+Average stuffing for a collie bed = (8 pounds + 2 pounds) / 2 = 10 pounds / 2 = 5 pounds
+
+Now, we calculate the total amount of stuffing needed for 4 chihuahua beds and 3

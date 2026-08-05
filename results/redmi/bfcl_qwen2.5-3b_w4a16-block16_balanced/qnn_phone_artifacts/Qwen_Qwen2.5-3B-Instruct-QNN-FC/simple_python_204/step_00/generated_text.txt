@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "restaurant.find_nearby", "description": "Locate nearby restaurants based on specific criteria like cuisine type. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city and state, e.g. Seattle, WA"}, "cuisine": {"type": "string", "description": "Preferred type of cuisine in restaurant."}, "max_distance": {"type": "integer", "description": "Maximum distance (in miles) within which to search for restaurants. Default is 5."}}, "required": ["location", "cuisine"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find restaurants near me within 10 miles that offer Chinese cuisine in Seattle.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "restaurant.find_nearby", "arguments": {"location": "Seattle, WA", "cuisine": "Chinese", "max_distance": 10}}
+</tool_call><|im_end|>

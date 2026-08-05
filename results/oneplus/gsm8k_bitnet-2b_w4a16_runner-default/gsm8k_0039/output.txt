@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John runs 60 miles a week. He runs 3 days a week.  He runs 3 hours the first day and half as much the other two days he runs.  How fast does he run?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how fast John runs, we need to determine the total time he spends running each week and then divide that by the total distance he runs.
+
+1. John runs 3 days a week.
+2. On the first day, he runs for 3 hours.
+3. On the other two days, he runs half as much as the first day, which is \( \frac{3}{2} = 1.5 \) hours each day.
+
+Total time spent running each week:
+- First day: 3 hours
+- Other two days: \( 2 \times 1.5 = 3 \)

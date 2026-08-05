@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:An hour ago, Xiao Ming shared a photo of his trip to Hangzhou last week in the group. The West Lake in the photo is really beautiful, and you can see the beautiful view of the broken bridge and the broken snow. He also mentioned that although the weather was a little cold, the whole trip was very pleasant, especially the cruise and tasting of local food, which was impressive. Xiao Ming also plans to return to Hangzhou next month to continue exploring other unvisited attractions.
+query:Help me collect the news about global climate change posted by the environmental warrior on Twitter. The time was mentioned in the WeChat message Xiao Li sent me.<|im_end|>
+<|im_start|>assistant

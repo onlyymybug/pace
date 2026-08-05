@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James gets 80 emails a day.  20% of those emails don't require any response.  He responds to the rest of them.  How many emails does he respond to in a 5 day work week? Step 1: Calculate the number of emails that don't require any response.
+emails not requiring response = 20% of 80 emails
+emails not requiring response = 0.20 * 80
+
+Step 2: Calculate the number of emails that do require a response.
+emails requiring response = total emails - emails not requiring response
+emails requiring response = 80 - (0.20 * 80)
+
+Step 3: Calculate the number of emails responding to in a 5 day work week.
+emails responding in 5 days = emails requiring response * 5
+
+Step 4:

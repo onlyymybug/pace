@@ -1,0 +1,13 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A sequence $(a_n)$ is defined as follows:
+\[a_{i + 1} = \frac{1}{1 - a_i}\]for $i \ge 1.$  If $a_3 = a_1,$ compute $(a_9)^9.$
+To solve the problem, we start by analyzing the given sequence \( (a_n) \) defined by the recurrence relation:
+\[ a_{i+1} = \frac{1}{1 - a_i} \]
+for \( i \ge 1 \). We need to find \( (a_9)^9 \) given that \( a_3 = a_1 \).
+
+First, let's compute the first few terms of of the sequence to identify any patterns.
+
+1. **Compute \( a_2 \):**
+   \[
+   a_2 = \frac{1}{1 - a_1}

@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a grocery store, four apples cost $5.20, and three oranges cost $3.30. How much will Clyde pay for 5 apples and 5 oranges?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the cost of one apple and one orange.
+
+Let's denote:
+- The cost of one apple as \( A \)
+- The cost of one orange as \( O \)
+
+From the given information:
+- Four apples cost $5.20, so \( 4A = 5.20 \)
+- Three oranges cost $3.30, so \( 3O = 3.30 \)
+
+We can find the cost of one apple and one orange by dividing the total cost by the number of apples or oranges.
+
+For apples:
+\[ A = \frac{5.20

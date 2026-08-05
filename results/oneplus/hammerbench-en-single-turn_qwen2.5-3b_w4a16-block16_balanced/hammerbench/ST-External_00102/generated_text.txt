@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Payment.transferPayMoney","description":"Transfer money to someone else","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Beneficiary name or account number"},"amount":{"type":"float","description":"Transfer amount, unit (yuan)"},"message":{"type":"string","description":"Transfer Note"}},"required":["receiver","amount","message"]}}
+{"name":"Navigation.TrainTickets.queryHighSpeedRailRoutes","description":"Find high-speeded rail routes from and to specific destinations","parameters":{"type":"object","properties":{"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"max_results":{"type":"integer","description":"Returns the maximum number of results, optional, default is 5"}},"required":["departure_station","destination_station","max_results"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"SocialCommunication.Calling.transferPhoneCall","description":"Transfer the current call to another contact","parameters":{"type":"object","properties":{"transfer_contact_name":{"type":"string","description":"Name of the contact to transfer to"}},"required":["transfer_contact_name"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's visit the Nanjing presidential palace tomorrow. I heard that it has a very long history and the architecture is very unique. We can meet at Nanjing Railway Station at 9 in the morning and then leave together, so there will be plenty of time. In the afternoon, if you still have energy, we can go to the Fuzi Temple for a stroll, and there are also a lot of snacks there, so you can try Nanjing's food. What do you think of this arrangement?
+query:I want to check the high-speed rail line from the place mentioned in the WeChat Xiao Li sent to me to Hangzhou, showing up to 10 lines.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrainTickets.queryHighSpeedRailRoutes","parameters":{"departure_station":"Place_mentioned_in_Xiaoli","destination_station":"Hangzhou","max_results":10}}<|im_end|>

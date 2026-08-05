@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Reading.deleteReadingBookFromShelf","description":"Remove books from shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"SocialCommunication.Calling.deleteContact","description":"Delete the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to be deleted"}},"required":["contact_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.removeAddress","description":"Remove the specified address from the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Recipient's name"},"phone":{"type":"string","description":"Recipient phone number"},"address":{"type":"string","description":"To"}},"required":["name","phone","address"]}}
+{"name":"SocialCommunication.InstantMessaging.removeContact","description":"Remove the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Contact name to remove, required"}},"required":["contact_name"]}}
+{"name":"SystemTools.SystemSettings.deleteEmergencyContact","description":"Delete emergency contact","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Name of emergency contact"},"phone_number":{"type":"string","description":"Emergency contact's phone number"}},"required":["user_name","phone_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The boss convened an all-staff meeting today at 3pm to discuss the work plan and objectives for the next quarter. In particular, the boss emphasized the need for the Marketing Department to strengthen communication with the Sales Department to ensure the effectiveness of product promotion activities. At the same time, the boss also mentioned that the Technology Department should speed up the development of new products and strive for early market launch. At the end of the meeting, the boss expressed his affirmation of everyone's work performance and encouraged everyone to continue their efforts.
+query:I want to delete the contact information of the person mentioned in the notepad.<|im_end|>
+<|im_start|>assistant

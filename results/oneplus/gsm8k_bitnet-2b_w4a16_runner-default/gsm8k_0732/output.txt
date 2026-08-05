@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Each sleeve of graham crackers makes the base for 8 large smores.  There are 3 sleeves in a box.  If 9 kids want 2 smores apiece and 6 adults will eat 1 smore apiece, how many boxes of graham crackers will they need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of large smores required and then figure out how many boxes of graham crackers are needed to make those smores.
+
+First, calculate the total number of smores needed:
+- 9 kids x 2 smores each = 18 smores
+- 6 adults x 1 smore each = 6 smores
+- Total smores needed = 18 + 6 = 24 smores
+
+Next, determine how many large smores each box of graham crackers can make:
+- Each sleeve makes 8 large smores
+- There are 3

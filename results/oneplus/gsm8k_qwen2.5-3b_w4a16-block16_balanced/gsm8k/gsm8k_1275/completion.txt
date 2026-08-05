@@ -1,0 +1,17 @@
+Step 1: Calculate the total cost for adult tickets.
+adults = 2
+adult_ticket_price = 12
+total_adult_cost = adults * adult_ticket_price
+
+Step 2: Calculate the total cost for child tickets.
+children = 1
+child_ticket_price = 8
+total_child_cost = children * child_ticket_price
+
+Step 3: Calculate the total cost for popcorn.
+popcorn_price = 3
+number_of_popcorns = 2
+total_popcorn_cost = popcorn_price * number_of_popcorns
+
+Step 4: Calculate the total cost.
+total_cost = total_adult_cost

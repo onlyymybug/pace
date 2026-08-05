@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $x_1,$ $x_2,$ $x_3,$ $y_1,$ $y_2,$ and $y_3$ be real numbers such that
+\begin{align*}
+(x_1 - x_2)^2 + (y_1 - y_2)^2 &= 9, \\
+(x_1 - x_3)^2 + (y_1 - y_3)^2 &= 16, \\
+(x_2 - x_3)^2 + (y_2 - y_3)^2 &= 25.
+\end{align*}Find $\begin{vmatrix} x_1 & y_1 & 1 \\ x_2 & y_2 & 1 \\ x_3 & y_3 & 1 \end{vmatrix}^2.$
+To solve the given problem, we start by interpreting the given equations geometrically. The equations \((x_1 - x_2)^2 + (y_1 - y_2)^2 = 9\), \((x_1 - x_3)^2 + (y_1 - y_3)^2 = 16\), and \((x_2 - x_3)^2 + (y_2 - y_3)^2 = 25\) represent the squared distances between the points \((x_1, y_1)\), \((x_2, y_2)\), and \((x_3, y_3)\) in the plane. These distances suggest that the points form a right triangle with the right angle at \((x_2, y_2)\).
+
+Let's place the points in the coordinate plane such that:
+- \((x_2, y_2)\) is at the origin \((0,0)\),
+- \((x_1, y_1)\) is at \((a, b)\),
+- \((x_3, y_3)\) is at \((c, d)\).
+
+Then the given conditions become:

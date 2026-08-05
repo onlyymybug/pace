@@ -1,0 +1,8 @@
+adb -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kim has started his own housekeeping business and is calculating how much profit he will make from his clients. He already has 3 clients, but is talking to another 5 potential clients and feels confident enough to include them in his calculations. Each client’s home will need 2 bottles of bleach and a pack of cloths to clean. Bottles of bleach will cost $2 each and packs of cloths will cost $5 each. These are his only expenses. He calculates that his total income each week will be $92. Profit is the difference between total income and total expenses, so how much profit, in dollars, will Lucas make each week?'"'"' --system_prompt '"'"''"'"' --seq_len 339 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0145_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0145_inference_speed.txt'

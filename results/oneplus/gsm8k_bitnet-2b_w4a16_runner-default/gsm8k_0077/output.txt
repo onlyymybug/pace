@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cecilia just bought a new puppy. According to her veterinarian, she has to feed the puppy 1 cup of dog food every day for the first 180 days. Then she has to feed the puppy 2 cups of dog food every day for the rest of its life. If one bag of dog food contains 110 cups, how many bags of dog food will Cecilia use in the first year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount of dog food Cecilia will use over the first year and then determine how many bags of dog food she will need.
+
+1. Calculate the amount of dog food needed for the first 180 days:
+   - Daily amount for the first 180 days = 1 cup
+   - Total for the first 180 days = 1 cup/day * 180 days = 180 cups
+
+2. Calculate the amount of dog food needed for the remaining days of the year:
+   - There are 365 days in a year.
+   - Days remaining = 365 days - 

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It rained 2 inches on Monday and is expected to rain 1 more inch than twice of Monday’s total on Tuesday. How many inches of rain will there be on Tuesday?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much rain will fall on Tuesday, we first determine twice the amount of rain that fell on Monday, which is 2 inches. Then, we add 1 more inch to this amount to find the expected rain for Tuesday.
+
+Twice the rain on Monday is 2 * 2 = 4 inches. Adding 1 more inch gives us 4 + 1 = 5 inches.
+
+The answer is 5 inches.<|eot_id|>

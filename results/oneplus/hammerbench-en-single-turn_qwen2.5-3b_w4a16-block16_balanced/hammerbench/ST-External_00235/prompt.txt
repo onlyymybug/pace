@@ -1,0 +1,24 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.OnlineVideos.playOnlineVideo","description":"Watch the video (when to start, watch from scratch by default)","parameters":{"type":"object","properties":{"video_name":{"type":"string","description":"Video Name"},"start":{"type":"string","description":"When to start, watch from scratch by default"},"full_screen":{"type":"boolean","description":"Full Screen"},"playback_speed":{"type":"float","description":"Playback Speed"},"danmaku":{"type":"boolean","description":"enable bullet text"}},"required":["video_name","start","full_screen","playback_speed","danmaku"]}}
+{"name":"Health.MedicalServices.getDoctorAvailability","description":"Check the doctor's available appointment time according to the doctor's name, hospital name and other conditions","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["doctor_name","hospital_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOpenHours","description":"Get hours at select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Restaurant name:"}},"required":["restaurant_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.openSecondhandSaleMessage","description":"Open the conversation with the seller","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+{"name":"OnlineShopping.Mall.createChat","description":"Open the conversation with the seller","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Team Member,
+
+Hi everyone, this week's team building event is scheduled for this Saturday at 2pm in downtown Starbucks.There we will have a series of interactive team games while enjoying delicious coffee and snacks.Please arrive on time and familiarize yourself with the route as far in advance as possible to avoid being late.Feel free to contact me if you have any questions or need help finding a specific location.
+
+Looking forward to meeting everyone at Starbucks and having a great afternoon together!
+
+Best regards,
+[Your name]
+query:I want to know the opening hours of the restaurant mentioned in the email, can you check it for me?<|im_end|>
+<|im_start|>assistant

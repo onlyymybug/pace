@@ -1,0 +1,32 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the sum of the values of $a$ that satisfy the equation $$(3)5^2-4(5-a)^2 \div 3=63?$$
+To solve the equation \((3)5^2 - 4(5-a)^2 \div 3 = 63\), we will follow a step-by-step approach.
+
+First, simplify the left side of of of the equation:
+\[
+(3)5^2 - 4(5-a)^2 \div 3 = 63
+\]
+Calculate \(5^2\):
+\[
+5^2 = 25
+\]
+So the equation becomes:
+\[
+3 \cdot 25 - 4(5-a)^2 \div 3 = 63
+\]
+Simplify \(3 \cdot 25\):
+\[
+3 \cdot 25 = 75
+\]
+Thus, the equation is now:
+\[
+75 - \frac{4(5-a)^2}{3} = 63
+\]
+Next, isolate the term involving \((5-a)^2\). Subtract 75 from both sides:
+\[
+-\frac{4(5-a)^2}{3} = 63 - 75
+\]
+Simplify \(63 - 75\):
+\[
+63 - 75 = -12

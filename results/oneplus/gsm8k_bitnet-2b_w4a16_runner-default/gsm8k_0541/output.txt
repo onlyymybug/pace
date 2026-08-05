@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: $18 is shared among 3 boys. The eldest added $5 to his share and added another $10 the following day. He later needed some money and spent $8 from his total so far. After saving some more, he was able to triple the amount he had left after spending the $8. How much does he have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. **Initial Share**: The total amount of money is $18, shared among 3 boys. So, each boy's initial share is:
+   \[
+   \frac{18}{3} = 6
+   \]
+
+2. **Eldest Boy's Additional Shares**: 
+   - On the first day, the eldest boy added $5 to his share. So, his new share is:
+     \[
+     6 + 5 = 11
+     \]
+   - On the second day, he added another $10 to his share

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mike bought 5 face masks while Johnny bought 2 more than thrice as many as Mike. How many face masks did Johnny buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we first need to determine how many face masks Johnny bought. We know that Mike bought 5 face masks. Johnny bought 2 more than thrice as many as Mike. 
+
+First, calculate thrice as many face masks as Mike:
+\[ 3 \times 5 = 15 \]
+
+Then, add 2 to this number to find out how many face masks Johnny bought:
+\[ 15 + 2 = 17 \]
+
+So, Johnny bought 17 face masks.
+
+The answer is 17.<|eot_id|>

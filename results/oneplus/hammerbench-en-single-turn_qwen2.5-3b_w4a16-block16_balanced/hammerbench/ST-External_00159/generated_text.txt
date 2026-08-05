@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.CloudStorage.netdiskSearchFiles","description":"Search for relevant files in Drive by keywords","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords Search"}},"required":["keyword"]}}
+{"name":"SocialCommunication.Community.searchCommunityPosts","description":"Find related posts in a specific community by keyword","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to find posts"},"key_words":{"type":"string","description":"Keywords used to find posts"}},"required":["community_name","key_words"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobDetails","description":"Get job-specific details based on job relevance","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"Travel.ItineraryServices.searchTravelRoute","description":"Search for relevant travel itineraries based on keywords","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search keywords"}},"required":["keyword"]}}
+{"name":"OfficeSoftware.Documents.searchDocuments","description":"Search documents by keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search keywords, required"}},"required":["keyword"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10 am today, the staff meeting of Innovation Technology Co., Ltd. will be held in the company's large conference room as scheduled. The main content of the meeting will be centered on this year's business development plan and team building plan. Please arrive at the meeting room 10 minutes early and check in on time. Please turn off or turn on electronic devices such as silent phones during the meeting to ensure that the meeting runs smoothly. All employees of Innovation Technology Co., Ltd., thank you for your cooperation and support.
+query:I would like to know more about the product manager position in the company mentioned in the notepad, can you check it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.CloudStorage.netdiskSearchFiles","parameters":{"keyword":"product manager Innovation Technology Co., Ltd."}}<|im_end|>

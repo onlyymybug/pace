@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 6 periods in the day for a normal student but John has to take 2 extra classes.  Each class is 40 minutes long.  He goes to class for 5 days a week.  He then spends 1/16 of his weekly minutes each on Saturday and Sunday as extra learning time.  How many hours a week does he spend learning?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total time John spends in class each week and then add the extra time he spends on Saturday and Sunday.
+
+1. Calculate the total time John spends in class each week:
+   - John has 6 periods in the day, but he takes 2 extra classes, so he has 8 periods in total.
+   - Each class is 40 minutes long, so the total time spent in class each day is \(8 \times 40 = 320\) minutes.
+   - John goes to class for 5 days a week, so the total time spent in class each week is \(

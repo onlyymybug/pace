@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"MusicRadio.Karaoke.manageAccount","description":"Manage your account by following the steps in Account Management","parameters":{"type":"object","properties":{"action":{"type":"string","description":"Account management actions"}},"required":["action"]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+{"name":"NewsMagazines.NewspapersMagazines.subscribeMagazine","description":"Subscribe to magazine by magazine name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello movie lovers! I'm Xiao Zhang, the director of the film club we attended together. We have a small movie viewing this Saturday and would like to invite you to join us. Located in the Starlight Cinema in the center of the city, the event starts at 2 pm, we will first watch a recently popular independent movie, and then we will exchange views together. If you are free, please do not hesitate to reply to me. Oh, I look forward to your joining!
+query:I would like to pay attention to the name of the friend mentioned in the message received from QQ on Douban<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","parameters":{"medium_name":"Douban","nick_name":"QQ昵称","account_number":"QQ号"}}<|im_end|>

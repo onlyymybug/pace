@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sports.match_results", "description": "Returns the results of a given match between two teams. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team1": {"type": "string", "description": "The name of the first team."}, "team2": {"type": "string", "description": "The name of the second team."}, "season": {"type": "string", "description": "The season when the match happened. Default is the current season."}}, "required": ["team1", "team2"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who won the last match between Chicago Bulls and Los Angeles Lakers?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "sports.match_results", "arguments": {"team1": "Chicago Bulls", "team2": "Los Angeles Lakers", "season": "2022-2023"}}
+</tool_call><|im_end|>

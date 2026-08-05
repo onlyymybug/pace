@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In how many ways can 8 people sit around a round table if 3 of the people -- Pierre, Rosa, and Thomas -- all want to sit together?  (Two seatings are considered the same if one is a rotation of the other.) To solve the problem of of of arranging 8 people around a round table with the condition that 3 specific people (Pierre, Rosa, and Thomas) must sit together, we can treat the group of of 3 people as a single "block" or "super person". This reduces the problem to arranging 6 "people" (the block and the other 5 individuals) around the table.
+
+### Step-by-Step Solution:
+
+1. **Treat the group as a single block:**
+   - We have 6 "people" to arrange: the block (Pierre, Rosa, Thomas) and the other 

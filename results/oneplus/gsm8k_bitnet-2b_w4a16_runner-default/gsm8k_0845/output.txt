@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Peter has twice as many socks as Jack and half times as many dishes as jack. Jack collected twice as many dishes as socks in the store. If jack collected 60 dishes, calculate the total number of socks and dishes they have together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of socks Jack collected as S, the number of dishes Jack collected as D, the number of socks Peter collected as P, and the number of dishes Peter collected as Q.
+
+From the problem, we know:
+1. Jack collected twice as many dishes as socks: D = 2S
+2. Jack collected 60 dishes: D = 60
+3. Peter collected half times as many dishes as Jack: Q = 0.5D
+4. Peter collected twice as many socks as Jack: P = 2S
+5. Peter collected half times as many socks as Jack: Q =

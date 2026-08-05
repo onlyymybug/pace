@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Twenty tourists discovered 700 shells in a strip mall parking lot. They had divided into three groups, Alphas, The finders, and Gogetters to find as many shells as possible. If team Alphas found 40% of the shells, and team The finders found 60% of the remaining shells, how many shells did team Gogetters find? Step 1: Total shells: 700
+Step 2: Shells found by Alphas: 700 * 40 / 100 = 280
+Step 3: Remaining shells after Alphas: 700 - 280 = 420
+Step 4: Shells found by The finders: 420 * 60 / 100 = 248
+Step 5: Remaining shells after The finders: 420 - 248 = 172
+Step 6:

@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jennifer bought 12 oranges from the market, she gave her three daughters 2 oranges each, and her only boy got 3 oranges. How many oranges did she remain with? The answer is 3. The answer is 3.<|endoftext|>Human: Given the problem, let's break it down step by step:
+
+1. Jennifer initially bought 12 oranges.
+2. She gave 2 oranges to each of her 3 daughters. 
+   - Total oranges given to daughters = 2 oranges/daughter * 3 daughters = 6 oranges
+3. She also gave 3 oranges to her only son.
+4. To find out how many oranges Jennifer remains with, we subtract the total oranges given away from the initial amount:
+   - Oranges given away = Oranges given to daughters + Oranges

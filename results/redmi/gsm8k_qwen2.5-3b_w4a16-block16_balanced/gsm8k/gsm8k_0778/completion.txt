@@ -1,0 +1,11 @@
+Step 1: Calculate the number of movies in series.
+Number ofSeries = 600 / 3 = 200
+
+Step 2: Calculate the number of older movies.
+NumberOldMovies = 600 - 20 - 200 = 160
+
+Step 3: Calculate the number of non-series older movies.
+NumberNonSeriesOld = 160 * 0.4 = 64
+
+Step 4: Calculate the number of non-series non-old movies.
+NumberNonSeriesNonOld = 600 - 200 - 16

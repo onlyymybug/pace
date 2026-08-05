@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark buys one lottery ticket with a 20% chance of winning and a second lottery ticket that's three times more likely to win. What is the probability, expressed as a percentage, that both tickets are winners?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to understand the probabilities of each event and then combine them to find the probability of both events happening.
+
+Let's denote:
+- \( P(\text{win}) \) as the probability of winning.
+- \( P(\text{lose}) \) as the probability of losing.
+
+Given:
+- The first ticket has a 20% chance of winning, so \( P(\text{win}) = 0.20 \).
+- The second ticket is three times more likely to win, so \( P(\text{win}) = 3 \times 0.20 = 0.60

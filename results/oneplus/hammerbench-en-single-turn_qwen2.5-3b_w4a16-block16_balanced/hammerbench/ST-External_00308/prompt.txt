@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.getPatientMedicalRecord","description":"Obtain the patient's medical record information based on the patient's name, etc.","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"Health.HealthManagement.getDietHistory","description":"Get dietary history based on timeframe, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Time range"}},"required":["time"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskGetUploadFilesRecords","description":"Get a list of uploaded files/folders records in Cloud Drive","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Insurance.getInsuranceHistoricalClaims","description":"Check your insurance claim history","parameters":{"type":"object","properties":{"start_date":{"type":"string","description":"Start date"},"end_date":{"type":"string","description":"结束日期"},"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["start_date","end_date","insurance_name","insurance_type"]}}
+{"name":"Navigation.FlightTickets.viewBookingFlightHistory","description":"View user's past flight bookings","parameters":{"type":"object","properties":{"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Passenger's Name"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"End Time"}},"required":["passenger_id","name","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 3pm today, Zhang Xiaohua will come to the office to discuss the marketing plan for the next quarter. Make sure you have the data and reports ready before then.
+query:Can you check the medical records of the person mentioned in the notepad for me? He is a male from Sichuan.<|im_end|>
+<|im_start|>assistant

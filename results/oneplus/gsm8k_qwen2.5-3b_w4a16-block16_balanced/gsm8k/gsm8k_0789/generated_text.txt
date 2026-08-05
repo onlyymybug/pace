@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John is raising money for a school trip. He has applied for help from the school, which has decided to cover half the cost of the trip. How much money is John missing if he has $50 and the trip costs $300? To determine how much money John is missing, we first calculate the total cost the school will cover, which is half of the trip cost. Then, we add this amount to the money John has to find out how much more he needs.
+
+1. Calculate the school's contribution:
+   \[
+   \text{School's contribution} = \frac{1}{2} \times \text{Total trip cost} = \frac{1}{2} \times 300 = 150
+   \]
+
+2. Add the school's contribution to the money John has:
+   \[
+   \text{Total

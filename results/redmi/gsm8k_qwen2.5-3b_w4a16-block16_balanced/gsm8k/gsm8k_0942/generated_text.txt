@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 29 pupils in a class. The teacher has 9 coupons; each coupon can be redeemed for 100 bottles of apple juice. The teacher gives each student 2 bottles of apple juice to drink for lunch. After redeeming all her coupons and giving each student their apple juice lunch, how many bottles of apple juice does the teacher have for herself? Step 1: Calculate total bottles of apple juice available from coupons.
+Total coupons: 9
+Bottles per coupon: 100
+Total bottles from coupons: 9 * 100 = 900 bottles
+
+Step 2: Calculate total bottles of apple juice given to students.
+Number of students: 29
+Bottles per student: 2
+Total bottles for students: 29 * 2 = 58 bottles
+
+Step 3: Calculate total bottles of apple juice used or given away.
+Total bottles from coupons: 900
+Total bottles for students:

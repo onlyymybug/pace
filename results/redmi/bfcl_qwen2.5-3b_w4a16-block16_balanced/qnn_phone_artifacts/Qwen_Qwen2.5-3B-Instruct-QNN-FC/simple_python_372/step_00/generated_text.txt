@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "whole_foods.find_top_brands", "description": "Get top brands based on a specific product from Whole Foods Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"product": {"type": "string", "description": "The product for which the top brands should be fetched."}, "number": {"type": "integer", "description": "Number of top brands to be fetched. Default is 5"}, "organic": {"type": "boolean", "description": "If the product should be organic. Default is false"}}, "required": ["product"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the top five organic bananas brands on the basis of rating from Whole Foods store.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "whole_foods.find_top_brands", "arguments": {"product": "bananas", "number": 5, "organic": true}}
+</tool_call><|im_end|>

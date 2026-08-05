@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.getCarServiceCenters","description":"Get car service center information by region","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"},"brand":{"type":"string","description":"Car Brand"}},"required":["location","brand"]}}
+{"name":"Finance.Insurance.contactInsuranceAgent","description":"Get contact details for your insurance agent","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","description":"Get the conditions and requirements to use a city's services","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Wang! Let's go see a movie together this weekend. It's at the Wangfujing Cinema in Beijing, where there are so many new movies. Do you have anything you want to see? We can book tickets online in advance, which is more convenient. You can also discuss what snacks to order in advance. The taste of Wangfujing in Beijing is really good! When you are free, let's set a specific time.
+query:Is there a BMW car service center near the location mentioned in the message Xiao Li sent me?<|im_end|>
+<|im_start|>assistant

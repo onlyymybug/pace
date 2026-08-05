@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Eliza's rate per hour for the first 40 hours she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate Eliza's earnings for both regular hours and overtime hours.
+
+1. Calculate earnings for regular hours:
+   - Regular hourly rate = $10
+   - Regular hours worked = 40 hours
+   - Earnings for regular hours = Regular hourly rate * Regular hours worked
+   - Earnings for regular hours = $10 * 40 = $400
+
+2. Calculate earnings for overtime hours:
+   - Overtime hourly rate = 1.2 * Regular hourly rate
+   - Overtime hourly rate = 1.2 * $10 = $12
+   - Overtime hours

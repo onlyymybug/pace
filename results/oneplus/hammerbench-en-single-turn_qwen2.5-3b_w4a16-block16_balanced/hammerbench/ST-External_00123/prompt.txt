@@ -1,0 +1,26 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.querySocialSecurityInfo","description":"Check social security payment status, account balance and other information","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"User Name"}},"required":["user_name"]}}
+{"name":"Finance.Funds.getFundDividend","description":"Query dividend information of designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello! This is your project assistant Zhang San. Regarding our upcoming project meeting, I would like to confirm the specific time with you.Last time we discussed, you mentioned that you would like to schedule a face-to-face meeting this week to better move the project forward.Considering your schedule, I would like to know which day of the week is more convenient for you, I will schedule the meeting according to your schedule and send the meeting materials to you in advance.
+
+In addition, I have already contacted Mr. Wang Wu, who has tentatively agreed to participate in the meeting between 3 p.m. and 5 p.m. this Thursday.Please confirm if this time is suitable, and if there are any adjustments, please feel free to let me know, and I will coordinate with the relevant colleagues in time.
+
+We look forward to your response and wish you all the best!
+
+Sincerely,
+Salute!
+
+Zhang San
+query:I want to check the social security payment status and account balance of the person mentioned in the email, is it okay?<|im_end|>
+<|im_start|>assistant

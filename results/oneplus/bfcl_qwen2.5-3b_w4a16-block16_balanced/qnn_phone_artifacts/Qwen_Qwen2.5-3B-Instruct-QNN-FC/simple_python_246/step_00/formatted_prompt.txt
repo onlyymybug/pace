@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "science_history.get_discovery_details", "description": "Retrieve the details of a scientific discovery based on the discovery name. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"discovery": {"type": "string", "description": "The name of the discovery, e.g. Gravity"}, "method_used": {"type": "string", "description": "The method used for the discovery, default value is 'default' which gives the most accepted method."}}, "required": ["discovery"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who discovered Gravity and what was the method used?<|im_end|>
+<|im_start|>assistant

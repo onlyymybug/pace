@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Emily can peel 6 shrimp a minute and saute 30 shrimp in 10 minutes. How long will it take her to peel and cook 90 shrimp?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the rate at which Emily can peel and cook shrimp and then use that rate to find out how long it will take her to cook 90 shrimp.
+
+First, let's find out how many minutes it takes Emily to cook 30 shrimp. Since she can cook 30 shrimp in 10 minutes, the time it takes to cook 30 shrimp is 10 minutes.
+
+Next, we need to find out how long it takes Emily to peel 30 shrimp. Since she can peel 6 shrimp per minute, the time it takes to peel 30 shrimp is:
+\[ \frac{30 \

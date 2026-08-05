@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Meredith is a freelance blogger who writes about health topics and submits to clients each day as her permanent job. A blog article takes an average of 4 hours to research and write about. Last week, she wrote 5 articles on Monday and  2/5 times more articles on Tuesday than on Monday. On Wednesday, she wrote twice the number of articles she wrote on Tuesday. Calculate the total number of hours she spent writing articles in the three days.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of articles Meredith wrote each day and then calculate the total time spent writing those articles.
+
+1. **Monday**: She wrote 5 articles.
+2. **Tuesday**: She wrote \( \frac{2}{5} \) times more articles than on Monday. This means she wrote \( 5 + \frac{2}{5} \times 5 \) articles.
+   \[
+   \text{Articles on Tuesday} = 5 + \frac{2}{5} \times 5 = 5 + 2 = 7
+   \]
+3.

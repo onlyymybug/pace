@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It takes Matthew 3 minutes to dig a small hole for shrubs and 10 minutes to dig a large hole for trees.  How many hours will it take him to dig 30 small holes and 15 large holes? To solve this problem, we need to calculate the total time Matthew spends digging holes and then convert that time into hours.
+
+1. Calculate the time for small holes:
+   - Time per small hole: 3 minutes
+   - Number of small holes: 30
+   - Total time for small holes: 3 * 30 = 90 minutes
+
+2. Calculate the time for large holes:
+   - Time per large hole: 10 minutes
+   - Number of large holes: 15
+   - Total time for large holes: 10 * 15 = 150 minutes

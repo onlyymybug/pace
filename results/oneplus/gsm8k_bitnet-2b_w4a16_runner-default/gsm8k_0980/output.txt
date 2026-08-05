@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Emil is 19 years old now. When he turns 24, he will be half the age of his dad but twice as old as his brother.  What is the sum of the ages of his dad and his brother now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Emil's current age as E, his dad's age as D, and his brother's age as B. We know that E = 19.
+
+When Emil turns 24, he will be half the age of his dad, so we can write the equation:
+E + 5 = (1/2)D
+
+When Emil turns 24, he will also be twice as old as his brother, so we can write the equation:
+E + 5 = 2B
+
+We have two equations now:
+1. E + 5 = (1/2)D
+2. E + 5 =

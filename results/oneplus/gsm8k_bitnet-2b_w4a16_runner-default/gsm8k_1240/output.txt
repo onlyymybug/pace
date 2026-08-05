@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A custodian has to clean a school with 80 classrooms. They have 5 days to get it done. It takes them 15 minutes per classroom. If they work an 8 hour day, what percentage of their day, on average, is spent cleaning classrooms?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many minutes the custodian spends cleaning classrooms in total. Since there are 80 classrooms and it takes 15 minutes to clean each one, the total time spent cleaning is:
+
+80 classrooms * 15 minutes/classroom = 1200 minutes
+
+Next, we need to calculate the total number of minutes the custodian works in a day. Since they work an 8-hour day and there are 60 minutes in an hour, the total minutes worked in a day is:
+
+8 hours * 60 minutes/hour = 480 minutes
+
+Now, we can find out what percentage of

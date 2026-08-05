@@ -1,0 +1,31 @@
+To solve the equation \(\sqrt[3]{x^2 - 4x + 4} = 16\), we start by eliminating the cube root by cubing both sides of of the equation. This gives us:
+
+\[
+x^2 - 4x + 4 = 16^3
+\]
+
+Calculating \(16^3\):
+
+\[
+16^3 = 16 \times 16 \times 16 = 256 \times 16 = 4096
+\]
+
+So the equation simplifies to:
+
+\[
+x^2 - 4x + 4 = 4096
+\]
+
+Next, we move all terms to one side of the equation to set it to zero:
+
+\[
+x^2 - 4x + 4 - 4096 = 0
+\]
+
+Simplifying the left side:
+
+\[
+x^2 - 4x - 4092 = 0
+\]
+
+Now, we solve the quadratic equation \(x^2 - 4x - 4092 = 0\) using the quadratic formula \(x = \frac{-b \pm \sqrt{

@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Morisette and Kael were asked to bring fruits. Morisette brought 5 apples and 8 oranges, while Kael brought twice the amount of apples and half the number of oranges than Morisette. How many fruits do they have in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of apples and oranges Kael brought.
+
+Morisette brought:
+- 5 apples
+- 8 oranges
+
+Kael brought twice the amount of apples as Morisette:
+- Kael brought \(2 \times 5 = 10\) apples
+
+Kael brought half the number of oranges as Morisette:
+- Kael brought \(\frac{8}{2} = 4\) oranges
+
+Now, we add up all the fruits brought by Morisette and Kael:
+- Total apples = Morisette's apples + Kael's apples = \(

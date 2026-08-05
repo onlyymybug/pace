@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Together Lily, David, and Bodhi collected 43 insects. Lily found 7 more than David. David found half of what Bodhi found. How many insects did Lily find?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of insects Lily found as L, the number David found as D, and the number Bodhi found as B. We are given the following information:
+
+1. L + D + B = 43 (The total number of insects collected)
+2. L = D + 7 (Lily found 7 more insects than David)
+3. D = B / 2 (David found half of what Bodhi found)
+
+First, we can express L in terms of D using equation (2):
+L = D + 7
+
+Next, we substitute L in equation (1) with D + 7:

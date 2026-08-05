@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let \[f(n) = \left\{
+\begin{array}{cl}
+\lfloor n \rfloor & \text{ if }n \geq 4, \\
+\lceil n \rceil & \text{ if } n < 4.
+\end{array}
+\right.\]Find $f\left(\frac{\pi}{3}\right) + f(\sqrt{45}) + f(8^{2/3})$.

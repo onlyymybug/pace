@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotTourGuide","description":"Get information about guided tours of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Travel.ItineraryServices.recommendTravelTouristGuides","description":"Recommended destinations for your guide","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey Wang, our trip to Mexico City last week was amazing! Especially the traditional Mexican dance we saw that day in Piazza del Socarlo in the heart of the city, and the rich history we learned in the Mexico City History Museum, are really impressive. Next time we go to Mexico City, I want to try more local Mexican food!
+query:Xiao Ming sent me the place mentioned in the QQ message, can you recommend a guide for me?<|im_end|>
+<|im_start|>assistant

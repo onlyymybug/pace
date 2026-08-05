@@ -1,0 +1,5 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A raspberry bush has 6 clusters of 20 fruit each and 67 individual fruit scattered across the bush. How many raspberries are there total? Total raspberries = (clusters * fruitsPerCluster) + scatteredFruits
+= (6 * 20) + 67
+= 127 The answer is 127<|endoftext|>Calculate the total number of raspberries on the bush. There are 6 clusters with 20 raspberries each and 67 raspberries scattered. Total raspberries = (Number ofClusters * RaspberriesPerCluster) + ScatteredRaspberries = (6 * 20) + 67 = 180 + 67 = 247 The answer is 247.

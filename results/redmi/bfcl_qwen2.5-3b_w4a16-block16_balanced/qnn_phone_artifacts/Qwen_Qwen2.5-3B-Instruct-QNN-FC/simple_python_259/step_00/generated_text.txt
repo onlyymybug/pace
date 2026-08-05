@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_paint_needed", "description": "Calculate the amount of paint needed to cover a surface area based on the coverage rate of a specific paint brand. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"coverage_rate": {"type": "integer", "description": "The area in square feet that one gallon of paint can cover."}, "length": {"type": "integer", "description": "Length of the wall to be painted in feet."}, "height": {"type": "integer", "description": "Height of the wall to be painted in feet."}}, "required": ["coverage_rate", "length", "height"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the total quantity of paint needed to cover a wall of 30 feet by 12 feet using a specific brand that covers 400 square feet per gallon.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_paint_needed", "arguments": {"coverage_rate": 400, "length": 30, "height": 12}}
+</tool_call><|im_end|>

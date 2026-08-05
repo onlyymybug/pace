@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "local_nursery.find", "description": "Locate local nurseries based on location and plant types availability. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city or locality where the nursery needs to be located."}, "plant_types": {"type": "array", "items": {"type": "string", "enum": ["Annual", "Perennial", "Shrub", "Tree", "Herbs", "Fruits"]}, "description": "Type of plants the nursery should provide."}}, "required": ["location", "plant_types"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the best local nurseries in Toronto with a good variety of annual plants.<|im_end|>
+<|im_start|>assistant

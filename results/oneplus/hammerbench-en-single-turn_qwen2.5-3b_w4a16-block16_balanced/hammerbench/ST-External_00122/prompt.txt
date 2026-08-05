@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPersonalTaxInfo","description":"Inquire about the user's personal tax information","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Username"}},"required":["user_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Zhang, the meeting of our project team next week will be held in the shared meeting room of the Science and Technology Park in Nanshan District, Shenzhen, at 10 am on Wednesday. Remember to prepare the project progress report in advance, and we will focus on the next stage of R&D plan this time. The cafe over there is also quite good. After the meeting, we can go there to relax and talk about things outside of work. Looking forward to meeting you!
+query:I would like to check the property tax information of the location mentioned in the message Xiao Li sent to me through QQ.<|im_end|>
+<|im_start|>assistant

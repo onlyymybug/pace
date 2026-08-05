@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "get_current_weather", "arguments": {"location": "Seattle, Washington", "include_temperature": true, "include_humidity": true}}
+</tool_call><|im_end|>

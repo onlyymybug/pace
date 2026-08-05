@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The sum of 27 consecutive positive integers is $3^7$. What is their median? To solve the problem, we need to find the median of of 27 consecutive positive integers whose sum is \(3^7\). Let's denote the smallest of integer by \(n\). The 27 consecutive integers can be written as \(n, n+1, n+2, \ldots, n+26\).
+
+The sum of of of these 27 consecutive integers is given by:
+\[
+S = n + (n+1) + (n+2) + \cdots + (n+26)
+\]
+
+This is an arithmetic series with the first term \(a =

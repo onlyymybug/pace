@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Compute $\sin^3 18^\circ + \sin^2 18^\circ.$
+To solve the problem \(\sin^3 18^\circ + \sin^2 18^\circ\), we start by letting \( x = \sin 18^\circ \). Thus, we need to find \( x^3 + x^2 \).
+
+First, we use the triple angle identity for sine, which states:
+\[
+\sin 3\theta = 3\sin \theta - 4\sin^3 \theta
+\]
+Setting \(\theta = 18^\circ\), we have:
+\[
+\sin 54^\circ = 3\sin 18^\circ - 4\sin^3 18^\circ
+\]
+We know that \(\sin 54^\circ = \cos 36^\circ\). Using the known value of:
+\[
+\cos 36^\circ = \frac{\sqrt{5} + 1}{4}
+\]
+Thus, we have:
+\[
+\frac{\sqrt{5} + 1}{4} = 3\sin 18^\circ - 4\sin^3 18^\circ
+\]
+Let \( x = \sin 18^\

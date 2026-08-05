@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A family of parents and a child go to the cinema. The cost of an adult ticket is $12 and a child ticket is $8. Then they buy 2 popcorns for $3 each. How many dollars do they pay in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total cost of the tickets and the popcorn separately, then add them together.
+
+1. Calculate the cost of the adult tickets:
+   - Number of adults: 2
+   - Cost per adult ticket: $12
+   - Total cost for adult tickets: \(2 \times 12 = 24\) dollars
+
+2. Calculate the cost of the child tickets:
+   - Number of children: 1
+   - Cost per child ticket: $8
+   - Total cost for child tickets: \(1 \times 8 = 8\) dollars
+
+3. Calculate the cost

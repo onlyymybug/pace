@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In Mr. Roper's class of 30 students, 20% of the class are football players.  Out of the remaining class, 25% of the students are cheerleaders or part of band.  These 3 groups of students will need to leave early today to travel to an away game.  How many students are leaving early?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many students are leaving early, we first need to determine the number of football players in the class. Since 20% of the class are football players, we calculate:
+
+Number of football players = 20% of 30 students
+= 0.20 * 30
+= 6 students
+
+Now, we subtract the number of football players from the total number of students to find out how many students are not football players:
+
+Number of non-football players = Total students - Football players
+= 30 - 6
+= 24 students
+
+Next, we need to find out how many of these non-football

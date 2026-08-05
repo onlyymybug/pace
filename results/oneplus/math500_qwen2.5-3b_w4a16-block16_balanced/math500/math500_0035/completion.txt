@@ -1,0 +1,16 @@
+To find the constant term in the expansion of of \(\left(10x^3 - \frac{1}{2x^2}\right)^5\), we use the Binomial Theorem. The Binomial Theorem states that:
+
+\[
+(a + b)^n = \sum_{k=0}^{n} \binom{n}{k} a^{n-k} b^k
+\]
+
+In this problem, \(a = 10x^3\), \(b = -\frac{1}{2x^2}\), and \(n = 5\). The general term in the expansion is given by:
+
+\[
+T_k = \binom{5}{k} (10x^3)^{5-k} \left(-\frac{1}{2x^2}\right)^k
+\]
+
+We need to find the term where the power of of \(x\) is zero (the constant term). To do this, we need to find \(k\) such that the exponent of \(x\) in \(T_k\) is zero. The exponent of \(x\) in \(T_k\) is:
+
+\[
+(10x^3)^{5-k} \left(-

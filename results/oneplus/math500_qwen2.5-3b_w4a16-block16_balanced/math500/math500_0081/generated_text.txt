@@ -1,0 +1,36 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the number of integer values of $k$ in the closed interval $[-500,500]$ for which the equation $\log(kx)=2\log(x+2)$ has exactly one real solution. To solve the problem, we start with the given equation:
+
+\[
+\log(kx) = 2 \log(x+2)
+\]
+
+First, we use the properties of of logarithms to simplify the right-hand side:
+
+\[
+\log(kx) = \log((x+2)^2)
+\]
+
+Since the logarithm function is one-to-one, we can equate the arguments of of the logarithms:
+
+\[
+kx = (x+2)^2
+\]
+
+Next, we expand and rearrange the equation to form a standard quadratic equation:
+
+\[
+kx = x^2 + 4x + 4
+\]
+\[
+x^2 + (4-k)x + 4 = 0
+\]
+
+For the quadratic equation \(x^2 + (4-k)x + 4 = 0\) to have exactly one real solution, its discriminant must be zero. The discriminant \(\Delta\) of of a quadratic equation \(ax^2 + bx + c = 0\) is given by:
+
+\[
+\Delta = b^2 - 4ac
+\]
+
+In our case, \(a = 1\), \(b = 4-k\), and \(c = 

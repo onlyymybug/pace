@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Fireman Frank has 200 shoes. If he gets 5 pairs of shoes on Monday and gains 15 new pairs on Wednesday and 30 pairs on Friday, how many shoes will he have on Sunday if he gets rid of 180 shoes on Saturday?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of shoes Frank will have after all the additions and then subtract the number of shoes he gets rid of on Saturday.
+
+1. Frank starts with 200 shoes.
+2. On Monday, he gets 5 pairs of shoes. Since each pair consists of 2 shoes, he gets \(5 \times 2 = 10\) shoes.
+3. On Wednesday, he gains 15 pairs of shoes. So, he gets \(15 \times 2 = 30\) shoes.
+4. On Friday, he gains 30 pairs of shoes. So, he gets \(30

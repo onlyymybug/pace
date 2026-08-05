@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The Greek army contained two types of soldiers: the upper class and the lower class soldiers. If there were a total of 5 upper class soldiers, and 10 lower class soldiers in a certain part of Athens, and the battle of Thermopylae demands a force of 4 upper class soldiers and 8 lower class soldiers, how many different battalions can be sent? To solve the problem, we need to determine the number of different combinations of of upper and lower class soldiers that can be formed to meet the requirements for the battle at Thermopylae. Specifically, we need to form groups of 4 upper class soldiers and 8 lower class soldiers from the available 5 upper class soldiers and 10 lower class soldiers.
+
+First, let's calculate the number of ways to choose 4 upper class soldiers from 5 upper class soldiers. This is a combination problem, denoted as \( \binom{5}{4} \), which is calculated as follows:
+\[
+\binom{

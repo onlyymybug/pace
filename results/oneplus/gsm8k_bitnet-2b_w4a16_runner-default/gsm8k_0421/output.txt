@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: To fund his store, Mr. Josue solicited money from two banks. The first bank gave him $4000, and the second company gave him twice as much. If he initially had $5000 in capital, how much capital does he have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine how much money the second bank gave to Mr. Josue. Since the second bank gave him twice as much as the first bank, we calculate:
+
+Second bank's contribution = 2 * $4000 = $8000
+
+Now, we add the contributions from both banks to the initial capital Mr. Josue had:
+
+Total capital now = Initial capital + First bank's contribution + Second bank's contribution
+Total capital now = $5000 + $4000 + $8000
+Total capital now = $18,000
+
+The answer is $18,000.<|eot_id|>

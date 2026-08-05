@@ -1,0 +1,8 @@
+adb -s 10.29.195.116:5555 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dr. Hugo Grumpus and his assistant, Igor, were preparing to perform a laboratory experiment.  Dr. Grumpus told Igor to gather 16 test tubes, 7 beakers, and 14 Petri dishes, and to place them all on the lab bench.  By accident, Igor gathered half as many test tubes as requested, two more than the number of Petri dishes requested.  And while he had picked up the correct number of beakers, he lost several on the way to the lab bench.  In total, the number of items Igor had placed on the lab bench was 29.  How many beakers did Igor lose?'"'"' --system_prompt '"'"''"'"' --seq_len 342 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_1307_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_1307_inference_speed.txt'

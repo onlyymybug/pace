@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Joe has $50 to buy an outfit for his new field trip. There is a 30% off sale at the clothing store. The shirt he picks out has a price of $25. He also picks out a pair of shorts for $35. Assuming that sales tax is included, how much money will Joe have left after the purchase? Step 1: Calculate the discount on the shirt.
+Discount on shirt = 30 / 100 * 25 = 7.5
+
+Step 2: Calculate the discounted price of of shirt.
+Discounted price of = 25 - 7.5 = 17.5
+
+Step 3: Calculate the total cost of of the shirt and shorts.
+Total cost = 17.5 + 35 = 52.5
+
+Step 4: Calculate the money left after the purchase.
+Money left = 50 - 52.5 = -2.5

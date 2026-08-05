@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James likes to check the coin return of the vending machine for change. One day he finds a quarter, two nickels, and 7 dimes. How much money in cents does James have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount of money James has, we need to calculate the value of each type of coin and then add them together.
+
+- A quarter is worth 25 cents.
+- Two nickels are worth 2 * 5 = 10 cents.
+- Seven dimes are worth 7 * 10 = 70 cents.
+
+Now, we add these amounts together:
+
+25 cents (from the quarter) + 10 cents (from the nickels) + 70 cents (from the dimes) = 105 cents.
+
+The answer is 105 cents.<|eot_id|>

@@ -1,0 +1,30 @@
+To solve the problem, we need to follow these steps:
+
+1. Find the greatest common factor (GCF) of greatest common divisor (GCD) of of 6432 and 132.
+2. Add 1 to the GCD.
+3. Present the final result.
+
+### Step 1: Find the GCD of 6432 and 132
+
+To find the GCD of 6432 and 132, we use the Euclidean algorithm, which involves repeated division.
+
+1. Divide 6432 by 132 and find the remainder.
+2. Replace 6432 with 132 and 132 with the remainder from the previous step.
+3. Repeat until the remainder is 0.
+
+Let's perform the division:
+
+\[
+6432 \div 132 = 490 \quad \text{remainder} \quad 2
+\]
+
+So, we have:
+
+\[
+6432 = 132 \times 490 + 2
+\]
+
+Next, we divide 132 by 2:
+
+\[
+132 \div 2 = 66 \

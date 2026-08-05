@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Six years ago, when Noah was half as old as Cera, the population of Chile was half what it is now. Currently, Cera is 46 years old. If the population of Chile six years ago was 3000 times the age of Noah, calculate the population of Chile now.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Noah's current age as \( N \) and the population of Chile six years ago as \( P \). According to the problem, six years ago, Noah was half as old as Cera. So, we can write:
+
+\[ N - 6 = \frac{1}{2}(Cera - 6) \]
+
+Given that Cera is currently 46 years old, we substitute \( Cera \) with 46:
+
+\[ N - 6 = \frac{1}{2}(46 - 6) \]
+\[ N - 6 = \frac{1}{2}(40) \

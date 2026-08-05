@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jo has been making face masks. She can make 4 small masks with 2 yards of material and 3 large masks with 2.25 yards of material. How much material would she need to make 20 small and 8 large masks for her class?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much material Jo needs, we first need to determine how much material is required for one small and one large mask.
+
+For a small mask:
+2 yards of material makes 4 small masks.
+So, 1 small mask requires 2 yards / 4 masks = 0.5 yards of material.
+
+For a large mask:
+2.25 yards of material makes 3 large masks.
+So, 1 large mask requires 2.25 yards / 3 masks = 0.75 yards of material.
+
+Now, we need to calculate the material required for 20 small and 8 large masks.
+
+Material for

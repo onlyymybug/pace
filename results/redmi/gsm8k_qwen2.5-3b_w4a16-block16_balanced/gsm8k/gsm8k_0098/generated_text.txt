@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: When Freda cooks canned tomatoes into sauce, they lose half their volume. Each 16 ounce can of tomatoes that she uses contains three tomatoes. Freda’s last batch of tomato sauce made 32 ounces of sauce. How many tomatoes did Freda use? Let x be the number of cans Freda used.
+The volume of of the sauce is halved with each can, so the final volume is 16*(1/2)^x.
+Given the final volume is 3, we have 16*(1/2)^x = 3.
+Solving for x, we get x = log(3/16) / log(1/2).
+x = 3.32 the number of cans, but since we can't use fractions of of a can, we round up to the next whole number.
+Thus, Freda used 4 cans.
+The

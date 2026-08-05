@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At the end of the school year, Kate asked her teacher if she could have the 3 boxes of 64 crayons since they were all worn down to small pieces.  The teacher agreed.  Kate took the crayons home and decided to make crayon muffins by melting 8 small pieces of crayons together in a muffin tin that she placed in an oven for a few minutes. If she can sell her muffin crayons for $1.50 each, how much money can Kate make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many crayons Kate has in total. Since each box contains 64 crayons and Kate has 3 boxes, we multiply the number of boxes by the number of crayons per box:
+
+3 boxes * 64 crayons/box = 192 crayons
+
+Next, we need to figure out how many crayons Kate can make from these 192 crayons. Since she is melting 8 small pieces of crayons together to make one muffin, we divide the total number of crayons by 8:
+
+192 crayons / 8 crayons/muffin = 

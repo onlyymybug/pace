@@ -1,0 +1,29 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.collectJob","description":"Favorite posts of interest","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"NewsMagazines.News.saveNews","description":"Save news of interest to the user's favorites","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"},"news_name":{"type":"string","description":"News Name"}},"required":["source_name","news_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.collectMagazine","description":"Collect magazines or articles by name or journal","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"Navigation.MapNavigation.collectLocation","description":"Favorite a place","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Places to save"}},"required":["location"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.favoriteHouse","description":"Collect homes of interest","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi, I'm Ming Li, Marketing Manager from Dream Interactive.Thank you very much for your interest and support of our company.Dream Interactive has always been committed to providing customers with the best quality products and services, and we recently launched a new software solution designed to help enterprises go one step further on the road to digital transformation.This software combines cutting-edge technology to increase productivity and reduce operating costs.
+
+To give you a better understanding of the benefits and features of this product, we will be hosting a live demo online next Friday (7 April 2023) at 3pm.We invite you to join us and look forward to discussing with you how you can use our solutions to grow your business.Please do not hesitate to contact us if you have any questions or need further information.
+
+Thank you again for your trust and support for your dream interaction, and we look forward to welcoming you!
+
+Zhu Shangqi,
+
+Li Ming
+Marketing Manager
+Dream Interaction
+query:I would like to collect the UI designer position posted by the company mentioned in the email, with a monthly salary of more than 10,000, located in Shanghai.<|im_end|>
+<|im_start|>assistant

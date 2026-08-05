@@ -1,0 +1,4 @@
+To solve the problem of of, we need to determine the number of ways to form a subcommittee of 5 members from a Senate committee with 8 Republicans and 6 Democrats, ensuring that the subcommittee has at least one member from each party.
+
+1. **Total number of ways to form the subcommittee:**
+   The total number of ways to choose 5 members from 14 members (8 Republicans and 6 Democrats) is given by the combination formula \( \binom{n}{k} \), where \( n \) is the total number of members and \( k \) is the number of members to be

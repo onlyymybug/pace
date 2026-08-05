@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Easter egg hunt team hid 100 eggs. The Smith twins each found 30 eggs. All the other eggs except 10 were found by their friends. How many eggs did the friends find?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many eggs the Smith twins found together. Since each twin found 30 eggs, the total number of eggs found by the twins is:
+
+30 eggs/twin * 2 twins = 60 eggs
+
+Next, we know that all the other eggs except 10 were found by their friends. Since there were originally 100 eggs, and the Smith twins found 60 eggs, the number of eggs left for the friends to find is:
+
+100 eggs - 60 eggs = 40 eggs
+
+Therefore, the friends found 40 eggs. The answer is 40.<|eot_id|>

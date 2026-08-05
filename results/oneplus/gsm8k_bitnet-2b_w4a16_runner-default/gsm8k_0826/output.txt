@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Becca, Smendrick, and PJ have collections of Magic Cards.  There is a total of 341 cards.  Becca has 12 more than Smendrick, and Smendrick has 3 times the amount of cards that PJ has.  How many cards does Becca have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cards PJ has as P. According to the problem, Smendrick has 3 times the amount of cards that PJ has, so Smendrick has 3P cards. Becca has 12 more than Smendrick, so Becca has 3P + 12 cards.
+
+The total number of cards is the sum of the cards each person has, which is given as 341. Therefore, we can write the equation:
+
+P + 3P + (3P + 12) = 341
+
+Combine like terms:
+
+7P + 12 = 341
+
+Subtract 

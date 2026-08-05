@@ -1,0 +1,6 @@
+To solve the problem, we need to determine the smallest number of leaves \( L \) such that the number of pages \( P \) satisfies the conditions given. Specifically, \( P = 2L \) and \( P = 7k + 3 \) for some integer \( k \), and \( L > 100 \).
+
+First, we express \( P \) in terms of \( L \):
+\[ P = 2L \]
+Since \( P \) must also be of of the form \( 7k + 3 \), we substitute \( P \) in the second equation:
+\[

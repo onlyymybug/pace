@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "geometry.calculate_area_circle", "description": "Calculate the area of a circle given its radius. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"radius": {"type": "integer", "description": "The radius of the circle."}, "unit": {"type": "string", "description": "The measurement unit of the radius (optional parameter, default is 'units')."}}, "required": ["radius"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the area of a circle with a radius of 5 units.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "geometry.calculate_area_circle", "arguments": {"radius": 5}}
+</tool_call><|im_end|>

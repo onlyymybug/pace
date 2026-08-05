@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Simplify $\tan 100^\circ + 4 \sin 100^\circ.$
+To solve the expression \(\tan 100^\circ + 4 \sin 100^\circ\), we will use trigonometric identities and properties to simplify it step by step.
+
+First, recall that \(\tan \theta = \frac{\sin \theta}{\cos \theta}\). Therefore, we can rewrite the given expression as:
+\[
+\tan 100^\circ + 4 \sin 100^\circ = \frac{4 \sin 100^\circ}{\cos 100^\circ} + 4 \sin 100^\circ.
+\]
+We can factor out \(4 \sin 100^\circ\) from the expression:
+\[
+\tan 100^\circ + 4 \sin 100^\circ = 4 \sin 100^\circ \left( \frac{1}{\cos 100^\circ} + 1 \right).
+\]
+This simplifies to:
+\[
+\tan 100^\circ + 4 \sin 100^\circ = 4 \sin 100^\circ \left( \frac{1 + \

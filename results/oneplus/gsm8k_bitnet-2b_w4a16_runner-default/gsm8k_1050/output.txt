@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 50 books in a small library. Half of them are written in English, and 10% in German. All others are written in Spanish. How many Spanish books are there?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of Spanish books, we first determine the number of English books and German books.
+
+1. Calculate the number of English books:
+   - Half of the books are written in English.
+   - Total books = 50
+   - English books = 50 / 2 = 25
+
+2. Calculate the number of German books:
+   - 10% of the books are written in German.
+   - German books = 10% of 50 = 0.10 * 50 = 5
+
+3. Calculate the number of Spanish books:
+   - Total books = 50
+   - English books

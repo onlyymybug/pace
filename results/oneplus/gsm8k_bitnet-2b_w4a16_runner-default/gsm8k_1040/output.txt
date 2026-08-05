@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jim is making a comforter for his king-sized bed. He needs two pieces of fabric that are 2 feet longer and 2 feet wider than the bed, which measures 6 feet long by 8 feet wide. How many square feet of fabric does Jim need to buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the amount of fabric Jim needs, we first calculate the area of the king-sized bed and then determine the area of the two larger pieces of fabric.
+
+1. Calculate the area of the king-sized bed:
+   - Length of the bed = 6 feet
+   - Width of the bed = 8 feet
+   - Area of the bed = Length × Width = 6 feet × 8 feet = 48 square feet
+
+2. Calculate the dimensions of the two larger pieces of fabric:
+   - Each piece is 2 feet longer and 2 feet wider than the bed.
+   - Length of each piece

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The red rope was four times the length of the blue rope. The blue rope was 7 centimeters shorter than the yellow rope. If the 3 ropes had a combined length of 37 centimeters, what was the length of the red rope in centimeters?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the length of the blue rope as \( b \) centimeters. According to the problem, the red rope is four times the length of the blue rope, so its length is \( 4b \) centimeters. The blue rope is 7 centimeters shorter than the yellow rope, so its length is \( y - 7 \) centimeters, where \( y \) is the length of the yellow rope.
+
+The combined length of the three ropes is given as 37 centimeters. Therefore, we can write the equation:
+
+\[ y + (y - 7) + 4b = 37

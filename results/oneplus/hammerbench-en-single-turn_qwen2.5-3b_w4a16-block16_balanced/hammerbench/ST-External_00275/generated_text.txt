@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.HealthManagement.createDietRecord","description":"Create dietary records based on food name, type of meal, etc.","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"}},"required":["food_name","meal_type","time"]}}
+{"name":"MusicRadio.Karaoke.playFriendRecord","description":"Play friend recordings by friend name, song name","parameters":{"type":"object","properties":{"friend_name":{"type":"string","description":"Friend name"},"song_name":{"type":"string","description":"Song Name"}},"required":["friend_name","song_name"]}}
+{"name":"Education.ChildrenEducation.getChildLearningProgress","description":"Get your child's progress","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Xiao Wang, remind you that there is a team meeting at 3 pm today, don't forget to bring the project progress report you compiled last week. We also need to discuss the next steps in our work. See you in Meeting Room 2!
+query:At the time mentioned in Xiao Li's WeChat, I ate intestinal powder and soy milk for breakfast and recorded it for me.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","parameters":{"meeting_id":"MeetingRoom2","title":"Reminder for Team Meeting","time":"15:00","participant_list":"XiaoWang"}}<|im_end|>

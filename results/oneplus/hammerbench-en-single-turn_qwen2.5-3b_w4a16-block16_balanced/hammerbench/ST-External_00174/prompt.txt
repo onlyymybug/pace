@@ -1,0 +1,34 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.createCommunityPost","description":"Create a new post in a specific community with keywords","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the post"},"title":{"type":"string","description":"Posts with Title"},"comment":{"type":"string","description":".Post Content - Divi Machine"}},"required":["community_name","title","comment"]}}
+{"name":"VideoPlayback.ShortVideos.publishShortVideo","description":"Post a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"filepath":{"type":"string","description":"Video"}},"required":["name","filepath"]}}
+{"name":"OnlineShopping.SecondhandTrading.sellSecondhandSaleCommodity","description":"Add merchandise","parameters":{"type":"object","properties":{"sell_content":{"type":"string","description":"Description or details"},"pic_path":{"type":"string","description":"Image or video path"},"sell_price":{"type":"string","description":"Pricing"},"shipping_method":{"type":"string","description":"Free shipping; billed by distance (buyer pays), upfront price (buyer pays), no mailing required, buyer picks up; free shipping by default"}},"required":["sell_content","pic_path","sell_price","shipping_method"]}}
+{"name":"ConvenientLiving.JobRecruitment.publishJobPosition","description":"Post new jobs based on job title, work location, job description, career description, etc.","parameters":{"type":"object","properties":{"job_title":{"type":"string","description":"Position name"},"work_location":{"type":"string","description":"Work Location"},"job_description":{"type":"string","description":"Description"}},"required":["job_title","work_location","job_description"]}}
+{"name":"Finance.Stocks.sellStock","description":"Sale of Designated Shares","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"},"price":{"type":"float","description":"Amount sold, unit Yuan"},"amount":{"type":"string","description":"Sell Volume; Specific Value; Whole Warehouse; Half Warehouse; 1/3 Warehouse; 1/4 Warehouse"}},"required":["stock_code","stock_name","price","amount"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi, Thank you for your continued support and trust.We have received positive feedback from many parties about our annual business fair held in Guangzhou last month.In order to further deepen our cooperation, we plan to hold another small exchange seminar in Guangzhou next month at the Guangzhou International Convention and Exhibition Center.We hope you'll take the time to come and explore more opportunities with us.
+
+The specific arrangements for the workshop are as follows:
+- Date: Saturday, April 15, 2023
+- Time: 9:00 am -5:00 pm
+- Location: Area B, Guangzhou International Convention and Exhibition Center, No. 380, Yuejiang Middle Road, Haizhu District, Guangzhou City, Guangdong Province
+
+We have reserved seats for you, please feel free to contact your account manager if you have any questions or need our assistance in arranging transportation or accommodation.I look forward to seeing you again in Guangzhou and seeking common development!
+
+Best regards,
+
+[Your name]
+[Your Position]
+[Your company name]
+[Contact number]
+[email]
+query:I would like to post a position as a Sales Manager in the location mentioned in the email. The job description is responsible for sales and team management and requires more than 5 years of sales experience.<|im_end|>
+<|im_start|>assistant

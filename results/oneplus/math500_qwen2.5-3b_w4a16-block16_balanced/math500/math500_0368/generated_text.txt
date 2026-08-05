@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Suppose that $f$ is a function and $f^{-1}$ is the inverse of $f$.  If $f(1)=2$, $f(2) = 6$, and $f(3)=5$, then what is $f^{-1}(f^{-1}(6))$? To solve for \( f^{-1}(f^{-1}(6)) \), we need to understand the relationship between a function and its inverse. Given that \( f^{-1} \) is the inverse of of \( f \), it means that if \( f(a) = b \), then \( f^{-1}(b) = a \).
+
+We are given the following values:
+\[
+f(1) = 2, \quad f(2) = 6, \quad f(3) = 5
+\]
+
+We need to find \( f^{-1}(6) \). From the given values, we see that \( f(2) = 6 \). Therefore, the inverse function tells us that:
+\[
+f^{-1}(6) = 2
+\]
+
+Next, we need to find \( f^{-1}(f^{-1}(6)) \). Since we have determined that \( f^{-1}(6) = 2 \), we now need to find \( f^{-1}(2) \).
+
+From the given values, we see that \( f(2) = 6 \). Therefore, the inverse function tells us that:
+\[
+f^{-1}(2) = 1
+\]
+
+Thus

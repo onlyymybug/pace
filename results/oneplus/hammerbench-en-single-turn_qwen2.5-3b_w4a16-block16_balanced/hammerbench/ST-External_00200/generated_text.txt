@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"ConvenientLiving.AutoLife.shareCarModels","description":"Share Selected Cars","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"to":{"type":"string","description":"Media, such as WeChat, Xiaohongshu, Weibo, etc."},"name":{"type":"string","description":"Shared goals"}},"required":["brand","to","name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10am today, I met with Li Ming in the exhibition hall to discuss the purchase of Mercedes-Benz S-Class sedans. Li Ming mentioned that there are currently 2023 Mercedes S400 4MATIC luxury models in the store, including a 12.3-inch full LCD dashboard, 64-color ambient lights, Berlin Sound surround sound system and so on. We also discussed offers and financial policies for vehicles and decided to reconfirm final purchase details next week.
+query:Manager Wang, I saw the car mentioned in the notepad, the black 2023 C grade. Look at this link and share it on WeChat.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.shareCarModels","parameters":{"brand":"Mercedes-Benz","to":"WeChat","name":"Manager Wang"}}<|im_end|>

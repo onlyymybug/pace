@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Search.openWebHistory","description":"View History.","parameters":{"type":"object","properties":{"datetime":{"type":"string","description":"browsing time; last day, specific date; default all descending"}},"required":["datetime"]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+{"name":"UtilityTools.Memo.searchNotes","description":"Search memos by keyword (see all by default)","parameters":{"type":"object","properties":{"key_words":{"type":"string","description":"KEYWORDS"}},"required":["key_words"]}}
+{"name":"Health.MedicalServices.getDoctorAvailability","description":"Check the doctor's available appointment time according to the doctor's name, hospital name and other conditions","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["doctor_name","hospital_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOrderDeliveryEstimate","description":"Estimated time to get deliveries based on orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"}},"required":["order_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 9am on April 15, discuss Q2 sales targets and strategies with Manager Li in Conference Room 1, and prepare sales reports and market analysis data for the previous quarter. At 2pm, attend the Budget Planning meeting of the Finance Department in Conference Room 3. At 7pm, the company's annual dinner, located in the company auditorium, remember to dress formally.
+query:What time is mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

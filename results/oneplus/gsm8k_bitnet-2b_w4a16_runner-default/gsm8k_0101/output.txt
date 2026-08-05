@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jerome had 4 friends who came to visit him on a certain day. The first friend pressed on the doorbell 20 times before Jerome opened, the second friend pressed on the doorbell 1/4 times more than Jerome's first friend. The third friend pressed on the doorbell 10 times more than the fourth friend. If the fourth friend pressed on the doorbell 60 times, how many doorbell rings did the doorbell make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of doorbell rings each friend pressed and then sum them up.
+
+1. The fourth friend pressed the doorbell 60 times.
+2. The third friend pressed the doorbell 10 times more than the fourth friend, so:
+   \[
+   \text{Third friend's presses} = 60 + 10 = 70
+   \]
+3. The second friend pressed the doorbell 1/4 times more than the first friend. Since the first friend pressed 20 times:
+   \[
+   \text{Second friend's presses} = 20 + \

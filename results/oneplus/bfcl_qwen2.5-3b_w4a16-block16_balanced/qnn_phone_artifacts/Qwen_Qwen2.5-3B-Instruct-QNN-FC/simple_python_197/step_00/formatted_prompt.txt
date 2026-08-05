@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_air_quality_index", "description": "Retrieve the air quality index at a specified location and time. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The location to get the air quality index for."}, "time": {"type": "string", "description": "The specific time to check the air quality. Default is the current time."}}, "required": ["location", "time"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the air quality index in San Diego at 12pm.<|im_end|>
+<|im_start|>assistant

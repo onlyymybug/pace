@@ -1,0 +1,33 @@
+To solve the problem of of, we need to find the remainder when \(129^{34} + 96^{38}\) is divided by \(11\). We will use modular arithmetic to simplify the calculations.
+
+First, we reduce the bases \(129\) and \(96\) modulo \(11\):
+
+\[
+129 \mod 11
+\]
+
+To find \(129 \mod 11\), we perform the division:
+
+\[
+129 \div 11 = 11 \text{ remainder } 18
+\]
+
+Thus,
+
+\[
+129 \equiv 18 \pmod{11}
+\]
+
+Next, we reduce \(18\) modulo \(11\):
+
+\[
+18 \mod 11 = 7
+\]
+
+So,
+
+\[
+129 \equiv 7 \pmod{11}
+\]
+
+Now, we need to find \(7^{34} \mod 11\). By Fermat's Little Theorem, for any integer \(a\) not divisible by a prime \(p\), \(a^{p-1} \equiv 1 \pmod{p}\

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Frederick is making popsicles to sell and to save money he is making his own popsicle sticks. He can get 200 sticks from a 2 x 4 piece of wood and 400 sticks from a 2 x 8 piece of wood. He has $24 to buy wood for sticks. A 2 x 4 costs $4. A 2 x 8 costs $6. What is the most popsicle sticks he can make if he buys the cheapest lumber?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To maximize the number of popsicle sticks, Frederick should buy the wood that gives him the most sticks per dollar. 
+
+- A 2 x 4 gives 200 sticks for $4.
+- A 2 x 8 gives 400 sticks for $6.
+
+Since $4 is less than $6, Frederick should buy 2 x 4 pieces of wood.
+
+2 x 4 pieces of wood give him 2 * 200 = 400 sticks.
+
+The answer is 400 sticks.<|eot_id|>

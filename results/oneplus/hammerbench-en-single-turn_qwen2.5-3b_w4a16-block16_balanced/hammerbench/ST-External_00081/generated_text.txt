@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.checkInOnlineFlight","description":"Online check-in for selected flights","parameters":{"type":"object","properties":{"flight_number":{"type":"string","description":"e.g. CA1234"},"name":{"type":"string","description":"Name"},"passenger_id":{"type":"string","description":"Rider ID number"}},"required":["flight_number","name","passenger_id"]}}
+{"name":"NewsMagazines.NewspapersMagazines.subscribeMagazine","description":"Subscribe to magazine by magazine name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOnConnect2Win","description":"Open connection to windows","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"MusicRadio.Karaoke.manageAccount","description":"Manage your account by following the steps in Account Management","parameters":{"type":"object","properties":{"action":{"type":"string","description":"Account management actions"}},"required":["action"]}}
+{"name":"MusicRadio.OnlineMusic.bindSocialPlatforms","description":"Link your account to a social platform","parameters":{"type":"object","properties":{"platforms":{"type":"string","description":"Social platforms to be linked"}},"required":["platforms"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear user, your ID number is 310123198507076531. Your real name verification on our platform has been successfully approved. Thank you for your cooperation and support! Please do not hesitate to contact us if you have any further questions.
+query:Help me check in online for flight CA8888 with Sun Li's ID number.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.FlightTickets.checkInOnlineFlight","parameters":{"flight_number":"CA8888","name":"Sun Li","passenger_id":"310123198507076531"}}<|im_end|>

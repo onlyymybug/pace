@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Suppose that $x,$ $y,$ and $z$ satisfy the equations
+\begin{align*}
+xyz &= 4, \\
+x^3 + y^3 + z^3 &= 4, \\
+xy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z &= 12.
+\end{align*}Calculate the value of $xy + yz + zx.$
+To solve the given system of of equations, we start by analyzing the equations step by step. We are given:
+
+1. \( xyz = 4 \)
+2. \( x^3 + y^3 + z^3 = 4 \)
+3. \( xy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z = 12 \)
+
+First, we use the identity for the sum of of cubes:
+\[ x^3 + y^3 + z^3 - 3xyz = (x+y+z)(x^2 +

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Andy's car fuel efficiency is 10 MPG (miles per gallon). If the current price for regular gas is $3/gallon, how much money is Andy's car consuming per week if he only uses his car to go to work from Monday to Friday and the one-way distance between his home and office is 5 miles?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total distance Andy travels in a week and then determine how much fuel he uses. Finally, we will calculate the cost of the fuel.
+
+1. Calculate the total distance Andy travels in a week:
+   - Distance to work one way = 5 miles
+   - Since he goes to work from Monday to Friday, he travels this distance 5 days a week.
+   - Total distance per week = 5 miles/day * 5 days = 25 miles
+
+2. Calculate the amount of fuel Andy's car consumes per week:
+   - Fuel efficiency = 10 miles per

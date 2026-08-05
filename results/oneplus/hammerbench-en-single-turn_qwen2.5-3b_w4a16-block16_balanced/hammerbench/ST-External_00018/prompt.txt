@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.queryDrivingLicensePoints","description":"Check the remaining points on your driver's license","parameters":{"type":"object","properties":{"driving_license_number":{"type":"string","description":"Licence Number:"}},"required":["driving_license_number"]}}
+{"name":"Finance.Insurance.getInsuranceClaimProgress","description":"Check the progress of your insurance claim","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"Finance.Funds.getFundPortfolio","description":"Query the position status of the designated fund based on the fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Navigation.FlightTickets.getFlightAirlinePoints","description":"Earn airline credits","parameters":{"type":"object","properties":{"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Passenger's Name"},"airline":{"type":"string","description":"Airline Name"}},"required":["passenger_id","name","airline"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Card number A123456789 has been received and will be sent to the designated location tomorrow for review. Please make sure all documents are ready.
+query:I want to check the remaining points on my driver's license, the ID number is in the notepad.<|im_end|>
+<|im_start|>assistant

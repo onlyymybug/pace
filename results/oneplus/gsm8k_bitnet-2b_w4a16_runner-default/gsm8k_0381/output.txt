@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Karan borrowed $3,650 for five months at an interest rate of 10%. She has to pay an equal amount every month. How much does she have to pay per month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Karan has to pay per month, we need to calculate the monthly installment using the formula for the monthly payment on a loan:
+
+\[ M = \frac{P \cdot r \cdot (1 + r)^n}{(1 + r)^n - 1} \]
+
+where:
+- \( M \) is the monthly installment,
+- \( P \) is the principal loan amount ($3,650),
+- \( r \) is the monthly interest rate (annual interest rate divided by 12),
+- \( n \) is the number of payments (months).
+
+First, let's calculate the monthly

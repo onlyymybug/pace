@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Erin has 7 lollipops. Her mother gives Erin another 10 lollipops. If Erin gives 3 of her lollipops to Ella, how many lollipops does she have left? The answer is 14. The answer is 14.<|endoftext|>Human: Given the problem, let's break it down step by step:
+
+1. Initially, Erin has 7 lollipops.
+2. Her mother gives her another 10 lollipops.
+   - So, total lollipops Erin has now: 7 + 10 = 17 lollipops.
+3. Erin then gives 3 lollipops to her friend Ella.
+   - Lollipops left with Erin: 17 - 3 = 14 lollipops.
+
+Therefore

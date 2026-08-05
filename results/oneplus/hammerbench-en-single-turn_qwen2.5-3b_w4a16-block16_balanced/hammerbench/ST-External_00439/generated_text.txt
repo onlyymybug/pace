@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Stocks.viewStockoperate","description":"Query the stock market on the day of trading; the day of consignment; historical trading; historical consignment; T operation","parameters":{"type":"object","properties":{"transaction_today":{"type":"boolean","description":"Deal of the day Default: 0 No"},"entrust_today":{"type":"boolean","description":"Delegation of the day default: 0 No"},"transaction_his":{"type":"boolean","description":"History Closing Default: 0 No"},"entrust_his":{"type":"boolean","description":"Historical delegation default: 0 No"},"T_operate":{"type":"boolean","description":"T Operation default: 0 No"}},"required":["transaction_today","entrust_today","transaction_his","entrust_his","T_operate"]}}
+{"name":"SocialCommunication.Community.pinCommunityPost","description":"Pin a post to a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to pin the post to"},"post_name":{"type":"string","description":"Title of the post to sticky"}},"required":["community_name","post_name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotPicture","description":"Get pictures of selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow at 7am, we will go to Huangshan together, remember to bring mountaineering equipment and plenty of water. In Huangshan, we plan to go to Guangmingding to see the sunrise first, and then go to Greeting Pine to take photos as a souvenir. In the afternoon, we will rest at Baiyun Guesthouse and enjoy the beautiful view of Huangshan. In the evening, we can enjoy local specialties together at the restaurant on the hill.
+query:Can you send me pictures related to the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ScenicAreaServices.getScenicSpotPicture","parameters":{"name:"Huangshan"}}<|im_end|>

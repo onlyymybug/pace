@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.collectLocation","description":"Favorite a place","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Places to save"}},"required":["location"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"SocialCommunication.Community.hideCommunityPost","description":"Hide posts from selected communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to hide the post from"},"post_name":{"type":"string","description":"Title of the post to hide"}},"required":["community_name","post_name"]}}
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+{"name":"ConvenientLiving.UtilityPayments.notifyPaymentDue","description":"Turn on or off the notification function for payment expiration, such as water, electricity and fuel","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"enable_notification":{"type":"boolean","description":"Whether to turn on the notification, true is on, false is off"}},"required":["service_type","enable_notification"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:All meeting notes for Project Alpha have been compiled and can be viewed in the archives on the 12th floor of the company building or downloaded electronically from the project management page on the company intranet. If you have any questions, you can contact Xiao Li of the Administration Department, and she will arrange specific matters for you.
+query:Can you please collect the locations mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant

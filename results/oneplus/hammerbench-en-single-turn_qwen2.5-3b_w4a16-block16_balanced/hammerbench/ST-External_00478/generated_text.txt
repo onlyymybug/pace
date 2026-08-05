@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"SocialCommunication.InstantMessaging.receiveFile","description":"Receive files from specified contacts or groups","parameters":{"type":"object","properties":{"sender_name":{"type":"string","description":"The contact or group who sent the file"}},"required":["sender_name"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"SocialCommunication.InstantMessaging.sendFile","description":"Send a file to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the file"},"file_path":{"type":"string","description":"The path or document name of the file to send locally"}},"required":["receiver_name","file_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello! Regarding this project team meeting, it is scheduled for tomorrow morning at 10 am in the large conference room on the third floor of the company. We hope you are on time and we have a lot of details to discuss. In addition, Li Hua and Zhang Qiang also confirmed that they will participate, and we will work together to do a good job in this project.
+query:Can you forward me the documents sent by the friends mentioned in WeChat?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Search.shareWebPage","parameters":{"media":"instant messaging","person":"WeChat"}}<|im_end|>

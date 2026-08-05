@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A hospital sees 500 people a day.  Each patient is seen for an average of 24 minutes.  The doctors charge $150 an hour to the hospital and the hospital charges the patients $200 an hour.  How much profit does the hospital make from these visits?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit, we need to calculate the total revenue from the hospital and subtract the total cost. 
+
+First, let's calculate the total time spent by the doctors on these visits. Since each patient is seen for 24 minutes, the total time spent by the doctors per day is:
+500 patients * 24 minutes/patient = 12,000 minutes
+
+Since there are 60 minutes in an hour, the total time spent by the doctors per day in hours is:
+12,000 minutes / 60 minutes/hour = 200 hours
+
+Now, let's calculate the total revenue from the hospital. The doctors charge $

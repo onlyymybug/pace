@@ -1,0 +1,9 @@
+To determine the probability that a triangle with sides of length 1, \(x\), and \(y\) exists, we need to use the triangle inequality theorem. The triangle inequality theorem states that for any triangle with sides \(a\), \(b\), and \(c\), the following must be true:
+
+1. \(a + b > c\)
+2. \(a + c > b\)
+3. \(b + c > a\)
+
+In our case, the sides are 1, \(x\), and \(y\). Applying the triangle inequality, we get the following conditions:
+
+1. \(1 +

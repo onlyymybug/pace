@@ -1,0 +1,10 @@
+To solve this, we first calculate the total number of apartments in the three complexes:
+
+- First two complexes: 200 apartments each, so 200 apartments in total.
+- Third complex: 60% bigger than the other two combined, so 200*2 * 1.6 = 320 apartments.
+
+Total apartments across all complexes: 200 + 320 = 520 apartments
+
+He collects garbage 3 times a week from each apartment, so total collections per week: 520 * 3
+
+He gets paid $0.40

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lisa is part of a choir that has 52 members, 50% of which are boys and 50% of which are girls.  The choir decides to perform with just its female members.  On the day of the performance, however, half the people performing can't make it to the show because their bus breaks down.  The choir's 3 teachers then decide to sing with them. How many people sang in the performance?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the number of boys and girls in the choir. Since 50% of the choir is boys and 50% is girls, we calculate:
+
+Number of boys = 50% of 52 = 0.5 * 52 = 26
+Number of girls = 50% of 52 = 0.5 * 52 = 26
+
+So, there are 26 boys and 26 girls in the choir.
+
+Next, we find out how many female members are performing. Since half of the choir members can't make it, we calculate:
+
+Number of female members performing =

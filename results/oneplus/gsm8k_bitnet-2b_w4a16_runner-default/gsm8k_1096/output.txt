@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If two trains depart from a station in opposite directions, and one train is traveling 60 miles an hour while the other is traveling half that distance per hour, how far apart are they from each other after 3 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the speed of each train. The first train is traveling at 60 miles per hour, and the second train is traveling at half that distance per hour, which is 30 miles per hour.
+
+Since the trains are traveling in opposite directions, we add their speeds together to find the relative speed at which they are moving apart. The relative speed is 60 miles per hour + 30 miles per hour = 90 miles per hour.
+
+Now, we need to find out how far apart the trains are after 3 hours. To do this, we multiply the relative speed by the time:

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A mechanic charges different rates to repair the tires of trucks and cars.  For each truck tire that is repaired, the mechanic will charge $60 and for each car tire that is repaired, the mechanic will charge $40.  On Thursday, the mechanic repairs 6 truck tires and 4 car tires.  On Friday, the mechanic repairs 12 car tries and doesn't repair any truck tires.  How much more revenue did the mechanic earn on the day with higher revenue? To solve this problem, we need to calculate the total earnings for both days and then compare them.
+
+First, let's calculate the earnings for Thursday:
+- For trucks: 6 tires * $60 per tire = $360
+- For cars: 4 tires * $40 per tire = $160
+Total earnings on Thursday: $360 + $160 = $520
+
+Next, let's calculate the earnings for Friday:
+- For trucks: 0 tires * $60 per tire = $0
+- For cars: 12 tires * $40 per

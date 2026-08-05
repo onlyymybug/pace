@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getMagazine","description":"Get a magazine based on its name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"Navigation.TrafficViolations.viewCarInfo","description":"View license details","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryTrafficViolations","description":"Check the traffic violation information of the user's vehicle","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"Vehicle license plate"}},"required":["plate_number"]}}
+{"name":"Finance.Funds.getFundPortfolio","description":"Query the position status of the designated fund based on the fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10 o'clock this morning, I saw a very conspicuous red car in the parking lot, the license plate number is Beijing B66666. The driver appears to be in a hurry when exiting the vehicle and there may be something important going on. This car was parked in parking lot 15 in area C, I hope the owner can pay the fee on time, don't forget it because of urgency.
+query:Help me check the infringement information of the license plate number mentioned in the notepad.<|im_end|>
+<|im_start|>assistant

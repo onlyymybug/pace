@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "detailed_weather_forecast", "arguments": {"location": "London, United Kingdom", "days": 3, "details": ["high_low_temperature", "humidity", "precipitation"]}}
+</tool_call><|im_end|>

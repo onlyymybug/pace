@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "celebrity_net_worth.get", "description": "Get the total net worth of a sports celebrity based on most recent data. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"name": {"type": "string", "description": "The full name of the sports celebrity."}, "currency": {"type": "string", "description": "The currency in which the net worth will be returned. Default is 'USD'."}}, "required": ["name", "currency"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the total worth in euro of Messi according to latest data?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "celebrity_net_worth.get", "arguments": {"name": "Lionel Messi", "currency": "EUR"}}
+</tool_call><|im_end|>

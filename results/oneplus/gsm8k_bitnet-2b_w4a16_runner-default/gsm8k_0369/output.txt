@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: After scoring 14 points, Erin now has three times more points than Sara, who scored 8. How many points did Erin have before?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of points Erin had before as E. After scoring 14 points, Erin has E + 14 points. According to the problem, Erin now has three times more points than Sara, who scored 8 points. This means Erin has 3 * 8 = 24 points now. So, we can set up the equation:
+
+E + 14 = 24
+
+To find E, we subtract 14 from both sides of the equation:
+
+E = 24 - 14
+E = 10
+
+The answer is 10.<|eot_id|>

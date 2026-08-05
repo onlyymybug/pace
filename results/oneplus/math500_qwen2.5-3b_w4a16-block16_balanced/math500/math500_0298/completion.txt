@@ -1,0 +1,12 @@
+To solve the problem, we need to determine the smallest number of leaves \( L \) such that the number of pages \( P \) satisfies the conditions given. Specifically, \( P = 2L \) and \( P = 7k + 3 \) for some integer \( k \), and \( L > 100 \).
+
+First, we express \( P \) in terms of \( L \):
+\[ P = 2L \]
+Since \( P \) must also be of of the form \( 7k + 3 \), we substitute \( P \) in the second equation:
+\[ 2L = 7k + 3 \]
+This equation tells us that \( 2L \equiv 3 \pmod{7} \). We need to find the smallest \( L > 100 \) that satisfies this congruence.
+
+To solve \( 2L \equiv 3 \pmod{7} \), we need to find the multiplicative inverse of of 2 modulo 7. The inverse \( x \) satisfies:
+\[ 2x \equiv 1 \pmod{7} \]
+By testing values, we find:
+\[ 2 \times 4 =

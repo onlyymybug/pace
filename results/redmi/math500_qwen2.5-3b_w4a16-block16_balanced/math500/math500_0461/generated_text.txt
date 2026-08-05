@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In the diagram below, we have $\overline{ST}\parallel\overline{QR}$, $\angle P= 40^\circ$, and $\angle Q =35^\circ$. Find the measure of $\angle STR$ in degrees.
+
+[asy]
+pair P,Q,R,SS,T;
+Q = (0,0);
+R = (1,0);
+P = (1.1,0.5);
+SS = 0.6*P;
+T = R + 0.6*(P-R);
+draw(T--SS--P--R--Q--SS);
+label("$P$",P,N);
+label("$S$",SS,NW);
+label("$Q$",Q,S);
+label("$R$",R,S);
+label("$T$",T,ENE);
+[/asy] To solve for the measure of \(\angle STR\), we need to use the properties of of parallel lines and the angles formed by them.
+
+Given:
+- \(\overline{ST} \parallel \overline{QR}\)
+- \(\angle P = 40^\circ\)
+- \(\angle Q = 35^\circ\)
+
+Since \(\overline{ST} \parallel \overline{QR}\), and \(\angle P\) and \(\angle Q\) are on the same side of of line \(PR\), we can use the fact that the sum of of the angles on

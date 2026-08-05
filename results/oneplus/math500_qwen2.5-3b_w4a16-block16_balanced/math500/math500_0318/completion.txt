@@ -1,0 +1,23 @@
+To determine the degree of of the polynomial \( p(x) \), we start by examining the given expression:
+
+\[
+p(x) = \frac{(x - b)(x - c)}{(a - b)(a - c)} + \frac{(x - a)(x - c)}{(b - a)(b - c)} + \frac{(x - a)(x - b)}{(c - a)(c - b)}
+\]
+
+First, let's simplify the terms in the sum. Consider the general form of of each term in the sum:
+
+\[
+\frac{(x - b)(x - c)}{(a - b)(a - c)}
+\]
+
+\[
+\frac{(x - a)(x - c)}{(b - a)(b - c)}
+\]
+
+\[
+\frac{(x - a)(x - b)}{(c - a)(c - b)}
+\]
+
+We need to show that the sum of of of these terms is a polynomial. To do this, we will use the fact that the sum of of of these terms is a polynomial of of degree 2, and we will show that the sum is a polynomial of of degree 2 by examining the behavior of the polynomial at specific points.
+
+Let

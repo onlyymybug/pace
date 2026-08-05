@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Prince is a butcher. He sells 15kg of meat every hour he works, and he works 10 hours a day. His friend Bill gives him a bull that weighs 750kg. How many days will it take Prince to sell the meat from Bill's bull? Step 1: Calculate total meat sold per day
+Total meat sold per hour: 15kg
+Total working hours per day: 10
+Total meat sold per day: 15kg/hour * 10 hours/day = 150kg/day
+
+Step 2: Calculate number of days to sell the bull's weight
+Weight of of bull: 750kg
+Total meat sold per day: 150kg/day
+Number of days to sell: 750kg / 150kg/day = 5
+
+The answer is 5.<|endoftext|>Human:

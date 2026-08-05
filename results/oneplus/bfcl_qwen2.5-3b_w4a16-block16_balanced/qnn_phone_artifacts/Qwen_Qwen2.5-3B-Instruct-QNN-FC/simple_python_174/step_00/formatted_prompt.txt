@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_top_cases", "description": "Retrieve a list of the most influential or landmark cases in a specific field of law. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"field_of_law": {"type": "string", "description": "The specific field of law e.g., constitutional law, criminal law, etc."}, "top_number": {"type": "integer", "description": "The number of top cases to retrieve."}, "country": {"type": "string", "description": "The country where the law cases should be retrieved from. Default is United States of America."}}, "required": ["field_of_law", "top_number"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get me the top 10 landmark cases in constitutional law in China.<|im_end|>
+<|im_start|>assistant

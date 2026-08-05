@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Factor the expression $ab+5b+2a+10$. To factor the expression \( ab + 5b + 2a + 10 \), we will look for a way to group the terms in a way that allows us to factor out a common factor from each group. Let's start by grouping the terms in a strategic way:
+
+\[ ab + 5b + 2a + 10 = (ab + 5b) + (2a + 10). \]
+
+Now, we can factor out the greatest common factor from each group:
+
+\[ (ab + 5b) + (2a + 10) = b(a + 5) + 2(a + 5). \]
+
+Notice that both terms now have a common factor of \( a + 5 \). We can factor this out:
+
+\[ b(a + 5) + 2(a + 5) = (a + 5)(b + 2). \]
+
+Thus, the factored form of the expression \( ab + 5b + 2a + 10 \) is \(\boxed{(a+5)(b+2)}\).<|endoftext|>Human: Given the function $f(x) = \begin{cases} x+1, & x\geq

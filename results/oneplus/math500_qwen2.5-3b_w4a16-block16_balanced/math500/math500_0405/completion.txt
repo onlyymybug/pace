@@ -1,0 +1,24 @@
+To determine how many boxes contain neither pens nor pencils, we can use the principle of of of inclusion and exclusion. Let's define the following:
+
+- \( P \) as the set of boxes that contain pencils.
+- \( Q \) as the set of boxes that contain pens.
+
+We are given:
+- The total number of boxes is 10.
+- The number of boxes that contain pencils, \( |P| \), is 5.
+- The number of boxes that contain pens, \( |Q| \), is 4.
+- The number of boxes that contain both pens and pencils, \( |P \cap Q| \), is 2.
+
+We need to find the number of boxes that contain either pens or pencils or both. This is given by the union of of of the sets \( P \) and \( Q \), which can be calculated using the principle of of inclusion and exclusion:
+
+\[
+|P \cup Q| = |P| + |Q| - |P \cap Q|
+\]
+
+Substituting the given values:
+
+\[
+|P \cup Q| = 5 + 4 - 2 = 7
+\]
+
+So, 7 boxes contain either pens or pencils or both. To find the

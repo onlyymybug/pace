@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Helga was the fastest clog dancer in all of Slovenia. With both hands at her sides, she could tap her right foot at a rate of 300 taps per minute, while simultaneously tapping her left foot at a rate of 250 taps per minute.  When she raised her arms, her tap rate slowed down to 200 taps per minute with each foot.  If she dances a total of 5 minutes, with her arms raised during only 2 of those minutes, what would be the combined total number of times that she taps both of her feet?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the number of taps Helga makes with both feet when she is dancing without raising her arms, and then add the number of taps she makes with both feet when she is dancing with her arms raised.
+
+First, let's calculate the number of taps with both feet when she is dancing without raising her arms. This occurs for 3 minutes (5 minutes total - 2 minutes with arms raised).
+
+- With both hands at her sides, her tap rate is 300 taps per minute for the right foot and 250 taps per minute for the left foot.
+- Combined tap rate = 300 +

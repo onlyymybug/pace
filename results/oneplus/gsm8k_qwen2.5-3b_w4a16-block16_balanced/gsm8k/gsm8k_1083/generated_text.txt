@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James decided to walk to the store.  When he got halfway there he realized he forgot something at home and had to walk back.  If his home is 4 miles from the store and he walks 4 miles per hour how long did it take him to reach the store? To solve this problem, we need to calculate the total time James spent walking.
+
+1. **Determine the total distance James walked:**
+   - James walks halfway to the store, which is 4 miles / 2 = 2 miles.
+   - Then he walks back home, another 2 miles.
+   - Total distance: 2 miles (to store) + 2 miles (back home) = 4 miles.
+
+2. **Calculate the time taken for each leg of of his journey:**
+   - Time taken to walk to the store: 2 miles at 4 miles per hour = 2/4

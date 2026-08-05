@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Becky, Jake, and Silvia shared 4 pizzas. Each pizza had 8 slices. Becky ate 3 more slices than Jake did. Silvia ate twice as many slices than Jake did. If Becky ate 10 slices, how many total slices did they eat?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many slices each person ate.
+
+1. Becky ate 10 slices.
+2. Since Becky ate 3 more slices than Jake, Jake ate \(10 - 3 = 7\) slices.
+3. Silvia ate twice as many slices as Jake, so Silvia ate \(2 \times 7 = 14\) slices.
+
+Now, we add up the slices eaten by all three:
+
+- Becky: 10 slices
+- Jake: 7 slices
+- Silvia: 14 slices
+
+Total slices eaten = \(10 + 7 + 14 = 31\)

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_clock_angle", "description": "Calculate the angle between the hour and minute hands of a clock at a given time. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"hours": {"type": "integer", "description": "The hour on the clock face."}, "minutes": {"type": "integer", "description": "The minutes on the clock face."}, "round_to": {"type": "integer", "description": "The number of decimal places to round the result to, default is 2."}}, "required": ["hours", "minutes"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What will be the angle between the hour and minute hands of a clock at 6:30 PM?<|im_end|>
+<|im_start|>assistant

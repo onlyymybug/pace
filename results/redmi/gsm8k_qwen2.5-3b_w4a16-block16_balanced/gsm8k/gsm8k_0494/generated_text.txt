@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Heather's razors come 4 to a pack and cost $4.00 a pack.  They are currently on sale for buy one get one free.  She also has a $2.00 coupon.  How much will each individual razor cost, in cents, after the discount if she buys 2 packs of razors? Step 1: Calculate the cost per razor without discount.
+Cost per razor = Total cost for pack / Number of razors per pack
+Cost per razor = 4 / 4
+Cost per razor = 1
+
+Step 2: Apply the discount.
+Since it's buy one get one free, she gets 2 free razors for every razor she buys.
+So, for 2 packs, she gets 4 free razors.
+Total razors = 2 * 4 = 8
+Cost after discount = Total cost for 2 packs - Cost of of coupons
+Cost after discount = (4 * 2

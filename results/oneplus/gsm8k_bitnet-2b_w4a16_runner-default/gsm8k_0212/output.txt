@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jerry has a flock of chickens. The red chickens produce 3 eggs a day, and the white chickens produce 5 eggs a day. Every day Jerry collects 42 eggs. If he has two more white chickens than red chickens, how many red chickens does he have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of red chickens as R and the number of white chickens as W. We know that W = R + 2. Each red chicken produces 3 eggs a day, and each white chicken produces 5 eggs a day. Jerry collects a total of 42 eggs a day. We can set up the following equation based on the total number of eggs collected:
+
+3R + 5W = 42
+
+Since W = R + 2, we can substitute W in the equation:
+
+3R + 5(R + 2) = 42
+
+Now, let's solve for R:
+
+3R +

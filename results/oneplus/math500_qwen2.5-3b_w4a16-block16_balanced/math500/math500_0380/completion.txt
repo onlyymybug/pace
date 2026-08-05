@@ -1,0 +1,10 @@
+To determine which grade has the number of male bus riders closest to \(135\%\) of the number of female bus riders, we need to calculate the number of male and female bus riders for each grade and then compare the ratio of the number of male bus riders to the number of female bus riders to \(135\%\).
+
+Let's denote the total number of students surveyed in each grade as \(N\). Since 300 males and 300 females were surveyed in each grade, the total number of students surveyed in each grade is \(N = 300 + 300 = 600\).
+
+### 9th Grade
+- Percentage of males: \(41.1\%\)
+- Percentage of females: \(39.4\%\)
+- Number of males: \(0.411 \times 600 = 246.6 \approx 247\)
+- Number of females: \(0.394 \times 600 = 236.4 \approx 236\)
+- Ratio of males to females: \(\frac{247}{236} \approx 1.04

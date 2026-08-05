@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "social_media_analytics.most_followed", "description": "Find the most followed Twitter user related to certain topics. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"topic": {"type": "string", "description": "The main topic of interest."}, "sub_topics": {"type": "array", "items": {"type": "string"}, "description": "Sub-topics related to main topic. Default is empty."}, "region": {"type": "string", "description": "Region of interest for twitter search. Default is 'all'."}}, "required": ["topic"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the most followed person on twitter who tweets about psychology related to behaviour and group dynamics.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "locate_tallest_mountains", "description": "Find the tallest mountains within a specified radius of a location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city from which to calculate distance."}, "radius": {"type": "integer", "description": "The radius within which to find mountains, measured in kilometers."}, "amount": {"type": "integer", "description": "The number of mountains to find, listed from tallest to smallest."}}, "required": ["location", "radius", "amount"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me the 5 tallest mountains within 50km of Denver, Colorado.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "locate_tmountains", "arguments": {"location": "Denver, Colorado", "radius": 50, "amount": 5}}
+</tool_call><|im_end|>

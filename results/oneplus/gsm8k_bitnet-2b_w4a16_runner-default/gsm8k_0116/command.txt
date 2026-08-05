@@ -1,0 +1,8 @@
+adb -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sasha notices that prices for lumber have gone up 50% in the last few months after she bought some lumber. Since she has leftovers, she decides to sell them. She has leftover ten 2 x 4 x 10 boards that cost her $10 each. She also has five 4 x 4 x 10 boards she bought for $16 each. If she sells them all, how much profit does she make?'"'"' --system_prompt '"'"''"'"' --seq_len 294 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0116_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0116_inference_speed.txt'

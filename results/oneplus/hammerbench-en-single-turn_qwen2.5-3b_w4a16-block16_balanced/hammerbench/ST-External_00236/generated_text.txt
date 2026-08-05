@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOpenHours","description":"Get hours at select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Restaurant name:"}},"required":["restaurant_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.openSecondhandSaleMessage","description":"Open the conversation with the seller","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to Haidilao for hot pot on the weekend. It's at that shop in Vientiane City. I heard that the environment is very good and the service is in place. If it's convenient for you, we can schedule it at 5pm so there won't be a long queue.
+query:What is the name of the restaurant mentioned in the WeChat message that Xiao Li sent me, and what are its opening hours?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOpenHours","parameters":{"restaurant_name":"Haidilao"}}<|im_end|>

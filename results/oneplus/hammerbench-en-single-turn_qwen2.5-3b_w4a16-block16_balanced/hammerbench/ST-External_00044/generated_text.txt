@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.deleteCommonAddress","description":"Delete the specified Primary Address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address to delete"}},"required":["address"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteSecondhandSaleMessage","description":"Delete the specified session message","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+{"name":"SocialCommunication.SocialMedia.deleteMediumMessage","description":"Delete the message of the designated person in the specified media (delete all by default)","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","name","account_number","time"]}}
+{"name":"SocialCommunication.InstantMessaging.deleteMessage","description":"Delete messages for specified contacts or groups (delete all by default)","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group the message belongs to"},"message_content":{"type":"string","description":"Message content to delete"}},"required":["receiver_name","message_content"]}}
+{"name":"OnlineShopping.Mall.delectChat","description":"Delete the specified session message (delete all by default)","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We can meet at the small park near my home on the weekend, the address is XX XX Road, I still have a little gift for you at home, I hope you will like it. My home is right next to the park, it is easy to find, I will wait for you at the door in advance.
+query:Remove the place mentioned in Tom's text message to me as a favorite address<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.MapNavigation.deleteCommonAddress","parameters":{"address":"XX XX Road"}}<|im_end|>

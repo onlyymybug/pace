@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Farmer Brown has 60 animals on his farm, all either chickens or cows. He has twice as many chickens as cows. How many legs do the animals have, all together? To solve this problem, we need to determine the total number of legs for all the animals on Farmer Brown's farm.
+
+1. **Define Variables:**
+   - Let \( C \) represent the number of cows.
+   - Let \( H \) represent the number of chickens.
+
+2. **Formulate Equations:**
+   - According to the problem, the total number of animals is 60:
+     \[
+     C + H = 60
+     \]
+   - There are twice as many chickens as cows:
+     \[
+     H = 2C
+     \]
+
+3. **Solve for

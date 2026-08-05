@@ -1,0 +1,18 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Suppose that $ABCD$ is a trapezoid in which $\overline{AD}|| \overline{BC}$.  Given $\overline{AC}\perp\overline{CD}$, $\overline{AC}$ bisects angle $\angle BAD$, and $[ABCD]=42$, then compute $[\triangle ACD]$. To solve the problem, we need to analyze the given trapezoid \(ABCD\) with \(AD \parallel BC\) and the given conditions. Let's break down the problem step by step.
+
+1. **Identify Key Properties and Relationships:**
+   - \(AD \parallel BC\) implies \(ABCD\) is a trapezoid.
+   - \(\overline{AC} \perp \overline{CD}\) means \(\angle ACD = 90^\circ\).
+   - \(\overline{AC}\) bisects \(\angle BAD\), so \(\angle BAC = \angle CAD\).
+
+2. **Coordinate Geometry Setup:**
+   - Place \(C\) at the origin \((0,0)\).
+   - Place \(D\) on the x-axis at \((d,0)\).
+   - Place \(A\) at \((0, h)\).
+   - Place \(B\) at \((b, h)\).
+
+3. **Using Perpendicularity and Angle Bisector:**
+   - Since \(\overline{AC} \perp \overline{CD}\), \(A\) and \(C\) form a right angle.
+   - Since \(\

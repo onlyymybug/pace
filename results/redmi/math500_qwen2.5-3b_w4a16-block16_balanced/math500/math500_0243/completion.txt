@@ -1,0 +1,9 @@
+To solve the problem, we need to calculate the future value of of of an investment that grows at a rate of every two months. Given the initial investment and the interest rate, we can use the formula for compound interest:
+
+\[ A = P \left(1 + \frac{r}{n}\right)^{nt} \]
+
+where:
+- \( A \) is the amount of money accumulated after \( t \) periods,
+- \( P \) is the principal amount (initial investment),
+- \( r \) is the annual interest rate (decimal),
+- \( n \) is the number of times interest is compounded per

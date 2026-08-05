@@ -1,0 +1,18 @@
+adb -P 5037 -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; { ./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path . --prompt '"'"'<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "music.theory.chordProgression", "description": "Identifies a potential key signature for the given chord progression. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"progression": {"type": "array", "items": {"type": "string"}, "description": "The chord progression in Roman numerals. Eg: ['"'"'"'"'"'"'"'"'I'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'V'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'vi'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'IV'"'"'"'"'"'"'"'"']."}, "returnAllPossibleKeys": {"type": "boolean", "description": "Flag indicating if the function should return all possible key signatures that fit the chord progression. If false, the function will return the first valid key it finds. Default is false."}, "assumeMajor": {"type": "boolean", "description": "Assumption if the key signature is Major. If true, the function will assume the key signature to be major and otherwise minor. Default is true."}}, "required": ["progression"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+music.theory.chordProgression(progression=['"'"'"'"'"'"'"'"'I'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'V'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'vi'"'"'"'"'"'"'"'"', '"'"'"'"'"'"'"'"'IV'"'"'"'"'"'"'"'"'])<|im_end|>
+<|im_start|>assistant
+'"'"' --system_prompt '"'"''"'"' --seq_len 1024 --eval_mode 1 --temperature 0.0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/speed.txt; runner_rc=$?; printf "\nrunner_returncode=%s\n" "$runner_rc"; exit "$runner_rc"; } > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_297/step_00/runner.log 2>&1'

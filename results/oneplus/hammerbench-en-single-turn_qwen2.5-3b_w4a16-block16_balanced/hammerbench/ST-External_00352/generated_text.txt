@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Calendar.addCalendarClock","description":"Set a schedule reminder","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule Reminder Time"}},"required":["date_name","start_date"]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"Education.OnlineClasses.scheduleCourses","description":"Set course start reminder","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","teacher_name"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:reminder: October 15th at 9am, we have a meeting on Q3 market analysis, please make sure to attend on time. The meeting will take place in Conference Room 3 of the main building, so remember to bring your laptop with you to view the data. If you have any questions, you can contact me in advance. We look forward to your participation!
+query:Little assistant, help me set up a schedule reminder. The project deadline is the time mentioned in the WeChat message Xiao Li sent to me.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","parameters":{"meeting_id":"EKReminder","title":"Project Deadline","time":"October 15th at 9am","participant_list":"XiaoLi"}}<|im_end|>

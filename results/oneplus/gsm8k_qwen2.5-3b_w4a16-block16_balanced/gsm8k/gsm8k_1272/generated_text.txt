@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A large bag of Starbursts candy has 232 pieces of individually wrapped candies.  If this bag has 54 red candies, twice that amount of orange candies and half as many yellow candies as red candies, how many candies are pink? To solve this problem, we need to determine the total number of Starbursts candies of each color and then find the number of pink candies.
+
+1. **Total candies in the bag**: 232 pieces
+
+2. **Red candies**: Given as 54 pieces
+
+3. **Orange candies**: Twice the number of red candies
+   \[
+   2 \times 54 = 108 \text{ orange candies}
+   
+4. **Yellow candies**: Half the number of red candies
+   \[
+   \frac{54}{2} = 27 \text{ yellow candies}

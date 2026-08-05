@@ -1,0 +1,27 @@
+To determine the radius of of the tank, we need to analyze the relationship between the rate at which the tank is being filled and the rate at which the water level is rising.
+
+Given:
+- The tank is a right cylinder with circular bases.
+- Water is being filled at a rate of \(20\pi\) cubic meters per hour.
+- The water level rises at a rate of 4 meters per hour.
+
+Let's denote:
+- \(V\) as the volume of of of water in the tank.
+- \(h\) as the height of of the water level in the tank.
+- \(r\) as the radius of of the tank.
+
+The volume \(V\) of the water in the cylindrical tank is given by the formula:
+\[
+V = \pi r^2 h
+\]
+
+We are given:
+- The rate at which the volume of \(V\) is increasing is \(20\pi\) cubic meters per hour.
+- The rate at which the height \(h\) is increasing is 4 meters per hour.
+
+Thus, we can write the rate of of the volume \(V\) as:
+\[
+\frac{dV}{dt} = 20\pi \text{ cubic meters per hour}
+\]
+
+Using the chain rule

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "find_card_in_deck", "description": "Locate a particular card in a deck based on rank and suit. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"rank": {"type": "string", "description": "Rank of the card (e.g. Ace, Two, King)."}, "suit": {"type": "string", "description": "Suit of the card (e.g. Hearts, Spades, Diamonds, Clubs)."}, "deck": {"type": "array", "items": {"type": "dict", "properties": {"rank": {"type": "string"}, "suit": {"type": "string"}}}, "description": "Deck of cards. If not provided, the deck will be a standard 52 card deck"}}, "required": ["rank", "suit"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find a Card of rank 'Queen' and suit 'Hearts' in the deck.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "find_card_in_deck", "arguments": {"rank": "Queen", "suit": "Hearts"}}
+</tool_call><|im_end|>

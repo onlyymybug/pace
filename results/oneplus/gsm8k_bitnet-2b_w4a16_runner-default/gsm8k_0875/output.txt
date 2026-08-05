@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ella earned $33 for 3 hours of dog walking. If she continues to walk dogs at the same rate, how much would she earn after 12 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine Ella's hourly rate of earning money. We know she earned $33 for 3 hours of work. So, her hourly rate is:
+
+\[ \text{Hourly rate} = \frac{\text{Total earnings}}{\text{Total hours}} = \frac{33}{3} = 11 \text{ dollars per hour} \]
+
+Now, we need to calculate how much she would earn after 12 hours at the same rate:
+
+\[ \text{Earnings for 12 hours} = \text{Hourly rate} \times \text{Number of hours

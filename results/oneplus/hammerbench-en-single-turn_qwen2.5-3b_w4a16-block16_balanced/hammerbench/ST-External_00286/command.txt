@@ -1,0 +1,66 @@
+adb -P 5037 -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/sampler.pid;
+pace_sample() {
+  printf '"'"'__PACE_SAMPLE_BEGIN__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+  printf '"'"'__PACE_TS_BEGIN__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+  dumpsys thermalservice >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw 2>&1;
+  printf '"'"'__PACE_MEMORY__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+  if [ -r "/proc/$runner_pid/status" ]; then
+    printf '"'"'pid=%s\n'"'"' "$runner_pid" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+    awk '"'"'/^VmRSS:/{print "rss_kb=" $2}          /^VmHWM:/{print "vmhwm_kb=" $2}'"'"' "/proc/$runner_pid/status" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+  fi;
+  printf '"'"'__PACE_TS_END__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+  printf '"'"'__PACE_SAMPLE_END__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+};
+./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path . --prompt '"'"'<|im_start|>system
+You select and call one tool for the user'"'"'"'"'"'"'"'"'s current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.getJobDetails","description":"Get job-specific details based on job relevance","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"OfficeSoftware.Documents.readDocument","description":"Read the specified document based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"Health.HealthManagement.viewSleepQualityAnalysis","description":"View Sleep Quality Analysis Report for Specific Dates","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date"}},"required":["date"]}}
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"UtilityTools.Memo.viewNotes","description":"View the current memo; view a memo with a specific title; view a specific section of content in a title; view a category memo; view a favorite memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"category":{"type":"string","description":"Classify"},"time":{"type":"string","description":"Creation Time"}},"required":["title","category","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, I want to remind you that there is an important project meeting at 3 pm on April 10th, so please be on time. The meeting place is in the meeting room on the third floor of the company. Please let me know in advance if you have any questions. Thank you!
+query:I would like to see the sleep quality analysis report for the day of the meeting mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+'"'"' --system_prompt '"'"''"'"' --seq_len 622 --eval_mode 1 --temperature 0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/speed.txt > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.log 2>&1 &
+runner_pid=$!;
+printf '"'"'%s\n'"'"' "$runner_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.pid;
+(
+  sampler_started=$(date +%s);
+  pace_sample;
+  while kill -0 "$runner_pid" 2>/dev/null; do
+    [ -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.stop ] && break;
+    sampler_now=$(date +%s);
+    if [ $((sampler_now - sampler_started)) -ge 1800 ]; then
+      printf '"'"'__PACE_WATCHDOG_TIMEOUT__=1800\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.raw;
+      kill -TERM "$runner_pid" 2>/dev/null || true;
+      sleep 1;
+      kill -KILL "$runner_pid" 2>/dev/null || true;
+      break;
+    fi;
+    sleep 0.5;
+    pace_sample;
+  done;
+  pace_sample;
+) &
+sampler_pid=$!;
+printf '"'"'%s\n'"'"' "$sampler_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/sampler.pid;
+pace_cleanup() {
+  touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.stop;
+  kill -TERM "$runner_pid" 2>/dev/null || true;
+  wait "$sampler_pid" 2>/dev/null || true;
+};
+trap '"'"'pace_cleanup; exit 130'"'"' HUP INT TERM;
+wait "$runner_pid"; runner_rc=$?;
+printf '"'"'\nrunner_returncode=%s\n'"'"' "$runner_rc" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.log;
+touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.stop;
+wait "$sampler_pid" 2>/dev/null || true;
+trap - HUP INT TERM;
+rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/hammerbench-en-single-turn_qwen2.5-3b_w4a16-block16_balanced/hammerbench/ST-External_00286/sampler.pid;
+exit "$runner_rc"'

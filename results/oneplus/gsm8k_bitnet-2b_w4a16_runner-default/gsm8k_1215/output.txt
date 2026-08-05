@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jordan has 2 children who wear diapers.  Each child requires 5 diaper changes per day.  Jordan's wife changes half of the diapers.  How many diapers does Jordan change per day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the total number of diapers needed per day for both children. Since each child requires 5 diaper changes per day, the total number of diapers for both children is:
+
+2 children * 5 diaper changes/child/day = 10 diaper changes/day
+
+Since Jordan's wife changes half of the diapers, Jordan is responsible for the other half. Therefore, the number of diapers Jordan changes per day is:
+
+10 diaper changes/day / 2 = 5 diaper changes/day
+
+The answer is 5.<|eot_id|>

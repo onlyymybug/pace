@@ -1,0 +1,21 @@
+To find the minimum value of of of \(\sqrt{x^2 + 400} + \sqrt{y^2 + 900} + \sqrt{x^2 + y^2 - 80x - 100y + 4100}\) for \(0 \le x \le 40\) and \(0 \le y \le 50\), we need to analyze and simplify the expression step by step.
+
+First, let's simplify the third term in the expression:
+\[
+\sqrt{x^2 + y^2 - 80x - 100y + 4100}
+\]
+
+We can rewrite the expression inside the square root by completing the square:
+\[
+x^2 + y^2 - 80x - 100y + 4100
+\]
+
+Complete the square for \(x\) and \(y\) terms:
+\[
+x^2 - 80x = (x - 40)^2 - 1600
+\]
+\[
+y^2 - 100y = (y - 50)^2 - 2500
+\]
+
+Thus

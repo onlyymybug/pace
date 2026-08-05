@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Richard, Jerry, and Robert are going to share 60 cherries. If Robert has 30 cherries, and has 10 more than Richard, how many more cherries does Robert have than Jerry? To solve this problem, we need to determine the number of cherries each person has and then find the difference between Robert's and Jerry's cherries.
+
+1. **Total Cherries and Robert's Share:**
+   - Total cherries: 60
+   - Robert has: 30 cherries
+
+2. **Richard's Share:**
+   - Robert has 10 more cherries than Richard.
+   - Let \( R \) be the number of cherries Richard has.
+   - Therefore, \( R + 10 = 30 \)
+   - Solving for \( R \): 
+    

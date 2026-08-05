@@ -1,0 +1,34 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"SocialCommunication.SocialMedia.mediumContinue","description":"Forwarding actions on specified dynamics","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"NewsMagazines.News.shareNews","description":"Share news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"to":{"type":"string","description":"WeChat/qq/TikTok"}},"required":["news_name","to"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Minutes of yesterday's project meeting
+
+Dear Team Member,
+
+Hello everyone! Yesterday, April 12, 2023, we held a project progress meeting on time at 10am.The meeting lasted about 2 hours and mainly discussed the key issues of the current project and the future direction.We reviewed the progress made since the last meeting and made detailed plans for the upcoming work plan.Particular emphasis was placed on the need for the Technology Development Department to submit the latest version of the software prototype by next Monday to ensure that the project proceeds on time.
+
+In addition, colleagues in the marketing department shared the results of the latest round of market research, which will have an important impact on our product positioning and marketing strategy.Treasury has also updated budget execution to ensure that all expenses are within control.
+
+Ask colleagues to align their work plans with what was discussed in the meeting to ensure we are working effectively around the project objectives.If you have any questions or suggestions, please do not hesitate to contact me.
+
+Good luck with your work!
+
+Sincerely,
+
+[Your name]  
+Project Management Team  
+April 13, 2023
+query:Please help me forward the food information shared by Li Si in the WeChat circle of friends, which was released at the time mentioned in the email.<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.InstantMessaging.shareMessage","parameters":{"share_recipient":"friends","share_content":"Dear Team, Li Si shared the food information released in the WeChat circle circle friends. Please check it out!\n\n- [Link to the shared post]","share_source":"Li Si's WeChat Circle","time":"2023-04-13"}}<|im_end|>

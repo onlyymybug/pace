@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: For some value of $x,$ $0 < x < 180,$
+\[\tan 53^\circ \tan 81^\circ \tan x^\circ = \tan 53^\circ + \tan 81^\circ + \tan x^\circ.\]Find $x.$
+To solve the given equation \(\tan 53^\circ \tan 8^\circ \tan x^\circ = \tan 53^\circ + \tan 8^\circ + \tan x^\circ\) for \(0 < x < 180\), we start by letting \(\tan 53^\circ = a\) and \(\tan 8^\circ = b\). The equation then becomes:
+
+\[ab \tan x = a + b + \tan x.\]
+
+Rearranging terms, we get:
+
+\[ab \tan x - \tan x = a + b

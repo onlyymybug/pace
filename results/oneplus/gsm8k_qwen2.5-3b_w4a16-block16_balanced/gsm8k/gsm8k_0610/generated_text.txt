@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Juan wants to add croissants to his bakery menu.  It takes 1/4 pound of butter to make 1 dozen croissants.  He wants to start with making 4 dozen a day for a week.  How many pounds of butter will he need to make these croissants? To determine the total pounds of butter needed, we first calculate the butter requirement for 4 dozen croissants, then multiply by the number of days in a week.
+
+To make 1 dozen croissants, 1/4 pound of butter is required. 
+
+For 4 dozen croissants, butter needed is: 
+(1/4) * 4 = 1 pound of butter
+
+In a week, there are 7 days. 
+
+Therefore, for 4 dozen croissants over 7 days, the total butter needed is: 
+1 pound/day * 7 days = 7 pounds of butter
+

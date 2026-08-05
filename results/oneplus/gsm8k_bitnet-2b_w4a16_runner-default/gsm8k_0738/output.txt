@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Peter wants to make different sized ice cubes with 32 ounces of water. He can make giant cubes that use 4 ounces per cube, medium cubes that use 2 ounces, and small cubes that use 1/2 an ounce. If he makes 3 giant cubes, 7 medium cubes, and 8 small cubes, how many ounces of water does he have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many ounces of water Peter has left, we need to calculate the total amount of water used for the ice cubes and then subtract that from the initial 32 ounces.
+
+First, calculate the total water used for the giant cubes:
+3 giant cubes * 4 ounces per cube = 12 ounces
+
+Next, calculate the total water used for the medium cubes:
+7 medium cubes * 2 ounces per cube = 14 ounces
+
+Then, calculate the total water used for the small cubes:
+8 small cubes * 1/2 ounce per cube = 4 ounces
+
+Now, add up the water used for all the cubes

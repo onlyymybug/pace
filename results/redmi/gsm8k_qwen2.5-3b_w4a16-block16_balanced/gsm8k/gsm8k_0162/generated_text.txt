@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Anakin and Locsin went to the beach today. Anakin caught 10 starfish, 6 sea horses, and 3 clownfish. While Locsin caught 5 fewer starfish than Anakin, 3 fewer sea horses than Anakin, and 2 more clownfish than Anakin. How many fish were they able to catch? Step 1: Calculate the number of starfish caught by each.
+Anakin: 10 starfish
+Locsin: 10 - 5 = 5 starfish
+Step 2: Calculate the number of sea horses caught by each.
+Anakin: 6 sea horses
+Locsin: 6 - 3 = 3 sea horses
+Step 3: Calculate the number of clownfish caught by each.
+Anakin: 3 clownfish
+Locsin: 3 + 2 = 5 clownfish
+Step 4: Calculate the total number of fish caught by adding all the fish together.

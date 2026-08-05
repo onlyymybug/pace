@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kelian has two recipes for preparing dishes, one having 20 instructions and the second one having twice as many instructions as the first one. How many instructions does Kelian have to read to prepare the two dishes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we first determine the number of instructions in the second recipe. Since the second recipe has twice as many instructions as the first one, we multiply the number of instructions in the first recipe by 2.
+
+Number of instructions in the first recipe = 20
+Number of instructions in the second recipe = 2 * 20 = 40
+
+Now, we add the number of instructions in both recipes to find the total number of instructions Kelian has to read.
+
+Total instructions = Instructions in the first recipe + Instructions in the second recipe
+Total instructions = 20 + 40 = 60
+
+The answer is 

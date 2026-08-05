@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The price of Parmesan cheese is $11 per pound. Mozzarella cheese is $6 per pound.  Amor buys 2 pounds of Parmesan and 3 pounds of mozzarella cheese.  Is she starts with $50 cash, how much money, in dollars, will she have left to buy meat?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Amor will have left, we first need to calculate the total cost of the cheese she buys.
+
+The cost of 2 pounds of Parmesan cheese is:
+2 pounds * $11/pound = $22
+
+The cost of 3 pounds of mozzarella cheese is:
+3 pounds * $6/pound = $18
+
+The total cost of the cheese is:
+$22 (Parmesan) + $18 (mozzarella) = $40
+
+Amor starts with $50. After buying the cheese, she will have:
+$50 - $40 = $10
+
+The answer is $10.

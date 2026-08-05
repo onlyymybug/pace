@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Finley took part in a 100-meter race.  She started off in first, but then fell back 5 spots.  She then moved ahead 2 spots, before falling behind 3.  Lastly, she jumped ahead 1 spot to finish the race.  What place did she finish in?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's track Finley's position step by step:
+
+1. Finley started in first place.
+2. She fell back 5 spots, so she is now in 6th place.
+3. She moved ahead 2 spots, so she is now in 4th place.
+4. She fell behind 3 spots, so she is now in 1st place.
+5. She jumped ahead 1 spot, so she is now in 3rd place.
+
+The answer is 3rd.<|eot_id|>

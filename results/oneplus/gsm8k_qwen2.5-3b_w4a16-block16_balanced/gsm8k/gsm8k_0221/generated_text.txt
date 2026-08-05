@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It takes Carmen 10 minutes to finish a crossword puzzle and 5 minutes to finish a sudoku puzzle.  Over the weekend she solved 3 crossword puzzles and 8 sudoku puzzles.  How much time did she spend playing these games? Step 1: Calculate time spent on crosswords
+Time per crossword: 10 minutes
+Number ofCrosswords: 3
+TotalCrosswordTime = Time per crossword * Number ofCrosswords
+
+Step 2: Calculate time spent on sudokus
+Time per sudoku: 5 minutes
+NumberNumberOfSudokus: 8
+TotalSudokuTime = Time per sudoku * NumberNumberOfSudokus
+
+Step 3: Calculate total time spent
+TotalTime = TotalCrosswordTime + TotalSudokuTime
+
+Step 1 calculation:
+TotalCrosswordTime = 10 * 3 = 30 minutes

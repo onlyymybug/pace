@@ -1,0 +1,39 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+{"name":"VideoPlayback.ShortVideos.shareShortVideo","description":"Share a short video to other media platforms","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"Navigation.TrafficViolations.shareViolationDetail","description":"Share Designated Violation Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"},"media":{"type":"string","description":"Ways to share"},"name":{"type":"string","description":"Shared content recipients"}},"required":["plate_number","city","time","media","name"]}}
+{"name":"SystemTools.SystemSettings.setSystemDateAndTime","description":"Set the date and time of your phone","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date in the format YYYY-MM-DD"},"time":{"type":"string","description":"Time in hour: minute: second format"},"time_zone":{"type":"string","description":"Time zone, e.g. Beijing time"}},"required":["date","time","time_zone"]}}
+{"name":"Health.Fitness.updateExerciseRecord","description":"Change sports records based on update criteria","parameters":{"type":"object","properties":{"exercise_record":{"type":"string","description":"Original Motion Record"},"time":{"type":"string","description":"Release Date"}},"required":["exercise_record","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Minutes from this morning's meeting
+
+Dear team members,
+
+I hope this email arrives at a time that is convenient for everyone.This morning, we had a meeting on the start of a new project at exactly 9 o'clock.In the meeting, we mainly discussed the preliminary plan of the project, the setting of goals, and the specific division of labor among the teams.Here are a few highlights from the meeting:
+
+1. The project start date is set for next Monday, that is, 10 days later.All relevant team members are requested to prepare initial plans for their projects so that work can proceed in an orderly manner at the launch date.
+
+2. In today's meeting, we also established 10am every Thursday morning as a fixed time to report on the progress of the project.Please attend on time to share your progress and problems.
+
+3. For major decisions in the project, we decided to establish a rapid decision-making mechanism to ensure an effective response within 24 hours in the event of an emergency.
+
+If you have any questions or suggestions, please do not hesitate to contact me.Please reconfirm your task list and prepare accordingly.
+
+Good luck with your work!
+
+Sincerely,
+Salute
+
+[Sender Signature]  
+[Company name]  
+[Contact]  
+[Sent Date]
+query:Can I update my running record from 5km to 7km? The time mentioned in the email.<|im_end|>
+<|im_start|>assistant

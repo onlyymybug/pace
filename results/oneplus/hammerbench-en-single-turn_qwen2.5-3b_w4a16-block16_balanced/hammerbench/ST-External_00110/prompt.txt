@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.PublicTransit.shareBusRoute","description":"Share designated bus routes with others","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"Destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."},"recipient":{"type":"string","description":"recipient"},"medium":{"type":"string","description":"Medium"}},"required":["line","departure","destination","preferred_line","recipient","medium"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Photography.VideoEditing.shareVideo","description":"Share videos to designated locations","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"to":{"type":"string","description":"Destination app name"}},"required":["name_or_path","to"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getRentingHousePolicies","description":"Check your specific area's rental policy","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"}},"required":["location"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, let's go to the Summer Palace in Beijing on the weekend. The scenery there is really beautiful. We can go around the promenade in the morning, find a restaurant nearby for some authentic Beijing food at noon, and climb Wanshou Mountain in the afternoon to experience the charm of the royal garden. What do you think?
+query:What is Xiao Li's rental policy for the locations mentioned in my WeChat?<|im_end|>
+<|im_start|>assistant

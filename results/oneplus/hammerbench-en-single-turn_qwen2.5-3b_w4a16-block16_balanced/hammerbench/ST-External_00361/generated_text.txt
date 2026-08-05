@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Education.ChildrenEducation.playChildSong","description":"Play assigned children's songs","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"}},"required":["song_name"]}}
+{"name":"MusicRadio.OnlineMusic.bindSocialPlatforms","description":"Link your account to a social platform","parameters":{"type":"object","properties":{"platforms":{"type":"string","description":"Social platforms to be linked"}},"required":["platforms"]}}
+{"name":"MusicRadio.RadioStations.radioPlaySong","description":"Play radio songs by song name, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"}},"required":["name"]}}
+{"name":"MusicRadio.OnlineMusic.playSong","description":"Play songs by song name, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"}},"required":["name"]}}
+{"name":"MusicRadio.Karaoke.manageAccount","description":"Manage your account by following the steps in Account Management","parameters":{"type":"object","properties":{"action":{"type":"string","description":"Account management actions"}},"required":["action"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Warm Memories of Little Star
+
+Dear Li Hua,
+
+Hi there, I hope you've been doing well.Last night, when I was walking along the road, I happened to hear a familiar melody, that is, the "little star" that we used to listen to when we were children.That gentle melody immediately evoked a lot of good memories for me, especially when we were young and gathered around the tape recorder and listened to the song over and over again. At that time, the time was really simple and happy.
+
+Remember that we are still competing together who can sing the next sentence of the song first, although it is simple, but that fun is now incomparable to high-tech toys."Little Star" is not just a song, it represents our common childhood memories and is very warm every time we hear it.
+
+Don't know if you'll feel the same way when you hear this song?If you have time, I hope we can find a time to get together and relive those good times.
+
+Best,
+
+Wang Ming
+query:Play the children's song mentioned in the email<|im_end|>
+<|im_start|>assistant
+{"name":"Education.ChildrenEducation.playChildSong","parameters":{"song_name":"Little Star"}}<|im_end|>

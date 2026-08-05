@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Luke is spending time at the beach building sandcastles. He eventually notices that each level of a sandcastle will have half the square footage as the level below it. If he makes a 4 leveled sandcastle where the top level has a square footage of 16, what is the average square footage of a level? To find the average, we need to sum the square footage of all levels and divide by the number of levels.
+The top level is given as 16 square feet.
+The next level will be half of that, or 8 square feet.
+The third level will be half of 8, or 4 square feet.
+The bottom level will be half of 4, or 2 square feet.
+So the total square footage is 16+8+4+2=28 square feet.
+There are 4 levels.
+Thus, the average is 28/4=7 square feet.
+The answer is 

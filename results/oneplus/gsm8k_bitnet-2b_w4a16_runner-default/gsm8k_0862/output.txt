@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Claire earns 1 girl scout badge every month.  It takes Amber twice as long to earn a badge than Claire.  Wendy earns three times the amount of badges as Claire in the same time frame.  How many more badges does Wendy earn compared to Amber in a 1 year time frame?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many badges each person earns in one year.
+
+1. Claire earns 1 badge per month. In one year (12 months), she earns:
+   \( 1 \text{ badge/month} \times 12 \text{ months} = 12 \text{ badges} \)
+
+2. Amber takes twice as long as Claire to earn a badge. Since Claire earns 1 badge per month, Amber earns 1 badge per 2 months. In one year, Amber earns:
+   \( \frac{12 \text{ months}}{2 \text{ months/badge

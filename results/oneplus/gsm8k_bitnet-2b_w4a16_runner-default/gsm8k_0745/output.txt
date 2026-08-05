@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Melissa works as a pet groomer. This week, she has 8 dogs that need to be bathed, 5 cats that need their nails clipped, 3 birds that need their wings trimmed, and 12 horses that need to be brushed. If she splits the grooming jobs evenly over the days, how many animals will she groom each day of the week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many animals Melissa will groom each day, we need to add up the total number of animals and then divide by the number of days in a week.
+
+Total animals = 8 dogs + 5 cats + 3 birds + 12 horses
+Total animals = 8 + 5 + 3 + 12
+Total animals = 28
+
+Since there are 7 days in a week, we divide the total number of animals by 7.
+
+Animals per day = Total animals / Number of days
+Animals per day = 28 / 7
+Animals per day = 4
+
+The answer

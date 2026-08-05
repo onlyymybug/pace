@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Four distinct circles are drawn in a plane. What is the maximum number of points where at least two of the circles intersect? To determine the maximum number of points where at least two of the four circles intersect, we need to consider the possible intersections between the circles. Two circles can intersect at most at 2 points. Therefore, we need to find the maximum number of ways to choose pairs of circles from the four circles, and then multiply by the maximum number of intersections per pair.
+
+The number of ways to choose 2 circles from 4 circles is given by the combination formula \(\binom{4}{2}\), which is calculated as follows:
+\[
+\binom{4}{2} = \frac{4!

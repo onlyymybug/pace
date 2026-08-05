@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Apple High School is holding graduation in their Fine Arts Center this year which has space for 6000 people.  After accounting for 950 seats for graduates and 300 seats for faculty attending, how many tickets would each graduate receive to give to their friends and family if the tickets are split equally? Step 1: Calculate total seats available
+Total seats = Seats for graduates + Seats for faculty
+Total seats = 950 + 300
+
+Step 2: Subtract occupied seats from total seats to find available seats
+Available seats = Total seats - Occupying seats
+Occupying seats = Seats for graduates + Seats for faculty
+
+Step 3: Calculate number of tickets each graduate gets
+Tickets per graduate = Available seats / Number of graduates
+Number of graduates = Total seats - Occupying seats
+
+Step 1: Total seats calculation
+Occupying seats = 950 + 300
+Occupying

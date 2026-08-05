@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If every second, a bubbling spring creates a new jellyfish, how many jellyfish would 5 springs working at the same rate create in 4 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many jellyfish each spring creates in one hour and then multiply that by the number of springs and the number of hours.
+
+1. **Jellyfish per spring per hour**: Since every second, a spring creates a jellyfish, in one hour (which is 60 seconds), one spring creates:
+   \[
+   \frac{1 \text{ jellyfish}}{2 \text{ seconds}} \times 60 \text{ seconds} = 30 \text{ jellyfish}
+   \]
+
+2. **Total jellyfish for 5 springs in 4 hours**:

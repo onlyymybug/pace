@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob wants to dig a hole 6 feet long by 4 feet wide by 3 feet deep. If it takes him 3 seconds to shovel a cubic foot of earth, how long will it take him to dig the hole? To find out how long it will take Bob to dig the hole, we need to calculate the volume of of the hole and then multiply that by the time it takes to dig each cubic foot.
+
+1. Calculate the volume of of the hole:
+   - Volume = length × width × height
+   - Volume = 6 ft × 4 ft × 3 ft
+   - Volume = 72 cubic feet
+
+2. Calculate the total time required to dig the hole:
+   - Time = Volume × Time per cubic foot
+   - Time = 72 cubic feet × 3 seconds per cubic foot
+   - Time

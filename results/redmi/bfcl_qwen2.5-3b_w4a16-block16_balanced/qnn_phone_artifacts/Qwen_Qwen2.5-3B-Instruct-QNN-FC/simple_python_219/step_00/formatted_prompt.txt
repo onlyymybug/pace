@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_neuron_coordinates", "description": "Retrieve the coordinates of the specified neuron in the rat's brain. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"neuron_type": {"type": "string", "description": "Type of neuron to find. For instance, GABA, Glutamate, etc."}, "brain_region": {"type": "string", "description": "The region of the brain to consider.", "default": "All"}}, "required": ["neuron_type", "brain_region"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the coordinates of the neuron in a rat's all part of the brain that produces GABA neurotransmitters?<|im_end|>
+<|im_start|>assistant

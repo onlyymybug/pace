@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The ratio of men to women on a bus is 5:9. If the total number of passengers on the bus is 84, and 20 women alight from the bus at the next stop, how many women have remained on the bus? Step 1: Let's denote the number of men as 5x and women as 9x, where x is a common multiplier. Given the ratio 5:9, we can express the total number of passengers as 5x + 9x = 84.
+
+Step 2: Simplify the equation to find x: 14x = 84, so x = 6.
+
+Step 3: Calculate the initial number of women: 9 * x = 9 * 6 = 54 women.
+
+Step 4: Subtract the 20 women who alighted from the total

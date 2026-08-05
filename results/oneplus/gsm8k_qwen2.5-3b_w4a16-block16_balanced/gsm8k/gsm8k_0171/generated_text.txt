@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The marching band is ordering new uniforms. Each uniform comes with a hat that costs $25, a jacket that costs three times as much as the hat, and pants that cost the average of the costs of the hat and jacket. How much does each uniform cost total? Step 1: Calculate the cost of of the jacket.
+Cost ofJacket = 3 * CostOfHat
+CostOfJacket = 3 * 25
+CostOfJacket = 75
+
+Step 2: Calculate the cost of of the pants.
+CostOfPants = (CostOfHat + CostJacket) / 2
+CostOfPants = (25 + 75) / 2
+CostOfPants = 100 / 2
+CostOfPants = 50
+
+Step 3: Calculate the total cost of for one uniform.
+Total

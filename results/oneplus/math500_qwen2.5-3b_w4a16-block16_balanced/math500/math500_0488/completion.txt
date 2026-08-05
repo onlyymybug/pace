@@ -1,0 +1,20 @@
+To determine the modulo 4 remainder of of the sum \(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12\), we can start by finding the sum of of the numbers from 1 to 12 and then find the remainder when this sum is divided by 4.
+
+First, we calculate the sum of of the numbers from 1 to 12. The sum of of the first \(n\) natural numbers is given by the formula:
+\[
+S = \frac{n(n+1)}{2}
+\]
+For \(n = 12\), the sum is:
+\[
+S = \frac{12 \times 13}{2} = 78
+\]
+
+Next, we need to find the remainder when 78 is divided by 4. We perform the division:
+\[
+78 \div 4 = 19 \text{ remainder } 3
+\]
+This can be verified by the equation:
+\[
+78 = 4 \times 19 + 3
+\]
+Thus, the remainder when 78 is divided by 4

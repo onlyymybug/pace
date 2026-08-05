@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.createPatienMedicalRecord","description":"Create a medical record for a new patient","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"Health.HealthManagement.createDietRecord","description":"Create dietary records based on food name, type of meal, etc.","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"}},"required":["food_name","meal_type","time"]}}
+{"name":"Health.Fitness.createExerciseRecord","description":"Create exercise records based on type of exercise, duration of exercise, etc.","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Exercises"},"duration":{"type":"string","description":"Motion Duration"}},"required":["type","duration"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"MusicRadio.RadioStations.radioCreatePlaylist","description":"Create playlist by playlist name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Playlist Name"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Zhang will come to my house for dinner at 7pm this evening. We will discuss the next project plan together, hoping to find the best solution together with Tension. Some of the ideas that Tension put forward before were very constructive, and I am sure that this discussion will also be very helpful.
+query:Create a medical record for the 45-year-old male heart patient mentioned in the notepad.<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.createPatienMedicalRecord","parameters":{"patient_name":"45-year-old male heart patient"}}<|im_end|>

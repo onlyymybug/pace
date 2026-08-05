@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nick is choosing between two jobs. Job A pays $15 an hour for 2000 hours a year, and is in a state with a 20% total tax rate. Job B pays $42,000 a year and is in a state that charges $6,000 in property tax and a 10% tax rate on net income after property tax. How much more money will Nick make at the job with a higher net pay rate, compared to the other job?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much more money Nick will make at the job with a higher net pay rate, we need to calculate the net pay for both jobs and then find the difference.
+
+First, let's calculate the net pay for Job A:
+- Hourly wage for Job A: $15
+- Total hours per year for Job A: 2000 hours
+- Total annual pay for Job A before tax: $15 * 2000 = $30,000
+- Total tax for Job A: 20% of $30,000 = 0.20 * $30,000 = $6,000
+- Net

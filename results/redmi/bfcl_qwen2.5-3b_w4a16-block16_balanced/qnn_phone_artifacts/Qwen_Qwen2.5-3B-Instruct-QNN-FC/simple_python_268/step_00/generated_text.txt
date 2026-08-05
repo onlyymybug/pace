@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sculpture_locator.find_by_artist", "description": "Locate the sculptures of specific artist by material and location Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"artist": {"type": "string", "description": "Name of the Artist of the sculpture"}, "material": {"type": "string", "description": "Material of the sculpture."}, "location": {"type": "string", "description": "The location where you want to find the sculpture. Default is 'all' if not specified."}}, "required": ["artist", "material"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me the sculptures of Michelangelo with material Marble in Rome, Italy.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "sculpture_locator.find_by_artist", "arguments": {"artist": "Michelangelo", "material": "Marble", "location": "Rome, Italy"}}
+</tool_call><|im_end|>

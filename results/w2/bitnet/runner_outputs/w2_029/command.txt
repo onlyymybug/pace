@@ -1,8 +1,0 @@
-/mnt/c/Users/lyyyy/AppData/Local/Microsoft/WinGet/Packages/Google.PlatformTools_Microsoft.Winget.Source_8wekyb3d8bbwe/platform-tools/adb.exe -s 3B15B800A0R00000 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
-export LD_LIBRARY_PATH="$PWD"
-export LD_PRELOAD="$PWD/libc++_shared.so"
-export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
-unset QNN_OP_PACKAGE_PATHS
-./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
-
-Problem: If Michael rolls three fair dice, what is the probability that he will roll at least two 1'"'"'"'"'"'"'"'"'s? Express your answer as a common fraction.'"'"' --system_prompt '"'"''"'"' --seq_len 235 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w2_hybrid_1024/comparison_20260802_223000_w2/w2_029_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/w2_hybrid_1024/comparison_20260802_223000_w2/w2_029_inference_speed.txt'

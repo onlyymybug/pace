@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"MusicRadio.Karaoke.createSingingRoom","description":"Create my studio by the name of the studio","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Karaoke Room Name"}},"required":["name"]}}
+{"name":"OfficeSoftware.Documents.createDocument","description":"Create a new document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"SocialCommunication.InstantMessaging.createGroup","description":"Create a new group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to be created"}},"required":["group_name"]}}
+{"name":"Photography.PhotoEditing.createPictureAlbum","description":"Create an album, specify an album name, and include a photo collection","parameters":{"type":"object","properties":{"name":{"type":"string","description":"New Gallery Name"},"photo_video_list":{"type":"string","description":"Albums contain photos and videos, separated by commas"}},"required":["name","photo_video_list"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, team@ourcompany.com, I'm Li Hua. Regarding next week's project meeting, I would like to confirm whether we are still scheduled for 10am on Tuesday? In addition, I have a few questions about the progress of the project that need to be discussed in this meeting, and I hope to get your feedback. I look forward to your reply, thank you!
+query:Can you help me create a draft email? The recipient is the person mentioned in the text message, the title is "Birthday Party Invitation", and the message is "Dear colleagues, we will hold a small birthday party at the office this Friday night, I hope you can come and join us."<|im_end|>
+<|im_start|>assistant

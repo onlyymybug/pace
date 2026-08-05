@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: An ice cream factory makes 100 quarts of chocolate ice cream in 2 hours.  It can make 50 quarts of vanilla ice cream in 4 hours.  How many quarts in total would be made in 48 hours? To solve this problem, we need to find the production rates for chocolate and vanilla ice cream and then calculate the total production over 48 hours.
+
+1. **Determine the production rates:**
+   - Chocolate ice cream: 100 quarts in 2 hours
+     \[
+     \text{Chocolate production rate} = \frac{100 \text{ quarts}}{2 \text{ hours}} = 50 \text{ quarts/hour}
+     \]
+   - Vanilla ice cream: 50 quarts in 4 hours
+     \[
+     \text{Vanilla

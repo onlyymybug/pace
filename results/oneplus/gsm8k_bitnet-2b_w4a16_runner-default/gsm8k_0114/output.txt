@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ryan plants 2 flowers a day in his garden. After 15 days, how many flowers does he have if 5 did not grow?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of flowers Ryan planted over the 15 days and then subtract the 5 that did not grow.
+
+1. Calculate the total number of flowers planted: 2 flowers/day * 15 days = 30 flowers.
+2. Subtract the 5 flowers that did not grow: 30 flowers - 5 flowers = 25 flowers.
+
+The answer is 25.<|eot_id|>

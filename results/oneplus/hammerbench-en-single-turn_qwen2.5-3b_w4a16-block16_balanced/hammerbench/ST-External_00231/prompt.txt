@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantCustomerSatisfactionRate","description":"Get customer satisfaction data for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friend A: Hey, I'm waiting for you at the Starbucks coffee shop, right next to the window seat, I ordered a latte, you come quickly, the environment here is super awesome, there are not many people, we can chat in a quiet corner.
+query:I want to know how satisfied are customers at the restaurants mentioned in Xiaoming's QQ message to me?<|im_end|>
+<|im_start|>assistant

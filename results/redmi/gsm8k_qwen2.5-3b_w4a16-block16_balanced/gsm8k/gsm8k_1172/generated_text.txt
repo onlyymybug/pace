@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tom has 4 bedrooms in his house.  They measure 20 by 12 feet each.  The living room is 5 times bigger than one bedroom.  The rest of the house is 1000 square feet.  What is the total area, in square feet, of the house? To solve this, we first calculate the area of of one bedroom, then the area of the living room, and finally add the rest of of the house area to get the total area.
+
+Area ofOneBedroom = 20 * 12 = 240 sq ft
+
+AreaofLivingRoom = 5 * AreaOneBedroom = 5 * 240 = 1200 sq ft
+
+TotalAreaOtherParts = 1000 sq ft
+
+TotalAreaHouse = AreaOneBedroom + AreaofLivingRoom + TotalAreaOtherParts
+
+Now we calculate:
+
+TotalAreaHouse =

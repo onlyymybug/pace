@@ -1,5 +1,0 @@
-To solve this problem, we need to determine how many positive integers less than \(10^3\) have an odd number of positive divisors. 
-
-A number has an odd number of positive divisors if and therefore, it must be a perfect square. This is because the divisors of of a number \(n\) come in pairs \((d, \frac{n}{d})\), and for \(n\) to have an odd number of divisors, one of these pairs must be a single divisor (i.e., \(d = \frac{n}{d}\)).
-
-So, we need to count the perfect squares less

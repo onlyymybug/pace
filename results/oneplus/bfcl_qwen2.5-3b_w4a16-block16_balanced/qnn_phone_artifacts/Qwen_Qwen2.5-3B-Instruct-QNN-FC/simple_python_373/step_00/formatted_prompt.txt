@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "walmart.purchase", "description": "Retrieve information of items from Walmart including stock availability. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"loc": {"type": "string", "description": "Location of the nearest Walmart."}, "product_list": {"type": "array", "items": {"type": "string"}, "description": "Items to be purchased listed in an array."}, "pack_size": {"type": "array", "items": {"type": "integer"}, "description": "Size of the product pack if applicable. The size of the array should be equal to product_list. Default is not use it if not specified."}}, "required": ["loc", "product_list"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+I want to buy apples, rice, and 12 pack of bottled water from a Walmart near San Jose. Show me the product information and stock availability.<|im_end|>
+<|im_start|>assistant

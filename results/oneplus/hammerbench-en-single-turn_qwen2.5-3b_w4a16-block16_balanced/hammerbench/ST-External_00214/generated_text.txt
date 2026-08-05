@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.cancelTrainWaitlistOrder","description":"Help the user cancel the specified train ticket standby order","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"commit_date":{"type":"string","description":"Date/time the order was submitted"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["ride_date","commit_date","departure_station","destination_station"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"ConvenientLiving.UtilityPayments.cancelAutoPayment","description":"Cancel automatic payment settings for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"user_address":{"type":"string","description":"User Address"}},"required":["service_type","user_name","user_address"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+{"name":"Health.MedicalServices.cancelDoctorAppointment","description":"Cancelling an appointment with a doctor","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"appointment_time":{"type":"string","description":"Specific time of appointment '"}},"required":["doctor_name","appointment_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends, this weekend we plan to go to Sanlitun, Chaoyang District, Beijing, where there are many fashion shops and specialty restaurants. Are you interested in coming together? We can go to Taikoo Li first. The design style there is very unique. You can go to the gym for a meal in the afternoon. If you have anything you want to eat, you can tell me in advance. I will arrange it.
+query:Can you help me cancel the automatic water and electricity payment setting of Zhang San at the place mentioned in the QQ message sent by Xiao Ming to me?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.UtilityPayments.cancelAutoPayment","parameters":{"service_type":"water_and_electricity","user_name":"Zhang San","user_address":"Sanlitun, Chaoyang District, Beijing","service_provider":"QQ Message sent by Xiao Ming"}}<|im_end|>

@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "board_game.chess.get_top_players", "arguments": {"location": "New York", "minimum_rating": 2300, "number_of_players": 10}}
+</tool_call><|im_end|>

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"Navigation.TrafficViolations.viewTrafficEvent","description":"View notifications about traffic events","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Additional conditions, such as area of occurrence, duration of impact, etc."}},"required":["keyword"]}}
+{"name":"Finance.Stocks.viewStockoperate","description":"Query the stock market on the day of trading; the day of consignment; historical trading; historical consignment; T operation","parameters":{"type":"object","properties":{"transaction_today":{"type":"boolean","description":"Deal of the day Default: 0 No"},"entrust_today":{"type":"boolean","description":"Delegation of the day default: 0 No"},"transaction_his":{"type":"boolean","description":"History Closing Default: 0 No"},"entrust_his":{"type":"boolean","description":"Historical delegation default: 0 No"},"T_operate":{"type":"boolean","description":"T Operation default: 0 No"}},"required":["transaction_today","entrust_today","transaction_his","entrust_his","T_operate"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotPopularity","description":"Get the popularity of selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotList","description":"Search for scenic spots by preference, region, category, etc.","parameters":{"type":"object","properties":{"preference":{"type":"string","description":"User preferences such as family-friendly, couple-friendly, etc."},"region":{"type":"string","description":"Area Names"},"category":{"type":"string","description":"Categories of scenic spots, such as natural landscapes, cultural landscapes, etc."}},"required":["preference","region","category"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 7am, we will meet at the eastern start of the Great Wall to begin our hiking activities. Please be sure to arrive on time and do not be late. Remember to wear comfortable shoes and bring plenty of water.
+query:What is the recent passenger flow to the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.PublicTransit.queryBusRoutes","parameters":{"departure:"EK:Tomorrow morning at 7am departure location","destination":"Great Wall", "preferred_line":"recent passenger flow"}}<|im_end|>

@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are four schools competing at a basketball tournament. Each school has sent a girls’ basketball team and a boys’ basketball team and each team has 5 players each. Each school has also sent a coach for each team. In total, how many people have all of the schools sent? To solve this problem, we need to calculate the total number of individuals from all schools participating in the tournament.
+
+1. Each school has:
+   - 2 teams (one girls' and one boys')
+   - Each team has 5 players
+   - Each team also has 1 coach
+
+2. Therefore, for one school:
+   - Number of of players: 2 teams * 5 players/team = 10 players
+   - Number of of coaches: 2 teams * 1 coach/team = 2 coaches
+
+3. Total number of individuals from one school:
+   - Players: 10
+  

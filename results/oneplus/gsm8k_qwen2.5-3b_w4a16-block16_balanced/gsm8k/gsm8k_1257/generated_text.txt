@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The rainstorm flooded the wetlands and washed Phineas Frog 200 yards away from his home in the swamp.  To return home, he will need to hop and swim his way back.  If he hops on land at a speed of 20 yards per minute, and swims through water at a speed of 10 yards per minute, how long will it take Phineas, in minutes, to return home if half of the distance is on land and the other half is in water? To solve this problem, we need to calculate the time Phineas spends hopping and swimming to return home.
+
+1. **Determine the total distance and split:**
+   - Total distance to return home: 200 yards
+   - Half of the distance on land: 100 yards
+   - Half the distance in water: 100 yards
+
+2. **Calculate the time spent hopping:**
+   - Hopping speed: 20 yards per minute
+   - Time spent hopping: \( \frac{100 \text{ yards}}{20 \text{ yards per minute}}

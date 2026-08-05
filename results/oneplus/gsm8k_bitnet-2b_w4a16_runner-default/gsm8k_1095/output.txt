@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ellen decided to play a prank on her friend. She got a case of 12 sodas and shook 3 of them up. Then she took 1 unshaken soda for herself and left. Ellen's brother stopped by and took 1 of the shaken sodas and 2 of the unshaken sodas, then Ellen's friend came along. What is the likelihood, expressed as a percentage, that Ellen's friend gets sprayed with soda from a shaken can?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the probability that Ellen's friend gets sprayed with soda from a shaken can. Let's break it down step by step:
+
+1. Ellen initially has 12 sodas, out of which 3 are shaken.
+2. Ellen takes 1 unshaken soda for herself, leaving her with 11 sodas in total. Out of these 11, 3 are shaken.
+3. Ellen's brother takes 1 shaken soda and 2 unshaken sodas, leaving Ellen with 10 sodas. Out of these 10, 3 are shaken.
+4. Ellen's friend

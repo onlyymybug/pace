@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Henry and 3 of his friends order 7 pizzas for lunch. Each pizza is cut into 8 slices. If Henry and his friends want to share the pizzas equally, how many slices can each of them have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of pizza slices and then divide that by the number of people sharing them.
+
+1. Calculate the total number of pizza slices:
+   - Each pizza is cut into 8 slices.
+   - There are 7 pizzas.
+   - Total slices = 7 pizzas * 8 slices/pizza = 56 slices.
+
+2. Divide the total number of slices by the number of people:
+   - There are 4 people (Henry and his 3 friends).
+   - Each person gets an equal share of the slices.
+   - Slices per person = Total slices / Number of

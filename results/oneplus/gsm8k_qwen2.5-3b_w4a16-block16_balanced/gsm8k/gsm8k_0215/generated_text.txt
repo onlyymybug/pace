@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jerry has two pools, both with leaks emptying them out at 4 gallons/minute. 4 minutes ago, the big pool had twice as much water as the small pool. Now the big pool has four times as much water as the small pool. How much water does the small pool have now? Let x be the amount of water in the small pool 4 minutes ago.
+
+The big pool had twice as much, so 2x.
+
+Now, the big pool has 2x - 8 gallons (4 minutes * 2 gallons/minute leak).
+
+The small pool has x - 8 gallons (4 minutes * 1 gallon/minute leak).
+
+The big pool now has four times as much as the small pool, so:
+
+2x - 8 = 4(x - 8)
+
+Solving for x:
+
+2x - 8 = 4x - 32 x
+
+-2x = -8

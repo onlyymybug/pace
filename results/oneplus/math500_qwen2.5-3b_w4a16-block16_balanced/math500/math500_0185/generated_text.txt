@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $a,$ $b,$ and $c$ be positive real numbers.  Find the set of all possible values of
+\[\frac{c}{a} + \frac{a}{b + c} + \frac{b}{c}.\] To solve the problem, we need to determine the set of all possible values of of of \(\frac{c}{a} + \frac{a}{b+c} + \frac{b}{c}\) for positive real numbers \(a, b, c\).
+
+1. **Initial Inequality:**
+   We start by noting that for any positive real numbers \(a, b, c\), the following inequality holds:
+   \[
+   \frac{c}{a} + \frac{a}{b+c} + \frac{b}{c} \geq 3 \sqrt[3]{\frac{c}{a} \cdot \frac{a}{b+c} \cdot \frac{b}{c}}
+   \]
+   Simplifying the product inside the cube root:
+   \[
+   \frac{c}{a} \cdot \frac{a}{b+c} \cdot \frac{b}{c} = \frac{c \cdot a \cdot b}{a \cdot (b+c) \cdot c} = \frac{ab}{b+c}
+   \]
+   Since \(a, b, c\) are positive, we have:
+   \[
+   \frac{ab}{b+c

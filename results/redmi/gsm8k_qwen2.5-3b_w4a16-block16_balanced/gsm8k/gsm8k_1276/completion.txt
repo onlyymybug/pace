@@ -1,0 +1,13 @@
+To find the force needed, we first calculate the total weight of of the car and luggage plus the children.
+
+Total weight = weight of of car + weight of luggage + weight of children
+= 1200 + 250 + (75 + 75)
+
+Now, we calculate the force needed, which is 1% of of the total weight.
+
+Force needed = Total weight * 0.01
+
+Let's calculate the total weight and then the force needed.
+```python
+# Calculation
+total_weight = 1200 + 250 + (75 + 75

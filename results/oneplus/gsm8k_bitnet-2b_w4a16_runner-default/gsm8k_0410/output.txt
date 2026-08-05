@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carolyn works for a delivery service company that hires on a contract basis. In May, they hired 40 employees, paying each employee $15 per hour for a 40-hour workweek. In June, 1/4 of the employees' contracts expired. Calculate the total amount of money the company paid to the employees in the two months.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount paid to the employees in May and then adjust for the employees whose contracts expired in June.
+
+1. Calculate the total hours worked by all employees in May:
+   Total hours = Number of employees * Hours per week
+   Total hours = 40 employees * 40 hours/week
+   Total hours = 1600 hours
+
+2. Calculate the total amount paid to all employees in May:
+   Total amount = Total hours * Hourly wage
+   Total amount = 1600 hours * $15/hour
+   Total amount = $24000
+
+3. Determine

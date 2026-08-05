@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A factory used to make tractors, but now makes silos. When they made tractors, they sold 10 tractors a day and made $100 per tractor. Now, they sell 5 silos a day, and make $220 per silo. What percentage more are they making per day now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the percentage increase in production, we first need to calculate the daily production and revenue before and after the factory switched from making tractors to making silos.
+
+Before:
+- Daily production of tractors = 10 tractors
+- Revenue per tractor = $100
+- Total daily revenue from tractors = 10 tractors * $100/tractor = $1000
+
+After:
+- Daily production of silos = 5 silos
+- Revenue per silo = $220
+- Total daily revenue from silos = 5 silos * $220/silo = $1100
+
+Now, we calculate the percentage

@@ -1,0 +1,27 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: There are 360 people in my school.  15 take calculus, physics, and chemistry, and 15 don't take any of them.  180 take calculus.  Twice as many students take chemistry as take physics.  75 take both calculus and chemistry, and 75 take both physics and chemistry.  Only 30 take both physics and calculus.  How many students take physics? Let's define the following variables for the number of students taking each subject:
+- \( C \) for calculus
+- \( P \) for physics
+- \( Ch \) for chemistry
+- \( CP \) for calculus and physics
+- \( PC \) for physics and chemistry
+- \( CC \) for calculus and chemistry
+- \( Cn \) for none of the subjects
+
+Given:
+- \( C = 180 \)
+- \( CC = 75 \)
+- \( CP = 75 \)
+- \( Cn = 15 \)
+- \( CP \cap Cn = 30 \)
+- \( 2CP = PC \)
+- \( 15 \) take all three subjects: \( CP \cap PC \cap Ch = 15 \)
+- Total students: \( C + P + Ch - (CP + PC + CC) + (CP \cap PC \cap Ch) + Cn = 360 \)
+
+We need to find \( P \) (students taking physics).
+
+First, let's express \( PC \) in terms of:
+\[ PC = 2CP \]
+
+Next, we use the principle of of inclusion-exclusion for three sets:

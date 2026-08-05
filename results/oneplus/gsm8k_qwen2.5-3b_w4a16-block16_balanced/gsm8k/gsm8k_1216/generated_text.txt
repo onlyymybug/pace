@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tim enters a competition and has to try and guess the number of red jelly beans in a jar.  The jar has a square base and is 6 inches by 6 inches and 15 inches tall.  He knows that a jelly bean is .15 cubic inches.  He also knows that they get about 80% efficiency in packing.  He estimates 30% of the jelly beans are red.  The true number of red jelly beans in the container is 900.  How far off was his guess? Estimate the difference. The answer is -10.875
+
+To solve this, we first calculate the volume of of the jar, then use the packing efficiency to estimate the total number of jelly beans, and finally apply the percentage of of red jelly beans to find the estimated number of red jelly beans. 
+
+Volume of of the jar: 6*6*15 = 540 cubic inches
+
+Using 80% efficiency in packing, total number of jelly beans: 540 / 0.8 = 675 jelly beans
+
+30% of these are red, estimated number of

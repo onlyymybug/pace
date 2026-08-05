@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A real estate agent has spent $5 on each newspaper ad and spent $75 on each television ad. He bought 50 newspaper ads and 15 television ads. How much did the real estate agent spend on buying all the ads?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount spent, we need to calculate the cost of the newspaper ads and the cost of the television ads separately, then add them together.
+
+First, calculate the cost of the newspaper ads:
+Number of newspaper ads = 50
+Cost per newspaper ad = $5
+Total cost for newspaper ads = Number of newspaper ads × Cost per newspaper ad
+Total cost for newspaper ads = 50 × $5
+Total cost for newspaper ads = $250
+
+Next, calculate the cost of the television ads:
+Number of television ads = 15
+Cost per television ad = $75
+Total cost for television ads = Number of

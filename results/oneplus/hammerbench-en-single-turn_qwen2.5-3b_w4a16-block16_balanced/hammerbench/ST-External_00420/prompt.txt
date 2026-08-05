@@ -1,0 +1,35 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.joinMeeting","description":"Join the specified meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Travel.HotelServices.bookHotel","description":"Book a room at a selected hotel","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"checkin_date":{"type":"string","description":"Check-in Date"},"checkout_date":{"type":"string","description":"DEPARTURE DATE"},"room_type":{"type":"string","description":"Room types"},"tenant_name":{"type":"string","description":"Name of the guest staying"},"tenant_number":{"type":"string","description":"Telephone number of the guest staying at the hotel"}},"required":["name","checkin_date","checkout_date","room_type","tenant_name","tenant_number"]}}
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"UtilityTools.Weather.addCity","description":"Add specified city to weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+{"name":"SocialCommunication.InstantMessaging.addContact","description":"Add New Contact","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Contact person"},"phone":{"type":"string","description":"Cellphone"}},"required":["name","phone"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Notice of April 15th Project Progress Meeting
+
+Dear Team Member,
+
+Hello!
+
+In order to ensure that the project progresses as planned, we will hold a project progress meeting on April 15, 2023 at 10:00 a.m. in Conference Room B.This session will focus on the current progress of the project, issues encountered and the organization of work for the next phase.Please make sure your team members are on time and have relevant debriefing materials ready in advance.
+
+If you have any questions, please do not hesitate to contact me.
+
+Good luck with your work!
+
+Sincerely,
+
+Salute
+
+Project Management Department  
+Zhang Hua  
+April 10, 2023
+query:I would like to book a luxury suite at the Hilton Hotel. The check-in time is the time mentioned in the email. The check-out time is April 20. The booker is Li Si.<|im_end|>
+<|im_start|>assistant

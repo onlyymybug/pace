@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jim decides to go to college to earn some more money.  It takes him 4 years to finish and he gets $50,000 in loans per year.  If he had a 25k a year job before college and his college degree tripled his income, how long would it take to earn the money equivalent to the loans and the money lost from not working while in school.  Answer should be in years.
+To solve this, first calculate the total amount Jim borrowed for college, then determine the total income he would have after college, and finally, calculate how long it would take for him to earn that amount.
+
+Total amount borrowed: 4 years * $50,000/year = $200,000
+
+After college, his income is tripled, so 3 * $50,000/year = $150,000/year
+
+Before college, he earned $25,000/year
+
+So after college, his total income is

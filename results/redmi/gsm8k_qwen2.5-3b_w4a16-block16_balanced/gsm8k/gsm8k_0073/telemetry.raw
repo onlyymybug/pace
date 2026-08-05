@@ -1,0 +1,2262 @@
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835162798
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=46.3, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=46.3, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=45.9, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.863, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=50.7, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=46.1, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.044, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.151, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=50.3, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=45.9, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=46.5, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=21712
+rss_kb=16460
+__PACE_TS_END__=1785835162840
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835163379
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=45.5, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=45.9, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.87, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=46.1, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.054, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.151, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=46.9, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=96816
+rss_kb=86644
+__PACE_TS_END__=1785835163420
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835163965
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=45.5, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=45.5, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.876, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.093, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.139, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=50.3, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=222456
+__PACE_TS_END__=1785835164010
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835164571
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=50.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=50.9, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=49.8, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=50.9, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=52.5, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.876, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=51.7, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=46.5, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.122, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.126, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=52.1, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=46.5, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835164624
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835165184
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=51.3, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=51.7, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=50.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=52.1, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.87, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=46.9, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.132, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=45.9, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.128, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835165241
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835165794
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=52.1, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=52.5, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=51.7, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=52.5, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.87, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.116, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.132, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=54.8, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835165841
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835166392
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=52.5, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.1, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=53.2, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.851, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=54.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.102, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.134, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835166441
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835166993
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=52.5, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.5, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=53.2, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.844, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=53.2, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.059, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.151, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835167047
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835167606
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=52.9, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=53.2, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.838, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.103, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.127, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835167660
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835168209
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=52.9, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.826, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.129, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.126, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=56.0, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835168266
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835168819
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=56.3, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.819, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=54.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.043, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.147, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835168875
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835169428
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.819, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.099, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.131, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=54.8, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835169479
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835170025
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=55.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.826, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.097, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.136, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835170076
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835170630
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=52.9, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=56.0, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.826, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.114, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.139, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=50.3, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=49.4, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835170678
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835171228
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=53.2, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=56.3, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.832, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.131, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.128, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=56.0, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=49.4, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835171279
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835171830
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=53.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=54.0, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=53.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=54.4, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=56.0, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.832, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=55.6, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=48.2, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.13, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.126, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=48.6, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=56.3, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=49.0, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.8, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+pid=15889
+vmhwm_kb=1087184
+rss_kb=68048
+__PACE_TS_END__=1785835171879
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835172439
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=48.2, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=48.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.851, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.016, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.158, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.9, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=47.8, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+__PACE_TS_END__=1785835172475
+__PACE_SAMPLE_END__
+__PACE_SAMPLE_BEGIN__
+__PACE_TS_BEGIN__=1785835172502
+IsStatusOverride: false
+ThermalEventListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+ThermalStatusListeners:
+	callbacks: 4
+	killed: false
+	broadcasts count: -1
+Thermal Status: 0
+Cached temperatures:
+	Temperature{mValue=31.3, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.6, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=44.0, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=45.1, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=44.4, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=43.6, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=44.8, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=45.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=-0.202, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=42.8, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=43.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=43.6, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=37.072, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=0.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=3.51, mType=6, mName=vbat, mStatus=0}
+HAL Ready: true
+HAL connection:
+	ThermalHAL AIDL 3  connected: yes
+Current temperatures from HAL:
+	Temperature{mValue=47.8, mType=9, mName=nsp6, mStatus=0}
+	Temperature{mValue=48.2, mType=9, mName=nsp5, mStatus=0}
+	Temperature{mValue=47.5, mType=9, mName=nsp4, mStatus=0}
+	Temperature{mValue=47.5, mType=9, mName=nsp3, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp1, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU6, mStatus=0}
+	Temperature{mValue=46.7, mType=1, mName=GPU4, mStatus=0}
+	Temperature{mValue=38.6, mType=2, mName=battery, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU2, mStatus=0}
+	Temperature{mValue=40.844, mType=3, mName=skin, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU5, mStatus=0}
+	Temperature{mValue=20.0, mType=8, mName=socd, mStatus=0}
+	Temperature{mValue=49.2, mType=0, mName=CPU4, mStatus=0}
+	Temperature{mValue=47.5, mType=9, mName=nsp0, mStatus=0}
+	Temperature{mValue=47.3, mType=0, mName=CPU6, mStatus=0}
+	Temperature{mValue=47.1, mType=1, mName=GPU5, mStatus=0}
+	Temperature{mValue=0.007, mType=7, mName=ibat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU2, mStatus=0}
+	Temperature{mValue=46.3, mType=1, mName=GPU3, mStatus=0}
+	Temperature{mValue=4.161, mType=6, mName=vbat, mStatus=0}
+	Temperature{mValue=48.4, mType=0, mName=CPU1, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU0, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU1, mStatus=0}
+	Temperature{mValue=49.6, mType=0, mName=CPU0, mStatus=0}
+	Temperature{mValue=47.8, mType=9, mName=nsp2, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU7, mStatus=0}
+	Temperature{mValue=47.5, mType=1, mName=GPU7, mStatus=0}
+	Temperature{mValue=48.0, mType=0, mName=CPU3, mStatus=0}
+Current cooling devices from HAL:
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-2}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-4}
+	CoolingDevice{mValue=0, mType=5, mName=cdsp_hw}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu0}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-8}
+	CoolingDevice{mValue=0, mType=1, mName=battery}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-20}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-1}
+	CoolingDevice{mValue=3, mType=5, mName=cdsp}
+	CoolingDevice{mValue=0, mType=2, mName=cpufreq-cpu6}
+	CoolingDevice{mValue=1, mType=3, mName=gpu}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-80}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-10}
+	CoolingDevice{mValue=0, mType=2, mName=thermal-pause-40}
+	CoolingDevice{mValue=0, mType=9, mName=display-fps}
+Temperature static thresholds from HAL:
+	TemperatureThreshold{mType=9, mName=nsp6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=2, mName=battery, mHotThrottlingThresholds=[NaN, NaN, NaN, 80.0, NaN, NaN, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=3, mName=skin, mHotThrottlingThresholds=[NaN, 53.0, 54.0, 55.0, 60.0, 61.0, 90.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=8, mName=socd, mHotThrottlingThresholds=[NaN, NaN, NaN, 90.0, NaN, NaN, 99.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU4, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU6, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU5, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=7, mName=ibat, mHotThrottlingThresholds=[NaN, NaN, NaN, 13.5, NaN, NaN, 15.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=6, mName=vbat, mHotThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN], mColdThrottlingThresholds=[NaN, NaN, NaN, 3.2, NaN, NaN, 3.0]}
+	TemperatureThreshold{mType=0, mName=CPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU1, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU0, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=9, mName=nsp2, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=1, mName=GPU7, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+	TemperatureThreshold{mType=0, mName=CPU3, mHotThrottlingThresholds=[NaN, NaN, NaN, 105.0, NaN, NaN, 125.0], mColdThrottlingThresholds=[NaN, NaN, NaN, NaN, NaN, NaN, NaN]}
+Temperature headroom thresholds:
+[NaN, 0.93333334, 0.96666664, 1.0, 1.1666666, 1.2, 2.1666667]
+__PACE_MEMORY__
+__PACE_TS_END__=1785835172538
+__PACE_SAMPLE_END__

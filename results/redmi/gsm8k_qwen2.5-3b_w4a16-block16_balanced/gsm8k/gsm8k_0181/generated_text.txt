@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two candidates are running for class representative at Sarai's school. If the winner got 3/4 of the votes and the total number of students who voted in the class was 80, calculate the number of votes the loser got. To solve this problem, we first need to calculate the number of votes the winner received. Given that the winner got 3/4 of the votes, we can calculate this as follows:
+
+Votes for winner = Total votes * Fraction for winner
+               = 80 * 3/4
+               = 60
+
+Since the total number of votes is 80 and the winner received 60 votes, the remaining votes must have gone to the loser. Therefore, the number of votes the loser received is:
+
+Votes for loser = Total votes - Votes for winner
+              = 80 - 60
+             

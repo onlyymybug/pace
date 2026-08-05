@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.openSystemMessage","description":"Read system text messages with the specified number","parameters":{"type":"object","properties":{"message_number":{"type":"string","description":"The incoming code of the system SMS to be read"}},"required":["message_number"]}}
+{"name":"SystemTools.SystemSettings.setSystemScreenTimeout","description":"Set the auto message screen time for your phone screen","parameters":{"type":"object","properties":{"timeout_duration":{"type":"integer","description":"Maximum duration of screen inactivity, in seconds"}},"required":["timeout_duration"]}}
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotOpeningHours","description":"Get opening hours for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We went to The Palace Museum together over the weekend and witnessed the exquisite palaces and long history. At the moment of the noon gate, I was deeply attracted by the magnificent architecture. I walked on the square in front of the Taihe Hall, and each step seemed to tread on the long river of history. If you are also interested in this place, we can go together next time.
+query:What are the opening hours of the locations mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,23 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $z$ be a complex number such that
+\[z + \frac{1}{z} = \frac{1 + \sqrt{5}}{2}.\]Find
+\[z^{85} + \frac{1}{z^{85}}.\] To solve the given problem, we start by analyzing the given equation involving the complex number \( z \):
+
+\[ z + \frac{1}{z} = \frac{1 + \sqrt{5}}{2}. \]
+
+This equation resembles the form of of the golden ratio, \(\phi = \frac{1 + \sqrt{5}}{2}\). Let's denote \(\phi = \frac{1 + \sqrt{5}}{2}\). Then the equation becomes:
+
+\[ z + \frac{1}{z} = \phi. \]
+
+We know that if \( z \) satisfies this equation, then \( z \) must be a root of of of the quadratic equation:
+
+\[ x^2 - \phi x + 1 = 0. \]
+
+Solving this quadratic equation using the quadratic formula \( x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \):
+
+\[ x = \frac{\phi \pm \sqrt{\phi^2 - 4}}{2}. \]
+
+Since \(\phi = \frac{1 + \sqrt{5}}{2}\), we calculate \(\phi^2\):
+
+\[ \phi^2 =

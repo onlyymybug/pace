@@ -1,0 +1,46 @@
+To solve the given problem, we start with the first equation:
+
+\[
+\log_6 (x-y) + \log_6 (x+y) = 2
+\]
+
+Using the properties of of logarithms, specifically the product rule \(\log_b (a) + \log_b (c) = \log_b (ac)\), we can combine the logarithms on the left-hand side:
+
+\[
+\log_6 \left((x-y)(x+y)\right) = 2
+\]
+
+This implies:
+
+\[
+(x-y)(x+y) = 6^2
+\]
+
+Simplifying the right-hand side:
+
+\[
+(x-y)(x+y) = 36
+\]
+
+We recognize that \((x-y)(x+y)\) can be rewritten as \(x^2 - y^2\):
+
+\[
+x^2 - y^2 = 36
+\]
+
+Next, we consider the second equation:
+
+\[
+\log_y (5x) = 2
+\]
+
+This implies:
+
+\[
+5x = y^2
+\]
+
+We now have two equations:
+
+1. \(x^2 - y^2 = 36\)
+2. \(5x =

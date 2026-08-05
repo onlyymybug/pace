@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "identify_bird", "description": "Identify a bird species based on certain characteristics. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"color": {"type": "string", "description": "Color of the bird."}, "habitat": {"type": "string", "description": "Habitat of the bird."}, "size": {"type": "string", "enum": ["small", "medium", "large"], "description": "Size of the bird. Default is 'small'"}}, "required": ["color", "habitat"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Identify a small green bird in forest.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "identify_bird", "arguments": {"color": "green", "habitat": "forest"}}
+</tool_call><|im_end|>

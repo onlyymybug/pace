@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Richard wants to make a video to share online of him doing a science experiment that creates a fountain of diet soda after placing a specific branded candy inside it. Richard's driveway is 24 feet wide and he wants to put a bottle of soda every 3 feet of the driveway. After starting at the first bottle, it will take Richard 5 seconds to go from one soda bottle to the next, dropping the candy in. How many seconds total will it take Richard to set off all the soda fountains? To solve this problem, we need to determine the total number of soda bottles Richard will place along his driveway and then calculate the total time required to place all the bottles.
+
+1. **Determine the number of soda bottles:**
+   - Richard's driveway is 24 feet wide.
+   - He places a bottle every 3 feet.
+   - Number of bottles = Total width / Distance between bottles
+   - Number of bottles = 24 / 3 = 8 bottles
+
+2. **Calculate the total time:**
+   - It takes 5 seconds to place each bottle.
+   - Total time = Number of bottles

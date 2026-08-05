@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marcus is trying to decide whether he really needs to do his homework. There's a 50% chance that tomorrow he'll have a substitute teacher who won't collect the homework. Even if the normal teacher comes in, there's a 40% chance she'll give everyone an extension. Even if the whole class doesn't get an extension, there's a 20% chance Marcus can convince the teacher his dog ate his assignment and get a personal extension. What is the percentage chance that Marcus will actually have to turn in his homework tomorrow?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the overall chance that Marcus will have to turn in his homework, we need to multiply the probabilities of each scenario that leads to him not having to do his homework.
+
+1. The normal teacher gives an extension: 40%
+2. Marcus convinces the teacher his dog ate the homework: 20%
+3. The normal teacher doesn't give an extension: 60% (since there's a 60% chance the normal teacher doesn't give an extension)
+
+The chance Marcus will not have to do his homework is the product of these probabilities:
+
+0.4 (normal teacher gives an extension) * 0.2 (

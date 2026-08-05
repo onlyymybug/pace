@@ -1,7 +1,0 @@
-{"action":"type_text","arguments":{"replace_existing":true,"text":"billing address"}} To normalize the user's request for the function call:
-
-```json
-{"action":"type_text","arguments":{"replace_existing":true,"text":"shipping address"}}
-```
-
-However, it seems there's a misunderstanding in the request as the user wants to type "billing address" but the provided text is "shipping address". Since the request is to type "billing address" and not "shipping

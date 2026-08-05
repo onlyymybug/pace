@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotTourGuide","description":"Get information about guided tours of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"ConvenientLiving.GovernmentServices.searchServiceByName","description":"Search for relevant city services based on the service name entered","parameters":{"type":"object","properties":{"service_name":{"type":"string","description":"Name of service to search"}},"required":["service_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getRealEstateAgencyInfo","description":"Get contact info for a real estate agent","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+{"name":"Finance.Insurance.contactInsuranceAgent","description":"Get contact details for your insurance agent","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Plan to meet at the foot of the Great Wall tomorrow morning at 8am to prepare for our hike. Enter through the north gate and head all the way to Haohanpo. Remember to bring water, food, and comfortable shoes. Hopefully it will be sunny and have a good day.
+query:I would like to know the guide service information of the places mentioned in the notepad, can you check it for me?<|im_end|>
+<|im_start|>assistant

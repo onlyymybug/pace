@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $\mathbf{a} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix},$ then find the vector $\mathbf{v}$ such that $\mathbf{a} \cdot \mathbf{v} = 2$ and $\mathbf{a} \times \mathbf{v} = \begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}.$
+To solve for the vector \(\mathbf{v}\) such that \(\mathbf{a} \cdot \mathbf{v} = 2\) and \(\mathbf{a} \times \mathbf{v} = \begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}\), we start by letting \(\mathbf{v} = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\).
+
+First, we use the given dot product condition:
+\[
+\mathbf{a} \

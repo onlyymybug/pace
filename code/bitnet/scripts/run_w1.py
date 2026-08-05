@@ -45,12 +45,18 @@ def adb_base() -> list[str]:
     return command
 
 
-def adb(*args: str, check: bool = True, capture_output: bool = False) -> subprocess.CompletedProcess[str]:
+def adb(
+    *args: str,
+    check: bool = True,
+    capture_output: bool = False,
+    timeout: float | None = None,
+) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
         [*adb_base(), *args],
         check=check,
         text=True,
         capture_output=capture_output,
+        timeout=timeout,
     )
 
 
@@ -91,7 +97,7 @@ def parse_observer(log_text: str) -> dict[str, Any]:
         return {}
 
 
-def stream_process(command: list[str], log_path: Path) -> int:
+def stream_process(command: list[str], log_path: Path, telemetry: Any = None) -> int:
     with log_path.open("w", encoding="utf-8") as log:
         process = subprocess.Popen(
             command,
@@ -100,12 +106,18 @@ def stream_process(command: list[str], log_path: Path) -> int:
             text=True,
             bufsize=1,
         )
-        assert process.stdout is not None
-        for line in process.stdout:
-            print(line, end="", flush=True)
-            log.write(line)
-            log.flush()
-        return int(process.wait())
+        if telemetry is not None:
+            telemetry.start()
+        try:
+            assert process.stdout is not None
+            for line in process.stdout:
+                print(line, end="", flush=True)
+                log.write(line)
+                log.flush()
+            return int(process.wait())
+        finally:
+            if telemetry is not None:
+                telemetry.stop()
 
 
 def write_summary(path: Path, rows: list[dict[str, Any]]) -> None:
@@ -154,7 +166,7 @@ def main() -> int:
     max_seq_len = int(required_env("MAX_SEQ_LEN"))
     target_output_tokens = int(required_env("TARGET_OUTPUT_TOKENS"))
     run_id = args.run_id or datetime.now().strftime("%Y%m%d_%H%M%S")
-    result_dir = root / "results" / run_id
+    result_dir = Path(required_env("RESULTS_ROOT")).resolve() / run_id
     result_dir.mkdir(parents=True, exist_ok=False)
 
     samples = load_samples(dataset_path)
@@ -346,4 +358,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

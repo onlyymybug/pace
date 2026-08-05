@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The set of vectors $\mathbf{v}$ such that
+\[\operatorname{proj}_{\begin{pmatrix} 2 \\ 1 \end{pmatrix}} \mathbf{v} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\]lie on a line.  Enter the equation of this line in the form "$y = mx + b$". To solve the problem, we need to understand the projection of operation and the given condition. The projection of of a vector \(\mathbf{v}\) onto a vector \(\mathbf{a}\) is given by:
+
+\[
+\operatorname{proj}_{\mathbf{a}} \mathbf{v} = \frac{\mathbf{v} \cdot \mathbf{a}}{\mathbf{a} \cdot \mathbf{a}} \mathbf{a}
+\]
+
+Here, \(\mathbf{a} = \begin{pmatrix} 2 \\ 1 \end{pmatrix}\). The condition given is:
+
+\[
+\operatorname{proj}_{\begin{pmatrix} 2 \\ 1 \end{pmatrix}} \mathbf{v} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}
+\]
+
+This implies:
+
+\[
+\frac{\mathbf{v} \cdot \begin{pmatrix} 2 \\ 1 \end{pmatrix}}{\begin{pmatrix} 2 \\ 1 \end{pmatrix} \cdot \begin{pmatrix} 2 \\ 1 \end{pm

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.applyForVisa","description":"Submit Visa Application","parameters":{"type":"object","properties":{"passport_number":{"type":"string","description":"Pasaport No."}},"required":["passport_number"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForEducationGrant","description":"Submit an application for an education grant","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Applicant, default user self"},"school":{"type":"string","description":"Schools"}},"required":["name","school"]}}
+{"name":"Navigation.TrainTickets.addTrainWaitlistOrder","description":"User submits train ticket standby order","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Number of trips to book; select all by default, up to 6"},"passenger_name":{"type":"string","description":"Rider's name"},"passenger_id":{"type":"string","description":"Rider ID number"},"ride_date":{"type":"string","description":"Trip date in YYYY-MM-DD format"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"seat_type":{"type":"string","description":"Seat Type"}},"required":["train_number","passenger_name","passenger_id","ride_date","departure_station","destination_station","seat_type"]}}
+{"name":"OfficeSoftware.Documents.applyDocumentTemplate","description":"Apply a template to the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to apply template, required"},"template_name":{"type":"string","description":"Template name to apply, required"}},"required":["document_name","template_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForBusinessLicense","description":"Apply for a business license online","parameters":{"type":"object","properties":{"business_name":{"type":"string","description":"Name of the Enterprise"},"name":{"type":"string","description":"Objects that contain information about the business owner, such as name, ID number, etc."},"id_card":{"type":"string","description":"ID No."}},"required":["business_name","name","id_card"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, your previous passport number was B87654321. You need to confirm whether this information is correct. If you need to update or go through new procedures, please contact me in time, this can help you speed up the process.
+query:Little assistant, I need to submit an application for a student visa. The ID number is mentioned in the WeChat message Xiao Li sent me. Can you confirm it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.applyForVisa","parameters":{"passport_number":"B87654321"}}<|im_end|>

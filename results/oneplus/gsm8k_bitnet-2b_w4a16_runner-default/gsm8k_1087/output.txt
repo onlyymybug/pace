@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marcel runs a bicycle store. His main products are three types of bikes: MTB, BMX, and Trekking. The price of one MTB is $500, BMX is half the price of an MTB, and a Trekking bike is $450. In one month, Marcel sold a total of 300 bikes among the types listed. Half of them were Trekking bikes, and 15% were BMX bikes. The rest of the sold bikes were MTB type. How much did Marcel earn from selling bicycles during that month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the number of each type of bike sold. We know that half of the bikes were Trekking, so Marcel sold 300 / 2 = 150 Trekking bikes. We also know that 15% of the bikes were BMX, so Marcel sold 300 * 0.15 = 45 BMX bikes. The remaining bikes were MTB, so Marcel sold 300 - 150 - 45 = 105 MTB bikes.
+
+Next, we calculate the total earnings from each type of bike. The Trekking bikes sold for $450 each, so Marcel earned 150 *

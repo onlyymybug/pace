@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "historic_leader_search", "description": "Retrieve information about a historical leader given a location and date. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The country or region in question."}, "date": {"type": "integer", "description": "The year being queried."}, "title": {"type": "string", "description": "The official title of the position. Default is 'King'."}}, "required": ["location", "date"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who was the King of France in 1510?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "historic_leader_search", "arguments": {"location": "France", "date": 1510, "title": "King"}}
+</tool_call><|im_end|>

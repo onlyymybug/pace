@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tom's restaurant gets 6 reservations a night.  They normally order 2 meals that cost $5 each and a $5 bottle of wine.  How much do they make a week if they are open 2 days a week? Step 1: Calculate nightly earnings
+- Meals cost: $5 each
+- Bottle of wine cost: $5
+- Total cost per night: $5 + $5 = $10
+
+Step 2: Calculate total nightly earnings
+- Reservations per night: 6
+- Total cost per night: $10
+- Total nightly earnings: 6 * (5 + 5) = 6 * 10 = $60
+
+Step 3: Calculate weekly earnings
+- Nights open per week: 2
+- Total weekly earnings: $60 * 2 = $120

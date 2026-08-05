@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total meters James runs a week, we need to multiply the number of sprints he runs per week by the distance he runs per sprint.
+
+James runs 3 sprints per week, and each sprint is 60 meters.
+
+Total meters per week = Number of sprints per week × Distance per sprint
+Total meters per week = 3 × 60
+Total meters per week = 180
+
+The answer is 180.<|eot_id|>

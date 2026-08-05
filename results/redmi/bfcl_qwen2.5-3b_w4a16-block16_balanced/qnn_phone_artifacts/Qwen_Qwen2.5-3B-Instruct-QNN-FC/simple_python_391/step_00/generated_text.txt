@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_exchange_rate_with_fee", "description": "Retrieve the exchange rate between two currencies including transaction fee. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base_currency": {"type": "string", "description": "The base currency."}, "target_currency": {"type": "string", "description": "The target currency."}, "fee": {"type": "float", "description": "The transaction fee in percentage. Default is 0%."}}, "required": ["base_currency", "target_currency", "fee"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get the exchange rate from British pounds to Japanese yen with the fee 0.02 included.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_exchange_rate_with_fee", "arguments": {"base_currency": "GBP", "target_currency": "JPY", "fee": 0.02}}
+</tool_call><|im_end|>

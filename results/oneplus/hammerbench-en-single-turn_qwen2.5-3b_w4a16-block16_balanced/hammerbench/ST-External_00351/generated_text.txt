@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+{"name":"UtilityTools.Calendar.addCalendarschedule","description":"Create a new schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"OfficeSoftware.Documents.createDocument","description":"Create a new document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"SocialCommunication.InstantMessaging.createGroup","description":"Create a new group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to be created"}},"required":["group_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Xiao Li, Thank you for your help in the project last Saturday (October 7), your support is really important to me. As a token of my gratitude, I have prepared a thank you letter and a small gift that I intend to give you this Friday (October 13th) at 4pm. I hope you like it! If it's convenient, see you that day! Thank you ~
+query:Help me create a schedule for the Teacher's Day Thanksgiving event. The time is from 3 pm to 5 pm on September 10. An hour before the event, I was reminded that this time was mentioned by Xiao Ming in the QQ message.<|im_end|>
+<|im_start|>assistant
+{"name":"Fully.Qualified.Tool.Name":"UtilityTools.Calendar.addCalendarschedule","parameters":{"parameters":{"date_name":"Teacher's Day Thanksgiving event","start_date":"18:00","end_date":"18:00","schedule":"Don't remind me an hour before the event"}}}<|im_end|>

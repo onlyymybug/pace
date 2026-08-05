@@ -1,0 +1,28 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.LiveStreaming.playLiveStream","description":"Watch livestream (name of livestream blogger, key content of livestream; barrage/comment; share livestream link, gift giving, etc.)","parameters":{"type":"object","properties":{"livestream_name":{"type":"string","description":"Livestream Name"},"streamer_name":{"type":"string","description":"Broadcaster Name"},"channel_name":{"type":"string","description":"Channel name"}},"required":["livestream_name","streamer_name","channel_name"]}}
+{"name":"NewsMagazines.News.getLiveNews","description":"Get information about live news as specified by the user","parameters":{"type":"object","properties":{"channel":{"type":"string","description":"Live Channels"}},"required":["channel"]}}
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"Navigation.FlightTickets.searchFlight","description":"Find tickets for specific dates","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Trip start time"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"type":{"type":"string","description":"One-way, round-trip, multi-trip"},"site_type":{"type":"string","description":"Economy, Business"}},"required":["date","departure","destination","type","site_type"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.For your upcoming business trip in Bangkok, we have booked you a Shangri-La Hotel located in the heart of the city at 22/22 Thanon Wireless, Pathum Wan, Bangkok 10330, Thailand.Not only is the hotel strategically located in close proximity to several important business districts and tourist attractions, it also offers a full range of services and facilities to ensure a comfortable and enjoyable stay.
+
+In addition, we have arranged a transfer service from Bangkok Suvarnabhumi International Airport to the hotel, the pick-up time will be adjusted according to your flight time, please let us know your flight details at least 24 hours in advance so that we can make the appropriate arrangements.If you need any extra help during your stay in Bangkok, be it a business meeting or a tourist inquiry, feel free to contact our customer service team.
+
+We wish you a smooth trip in Bangkok and look forward to welcoming you!
+
+Sincerely,
+Salute
+
+[Your company name] Support Team
+query:Check next year's Spring Festival business class round-trip tickets from Beijing to the location mentioned in the email.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The vending machines sell chips for 40 cents and candy bars for 75 cents. George spent $5 and got 3 bags of chips and had 1% of his money left. How many candy bars did he buy? Step 1: Calculate the total cost of of 3 bags of of chips: 40 cents per bag * 3 bags = 120 cents
+Step 2: Calculate the remaining money after buying chips: $5 - (120 cents) = $4.88
+Step 3: Calculate the percentage of money left: 1%
+Step 4: Calculate the total money spent on candy bars: $4.88 / 100 = $0.488
+Step 5: Calculate the number of candy bars bought: $0.488 / $0

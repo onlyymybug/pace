@@ -1,0 +1,10 @@
+To solve this problem, we need to determine the probability that the checker is placed on a shaded square after the two numbers are divided and the results are used to find the corresponding row and column on the checkerboard.
+
+First, let's analyze the division results and their corresponding rows and columns:
+
+1. **First Number Division by 4:**
+   - \(0 \mod 4 = 0\)
+   - \(1 \mod 4 = 1\)
+   - \(2 \mod 4 = 2\)
+   - \(3 \mod 4 = 3\)
+   - \(4 \mod 

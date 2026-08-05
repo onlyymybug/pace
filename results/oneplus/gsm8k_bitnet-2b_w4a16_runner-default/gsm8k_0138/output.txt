@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rory orders 2 subs for $7.50 each, 2 bags of chips for $1.50 each and 2 cookies for $1.00 each for delivery.  There’s a 20% delivery fee added at check out and she wants to add a $5.00 tip.  What will her delivery order cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost of Rory's order, we first calculate the cost of each type of item:
+
+- Cost of 2 subs: \(2 \times 7.50 = 15.00\)
+- Cost of 2 bags of chips: \(2 \times 1.50 = 3.00\)
+- Cost of 2 cookies: \(2 \times 1.00 = 2.00\)
+
+Next, we add these costs together to get the subtotal:
+
+\[15.00 + 3.00 + 2.00 = 20.00\]
+
+Then, we calculate the

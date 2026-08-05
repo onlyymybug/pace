@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mike was a pen pal with 5 people.  He stopped being penpals with 2 of them.  They each send 2 letters a week that are 5 pages long.  He responds in kind.  He can write a page every 6 minutes.  How many hours does he spend writing a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of pages Mike writes and then convert that into hours.
+
+1. Mike stops being penpals with 2 people, so he is left with 5 - 2 = 3 penpals.
+2. Each penpal sends 2 letters a week, so Mike writes 3 * 2 = 6 letters a week.
+3. Each letter is 5 pages long, so Mike writes 6 * 5 = 30 pages a week.
+4. Mike can write a page every 6 minutes. To find out how many minutes it takes him to write

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John buys 10 bottles of scotch for a total cost of $600.  He also buys twice as many bottles of cognac that cost 50% more per bottle.  How much does he spend on everything? Step 1: Calculate cost per bottle of scotch
+cost per bottle scotch = total cost / number of bottles
+cost per bottle scotch = 600 / 10
+cost per bottle scotch = 60
+
+Step 2: Calculate cost per bottle of cognac
+cost per bottle cognac = cost per bottle scotch * 1.5
+cost per bottle cognac = 60 * 1.5
+cost per bottle cognac = 90
+
+Step 3: Calculate total cost for bottles of cognac
+total cost cognac = cost per bottle cognac *

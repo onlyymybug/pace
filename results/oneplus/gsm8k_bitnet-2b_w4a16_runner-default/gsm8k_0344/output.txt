@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In his training as a professional athlete, Tyson runs 5000 meters every day. His coach, however, wants him to run 1/5 times more meters in a day. If he took the coach's advice and trained for a month, what is the total distance he covered in June?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total distance Tyson covered in June, we first need to determine how much more he runs each day after his coach's advice. Since he runs 1/5 times more, we calculate this as follows:
+
+Additional distance per day = (1/5) * 5000 meters
+Additional distance per day = 1000 meters
+
+Now, we add this additional distance to the original daily distance:
+
+Total distance per day after advice = Original distance + Additional distance
+Total distance per day after advice = 5000 meters + 1000 meters
+Total distance per day after advice = 6000 meters
+
+Since June has

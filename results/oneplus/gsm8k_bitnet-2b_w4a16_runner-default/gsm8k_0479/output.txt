@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A company decided to take its employees on a tour to explore an ancient site. The employees were divided into 3 groups of 200 employees. Each group was assigned 7 tour guides. How many is the total number of people going on this tour?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of people going on the tour, we need to multiply the number of groups by the number of tour guides in each group.
+
+Number of groups = 3
+Number of tour guides per group = 7
+
+Total number of people = Number of groups × Number of tour guides per group
+Total number of people = 3 × 7
+Total number of people = 21
+
+The answer is 21.<|eot_id|>

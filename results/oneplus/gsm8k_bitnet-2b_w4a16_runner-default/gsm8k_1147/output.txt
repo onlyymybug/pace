@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adam has $100 and wants to spend it to open a rock stand. He can buy rocks for $5 each and sell them for $7 each. If he invests all his money in the rock stand but only sells 60% of his inventory, how much money does he lose?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how much money Adam loses by not selling all of his inventory.
+
+First, let's calculate how much money Adam would make if he sold all of his rocks. Since each rock costs $5 and he has $100, he can buy 20 rocks. If he sells each rock for $7, he would make:
+20 rocks * $7/rock = $140
+
+Now, let's calculate how much money Adam would make if he sold 60% of his inventory. He bought 20 rocks, so he would sell:
+20 rocks * 60% = 12 rocks
+
+If

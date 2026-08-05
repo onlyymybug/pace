@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maggie's oven is malfunctioning. When she sets it to 450 the actual temperature is 468. If it's off by the same percentage for any recipe, what temperature should she set it at if her recipe calls for 520 degrees? To solve this, we first find the percentage error in the oven's readings. 
+
+The oven reads 468 when set to 450, so the error is 48 degrees. 
+
+Percentage error = (error / reading) * 100
+                = (48 / 450) * 100
+                = 11.11%
+
+This percentage error is consistent for any setting. 
+
+To find the correct setting for 520 degrees, we apply the same percentage error:
+
+New reading = (Desired temp / (1 + error percentage))
+          = 

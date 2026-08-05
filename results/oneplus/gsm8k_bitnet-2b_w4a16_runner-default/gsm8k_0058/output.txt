@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A wooden bridge can carry no more than 5000 pounds. A delivery truck filled with identical boxes, each weighing 15 pounds, will pass over the bridge. The combined weight of the driver and the empty truck is 3755 pounds. What is the maximum number of boxes which can be loaded onto the truck while not exceeding the bridge's weight limit?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the maximum number of boxes that can be loaded onto the truck without exceeding the bridge's weight limit. Let's denote the number of boxes as \( x \).
+
+The total weight of the boxes is \( 15x \) pounds. The driver and the empty truck weigh a total of 3755 pounds. Therefore, the equation representing the situation is:
+
+\[ 15x + 3755 \leq 5000 \]
+
+First, we subtract 3755 from both sides of the inequality to isolate the term with \( x \):
+
+\[ 15x \leq 5000

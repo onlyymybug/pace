@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.NewspapersMagazines.cancelCollectMagazine","description":"Unfavorite a magazine or article","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"UtilityTools.Search.deleteWebBookmark","description":"Delete bookmarks specified in favorites; delete bookmarks specified in favorites; delete all bookmarks in favorites","parameters":{"type":"object","properties":{"bookmark":{"type":"string","description":"Bookmark title, defaults to all bookmarks from the current collection"}},"required":["bookmark"]}}
+{"name":"OnlineShopping.Mall.removeCollectCommodity","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteCollectSecondhandSale","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Product Name"}},"required":["search_name"]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Wang, remember that on March 12, 2023, we had a project meeting at the multi-function hall on the third floor of the company. The meeting started at 9 am and is expected to continue until 11 am. Remember to prepare your part, our proposal is very important this time, I hope everything goes well! Come on!
+query:I want to cancel the article about the time mentioned in the WeChat message that Xiao Li sent to me in the National Geographic period.<|im_end|>
+<|im_start|>assistant

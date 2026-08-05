@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a 60-item quiz, 40% of the questions are easy, and the rest are equally divided as average and difficult questions. If Aries is sure to get 75% of the easy questions, and half of the average and difficult questions correctly, how many points is she sure to get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the number of easy questions: 40% of 60 questions = 0.4 * 60 = 24 easy questions.
+
+The remaining questions are average and difficult: 60 - 24 = 36 questions.
+
+Since the average and difficult questions are equally divided, there are 18 average questions and 18 difficult questions.
+
+Aries is sure to get 75% of the easy questions correctly: 0.75 * 24 = 18 easy questions.
+
+Aries is sure to get half of the average and difficult questions correctly: 0.5 * (18 + 18) = 0

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.CloudStorage.netdiskViewShareRecords","description":"View a list of shared file records in Cloud Drive","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Funds.getFundTransactionHistory","description":"Query transaction history of designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Travel.HotelServices.getHotelReservationHistory","description":"Get a user's hotel booking history","parameters":{"type":"object","properties":{"start_date":{"type":"string","description":"Start Time "},"end_date":{"type":"string","description":"End Time"}},"required":["start_date","end_date"]}}
+{"name":"Health.HealthManagement.shareHealthData","description":"Share the user's health data through a third-party app","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Choose Socials To Share Single Post"},"name":{"type":"string","description":"Friend name"}},"required":["media","name"]}}
+{"name":"Finance.Insurance.getInsuranceHistoricalClaims","description":"Check your insurance claim history","parameters":{"type":"object","properties":{"start_date":{"type":"string","description":"Start date"},"end_date":{"type":"string","description":"结束日期"},"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["start_date","end_date","insurance_name","insurance_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We discussed the progress of the project at our meeting last Friday, and everyone made a lot of valuable comments, especially on the market analysis section, and we decided to start preparing relevant information this week. Ask colleagues to take a moment to review last week's meeting minutes so they can better move forward. Thank you for your cooperation!
+query:I want to check the hotel booking history from the time mentioned in the WeChat message to the present.<|im_end|>
+<|im_start|>assistant

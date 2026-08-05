@@ -1,0 +1,72 @@
+I tokenizers:regex.cpp:27] Registering override fallback regex
+I 00:00:00.000553 executorch:runner.cpp:148] creating module: model_path=hybrid_llama_qnn.pte
+I 00:00:00.000558 executorch:runner.cpp:149] creating runner: tokenizer_path=.
+I 00:00:00.000560 executorch:runner.cpp:150] eval mode=1
+I tokenizers:normalizer.cpp:103] Using NFC normalizer. Please notice that our implementation may not handle all edge cases.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1785899252.685849    7950 re2.cc:237] Error parsing '((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s...': invalid perl operator: (?!
+I tokenizers:re2_regex.cpp:27] Re2 failed to compile regex: ((?i:'s|'t|'re|'ve|'m|'ll|'d)|[^\r\n\p{L}\p{N}]?\p{L}+|\p{N}| ?[^\s\p{L}\p{N}]+[\r\n]*|\s*[\r\n]+|\s+(?!\S)|\s+), error: invalid perl operator: (?!
+This may be ok if a fallback regex is used.
+I tokenizers:regex_lookahead.cpp:26] Creating PCRE2 regex
+I 00:00:00.373306 executorch:llm_runner_helper.cpp:55] Loaded json tokenizer
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Creating new backend bundle.
+[INFO] [Qnn ExecuTorch]: create QNN Logger with log_level 1
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached backend bundle for current backend: kHtpBackend
+[INFO] [Qnn ExecuTorch]: Initialize Qnn backend parameters for Qnn executorch backend type 2
+[INFO] [Qnn ExecuTorch]: Caching: Caching is in RESTORE MODE.
+[INFO] [Qnn ExecuTorch]: QnnContextCustomProtocol expected magic number: 0x5678abcd but get: 0x2000000
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Running level=1 optimization.
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+[INFO] [Qnn ExecuTorch]: Deserializing processed data using QnnContextCustomProtocol
+[INFO] [Qnn ExecuTorch]: Use cached delegate handle for current method: kv_forward
+I 00:00:01.375361 executorch:runner.cpp:227] Reading metadata from model
+I 00:00:01.378893 executorch:runner.cpp:359] creating io_memory
+I 00:00:01.381230 executorch:prompt_processor.cpp:272] Prompt Processor: total 504 prompt tokens (AR-128 * 4 iters)
+I 00:00:01.900388 executorch:runner.cpp:472] RSS after prompt prefill: 1003.730469 MiB (0 if unsupported)
+I 00:00:03.722517 executorch:token_generator.cpp:346] 
+Reached to the end of generation
+I 00:00:03.722558 executorch:runner.cpp:489] RSS after finishing text generation: 1003.730469 MiB (0 if unsupported)
+I 00:00:03.722633 executorch:stats.h:179] 	Prompt Tokens: 504    Generated Tokens: 27
+I 00:00:03.722642 executorch:stats.h:185] 	Model Load Time:		1.378000 (seconds)
+I 00:00:03.722650 executorch:stats.h:194] 	Total inference time:		2.344000 (seconds)		 Rate: 	11.518771 (tokens/second)
+I 00:00:03.722659 executorch:stats.h:203] 		Prompt evaluation:	0.521000 (seconds)		 Rate: 	967.370441 (tokens/second)
+I 00:00:03.722668 executorch:stats.h:215] 		Generated 27 tokens:	1.823000 (seconds)		 Rate: 	14.810752 (tokens/second)
+I 00:00:03.722677 executorch:stats.h:223] 	Time to first generated token:	0.521000 (seconds)
+I 00:00:03.722685 executorch:stats.h:230] 	Sampling time over 531 tokens:	0.025000 (seconds)
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn context
+[INFO] [Qnn ExecuTorch]: Destroy Qnn device
+[INFO] [Qnn ExecuTorch]: Destroy Qnn backend
+
+PyTorchObserver {"prefill_token_per_sec":967.37,"decode_token_per_sec":14.8108,"prompt_tokens":504,"generated_tokens":27,"model_load_start_ms":1785899252428,"model_load_end_ms":1785899253806,"inference_start_ms":1785899253806,"inference_end_ms":1785899256150,"model_execution_start_ms":0,"model_execution_end_ms":0,"prompt_eval_end_ms":1785899254327,"first_token_ms":1785899254327,"aggregate_sampling_time_ms":25,"aggregate_model_execution_time_ms":0,"SCALING_FACTOR_UNITS_PER_SECOND":1000}
+
+runner_returncode=0

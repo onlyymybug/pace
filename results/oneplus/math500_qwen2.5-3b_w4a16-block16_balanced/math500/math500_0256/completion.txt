@@ -1,0 +1,22 @@
+To determine the type of curve defined by the equation \(r^2 \cos 2\theta = 4\), we need to analyze the given equation step by step.
+
+First, recall the double-angle identity for cosine:
+\[
+\cos 2\theta = \cos^2 \theta - \sin^2 \theta
+\]
+However, we can also use the identity:
+\[
+\cos 2\theta = 2\cos^2 \theta - 1
+\]
+But for our purposes, we will use the form involving \(\cos 2\theta\) directly.
+
+Given:
+\[
+r^2 \cos 2\theta = 4
+\]
+
+We know that \(\cos 2\theta\) can be expressed in terms of:
+\[
+\cos 2\theta = \frac{\cos^2 \theta - \sin^2 \theta}{\cos^2 \theta + \sin^2 \theta}
+\]
+However, a simpler approach is to recognize that \(\cos 2\theta\) can be directly related to \(r\) and \(\theta\) in polar coordinates. The equation \(r^2 \cos 2\theta = 4\) can be rewritten using

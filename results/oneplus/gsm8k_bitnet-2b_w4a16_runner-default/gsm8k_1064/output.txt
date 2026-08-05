@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James gets 80 emails a day.  20% of those emails don't require any response.  He responds to the rest of them.  How many emails does he respond to in a 5 day work week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to find out how many emails James responds to in one day. Since 20% of his emails don't require any response, he responds to 100% - 20% = 80% of his emails.
+
+So, in one day, James responds to 80% of 80 emails, which is 0.8 * 80 = 64 emails.
+
+Since there are 5 days in a work week, James responds to 64 emails/day * 5 days = 320 emails in a week.
+
+The answer is 320.<|eot_id|>

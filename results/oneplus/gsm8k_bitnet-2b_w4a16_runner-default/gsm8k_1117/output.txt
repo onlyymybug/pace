@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Last year there were 50 students enrolled in a calligraphy class. This year, there was a 20% increase in enrollment. How many students are enrolled this year in the calligraphy class?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of students enrolled this year, we need to calculate a 20% increase from the original number of students.
+
+First, we calculate 20% of 50 students:
+20% of 50 = 0.20 * 50 = 10 students
+
+Then, we add this increase to the original number of students:
+50 students + 10 students = 60 students
+
+The answer is 60 students.<|eot_id|>

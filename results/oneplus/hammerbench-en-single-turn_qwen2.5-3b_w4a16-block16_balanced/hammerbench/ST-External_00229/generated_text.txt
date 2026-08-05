@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.updateRestaurantOrder","description":"Updating order information based on the order, such as delivery address, notes, etc.","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"},"delivery_address":{"type":"string","description":"Delivery address"},"delivery_time":{"type":"string","description":"Expected delivery time in HH: mm format"},"note":{"type":"string","description":"Remarks"}},"required":["order_name","delivery_address","delivery_time","note"]}}
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"evaluation":{"type":"string","description":"Content of the review"}},"required":["goods","evaluation"]}}
+{"name":"OnlineShopping.SecondhandTrading.evaluateSecondhandSaleOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.rateRestaurantOrder","description":"Evaluate a specific order","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"},"order_name":{"type":"string","description":"Contents of the order"},"order_time":{"type":"string","description":"Order time"},"rating":{"type":"integer","description":"Rating, 1 to 5"},"comment":{"type":"string","description":"Review Content"}},"required":["restaurant_name","order_name","order_time","rating","comment"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tonight, at 6 o'clock, have dinner with Xiao Wang in Haidilao (Chaoyang Dayuecheng Store). Remember to bring the novel we have been discussing. The address is 6th floor, Dayuecheng, 101 Chaoyang North Road, Chaoyang District, Beijing.
+query:I ordered a tomato beef pot at the place mentioned in my notepad last night, the service was first-class, the food was fresh and delicious, and I gave it a 5-star rating!<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.FoodDelivery.updateRestaurantOrder","parameters":{"order_name":"tomato beef pot","delivery_address":"6th floor, Dayuecheng","delivery_time":"18:00","note":"please find attached the review of of the service and the food quality"}}<|im_end|>

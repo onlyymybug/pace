@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A bakery produces 60 loaves of bread each day. Two-thirds of the loaves are sold in the morning and half of what is left is sold equally in the afternoon and evening. How many loaves of bread are sold in the afternoon? To solve this problem, we need to follow these steps:
+
+1. Calculate the number of loaves sold in the morning.
+2. Determine the number of loaves remaining after the morning sales.
+3. Calculate the number of loaves sold in the afternoon.
+
+Step 1: Calculate the number of loaves sold in the morning.
+The bakery produces 60 loaves each day. Two-thirds of of these loaves are sold in the morning.
+\[
+\text{Morning sales} = \frac{2}{3} \times 60 = 40 \text{ loaves}
+\]
+
+Step 2:

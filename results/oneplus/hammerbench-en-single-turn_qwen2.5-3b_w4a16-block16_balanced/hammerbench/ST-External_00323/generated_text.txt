@@ -1,0 +1,37 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcOCR","description":"Recognize input as text by scanning or photographing","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"}},"required":["file"]}}
+{"name":"Photography.VideoEditing.addCaptionToVideoEdit","description":"Adding text to video screens","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"location":{"type":"string","description":"Add the position of the text message, such as bottom, top, left, right, etc."},"font":{"type":"string","description":"Add font for text messages"},"color":{"type":"string","description":"Add text message font color"},"size":{"type":"float","description":"Add font size for text messages"}},"required":["name_or_path","location","font","color","size"]}}
+{"name":"UtilityTools.AIGC.aigcPicture2Text","description":"Converts image inputs into corresponding textual descriptions for image-to-text conversion.","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"}},"required":["file"]}}
+{"name":"UtilityTools.AIGC.aigcText2Video","description":"Convert text input to corresponding video output","parameters":{"type":"object","properties":{"text":{"type":"string","description":"literal content"}},"required":["text"]}}
+{"name":"SystemTools.SystemSettings.setSystemScreenShot","description":"Screenshot","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Project Progress Report on Li Hua
+
+Dear Manager Wang,
+
+Hello!
+
+I am Zhang Qiang, this is the latest progress report on the project we are working on, "Li Hua Education Platform", image EnchantedForestDawn.jpg.Since our last meeting, our team has been working diligently to move things forward.At present, 80% of the key modules in the project have been completed, of which Li Hua's part, namely user interface design and front-end development, has been basically completed and is expected to be completed by the end of next week.Li Hua showed a very high level of professionalism and creativity in the process. The design was beautiful and practical, and was praised by the team members.
+
+Next, we will focus on the development of the background data processing module, which will be led by a team led by Zhao Gang.We believe that with Zhao Gang's rich experience and the joint efforts of the team, the project can be completed on time and achieve the expected results.
+
+In addition, in order to ensure the smooth progress of the project, we plan to hold a project progress briefing next Friday, at which we hope you will be able to attend and give guidance.Please do not hesitate to contact me with any suggestions or questions to discuss.
+
+Thank you for your support and trust!
+
+Sincerely,
+
+Salute
+
+Zhang Qiang
+Project Leader
+query:What is the picture in WeChat about? Please use the image-to-text function to help me identify the text in the picture.<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.AIGC.aigcOCR","parameters":{"file":"EnchantedForestDawn.jpg"}}<|im_end|>

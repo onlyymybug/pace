@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jeff’s work is 3 miles away.  He walks there and back each day he works.  How many miles does he walk if he has to work 5 times a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total distance Jeff walks in one day and then multiply that by the number of days he works in a week.
+
+1. Jeff walks to work and back each day, so the round trip is:
+   \[
+   3 \text{ miles} \times 2 = 6 \text{ miles}
+   \]
+
+2. Jeff works 5 days a week, so the total distance he walks in one week is:
+   \[
+   6 \text{ miles/day} \times 5 \text{ days/week} = 30 \text{ miles/

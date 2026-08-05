@@ -1,0 +1,6 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A plague infects ten people. Every day, each infected person infects six others. How many people are infected after three days? Step 1: On day 0, there are 10 infected people.
+Step 2: Each infected person infects 6 others, so on day 1, 10 * 6 = 60 new people are infected.
+Step 3: On day 2, each of these 60 newly infected people infects 6 others, so 60 * 6 = 360 new infections.
+Step 4: On day 3, each of these 360 newly infected people infects 6 others, so 360 * 6 = 21 

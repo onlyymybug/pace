@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.getCarServiceCenters","description":"Get car service center information by region","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"},"brand":{"type":"string","description":"Car Brand"}},"required":["location","brand"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"MusicRadio.RadioStations.radioShareRadio","description":"Share the station to social platforms based on the station name","parameters":{"type":"object","properties":{"radio_name":{"type":"string","description":"Radio Name"},"to":{"type":"string","description":"Sharing platform"}},"required":["radio_name","to"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Health.HealthManagement.shareHealthPlan","description":"Share a health plan","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["goal_title","media","name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends in Guangzhou, we plan to hike to Baiyun Mountain this weekend, so let's get interested in .Modelathed! The meeting point is set at the southern gate of Baiyun Mountain. Depart at 8 am. Remember to wear comfortable shoes and bring enough water! Looking forward to seeing you in Guangzhou's most beautiful natural scenery!
+query:Is there a Toyota car service center near the location mentioned in Xiao Li's WeChat?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.getCarServiceCenters","parameters":{"location":"Guangzhou","brand":"Toyota"}}<|im_end|>

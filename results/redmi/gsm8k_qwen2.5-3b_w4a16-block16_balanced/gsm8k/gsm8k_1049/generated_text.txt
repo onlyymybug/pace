@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010. To solve this problem, we need to calculate the depreciation of of the car's price over the years from 2007 to 2010.
+
+1. **Determine the number of years of depreciation:**
+   - 2010 - 2007 = 3 years
+
+2. **Calculate the depreciation rate per year:**
+   - The car depreciates at a rate of 2% per year.
+
+3. **Apply the depreciation formula:**
+   - The formula for depreciation is: 
+     \[
+     \text{Final Price} = \text{Initial Price} \times

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.removeContact","description":"Remove the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Contact name to remove, required"}},"required":["contact_name"]}}
+{"name":"SocialCommunication.Calling.deleteContact","description":"Delete the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to be deleted"}},"required":["contact_name"]}}
+{"name":"OfficeSoftware.Conferencing.removeParticipants","description":"Remove participants from the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Remove people list"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskDeleteAddresbookFriend","description":"Delete Friend in Cloud Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+{"name":"UtilityTools.Reading.deleteReadingBookFromShelf","description":"Remove books from shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Zhang San, we met at the company's annual meeting last week, when you shared your experience on project management, I benefited a lot. I have recently been working on a new project and have encountered some challenges. I would like to ask for your advice. I don't know if it's convenient for you this week, we can schedule a time to talk in detail.
+query:Can you help me remove the name of the friend mentioned in WeChat from my contacts?<|im_end|>
+<|im_start|>assistant

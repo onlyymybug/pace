@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a certain school, two classes have a total of 80 students. Each class has the same amount of students, and in each class 40% of the students are girls. How many boys are in each class?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of students in each class as x. Since there are two classes, the total number of students is 2x. We know that 40% of the students in each class are girls, which means 60% of the students are boys.
+
+For the first class, the number of boys is 0.6x. For the second class, the number of boys is also 0.6x.
+
+Since the total number of students in both classes is 80, we can write the equation:
+
+2x = 80
+
+Solving for x, we get:
+
+x = 80 / 2

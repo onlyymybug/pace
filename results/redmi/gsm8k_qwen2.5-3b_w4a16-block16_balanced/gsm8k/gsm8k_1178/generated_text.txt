@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Miss Albert's class is composed of 12 boys and 12 girls. One-third of the girls and one-fourth of the boys are on varsity. How many students are not on varsity? Step 1: Calculate total number of students
+Total students = boys + girls
+Total students = 12 boys + 12 girls
+Total students = 24 students
+
+Step 2: Calculate number of girls on varsity
+Girls on varsity = 1/3 * girls
+Girls on varsity = 1/3 * 12/1 * 12 girls
+Girls on varsity = 4 girls
+
+Step 3: Calculate number of boys on varsity
+Boys on varsity = 1/4 * boys
+Boys on varsity = 1/4 *

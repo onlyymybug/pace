@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "gamespot.getAverageUserScore", "description": "Retrieve the average user score of a game from GameSpot. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game_name": {"type": "string", "description": "The name of the game."}, "platform": {"type": "string", "description": "The platform the game was released on (e.g., Nintendo Switch, PS5, etc.)", "default": "all platforms"}}, "required": ["game_name", "platform"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get the average user score for the game 'The Legend of Zelda: Breath of the Wild' from GameSpot.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "gamespot.getAverageUserScore", "arguments": {"game_name": "The Legend of Zelda: Breath of the Wild", "platform": "Nintendo Switch"}}
+</tool_call><|im_end|>

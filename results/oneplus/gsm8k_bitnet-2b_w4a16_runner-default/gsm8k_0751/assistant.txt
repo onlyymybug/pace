@@ -1,0 +1,11 @@
+To solve this problem, we first need to determine the total number of chairs rented in one week. During weekdays, 60 chairs are rented each day, and there are 5 weekdays, so:
+
+60 chairs/day * 5 days = 300 chairs during weekdays.
+
+During weekends, 100 chairs are rented each day, and there are 2 weekend days, so:
+
+100 chairs/day * 2 days = 200 chairs during weekends.
+
+Now, we add the chairs rented during weekdays and weekends to find the total chairs rented in one week:
+
+300 chairs (weekdays) + 200 chairs (weekends) = 500

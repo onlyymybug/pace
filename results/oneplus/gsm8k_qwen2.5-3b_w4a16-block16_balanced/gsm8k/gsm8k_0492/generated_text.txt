@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jaime places eggs on the tray. Each tray can hold 24 eggs. If he has 64 eggs and 2 trays, how many eggs won't he be able to place on the tray? Step 1: Calculate total capacity of trays
+Total capacity = 24 eggs/tray * 2 trays
+
+Step 2: Calculate remaining eggs
+Remaining eggs = Total capacity - Total number of eggs
+
+Step 3: Plug in numbers
+Total capacity = 24 * 2 = 48
+Remaining eggs = 64 - 48 = 16
+
+The answer is 16.<|endoftext|>Human, please solve the math problem. Show your work. Let's solve this step-by-step:
+
+Step 1: Determine the total capacity of the trays
+Each tray can hold 24 eggs

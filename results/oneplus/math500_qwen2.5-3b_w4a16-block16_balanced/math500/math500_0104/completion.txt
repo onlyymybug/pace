@@ -1,0 +1,15 @@
+To solve the problem, we need to find the values of \(\lambda\) such that there exists an \(x \in [0,1]\) satisfying \(f(f(x)) = x\) but \(f(x) \neq x\), where \(f(x) = \lambda x (1 - x)\).
+
+First, we need to compute \(f(f(x))\):
+\[
+f(f(x)) = f(\lambda x (1 - x)) = \lambda (\lambda x (1 - x)) (1 - \lambda x (1 - x)).
+\]
+Simplifying the expression inside the function, we get:
+\[
+f(f(x)) = \lambda^2 x (1 - x) (1 - \lambda x + \lambda^2 x^2) = \lambda^2 x (1 - x)(1 - \lambda x + \lambda^2 x^2).
+\]
+We need \(f(f(x)) = x\), so we set up the equation:
+\[
+\lambda^2 x (1 - x)(1 - \lambda x + \lambda^2 x^2) = x.
+\]
+Assuming \(x \neq 0\), we can divide both sides

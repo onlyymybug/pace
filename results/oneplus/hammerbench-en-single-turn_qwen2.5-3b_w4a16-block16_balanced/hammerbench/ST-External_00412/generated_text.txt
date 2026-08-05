@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"Travel.ItineraryServices.addTravelComment","description":"Review your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"},"comment":{"type":"string","description":"Comments"}},"required":["destination","comment"]}}
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, I have just arrived in Paris, the scenery here is picturesque, and the Eiffel Tower is particularly spectacular in the sunset. Are you planning to visit the Louvre tomorrow? Do you have any artworks you would like to see in particular? We look forward to hearing from you and sharing this joy.
+query:Tom sent me a text message about his trip to Paris, and he said that the Eiffel Tower's bright lights at night and the romantic atmosphere on the Seine were unforgettable.<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.News.postNewsComment","parameters":{"news_name":"Tom's Paris Trip"}}<|im_end|>

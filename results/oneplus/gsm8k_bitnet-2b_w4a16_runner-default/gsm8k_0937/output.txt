@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A hotel in the Philippines charges 1000 pesos for a 12-hour stay or 1600 pesos for a 24-hour stay. After 12 hours, visitors have the option to add 70 pesos for every additional hour. Cameron arrives at 5 pm at the hotel and wants to leave at 10 am the next morning. He decides to go with the option of adding on 70 pesos for every hour after the 12-hour mark instead of paying for 24 hours. How much money would Cameron save?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total cost for both options and then find the savings.
+
+Option 1: Paying for 12 hours and adding 70 pesos for each additional hour after 12 hours.
+- Cost for 12 hours: 1000 pesos
+- Additional hours: 10 hours (from 5 pm to 10 am)
+- Cost for additional hours: 10 hours * 70 pesos/hour = 700 pesos
+- Total cost for Option 1: 1000 pesos + 700 pesos = 1700 pesos
+
+Option 2: Paying for 24

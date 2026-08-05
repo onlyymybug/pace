@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Matthew has a collection of 12 unique toy soldiers. He wants to sell them for a fair price. He found a buyer who is willing to pay for half his collection $5 per toy, and for the other half $7 per toy. If Matthew would agree to that offer, how much money would he earn?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Matthew would earn, we need to calculate the total earnings from both halves of his collection.
+
+First, let's determine the number of toy soldiers in each half of the collection. Since Matthew has 12 unique toy soldiers, each half would consist of 12 / 2 = 6 toy soldiers.
+
+Next, we calculate the earnings from the first half of the collection. Matthew would sell 6 toy soldiers for $5 each, so the earnings from the first half would be 6 * $5 = $30.
+
+Then, we calculate the earnings from the second half of the collection. Matthew would sell 

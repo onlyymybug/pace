@@ -1,0 +1,22 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+{"name":"OfficeSoftware.Email.sendMail","description":"Send a new message","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Email Title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["title","content","receivers"]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"VideoPlayback.ShortVideos.publishShortVideo","description":"Post a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"filepath":{"type":"string","description":"Video"}},"required":["name","filepath"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Okay, here's a simulated WeChat message:
+
+---
+
+Hey Wang, don't forget the annual summit tomorrow, we have to arrive at the main venue at 8:30 in the morning to sign in, remember to bring your work ID.The main venue is located on the third floor of the Pearl International Convention Center. There will be signs at the door to guide us. Let's not go to the wrong place.Sub-forums in the afternoon will also be held in the same location, but I will send you the specific arrangements.Anyway, I'll see you tomorrow. We'll arrive earlier and get acquainted with the venue first.
+query:Xiao Li sent me the location mentioned in the WeChat. From 9:30 a.m. to noon on September 10, he created a meeting for the product launch conference, and invited media representatives and partners to participate.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.createMeeting","parameters":{"title":"Product Launch Conference","start_time":"09:30","end_time":"12:00","location":"Pearl International Convention Center, 3rd Floor","participant_list":"XiaoLi"}}<|im_end|>

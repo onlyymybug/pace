@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sally received the following scores on her math quizzes: 50, 80, 80, 60, 40, 90, 100, 70, and 60. Find her mean score.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the mean score, we add up all the scores and then divide by the number of scores.
+
+First, add up the scores:
+50 + 80 + 80 + 60 + 40 + 90 + 100 + 70 + 60 = 570
+
+Next, divide the total by the number of scores:
+570 / 9 = 63.333...
+
+The mean score is approximately 63.33. The answer is 63.33.<|eot_id|>

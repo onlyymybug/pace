@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "currency_exchange.convert", "description": "Convert an amount from a base currency to a target currency based on the current exchange rate. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base_currency": {"type": "string", "description": "The currency to convert from."}, "target_currency": {"type": "string", "description": "The currency to convert to."}, "amount": {"type": "integer", "description": "The amount in base currency to convert"}}, "required": ["base_currency", "target_currency", "amount"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+How many Canadian dollars can I get for 500 US dollars?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "currency_exchange.convert", "arguments": {"base_currency": "US dollars", "target_currency": "Canadian dollars", "amount": 500}}
+</tool_call><|im_end|>

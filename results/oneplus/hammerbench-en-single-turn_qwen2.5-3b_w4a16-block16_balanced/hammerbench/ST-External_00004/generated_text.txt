@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Navigation.TrafficViolations.shareViolationDetail","description":"Share Designated Violation Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"},"media":{"type":"string","description":"Ways to share"},"name":{"type":"string","description":"Shared content recipients"}},"required":["plate_number","city","time","media","name"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I saw a Yue B6789X car in the parking lot at 3 pm today, and the owner seems to have forgotten to turn off the lights, which remained on until evening. Worried about violating traffic rules, if you know the owner, please remind them.
+query:I found the mentioned license plate number in the notepad. I want to share the illegal information in Guangzhou on April 1, 2023 with Manager Zhang by email, okay?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.shareViolationDetail","parameters":{"plate_number":"YueB6789X","city":"Guangzhou","time":"2023-04-01 16:00","media":"email","name":"Manager Zhang"}}<|im_end|>

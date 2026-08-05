@@ -1,0 +1,8 @@
+adb -s 10.29.195.116:5555 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cayley markets various newspapers to get a commission on each copy sold. He gets a 10% commission on each copy of the New York Times and an 8% commission on each of the Wall Street Journal. How much commission will he earn in total from the sales of 6 copies of the New York Times and 10 copies of Wall Street Journal if each costs $5 and $15 respectively?'"'"' --system_prompt '"'"''"'"' --seq_len 288 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0949_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0949_inference_speed.txt'

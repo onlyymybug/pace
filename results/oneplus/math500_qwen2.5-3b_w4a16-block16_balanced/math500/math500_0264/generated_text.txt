@@ -1,0 +1,30 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In a regular polygon, the measure of an interior angle is 6.5 times the measure of an exterior angle. How many sides does the polygon have? To solve the problem, we need to use the relationship between the interior and exterior angles of of a regular polygon. Let's denote the number of sides of of the polygon by \( n \).
+
+First, recall that the measure of of an exterior angle of of a regular polygon is given by:
+\[
+\text{Exterior angle} = \frac{360^\circ}{n}
+\]
+
+The measure of of an interior angle is given by:
+\[
+\text{Interior angle} = 180^\circ - \text{Exterior angle}
+\]
+
+According to the problem, the measure of of an interior angle is 6.5 times the measure measure of of an exterior angle. Therefore, we can write:
+\[
+180^\circ - \frac{360^\circ}{n} = 6.5 \times \frac{360^\circ}{n}
+\]
+
+To eliminate the fractions, multiply both sides by \( n \):
+\[
+180n - 360 = 6.5 \times 360
+\]
+
+Simplify the right-hand side:
+\[
+180n - 360 = 2340
+\]
+
+Add

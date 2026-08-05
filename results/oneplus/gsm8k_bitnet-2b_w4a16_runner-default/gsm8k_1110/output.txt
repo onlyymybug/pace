@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Three of the women at the cocktail party are wearing 4 inch heels and three are wearing 2 inch heels. What is the average height of heels at this party?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average height of heels, we need to calculate the total height of all the heels and then divide by the number of women.
+
+Total height of heels = (3 women * 4 inches) + (3 women * 2 inches)
+Total height of heels = (12 inches) + (6 inches)
+Total height of heels = 18 inches
+
+Number of women = 3
+
+Average height of heels = Total height of heels / Number of women
+Average height of heels = 18 inches / 3
+Average height of heels = 6 inches
+
+The answer is 6 inches.<|eot_id|>

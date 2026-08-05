@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Hortex company produces bottled carrot juices. Every day it can produce 4200 bottles of these juices. Each juice can cover 20% of 1 person'ts daily energy demand. How many more bottles of juices would Hortex have to produce to be able to satisfy 100% of the daily energy needs of 2300 people? To solve this, first calculate the total number of bottles needed to meet the energy demand of of 2300 people, then subtract the current production capacity.
+
+Total bottles needed = 2300 people * 50 bottles/person = 11500 bottles
+
+Current production capacity = 4200 bottles/day
+
+Additional bottles needed = Total bottles needed - Current production capacity
+
+Additional bottles needed = 11500 - 4200
+
+The answer is 7300. The calculation starts by determining the total number of bottles required to meet the energy needs of 23

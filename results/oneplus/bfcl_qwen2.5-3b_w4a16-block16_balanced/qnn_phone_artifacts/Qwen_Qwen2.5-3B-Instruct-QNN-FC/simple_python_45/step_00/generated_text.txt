@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "thermo.calculate_energy", "description": "Calculate the energy required or released during a phase change using mass, the phase transition temperature and the specific latent heat. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"mass": {"type": "integer", "description": "Mass of the substance in grams."}, "phase_transition": {"type": "string", "description": "Phase transition. Can be 'melting', 'freezing', 'vaporization', 'condensation'."}, "substance": {"type": "string", "description": "The substance which is undergoing phase change, default is 'water'"}}, "required": ["mass", "phase_transition"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the energy (in Joules) absorbed or released during the phase change of 100g of water from liquid to steam at its boiling point.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "thermo.calculate_energy", "arguments": {"mass": 100, "phase_transition": "vaporization", "substance": "water"}}
+</tool_call><|im_end|>

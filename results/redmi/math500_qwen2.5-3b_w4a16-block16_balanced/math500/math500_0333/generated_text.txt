@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $x,$ $y,$ and $z$ be positive real numbers such that $xyz(x + y + z) = 1.$  Find the minimum value of
+\[(x + y)(y + z).\] To find the minimum value of of \((x + y)(y + z)\) given the constraint \(xyz(x + y + z) = 1\), we start by introducing new variables to simplify the problem. Let \(s = x + y + z\) and \(p = xyz\). The given constraint can be rewritten as \(p \cdot s = 1\), or \(p = \frac{1}{s}\).
+
+We need to minimize \((x + y)(y + z)\). Using the identity \(x + y + z = s\), we can express \(x + y\) as

@@ -1,0 +1,20 @@
+To determine the probability that Alice wins the game, we need to analyze the sequence of of of events and their probabilities.
+
+Let's denote the probability that Alice wins the game as \( P \).
+
+1. **Alice's First Flip:**
+   - Alice flips the coin first.
+   - If she gets heads on her first flip, she wins immediately. The probability of this happens is \( \frac{1}{2} \).
+   - If she gets tails on her first flip, the game continues to Bob's turn.
+
+2. **Bob's Turn:**
+   - If the game reaches Bob's turn, it means Alice did not win on her first flip.
+   - The probability of this happens is \( \frac{1}{2} \).
+
+3. **Bob's Flip:**
+   - On Bob's turn, if he gets tails, he wins, and the game ends. The probability of this happens is \( \frac{1}{2} \).
+   - If he gets heads, the game returns to Alice's turn.
+
+Now, we need to consider the overall probability that Alice wins the game. We can set up the following equation based on the possible outcomes:
+
+- Alice wins immediately on her first flip: Probability = \( \frac{1

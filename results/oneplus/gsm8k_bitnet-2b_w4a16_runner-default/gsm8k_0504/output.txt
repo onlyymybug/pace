@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The rug is 5 feet wider than the chair. The couch is 2 feet longer than twice the width of the rug. If the chair is 3 feet wide. How many feet long is the couch?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the width of the rug as \( w \) and the length of the couch as \( l \).
+
+Given:
+- The width of the chair is 3 feet.
+- The rug is 5 feet wider than the chair.
+- The couch is 2 feet longer than twice the width of the rug.
+
+First, we express the width of the rug in terms of the width of the chair:
+\[ w = 3 + 5 \]
+\[ w = 8 \text{ feet} \]
+
+Next, we express the length of the couch in terms of the width of the rug:
+\[ l = 2

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A 76-star flag has three rows of 8 stars, two rows of 6 stars and the rest are 5-star rows. How many rows of 5 stars are there altogether on the flag?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of stars on the flag. We know there are three rows of 8 stars, two rows of 6 stars, and the rest are 5-star rows. Let's denote the number of 5-star rows as \( x \).
+
+The total number of stars can be expressed as:
+\[ 3 \times 8 + 2 \times 6 + x \times 5 = 76 \]
+
+First, calculate the number of stars in the three rows of 8 stars:
+\[ 3 \times 8 = 24 \]
+
+Next,

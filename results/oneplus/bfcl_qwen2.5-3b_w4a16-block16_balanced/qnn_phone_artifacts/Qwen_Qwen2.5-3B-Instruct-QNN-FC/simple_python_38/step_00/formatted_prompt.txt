@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_electrostatic_potential", "description": "Calculate the electrostatic potential between two charged bodies using the principle of Coulomb's Law. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"charge1": {"type": "float", "description": "The quantity of charge on the first body."}, "charge2": {"type": "float", "description": "The quantity of charge on the second body."}, "distance": {"type": "float", "description": "The distance between the two bodies."}, "constant": {"type": "float", "description": "The value of the electrostatic constant. Default is 8.99e9."}}, "required": ["charge1", "charge2", "distance"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the electrostatic potential between two charged bodies of 1e-9 and 2e-9 of distance 0.05?<|im_end|>
+<|im_start|>assistant

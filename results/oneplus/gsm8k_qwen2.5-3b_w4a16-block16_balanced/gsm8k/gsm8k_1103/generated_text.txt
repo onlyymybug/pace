@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sheila charged $85.00 worth of merchandise on her credit card.  She ended up returning one item that cost $15.00.  After she returned the item, she bought a frying pan that was on sale for 20% off $20.00 and a set of towels that was 10% off $30.00.  She put both of these purchases on her credit card.  What is the new balance on her credit card? Step 1: Calculate the total cost after returns and purchases
+Initial charge: $85.00
+Cost of returned item: $15.00
+Purchases: 
+- Frying pan on sale for 20% off $20.00
+  - Original price: $20.00
+  - Discount: 20% of $20.00 = 0.20 * $20.00 = $4.00
+  - Final price: $20.00 - $4.00 = $16.0

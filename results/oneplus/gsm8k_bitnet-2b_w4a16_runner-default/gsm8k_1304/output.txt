@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nate's dog can dig six holes a day. He digs for 14 days while Nate is on vacation. When Nate gets home, he starts filling in 9 holes a day, but the dog keeps digging 6 new holes every night. How many weeks does it take him to fill in all the holes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. Calculate the total number of holes dug by the dog in the first 14 days:
+   - The dog digs 6 holes per day.
+   - Over 14 days, the dog digs \(6 \times 14 = 84\) holes.
+
+2. Calculate the total number of holes dug per day after Nate returns:
+   - Nate starts filling in 9 holes per day.
+   - The dog continues to dig 6 new holes per day.
+   - So, per day, the dog digs \(6 + 9 = 15\) holes.
+

@@ -1,0 +1,14 @@
+To solve this, we first find the percentage error in the oven's readings. 
+
+The oven reads 468 when set to 450, so the error is 48 degrees. 
+
+Percentage error = (error / reading) * 100
+                = (48 / 450) * 100
+                = 11.11%
+
+This percentage error is consistent for any setting. 
+
+To find the correct setting for 520 degrees, we apply the same percentage error:
+
+New reading = (Desired temp / (1 + error percentage))
+          = 

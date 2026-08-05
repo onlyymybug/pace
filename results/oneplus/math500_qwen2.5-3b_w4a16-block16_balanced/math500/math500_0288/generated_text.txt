@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: One gear turns $33\frac{1}{3}$ times in a minute.  Another gear turns   45 times in a minute.  Initially, a mark on each gear is pointing  due north.  After how many seconds will the two gears next  have both their marks pointing due north? To solve the problem, we need to determine the time it takes for both gears to return to their initial position (pointing due north) simultaneously. We start by converting the gear speeds into a common unit.
+
+First, convert \(33\frac{1}{3}\) times per minute to a fraction:
+\[
+33\frac{1}{3} = \frac{100}{3} \text{ times per minute}
+\]
+
+Next, we know the second gear turns 45 times per minute.
+
+We need to find the least common multiple (LCM) of of the periods of of the two gears. The period of of the first gear is:
+\[
+T_1 = \frac{60}{\frac{100}{3}} = \frac{60 \times 3}{100} = \frac{180}{100} = 1.8 \text{ seconds}
+\]
+
+The period period of the second gear is:
+\[
+T_2 = \frac{60}{45} = \frac{4}{3} \text{ seconds}
+\]
+
+To find the time when both gears will be at the starting point simultaneously, we need the

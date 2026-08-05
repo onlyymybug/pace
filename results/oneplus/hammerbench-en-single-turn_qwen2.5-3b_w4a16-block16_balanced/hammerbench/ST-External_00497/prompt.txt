@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.UtilityPayments.cancelAutoPayment","description":"Cancel automatic payment settings for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"user_address":{"type":"string","description":"User Address"}},"required":["service_type","user_name","user_address"]}}
+{"name":"SocialCommunication.Community.unlikeCommunityPost","description":"Unlike a specific post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to unlike the post"},"post_name":{"type":"string","description":"Title of the post to unlike"}},"required":["community_name","post_name"]}}
+{"name":"Navigation.TrainTickets.cancelTrainTicket","description":"Cancelling a booked train ticket","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Wagon Number"},"name":{"type":"string","description":"Rider's name"},"time":{"type":"string","description":"To cancel a reservation for a certain time"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["train_number","name","time","departure_station","destination_station"]}}
+{"name":"SocialCommunication.SocialMedia.cancleCollectMediumTrends","description":"Unfavorite the specified activity in the specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"Health.Fitness.cancelBookFitnessClass","description":"Cancel scheduled fitness class","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Course Title"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The year-end wrap-up conference we held at the company last Friday, I really didn't expect it to end until 7 pm, everyone was exhausted. After the meeting, we went to the grilled fish shop nearby. Do you remember which one? It's been a really long time since I've been there, and it still tastes so good. After that, we went to KTV and didn't go home until after 10 o'clock. What an unforgettable Friday night!
+query:I want to cancel the latest news recommended by movie enthusiasts on Douban, which was released at the time mentioned in Xiao Mingfa's message.<|im_end|>
+<|im_start|>assistant

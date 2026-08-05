@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_sculpture_value", "description": "Retrieve the current market value of a particular sculpture by a specific artist. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"sculpture": {"type": "string", "description": "The name of the sculpture."}, "artist": {"type": "string", "description": "The name of the artist who created the sculpture."}}, "required": ["sculpture", "artist"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the value of the sculpture 'The Thinker' by Rodin?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_sculpture_value", "arguments": {"sculpture": "The Thinker", "artist": "Rodin"}}
+</tool_call><|im_end|>

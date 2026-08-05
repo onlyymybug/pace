@@ -1,0 +1,7 @@
+To solve the problem, we need to understand the recurrence relation and find the pattern in the sequence \(x_n\). The sequence is defined as follows:
+\[ x_1 = 211, \quad x_2 = 375, \quad x_3 = 420, \quad x_4 = 523, \]
+and for \(n \geq 5\),
+\[ x_n = x_{n-1} - x_{n-2} + x_{n-3} - x_{n-4}. \]
+
+Let's compute the first few terms to identify any patterns:
+\[ x_5 = x_4 - x_3 + x_3 - x_2 = 523 - 420 + 420 - 375 = 523 - 420 + 420 - 375 = 523 - 420 + 420 - 375 = -523 + 420 - 375 + 523 = -523 + 420 - 375 + 523 = -52

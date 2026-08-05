@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "currency_converter", "description": "Calculates the current cost in target currency given the amount in base currency and exchange rate Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base_currency": {"type": "string", "description": "The currency to convert from."}, "target_currency": {"type": "string", "description": "The currency to convert to."}, "amount": {"type": "float", "description": "The amount in base currency"}}, "required": ["base_currency", "target_currency", "amount"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the current cost in British Pounds if I need to convert 200 US dollars.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A local town is expanding and wants to build several new homes across the next three years. In the first year, they will build 12 homes. In the next year, they will build three times this many homes. In the third year, they will count how many homes they have built and double the amount. How many homes will the town have built over the next three years? Step 1: Calculate homes built in the first year
+homes_first_year = 12
+
+Step 2: Calculate homes built in the second year
+homes_second_year = homes_first_year * 3
+
+Step 3: Calculate total homes built by the end of the second year
+total_homes_end_second_year = homes_first_year + homes_second_year
+
+Step 4: Calculate homes to be built in the third year
+homes_third_year = 2 * total_homes_end_second_year
+
+Step 5: Calculate total homes built over the three years
+total_homes = total_homes_end_second_year + homes_third

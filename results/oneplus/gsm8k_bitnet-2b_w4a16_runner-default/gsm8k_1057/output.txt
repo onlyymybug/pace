@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Greg puts clean sheets on 4 twin beds and 1 king size bed every week.  His laundry machine will only allow him to wash 2 twin sets of sheets at a time and 1 king set of sheets at a time.  How many loads of laundry does he do in a year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of loads of laundry Greg does in a year. We'll break it down step by step:
+
+1. **Calculate the number of sheets per week:**
+   - Each twin bed gets 1 sheet, and there are 4 twin beds, so \(4 \times 1 = 4\) sheets.
+   - Each king bed gets 1 sheet, and there is 1 king bed, so \(1 \times 1 = 1\) sheet.
+   - Total sheets per week = \(4 + 1 = 5\) sheets.
+
+2. **Determine

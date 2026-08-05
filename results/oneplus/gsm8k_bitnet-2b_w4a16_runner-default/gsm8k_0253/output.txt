@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Last night Rick killed ten wolves and 15 cougars while hunting. Today Rick killed three times as many wolves as cougars and three fewer cougars than the previous night. How many animals did Rick kill?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. **Wolves killed last night:** Rick killed 10 wolves.
+
+2. **Coyotes killed last night:** Rick killed 15 cougars.
+
+3. **Wolves killed today:** Today, Rick killed three times as many wolves as cougars he killed last night. Since he killed 15 cougars last night, he killed \(3 \times 15 = 45\) wolves today.
+
+4. **Coyotes killed today:** Today, Rick killed three fewer cougars than he killed last night. Since he killed 15 cougars last night

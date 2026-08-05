@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James wants to hang crepe-paper streamers from his backyard fence for his birthday party. His backyard fence is a rectangle that measures 20 feet on the long side and 15 feet on the short side. How many feet of crepe paper does James need to buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many feet of crepe paper James needs, we need to calculate the perimeter of the rectangle since that will give us the total length of the fence that needs to be covered with crepe paper.
+
+The formula for the perimeter (P) of a rectangle is given by:
+\[ P = 2 \times (length + width) \]
+
+Given:
+- Length (L) = 20 feet
+- Width (W) = 15 feet
+
+Substitute the given values into the formula:
+\[ P = 2 \times (20 + 15) \]
+\[ P = 2 \times 35

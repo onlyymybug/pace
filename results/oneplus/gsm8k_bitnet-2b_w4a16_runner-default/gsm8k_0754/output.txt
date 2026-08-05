@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jeff owns a catering company.  During a recent event, he sent 8 dozen glasses and 4 dozen plates for the party.  When they were returned, 10 glasses were broken as well as 6 plates.  How many glasses and plates does Jeff have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Calculate the total number of glasses and plates Jeff initially sent.
+2. Subtract the number of broken glasses and plates from the total sent.
+3. Determine the number of glasses and plates Jeff has now.
+
+Step 1: Calculate the total number of glasses and plates Jeff initially sent.
+- Jeff sent 8 dozen glasses. Since one dozen equals 12, he sent \(8 \times 12 = 96\) glasses.
+- Jeff sent 4 dozen plates. Since one dozen equals 12, he sent \(4 \times 12 = 48\) plates.
+

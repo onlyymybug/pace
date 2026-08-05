@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Crista's plants need to be watered every day. She has 20 plants. 4 of her plants need half of a cup of water. 8 plants need 1 cup of water. The rest need a quarter of a cup of water. How many cups of water does Crista need every day for her plants?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much water Crista needs every day for her plants, we first need to calculate the amount of water each group of plants requires and then sum these amounts.
+
+1. Calculate the water needed for the 4 plants that need half a cup of water each:
+   \(4 \times \frac{1}{2} = 2\) cups
+
+2. Calculate the water needed for the 8 plants that need a full cup of water each:
+   \(8 \times 1 = 8\) cups
+
+3. Calculate the water needed for the remaining plants. Since there are 20 plants in total and 4

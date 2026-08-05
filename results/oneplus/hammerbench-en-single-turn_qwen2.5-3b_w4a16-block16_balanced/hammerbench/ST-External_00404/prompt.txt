@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.getTravelVisaInfo","description":"Get visa requirements and process for a specific destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"UtilityTools.Memo.searchNotes","description":"Search memos by keyword (see all by default)","parameters":{"type":"object","properties":{"key_words":{"type":"string","description":"KEYWORDS"}},"required":["key_words"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.searchRentingHouses","description":"Search for rentals by criteria","parameters":{"type":"object","properties":{"price":{"type":"string","description":"Rents"},"house_area":{"type":"string","description":"Area"},"level":{"type":"string","description":"Floor"},"age":{"type":"integer","description":"fixed number of years"},"house_type":{"type":"string","description":"Layout"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"},"indoor_decoration":{"type":"string","description":"decorate"},"furniture":{"type":"string","description":"Furniture"}},"required":["price","house_area","level","age","house_type","housing_estate","location","indoor_decoration","furniture"]}}
+{"name":"OnlineShopping.Mall.searchCommodityOrders","description":"Query all eligible orders by commodity name and other criteria","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"order_stage":{"type":"string","description":"Order status, e.g. Pending Payment, Pending Receipt, Completed, Cancelled, Refund/After Sales"},"evaluate_stage":{"type":"string","description":"Review status, e.g. reviewed, pending review"}},"required":["goods","order_stage","evaluate_stage"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow at 3pm, I will be waiting for you in Rio de Janeiro, Brazil, at the Blue Cafe next to Copacabana Beach.
+query:What are the visa requirements and procedures for the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

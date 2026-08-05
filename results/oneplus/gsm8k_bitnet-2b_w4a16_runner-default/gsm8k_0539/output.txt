@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Emma can make and upload 72 vlogs per month. But she was only able to make 18 vlogs for the first week, 21 vlogs for the second week, and 15 vlogs for the third week. How many vlogs should she do to complete the 72 vlogs per month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many vlogs Emma should do to complete the 72 vlogs per month, we need to calculate the total number of vlogs she has already made and then subtract that from the monthly goal.
+
+First, let's add up the vlogs she made in the first three weeks:
+- First week: 18 vlogs
+- Second week: 21 vlogs
+- Third week: 15 vlogs
+
+Total vlogs made in the first three weeks = 18 + 21 + 15 = 54 vlogs
+
+Now, we subtract the total vlogs made from the monthly goal:
+72 vlogs

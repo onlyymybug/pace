@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.RadioStations.radioShareRadio","description":"Share the station to social platforms based on the station name","parameters":{"type":"object","properties":{"radio_name":{"type":"string","description":"Radio Name"},"to":{"type":"string","description":"Sharing platform"}},"required":["radio_name","to"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"SocialCommunication.InstantMessaging.sendFile","description":"Send a file to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the file"},"file_path":{"type":"string","description":"The path or document name of the file to send locally"}},"required":["receiver_name","file_path"]}}
+{"name":"Travel.ScenicAreaServices.checkScenicSpotAvailability","description":"View the current availability of selected scenic spots by scenic spot name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:On the weekend, we plan to hike to the Great Wall, gather at Exit C of Jishuitan Station on Subway Line 2 at 8am, and then we will all leave together. The view of the Great Wall is spectacular and it is possible to prepare some water and food in advance and wear comfortable shoes. If the weather is sunny, we can also see the scenery far away. Looking forward to a great day with you all!
+query:Can I make an appointment now at the place mentioned in the WeChat Xiao Li sent me?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ten stalls have 20 cows each. Mr. Sylas buys 40 cows and divides them equally, putting an equal number of the new cows into each of the twenty stalls. How many cows are in 8 of the stalls? Step 1: Calculate total number of cows initially.
+There are 10 stalls with 20 cows each, so initially there are 10*20 = 200 cows.
+
+Step 2: Calculate the total number of cows after Mr. Sylas buys more.
+Mr. Sylas buys 40 more cows, so total becomes 200+40 = 240 cows.
+
+Step 3: Determine how many cows are placed in each stall after the new cows are divided.
+Since he divides the 40 new cows equally among the 20 stalls, each stall

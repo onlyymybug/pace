@@ -1,0 +1,29 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: For what value of $x$ is $2^3\cdot3^x=72$? To solve the equation \(2^3 \cdot 3^x = 72\), we start by simplifying the left side of of the equation. We know that \(2^3 = 8\), so the equation becomes:
+
+\[8 \cdot 3^x = 72\]
+
+Next, we simplify \(8\) as \(2^3\), so the equation is now:
+
+\[2^3 \cdot 3^x = 72\]
+
+We can divide both sides of of the equation by \(2^3\) to isolate \(3^x\):
+
+\[3^x = \frac{72}{2^3}\]
+
+Since \(2^3 = 8\), we have:
+
+\[3^x = \frac{72}{8} = 9\]
+
+We recognize that \(9\) can be written as a power of of of \(3\), specifically \(9 = 3^2\). So the equation becomes:
+
+\[3^x = 3^2\]
+
+Since the bases are the same, we can equate the exponents:
+
+\[x = 2\]
+
+Thus, the value of of \(x\) is:
+
+\(\boxed{2}\)<|endoftext|>

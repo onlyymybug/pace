@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.cancelTrainTicket","description":"Cancelling a booked train ticket","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Wagon Number"},"name":{"type":"string","description":"Rider's name"},"time":{"type":"string","description":"To cancel a reservation for a certain time"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["train_number","name","time","departure_station","destination_station"]}}
+{"name":"Health.HealthManagement.deleteHealthGoal","description":"Delete the specified health goal","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Filter deletions based on target content"},"time_limit":{"type":"string","description":"Delete based on target completion time"}},"required":["goal_title","goal_content","time_limit"]}}
+{"name":"ConvenientLiving.GovernmentServices.deleteServiceRequest","description":"Remove city service requests that are no longer needed","parameters":{"type":"object","properties":{"request_name":{"type":"string","description":"Name of the service request"}},"required":["request_name"]}}
+{"name":"Navigation.TrainTickets.cancelTrainWaitlistOrder","description":"Help the user cancel the specified train ticket standby order","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"commit_date":{"type":"string","description":"Date/time the order was submitted"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["ride_date","commit_date","departure_station","destination_station"]}}
+{"name":"Navigation.TaxiCarRental.cancelCarRentalOrder","description":"Cancel the rental (all pending reservations are canceled by default)","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"}},"required":["time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Minutes: At 3 p.m. today, Zhang San gave a briefing on the progress of the project in the conference room, detailing the current development of the project, including the problems solved and the next plans. Zhang San also raised the need for two additional developers to ensure the project is completed on time.
+query:I want to cancel the G123 train ticket from Beijing to Shanghai tomorrow, the ticket of the person mentioned in the notepad.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrainTickets.cancelTrainTicket","parameters":{"train_number":"G123","name":"ZhangSan","time":"15:00","departure_station":"Beijing","destination_station":"Shanghai"}}<|im_end|>

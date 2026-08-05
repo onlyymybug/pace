@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.viewTaxiOrderDetail","description":"View details of a ride","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+{"name":"NewsMagazines.News.shareNews","description":"Share news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"to":{"type":"string","description":"WeChat/qq/TikTok"}},"required":["news_name","to"]}}
+{"name":"MusicRadio.RadioStations.radioShareRadio","description":"Share the station to social platforms based on the station name","parameters":{"type":"object","properties":{"radio_name":{"type":"string","description":"Radio Name"},"to":{"type":"string","description":"Sharing platform"}},"required":["radio_name","to"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Meeting Reminder - March 10th at 8am
+
+Dear Team Member,
+
+Hello!
+
+As a reminder, we are holding a project progress meeting on March 10th at 8am.The meeting will be held online. Please prepare relevant materials in advance and ensure that the network environment is good and attend on time.The main agenda of the meeting includes reporting on the current progress of the project, planning for the next phase of work, and feedback from team members.Please prepare in advance and actively participate in the discussion.
+
+Thanks,
+
+Best regards,
+
+[Your name]
+query:I would like to see the details of the taxi trip to Hongqiao Railway Station at the time mentioned in the email.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.viewTaxiOrderDetail","parameters":{"time":"8:00","destination":"Hongqiao Railway Station"}}<|im_end|>

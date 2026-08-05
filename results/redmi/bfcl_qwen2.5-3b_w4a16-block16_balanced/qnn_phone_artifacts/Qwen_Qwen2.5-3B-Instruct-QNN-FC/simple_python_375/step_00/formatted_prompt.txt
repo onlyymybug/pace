@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "walmart.check_price", "description": "Calculate total price for given items and their quantities at Walmart. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"items": {"type": "array", "items": {"type": "string"}, "description": "List of items to be priced."}, "quantities": {"type": "array", "items": {"type": "integer"}, "description": "Quantity of each item corresponding to the items list."}, "store_location": {"type": "string", "description": "The store location for specific pricing (optional). Default to all if not specified."}}, "required": ["items", "quantities"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Check the total price for three pumpkins and two dozen eggs at Walmart.<|im_end|>
+<|im_start|>assistant

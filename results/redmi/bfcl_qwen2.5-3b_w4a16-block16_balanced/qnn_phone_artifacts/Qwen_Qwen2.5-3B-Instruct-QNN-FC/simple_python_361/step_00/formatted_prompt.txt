@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "restaurant_finder", "description": "Locate restaurants based on certain criteria such as cuisine, city, and dietary preferences. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"city": {"type": "string", "description": "City where you are looking for the restaurant."}, "cuisine": {"type": "string", "description": "Type of cuisine you are interested in."}, "diet": {"type": "string", "description": "Dietary preferences. e.g. 'Vegetarian', 'Gluten-free', etc. Default 'Vegetarian'."}}, "required": ["city", "cuisine"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find Italian restaurants near New York city that serves gluten-free options.<|im_end|>
+<|im_start|>assistant

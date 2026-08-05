@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Stephen placed an online order for groceries.  His final bill came to $40.00.  Because this was through a delivery vendor, they tacked on a 25% fee to his final total and charged him $3.00 in delivery fees.  Stephen also added a $4.00 tip.  After the extra fees, what was the final price of Stephen's groceries? To solve this, we need to add the extra fees to the original total.
+
+Original total: $40.00
+
+Extra fees: 25% of $40.00 + $3.00 + $4.00
+
+First, calculate 25% of $40.0 - 25% of 40 = 0.25 * 40 = $10.00
+
+Then add the rest of the extra fees: $10.00 + $3.00 + $4.00
+
+Extra fees total: $17

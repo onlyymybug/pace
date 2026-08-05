@@ -1,0 +1,13 @@
+To convert the repeating decimal \(0.\overline{1331}\) into a fraction, we start by letting \(x = 0.\overline{1331}\). This means that \(x = 0.133113311331\ldots\).
+
+To eliminate the repeating part, we multiply \(x\) by \(10000\) (since the repeating block "1331" has 4 digits):
+\[10000x = 1331.13311331\ldots\]
+
+Now we have the equation:
+\[10000x = 1331 + 0.\overline{1331}.\]
+Since \(0.\overline{1331} = x\), we can substitute \(x\) in the equation:
+\[10000x = 1331 + x.\]
+Next, we isolate \(x\) by subtracting \(x\) from both sides:
+\[10000x - x = 1331.\]
+This simplifies to:
+\[9999x = 1331.\

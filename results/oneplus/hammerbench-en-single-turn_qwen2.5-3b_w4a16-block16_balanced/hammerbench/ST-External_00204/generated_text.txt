@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"ConvenientLiving.UtilityPayments.payBill","description":"Payment of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"pay":{"type":"float","description":"Contribution Amount, Default Billing Amount"},"address":{"type":"string","description":"user address, default address"}},"required":["service_type","user_name","pay","address"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Auntie Liu! I'm Xiao Li. I met your grandson Xiao Ming when I went to the market today. He said he would come back this weekend to see you. He also asked me to help bring you a box of apples, which he said you liked to eat recently. We hope you like it when you receive it. I wish you good health and a happy mood!
+query:Help me check the water and electricity expenses of the friend's name mentioned in the message received from QQ in Unit 101, Unit 1, Building 1, Pearl Garden, Dongcheng District, need to pay 500 yuan.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.UtilityPayments.payBill","parameters":{"service_type":"water_and_electricity", "user_name":"Friend's name mentioned in the message", "pay":500, "address":"Unit 101, Unit 1, Building 1, Pearl Garden, Dongcheng District"}}<|im_end|>

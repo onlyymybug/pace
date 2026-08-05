@@ -1,0 +1,25 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brett is 14 years old. In four years his sister Angela will be three times as old as he is now. How old is Angela right now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Angela's current age as \( A \).
+
+In four years, Angela will be \( A + 4 \) years old.
+
+According to the problem, in four years Angela will be three times as old as Brett is now. Since Brett is currently 14 years old, we can write the equation:
+
+\[ A + 4 = 3 \times 14 \]
+
+Now, solve for \( A \):
+
+\[ A + 4 = 42 \]
+
+Subtract 4 from both sides:
+
+\[ A = 42 - 4 \]
+
+\[ A = 38 \]
+
+So, Angela is currently 38

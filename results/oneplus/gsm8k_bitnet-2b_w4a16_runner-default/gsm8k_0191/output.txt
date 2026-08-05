@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John collects peaches for 3 hours.  He can collect 2 peaches a minute.  How many peaches does he collect?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we need to determine how many peaches John can collect in 3 hours, given that he can collect 2 peaches per minute.
+
+First, we need to convert the time from hours to minutes because the rate of collection is given in minutes per peach. 
+
+1 hour = 60 minutes
+
+So, 3 hours = 3 * 60 minutes = 180 minutes
+
+Now, we know that John can collect 2 peaches per minute. To find out how many peaches he can collect in 180 minutes, we multiply the number of minutes by the rate of collection:
+
+Number of peaches

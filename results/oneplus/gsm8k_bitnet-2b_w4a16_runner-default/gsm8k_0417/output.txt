@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A herd consists of camels and dromedaries. There are 180 heads and 304 bumps. How many dromedaries are there if camels have two humps each and dromedaries have one hump each?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of camels as C and the number of dromedaries as D. We know that:
+
+1. Each camel has 1 head and 2 humps, so camels contribute 1 + 2 = 3 bumps.
+2. Each dromedary has 1 head and 1 hump, so dromedaries contribute 1 + 1 = 2 bumps.
+
+Given:
+- Total heads = 180
+- Total bumps = 304
+
+We can set up the following equations based on the contributions of camels and dromedaries:
+
+1. C + D =

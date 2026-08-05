@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In Mr. Roper's class of 30 students, 20% of the class are football players.  Out of the remaining class, 25% of the students are cheerleaders or part of band.  These 3 groups of students will need to leave early today to travel to an away game.  How many students are leaving early? Step 1: Calculate the number of students who are football players.
+Number of football players = 20% of 30 students = 0.20 * 30 = 6 students
+
+Step 2: Calculate the number of students remaining after the football players leave.
+Total students - Football players = 30 - 6 = 24 students
+
+Step 3: Calculate the number of students who are either cheerleaders or part of the band.
+Number of cheerleaders/bands members = 25% of 24 students = 0.25 * 24 = 6 students

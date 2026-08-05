@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.RadioStations.deletePrivateRadio","description":"Delete private station by station name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Radio Name"}},"required":["name"]}}
+{"name":"ConvenientLiving.JobRecruitment.uncollectJob","description":"Unfavorite Positions","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOffScreenShare","description":"Turn off screen sharing","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"OfficeSoftware.Conferencing.removeParticipants","description":"Remove participants from the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Remove people list"}},"required":["meeting_id","title","time","participant_list"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, I am Manager Zhang of Miramar New World Art Center, thank you for your attention to our company. We would love to invite you to our upcoming spring art exhibitions. The exhibition will showcase a range of contemporary artworks, including painting, sculpture and multimedia art, and aims to provide a platform for art lovers to exchange and learn. If you are interested in attending, you can reply to this message with detailed exhibition information. Looking forward to hearing from you! Best regards, Brave New World Art Center.
+query:I want to cancel the UI designer position of the company mentioned in the WeChat message sent to me by Xiao Li<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.JobRecruitment.uncollectJob","parameters":{"job_name":"UI designer","company_name":"EK"}}<|im_end|>

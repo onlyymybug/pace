@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.viewMediumMessage","description":"View messages for specified friends in specified media (defaults to last week)","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","name","account_number","time"]}}
+{"name":"OnlineShopping.Mall.viewMessage","description":"View messages for a specific friend or time, and see the entire list of messages by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleMessage","description":"View message list by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"MusicRadio.Karaoke.getAccompaniments","description":"Get a list of song accompaniments for a given song title","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"singer_name":{"type":"string","description":"Singer name"}},"required":["song_name","singer_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I'm Zhang Hua from the project team. There are some new developments that need to be discussed with you regarding the market analysis project that we are working on together. Next Wednesday at 10am, we can meet in the company conference room for more details, if you'd like. Please don't hesitate to let me know if you have any suggestions or materials that need to be prepared in advance. I look forward to your reply, thank you!
+query:I'd like to see a message from the name of the person mentioned in the text.<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.Mall.viewMessage","parameters":{"}}<|im_end|>

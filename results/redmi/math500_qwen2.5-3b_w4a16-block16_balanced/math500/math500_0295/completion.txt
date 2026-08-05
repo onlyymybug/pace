@@ -1,0 +1,10 @@
+To solve the problem, we need to find three consecutive positive integers whose sum is a three-digit palindrome and is less than 220. Let's denote the three consecutive integers as \( n-1 \), \( n \), and \( n+1 \). The sum of of of these three integers is:
+
+\[
+(n-1) + n + (n+1) = 3n
+\]
+
+We need \( 3n \) to be a three-digit palindrome and \( 3n < 220 \). First, we determine the range for \( n \):
+
+\[
+3n < 

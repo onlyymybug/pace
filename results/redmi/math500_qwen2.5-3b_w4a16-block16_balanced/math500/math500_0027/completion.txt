@@ -1,0 +1,6 @@
+To solve the problem of of of arranging 7 people around a round table such that no two of of 3 specific people (Pierre, Rosa, and Thomas) sit next to each other, we can follow these steps:
+
+1. **Arrange the 4 people who are not restricted:**
+   - First, we arrange 4 people who are not restricted (let's call them A, B, C, and D) around the table. The number of ways to arrange \( n \) people around a round table is \((n-1)!\). For 4 people, this is:
+     \[
+     (

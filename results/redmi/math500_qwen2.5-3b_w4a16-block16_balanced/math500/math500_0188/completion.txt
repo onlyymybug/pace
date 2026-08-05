@@ -1,0 +1,18 @@
+Let's denote the number of dimes Hillary has as \( d \) and the number of nickels as \( n \). We are given two pieces of information:
+
+1. The total number of coins is 11.
+2. The total value of of the coins is 75 cents.
+
+We can translate these pieces of information into the following system of of equations:
+\[
+d + n = 11
+\]
+\[
+10d + 5n = 75
+\]
+
+First, we solve the first equation for \( d \):
+\[
+d = 11 - n
+\]
+

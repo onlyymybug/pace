@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Email.searchMail","description":"Search messages by email keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"KEYWORDS"},"max_results":{"type":"integer","description":"Maximum number of returned results, default is 10"}},"required":["keyword","max_results"]}}
+{"name":"Travel.ItineraryServices.searchTravelBlogs","description":"Search travel blog posts for specific destinations","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"MusicRadio.OnlineMusic.participateInMusicTopicDiscussion","description":"Participate in musical conversations by topic and comment content","parameters":{"type":"object","properties":{"topic":{"type":"string","description":"Topic"},"comment":{"type":"string","description":"Comments"}},"required":["topic","comment"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Education.ChildrenEducation.searchChildSpeech","description":"Search for child-friendly presentations","parameters":{"type":"object","properties":{"speech_topic":{"type":"string","description":"Speech topics such as bravery, friendship"}},"required":["speech_topic"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I was packing my bags and flying to the Maldives for a vacation, and I heard that the sunrise by the sea is very beautiful, and I can't wait to see the sea there! The beaches and coral reefs are famous and I look forward to an unforgettable vacation there.
+query:I'm looking for a travel blog post about the undersea restaurant mentioned in the WeChat Xiao Li sent me. Can you help me search for it?<|im_end|>
+<|im_start|>assistant

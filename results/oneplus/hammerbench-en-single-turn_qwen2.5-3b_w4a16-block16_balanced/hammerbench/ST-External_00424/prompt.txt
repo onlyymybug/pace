@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.shareViolationDetail","description":"Share Designated Violation Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"},"media":{"type":"string","description":"Ways to share"},"name":{"type":"string","description":"Shared content recipients"}},"required":["plate_number","city","time","media","name"]}}
+{"name":"Travel.HotelServices.getHotelReservationHistory","description":"Get a user's hotel booking history","parameters":{"type":"object","properties":{"start_date":{"type":"string","description":"Start Time "},"end_date":{"type":"string","description":"End Time"}},"required":["start_date","end_date"]}}
+{"name":"Finance.Insurance.getInsuranceHistoricalClaims","description":"Check your insurance claim history","parameters":{"type":"object","properties":{"start_date":{"type":"string","description":"Start date"},"end_date":{"type":"string","description":"结束日期"},"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["start_date","end_date","insurance_name","insurance_type"]}}
+{"name":"Finance.Funds.getFundTransactionHistory","description":"Query transaction history of designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Navigation.PublicTransit.viewBusHistory","description":"Viewing a user's transit history","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Xiaoming: Hi, Xiaohua, let's go to the library on March 31 to review and prepare for the exam. I'm free that day, how are you?
+query:I would like to check the time mentioned in the QQ message sent to me by Xiaoming on March 1, my hotel reservation history.<|im_end|>
+<|im_start|>assistant

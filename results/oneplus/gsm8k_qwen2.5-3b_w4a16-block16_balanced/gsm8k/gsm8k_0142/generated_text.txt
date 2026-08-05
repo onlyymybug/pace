@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 700 bees in a hive. There are twice as many worker bees as baby bees, and there are twice as many babies as queens.  How many worker bees are there? Step  Let's denote the number of queens as Q, the number of babies as B, and the number of worker bees as W. From the problem, we know:
+
+1) W = 700
+2) B = 2Q (twice as many baby bees as queens)
+3) W = 2B (twice as many worker bees as baby bees)
+
+From (2) and (3), we can substitute B in (3) with 2Q:
+
+W = 2(2Q) = 4Q
+
+Given W = 700, we substitute:
+
+700 =

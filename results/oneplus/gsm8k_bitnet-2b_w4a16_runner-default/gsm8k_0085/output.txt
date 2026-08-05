@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A football team played 22 games. They won 8 more than they lost. How many did they win?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of games won as W and the number of games lost as L. According to the problem, we have two pieces of information:
+
+1. The total number of games played is 22.
+2. They won 8 more games than they lost.
+
+We can express these as equations:
+1. W + L = 22
+2. W = L + 8
+
+We can substitute the second equation into the first to find L:
+(L + 8) + L = 22
+2L + 8 = 22
+2L = 22 - 8
+2L = 14

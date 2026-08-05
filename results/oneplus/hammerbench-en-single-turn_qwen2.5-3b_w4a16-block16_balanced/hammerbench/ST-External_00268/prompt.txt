@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"SocialCommunication.SocialMedia.mediumComment","description":"Comment on a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"OfficeSoftware.Email.sendMail","description":"Send a new message","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Email Title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["title","content","receivers"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Apple, this is Li Xiao, regarding the project we discussed last time, there are some new developments that need your attention. I hope you can contact me when it is convenient for you, and we can discuss it in detail. Looking forward to hearing from you!
+query:Send an email to the person mentioned in the text with the subject line "Product Feedback" and the message "I recently purchased your product and it was a great experience, thank you for your efforts!"<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotEntertainment","description":"Get information about entertainment in designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotVideo","description":"Get relevant videos for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotInfo","description":"Get detailed descriptions of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotList","description":"Search for scenic spots by preference, region, category, etc.","parameters":{"type":"object","properties":{"preference":{"type":"string","description":"User preferences such as family-friendly, couple-friendly, etc."},"region":{"type":"string","description":"Area Names"},"category":{"type":"string","description":"Categories of scenic spots, such as natural landscapes, cultural landscapes, etc."}},"required":["preference","region","category"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotParkingInfo","description":"Get parking information for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We went to The Palace Museum together over the weekend, and the historical sites there are really impressive, especially the magnificent and exquisite carvings of the Taihe Hall, which are breathtaking. We also tasted special snacks in The Palace Museum and experienced a different palace culture. Let's dig deeper next time we get a chance!
+query:I want to see the video of the scenic spot mentioned in Tom's text message, can you help me find it?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ScenicAreaServices.getScenicSpotVideo","parameters":{"name":"The Palace Museum"}}<|im_end|>

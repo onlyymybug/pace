@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Mikka wants to order a pizza with two different toppings. He has 8 different toppings to choose from. How many different pizzas could he order? To determine how many different pizzas Mikka can order with two different toppings from a set of 8 different toppings, we need to calculate the number of combinations of of 8 toppings taken 2 at a time. The formula for combinations is given by:
+
+\[
+\binom{n}{r} = \frac{n!

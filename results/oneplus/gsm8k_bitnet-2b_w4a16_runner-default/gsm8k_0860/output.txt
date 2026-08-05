@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: While working at the restaurant, each of the forty customers who came into the restaurant gave Rafaela a $20 tip. Julieta received 10% less money in tips than Rafaela. How much money did Julieta and Rafaela receive as tips altogether?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much money Rafaela received in tips. Since each of the 40 customers gave her a $20 tip, we multiply the number of customers by the amount of each tip:
+
+Rafaela's tips = 40 customers * $20/customer = $800
+
+Next, we calculate how much Julieta received. Julieta received 10% less than Rafaela. To find 10% of Rafaela's tips, we multiply her total tips by 0.10:
+
+10% of Rafaela's tips = $800 * 0.10 = $80
+
+Since Juli

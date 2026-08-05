@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: When Sophie watches her nephew, she gets out a variety of toys for him. The bag of building blocks has 31 blocks in it. The bin of stuffed animals has 8 stuffed animals inside. The tower of stacking rings has 9 multicolored rings on it. Sophie recently bought a tube of bouncy balls, bringing her total number of toys for her nephew up to 62. How many bouncy balls came in the tube?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many bouncy balls Sophie bought, we need to subtract the total number of toys she already had from the total number of toys she has now.
+
+Total toys now = Total toys after buying more
+31 (building blocks) + 8 (stuffed animals) + 9 (multicolored rings) = 48
+
+So, the number of bouncy balls is:
+62 (total toys now) - 48 (toys already had) = 14
+
+The answer is 14.<|eot_id|>

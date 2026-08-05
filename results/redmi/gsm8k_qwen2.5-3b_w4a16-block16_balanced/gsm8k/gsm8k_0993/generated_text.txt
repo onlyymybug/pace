@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Buford writes many checks every year.  Once per month he writes a check to pay the electric bill.  He also writes a check every month for the gas bill.  Twice per month he writes a check to the church.  And quarterly, he writes a check to the pest and lawn service.  How many checks does Buford write per year? To solve this, we need to sum up all the checks Buford writes in a year.
+
+Electric bill: 1 check per month
+Gas bill: 1 check per month
+Church: 2 checks per month
+Pest and lawn service: 1 check every 3 months
+
+First, calculate the total checks for the monthly bills:
+Electric bill + Gas bill = 1 + 1 = 2 checks per month
+
+Then, add the church checks:
+2 (monthly bills) + 2 (church) = 4 checks per month
+
+Now, add the pest and lawn service checks:
+4 (monthly bills and

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_stock_prices", "description": "Retrieves stock prices for specified companies and duration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"companies": {"type": "array", "items": {"type": "string"}, "description": "List of companies to retrieve stock prices for."}, "duration": {"type": "string", "description": "Time duration to retrieve stock prices for. E.g., '1 week', '2 weeks', '1 month', etc."}}, "required": ["companies", "duration"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Retrieve stock prices of Microsoft and Google for the last 2 weeks.<|im_end|>
+<|im_start|>assistant

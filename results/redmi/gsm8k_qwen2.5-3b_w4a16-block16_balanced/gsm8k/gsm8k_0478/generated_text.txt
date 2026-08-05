@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nine of the kids in Gina's class are allergic to dairy, 6 are allergic to peanuts and 3 are allergic to both. If there are 32 kids in her class, how many aren't allergic to anything? Step 1: Identify the total number of kids in the class: 32
+Step 2: Calculate the number of kids allergic to at least one of the allergens (dairy or peanuts): 
+   - Kids allergic to dairy only: 9
+   - Kids allergic to peanuts only: 6 - 3 (since 3 kids are allergic to both, subtract them from peanut only count)
+   - Kids allergic to both: 3
+   
+   Total allergic to at least one allergen: 9 + (6-3) + 3
+   
+Step 3: Subtract the total number of kids allergic to

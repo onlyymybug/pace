@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Henry is making cookies for a local baking competition. He wants to make twice as many as he did last year. When he finishes baking, he realizes he actually baked 15 more cookies than he meant to. He drops 5 of his cookies as he is putting them out to cool, and now has a total of 110 cookies. How many cookies did Henry bake last year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cookies Henry baked last year as x. This year, he baked twice as many, so he baked 2x cookies. However, he actually baked 15 more than he intended, so he baked 2x + 15 cookies. After dropping 5 cookies, he ended up with 110 cookies. We can set up the equation:
+
+2x + 15 - 5 = 110
+
+Simplifying the equation:
+
+2x + 10 = 110
+
+Subtract 10 from both sides:
+
+2x = 100
+
+Divide both sides by 2:
+
+x = 50

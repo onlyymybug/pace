@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The restaurant has 170 normal chairs and 23 chairs for babies. If 20 of the normal chairs and 13 of the baby chairs were sent to the carpenter for repair, how many chairs does the restaurant have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to first determine the number of chairs left after some were sent to the carpenter for repair. We start with the initial number of chairs and subtract the number sent away.
+
+Initial number of normal chairs = 170
+Number of normal chairs sent away = 20
+Number of normal chairs left = 170 - 20 = 150
+
+Initial number of baby chairs = 23
+Number of baby chairs sent away = 13
+Number of baby chairs left = 23 - 13 = 10
+
+Now, we add the remaining normal chairs and baby chairs to find the total number of chairs left

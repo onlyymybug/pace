@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark is trying to choose between two venues for a surprise party for his wife.  The first venue charges a flat fee of $200, regardless of how many guests attend.  While the second charges, $25 per person who attends.  However, the first venue does not include food, which Mark estimates will cost $5 for each person who attends.  At the second venue, food for each guest is already included in the price.  How many guests are necessary for the two venues to be equal in cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many guests are necessary for the two venues to be equal in cost, we need to set up equations for the total cost at each venue and then solve for the number of guests.
+
+Let \( x \) represent the number of guests.
+
+For the first venue:
+- The flat fee is $200.
+- The cost for food per guest is $5, so the total food cost is \( 5x \).
+- Therefore, the total cost for the first venue is \( 200 + 5x \).
+
+For the second venue:
+- The cost per guest for food is $25, so the total food cost

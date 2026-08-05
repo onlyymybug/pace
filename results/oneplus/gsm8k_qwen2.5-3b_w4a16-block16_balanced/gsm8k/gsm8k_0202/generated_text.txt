@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John wins an award at work.  The award has a 1 time monetary reward of $5000 and a 5% raise in salary.  If he makes 2000 a week, every week of the year and he got the award on the first day of the year how much money did he make that year? Step 1: Calculate the raise in salary.
+John's current weekly salary is $2000. A 5% raise means he gets an additional 0.05 * 2000 = 100 dollars per week.
+
+Step 2: Calculate the total raise for the year.
+Since there are 52 weeks in a year, the total raise for the year is 52 * 100 = 5200 dollars.
+
+Step 3: Calculate the total monetary reward.
+The monetary reward is $5000.
+
+Step 4: Calculate the total amount John makes

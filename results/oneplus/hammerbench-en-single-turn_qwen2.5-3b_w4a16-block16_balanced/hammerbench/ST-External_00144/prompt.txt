@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryHousingSubsidyInfo","description":"Find out about housing allowances","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"User name, default user himself"}},"required":["user_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurantDiscounts","description":"Enter keywords to search for deals","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords related to offers"}},"required":["keyword"]}}
+{"name":"Education.ChildrenEducation.searchChildRiddle","description":"Search for children's riddles","parameters":{"type":"object","properties":{"riddle_type":{"type":"string","description":"Type of puzzle, e.g. animal puzzle, object puzzle"}},"required":["riddle_type"]}}
+{"name":"SocialCommunication.Community.searchCommunityTopics","description":"Search for related topics in specific communities by keyword","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Community name of the topic to search"},"key_words":{"type":"string","description":"Keywords used to search topics"}},"required":["community_name","key_words"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Zhang San! I have compiled a detailed report on the progress of the project discussed in our meeting last week. I hope you can take a moment to take a look. In addition, Li Si also provided a lot of useful information, I think you can communicate with him directly, which may be more helpful to the project. Let's meet on Friday. We'll talk about it later?
+query:Friends mentioned in WeChat, can you help me check the information about housing subsidies?<|im_end|>
+<|im_start|>assistant

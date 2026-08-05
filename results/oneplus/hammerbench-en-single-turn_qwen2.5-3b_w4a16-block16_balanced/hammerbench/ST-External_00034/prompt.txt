@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"VideoPlayback.ShortVideos.searchShortVideo","description":"Search for short videos based on keywords (vlog blogger/video keywords/taxonomy keywords)","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Short video blogger name/video keyword search"},"type":{"type":"string","description":"Recommended, Popular, Chase, Film and TV New Journey/Reference bilibili, etc."},"datetime":{"type":"string","description":"Release time: unlimited, within a day, within a week, within half a year"},"duration":{"type":"string","description":"Video time: unlimited, 1 minute, 1--5 minutes, more than 5 minutes"},"ai_search":{"type":"string","description":"Based on search history, viewing history can only be searched"}},"required":["keyword","type","datetime","duration","ai_search"]}}
+{"name":"UtilityTools.Search.searchWeb","description":"Web search (text, voice, photo search default text)","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search Content"},"type":{"type":"string","description":"Text; Voice; Picture; Default Text"}},"required":["keyword","type"]}}
+{"name":"VideoPlayback.OnlineVideos.searchOnlineVideo","description":"Search online videos, which can be searched based on keywords (director/publisher/video keywords); can be searched based on categories; can be searched based on AI smart search","parameters":{"type":"object","properties":{"keyword":{"type":"array","description":"Director/Publisher/Video Keyword Search"},"video_type":{"type":"string","description":"Video Type Categories, Recommended, Popular, Chase, Film and Television New Journey"},"ai_search":{"type":"string","description":"Based on search history, viewing history can only be turned off by default"}},"required":["keyword","video_type","ai_search"]}}
+{"name":"Navigation.MapNavigation.searchSurrounding","description":"Search for nearby points of interest, including shops, food, gas stations, office buildings, hotels, shopping malls, etc.","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The name or address of the central location of the search, the default current location"},"category":{"type":"string","description":"Categories of points of interest, such as restaurants, hotels, shopping malls, etc."},"radius":{"type":"integer","description":"Search radius, in meters, defaults to 500"}},"required":["location","category","radius"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Ming, I'll wait for you at Guangzhou Tower at 2pm on Saturday, we'll discuss the next project together. Don't forget to bring your laptop.
+query:Is there a recommended cafe within 1000 meters of the place mentioned in Tom's text message?<|im_end|>
+<|im_start|>assistant

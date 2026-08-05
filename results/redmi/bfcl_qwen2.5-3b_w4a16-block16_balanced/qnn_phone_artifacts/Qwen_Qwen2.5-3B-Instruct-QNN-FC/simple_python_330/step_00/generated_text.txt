@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "board_game_info", "description": "Get the information about a board game from a database.  Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game_name": {"type": "string", "description": "Name of the board game."}, "info_required": {"type": "array", "items": {"type": "string", "enum": ["average_review_rating", "age_range", "number_of_players", "playing_time", "genre"]}, "description": "Array of information requested for the game."}}, "required": ["game_name", "info_required"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the average review rating and the age range for the board game 'Catan'?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "board_game_info", "arguments": {"game_name": "Catan", "info_required": ["average_review_rating", "age_range"]}}
+</tool_call><|im_end|>

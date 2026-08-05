@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Paul has 52 marbles. His friend gave him 28 marbles. Then, he lost 1/4 of his marbles. How many marbles does Paul have left? Step 1: Paul initially has 52 marbles.
+Step 2: His friend gives him 28 more marbles, so he now has 52 + 28 marbles.
+Step 3: He then loses 1/4 of of his marbles, meaning he retains 3/4 of his total marbles.
+Step 4: Calculate the total marbles after receiving from friend: 52 + 28 = 80 marbles.
+Step 5: Calculate the remaining marbles after losing 1/4: 80 * (3/4) = 6

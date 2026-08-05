@@ -1,0 +1,4 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: There are an infinite number of vectors $\mathbf{v}$ such that
+\[\begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix} \times \mathbf{v} = \begin{pmatrix} 90 \\ 30 \\ 30 \end{pmatrix}.\]Find the vector $\mathbf{v}$ that has the smallest magnitude. To solve the problem, we need to find the vector \(\mathbf{v} = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\) such that the cross product \(\begin{pmatrix} 1 \\ 2 \\ -5 \end{pmatrix} \times \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix} = \begin{pmatrix} 90 \\ 30 \\ 30 \end{pmatrix}\). The cross product of two vectors \(\begin

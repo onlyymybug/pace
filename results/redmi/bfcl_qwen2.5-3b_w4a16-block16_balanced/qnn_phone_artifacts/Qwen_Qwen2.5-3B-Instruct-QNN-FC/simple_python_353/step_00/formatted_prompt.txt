@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "find_recipes", "description": "Find recipes based on dietary restrictions, meal type, and preferred ingredients. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"diet": {"type": "string", "description": "The dietary restrictions, e.g., 'vegan', 'gluten-free'."}, "meal_type": {"type": "string", "description": "The type of meal, e.g., 'dinner', 'breakfast'."}, "ingredients": {"type": "array", "items": {"type": "string"}, "description": "The preferred ingredients. If left blank, it will default to return general recipes."}}, "required": ["diet", "meal_type"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are some gluten-free recipes for dinner?<|im_end|>
+<|im_start|>assistant

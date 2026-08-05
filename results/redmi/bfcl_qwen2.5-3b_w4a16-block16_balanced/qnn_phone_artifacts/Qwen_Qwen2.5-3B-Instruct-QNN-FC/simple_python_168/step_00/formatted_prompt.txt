@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "lawsuit_search", "description": "Search for lawsuits related to a specific company within a specific date range and location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"company": {"type": "string", "description": "The company related to the lawsuit."}, "start_date": {"type": "string", "description": "Start of the date range for when the lawsuit was filed in the format of MM-DD-YYY."}, "location": {"type": "string", "description": "Location where the lawsuit was filed in the format of full state name."}, "status": {"type": "string", "enum": ["ongoing", "settled", "dismissed"], "description": "The status of the lawsuit. Default is 'ongoing'."}}, "required": ["company", "start_date", "location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Search for ongoing lawsuits related to the company 'Google' filed after January 1, 2021 in California.<|im_end|>
+<|im_start|>assistant

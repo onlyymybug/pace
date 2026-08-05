@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.getJobDetails","description":"Get job-specific details based on job relevance","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"OfficeSoftware.Documents.readDocument","description":"Read the specified document based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"Health.HealthManagement.viewSleepQualityAnalysis","description":"View Sleep Quality Analysis Report for Specific Dates","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date"}},"required":["date"]}}
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"UtilityTools.Memo.viewNotes","description":"View the current memo; view a memo with a specific title; view a specific section of content in a title; view a category memo; view a favorite memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"category":{"type":"string","description":"Classify"},"time":{"type":"string","description":"Creation Time"}},"required":["title","category","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, I want to remind you that there is an important project meeting at 3 pm on April 10th, so please be on time. The meeting place is in the meeting room on the third floor of the company. Please let me know in advance if you have any questions. Thank you!
+query:I would like to see the sleep quality analysis report for the day of the meeting mentioned in the text message.<|im_end|>
+<|im_start|>assistant

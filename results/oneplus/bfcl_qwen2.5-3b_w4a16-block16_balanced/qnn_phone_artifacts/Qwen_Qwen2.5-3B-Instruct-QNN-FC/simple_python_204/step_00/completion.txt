@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "restaurant.find_nearby", "arguments": {"location": "Seattle, WA", "cuisine": "Chinese", "max_distance": 10}}
+</tool_call><|im_end|>

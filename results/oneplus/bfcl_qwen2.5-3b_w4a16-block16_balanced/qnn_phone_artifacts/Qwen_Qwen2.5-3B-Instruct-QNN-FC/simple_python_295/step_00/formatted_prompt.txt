@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_song_lyrics", "description": "Retrieve the lyrics of a song based on the artist's name and song title. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"song_title": {"type": "string", "description": "The title of the song."}, "artist_name": {"type": "string", "description": "The name of the artist who performed the song."}, "lang": {"type": "string", "description": "The language of the lyrics. Default is English.", "enum": ["English", "French", "Spanish", "German", "Italian"]}}, "required": ["song_title", "artist_name"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the lyrics to the song 'Bohemian Rhapsody' by Queen.<|im_end|>
+<|im_start|>assistant

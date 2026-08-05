@@ -1,0 +1,19 @@
+To solve for \(\sin{T}\) in \(\triangle RST\) where \(\sin{R} = \frac{2}{5}\), we need to analyze the given information and use trigonometric identities.
+
+Given:
+- \(\sin{R} = \frac{2}{5}\)
+- \(RS = 5\) (since \(RS = 5\) and \(\sin{R}\) is the ratio of opposite side to hypotenuse)
+
+First, let's denote the sides of of \(RS = a\), \(RT = b\), and \(ST = c\). Given \(RS = 5\), we have:
+\[
+\sin{R} = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{RT}{RS} = \frac{RT}{5} = \frac{2}{5}
+\]
+Thus, \(RT = 2\).
+
+Next, we need to find \(ST = c\). Using the Pythagorean theorem in \(\triangle RST\):
+\[
+RS^2 + RT^2 = ST^2
+\]
+Substituting the known values:
+\[
+5^2 + 2^2 = c

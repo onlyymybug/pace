@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.saveNews","description":"Save news of interest to the user's favorites","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"},"news_name":{"type":"string","description":"News Name"}},"required":["source_name","news_name"]}}
+{"name":"Navigation.MapNavigation.collectLocation","description":"Favorite a place","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Places to save"}},"required":["location"]}}
+{"name":"NewsMagazines.NewspapersMagazines.collectMagazine","description":"Collect magazines or articles by name or journal","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"ConvenientLiving.JobRecruitment.collectJob","description":"Favorite posts of interest","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"Photography.VideoEditing.saveVideo","description":"Save edited video","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer, Thank you for choosing News Time. We are pleased to inform you that Newstime has successfully completed the latest round of financing, which will help us further improve the quality of our services and develop more high-quality content. In the future, Newstime will continue to be committed to providing you with the most timely and comprehensive news information. Your support is our driving force and we look forward to witnessing more exciting moments with you. Sincerely, The Newsweek Team.
+query:Can I save the social hotspot analysis news related to the company mentioned in Tom's text message to my favorites?<|im_end|>
+<|im_start|>assistant

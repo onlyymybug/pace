@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.applyForEducationGrant","description":"Submit an application for an education grant","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Applicant, default user self"},"school":{"type":"string","description":"Schools"}},"required":["name","school"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForResidentPermit","description":"Provide a residence permit application service for the user","parameters":{"type":"object","properties":{"identity_card_number":{"type":"string","description":"User ID number, default user himself"},"address":{"type":"string","description":"Residential Address"}},"required":["identity_card_number","address"]}}
+{"name":"Finance.Funds.purchaseFund","description":"Subscription for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Amount"}},"required":["fund_name","fund_code","amount"]}}
+{"name":"Finance.Funds.recommendFunds","description":"Recommend user-friendly funds based on investment objectives and duration","parameters":{"type":"object","properties":{"objective":{"type":"string","description":"Investment objectives such as robust, aggressive"},"investment_term":{"type":"string","description":"Investment term, e.g. short term, long term"}},"required":["objective","investment_term"]}}
+{"name":"Navigation.FlightTickets.bookFlightTicket","description":"To book a flight, you need to give the departure location, destination, departure time, etc.","parameters":{"type":"object","properties":{"flight_number":{"type":"string","description":"e.g. CA1234"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"name":{"type":"string","description":"Name of person who booked"},"time":{"type":"string","description":"Trip start time"},"passenger_id":{"type":"string","description":"Rider ID number"}},"required":["flight_number","departure","destination","name","time","passenger_id"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Si, hello! This is Zhang San. Regarding the project cooperation we mentioned last time, I have discussed it with Wang Wu. He very much agrees with your point of view and thinks that we can further discuss the specific details of cooperation. This weekend, we plan to meet at Starbucks at 3pm at the house in People's Square, I hope you can come too. Looking forward to meeting you!
+query:I want to apply for an education grant for my friend who is studying at Tsinghua University. He has a bachelor's degree and his family's financial conditions are difficult. How do I apply?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.applyForEducationGrant","parameters":{"name":"EK:Li Si","school":"Tsinghua University"}}<|im_end|>

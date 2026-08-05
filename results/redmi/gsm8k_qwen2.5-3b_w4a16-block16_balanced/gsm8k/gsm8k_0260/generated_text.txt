@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Andrea has 8 more apples than Jamal and half as many bananas as Jamal. Jamal has 4 more bananas than apples. How many fruits are there if Andrea has 52 apples? To solve this problem, let's define the variables first:
+- Let \( A \) be the number of apples Andrea has.
+- Let \( J \) be the number of apples Jamal has.
+- Let \( B \) be the number of bananas Jamal has.
+
+From the problem statement, we have:
+1. \( A = 52 \) (given)
+2. \( A = J + 8 \) (Andrea has 8 more apples than Jamal)
+3. \( B = \frac{1}{2}J \) (Andrea has half as many bananas as Jamal)
+4. \( B =

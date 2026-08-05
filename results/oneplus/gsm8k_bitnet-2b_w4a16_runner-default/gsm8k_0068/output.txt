@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A treasure hunter found a buried treasure chest filled with gems. There were 175 diamonds, 35 fewer rubies than diamonds, and twice the number of emeralds than the rubies.   How many of the gems were there in the chest?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of gems, we first need to determine the number of each type of gem:
+
+1. Number of diamonds = 175
+2. Number of rubies = Number of diamonds - 35 = 175 - 35 = 140
+3. Number of emeralds = 2 * Number of rubies = 2 * 140 = 280
+
+Now, we add up all the gems to find the total number:
+
+Total number of gems = Number of diamonds + Number of rubies + Number of emeralds
+Total number of gems = 175 + 140 + 280
+Total number

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gunter is trying to count the jelly beans in a jar. He asks his friends how many they think are in the jar. One says 80. Another says 20 more than half the first one. A third says 25% more than the first one. What is their average guess? Step 1: Calculate the second guess
+The second guess is 20 more than half of the first guess. 
+Half of 80 is 40, and 20 more is 60. So, the second guess is 60 jelly beans.
+
+Step 2: Calculate the third guess
+The third guess is 25% more than the first guess. 
+25% of 80 is 20, so adding that to the first guess gives 100 jelly beans.
+
+Step 3: Calculate the average
+To find the average, sum all guesses and divide by the

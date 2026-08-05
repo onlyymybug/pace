@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nissa hires 60 seasonal workers to play elves in her department store's Santa village. A third of the elves quit after children vomit on them, then 10 of the remaining elves quit after kids kick their shins. How many elves are left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the number of elves who quit after children vomit on them: 1/3 of 60 is 20. So, 60 - 20 = 40 elves remain.
+
+Next, subtract the 10 elves who quit after kids kick their shins: 40 - 10 = 30 elves.
+
+The answer is 30 elves are left.<|eot_id|>

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ara joined the school basketball team four years ago. She has been playing 40 games every year. If her score for every game is 21 points, calculate the total number of points she has scored in the four years.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of points Ara has scored, we need to multiply the number of games she plays each year by the points she scores per game, and then multiply that result by the number of years.
+
+1. Calculate the points scored per year:
+   Points per year = Number of games per year × Points per game
+   Points per year = 40 games/year × 21 points/game
+   Points per year = 840 points/year
+
+2. Calculate the total points scored over four years:
+   Total points = Points per year × Number of years
+   Total points = 840 points/year × 4 years
+  

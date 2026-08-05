@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mr Hezekiah had 20 trucks from his store supplying fertiliser to different farmers in his hometown dispatched for delivery on a particular day. Each truck was carrying 20 tons of fertiliser packed in bags. Two hours after the trucks had departed for delivery, Mr Hezekiah got the news that a quarter of the number of lorries dispatched for delivery had mechanical failures on the road and could not deliver the fertilisers to the farmers. Calculate the total number of tons of fertiliser that reached the farmers that day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Calculate the total number of trucks that delivered fertiliser.
+2. Determine the number of trucks that delivered fertiliser after accounting for the ones with mechanical failures.
+3. Calculate the total tons of fertiliser delivered.
+
+Step 1: Total number of trucks that delivered fertiliser.
+Mr Hezekiah had 20 trucks, and two hours later, he found out that a quarter of them had mechanical failures. So, the number of trucks that delivered fertiliser is:
+\[ 20 - \frac{1}{4} \times 20 = 20 - 5

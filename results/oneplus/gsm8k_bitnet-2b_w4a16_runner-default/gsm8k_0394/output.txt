@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carol spends 4 hours writing a song, half that much time recording it, and 90 minutes editing it. What percentage of her total work time did she spend editing?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, first convert all time units to minutes for consistency. Carol spends 4 hours writing the song, which is 4 * 60 = 240 minutes. She spends half that time recording it, which is 240 / 2 = 120 minutes. She spends 90 minutes editing it. 
+
+The total time spent is 240 + 120 + 90 = 450 minutes. The time spent editing is 90 minutes. 
+
+To find the percentage of time spent editing, divide the time spent editing by the total time and multiply by 100: (90 / 450) * 100 = 

@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months? Step  First month downloads: 60
+Second month downloads: triple first month = 60 * 3 = 180
+Third month downloads: second month * (1 - 0.3) = 180 * 0.7 = 126
+Total downloads: sum of of all three months = 60 + 180 + 126 = 366
+The answer is 366.<|endoftext|>Human, please solve the following problem. You should justify your answer, and show your work. How many positive integers less than 100

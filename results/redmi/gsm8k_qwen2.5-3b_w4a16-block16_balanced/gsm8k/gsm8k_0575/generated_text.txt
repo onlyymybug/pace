@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A food truck only sells grilled cheeses.  They source their bread for $3.00 a loaf and each loaf makes 10 sandwiches.  They spend $30.00 on different cheeses and condiments per 10 sandwiches.  If they sell 10 sandwiches for $7.00 each, what is their net profit? To solve this problem, we need to calculate the total cost and revenue for the food truck.
+
+First, let's determine the cost of per sandwich:
+- Cost of of bread per loaf: $3.00
+- Each loaf makes 10 sandwiches, so cost per sandwich from bread is $3.00 / 10 = $0.30
+- Cost of of cheese and condiments per 10 sandwiches: $30.00
+- Cost per sandwich from cheese and condiments is $30.00 / 10 = $3.00
+
+Total cost per sandwich

@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Michael is replacing the carpet in his bedroom.  The new carpet he's chosen costs $12 per square foot, plus $2 per square foot for padding underneath.  His contractor charges $4 per square foot to remove the old carpet, and $34 per square foot to install the new carpet.  His bedroom measures 18 feet by 12 feet.  How much will it cost Michael to replace the carpet?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost, we need to calculate the cost of removing the old carpet, the cost of installing the new carpet, and the cost of padding underneath the new carpet.
+
+First, calculate the area of the bedroom:
+Area = Length × Width
+Area = 18 feet × 12 feet
+Area = 216 square feet
+
+Next, calculate the cost of removing the old carpet:
+Cost of removal = Area × Cost per square foot
+Cost of removal = 216 square feet × $4 per square foot
+Cost of removal = $864
+
+Then, calculate the cost of installing the new carpet:
+Cost of installation = Area

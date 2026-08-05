@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryPersonalTaxInfo","description":"Inquire about the user's personal tax information","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Username"}},"required":["user_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Li Mei! I remember we met at last week's meeting. I have a project on my end that I would like to invite you to participate in, mainly about the strategy development of new media marketing. If you have time, I hope to discuss it with you in detail as soon as possible. Looking forward to hearing from you!
+query:Check the personal tax information of the friend mentioned in WeChat for the past five years.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.queryPersonalTaxInfo","parameters":{"user_name":"EK"}}<|im_end|>

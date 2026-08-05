@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Susan earns $5 every 10 minutes for an online task she does. If she works between 8 a.m. and 11 a.m. and pauses in between for half an hour, how much money does she earn for the online task? To solve this problem, we need to calculate the total earnings of Susan makes in the given time frame.
+
+1. **Determine the total working time:**
+   - Susan works from 8 a.m. to 11 a.m., which is 3 hours.
+   - She takes a 30-minute break in the middle.
+   - Therefore, her total working time is \( 3 \text{ hours} - 0.5 \text{ hours} = 2.5 \text{ hours} \).
+
+2. **Convert working time to minutes:**
+   - 1 hour = 60 minutes

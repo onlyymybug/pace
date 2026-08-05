@@ -1,0 +1,23 @@
+To solve for \( b \) in the given functions \( f(x) = x - 3 \) and \( q(x) = bx + 1 \), we need to follow these steps:
+
+1. **Evaluate \( q(1) \):**
+   \[
+   q(x) = bx + 1
+   \]
+   Substitute \( x = 1 \):
+   \[
+   q(1) = b(1) + 1 = b + 1
+   \]
+
+2. **Evaluate \( f(q(1)) \):**
+   Given \( f(x) = x - 3 \), we need to find \( f(q(1)) \). From the previous step, we know \( q(1) = b + 1 \). Substitute \( q(1) \) into \( f \):
+   \[
+   f(q(1)) = f(b + 1)
+   \]
+   Using the definition of of \( f \):
+   \[
+   f(b + 1) = (b + 1) - 3
+   \]
+   Simplify the expression:
+   \[
+   f(b + 1) = b + 1 - 3 = b - 2

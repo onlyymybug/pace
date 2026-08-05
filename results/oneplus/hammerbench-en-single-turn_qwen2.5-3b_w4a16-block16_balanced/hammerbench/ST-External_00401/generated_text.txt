@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.recommendTravelTouristGuides","description":"Recommended destinations for your guide","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.We've arranged all the details for your upcoming trip to Paris.You will be staying at the Eiffel Tower Hotel in the heart of Paris, where you will not only be able to explore the major attractions of Paris, but also have a magnificent view of the Eiffel Tower from the hotel balcony.We have also booked you a boat tour of the Seine where you can enjoy the romantic atmosphere of Paris while admiring the historical architecture and beautiful scenery on both sides of the river.
+
+In addition, your personal guide will meet you at the Paris Opera to give you an insight into the art and culture of Paris.If you have any special needs or questions, please don't hesitate to reach out to our support team and we'll be happy to help.
+
+Have a great trip in Paris!
+
+Best regards,
+[Your Support Team]
+query:Can you recommend a guide to the location mentioned in the email?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.recommendTravelTouristGuides","parameters":{"destination":"Paris"}}<|im_end|>

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.sendSystemMessage","description":"Send a system text message to a specific number or contact","parameters":{"type":"object","properties":{"receiver_number":{"type":"string","description":"Phone number to receive SMS messages"},"receiver_name":{"type":"string","description":"Username to receive SMS"},"message_content":{"type":"string","description":"Text content of the text message to be sent"},"attachment_path":{"type":"string","description":"Image or file URL"}},"required":["receiver_number","receiver_name","message_content","attachment_path"]}}
+{"name":"ConvenientLiving.GovernmentServices.createServiceRequest","description":"Submit a new city service request","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.sendMessage","description":"Send a text message to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the message"},"message_content":{"type":"string","description":"Text content to send"}},"required":["receiver_name","message_content"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to the Summer Palace in Beijing on the weekend. The scenery there is really beautiful. We can go boating in Kunming Lake and take a walk in the promenade to see the beautiful paintings. In the evening, you can try the authentic Beijing roast duck on the Qianmen Street in Beijing and experience the old Beijing style. What do you think?
+query:I want to request a parking space at the place mentioned in the text message Tom sent me, how do I do it?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+To find the angle between the lines defined by the equations \(2x = 3y = -z\) and \(6x = -y = -4z\), we first need to express these lines in parametric form.
+
+### Step 1: Parametric form of the first line
+The first line is given by \(2x = 3y = -z\). We can introduce a parameter \(t\) such that:
+\[
+2x = 3y = -z = t
+\]
+From this, we can express \(x\), \(y\), and \(z\) in terms of:
+\[
+x = \frac{t}{2}, \quad y = \frac{t}{3}, \quad z = -t
+\]
+Thus, the parametric equations for the first line are:
+\[
+(x, y, z) = \left(\frac{t}{2}, \frac{t}{3}, -t\right)
+\]
+
+### Step 2: Parametric form of the second line
+The second line is given by \(6x = -y = -4z\). We can introduce a parameter \(s\) such that:
+\[
+6x = -y = -4z =

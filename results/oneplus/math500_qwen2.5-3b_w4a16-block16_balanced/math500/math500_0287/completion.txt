@@ -1,0 +1,14 @@
+To solve the problem, we need to understand the conditions under which the sides \(a\), \(b\), and \(c\) can form a triangle. For \(a\), \(b\), and \(c\) to be the sides of of a triangle, they must satisfy the triangle inequalities:
+\[a + b > c,\]
+\[a + c > b,\]
+\[b + c > a.\]
+
+Given the set \(T\) of of all triples \((a, b, c)\) of positive integers for which there exist triangles with side lengths \(a\), \(b\), \(c\), we need to compute the sum:
+\[
+\sum_{(a,b,c) \in T} \frac{2^a}{3^b 5^c}.
+\]
+
+### Step 1: Analyze the Triangle Inequalities
+For \(a\), \(b\), and \(c\) to form a triangle, the smallest side must be less than the sum of of the other two sides. Without loss of therefore, we can assume \(a \leq b \leq c\). This simplifies our analysis.
+
+### Step 2: Determine the Range of for \(a\), \(b\),

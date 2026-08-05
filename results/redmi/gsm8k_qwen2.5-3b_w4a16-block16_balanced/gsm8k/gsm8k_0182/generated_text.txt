@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sandra, the florist around the corner, is very unhappy with Fred's incomplete order delivery. Sandra had ordered four times as many red roses as white carnations. She also ordered 200 pink calla lilies, which were five times the number of white carnations. Sandra has threatened to switch suppliers if the missing red roses are not delivered by 5 pm. To keep Sandra's business, how many red roses must Fred deliver by 5 pm? To solve this, let's denote the number of white carnations ordered as \( w \).
+
+Given:
+- Pink calla lilies ordered: 200
+- Pink calla lilies are 5 times the number of white carnations: \( 200 = 5w \)
+
+First, solve for \( w \):
+\[ 200 = 5w \]
+\[ w = \frac{200}{5} \]
+\[ w = 40 \]
+
+So, there were 40 white carnations ordered.
+
+Next, let's find the number of red roses ordered:
+-

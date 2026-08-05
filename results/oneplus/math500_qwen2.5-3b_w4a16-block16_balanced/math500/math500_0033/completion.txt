@@ -1,0 +1,9 @@
+To solve the problem of of of arranging 8 people around a round table with the condition that 3 specific people (Pierre, Rosa, and Thomas) must sit together, we can treat the group of of 3 people as a single "block" or "super person". This reduces the problem to arranging 6 "people" (the block and the other 5 individuals) around the table.
+
+### Step-by-Step Solution:
+
+1. **Treat the group as a single block:**
+   - We have 6 "people" to arrange: the block (Pierre, Rosa, Thomas) and the other 5 individuals.
+   - The number of ways to arrange \( n \) objects in a circle is given by \((n-1)!\). Here, \( n = 6\), so the number of ways to arrange 6 people in a circle is:
+     \[
+     (6-1)! = 5!

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "math.power", "description": "Calculate the power of one number raised to another. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base": {"type": "integer", "description": "The base number."}, "exponent": {"type": "integer", "description": "The exponent."}, "mod": {"type": "integer", "description": "The modulus. Default is 1. Calculates pow(base, exponent) % mod when provided."}}, "required": ["base", "exponent"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the power of 3 raised to the power 4.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "math.power", "arguments": {"base": 3, "exponent": 4}}
+</tool_call><|im_end|>

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.HotelServices.getHotelCheckInStatus","description":"Check the check-in status of a specific hotel reservation","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"booking_date":{"type":"string","description":"Ordered Date"}},"required":["name","booking_date"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"NewsMagazines.News.shareNews","description":"Share news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"to":{"type":"string","description":"WeChat/qq/TikTok"}},"required":["news_name","to"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello Ming! Are you free on May 20th? I think we went to a new bookstore downtown that day and heard that there were a lot of good new books. If it's convenient, we'll meet at the door of the bookstore at 10 in the morning. Why don't we have breakfast before we go? I look forward to enjoying the ocean of books with you that day!
+query:I want to check the check-in status of the Hilton hotel, the time is mentioned in the QQ message sent to me by Xiaoming.<|im_end|>
+<|im_start|>assistant

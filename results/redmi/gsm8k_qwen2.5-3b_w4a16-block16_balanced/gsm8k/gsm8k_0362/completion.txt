@@ -1,0 +1,6 @@
+To solve this, first calculate the total distance of of one complete trip, then multiply by 3 to get the total distance for a day, and finally divide that by 18000 to find out how many days pass between services.
+
+Total distance for one trip: 75 + 100 + (75+100)-50 = 250 miles
+Total distance for a day: 250 * 3 = 750 miles
+Total miles between services: 18000
+Days between services: 18000 / 75

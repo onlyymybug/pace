@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nate is feeding his livestock hay. Each goat needs 5 pounds, and each sheep needs 3 pounds less than twice the amount each goat needs. If there are 15 goats and 12 sheep, how many pounds of hay does Nate need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the amount of hay needed for one sheep:
+2 * 5 pounds (for goats) - 3 pounds = 10 - 3 = 7 pounds.
+
+Next, calculate the total hay needed for the goats:
+15 goats * 5 pounds/goat = 75 pounds.
+
+Then, calculate the total hay needed for the sheep:
+12 sheep * 7 pounds/sheep = 84 pounds.
+
+Finally, add the hay needed for the goats and the sheep:
+75 pounds + 84 pounds = 159 pounds.
+
+The answer is 159 pounds.<|eot_id|>

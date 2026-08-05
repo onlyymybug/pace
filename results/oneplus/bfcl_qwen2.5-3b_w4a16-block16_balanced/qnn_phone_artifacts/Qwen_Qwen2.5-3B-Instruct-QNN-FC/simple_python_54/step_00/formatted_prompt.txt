@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_protein_sequence", "description": "Retrieve the protein sequence encoded by a human gene. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"gene": {"type": "string", "description": "The human gene of interest."}, "species": {"type": "string", "description": "The species for which the gene is to be analyzed.", "default": "Homo sapiens"}}, "required": ["gene"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Identify the protein sequence of a given human gene 'BRCA1'.<|im_end|>
+<|im_start|>assistant

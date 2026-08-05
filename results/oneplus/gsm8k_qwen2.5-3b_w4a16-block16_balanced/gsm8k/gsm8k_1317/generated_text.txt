@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark's car breaks down and he needs to get a new radiator.  The cost for a new radiator is $400 but he goes to get it at a junk shop and gets it for 80% off.  He then hires a mechanic to install it and it takes 3 hours at $50 an hour.  How much did he pay? Step 1: Calculate the discount on the radiator.
+discount = 400 * (1 - 0.8) = 160
+Step 2: Calculate the cost of of the radiator after discount.
+cost_of_radiator = 160
+Step 3: Calculate the cost of of the installation.
+cost_of_installation = 3 * 50 = 150
+Step 4: Calculate the total cost.
+total_cost = cost_of_radiator + cost_of_installation = 160 + 150 = 310
+The answer is 31

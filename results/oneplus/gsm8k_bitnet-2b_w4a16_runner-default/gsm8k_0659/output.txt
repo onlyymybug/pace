@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Finley went to the grocery store and bought rice, beans, and pork for use in their home. It took her 20 more minutes to cook pork than rice, while beans took half the combined cooking time of pork and rice. If it took her 30 minutes to cook rice, how long in minutes did it take to cook all the food?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the time it took to cook pork as P, the time it took to cook beans as B, and the time it took to cook rice as R. We know that R = 30 minutes.
+
+From the problem, we have:
+1. P = R + 20 (since it took 20 more minutes to cook pork than rice)
+2. B = 0.5 * (P + R) (since beans took half the combined cooking time of pork and rice)
+
+Substituting R = 30 into the equations, we get:
+1. P = 30 + 20 = 50 minutes

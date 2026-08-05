@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryVehicleRegistrationInfo","description":"Check the registration details of the designated vehicle","parameters":{"type":"object","properties":{"vehicle_vin":{"type":"string","description":"Vehicle Unique Sequence"}},"required":["vehicle_vin"]}}
+{"name":"UtilityTools.Reading.openReadingBookShelf","description":"View current books on the shelf","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Calling.viewPhoneCallRecords","description":"View all call logs; view assigned call logs","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to view; defaults to all records"}},"required":["contact_name"]}}
+{"name":"Travel.ItineraryServices.viewTravelItinerary","description":"View a user-created trip by trip name or keyword","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"}},"required":["name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getAuthorArticles","description":"Get articles written by authors based on author name","parameters":{"type":"object","properties":{"author_name":{"type":"string","description":"Author name"}},"required":["author_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow at 9am, Li Ming will go to the library for a one-day seminar. Make sure he has his laptop and business card with him, as well as lunch. After the seminar, Li Ming went directly to Zhang Hua's company to discuss the project. The seminar is expected to end at 5pm.
+query:I want to see the call log of the person mentioned in the notepad.<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.Calling.viewPhoneCallRecords","parameters":{"contact_name":"Li Ming"}}<|im_end|>

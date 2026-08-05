@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+{"name":"OfficeSoftware.Documents.createDocument","description":"Create a new document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"UtilityTools.Calendar.addCalendarschedule","description":"Create a new schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"SocialCommunication.InstantMessaging.createGroup","description":"Create a new group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to be created"}},"required":["group_name"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Li Ming, Hello! Christmas is coming, I think we can meet at the old place at 7pm on December 24th to exchange our gifts. I hope you arrive on time, I have a lot of surprises to share with you! Best regards, Wang Fang
+query:Help me create a schedule for Christmas family gatherings from 7pm on December 25th to December 26th, reminding me a week in advance.<|im_end|>
+<|im_start|>assistant

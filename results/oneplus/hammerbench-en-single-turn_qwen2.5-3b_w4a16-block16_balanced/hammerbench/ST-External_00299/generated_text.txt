@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.Fitness.getExerciseHistory","description":"Get exercise history based on time, type of exercise, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"},"type":{"type":"string","description":"Exercises"}},"required":["time","type"]}}
+{"name":"OfficeSoftware.Documents.getDocumentHistory","description":"Get the action history of the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"To get the document name of the history, it is required"}},"required":["document_name"]}}
+{"name":"Navigation.PublicTransit.viewBusHistory","description":"Viewing a user's transit history","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"UtilityTools.Search.openWebHistory","description":"View History.","parameters":{"type":"object","properties":{"datetime":{"type":"string","description":"browsing time; last day, specific date; default all descending"}},"required":["datetime"]}}
+{"name":"Finance.Funds.getFundTransactionHistory","description":"Query transaction history of designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We went to the newly opened hot pot restaurant on the 23rd of last month, and we really enjoyed it. I still remember the lively atmosphere. What do you think? When are we going to make another appointment?
+query:Check the time mentioned in the WeChat message My swimming sports history<|im_end|>
+<|im_start|>assistant
+{"name":"Health.Fitness.getExerciseHistory","parameters":{"time":"23rd last month","type":"swimming"}}<|im_end|>

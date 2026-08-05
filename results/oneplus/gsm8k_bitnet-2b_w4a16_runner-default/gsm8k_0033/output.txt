@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John takes care of 10 dogs.  Each dog takes .5 hours a day to walk and take care of their business.  How many hours a week does he spend taking care of dogs?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many hours John spends taking care of the dogs in a week, we first need to determine how many hours he spends each day and then multiply that by the number of days in a week.
+
+1. Calculate the daily time spent:
+   - John takes care of 10 dogs.
+   - Each dog takes 0.5 hours a day.
+   - Total daily time spent = 10 dogs * 0.5 hours/dog = 5 hours/day.
+
+2. Calculate the weekly time spent:
+   - There are 7 days in a week.
+   - Total weekly time spent = 5 hours/day *

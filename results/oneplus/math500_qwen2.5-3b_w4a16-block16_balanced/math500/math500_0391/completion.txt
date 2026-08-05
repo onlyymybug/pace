@@ -1,0 +1,28 @@
+To find the smallest distance between the origin and a point on the graph of \( y = \frac{1}{\sqrt{2}} (x^2 - 3) \), we start by expressing the distance from the origin to a point \((x, y)\) on the graph. The distance \(D\) is given by:
+
+\[
+D = \sqrt{x^2 + y^2}
+\]
+
+Substituting \(y = \frac{1}{\sqrt{2}} (x^2 - 3)\) into the distance formula, we get:
+
+\[
+D = \sqrt{x^2 + \left( \frac{1}{\sqrt{2}} (x^2 - 3) \right)^2}
+\]
+
+Simplify the expression inside the square root:
+
+\[
+D = \sqrt{x^2 + \frac{1}{2} (x^2 - 3)^2}
+\]
+
+First, expand \((x^2 - 3)^2\):
+
+\[
+(x^2 - 3)^2 = x^4 - 6x^2 + 9
+\]
+
+Substitute this back into the distance formula:
+
+\[
+D = \sqrt{x^2 + \

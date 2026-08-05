@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Out of the 150 teachers on the school basketball court, 60% are history teachers. If the rest of the teachers on the court are math teachers, and each teacher sleeps for 6 hours a day, calculate the total time the math teachers collectively spend sleeping in one day. Step 1: Calculate the number of history teachers.
+Number ofHistoryTeachers = TotalTeachers * PercentageHistoryTeachers
+NumberofHistoryTeachers = 150 * 0.6
+
+Step 2: Calculate the number of math teachers.
+NumberofMathTeachers = TotalTeachers - NumberofHistoryTeachers
+NumberofMathTeachers = 150 - NumberofHistoryTeachers
+
+Step 3: Calculate the total time spent sleeping by all math teachers in one day.
+TotalSleepingTime = NumberofMathTeachers * HoursPerDay
+TotalSleepingTime = NumberofMathTeachers * 6
+
+Step 1: Numberof

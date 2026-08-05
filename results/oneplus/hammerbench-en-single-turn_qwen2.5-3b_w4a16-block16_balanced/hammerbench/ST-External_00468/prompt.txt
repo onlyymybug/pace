@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.mediumComment","description":"Comment on a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"Travel.ScenicAreaServices.addScenicSpotComment","description":"Comment on user-specified scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends, let's go to The Palace Museum Museum this weekend. I just checked it out. There is a special exhibition of ancient calligraphy and painting there recently, which is especially suitable for cultural lovers like you. We can leave early in the morning, first enter through the noon door, slowly stroll inside, and strive to see every exhibition hall. In the evening, we can also find a small restaurant nearby to eat traditional Beijing food, how about it?
+query:The Palace Museum mentioned by Xiao Li is really very historical. Every brick and tile reveals the vicissitudes of history and is a great place to learn about ancient Chinese culture.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Documents.deleteDocument","description":"Delete the specified document based on the document name","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to be deleted, required"}},"required":["document_name"]}}
+{"name":"OfficeSoftware.Email.deleteOneMail","description":"Delete the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to be deleted"}},"required":["mail_title"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteSecondhandSaleMessage","description":"Delete the specified session message","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskDeleteAddresbookFriend","description":"Delete Friend in Cloud Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+{"name":"SocialCommunication.Community.deleteCommunityPost","description":"Delete a post from a specific community based on the title of the post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be deleted"},"post_name":{"type":"string","description":"Title of the post to be deleted"}},"required":["community_name","post_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello Wang Wu! Our meeting time next week is scheduled for Wednesday at 10 am in the conference room on the second floor of the company. If you have any questions, you can contact me anytime. Hope to see you there!
+query:Can you help me delete the friend corresponding to the name of the person mentioned in the text message from the cloud drive?<|im_end|>
+<|im_start|>assistant

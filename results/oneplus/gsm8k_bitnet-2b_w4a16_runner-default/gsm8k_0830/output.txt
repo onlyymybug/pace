@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Boris owns a chocolate factory. He produces 50,000 bars of chocolate each month. Boris produces 8,000 bars of chocolate the first week. The second week, Boris only produces half as much as the first week. But, the third week, Boris produces three times as much as the first week. How much does he produce the fourth week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Boris produces in the fourth week, we first need to determine how much he produces in the first three weeks.
+
+1. First week: 8,000 bars
+2. Second week: Half of the first week = 8,000 / 2 = 4,000 bars
+3. Third week: Three times the first week = 8,000 * 3 = 24,000 bars
+
+Now, we add up the bars produced in the first three weeks:
+8,000 (first week) + 4,000 (second week) + 24,000 (third week) =

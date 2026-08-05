@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maddison has 5 boxes with 50 marbles in each box. Then she gets 20 marbles from her friend. How many marbles does she have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many marbles Maddison has now, we first need to calculate the total number of marbles she had initially. Since she had 5 boxes with 50 marbles in each box, we multiply the number of boxes by the number of marbles per box:
+
+5 boxes * 50 marbles/box = 250 marbles
+
+Then, she gets 20 more marbles from her friend. To find the total number of marbles she has now, we add the marbles she had initially to the marbles she received:
+
+250 marbles + 20 marbles = 270 marbles
+
+The answer

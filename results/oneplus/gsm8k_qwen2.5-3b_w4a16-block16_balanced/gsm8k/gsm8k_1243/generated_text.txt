@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Skyler has 100 hats on his hand with the colors red, blue, and white. Half of the hats are red, 3/5 of the remaining hats are blue, and the rest are white. How many white hats does Skyler have? Step 1: Calculate the number of red hats.
+Red hats = 1/2 * total hats = 1/2 * 100 = 50
+
+Step 2: Calculate the remaining hats after removing the red hats.
+Remaining hats = total hats - red hats = 100 - 50 = 50
+
+Step 3: Calculate the number of blue hats from the remaining hats.
+Blue hats = 3/5 * remaining hats = 3/5 * 50 = 30
+
+Step 4: Calculate the number of white hats.
+White hats = remaining hats -

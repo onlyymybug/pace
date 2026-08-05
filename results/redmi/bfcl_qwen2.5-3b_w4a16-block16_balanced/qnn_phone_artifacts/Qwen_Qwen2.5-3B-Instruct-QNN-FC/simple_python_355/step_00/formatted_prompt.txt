@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "recipe_info.get_calories", "description": "Retrieve the amount of calories from a specific recipe in a food website. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"website": {"type": "string", "description": "The food website that has the recipe."}, "recipe": {"type": "string", "description": "Name of the recipe."}, "optional_meal_time": {"type": "string", "description": "Specific meal time of the day for the recipe (optional, could be 'Breakfast', 'Lunch', 'Dinner'). Default is all if not specified."}}, "required": ["website", "recipe"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+How many calories in the Beef Lasagna Recipe from Foodnetwork.com?<|im_end|>
+<|im_start|>assistant

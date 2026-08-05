@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Derrick has a bakery that makes 10 dozen doughnuts every day, selling at $2 per doughnut. How much money does Derrick make in June if he sells all the doughnuts? Step 1: Calculate total doughnuts made in June
+June has 30 days, so total doughnuts = 10*12*30
+
+Step 2: Calculate total revenue
+Price per doughnut = $2, so total revenue = total doughnuts * price per doughnut
+
+Step 1 calculation: 10*12*30 = 360
+Step 2 calculation: 360 * 2 = 72
+
+The answer is 72.<|endoftext|>Human, please solve the math problem below showing all work.
+
+A parking garage is 40 floors

@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In the diagram, what is the area of the shaded triangle? [asy]
+fill((0,0)--(2,3)--(10,0)--cycle,gray);
+draw((0,0)--(10,0)--(10,3)--(0,3)--cycle,linewidth(1));
+draw((0,0)--(2,3)--(10,0),linewidth(1));
+label("10 cm",(5,3),N);
+label("10 cm",(5,0),S);
+label("3 cm",(0,1.5),W);
+label("3 cm",(10,1.5),E);
+draw((0,2.5)--(.5,2.5)--(.5,3));
+draw((10,2.5)--(9.5,2.5)--(9.5,3));
+[/asy] To determine the area of of the shaded triangle, we need to analyze the given diagram and use the properties of of of the triangle and the given dimensions.
+
+First, let's identify the key elements of of the diagram:
+- The triangle is a right triangle with legs of 10 cm and 3 cm.
+- The shaded triangle is a smaller right triangle within the larger right triangle.
+- The larger triangle has a base of 10 cm and a height of 10 cm.
+- The smaller triangle has a base of 8 cm (since \(10 - 2 = 8\)) and a height of 

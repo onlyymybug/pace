@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"Education.OnlineClasses.postCourseReview","description":"User commented on a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"},"content":{"type":"string","description":"Review Content"}},"required":["course_name","teacher_name","content"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"SocialCommunication.SocialMedia.mediumComment","description":"Comment on a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Ming, remember the group meeting we agreed to on April 10, 2023? The meeting is scheduled to start at 3pm in the second conference room of the school library. I just checked, my class ended at 12 o'clock that day, so I will go to the conference room in advance to prepare some materials. Come early if you need anything, and we can make some adjustments to the final version of the report first. Don't forget to bring the market analysis report we discussed last time, and we need to talk about the specific data analysis section. Looking forward to seeing you that day, let's push the project forward!
+query:The food Wang Xiaomei shared on Weibo looked delicious!<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.SocialMedia.mediumComment","parameters":{"medium_name":"Weibo","correlation":"Wang Xiaomei's food post","publisher":"EK"}}<|im_end|>

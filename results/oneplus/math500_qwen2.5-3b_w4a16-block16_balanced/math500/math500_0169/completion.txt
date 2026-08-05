@@ -1,0 +1,15 @@
+To solve the problem, we need to determine the value of \( n \) for which there are a total of 70 squares of three different sizes on a \( 3 \times n \) grid. We will count the number of squares of each size and find the value of of \( n \) that satisfies the condition.
+
+### Step 1: Count the number of \( 1 \times 1 \) squares
+A \( 1 \times 1 \) square is simply a single cell. For a \( 3 \times n \) grid, the number of \( 1 \times 1 \) squares is:
+\[
+n^2
+\]
+
+### Step 2: Count the number of \( 2 \times 2 \) squares
+A \( 2 \times 2 \) square is a block of of of 2 rows and 2 columns. For a \( 3 \times n \) grid, the number of \( 2 \times 2 \) squares is:
+\[
+(3-2) \times (n-2) = 1 \times (n-2) = n-2
+\]
+
+### Step 3: Count the number of \( 3 \

@@ -1,0 +1,7 @@
+To solve this problem, we need to determine the greatest number of pencils Zach can place into three bags such that the number of pencils in each bag is the same, and we want to find the maximum number of pencils he can have left over. This is essentially finding the remainder when the total number of pencils is divided by 3.
+
+Let's denote the total number of pencils by \( N \). We need to find the remainder \( R \) when \( N \) is divided by 3, i.e., \( R = N \mod 3 \). The possible values for \( R \) are 0, 1, or 2. The greatest number of pencils he can have left over is the largest of of these values, which is 2.
+
+To illustrate, let's consider the cases:
+1. If \( N \equiv 0 \pmod{3} \), then \( N = 3k \) for some integer \( k \). In this case, \( R = 0 \).
+2. If \( N \equiv 1 \pmod{3} \), then \( N = 3k + 1 \) for some integer \( k \). In this case, \( R = 1 \).

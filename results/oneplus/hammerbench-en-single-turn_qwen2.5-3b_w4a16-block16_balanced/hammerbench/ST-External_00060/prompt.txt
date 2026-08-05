@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.deletePatientMedicalRecord","description":"Delete a patient's medical record information based on their name, etc.","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"Health.Fitness.deleteExerciseRecord","description":"Delete sports records based on sports type, etc.","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Exercises"},"time":{"type":"string","description":"Release Date"}},"required":["type","time"]}}
+{"name":"Health.HealthManagement.deleteDietRecord","description":"Delete dietary records based on type of exercise, etc.","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Meal Type"},"time":{"type":"string","description":"Meal Time"}},"required":["food_name","meal_type","time"]}}
+{"name":"UtilityTools.Search.deleteWebHistoryrecord","description":"deleting history; deleting multiple histories based on date","parameters":{"type":"object","properties":{"announcer":{"type":"string","description":"Publisher Name"},"title":{"type":"string","description":"Article title"},"datetime":{"type":"string","description":"browsing time; last day, specific date; default all descending"}},"required":["announcer","title","datetime"]}}
+{"name":"Navigation.TaxiCarRental.deleteTaxiOrders","description":"Delete trip history","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Xiao Wang, there is an annual meeting of the company tonight. The location is in China Resources Qianhai. Remember to arrive a little earlier. We have a small team that needs to rehearse first. Dinner starts at 6:30, don't forget to bring your badge and the security guard at the door will check.
+query:Help me delete the record of the cheapest taxi order to the place mentioned in the WeChat sent to me by Xiao Li on March 1.<|im_end|>
+<|im_start|>assistant

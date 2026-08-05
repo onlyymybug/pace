@@ -1,0 +1,9 @@
+Let's break down the problem step by step.
+
+1. Dave ate 14 fries initially.
+2. A seagull stole the pack, leaving Dave with half the amount he ate.
+   - Fries left: 14 / 2 = 7 fries
+3. Dave then ate 3 more times the amount he ate initially.
+   - Fries left: 7 - 14 = -7 (impossible, so we need to backtrack)
+4. Correcting the mistake, Dave ate 14 more fries, leaving 0 fries.
+5. The seagull stole the pack, leaving 

@@ -1,0 +1,16 @@
+To solve the problem, we need to follow these steps:
+
+1. Determine how much money Kathy will withdraw in British pounds.
+2. Determine how much money Kathy will withdraw in euros.
+3. Calculate the difference between the amount in euros and the amount in pounds.
+
+First, we know that Kathy has 300 US dollars and she wants to withdraw half of it in British pounds and half in euros. So, she will withdraw:
+\[ \frac{300}{2} = 150 \text{ US dollars} \]
+in both British pounds and euros.
+
+Next, we need to convert the 150 US dollars into British pounds and euros using the given exchange rates:
+\[ 150 \text{ US dollars} \times 1.64 \text{ pounds/USD} = 246 \text{ pounds} \]
+\[ 150 \text{ US dollars} \times 1.3 \text{ euros/USD} = 195 \text{ euros} \]
+
+Now, we need to find out how many more euros than pounds she will have:
+\[ 195 \text{ euros} - 246 \text{ pounds} = -51

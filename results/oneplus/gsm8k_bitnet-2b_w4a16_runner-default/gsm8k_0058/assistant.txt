@@ -1,0 +1,9 @@
+To solve this problem, we need to determine the maximum number of boxes that can be loaded onto the truck without exceeding the bridge's weight limit. Let's denote the number of boxes as \( x \).
+
+The total weight of the boxes is \( 15x \) pounds. The driver and the empty truck weigh a total of 3755 pounds. Therefore, the equation representing the situation is:
+
+\[ 15x + 3755 \leq 5000 \]
+
+First, we subtract 3755 from both sides of the inequality to isolate the term with \( x \):
+
+\[ 15x \leq 5000

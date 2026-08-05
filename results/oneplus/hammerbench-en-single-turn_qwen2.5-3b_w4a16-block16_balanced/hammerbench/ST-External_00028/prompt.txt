@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+{"name":"Navigation.PublicTransit.queryRealTimeBus","description":"Find the real-time location and estimated time of arrival of a given bus route","parameters":{"type":"object","properties":{"bus_line_number":{"type":"string","description":"Bus line number"},"stop_name":{"type":"string","description":"Name of bus stop"}},"required":["bus_line_number","stop_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's eat at the newly opened restaurant outside Dongzhimen on the weekend. I heard that the environment there is very good, and you can also visit nearby shopping malls.
+query:I would like to check the real-time location and estimated arrival time of the 301 bus, the stop point is the place mentioned in the text message sent to me by Tom.<|im_end|>
+<|im_start|>assistant

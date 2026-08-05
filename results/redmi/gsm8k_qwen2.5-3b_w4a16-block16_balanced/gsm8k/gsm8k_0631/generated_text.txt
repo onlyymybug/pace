@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tiffany is measuring how many surfers can ride a big wave without falling. She sees that when a wave over 30 feet arrives, only 25% of the riders can stay upright. Of these riders, 60% are women. If there are 100 riders, how many men can stay upright on the wave? Step 1: Calculate the total number of surfers who can stay upright on the wave.
+Total surfers = 100
+Surfers over 30 feet = 25% of 100
+Surfers over 30 feet = 0.25 * 100
+
+Step 2: Calculate the number of women among those who can stay upright.
+Women = 60% of surfers over 30 feet
+Women = 0.6 * (25% of 100)
+
+Step 3: Calculate the number of men among those who can stay upright

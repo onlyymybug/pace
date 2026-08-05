@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "database.query", "description": "Query the database based on certain conditions. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"table": {"type": "string", "description": "Name of the table to query."}, "conditions": {"type": "array", "items": {"type": "dict", "properties": {"field": {"type": "string", "description": "The field to apply the condition."}, "operation": {"type": "string", "description": "The operation to be performed.", "enum": ["<", ">", "=", ">=", "<="]}, "value": {"type": "string", "description": "The value to be compared."}}, "required": ["field", "operation", "value"]}, "description": "Conditions for the query."}}, "required": ["table", "conditions"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find records in database in user table where age is greater than 25 and job is 'engineer'.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "database.query", "arguments": {"table": "user", "conditions": [{"field": "age", "operation": ">=", "value": "25"}, {"field": "job", "operation": "=", "value": "engineer"}]}
+</tool_call><|im_end|>

@@ -1,0 +1,7 @@
+To solve the problem of, we need to treat the two boys as a single "block" or "super person" since they must sit next to each other. This reduces the problem to arranging 7 entities (6 girls + 1 block of of boys) in a row.
+
+1. **Count the total number of arrangements of the 7 entities:**
+   - There are 7 entities (6 girls + 1 block of of boys).
+   - The number of ways to arrange 7 entities is given by \(7!\) (7 factorial).
+   \[
+   7!

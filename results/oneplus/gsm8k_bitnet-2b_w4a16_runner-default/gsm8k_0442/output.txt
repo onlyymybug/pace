@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two sisters, Elizabeth and Margareth, bought beads. Elizabeth bought 1 pack of red and 2 packs of clear beads, while Margareth bought 3 packs of blue and 4 packs of red beads. How many more beads do one sister have than the other, if each pack of beads contains 20 pieces of beads?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of beads each sister bought.
+
+Elizabeth bought:
+- 1 pack of red beads = 20 pieces
+- 2 packs of clear beads = 2 * 20 = 40 pieces
+
+So, Elizabeth's total number of beads is:
+20 (red) + 40 (clear) = 60 pieces
+
+Margareth bought:
+- 3 packs of blue beads = 3 * 20 = 60 pieces
+- 4 packs of red beads = 4 * 20 = 80 pieces
+
+So, Margareth's total number of beads is:

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On a busy Saturday morning, a hotel was completely booked with 100 guests.  24 guests elected an early checkout and 15 elected for a late checkout.  In the afternoon twice as many people checked in as those who opted for a late checkout.  7 more people checked in after dinner was served.  How many guests does the hotel now have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's break down the problem step by step:
+
+1. Initially, the hotel has 100 guests.
+2. 24 guests opted for an early checkout, leaving 100 - 24 = 76 guests.
+3. 15 guests opted for a late checkout, leaving 76 - 15 = 61 guests.
+4. In the afternoon, twice as many people checked in as those who opted for a late checkout. So, 2 * 15 = 30 guests checked in.
+5. After dinner, 7 more guests checked in.
+
+Now, let's add up all the guests who checked in:
+
+- Guests who

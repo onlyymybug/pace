@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.checkCarAvailability","description":"Check the inventory of the designated car model at the dealership.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"NewsMagazines.News.getTodayTopNews","description":"Provide users with today's important news","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Travel.ScenicAreaServices.createScenicSpotBooking","description":"Create a scenic spot reservation for the user","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"booking_date":{"type":"string","description":"Ordered Date"},"number_of_people":{"type":"integer","description":"Booking Persons"}},"required":["name","booking_date","number_of_people"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.InstantMessaging.getGroupMembers","description":"View a list of members of a given group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"The name of the Group"}},"required":["group_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Xiao Wang, remember that May 20, 2023 is the key node of our project. At 2 pm on the same day, there is an important debriefing meeting, which is located in the conference room on the third floor of the company. Make sure you have the right materials beforehand. If you have any questions, you can contact me anytime.
+query:I want to book tickets for the Great Wall. The time is the day mentioned in the WeChat message. There are 4 people in total.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.checkCarAvailability","parameters":{"brand":"GreatWall"}}<|im_end|>

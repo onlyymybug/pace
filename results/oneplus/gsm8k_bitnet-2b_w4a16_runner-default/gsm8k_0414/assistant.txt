@@ -1,0 +1,9 @@
+To solve this problem, we need to determine the number of candles that both smell like wet dog and explode. We know that 5% of the candles are dangerous and 99% of those dangerous candles do not explode. Therefore, 1% of the dangerous candles do explode.
+
+First, calculate the number of dangerous candles:
+5% of 50000 = 0.05 * 50000 = 2500
+
+Next, calculate the number of dangerous candles that do not explode:
+99% of 2500 = 0.99 * 2500 = 2475
+
+Now, calculate the number of dangerous candles that

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "flight.book", "description": "Book a direct flight for a specific date and time from departure location to destination location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"departure_location": {"type": "string", "description": "The location you are departing from."}, "destination_location": {"type": "string", "description": "The location you are flying to."}, "date": {"type": "string", "description": "The date of the flight. Accepts standard date format e.g., 2022-04-28."}, "time": {"type": "string", "description": "Preferred time of flight. Default is 'morning'."}, "direct_flight": {"type": "boolean", "description": "If set to true, only direct flights will be searched. Default is false."}}, "required": ["departure_location", "destination_location", "date"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Book a direct flight from San Francisco to London for 2022-04-27 afternoon<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "flight.book", "arguments": {"departure_location": "San Francisco", "destination_location": "London", "date": "2022-04-27", "time": "afternoon", "direct_flight": true}}
+</tool_call><|im_end|>

@@ -1,0 +1,13 @@
+To solve this problem, we need to determine the total number of Starbursts candies of each color and then find the number of pink candies.
+
+1. **Total candies in the bag**: 232 pieces
+
+2. **Red candies**: Given as 54 pieces
+
+3. **Orange candies**: Twice the number of red candies
+   \[
+   2 \times 54 = 108 \text{ orange candies}
+   
+4. **Yellow candies**: Half the number of red candies
+   \[
+   \frac{54}{2} = 27 \text{ yellow candies}

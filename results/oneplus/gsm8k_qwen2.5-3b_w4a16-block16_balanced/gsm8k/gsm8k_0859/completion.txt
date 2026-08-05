@@ -1,0 +1,4 @@
+Step 1: On day 0, there are 10 infected people.
+Step 2: Each infected person infects 6 others, so on day 1, 10 * 6 = 60 new people are infected.
+Step 3: On day 2, each of these 60 newly infected people infects 6 others, so 60 * 6 = 360 new infections.
+Step 4: On day 3, each of these 360 newly infected people infects 6 others, so 360 * 6 = 21 

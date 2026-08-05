@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? To solve for \( g(f(5) - 1) \), we need to evaluate the functions step by step.
+
+First, we need to find \( f(5) \). Given the function \( f(x) = 2x - 3 \), we substitute \( x = 5 \) into the function:
+\[
+f(5) = 2(5) - 3 = 10 - 3 = 7
+\]
+
+Next, we need to find \( f(5) - 1 \). We already know that \( f(5) = 7 \), so:
+\

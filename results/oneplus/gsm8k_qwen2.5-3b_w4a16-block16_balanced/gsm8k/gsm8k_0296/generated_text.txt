@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Darren decides to do body exercises for a whole week. He does 100 pushups, 50 squats, and 20 dumbbell presses on the first day. On the second day, he does 20 more pushups than on the first day, ten fewer squats, and doubles the number of dumbbell presses. What's the total count of the activities he's done in the two days? To solve this problem, we need to calculate the total number of exercises Darren did on the first and second days, and then sum these totals.
+
+First, let's determine the number of exercises Darren did on the first day:
+- Pushups: 100
+- Squats: 50
+- Dumbbell presses: 20
+
+Total exercises on the first day:
+\[ 100 + 50 + 20 = 170 \]
+
+Next, we calculate the number of exercises for the second day:
+- Pushups: 20 more than the first day, so \( 

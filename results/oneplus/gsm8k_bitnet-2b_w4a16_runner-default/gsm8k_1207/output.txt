@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John decides to get a loan by mortgaging his home.  His house is worth $250,000.  He gets a loan worth 40% of that.  He uses 60% of that to pay off his debts.  How much money did he have leftover after paying debt?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Calculate the loan amount.
+2. Calculate the amount used to pay off the debts.
+3. Subtract the amount used to pay off the debts from the loan amount to find the leftover money.
+
+Step 1: Calculate the loan amount.
+The house is worth $250,000, and John gets a loan worth 40% of that.
+Loan amount = 40% of $250,000
+Loan amount = 0.40 * $250,000
+Loan amount = $100,000
+
+Step 2: Calculate the amount used to pay off the debts

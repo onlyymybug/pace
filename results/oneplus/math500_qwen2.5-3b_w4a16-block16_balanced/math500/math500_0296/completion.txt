@@ -1,0 +1,8 @@
+To solve the given equation \(z^4 + 4z^3i - 6z^2 - 4zi - i = 0\), we start by examining the polynomial and its roots. We will use the fact that the roots form a convex polygon in the complex plane, and we need to find the area of of this polygon.
+
+First, let's rewrite the polynomial in a more convenient form. We will try to factorize it or find a substitution that simplifies the problem. Notice that the polynomial is symmetric in a certain way, and we can try to find a substitution that simplifies the roots.
+
+Consider the substitution \(z = w - \frac{i}{w}\). This substitution is useful because it can help us simplify the polynomial. Let's substitute \(z = w - \frac{i}{w}\) into the polynomial and see if we can simplify it.
+
+First, let's compute \(z^2\) and \(z^3\) in terms of:
+\[z^2 = \left(w - \frac{i}{w}\right)^2 = w^2 - 2i + \frac{i^2}{w^2} = w^2 - 2i - \frac{1}{w^2

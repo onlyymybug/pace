@@ -1,0 +1,11 @@
+To solve this problem, we first need to calculate the number of votes the winner received. Given that the winner got 3/4 of the votes, we can calculate this as follows:
+
+Votes for winner = Total votes * Fraction for winner
+               = 80 * 3/4
+               = 60
+
+Since the total number of votes is 80 and the winner received 60 votes, the remaining votes must have gone to the loser. Therefore, the number of votes the loser received is:
+
+Votes for loser = Total votes - Votes for winner
+              = 80 - 60
+             

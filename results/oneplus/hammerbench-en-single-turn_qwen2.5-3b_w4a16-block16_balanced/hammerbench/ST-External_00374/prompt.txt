@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.searchExpress","description":"Search courier logistics based on information such as designated courier number, recipient, address, etc.","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"date":{"type":"string","description":"Shipping date"},"send_name":{"type":"string","description":"Name Of Sender"},"recipient_name":{"type":"string","description":"Recipient's name"}},"required":["express_id","date","send_name","recipient_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getMagazine","description":"Get a magazine based on its name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"Navigation.TrainTickets.searchWaitlistTrain","description":"Search for alternate train numbers based on the criteria entered by the user","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["ride_date","departure_station","destination_station"]}}
+{"name":"OfficeSoftware.Documents.getDocumentStatistics","description":"Get statistics for a given document, such as the number of words, pages, etc.","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"To get the document name of the statistic, it is required"}},"required":["document_name"]}}
+{"name":"Navigation.Bicycles.viewFrequency","description":"See total rides","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:October 15, 2023 14:30 - 16:00 Participate in the annual Science and Technology Innovation Conference held at the International Convention Center with the theme "Future Technology and Life", please arrive at the venue 15 minutes in advance and bring your work ID. 16:30 - 18:00 Meet with the project team in the company's first floor conference room to discuss the product development plan for the next quarter. 19:00 Dinner with customers at the City Garden Hotel to discuss the details of cooperation.
+query:I want to find National Geographic magazine, the number is the time mentioned in the notepad, can you help me find it?<|im_end|>
+<|im_start|>assistant

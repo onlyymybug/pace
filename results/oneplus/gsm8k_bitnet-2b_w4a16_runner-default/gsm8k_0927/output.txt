@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Colby loves going to the movies and every month his parents give him $150 to spend at the movies. Tickets for Fridays and Saturdays cost $10. Tickets for any other day cost $7. Popcorn costs $8 and boxes of candy cost $2. It is the last day of the month and it's a Friday. He wants to make sure he gets a popcorn and box of candy that night. How many movies can he see if he already saw 5 movies on a Friday or Saturday, 8 movies on other days, had 2 tubs of popcorn, and four boxes of candy that month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate how much money Colby has left after buying popcorn and candy and then determine how many movies he can afford to see with the remaining money.
+
+First, let's calculate the total cost of popcorn and candy:
+- Popcorn: 2 tubs * $2 = $4
+- Boxes of candy: 4 boxes * $2 = $8
+- Total cost for popcorn and candy: $4 + $8 = $12
+
+Next, we subtract this cost from the total money Colby has:
+- Total money: $150
+- Money left after buying popcorn and candy: $

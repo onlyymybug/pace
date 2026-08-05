@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "stats.t_test", "description": "Perform a two-sample t-test for two given arrays. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"array_1": {"type": "array", "items": {"type": "integer"}, "description": "First array of data."}, "array_2": {"type": "array", "items": {"type": "integer"}, "description": "Second array of data."}, "alpha": {"type": "float", "description": "Significance level for hypothesis testing."}}, "required": ["array_1", "array_2", "alpha"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Perform a two-sample t-test on my experiment data of Control [10, 15, 12, 14, 11] and Treated [18, 16, 17, 20, 22] group with alpha equals to 0.05<|im_end|>
+<|im_start|>assistant

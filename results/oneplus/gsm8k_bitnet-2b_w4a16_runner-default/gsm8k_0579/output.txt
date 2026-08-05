@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Diane gave a number train a starting value of 20. This starting value plus half the number was divided by 5 and the resulting value was multiplied by the starting value minus 12. What was the final value of the number train?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number train as \( x \).
+
+1. The starting value is given as 20.
+2. Half of the number is \( \frac{x}{2} \).
+3. The starting value plus half the number is \( 20 + \frac{x}{2} \).
+4. This value is divided by 5, resulting in \( \frac{20 + \frac{x}{2}}{5} \).
+5. This resulting value is then multiplied by the starting value minus 12, which is \( (20 + \frac{x}{2}) \times (20 - 12) \).
+
+Now

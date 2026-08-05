@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Walter bought 60 apples from the store. He ate 2/5 of them and gave his sister 25% of the remaining number. If he then sold the remaining apples to his uncle at $3 each, how much money did he receive?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the number of apples Walter ate: 2/5 * 60 = 24 apples.
+
+Next, find out how many apples remained after he ate some: 60 - 24 = 36 apples.
+
+Then, calculate 25% of the remaining apples that he gave to his sister: 0.25 * 36 = 9 apples.
+
+Now, determine the number of apples left after giving some to his sister: 36 - 9 = 27 apples.
+
+Finally, calculate how much money Walter received by selling the remaining apples at $3 each: 27 * 3 = 81 dollars.
+
+The

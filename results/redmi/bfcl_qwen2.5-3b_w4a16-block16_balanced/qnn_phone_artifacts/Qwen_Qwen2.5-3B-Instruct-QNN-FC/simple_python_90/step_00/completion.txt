@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "employee.fetch_data", "arguments": {"company_name": "ABC Ltd.", "employee_id": 345, "data_field": ["Personal Info", "Job History"]}}
+</tool_call><|im_end|>

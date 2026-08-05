@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James has 30 teeth. His dentist drills 4 of them and caps 7 more teeth than he drills. What percentage of James' teeth does the dentist fix?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of teeth the dentist fixes. James drills 4 teeth, and the dentist caps 7 more than he drills, which means the dentist caps 4 + 7 = 11 teeth.
+
+The total number of teeth fixed by the dentist is 4 (drilled) + 11 (capped) = 15 teeth.
+
+To find the percentage of James' teeth that the dentist fixes, we divide the number of teeth fixed by the total number of teeth James has and then multiply by 100 to convert to a percentage.
+
+Percentage fixed = (15 / 30)

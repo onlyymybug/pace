@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Max bought stamps at the post office. Some of the stamps had a snowflake design, some had a truck design, and some had a rose design. Max bought 16 snowflake stamps. He bought 3 more truck stamps than snowflake stamps, and 9 fewer rose stamps than truck stamps. How many stamps did Max buy in all? Step 1: Let's denote the number of snowflake stamps as S, truck stamps as T, and rose stamps as R.
+Step Step 2: From the problem, we know S = 16.
+Step Step 3: We also know T = S + 3. Substituting S = 16, we find T = 19.
+Step Step 4: For rose stamps, R = T - 9. Substituting T = 19, we find R = 10.
+Step Step 5: To find the total number of stamps, we add

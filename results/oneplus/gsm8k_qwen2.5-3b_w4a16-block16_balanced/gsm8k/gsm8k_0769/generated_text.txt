@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In one hour, Ezra read twice as many books as Ahmed. Ezra has read 300 books this hour and decided to read 150 more. How many books have they read altogether? Step 1: Determine how many books Ahmed read
+Ahmed read 300 / 2 = 150 books
+
+Step 2: Calculate total books read by Ezra
+Ezra initially read 300 books and then read 150 more, so Ezra read 300 + 150 = 450 books
+
+Step 3: Calculate total books read by both
+Total books read = Ahmed's books + Ezra's books
+Total books read = 150 + 450 = 600 books
+
+The answer is 600.

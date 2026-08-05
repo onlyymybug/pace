@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_cooking_time", "description": "Calculate the cooking time for a roast chicken. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"weight_kg": {"type": "float", "description": "The weight of the chicken in kilograms."}, "cooking_method": {"type": "string", "description": "The method of cooking, defaults to 'roast'."}, "temp_celsius": {"type": "integer", "description": "The cooking temperature in degrees celsius, defaults to 180."}}, "required": ["weight_kg"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+How much time will it take to cook a roast chicken of 1.5 kg?<|im_end|>
+<|im_start|>assistant

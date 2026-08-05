@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a jewelers store, the price of a gold Jewell is 4/5 times as much as the price of a diamond Jewell. The cost of a silver Jewell is $400 less than the price of gold. If a diamond Jewell is $2000, find the total price for all three jewels.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total price for all three jewels, we first need to determine the price of the gold Jewell and then use that to find the price of the silver Jewell. Finally, we add up the prices of all three jewels.
+
+1. The price of a diamond Jewell is $2000.
+2. The price of a gold Jewell is 4/5 times the price of a diamond Jewell. So, the price of the gold Jewell is (4/5) * $2000 = $1600.
+3. The price of a silver Jewell is $400 less than the price of the gold

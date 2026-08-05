@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lindsay is doing the laundry, and thinks she has missed some socks. There are 50 socks that need washing. If she washes 10 pairs of socks and 15 loose socks, how many socks has Lindsay missed?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of socks Lindsay washed. Since each pair consists of 2 socks, washing 10 pairs means she washed 10 * 2 = 20 socks. Additionally, she washed 15 loose socks. Therefore, the total number of socks washed is 20 + 15 = 35 socks.
+
+Now, we subtract the number of socks washed from the total number of socks that needed washing to find out how many socks Lindsay missed. So, 50 socks - 35 socks = 15 socks.
+
+The answer is 15 socks.<|eot_id|>

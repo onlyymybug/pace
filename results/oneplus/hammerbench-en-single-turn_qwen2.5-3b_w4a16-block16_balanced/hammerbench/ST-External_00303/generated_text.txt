@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"Health.MedicalServices.bookDoctorAppointment","description":"Schedule a appointment with a designated doctor for the user","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"appointment_time":{"type":"string","description":"Specific time of appointment '"}},"required":["doctor_name","appointment_time"]}}
+{"name":"UtilityTools.Memo.setNotesReminders","description":"Set a reminder at a certain time","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Memo Title"},"time":{"type":"string","description":"Reminder time"},"category":{"type":"string","description":"Classify"}},"required":["title","time","category"]}}
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Ming just came out from Dr. Wang. He said that Dr. Wang's medical skills were really great. The cervical spondylosis that had plagued him for many years was finally relieved. He also said that he would check with Dr. Wang next time.
+query:Help me make an appointment with the friend mentioned in the message I received from QQ at 10am on Friday.<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.bookDoctorAppointment","parameters":{"doctor_name":"Dr. Wang","appointment_time":"10:00"}}<|im_end|>

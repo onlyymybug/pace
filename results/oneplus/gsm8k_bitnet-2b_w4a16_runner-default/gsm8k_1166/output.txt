@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John collects garbage from 3 different apartment complexes.  The first two have 200 apartments each and the last one is 60% bigger than the other two combined.  He collects garbage 3 times a week from each place and he gets paid $.40 per collection for each apartment.  How much money does he make in a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to first determine the total number of apartments John collects garbage from. We know that the first two apartment complexes each have 200 apartments. The last complex is 60% bigger than the other two combined, so we need to calculate 60% of the total number of apartments from the first two complexes and add that to the total.
+
+First, calculate the total number of apartments from the first two complexes:
+2 complexes * 200 apartments = 400 apartments
+
+Next, calculate 60% of the total number of apartments from the first two complexes:
+60% of 400 apartments = 0.60

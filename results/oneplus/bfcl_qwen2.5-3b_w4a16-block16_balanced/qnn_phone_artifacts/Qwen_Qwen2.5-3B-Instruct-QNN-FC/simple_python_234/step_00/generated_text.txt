@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "history_eu.fetch_events", "description": "Fetches significant historical events within a specific time period in European history. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"century": {"type": "integer", "description": "The century you are interested in."}, "region": {"type": "string", "description": "The region of Europe you are interested in.", "enum": ["Northern", "Southern", "Eastern", "Western"]}, "category": {"type": "string", "description": "Category of the historical events. Default is 'Culture'.", "enum": ["Wars", "Culture", "Politics", "Scientific", "Others"]}}, "required": ["century", "region"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find important Wars in European history during the 19th century.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "history_eu.fetch_events", "arguments": {"century": 19, "region": "Europe", "category": "Wars"}}
+</tool_call><|im_end|>

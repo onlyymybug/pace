@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kelly has 5 quarters and 2 dimes. If she buys a can of pop for 55 cents, how many cents will she have left? Step 1: Calculate total money Kelly has
+Kelly has 5 quarters and 2 dimes. 
+- Quarters are worth 25 cents each, so 5 quarters are worth 5 * 25 cents.
+- Dimes are worth 10 cents each, so 2 dimes are worth 2 * 10 cents.
+
+Total money = (5 * 25) + (2 * 10) cents
+
+Step 2: Subtract cost of of pop
+Kelly buys a can of pop for 55 cents. Subtract this cost from total money.
+
+Step 3: Calculate remaining

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOrderEstimatedDeliveryRoute","description":"Get an estimated delivery route for a given order","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Name of the order"}},"required":["order_name"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Li! Just found this office snack box in the lounge area of the company, and it feels especially suitable for us. Not only does it come in a variety of snacks, including nuts, biscuits, and some healthy snacks, but the packaging is delicately designed so we can pick it up anytime without messing up the tabletop. More importantly, the food inside takes into account the nutritional combination, which can satisfy our little hunger without burdening the body. Next time we have a meeting or work overtime, we can share it together!
+query:Xiao Li's order for the product mentioned in the message sent to me via WeChat, can you help me check the estimated delivery route?<|im_end|>
+<|im_start|>assistant

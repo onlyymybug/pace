@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Johnny is picking up the toys on the floor of his room.  He'd dumped a lego boxed set with 500 pieces on the floor, and another one that had 3 times more pieces than the 500 piece one, and another one that had 1/4 the number of pieces.  How many blocks does Johnny pick up if he picks up all the legos? Step 1: Calculate the number of pieces in the second box:
+Second box: 500 * 3 = 1500 pieces
+
+Step 2: Calculate the number of pieces in the third box:
+Third box: 500 / 4 = 125 pieces
+
+Step 3: Calculate the total number of pieces Johnny picks up:
+Total: 500 + 1500 + 125 = 21 72 pieces
+
+The answer is 72.7. The decimal is derived from adding the integer 2 and the fraction 7/

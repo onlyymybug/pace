@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.transferPhoneCall","description":"Transfer the current call to another contact","parameters":{"type":"object","properties":{"transfer_contact_name":{"type":"string","description":"Name of the contact to transfer to"}},"required":["transfer_contact_name"]}}
+{"name":"Finance.Payment.transferPayMoney","description":"Transfer money to someone else","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Beneficiary name or account number"},"amount":{"type":"float","description":"Transfer amount, unit (yuan)"},"message":{"type":"string","description":"Transfer Note"}},"required":["receiver","amount","message"]}}
+{"name":"Navigation.TaxiCarRental.callingTaxi","description":"Send a ride request based on your starting location","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Pickup location, default current location"},"destination":{"type":"string","description":"Destination"},"time":{"type":"string","description":"Taxi time, default current time"}},"required":["departure","destination","time"]}}
+{"name":"SocialCommunication.InstantMessaging.sendFile","description":"Send a file to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the file"},"file_path":{"type":"string","description":"The path or document name of the file to send locally"}},"required":["receiver_name","file_path"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Jie! I'll be waiting for you at the North Plaza of Shanghai Railway Station at 2 pm tomorrow. Let's go to Nanjing Road together for a stroll. There is a new bookstore there. I heard that there are many collector's editions of books in it, so you must be interested. Don't forget to bring your camera-the last time you said you wanted to take pictures of the city. I will wait for you under the clock tower in the North Plaza of Shanghai Railway Station, where it is obvious that you will not find it. See you soon!
+query:From the place mentioned in the message Xiao Li sent to me via QQ at 10 am tomorrow, call a special car to go to the Oriental Pearl Tower.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.callingTaxi","parameters":{"departure":"10am tomorrow","destination":"Oriental Pearl Tower","time":"10am tomorrow"}}<|im_end|>

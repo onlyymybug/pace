@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.checkImmigrationStatus","description":"Inquire about an individual's immigration status","parameters":{"type":"object","properties":{"passport_number":{"type":"string","description":"Pasaport No."},"full_name":{"type":"string","description":"User name, default user himself"}},"required":["passport_number","full_name"]}}
+{"name":"Navigation.TrainTickets.queryTrainWaitlistStatus","description":"Used to query the current status of train ticket standby orders submitted by users","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"commit_date":{"type":"string","description":"Date/time the order was submitted"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Name of person to query"}},"required":["ride_date","commit_date","departure_station","destination_station","passenger_id","name"]}}
+{"name":"Travel.HotelServices.getHotelCheckInStatus","description":"Check the check-in status of a specific hotel reservation","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"booking_date":{"type":"string","description":"Ordered Date"}},"required":["name","booking_date"]}}
+{"name":"MusicRadio.OnlineMusic.publishDynamic","description":"Post Activity as Specified","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Dymamic Content"}},"required":["content"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, the ID number you provided earlier, G12345678, has been approved and can be used normally. Let me know if you have any other questions.
+query:Checked Zhang San's US immigration status. The ID number was mentioned in the message Xiao Li sent to me through QQ.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.checkImmigrationStatus","parameters":{"passport_number":"G12345678","full_name":"Zhang San"}}<|im_end|>

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "music_generation.create_chord_progression", "description": "Create a chord progression in a specific key and number of chords. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"key": {"type": "string", "description": "The key for the chord progression."}, "chords": {"type": "integer", "description": "Number of chords in the progression."}, "progression_type": {"type": "string", "description": "The type of the chord progression. Optional parameter. Default is 'major'."}}, "required": ["key", "chords"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Generate a major chord progression in C key with four chords.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "music_generation.create_chord_progression", "arguments": {"key": "C", "chords": 4, "progression_type": "major"}}
+</tool_call><|im_end|>

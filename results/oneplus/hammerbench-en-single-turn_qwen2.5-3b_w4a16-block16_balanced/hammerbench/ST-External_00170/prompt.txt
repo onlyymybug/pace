@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.OnlineMusic.publishDynamic","description":"Post Activity as Specified","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Dymamic Content"}},"required":["content"]}}
+{"name":"ConvenientLiving.JobRecruitment.checkJobApplicationStatus","description":"View the status of job applications by position","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"Travel.HotelServices.getHotelCheckInStatus","description":"Check the check-in status of a specific hotel reservation","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"booking_date":{"type":"string","description":"Ordered Date"}},"required":["name","booking_date"]}}
+{"name":"ConvenientLiving.GovernmentServices.checkImmigrationStatus","description":"Inquire about an individual's immigration status","parameters":{"type":"object","properties":{"passport_number":{"type":"string","description":"Pasaport No."},"full_name":{"type":"string","description":"User name, default user himself"}},"required":["passport_number","full_name"]}}
+{"name":"Finance.Banking.viewCreditCardBill","description":"View bank card statement","parameters":{"type":"object","properties":{"card_no":{"type":"string","description":"Credit Card Number"},"time":{"type":"string","description":"Credit Card Statement Month"}},"required":["card_no","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Xiao Ming, regarding the marketing plan of Dream Interaction this month, I have compiled the relevant information. If you have time to look at it, especially about the strategy of the social media section, I think we still have a lot of room for improvement. In addition, the Finance Department sent a notice of budget adjustment. Remember to take a moment to take a look to see if our department needs to make corresponding adjustments. The development of dream interaction is inseparable from the joint efforts of everyone, come on!
+query:I want to check the status of the company mentioned in the message that Xiao Li sent to me through QQ in Beijing for the UI designer position I applied for, can you help me check it?<|im_end|>
+<|im_start|>assistant

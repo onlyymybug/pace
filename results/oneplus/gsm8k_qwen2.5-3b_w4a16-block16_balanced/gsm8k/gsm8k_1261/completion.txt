@@ -1,0 +1,10 @@
+To solve this problem, we need to determine how many batches Jade can upload and how many days it will take.
+
+1. **Calculate total batches to be uploaded:**
+   Jade has 20 photos and uploads 7 photos per batch.
+   \[
+   \text{Total batches} = \frac{\text{Total photos}}{\text{Photos per batch}} = \frac{20}{7} \approx 2.857
+   \]
+   Since she can't upload a fraction of of a batch, we round up to the next whole number, so she needs to upload 3 batches.
+
+2

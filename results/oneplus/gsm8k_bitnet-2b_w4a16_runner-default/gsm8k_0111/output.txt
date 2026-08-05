@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marcell and Beatrice are having a contest to see who can eat the most fruit roll-ups, so they unroll as many as they can find. Unfortunately, someone makes a mistake and Beatrice's was two roll-ups wide and 24 rolls up long while Marcell's was 3 roll-ups wide and 14 roll-ups long. If they both ate their entire amount, how many did they eat on average?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average number of fruit roll-ups they ate, we first need to calculate the total number of fruit roll-ups each of them ate.
+
+For Beatrice:
+- Width: 2 rolls
+- Length: 24 rolls
+- Total rolls = Width * Length = 2 * 24 = 48 rolls
+
+For Marcell:
+- Width: 3 rolls
+- Length: 14 rolls
+- Total rolls = Width * Length = 3 * 14 = 42 rolls
+
+Now, we add the total rolls for both:
+- Total rolls = Beatrice's rolls + Marcell's rolls

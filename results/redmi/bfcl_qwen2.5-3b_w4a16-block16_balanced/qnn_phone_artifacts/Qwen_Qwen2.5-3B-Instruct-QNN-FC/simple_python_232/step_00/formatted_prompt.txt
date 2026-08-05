@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "monarch.getMonarchOfYear", "description": "Retrieve the monarch of a specific location during a specified year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The location (e.g., country) whose monarch needs to be found."}, "year": {"type": "integer", "description": "The year to search the monarch."}, "fullName": {"type": "boolean", "default": false, "description": "If true, returns the full name and title of the monarch."}}, "required": ["location", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What was the full name king of England in 1800?<|im_end|>
+<|im_start|>assistant

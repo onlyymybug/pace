@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Anakin and Locsin went to the beach today. Anakin caught 10 starfish, 6 sea horses, and 3 clownfish. While Locsin caught 5 fewer starfish than Anakin, 3 fewer sea horses than Anakin, and 2 more clownfish than Anakin. How many fish were they able to catch?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of fish Anakin and Locsin caught, we first need to determine how many of each type of fish each of them caught.
+
+Anakin caught:
+- 10 starfish
+- 6 sea horses
+- 3 clownfish
+
+Locsin caught:
+- 5 fewer starfish than Anakin: \(10 - 5 = 5\) starfish
+- 3 fewer sea horses than Anakin: \(6 - 3 = 3\) sea horses
+- 2 more clownfish than Anakin: \(3 + 2 = 5\) clownfish
+
+Now, we add up

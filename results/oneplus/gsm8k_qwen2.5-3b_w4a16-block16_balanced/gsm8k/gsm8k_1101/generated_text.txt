@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bobby takes a 30 min lunch and 2 15 minutes break per day at the office.  After 5 days, how many hours do his lunches and breaks add up to? Step 1: Convert all times to minutes
+Lunch: 30 minutes
+Break: 2 hours and 15 minutes
+
+Step 2: Convert break time to minutes
+2 hours = 2 * 60 minutes = 120 minutes
+15 minutes: 15 minutes
+
+Step 3: Add lunch and break times together
+30 minutes + 135 minutes = 165 minutes total per day
+
+Step 4: Multiply daily total by number of days
+165 minutes/day * 5 days = 825 minutes total
+
+Step 5:

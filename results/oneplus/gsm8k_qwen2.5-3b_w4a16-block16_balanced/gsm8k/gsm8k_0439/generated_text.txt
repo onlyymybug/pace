@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Antoine's french onion soup recipe calls for 2 pounds of onions. He likes to double that amount. His soup serves 6 people. The onions are currently on sale for $2.00 a pound. He also needs 2 boxes of beef stock, that are also on sale for $2.00 a box.  What is the cost per serving? (Round to the nearest integer.) To solve this problem, we need to calculate the total cost and the total weight of of the ingredients, then divide the total cost by the total weight to find the cost per serving.
+
+First, let's determine the total weight of of the ingredients:
+
+1. Antoine's recipe calls for 2 pounds of onions, but he doubles that amount.
+   - 2 pounds * 2 = 4 pounds of onions
+
+2. He also needs 2 boxes of beef stock, at $2.00 per box.
+   - 2 boxes * $2.00/box = $4.00 for beef stock
+

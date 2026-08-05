@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Karan borrowed $3,650 for five months at an interest rate of 10%. She has to pay an equal amount every month. How much does she have to pay per month? To solve this, first calculate the total interest on the loan, then add it to the principal to get the total amount to be paid back. Then divide that total by the number of months to find the monthly payment.
+
+Total interest = Principal * Rate * Time
+Total amount to pay = Principal + Total interest
+Monthly payment = Total amount to pay / Number of months
+
+Plugging in the numbers:
+
+Total interest = $3650 * 0.1 * 5/12 = $152.08
+Total amount to pay = $3650 + $152.08 =

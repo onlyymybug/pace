@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Krissa needs to order field trip shirts for her preschool students. 11 students need size extra-small.  Twice as many students need size small as extra small. Four less than the number of size small students need size medium.  Half as many students need size large as size medium.  Six more students need size extra-large than large.  Altogether, how many shirts did Krissa order? Step  Step  Define variables:
+- Let \( x \) be the number of students needing size extra-small.
+
+Step  - Number needing size small: \( 2x \)
+- Number needing size medium: \( 2x - 4 \)
+- Number needing size large: \( \frac{2x - 4}{2} = x - 2 \)
+- Number needing size extra-large: \( (x - 2) + 6 = x + 4 \)
+
+Step  - Total number of students: \( x + 2x + (2x - 4) + (x - 

@@ -1,0 +1,14 @@
+To determine the value of of \( c \) for which the circle with the equation \( x^2 - 10x + y^2 + 6y + c = 0 \) has a radius of length 1, we need to rewrite the equation in the standard form of of a circle's equation, \((x - h)^2 + (y - k)^2 = r^2\), where \((h, k)\) is the center and \(r\) is the radius.
+
+First, we complete the square for the \(x\) and \(y\) terms.
+
+Starting with the \(x\) terms:
+\[ x^2 - 10x \]
+To complete the square, we add and subtract \((\frac{-10}{2})^2 = 25\):
+\[ x^2 - 10x = (x - 5)^2 - 25 \]
+
+Next, for the \(y\) terms:
+\[ y^2 + 6y \]
+To complete the square, we add and subtract \((\frac{6}{2})^2 = 9\):
+\[ y^2 + 6y = (y + 3)^2 - 9 \]
+

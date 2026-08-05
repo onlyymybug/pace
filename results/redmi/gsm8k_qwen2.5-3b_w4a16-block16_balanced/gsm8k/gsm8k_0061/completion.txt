@@ -1,0 +1,16 @@
+To solve this problem, we need to determine the number of good oranges in the basket. 
+
+Given:
+- Total oranges: 25
+- Bad oranges: 1
+- Unripe oranges: 20% of total oranges
+- Sour oranges: 2
+
+First, calculate the number of unripe oranges:
+Unripe oranges = 20% of total oranges
+Unripe oranges = 0.20 * 25
+Unripe oranges = 5
+
+Next, calculate the total number of unripe and sour oranges:
+Total unripe and sour oranges = Unripe oranges + Sour oranges
+Total un

@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adam wants to eat some sliced apples. A large apple can be sliced into 5 pieces, and a small apple can be sliced into 3 pieces. Adam decides to slice 3 large and 5 small apples and then eats 15 slices. How many apple slices are left? To solve this problem, we need to calculate the total number of slices Adam gets from the apples and then subtract the number of slices he eats.
+
+1. **Calculate slices from large apples:**
+   - Each large apple is sliced into 5 pieces.
+   - Adam uses 3 large apples.
+   - Total slices from large apples = 3 apples * 5 slices/apple = 15 slices.
+
+2. **Calculate slices from small apples:**
+   - Each small apple is sliced into 3 pieces.
+   - Adam uses 5 small apples.
+   - Total slices from small apples = 5 apples * 3 slices

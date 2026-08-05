@@ -1,0 +1,5 @@
+To find the greatest common divisor (GCD) of of $3339$, $2961$, and $1491$, we will use the Euclidean algorithm, which involves repeated division and taking remainders. We start by finding the GCD of of $3339$ and $2961$, and then use that result to find the GCD with $1491$.
+
+First, we apply the Euclidean algorithm to $3339$ and $2961$:
+\[
+3339 = 2961 \cdot 1 +

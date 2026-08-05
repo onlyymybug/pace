@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "blackjack.check_winner", "arguments": {"player_cards": ["A", "10"], "dealer_cards": [10, "9"]}}
+</tool_call><|im_end|>

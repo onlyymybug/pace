@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "diabetes_prediction", "description": "Predict the likelihood of diabetes type 2 based on a person's weight and height. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"weight": {"type": "integer", "description": "Weight of the person in lbs."}, "height": {"type": "integer", "description": "Height of the person in inches."}, "activity_level": {"type": "string", "enum": ["sedentary", "lightly active", "moderately active", "very active", "extra active"], "description": "Physical activity level of the person."}}, "required": ["weight", "height", "activity_level"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Predict whether a person with weight 150lbs and height 5ft 10in who is lightly active will get type 2 diabetes.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "diabetes_prediction", "arguments": {"weight": 150, "height": 68, "activity_level": "lightly active"}}
+</tool_call><|im_end|>

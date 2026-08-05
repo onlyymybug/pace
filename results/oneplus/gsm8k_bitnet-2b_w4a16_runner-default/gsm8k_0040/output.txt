@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dana can run at a rate of speed four times faster than she can walk, but she can skip at a rate of speed that is half as fast as she can run. If she can skip at 3 miles per hour, how many miles can she travel in six hours if she spends one-third of the time running and two-thirds of the time walking?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote her walking speed as \( w \) miles per hour. According to the problem, her running speed is four times her walking speed, so her running speed is \( 4w \) miles per hour. Her skipping speed is half her running speed, so her skipping speed is \( \frac{4w}{2} = 2w \) miles per hour.
+
+We are given that her skipping speed is 3 miles per hour. Therefore, we can set up the equation:
+
+\[ 2w = 3 \]
+
+Solving for \( w \):
+
+\[ w = \frac{3}{

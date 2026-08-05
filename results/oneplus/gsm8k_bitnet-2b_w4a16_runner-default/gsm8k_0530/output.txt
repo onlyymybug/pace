@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tom bought a CD for $4, and a headphone set. In total, he paid $48. How many more CDs would Tom have been able to buy if he had decided not to buy the headphone set?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the price of the headphone set as \( p \). Tom bought one CD for $4 and one headphone set for \( p \), and the total cost was $48. So, we can write the equation:
+
+\[ 4 + p = 48 \]
+
+To find the price of the headphone set, we subtract $4 from both sides of the equation:
+
+\[ p = 48 - 4 \]
+\[ p = 44 \]
+
+So, the headphone set costs $44. If Tom had not bought the headphone set, he would have spent $4 on the CD. To find out how many more CDs

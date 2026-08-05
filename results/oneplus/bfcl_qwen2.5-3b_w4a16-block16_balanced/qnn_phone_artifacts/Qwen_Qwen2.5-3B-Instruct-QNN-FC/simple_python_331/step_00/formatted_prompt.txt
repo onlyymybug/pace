@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "board_game.chess.get_top_players", "description": "Find top chess players in a location based on rating. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city you want to find the players from."}, "minimum_rating": {"type": "integer", "description": "Minimum rating to filter the players."}, "number_of_players": {"type": "integer", "default": 10, "description": "Number of players you want to retrieve, default value is 10"}}, "required": ["location", "minimum_rating"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the top chess players in New York with a rating above 2300.<|im_end|>
+<|im_start|>assistant

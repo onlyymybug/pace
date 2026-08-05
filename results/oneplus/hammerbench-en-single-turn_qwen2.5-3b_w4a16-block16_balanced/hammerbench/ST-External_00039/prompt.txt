@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","description":"Add a note to your favorite address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address for note"},"remake":{"type":"string","description":"Comment Message Content"}},"required":["address","remake"]}}
+{"name":"Navigation.MapNavigation.addCommonAddress","description":"Add usual address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address string to add"}},"required":["address"]}}
+{"name":"OnlineShopping.ExpressDelivery.addAddress","description":"Add the specified address to the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name"},"phone":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Address"}},"required":["name","phone","address"]}}
+{"name":"UtilityTools.Reading.addReadingNote","description":"Add reading notes to the assigned text on the current reading page","parameters":{"type":"object","properties":{"book_location":{"type":"string","description":"Add a location for your notes"},"book_note":{"type":"string","description":"Note content"}},"required":["book_location","book_note"]}}
+{"name":"OnlineShopping.Mall.addDeliveryAddress","description":"Add a new shipping address based on the information","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Receiver"},"phoneNumber":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Shipping Address"}},"required":["receiver","phoneNumber","address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet tomorrow at 10am at Starbucks Zhongguancun to discuss the progress of the project. Remember to bring your latest reports and notebooks.
+query:Can I add a place mentioned in my notepad as a favorite address?<|im_end|>
+<|im_start|>assistant

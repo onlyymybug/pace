@@ -1,0 +1,12 @@
+To solve the problem, we start by analyzing the given functional equation and initial condition:
+
+\[ f(n+1) = (-1)^{n+1} n - 2f(n) \]
+with \( f(1) = f(1986) \).
+
+First, we compute the values of for the first few terms to identify a pattern:
+
+For \( n = 1 \):
+\[ f(2) = (-1)^{1+1} \cdot 1 - 2f(1) = 1 - 2f(1) \]
+
+For \( n = 2 \):
+\[

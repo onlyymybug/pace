@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "player_statistic", "description": "Retrieves detailed player's statistics for a specific year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"player_name": {"type": "string", "description": "The player's name."}, "year": {"type": "integer", "description": "Year for which the statistics will be displayed."}, "team_name": {"type": "string", "description": "The name of the team(optional). Default to not use it if not specified."}}, "required": ["player_name", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the statistics of Ronaldo's matches in 2021?<|im_end|>
+<|im_start|>assistant

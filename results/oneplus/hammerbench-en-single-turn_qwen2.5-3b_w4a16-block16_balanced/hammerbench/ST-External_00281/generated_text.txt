@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.UtilityPayments.queryBillInfo","description":"Used to get billing details for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"time":{"type":"string","description":"Bill Time"}},"required":["service_type","user_name","time"]}}
+{"name":"MusicRadio.Karaoke.getAccompaniments","description":"Get a list of song accompaniments for a given song title","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"singer_name":{"type":"string","description":"Singer name"}},"required":["song_name","singer_name"]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+{"name":"Health.HealthManagement.getDietHistory","description":"Get dietary history based on timeframe, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Time range"}},"required":["time"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getMagazine","description":"Get a magazine based on its name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Remember that at the beginning of March, we arranged to go to the flower exhibition at the City Botanical Garden. The time was set at 9 am on the 5th of March, so don't forget!
+query:At the time mentioned in Xiao Li's WeChat, what did I eat for breakfast that day?<|im_end|>
+<|im_start|>assistant
+{"name":"Health.HealthManagement.getDietHistory","parameters":{"time":"at the beginning of March"}}<|im_end|>

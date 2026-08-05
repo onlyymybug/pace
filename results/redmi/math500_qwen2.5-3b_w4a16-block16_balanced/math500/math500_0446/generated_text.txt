@@ -1,0 +1,37 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The circle $x^2 + y^2 = 2$ and the parabola $y^2 = 8x$ have two common tangents, forming four points of tangency.  Find the area of the quadrilateral formed by the four points of tangency.
+
+[asy]
+unitsize(0.8 cm);
+
+real upperparab (real x) {
+  return (sqrt(8*x));
+}
+
+real lowerparab (real x) {
+  return (-sqrt(8*x));
+}
+
+pair A, B, C, D;
+
+A = (-1,1);
+B = (2,4);
+C = (-1,-1);
+D = (2,-4);
+
+draw(graph(upperparab,0,3));
+draw(graph(lowerparab,0,3));
+draw(Circle((0,0),sqrt(2)));
+draw(interp(A,B,-0.2)--interp(A,B,1.2));
+draw(interp(C,D,-0.2)--interp(C,D,1.2));
+draw(A--C);
+draw(B--D);
+
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+[/asy] To solve the problem, we need to find the points of tangency of of the circle \(x^2 + y^2 = 2\) and the parabola \(y^2 = 8x\). The circle and the parabola intersect at four points, and the tangents at these points form a quadrilateral. We need to find the area of of this quadrilateral.
+
+First, we find the points of tangency. The circle and the parabola intersect when \(x^2 + y^2 = 2\) and \(y^2 = 8x\). Substituting \(y

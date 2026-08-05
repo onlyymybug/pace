@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.Mall.viewMessage","description":"View messages for a specific friend or time, and see the entire list of messages by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"SocialCommunication.SocialMedia.viewMediumMessage","description":"View messages for specified friends in specified media (defaults to last week)","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","name","account_number","time"]}}
+{"name":"OfficeSoftware.Email.readUnreadMails","description":"View unread messages from users","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Calling.viewPhoneCallRecords","description":"View all call logs; view assigned call logs","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to view; defaults to all records"}},"required":["contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Zhang San, do you have time for company building on weekends? Remember the last time you said you were interested in that rock climbing project, this time we arranged a similar activity, I think you will like it. If you have any questions, please reply to me as soon as possible. Please confirm the number of people and specific arrangements early. By the way, do you have any special requirements for food? Like vegetarian or something. Looking forward to hearing from you!
+query:I would like to review the call log with the friend mentioned in the message I received from QQ.<|im_end|>
+<|im_start|>assistant

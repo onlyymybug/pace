@@ -1,0 +1,33 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.getJobEmployerInfo","description":"Get employer details based on company name","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"}},"required":["company_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.queryBillInfo","description":"Used to get billing details for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"time":{"type":"string","description":"Bill Time"}},"required":["service_type","user_name","time"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"Finance.Funds.getFundManager","description":"Specify fund manager information based on manager name and fund code query","parameters":{"type":"object","properties":{"manager_name":{"type":"string","description":"Name of Fund Manager"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["manager_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for your continued support and love for our company.In December last year, we were fortunate to reach an agreement with you, and in the days that followed, we completed a number of important projects together.We would like to thank you in particular for your valuable advice and support as the project progresses.
+
+In order to further deepen the partnership, we plan to hold an annual customer appreciation meeting on December 15 this year in the near future.We sincerely invite you to come and review the results of the cooperation over the past year and explore possible future cooperation directions.
+
+Once you receive this email, please reply if you are able to attend at your earliest convenience.Based on your response, we will reserve a seat for you and arrange a reception.
+
+Thank you again for your support and trust, and we look forward to seeing you at the Appreciation Meeting.
+
+Sincerely,
+Salute!
+
+[Company name]
+[contact]
+[Contact number]
+[email]
+query:Li Si, can you check the details of the gas bill for the time mentioned in the email from Pudong New Area?<|im_end|>
+<|im_start|>assistant

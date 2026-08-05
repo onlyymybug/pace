@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Martin's weight is 55 kg. Carl’s weight is 16 kg more than Martin’s weight. Christian’s weight is 8 kg more than Carl’s weight. Harry is 5 kg less than Christian’s weight. What is the weight of Harry, in kg? To solve this problem, we need to calculate the weights step by step.
+
+1. First, find Carl's weight:
+   - Martin's weight = 55 kg
+   - Carl's weight = Martin's weight + 16 kg
+   - Carl's weight = 55 kg + 16 kg = 71 kg
+
+2. Next, find Christian's weight:
+   - Christian's weight = Carl's weight + 8 kg
+   - Christian's weight = 71 kg + 8 kg = 79 kg
+
+3. Finally, find Harry's weight:
+   - Harry's weight

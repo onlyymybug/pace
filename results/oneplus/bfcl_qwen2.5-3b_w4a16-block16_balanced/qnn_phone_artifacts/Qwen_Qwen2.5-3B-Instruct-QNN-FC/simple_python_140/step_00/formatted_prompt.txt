@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_cagr", "description": "Calculate the Compound Annual Growth Rate (CAGR) given an initial investment value, a final investment value, and the number of years. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"initial_value": {"type": "integer", "description": "The initial investment value."}, "final_value": {"type": "integer", "description": "The final investment value."}, "period_in_years": {"type": "integer", "description": "The period of the investment in years."}}, "required": ["initial_value", "final_value", "period_in_years"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the Compound Annual Growth Rate (CAGR) for an initial investment of $2000, final value of $3000 in a period of 4 years.<|im_end|>
+<|im_start|>assistant

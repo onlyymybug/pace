@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Millie decides to open a lemonade stand. She spends $18 to buy enough supplies to make 3 pitchers of lemonade. Each pitcher holds 12 cups of lemonade. She sells each cup of lemonade for $1. She sells an average of 4 cups per hour that her lemonade stand is open. If Millie sells all of the lemonade, how much profit will she make per hour that she spends running the lemonade stand?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit per hour, we first need to calculate the total profit Millie makes from selling lemonade and then divide that by the number of hours she spends running the stand.
+
+1. Calculate the total number of cups of lemonade Millie makes:
+   - She makes 3 pitchers.
+   - Each pitcher holds 12 cups.
+   - Total cups = 3 pitchers * 12 cups/pitcher = 36 cups.
+
+2. Calculate the total revenue from selling the lemonade:
+   - She sells each cup for $1.
+   - Total revenue = 36 cups * $1/cup = $36.
+

@@ -1,0 +1,35 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.NewspapersMagazines.downloadMagazine","description":"Download magazines locally based on magazine name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"ConvenientLiving.GovernmentServices.downloadServiceDocument","description":"Download docs for city services","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to download"}},"required":["document_name"]}}
+{"name":"VideoPlayback.OnlineVideos.downloadOnlineVideo","description":"Download online video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"definition":{"type":"string","description":"Download Video Quality Selection"},"path":{"type":"string","description":"Download Path Select Default Path"}},"required":["name","definition","path"]}}
+{"name":"UtilityTools.Reading.downloadReadingBook","description":"Download books by title","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"title of a book"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"Finance.Insurance.downloadInsuranceDocument","description":"Download insurance documents","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, etc."},"document_type":{"type":"string","description":"Document type, such as policy contract, claim description, etc."}},"required":["insurance_name","insurance_type","document_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Business Perspectives March 2023 Issue Notice
+
+Dear Subscriber,
+
+Hello!
+
+Thank you for your continued interest and support of Business Perspectives magazine.We are pleased to inform you that the March 2023 issue of Business Perspectives has been officially released.This issue delves into new trends in global markets, corporate innovation strategies, and insights from industry leaders, with a wealth of content and information.In particular, we recommend the cover story "Challenges and Opportunities of Digital Transformation", which provides a detailed analysis of the key issues and strategies facing enterprises on the digital road.
+
+In order to ensure that you can read this wonderful content in time, we have arranged for the magazine to be delivered to you by mail on March 15, 2023.If you choose to subscribe electronically, the electronic version of the magazine will be sent to your registered email address on March 14, 2023.
+
+If you encounter any issues with receiving magazines, or have any suggestions, feel free to reach out to our support team.Contact: service@bizview.com.
+
+Thank you again for your support and look forward to adding color to your knowledge journey in the March 2023 issue of Business Perspectives.
+
+Best regards,
+
+Business Perspective Editorial Department
+March 10, 2023
+query:I want to download Scientific American magazine. The number of issues is the time mentioned in the email. Can you help me download it locally?<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.NewspapersMagazines.downloadMagazine","parameters":{"name":"Scientific American","issue":"The number of issues is the time mentioned in the email"}}<|im_end|>

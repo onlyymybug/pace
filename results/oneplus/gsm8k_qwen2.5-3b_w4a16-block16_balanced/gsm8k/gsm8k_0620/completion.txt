@@ -1,0 +1,11 @@
+To solve this problem, 
+
+First, calculate the total number of street lights at all intersections: 
+
+- Each intersection has 6 poles, and each pole has 4 street lights, so at each intersection, there are 6*4 = 24 street lights. 
+
+- There are 4 intersections, so the total number of street lights across all intersections is 4*24 = 96 street lights. 
+
+Then, subtract the number of non-functioning street lights: 
+
+- 20 streetlights are not working, so the total number of functioning streetlights is 96 - 20 = 

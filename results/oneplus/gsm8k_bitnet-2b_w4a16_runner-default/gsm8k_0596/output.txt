@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jerry is twice as old as he was 5 years ago. How old will Jerry be in 3 years?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Jerry's current age as "J" and his age 5 years ago as "J - 5". According to the problem, Jerry is twice as old as he was 5 years ago, so we can write the equation:
+
+J = 2 * (J - 5)
+
+Now, we solve for J:
+
+J = 2J - 10
+10 = J
+
+So, Jerry is currently 10 years old. To find out how old Jerry will be in 3 years, we add 3 to his current age:
+
+10 + 3 = 13
+
+The answer is 13.<|eot_id|>

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 96 fourth-graders at Small Tree  School. 43 of them are girls. On Friday, 5 fourth-grade girls and 4 fourth-grade boys were absent. How many fourth grade boys were at Small Tree  School on Friday?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many fourth-grade boys were at school on Friday, we first need to determine the total number of fourth-grade students who were present on Friday. We know there are 96 fourth-graders in total and 43 of them are girls. Therefore, the number of fourth-grade boys is:
+
+96 (total students) - 43 (girls) = 53 (boys)
+
+On Friday, 5 girls and 4 boys were absent. To find out how many boys were present, we subtract the number of absent boys from the total number of boys:
+
+53 (boys) - 4 (absent boys

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.PublicTransit.viewNearbyBusStop","description":"Check nearby bus stops","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Default Current Location"}},"required":["location"]}}
+{"name":"Navigation.PublicTransit.viewBusStopInfo","description":"View designated bus stop information","parameters":{"type":"object","properties":{"stop_plate":{"type":"string","description":"Station Name"}},"required":["stop_plate"]}}
+{"name":"MusicRadio.RadioStations.radioStopRadio","description":"Stop listening to current station","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Payment.setPayNotifications","description":"Turn payment notifications on or off","parameters":{"type":"object","properties":{"open":{"type":"boolean","description":"Whether to turn on payment notifications"},"notification_type":{"type":"string","description":"Default app notifications, notification methods, such as SMS, email"}},"required":["open","notification_type"]}}
+{"name":"UtilityTools.AlarmClock.stopTimer","description":"Pause current timer","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, let's go to the Pentagon on the weekend. There is a new bookstore there. I heard that it is very large and complete. You can also go for a meal. There is also a lot of food at the Pentagon. What do you think?
+query:Check the bus stop near the place mentioned in the WeChat Xiao Li sent me<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.PublicTransit.viewNearbyBusStop","parameters":{"location":"Pentagon"}}<|im_end|>

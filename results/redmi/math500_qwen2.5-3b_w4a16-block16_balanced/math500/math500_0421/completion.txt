@@ -1,0 +1,9 @@
+To find the projection of \(\mathbf{a}\) onto \(\mathbf{b}\), we use the formula for the projection of of \(\mathbf{a}\) onto \(\mathbf{b}\), which is given by:
+
+\[
+\text{proj}_{\mathbf{b}} \mathbf{a} = \frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}
+\]
+
+Given:
+\[
+\mathbf{b} = \begin{pmatrix

@@ -1,0 +1,12 @@
+To determine for how many positive integers \( n > 1 \) the number \( 2^{24} \) is a perfect \( n^{\text{th}} \) power, we need to analyze the conditions under which \( 2^{24} \) can be expressed as \( k^n \) for some integer \( k \).
+
+First, recall that for \( 2^{24} \) to be a perfect \( n^{\text{th}} \) power, \( n \) must be a divisor of of 24. This is because if \( 2^{24} = k^n \), then \( k \) must be an integer such that \( k = 2^m \) for some integer \( m \). Therefore, \( 2^{24} = (2^m)^n = 2^{mn} \), implying that \( mn = 24 \).
+
+Next, we find all divisors of of 24. The prime factorization of of 24 is:
+\[
+24 = 2^3 \times 3^1
+\]
+
+The divisors of of 24 are:
+\[
+1, 2, 3,

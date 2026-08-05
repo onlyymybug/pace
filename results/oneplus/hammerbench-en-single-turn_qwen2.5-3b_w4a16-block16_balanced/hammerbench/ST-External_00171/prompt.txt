@@ -1,0 +1,38 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.setPursuringJob","description":"Set job preferences based on job title, salary level, work location, etc.","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"salary":{"type":"string","description":"Salary Level"},"location":{"type":"string","description":"Work Location"}},"required":["job_name","salary","location"]}}
+{"name":"MusicRadio.Karaoke.setMusicPreferences","description":"Set your preferences by music type, musician, and language","parameters":{"type":"object","properties":{"genres":{"type":"string","description":"Music type"}},"required":["genres"]}}
+{"name":"MusicRadio.OnlineMusic.setMusicPreferences","description":"Set your preferences by music type, musician, and language","parameters":{"type":"object","properties":{"genres":{"type":"string","description":"Music type"}},"required":["genres"]}}
+{"name":"Health.HealthManagement.setHealthGoal","description":"Set health goals based on target type, target weight, target time, etc.","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Detailed description of the goal, such as weight loss of 10kg, body fat rate reduction of 5%, etc."},"time_limit":{"type":"string","description":"Time to complete goal"}},"required":["goal_title","goal_content","time_limit"]}}
+{"name":"SystemTools.SystemSettings.setSystemLDefaultApp","description":"Set the default app for each type of action","parameters":{"type":"object","properties":{"operation_type":{"type":"string","description":"Type of action, e.g. browser, camera"},"app_name":{"type":"string","description":"Default app name"}},"required":["operation_type","app_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Arrangements for the Shanghai Project Meeting
+
+Dear Colleagues,
+
+Hello, In order to better promote the Shanghai project, we plan to hold a project progress meeting next Wednesday (April 12, 2023) at 10:00 am in the conference room on the 12th floor of the company headquarters building in Shanghai.Please be sure to attend on time so that we can discuss the latest progress of the project and the arrangements for follow-up work together.
+
+The main agenda of the meeting includes: reporting on the current progress of the project, discussing problems encountered and solutions, and formulating the work plan for the next phase.At the same time, in order to ensure that the meeting can be conducted efficiently, please prepare the relevant information in advance and send it to the project team mailbox before the meeting.
+
+The weather forecast in Shanghai indicates that there may be light rain on that day, so please bring rain gear with you.In addition, the parking space near the company is tight, so we recommend that you choose public transportation or plan your trip in advance to avoid being late due to traffic problems.
+
+If you have any questions, please do not hesitate to contact me.We look forward to working with you on more projects in Shanghai!
+
+Best,
+
+Sincerely,
+
+Salute
+
+[Your name]  
+[Your Position]  
+[Contact number]  
+[email]
+query:I would like to set up my job application as a marketing specialist, based on the location mentioned in the email, and hope that the annual salary is not less than 200,000.<|im_end|>
+<|im_start|>assistant

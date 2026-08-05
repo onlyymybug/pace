@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carmen has $100, Samantha has $25 more than Carmen, and Daisy has $50 more than Samantha. How much do all three girls have combined?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of money Carmen has as C. According to the problem, Carmen has $100, so C = 100.
+
+Samantha has $25 more than Carmen, so Samantha has C + 25 = 100 + 25 = 125.
+
+Daisy has $50 more than Samantha, so Daisy has (C + 25) + 50 = 125 + 50 = 175.
+
+To find the total amount of money all three girls have combined, we add their amounts together: C + (C + 25) + (C + 25 + 50) = 100 + 

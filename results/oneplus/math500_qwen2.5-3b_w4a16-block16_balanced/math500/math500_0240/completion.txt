@@ -1,0 +1,16 @@
+To solve the problem, we need to determine the side lengths of of of the parallelograms formed by the given lines and use the area formulas for parallelograms to find the values of of of \(a\), \(b\), \(c\), and \(d\).
+
+1. **Identify the side lengths of of of the parallelograms:**
+
+   - The first parallelogram is bounded by the lines \(y = ax + c\), \(y = ax + d\), \(y = bx + c\), and \(y = bx + d\).
+     - The side lengths of of of this parallelogram are \(|d - c|\) and \(|b - a|\).
+     - The area of of of the first parallelogram is given by:
+       \[
+       \text{Area}_1 = |d - c| \cdot |b - a|
+       \]
+       Given that the area is 18, we have:
+       \[
+       |d - c| \cdot |b - a| = 18
+       \]
+
+   - The second parallelogram is bounded by the lines \(y = ax + c\), \(y = ax - d\), \(y

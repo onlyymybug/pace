@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.addCommonAddress","description":"Add usual address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address string to add"}},"required":["address"]}}
+{"name":"OnlineShopping.Mall.addDeliveryAddress","description":"Add a new shipping address based on the information","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Receiver"},"phoneNumber":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Shipping Address"}},"required":["receiver","phoneNumber","address"]}}
+{"name":"OnlineShopping.ExpressDelivery.addAddress","description":"Add the specified address to the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name"},"phone":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Address"}},"required":["name","phone","address"]}}
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","description":"Add a note to your favorite address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address for note"},"remake":{"type":"string","description":"Comment Message Content"}},"required":["address","remake"]}}
+{"name":"UtilityTools.Reading.addReadingBookShelf","description":"Add online and local books to your shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"},"path":{"type":"string","description":"Local Book Path"}},"required":["book_name","book_author","path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Li! I just came out of Terminal 3 of Beijing International Airport. There are so many people here that I almost lost my way. Where was the coffee shop you mentioned last time? How do I get out of T3 and turn right? Waiting for your reply, I'll be here waiting for you!
+query:Can you help me add the place mentioned in the QQ message Xiaoming sent me as a favorite address?<|im_end|>
+<|im_start|>assistant

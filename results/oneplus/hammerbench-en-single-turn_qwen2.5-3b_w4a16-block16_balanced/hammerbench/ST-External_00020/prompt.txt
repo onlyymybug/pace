@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.planNavigationRoute","description":"Search navigation routes by origin and destination","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"time":{"type":"string","description":"Departure time, default current time"},"mode":{"type":"string","description":"Getting around, by car, public transport, bike, or on foot, by default"},"preferred_route":{"type":"string","description":"Preferred route type, such as direct, few transfers, etc., optional"}},"required":["departure","destination","time","mode","preferred_route"]}}
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"SocialCommunication.Community.pinCommunityPost","description":"Pin a post to a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to pin the post to"},"post_name":{"type":"string","description":"Title of the post to sticky"}},"required":["community_name","post_name"]}}
+{"name":"OfficeSoftware.Email.forwardMail","description":"Forward the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to forward"},"receivers":{"type":"string","description":"Recipient of the forwarded message"}},"required":["mail_title","receivers"]}}
+{"name":"Travel.ScenicAreaServices.searchScenicSpotByLocation","description":"Search nearby attractions based on user-provided location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location"}},"required":["location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet at the North Exit of Hongqiao Railway Station at 3pm and go downtown together. Remember to check if you have your ID card, we need to take the subway to the destination. The subway station is right next to the train station, which is very convenient.
+query:The place mentioned in the notebook is to Pudong International Airport, I want to find the bus route that takes the shortest time.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,13 @@
+To solve this, we first calculate the area of of one bedroom, then the area of the living room, and finally add the rest of of the house area to get the total area.
+
+Area ofOneBedroom = 20 * 12 = 240 sq ft
+
+AreaofLivingRoom = 5 * AreaOneBedroom = 5 * 240 = 1200 sq ft
+
+TotalAreaOtherParts = 1000 sq ft
+
+TotalAreaHouse = AreaOneBedroom + AreaofLivingRoom + TotalAreaOtherParts
+
+Now we calculate:
+
+TotalAreaHouse =

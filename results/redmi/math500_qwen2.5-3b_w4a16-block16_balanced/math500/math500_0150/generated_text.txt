@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If Rosa's age is divided by 2, 3, 4, or 6, the remainder is 1. If her age is divided by 7, the remainder is 0. She is less than 75 years old. How many years old is Rosa? To solve for Rosa's age, we need to find a number \( x \) that satisfies the following conditions:
+1. \( x \equiv 1 \pmod{2} \)
+2. \( x \equiv 1 \pmod{3} \)
+3. \( x \equiv 1 \pmod{4} \)
+4. \( x \equiv 1 \pmod{6} \)
+5. \( x \equiv 0 \pmod{7} \)
+6. \( x < 75 \)
+
+First, observe that \( x \equiv 1 \pmod{2

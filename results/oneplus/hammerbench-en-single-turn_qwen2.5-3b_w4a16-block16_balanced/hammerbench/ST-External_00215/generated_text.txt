@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Insurance.contactInsuranceAgent","description":"Get contact details for your insurance agent","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Health.MedicalServices.rateDoctor","description":"Evaluate visiting physicians","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"content":{"type":"string","description":"Review Content"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","content","doctor_name"]}}
+{"name":"ConvenientLiving.JobRecruitment.searchJobPeople","description":"Search people by keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search for networking keywords"}},"required":["keyword"]}}
+{"name":"Health.Fitness.searchFitnessCoaches","description":"Search for the right fitness trainer by criteria","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords such as name, area of expertise, etc."}},"required":["keyword"]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends of Shanghai, we are planning to visit the new Shanghai Museum this weekend, and we will stop by the People's Park next door. Are you all interested in joining us? The meeting point is set at the main entrance of the Shanghai Museum at 10am. Don't forget to check the weather for the day and get sunscreen or rain gear ready. Looking forward to a great day with you all in Shanghai!
+query:I want to know who is the gas supplier at the location mentioned in Xiao Li's WeChat?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","parameters":{"service_type":"gas","location":"Shanghai"}}<|im_end|>

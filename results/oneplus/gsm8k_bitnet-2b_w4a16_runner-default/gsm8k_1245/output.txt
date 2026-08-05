@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Audrey has to take two math tests to pass 6th grade. She must correctly answer 70% of the total questions to move on to the 7th grade. The first test has 70 questions and she gets 60% of them correct. The second test has 40 questions. How many questions does she need to get right on the second test to move onto the 7th grade?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To pass the 6th grade, Audrey needs to answer 70% of the total questions correctly. Let's first calculate how many questions she needs to answer correctly in total to pass.
+
+Total questions = 70 (from the first test) + 40 (from the second test) = 110 questions
+
+70% of 110 questions = 0.7 * 110 = 77 questions
+
+Audrey needs to answer 77 questions correctly to pass the 6th grade.
+
+She got 60% of the first test correct. Let's calculate how many questions she got right on the first test.
+
+Questions on the first

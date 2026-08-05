@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $0.\overline{1331}$ is written as a fraction $\frac{a}{b}$ with $a$ and $b$ being positive integers with a greatest common divisor of 1, what is $a+b$? To convert the repeating decimal \(0.\overline{1331}\) into a fraction, we start by letting \(x = 0.\overline{1331}\). This means that \(x = 0.133113311331\ldots\).
+
+To eliminate the repeating part, we multiply \(x\) by \(10000\) (since the repeating block "1331" has 4 digits):
+\[10000x = 1331.13311331\ldots\]
+

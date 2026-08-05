@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Express $555_{10}$ in base $5$. To convert the decimal number \(555_{10}\) to base \(5\), we need to repeatedly divide the number by \(5\) and keep track of of the remainders. The remainders will form the digits of of the base \(5\) number, starting from the least significant digit (rightmost) to the most significant digit (leftmost).
+
+Here are the steps:
+
+1. Divide \(555\) by \(5\):
+   \[
+   555 \div 5 = 111 \quad \text{with a remainder of} \quad 0
+   \]

@@ -1,0 +1,5 @@
+To solve the problem, we need to rotate the complex number \( z = 2 + \sqrt{2} - (3 + 3\sqrt{2})i \) around the complex number \( c = 2 - 3i \) by an angle of \(\frac{\pi}{4}\) counter-clockwise. The general formula for rotating a complex number \( z \) around another complex number \( c \) by an angle \(\theta\) is given by:
+
+\[ w = c + (z - c)e^{i\theta} \]
+
+Here, \(\theta = \frac{\pi

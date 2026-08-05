@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob is in charge of doing laundry for a large hotel. Each room has two sheets, one comforter, twice as many pillow cases as sheets and twice as many towels as pillow cases. How many pieces of laundry are there in 80 rooms?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of pieces of laundry for one room and then multiply by the number of rooms.
+
+1. Each room has:
+   - 2 sheets
+   - 1 comforter
+   - Twice as many pillow cases as sheets: \(2 \times 2 = 4\) pillow cases
+   - Twice as many towels as pillow cases: \(2 \times 4 = 8\) towels
+
+2. Total pieces of laundry for one room:
+   \[
+   2 \text{ sheets} + 1 \text{ comforter} + 4 \text{

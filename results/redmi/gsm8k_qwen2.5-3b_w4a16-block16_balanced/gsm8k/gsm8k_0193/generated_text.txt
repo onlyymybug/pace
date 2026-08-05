@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tom plants 10 trees a year.  Every year he also chops down 2 trees a year.  He starts with 50 trees.  After 10 years 30% of the trees die.  How many trees does he have left? Step 1: Initial trees: 50
+Step 2: Trees added each year: 10
+Step 3: Trees chopped each year: 2
+Step 4: Net change in trees per year: 10 - 2 = 8
+Step 5: Trees after 10 years before any die: 50 + 8 * 10 = 130
+Step 6: 30% of of 13 30 30 s die: 0.3 * 13 30 30 s = 90

@@ -1,0 +1,25 @@
+To solve for \( t(g(16)) \), we need to follow the steps carefully. Let's start by evaluating \( g(16) \) first.
+
+Given:
+\[ g(x) = \sqrt{x} \]
+
+We need to find \( g(16) \):
+\[ g(16) = \sqrt{16} \]
+\[ \sqrt{16} = 4 \]
+
+So, \( g(16) = 4 \).
+
+Next, we need to find \( t(g(16)) \), which is \( t(4) \). We know from the problem statement that:
+\[ t(x) = 3 - g(x) \]
+
+We need to substitute \( g(16) \) into \( t \):
+\[ t(4) = 3 - g(4) \]
+
+Now, we need to find \( g(4) \):
+\[ g(4) = \sqrt{4} \]
+\[ \sqrt{4} = 2 \]
+
+So, \( g(4) = 2 \).
+
+Substitute \( g(4) \) back into \( t \):
+\[ t(4) = 3 - g(4) \]

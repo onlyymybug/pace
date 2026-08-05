@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Stanley was standing on the side of the mountain, at an elevation of 10,000 feet, when a gust air blew the comb out of his pocket, causing the comb to fall 4,000 feet to a ledge below.  Stanley's brother, Oliver, was also on the mountain, but he was at an elevation of 3,000 feet.  Stanley called Oliver on his cellphone and asked Oliver to find Stanley's comb.  How many feet must Oliver climb to reach the elevation of Stanley's comb?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many feet Oliver must climb, we need to determine the total elevation of Stanley's comb. Stanley was initially at 10,000 feet, and the comb fell 4,000 feet. So, the total elevation of the comb is 10,000 + 4,000 = 14,000 feet.
+
+Oliver is currently at an elevation of 3,000 feet. To reach the elevation of Stanley's comb, he needs to climb 14,000 - 3,000 = 11,000 feet.
+
+The answer is 11,000 feet.<|eot_id|>

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James buys a ring for his bride-to-be.  The diamond cost $600 and the gold cost $300.  He pays a 30% premium for it to be made.  How much did he pay?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much James paid, we first need to calculate the total cost of the ring before the premium. This is done by adding the cost of the diamond and the gold:
+
+Total cost before premium = Cost of diamond + Cost of gold
+Total cost before premium = $600 + $300
+Total cost before premium = $900
+
+Next, we calculate the 30% premium on the total cost before the premium:
+
+Premium = 30% of $900
+Premium = 0.30 * $900
+Premium = $270
+
+Now, we add the premium to the total cost before the premium to find the

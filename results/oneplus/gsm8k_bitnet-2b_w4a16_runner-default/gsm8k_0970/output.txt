@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John decides to buy new phones for him, his 2 kids, and his wife.  Each phone after the first 2 is half price.  If the phone price is $600 how much did he pay for them all?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total cost of the phones. John buys one phone at full price and three phones at half price.
+
+1. The first phone costs $600.
+2. Each of the other three phones costs half of $600, which is $300 per phone.
+
+Now, we add the costs together:
+- Cost of the first phone: $600
+- Cost of the three phones at half price: $300 * 3 = $900
+
+Total cost = Cost of the first phone + Cost of the three phones at half price
+Total cost = $600 + $900
+Total cost = $

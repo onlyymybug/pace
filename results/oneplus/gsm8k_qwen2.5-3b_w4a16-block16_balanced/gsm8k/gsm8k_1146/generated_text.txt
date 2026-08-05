@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Faraday owns a flower shop. He sells a sunflower that costs $2 each and a bouquet of sunflower that costs $8. If Faraday earned $26 from the sunflower and $56 from the bouquet per day, and if each bouquet has 12 sunflowers, how many sunflowers was Faraday able to sell after 3 days? To solve this, we first calculate the number of sunflowers sold for the earnings from sunflowers and bouquets separately.
+
+From sunflowers: Faraday earns $2 each from sunflowers. He earned $26 from sunflowers. So, the number of sunflowers sold is $26 / $2 = 13 sunflowers per day.
+
+From bouquets: Faraday earns $8 each from bouquets. He earned $56 from bouquets. So, the number of bouquets sold is $56 / $8 = 7 bouquets per day.
+
+Each bouquet contains 12 sunflowers, so 

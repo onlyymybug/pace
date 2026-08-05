@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a student council election, candidate A got 20% of the votes while candidate B got 50% more than candidate A's votes. The rest of the votes was given to candidate C. If there were 100 voters, how many votes did candidate C get? To solve this problem, we first calculate the number of votes for candidate B, which is 50% more than candidate A's votes. Then we subtract the sum of of votes for A and B from the total number of voters to find the votes for candidate C.
+
+ Candidate B's votes: 20 + (20 * 50%) = 20 + 10 = 30 votes
+
+ Total votes for A and B: 20 + 30 = 50 votes
+
+ Total votes: 100
+
+ Votes for C: 100 - 50 = 

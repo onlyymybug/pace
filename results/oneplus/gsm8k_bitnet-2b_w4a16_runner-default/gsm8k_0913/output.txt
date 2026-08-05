@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John drinks a bottle of water every half hour.  A normal sudoku puzzle takes him 45 minutes.  An extreme sudoku takes 4 times that long.  How many bottles of water does he drink in that time?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how long it takes John to complete an extreme sudoku puzzle. Since an extreme sudoku takes 4 times as long as a normal sudoku, we multiply the time for a normal sudoku by 4:
+
+\[ 45 \text{ minutes} \times 4 = 180 \text{ minutes} \]
+
+Next, we need to convert the total time John spends solving the sudoku into hours, because his drinking rate is given in half-hour intervals. There are 60 minutes in an hour, so we divide the total minutes by 60:
+
+\[ 180 \text{ minutes} \div

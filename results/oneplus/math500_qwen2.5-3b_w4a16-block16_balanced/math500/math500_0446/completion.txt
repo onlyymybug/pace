@@ -1,0 +1,6 @@
+To solve the problem, we need to find the points of tangency of of the circle \(x^2 + y^2 = 2\) and the parabola \(y^2 = 8x\). The circle and the parabola intersect at four points, and the tangents at these points form a quadrilateral. We need to find the area of of this quadrilateral.
+
+First, we find the points of tangency. The circle and the parabola intersect when \(x^2 + y^2 = 2\) and \(y^2 = 8x\). Substituting \(y^2 = 8x\) into the circle's equation, we get:
+\[x^2 + 8x = 2 \implies x^2 + 8x - 2 = 0.\]
+Solving this quadratic equation using the quadratic formula \(x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}\), where \(a = 1\), \(b = 8\), and \(c = -2\), we get:
+\[x = \frac{-8 \pm \sqrt{64 + 8}}{2} = \

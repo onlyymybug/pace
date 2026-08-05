@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.blockPhoneCall","description":"Block calls from a specific number or type","parameters":{"type":"object","properties":{"blocked_number":{"type":"string","description":"Phone number to block"},"block_type":{"type":"string","description":"Blocking type, such as all blocks, blocks for a specific period of time, etc."}},"required":["blocked_number","block_type"]}}
+{"name":"Navigation.Bicycles.viewMileage","description":"View cumulative kilometers cycled","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Photography.VideoEditing.videoEditCut","description":"Capture clips from specific time periods in the video","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"start_time":{"type":"integer","description":"Start time period for capturing video, in seconds"},"end_time":{"type":"integer","description":"End time period for intercepted video, in seconds"}},"required":["name_or_path","start_time","end_time"]}}
+{"name":"OnlineShopping.ExpressDelivery.searchExpress","description":"Search courier logistics based on information such as designated courier number, recipient, address, etc.","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"date":{"type":"string","description":"Shipping date"},"send_name":{"type":"string","description":"Name Of Sender"},"recipient_name":{"type":"string","description":"Recipient's name"}},"required":["express_id","date","send_name","recipient_name"]}}
+{"name":"Navigation.TrainTickets.queryTrainSchedule","description":"Find departure, arrival, and stops for specific trips","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Trips to inquire about"},"time":{"type":"string","description":"Query Date"}},"required":["train_number","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10am today, I saw a black BMW in the parking lot with license plate number D456. The car is parked in row 3, row 12, area A, and a reminder is posted on the window that the car needs to be moved tomorrow. There is also a red Honda next to it, but that's not the point. The main thing is to record the BMW's license plate number D456 in case it needs to be looked up later.
+query:When do the number plates mentioned in Friday's notepad depart and arrive, and which stops do they stop at?<|im_end|>
+<|im_start|>assistant

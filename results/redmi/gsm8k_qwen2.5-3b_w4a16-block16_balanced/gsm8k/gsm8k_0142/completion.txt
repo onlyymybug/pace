@@ -1,0 +1,13 @@
+Step  Let's denote the number of queens as Q, the number of babies as B, and the number of worker bees as W. From the problem, we know:
+
+1) W = 700
+2) B = 2Q (twice as many baby bees as queens)
+3) W = 2B (twice as many worker bees as baby bees)
+
+From (2) and (3), we can substitute B in (3) with 2Q:
+
+W = 2(2Q) = 4Q
+
+Given W = 700, we substitute:
+
+700 =

@@ -1,0 +1,36 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Three pencils and a jumbo eraser cost $\$1.24$. Five pencils and a jumbo eraser cost $\$1.82$. No prices include tax. In cents, what is the cost of a pencil? Let's denote the cost of of a pencil by \( p \) cents and the cost of of a jumbo eraser by \( e \) cents. We are given two equations based on the problem statement:
+
+1. \( 3p + e = 124 \)
+2. \( 5p + e = 182 \)
+
+To find the cost of of a pencil, we need to solve these equations simultaneously. We can eliminate \( e \) by subtracting the first equation from the second equation:
+
+\[
+(5p + e) - (3p + e) = 182 - 124
+\]
+
+Simplifying the left side, we get:
+
+\[
+5p + e - 3p - e = 182 - 124
+\]
+
+This simplifies to:
+
+\[
+2p = 58
+\]
+
+Now, we solve for \( p \) by dividing both sides by 2:
+
+\[
+p = \frac{58}{2} = 29
+\]
+
+Thus, the cost of of a pencil is \( 29 \) cents. Therefore, the final answer is:
+
+\[
+\boxed{29}
+\

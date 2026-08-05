@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Greg has an alarm set to ring three times a day as a reminder. When the alarm goes off, it continues to ring until Greg turns it off. The first time it went off today, it rang four times. The second time it went off, it rang for three times as long as the first time. The third time, it rang for half as long as the second time. How many times did the alarm ring in all? Step 1: Let's denote the duration of the first alarm ring as 'x'.
+Step 2: According to the problem, the second alarm rang for 3x duration.
+Step 3: The third alarm rang for 1/2 of the duration of the second alarm, which is 1/2 * 3x = 3/2 x.
+Step 4: Total rings = First ring duration + Second ring duration + Third ring duration
+Step 5: Total rings = x + 3x + 3/2 x
+Step 6: Simplifying the expression: Total rings = x(1

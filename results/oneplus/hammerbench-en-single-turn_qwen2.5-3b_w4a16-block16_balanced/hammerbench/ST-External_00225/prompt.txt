@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.updateRestaurantOrder","description":"Updating order information based on the order, such as delivery address, notes, etc.","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"},"delivery_address":{"type":"string","description":"Delivery address"},"delivery_time":{"type":"string","description":"Expected delivery time in HH: mm format"},"note":{"type":"string","description":"Remarks"}},"required":["order_name","delivery_address","delivery_time","note"]}}
+{"name":"ConvenientLiving.GovernmentServices.updateServiceRequestInfo","description":"Make changes to submitted city service request information","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Service Request Name"}},"required":["name"]}}
+{"name":"SocialCommunication.InstantMessaging.updateGroupInfo","description":"Update announcements and other information for a specific group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to update"},"new_announcement":{"type":"string","description":"Updated group announcements"}},"required":["group_name","new_announcement"]}}
+{"name":"Navigation.TrainTickets.updateTrainWaitlistOrder","description":"Used to modify submitted train ticket waiting list information","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Booked trips"},"passenger_name":{"type":"string","description":"Rider's name"},"after_number":{"type":"string","description":"Booked trips"},"new_departure_date":{"type":"string","description":"New departure date, format 'YYYY-MM-DD', optional if modified"},"new_seat_type":{"type":"string","description":"Seat Type"}},"required":["train_number","passenger_name","after_number","new_departure_date","new_seat_type"]}}
+{"name":"Finance.Banking.modifyFinancialProductOrder","description":"Modify a subscribed order for a bank wealth management product","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Purchase Order Number"},"product":{"type":"string","description":"Financing product"},"modify":{"type":"string","description":"Modified content, such as additional amount, revision deadline, etc."}},"required":["order_id","product","modify"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Good evening, Ming! Tonight at 23:00, our school's virtual concert is about to start. Remember to adjust your equipment and attend on time! This show has a lot of wonderful shows, everyone has been preparing for a long time, don't miss it!
+query:At the time mentioned by Xiao Ming in the QQ message, help me update the order information of the late-night barbecue. The delivery address is No. 2 Wenyi Road. Please tap the door to make a note.<|im_end|>
+<|im_start|>assistant

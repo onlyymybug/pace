@@ -1,0 +1,13 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Compute $17^{-1}\pmod{83}$. Express your answer as a residue from $0$ to $82$, inclusive.
+
+(You may find it helpful to consider the fact that $17\cdot 5=85$.) To find the modular inverse of \(17^{-1} \pmod{83}\), we need to find an integer \(x\) such that:
+\[ 17x \equiv 1 \pmod{83} \]
+
+This means we need to solve the equation:
+\[ 17x = 83k + 1 \]
+for some integer \(k\). This can be rewritten as:
+\[ 17x - 83k = 1 \]
+
+This is a linear Diophantine equation, and we can solve it using the Extended Euclidean Algorithm. First, we apply the

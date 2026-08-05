@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Susan orders 3 magazines that send 12 issues a year.  She has 1 magazine that sends 6 issues a year.  Her last magazine sends her 4 times the amount of the 6 issue magazine.  How many magazines does she get every year? Step 1: Calculate total issues from magazines with 12 issues.
+- 3 magazines * 12 issues each = 3 * 12 = 3 total issues
+
+Step 2: Calculate total issues from the 6 issue magazine.
+- 1 magazine * 6 issues = 6 * 1 = 6 total issues
+
+Step 3: Calculate total issues from the magazine that sends 4 times the 6-issue magazine.
+- 4 * 6 issues = 4 * 6 = 24 total issues
+
+Step 4: Add all the total issues together.
+- 3 +

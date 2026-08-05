@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "grocery_store.find_nearby", "description": "Locate nearby grocery stores based on specific criteria like organic fruits and vegetables. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city and state, e.g. Houston, TX"}, "categories": {"type": "array", "items": {"type": "string", "enum": ["Organic", "Vegetables", "Fruits", "Dairy", "Seafood", "Bakery"]}, "description": "Categories of items to be found in the grocery store. Default is all if not specified."}}, "required": ["location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find a grocery store near me with organic fruits and vegetables in Houston.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "grocery_store.find_nearby", "arguments": {"location": "Houston, TX", "categories": ["Organic", "Fruits"]}}
+</tool_call><|im_end|>

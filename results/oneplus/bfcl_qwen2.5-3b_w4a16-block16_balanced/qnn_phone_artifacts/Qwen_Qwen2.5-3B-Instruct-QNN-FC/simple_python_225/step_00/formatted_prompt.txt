@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "psych_research.get_preference", "description": "Gathers research data on public preference between two options, based on societal category. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"category": {"type": "string", "description": "The societal category the preference data is about. E.g. reading, transportation, food"}, "option_one": {"type": "string", "description": "The first option people could prefer."}, "option_two": {"type": "string", "description": "The second option people could prefer."}, "demographic": {"type": "string", "description": "Specific demographic of society to narrow down the research.", "default": "all"}}, "required": ["category", "option_one", "option_two"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the percentage of population preferring digital reading over physical books?<|im_end|>
+<|im_start|>assistant

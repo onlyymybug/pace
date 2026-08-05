@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 90 rooms at the KozyInn Motel. It takes housekeeping 20 minutes to clean each room. How many hours would it take to clean one-half of the rooms?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many hours it would take to clean one-half of the rooms, we first need to determine how many rooms that is. One-half of 90 rooms is 45 rooms.
+
+It takes 20 minutes to clean each room. So, for 45 rooms, it would take:
+
+45 rooms * 20 minutes/room = 900 minutes
+
+To convert minutes into hours, we divide by 60 (since there are 60 minutes in an hour):
+
+900 minutes / 60 = 15 hours
+
+The answer is 15 hours.<|eot_id|>

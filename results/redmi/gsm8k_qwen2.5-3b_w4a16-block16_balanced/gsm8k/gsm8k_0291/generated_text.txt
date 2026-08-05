@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ali is a superstar counter. He has won 22 medals for counting super fast. His friend Izzy is also a really good counter and has 5 less medals than Ali. Together they have 10 times less medals than have been given out for counting. How many medals have been given out for counting? Let's break down the problem step by step.
+
+1. Ali has 22 medals.
+2. Izzy has 5 less medals than Ali, so Izzy has \(22 - 5 = 17\) medals.
+3. Together, Ali and Izzy have \(22 + 17 = 39\) medals.
+4. According to the problem, the total number of medals given out is 10 times the total number of medals Ali and Izzy have together.
+5. Therefore, the total number of medals given out is \(10 \times 39 = 390\

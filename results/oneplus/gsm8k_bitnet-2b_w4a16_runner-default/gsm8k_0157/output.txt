@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The zookeeper feeds all the apes in the zoo. He orders all the bananas from a local farm every 2 months. If the monkeys need 200 bananas, the gorillas need 400 bananas, and the baboons need 100 bananas every month, how many bananas does he need to order to last for 2 months?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of bananas required for all the animals over the two-month period. 
+
+- Monkeys need 200 bananas per month.
+- Gorillas need 400 bananas per month.
+- Baboons need 100 bananas per month.
+
+First, calculate the total bananas needed per month for all animals:
+\[ 200 + 400 + 100 = 700 \text{ bananas per month} \]
+
+Next, calculate the total bananas needed for two months:
+\[ 700 \text{ bananas/month} \times 2 \text{ months} = 1400 \text{ bananas

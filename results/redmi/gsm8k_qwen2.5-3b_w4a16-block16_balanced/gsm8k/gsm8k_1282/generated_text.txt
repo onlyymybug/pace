@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dexter has five pigs. Each one eats 4 pounds of feed, twice a day. If Dexter ordered 300 pounds of feed, how many pounds of feed is left after a week? To solve this problem, let's break it down step by -by-step:
+
+1. First, calculate the total daily feed consumption for all pigs:
+   - Each pig eats 4 pounds twice a day, so each pig eats 4*2 = 8 pounds a day.
+   - With 5 pigs, total daily feed consumption is 5*8 = 40 pounds.
+
+2. Next, calculate the weekly feed consumption:
+   - Since there are 7 days in a week, total weekly feed consumption is 40*7 = 280 pounds.
+
+3. Finally, subtract the weekly feed consumption from

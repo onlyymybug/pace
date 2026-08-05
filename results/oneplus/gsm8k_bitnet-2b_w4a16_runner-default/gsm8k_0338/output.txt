@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Luke ate 2 hot dogs. Thomas ate three times more hot dogs than Luke. John ate half the amount Thomas ate. How many more hot dogs did John eat than Luke?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many hot dogs each person ate.
+
+1. Luke ate 2 hot dogs.
+2. Thomas ate three times more hot dogs than Luke. So, Thomas ate \(3 \times 2 = 6\) hot dogs.
+3. John ate half the amount Thomas ate. So, John ate \(\frac{6}{2} = 3\) hot dogs.
+
+Now, we need to find out how many more hot dogs John ate than Luke. John ate 3 hot dogs, and Luke ate 2 hot dogs. So, John ate \(3 - 2 = 

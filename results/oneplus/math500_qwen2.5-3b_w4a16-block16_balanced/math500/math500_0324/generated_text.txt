@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Four points, $A$, $B$, $C$, and $D$, are chosen randomly and independently on the circumference of a circle. What is the probability that segments $AB$ and $CD$ intersect? To solve the problem, we need to determine the probability that segments \(AB\) and \(CD\) intersect when four points \(A\), \(B\), \(C\), and \(D\) are chosen randomly and independently on the circumference of of a circle.
+
+1. **Understanding the Problem:**
+   - We have four points \(A\), \(B\), \(C\), and \(D\) on a circle.
+   - We need to find the probability that the segments \(AB\) and \(CD\) intersect.
+
+2. **Key Insight:**
+   - For two segments to intersect, the points must be arranged such that one pair of of points are on one side of the circle and the other pair on the opposite side.
+   - This can be visualized by considering the circle as a unit circle and the points as positions on it.
+
+3. **Probability Calculation:**
+   - Let's fix point \(A\) at a specific position on the circle.
+   - The remaining three points \(B\), \(C\), and \(D\) can be arranged in \(\binom{3}{2} = 3\) ways.
+   - For \(AB\) and \(CD\) to intersect, \(B\) and \(C\) must be

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On a certain day, the total cost of filling up 20 helium balloons was $900. Two days later, the cost of filling each balloon was increased by $20. How much did Bentley pay to fill 170 balloons if he went to fill them after the price increase?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the original price per balloon. Then, we'll use that price to find out how much Bentley paid for 170 balloons after the price increase.
+
+1. Calculate the original price per balloon:
+   - Total cost for 20 balloons = $900
+   - Original price per balloon = Total cost / Number of balloons
+   - Original price per balloon = $900 / 20
+   - Original price per balloon = $45
+
+2. Calculate the new price per balloon after the increase:
+   - Increase per balloon = $20
+   - New price per balloon = Original price per

@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cole hid 3 dozen eggs in the yard for the Easter egg hunt.  Lamar finds 5 eggs. Stacy finds twice as many as Lamar.  Charlie finds 2 less than Stacy.  And Mei finds half as many as Charlie.  How many eggs are still hidden in the yard?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow the steps for each person and then sum up the total number of eggs found.
+
+1. Cole hides 3 dozen eggs. Since 1 dozen equals 12 eggs, Cole hides:
+   \(3 \times 12 = 36\) eggs.
+
+2. Lamar finds 5 eggs.
+
+3. Stacy finds twice as many as Lamar:
+   \(2 \times 5 = 10\) eggs.
+
+4. Charlie finds 2 less than Stacy:
+   \(10 - 2 = 8\) eggs.
+
+5. Mei finds half as many as Charlie:
+   \(\frac{8

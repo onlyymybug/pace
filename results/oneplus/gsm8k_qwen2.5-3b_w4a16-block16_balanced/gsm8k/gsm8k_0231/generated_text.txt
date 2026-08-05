@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark buys a fleet of 12 cars for his company.  Each car sells for $20,000.  He pays 10% tax on the cars and then another $1000 for registration on each of them.  How much does he pay for everything? Step 1: Calculate total cost of of cars
+Cost ofCars = 12 * 20000
+
+Step 2: Calculate tax on cars
+Tax = CostcostCars * 0.1
+
+Step 3: Calculate registration cost
+RegistrationCost = 12 * 1000
+
+Step 4: Calculate total cost including tax and registration
+TotalCost = CostcostCars + Tax + RegistrationCost
+
+Step 5: Calculate the final amount Mark pays
+FinalAmount = TotalCost
+
+Now calculate the values:
+Step 1: 12 * 20,000

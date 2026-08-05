@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Conor lives near a beach and loves going there every day to have fun. On a particular week, he found 50 people at the beach on the first day. The next day, 20 more people were present at the beach than on the first day, and on the third day, the total number of people increased to twice the number that were there on the second day. If Conor saw an average of 60 people each day the rest of the week, calculate the total number of people Conor saw at the beach that week.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of people Conor saw at the beach that week, we need to calculate the number of people each day and then sum them up.
+
+1. On the first day, Conor saw 50 people.
+2. On the second day, there were 20 more people than on the first day, so:
+   \[
+   50 + 20 = 70 \text{ people}
+   \]
+3. On the third day, the total number of people was twice the number on the second day, so:
+   \[
+   2 \times 70 = 140 \text{ people}
+   \

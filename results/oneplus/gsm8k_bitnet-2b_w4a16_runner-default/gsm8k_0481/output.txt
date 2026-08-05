@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ben has 4 tubes of blue paint and 3 tubes of yellow paint. Jasper has half as many tubes of blue paint as Ben, and three times as many tubes of yellow paint as Ben. How many tubes of paint does Jasper have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many tubes of paint Jasper has, we first determine how many tubes of blue and yellow paint he has based on the information given about Ben.
+
+Ben has 4 tubes of blue paint and 3 tubes of yellow paint.
+
+Jasper has half as many tubes of blue paint as Ben:
+Jasper's blue paint = 4 / 2 = 2 tubes
+
+Jasper has three times as many tubes of yellow paint as Ben:
+Jasper's yellow paint = 3 * 3 = 9 tubes
+
+Now, we add the tubes of blue and yellow paint Jasper has to find the total number of tubes he

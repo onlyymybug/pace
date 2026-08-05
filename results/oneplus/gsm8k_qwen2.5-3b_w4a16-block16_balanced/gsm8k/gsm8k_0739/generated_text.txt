@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alice has 6 more books than Steven. Clara has two times as many books as Steven. If Clara has 20 books, how many more books does Clara have than Alice? Step 1: Determine how many books Steven has.
+Step Since Clara has 20 books and Clara has two times as many books as Steven, Steven has 20/2 books.
+
+Step 2: Calculate the number of books Steven has.
+Number ofBooks_Steven = 20/2
+
+Step 3: Determine how many books Alice has.
+Step
+Alice has 6 less books than Steven, so Alice has NumberOfBooks_Steven - 6 books.
+
+Step 4: Calculate the number of books Alice has.
+NumberOfBooks_Alice = NumberOfBooks_Steven - 6
+
+Step 

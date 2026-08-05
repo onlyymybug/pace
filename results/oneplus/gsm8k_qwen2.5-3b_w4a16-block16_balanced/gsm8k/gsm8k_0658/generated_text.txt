@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a hanger to keep it in.  He also spends twice as much as that on fuel per month.  How much did it cost him to get and maintain the plane for the first year? Step 1: Cost of of plane
+Cost ofPlane = $150000
+
+Step 2: Monthly rent cost
+RentCost = $5000
+
+Step 3: Monthly fuel cost
+FuelCost = 2 * RentCost = 2 * $5000 = $10000
+
+Step 4: Total monthly cost
+TotalMonthlyCost = RentCost + FuelCost = $5000 + $10000 = $15000
+
+Step 5: Total yearly cost
+TotalYearlyCost = TotalMonthlyCost * 1

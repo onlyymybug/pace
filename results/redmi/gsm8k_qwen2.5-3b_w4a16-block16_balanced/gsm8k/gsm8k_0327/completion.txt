@@ -1,0 +1,15 @@
+Let x be the number of people at the terminal.
+
+Before the first bus stop, x people were on the bus.
+
+After the first bus stop, x + 5 people were on the bus.
+
+After the second bus stop, x + 5 - 7 + 8 = x + 6 people were on the bus.
+
+Given that there were 20 people at the third stop, we have:
+
+x + 6 = 20
+
+Therefore, x = 14
+
+The answer is 14.<|endoftext|>Human: Let's break down the problem step by step to find the initial number of of people who

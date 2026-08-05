@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Artie has a flower stand at the Farmers Market. He sells three kinds of flowers: marigolds, petunias and begonias. He usually sells marigolds for $2.74 per pot, petunias for $1.87 per pot and begonias for $2.12 per pot. Artie has no change today, so he has decided to round all his prices to the nearest dollar. If Artie sells 12 pots of marigolds, 9 pots of petunias and 17 pots of begonias, how much will he make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Artie will make, we need to round each price to the nearest dollar and then multiply by the number of pots sold for each type of flower.
+
+- Marigolds: $2.74 rounds to $3.00 per pot. Selling 12 pots: $3.00 * 12 = $36.00
+- Petunias: $1.87 rounds to $2.00 per pot. Selling 9 pots: $2.00 * 9 = $18.00
+- Begonias: $2.12 rounds to $2.00 per pot. Selling 17

@@ -1,0 +1,28 @@
+To determine for how many values of \( x \) the expression \(\frac{x-5}{x^2-9}\) is not defined, we need to identify the values of of \( x \) that make the denominator zero. A fraction is undefined when its denominator is zero.
+
+The given expression is:
+\[
+\frac{x-5}{x^2-9}
+\]
+
+First, we set the denominator equal to zero and solve for \( x \):
+\[
+x^2 - 9 = 0
+\]
+
+This is a difference of of squares, which can be factored as:
+\[
+(x - 3)(x + 3) = 0
+\]
+
+Setting each factor equal to zero gives us the solutions:
+\[
+x - 3 = 0 \quad \text{or} \quad x + 3 = 0
+\]
+\[
+x = 3 \quad \text{or} \quad x = -3
+\]
+
+Thus, the expression \(\frac{x-5}{x^2-9}\) is not defined at \( x = 3 \) and \( x = -3 \).
+
+Next, we need to check if \( x = 5 \) makes

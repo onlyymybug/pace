@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "property_records.get", "description": "Fetch property records based on location, parcel number and county. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"address": {"type": "string", "description": "Address of the property."}, "parcel_number": {"type": "string", "description": "Parcel number of the property."}, "county": {"type": "string", "description": "County where the property is located."}, "include_owner": {"type": "boolean", "description": "Include owner's name in the property record. Default is false.", "default": false}}, "required": ["address", "parcel_number", "county"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Provide me with the property records of my house located at 123 main street, with parcel number 1234567890 in Santa Clara county. Include owners information in the response.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "property_records.get", "arguments": {"address": "123 main street", "parcel_number": "1234567890", "county": "Santa Clara", "include_owner": true}}
+</tool_call><|im_end|>

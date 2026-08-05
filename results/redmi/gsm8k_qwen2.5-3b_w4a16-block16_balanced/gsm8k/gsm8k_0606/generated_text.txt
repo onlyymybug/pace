@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: For four hours, Patrick sold 15 cups of lemonade per hour at a price of $0.50 per cup.  In the next two hours, he sold 10 cups of lemonade per hour at a price of $0.60 per cup.  How much money did Patrick earn, in dollars, from selling lemonade for 6 hours? To solve this problem, we'll calculate the earnings for each period separately and then sum them up.
+
+For the first 4 hours:
+- He sold 15 cups per hour
+- At $0.50 per cup
+
+Earnings for first 4 hours = 15 cups/hour * $0.50/cup * 4 hours
+
+For the next 2 hours:
+- He sold 10 cups per hour
+- At $0.60 per cup
+
+Earnings for next 2 hours = 10 cups/hour * $0.60/cup * 2 hours
+

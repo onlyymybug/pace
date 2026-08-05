@@ -1,0 +1,18 @@
+adb -P 5037 -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; { ./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path . --prompt '"'"'<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_future_value", "description": "Calculate the future value of an investment given the initial amount, interest rate, and investment duration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"initial_investment": {"type": "integer", "description": "The initial investment amount."}, "interest_rate": {"type": "float", "description": "The annual interest rate in decimal form."}, "duration": {"type": "integer", "description": "The investment duration in years."}, "compounded": {"type": "integer", "description": "The number of times the interest is compounded per year. Default is 1 (annual compounding)."}}, "required": ["initial_investment", "interest_rate", "duration"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the future value of my investment of $1000 with an annual interest rate of 5% over 2 years.<|im_end|>
+<|im_start|>assistant
+'"'"' --system_prompt '"'"''"'"' --seq_len 1024 --eval_mode 1 --temperature 0.0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/speed.txt; runner_rc=$?; printf "\nrunner_returncode=%s\n" "$runner_rc"; exit "$runner_rc"; } > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_155/step_00/runner.log 2>&1'

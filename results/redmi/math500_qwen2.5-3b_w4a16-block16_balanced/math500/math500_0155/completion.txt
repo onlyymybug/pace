@@ -1,0 +1,5 @@
+To solve the problem, we need to find the shortest path the gecko can take from its current position to the position of of the fly. Let's first establish the coordinates of of the gecko and the fly.
+
+The room dimensions are 12 feet by 10 feet by 8 feet. The gecko is currently at the following coordinates:
+- 1 foot from the ceiling, so its height is \(8 - 1 = 7\) feet from the floor.
+- 1 foot from the back wall, so its distance from the back wall is \(10 - 1 = 9\) feet from the

@@ -1,0 +1,25 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.verifyBill","description":"Verify the accuracy of bills such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"Finance.Funds.getFundRiskLevel","description":"Check the risk level of the designated fund","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"SystemTools.SystemOptimization.scanForSystemVulnerabilities","description":"Detect possible security flaws in your phone's system","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.TrafficViolations.viewCarInsurance","description":"View Vehicle Insurance Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello! My name is Li Si, and I am responsible for the project coordination of the Marketing Department.Regarding next week's client meetup, I would like to confirm with you the specific time and place.We are initially scheduled to meet at the International Convention Center next Wednesday at 10am, but we will need your final confirmation.In addition, we have prepared a detailed customer analysis that we hope will be sent to you in advance so that we can communicate more efficiently.
+
+Please let us know what you think and we will be more than happy to accommodate any adjustments or suggestions.We look forward to your response.
+
+Good luck with your work!
+
+Li Si
+Marketing Department
+query:Help me check whether the name of the person mentioned in the email is accurate in the gas bill in Shanghai's Pudong New Area.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.UtilityPayments.verifyBill","parameters":{"service_type":"gas","user_name":"EK"}}<|im_end|>

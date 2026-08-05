@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alex is getting ready to attend an event that she has hosted and wants to make sure that she has enough seats for everyone. She invites 100 people via email and each invited person says that they will also invite 2 of their friends. She then calls 10 of her friends to invite them too and 8 of them say they will be bringing their spouses. How many seats will Alex need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many seats Alex will need, we need to account for all the invitations and the additional guests.
+
+1. Alex invites 100 people via email.
+2. Each of these 100 people invites 2 friends, so that's an additional 100 * 2 = 200 people.
+3. Alex calls 10 friends to invite them, adding 10 more people.
+4. 8 of these friends bring their spouses, adding 8 spouses.
+
+Now, let's add up all the people:
+- Initial invites: 100
+- Additional invites from friends: 200
+- Additional invites from friends' spouses:

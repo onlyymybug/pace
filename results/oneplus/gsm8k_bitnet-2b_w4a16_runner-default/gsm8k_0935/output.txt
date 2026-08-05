@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Zoey and Sydney are having a watermelon seed spitting contest. Whoever spits their seeds the most total distance wins. They each get one watermelon. Zoey's has 40 seeds and she spits each one 10 feet. Sydney's has 35 she spits each one 12 feet. What is the average total distance spat?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average total distance spat, we first need to calculate the total distance each person spat their seeds.
+
+For Zoey:
+Number of seeds = 40
+Distance per seed = 10 feet
+Total distance spat by Zoey = Number of seeds × Distance per seed = 40 × 10 = 400 feet
+
+For Sydney:
+Number of seeds = 35
+Distance per seed = 12 feet
+Total distance spat by Sydney = Number of seeds × Distance per seed = 35 × 12 = 420 feet
+
+Now, we find the average total distance spat by both:
+Total distance spat by both = Total distance

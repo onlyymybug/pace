@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jessica makes $2,000.00 a month.  She sets 25% of her paycheck aside to put towards fancy shoes.  Each pair of shoes she buys costs $1,000.00.  How many shoes can she buy in a year? Step 1: Calculate how much Jessica saves each month for shoes.
+Monthly savings = Total monthly income * Percentage saved
+Monthly savings = $2000 * 0.25
+Monthly savings = $500
+
+Step 2: Calculate how many pairs of shoes Jessica can buy each month with her savings.
+Monthly shoes bought = Monthly savings / Cost per pair
+Monthly shoes bought = $500 / $1000
+Monthly shoes bought = 0.5 pairs
+
+Step 3: Calculate how many pairs of shoes Jessica can buy in a year.
+Annual shoes bought = Monthly shoes bought * Months

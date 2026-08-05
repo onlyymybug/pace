@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantCustomerSatisfactionRate","description":"Get customer satisfaction data for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"Health.MedicalServices.getHopitalReviews","description":"Query hospital reviews by hospital name","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["hospital_name"]}}
+{"name":"Finance.Stocks.viewStockComment","description":"View stock comment section","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OnlineShopping.Mall.viewCommodityEvaluation","description":"View a list of user reviews for an item based on its name","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"Travel.HotelServices.getHotelReviews","description":"Get reviews based on specific hotel names","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"location":{"type":"string","description":"Address"}},"required":["name","location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Notice of Burger King Gathering This Friday
+
+Dear Team Member,
+
+Hello everyone!
+
+In order to enhance communication and cooperation between teams, we plan to hold a team gathering at Burger King Restaurant in Happiness Square, Chaoyang District, Beijing this Friday (April 7, 2023) at 6 pm.It will be a great opportunity to relax and get to know each other and hopefully everyone will be able to participate.
+
+We will prepare a rich burger package for everyone, and there is also plenty of space for us to meet and talk.Please make arrangements in advance and try not to be absent.Please let us know if you are unable to attend due to any special circumstances.
+
+Looking forward to our happy meeting at Burger King!
+
+Best regards,
+[Your name]
+query:I would like to know the customer satisfaction data for the restaurant mentioned in the email.<|im_end|>
+<|im_start|>assistant

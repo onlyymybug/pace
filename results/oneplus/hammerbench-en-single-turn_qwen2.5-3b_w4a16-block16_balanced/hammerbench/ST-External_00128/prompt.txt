@@ -1,0 +1,41 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantLicense","description":"Get licensing info for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"Navigation.TrafficViolations.viewDriverInfo","description":"View driver's license details","parameters":{"type":"object","properties":{"driver_license_number":{"type":"string","description":"Licence Number:"}},"required":["driver_license_number"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"Navigation.TrafficViolations.viewCarInfo","description":"View license details","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Notice of Blue Ocean Group Annual Financial Reporting Meeting
+
+Dear Colleagues,
+
+Hello!
+
+In order to ensure the smooth conduct of the Blue Ocean Group's 2023 annual financial report meeting, the following matters related to the meeting are hereby notified:
+
+1. * * Meeting time * *: 9:00 - 12:00 am, October 15, 2023.
+2. * * Meeting place * *: Multi-functional conference hall on the 15th floor of the Blue Ocean Group Headquarters Building.
+3. * * Participants * *: All members of the Finance Department of Blue Ocean Group, heads of departments and special guests.
+4. * * Agenda * *:
+   - 9:00 - 9:30 Opening remarks and annual work review
+   - 9:30 - 10:30 Interpretation of 2023 Annual Financial Report
+   - 10:30 - 11:00 Coffee break
+   - 11:00 - 11:30 Discussion of financial policy and management improvement options
+   - 11:30 - 12:00 Interactive session
+
+Please attend the meeting on time and be prepared in advance.If you have any questions or need further information, please contact the Finance Secretariat in a timely manner.
+
+Thank you for your cooperation and support!
+
+Lanhai Group Finance Department
+
+September 30, 2023
+query:Can you check the business license information of the company mentioned in the email?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jerry is rolling a six-sided die. How much more likely is it (expressed as a percentage) that he rolls a number greater than 3 than that he rolls two even numbers in a row?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the probabilities of two events and then find the difference between them.
+
+1. **Probability of rolling a number greater than 3:**
+   - A six-sided die has faces numbered from 1 to 6.
+   - Numbers greater than 3 are 4, 5, and 6.
+   - There are 3 favorable outcomes out of 6 possible outcomes.
+   - Probability = (Number of favorable outcomes) / (Total number of outcomes) = 3/6 = 1/2.
+
+2. **Probability of rolling two even numbers in a row:

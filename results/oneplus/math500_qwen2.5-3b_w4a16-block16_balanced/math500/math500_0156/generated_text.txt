@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A point $(x,y)$ is randomly selected such that $0 \le x \le 8$ and $0 \le y \le 4$. What is the probability that $x+y \le 4$? Express your answer as a common fraction. To solve the problem, we need to determine the probability that a randomly selected point \((x, y)\) within the rectangle defined by \(0 \le x \le 8\) and \(0 \le y \le 4\) satisfies the inequality \(x + y \le 4\).
+
+First, let's visualize the region where \(x + y \le 4\). This inequality represents a line \(x + y = 4\) and the region below this line. The line \(x + y = 4\) intersects the \(x\)-axis at \((4, 0)\) and the \(y\)-axis at \((0, 4)\). However, since \(x\) and \(y\) are bounded by \(0 \le x \le 8\) and \(0 \le y \le 4\), the relevant part of of of the line \(x + y = 4\) within these bounds is from \(x = 0\) to \(x = 4\) and from \(y = 0\) to \(y = 4 - x\).
+
+The region where \(x + y \le 4\) within the rectangle is a right triangle with vertices at \((0,0

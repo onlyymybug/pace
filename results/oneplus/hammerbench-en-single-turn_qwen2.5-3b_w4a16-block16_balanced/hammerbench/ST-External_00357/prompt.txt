@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.mediumContinue","description":"Forwarding actions on specified dynamics","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"Education.ChildrenEducation.searchChildStory","description":"Search Stories for Kids","parameters":{"type":"object","properties":{"story_type":{"type":"string","description":"Types of stories, such as fairy tales, allegorical stories"},"author":{"type":"string","description":"Author"},"publish":{"type":"string","description":"a publishing house"}},"required":["story_type","author","publish"]}}
+{"name":"Navigation.PublicTransit.shareBusRoute","description":"Share designated bus routes with others","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"Destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."},"recipient":{"type":"string","description":"recipient"},"medium":{"type":"string","description":"Medium"}},"required":["line","departure","destination","preferred_line","recipient","medium"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The Grimm brothers have just shared an interesting story with me that they say they heard when they were kids. The story tells of a brave knight who went through many hardships to rescue the princess who was imprisoned by the dragon. The Brothers Grimm said that the story was not only funny, but also reminded them of a lot of good memories. I think this story is also very suitable for you. Next time we meet, I will tell you in detail.
+query:Help me find a fairy tale, the author is the name of the friend mentioned in the message received from QQ, and the publishing house is a foreign language teaching and research publishing house.<|im_end|>
+<|im_start|>assistant

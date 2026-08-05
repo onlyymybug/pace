@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob spends $27000 distributed between 3 schools to buy books.  He can buy 100 books for $500.  How many books can he buy per school?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many books Bob can buy per school, we first need to determine the total number of books he can buy with the $27000.
+
+1. Calculate the cost per book:
+   \[
+   \text{Cost per book} = \frac{500}{100} = 5 \text{ dollars per book}
+   \]
+
+2. Calculate the total number of books Bob can buy with $27000:
+   \[
+   \text{Total books} = \frac{27000}{5} = 5400 \text{ books}
+   \]
+
+3. Since Bob is distributing the books equally among

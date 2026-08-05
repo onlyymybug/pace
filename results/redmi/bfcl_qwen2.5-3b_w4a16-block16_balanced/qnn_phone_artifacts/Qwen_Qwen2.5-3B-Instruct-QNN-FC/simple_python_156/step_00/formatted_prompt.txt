@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "crime_record.get_record", "description": "Retrieve detailed felony crime records using a specific case number and location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"case_number": {"type": "string", "description": "The case number related to the crime."}, "county": {"type": "string", "description": "The county in which the crime occurred."}, "details": {"type": "boolean", "description": "To get a detailed report, set as true. Defaults to false."}}, "required": ["case_number", "county"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Look up details of a felony crime record for case number CA123456 in San Diego County<|im_end|>
+<|im_start|>assistant

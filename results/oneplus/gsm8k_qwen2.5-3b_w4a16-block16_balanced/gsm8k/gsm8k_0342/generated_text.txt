@@ -1,0 +1,20 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A pink frog weighs the same as a blue beetle, the same as a green toad, 10 pounds less than a yellow snake, but 20 pounds more than a red bird. If the pink frog weighs 50 pounds, calculate the total weight of a container carrying one of each animal if the container also weighs 20 pounds. To solve this, we first need to find the weights of of the other animals based on the pink frog's weight.
+
+Given:
+- Pink frog = 50 pounds
+- Pink frog = Blue beetle
+- Pink frog = Green toad
+- Pink frog = Yellow snake - 10 pounds
+- Pink frog = Red bird + 20 pounds
+
+Let's denote the weight of of the animals as follows:
+- Pink frog = P
+- Blue beetle = B
+- Green toad = G
+- Yellow snake = Y
+- Red bird = R
+
+From the problem, we know:
+P = 5

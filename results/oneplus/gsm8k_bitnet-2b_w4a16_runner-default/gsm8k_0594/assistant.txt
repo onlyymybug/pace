@@ -1,0 +1,11 @@
+To solve this problem, we need to determine how many days it will take for the beanstalk to grow taller than 20 feet, given that it doubles its height every day and starts out 4 feet tall.
+
+Let's denote the number of days it takes for the beanstalk to exceed 20 feet as \( n \).
+
+The height of the beanstalk after \( n \) days can be expressed as:
+\[ 4 \times 2^n \]
+
+We need to find the smallest \( n \) such that:
+\[ 4 \times 2^n > 20 \]
+
+First, divide both sides by 4

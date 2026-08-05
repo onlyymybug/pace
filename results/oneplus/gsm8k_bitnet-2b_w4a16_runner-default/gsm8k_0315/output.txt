@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A football team has 105 members.  There are twice as many players on the offense as there is on the defense. There is half the number of players on the special teams as there is on the defense.  How many players are on the defense?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of players on the defense as D. According to the problem, the number of players on the offense is twice the number on the defense, so the offense has 2D players. The special teams have half the number of players on the defense, so they have D/2 players.
+
+The total number of players is the sum of the players on offense, defense, and special teams, which equals 105. Therefore, we can write the equation:
+
+2D + D + D/2 = 105
+
+To solve for D, first combine the terms on the left side of the equation:
+
+2D +

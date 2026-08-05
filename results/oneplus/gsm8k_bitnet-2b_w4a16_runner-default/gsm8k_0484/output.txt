@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gabriel and Luri each own a portable media player that can store up to 100 songs. Gabriel has 20 songs on his player while Luri has 3 times as many songs. How many fewer songs can Luri add to his player than Gabriel can add to his?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many songs Luri currently has on his player. Since Luri has 3 times as many songs as Gabriel, and Gabriel has 20 songs, we calculate Luri's songs as follows:
+
+Luri's songs = 3 * Gabriel's songs
+Luri's songs = 3 * 20
+Luri's songs = 60
+
+Now, we need to find out how many more songs Gabriel can add to his player. Gabriel's player can store up to 100 songs, and he currently has 20 songs:
+
+Gabriel's additional songs = Maximum capacity - Current

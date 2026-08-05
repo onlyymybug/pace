@@ -1,0 +1,13 @@
+To solve the problem, we need to analyze the given graph of \( y = a \sin (bx + c) + d \) and determine the values of of \( a \), \( b \), \( c \), and \( d \).
+
+From the graph, we can observe the following:
+- The amplitude \( a \) is 2.
+- The vertical shift \( d \) is 1.
+- The period of of \( T \) is \( \frac{2\pi}{b} \). From the graph, the period appears to be \( 2\pi \), so \( b = 3 \).
+- The phase shift \( c \) is \( \pi \).
+
+The general form of of the sine function is \( y = a \sin (bx + c) + d \). Given the graph, we can write the function as \( y = 2 \sin (3x + \pi) + 1 \).
+
+We need to find the smallest possible value of \( c \). From the function \( y = 2 \sin (3x + \pi) + 1 \), we see that \( c = \pi \).
+
+Thus, the smallest possible value of \( c \) is \( \

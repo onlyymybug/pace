@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the projection of $\mathbf{a}$ onto $\mathbf{b} = \begin{pmatrix} 2 \\ 6 \\ 3 \end{pmatrix}$ if $\mathbf{a} \cdot \mathbf{b} = 8.$
+To find the projection of \(\mathbf{a}\) onto \(\mathbf{b}\), we use the formula for the projection of of \(\mathbf{a}\) onto \(\mathbf{b}\), which is given by:
+
+\[
+\text{proj}_{\mathbf{b}} \mathbf{a} = \frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}
+\]
+
+Given:
+\[
+\mathbf{b} = \begin{pmatrix

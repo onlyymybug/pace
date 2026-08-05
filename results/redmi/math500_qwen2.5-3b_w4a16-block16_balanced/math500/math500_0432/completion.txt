@@ -1,0 +1,4 @@
+To find the range of of of \( f(x) = (\arccos x)^2 + (\arcsin x)^2 \), we start by using the relationship between \(\arccos x\) and \(\arcsin x\). Recall that \(\arccos x + \arcsin x = \frac{\pi}{2}\). Let \( \theta = \arccos x \). Then, \(\arcsin x = \frac{\pi}{2} - \theta\). Thus, we can rewrite \( f(x) \) as follows:
+
+\[
+f(x) =

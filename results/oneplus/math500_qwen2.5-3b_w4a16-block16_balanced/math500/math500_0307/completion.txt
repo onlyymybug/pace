@@ -1,0 +1,7 @@
+To solve the problem, we need to find the number of quadratic equations of of the form \(x^2 + ax + b = 0\) such that if \(c\) is a root, then \(c^2 - 2\) is also a root. Let's denote the roots of of the quadratic equation by \(c\) and \(d\). By Vieta's formulas, we know that \(c + d = -a\) and \(cd = b\).
+
+Given that \(c\) is a root, \(c^2 - 2\) is also a root. Let's denote the roots by \(r_1\) and \(r_2\). Then, if \(r_1\) is a root, \(r_2 = r_1^2 - 2\) must also be a root. We need to find the conditions under which this is possible.
+
+Consider the quadratic equation with roots \(r_1\) and \(r_2\):
+\[x^2 - (r_1 + r_2)x + r_1 r_2 = 0.\]
+If \(r_1\) is a root, then \(r_2 = r_1^2 - 2\) must also be a root.

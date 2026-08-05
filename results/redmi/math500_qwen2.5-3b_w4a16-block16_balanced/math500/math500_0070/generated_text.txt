@@ -1,0 +1,4 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $z$ be a complex number such that $z^5 = 1$ and $z \neq 1.$  Compute
+\[z + \frac{1}{z} + z^2 + \frac{1}{z^2}.\] Given that \( z \) is a complex number such that \( z^5 = 1 \) and \( z \neq 1 \), \( z \) is a fifth root of of unity. The fifth roots of of unity are the solutions to the equation \( z^5 - 1 = 0 \), which can be factored as \( (z-1)(z^4 + z^3 + z^2 + z + 1) = 0 \). Since \( z \neq 1 \), we have \( z^4 + z^3 + z^2 + z +

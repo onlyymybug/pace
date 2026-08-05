@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"Education.OnlineClasses.postCourseReview","description":"User commented on a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"},"content":{"type":"string","description":"Review Content"}},"required":["course_name","teacher_name","content"]}}
+{"name":"OfficeSoftware.Documents.addDocumentComment","description":"Add a comment for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to add comment, required"},"comment_content":{"type":"string","description":"Comment (required)"}},"required":["document_name","comment_content"]}}
+{"name":"VideoPlayback.ShortVideos.commentShortVideo","description":"Comment on a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Coach Li! I'm Zhang Hua. Yesterday, we arranged to meet at the gymnasium at 2 pm today to discuss the next training plan. I have just arrived at the gymnasium, we will meet in the lounge area on the first floor if it is convenient for you. Looking forward to working with you!
+query:I would like to give a comment to Coach Li of the Yoga Junior Tutorial. The content is: "Coach Li's guidance is very professional, the course is at a moderate pace, and it is recommended to friends who want to relax."<|im_end|>
+<|im_start|>assistant

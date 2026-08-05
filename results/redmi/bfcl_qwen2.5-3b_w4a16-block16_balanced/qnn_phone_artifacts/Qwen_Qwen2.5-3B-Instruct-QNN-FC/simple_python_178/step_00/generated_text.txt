@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_lawsuit_details", "description": "Retrieve the detailed information about a lawsuit based on its case number and the court location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"case_number": {"type": "string", "description": "The case number of the lawsuit."}, "court_location": {"type": "string", "description": "The location of the court where the case is filed."}, "additional_details": {"type": "array", "items": {"type": "string", "enum": ["attorneys", "plaintiffs", "defendants", "charges", "court_updates"]}, "description": "Optional. Array containing additional details to be fetched. Default is all."}}, "required": ["case_number", "court_location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find details about lawsuit case numbered 'LAX2019080202' in the Los Angeles court.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_lawsuit_details", "arguments": {"case_number": "LAX2019080202", "court_location": "Los Angeles"}}
+</tool_call><|im_end|>

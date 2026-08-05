@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $P(x)$ be a monic polynomial of degree 3.  Suppose that $P(x)$ has remainder $R(x)$ when it is divided by $(x - 1)(x - 4),$ and remainder $2R(x)$ when it is divided by $(x - 2)(x - 3).$  Given that $P(0) = 5,$ find $P(5).$ To solve for \(P(5)\), we start by noting that \(P(x)\) is a monic polynomial of of degree 3. Let's denote \(P(x) = x^3 + ax^2 + bx + c\).
+
+Given that \(P(x)\) has a remainder \(R(x)\) when divided by \((x-1)(x-4)\), we can write:
+\[ P(x) = (x-1)(x-4)Q(x) + R(x) \]
+where \(R(x)\) is a polynomial of of degree less than 2, i.e., \(

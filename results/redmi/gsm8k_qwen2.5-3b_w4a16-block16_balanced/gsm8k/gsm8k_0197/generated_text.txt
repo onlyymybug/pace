@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: 200 pounds of carrots are to be distributed to 40 restaurants in a certain city. Each restaurant is to receive 2 pounds of carrots. How many pounds of carrots will not be used? Step 1: Calculate total carrots needed
+Total carrots needed = Number of restaurants * Carrots per restaurant
+Total carrots needed = 40 * 2 = 80 pounds
+
+Step 2: Calculate unused carrots
+Unused carrots = Total carrots - Total carrots needed
+Unused carrots = 200 - 80 = 120 pounds
+
+The answer is 120.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a fraction.
+
+Problem

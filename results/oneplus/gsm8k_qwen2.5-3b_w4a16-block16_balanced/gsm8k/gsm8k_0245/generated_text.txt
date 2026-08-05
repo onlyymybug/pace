@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Griffin had 24 french fries, but Kyle took 5 of them.  Billy took twice as many as Kyle.  Ginger gave Griffin a handful of her fries, and then Colby took from Griffin 3 less than the number of fries that Kyle had taken.  If in the end Griffin had 27 fries, how many fries did Ginger give Griffin? Let's break down the problem step by steps.
+
+Griffin initially had 24 fries.
+
+1. Kyle took 5 fries: 
+   Griffin's fries: 24 - 5 = 19 fries
+
+2. Billy took twice as many as Kyle:
+   Kyle took 5, so Billy took 2 * 5 = 10 fries
+   Griffin's fries: 19 - 10 = 9 fries
+
+3. Colby took 3 less than Kyle:
+   Colby took 5 - 3 = 2 fries
+   Griffin's fries: 9 - 2 =

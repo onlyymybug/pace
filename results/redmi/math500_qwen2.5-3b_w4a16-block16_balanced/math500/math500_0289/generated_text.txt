@@ -1,0 +1,7 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: One line is defined by
+\[\begin{pmatrix} 3 \\ -10 \\ 1 \end{pmatrix} + t \begin{pmatrix} 2 \\ -9 \\ -2 \end{pmatrix}.\]Another line is defined by
+\[\begin{pmatrix} -5 \\ -3 \\ 6 \end{pmatrix} + u \begin{pmatrix} 4 \\ -18 \\ -4 \end{pmatrix}.\]These two lines are parallel.  Find the distance between these two lines. To find the distance between the two parallel lines, we start by confirming that the direction vectors of are parallel. The direction vectors are \(\begin{pmatrix} 2 \\ -9 \\ -2 \end{pmatrix}\) and \(\begin{pmatrix} 4 \\ -18 \\ -4 \end{pmatrix}\). Notice that \(\begin{pmatrix} 4 \\ -18 \\ -4 \end{pmatrix} = 2 \begin{pmatrix} 2 \\ -9 \\ -2 \end{pmatrix}\), confirming that the lines are parallel.
+
+Next

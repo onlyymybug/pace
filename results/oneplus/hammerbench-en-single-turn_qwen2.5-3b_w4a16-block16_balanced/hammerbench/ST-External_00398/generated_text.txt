@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.getWeatherAlert","description":"Get upcoming weather warnings for selected locations","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"time":{"type":"string","description":"Time range"}},"required":["location","time"]}}
+{"name":"Navigation.TrafficViolations.viewTrafficEvent","description":"View notifications about traffic events","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Additional conditions, such as area of occurrence, duration of impact, etc."}},"required":["keyword"]}}
+{"name":"Travel.ItineraryServices.getTravelWarnings","description":"Get travel safety warnings for your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"Finance.Funds.getFundRiskLevel","description":"Check the risk level of the designated fund","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotEventInfo","description":"Get upcoming event schedules for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, we will meet tomorrow under the pyramid in Cairo at 8am. Remember to bring sunglasses and plenty of water, and we plan to explore the neighborhood for a few hours. Looking forward to meeting you!
+query:I want to know if there are any safety warnings for the locations mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.getTravelWarnings","parameters":{"destination":"Cairo"}}<|im_end|>

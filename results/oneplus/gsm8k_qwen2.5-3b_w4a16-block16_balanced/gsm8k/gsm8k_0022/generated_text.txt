@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Raymond and Samantha are cousins. Raymond was born 6 years before Samantha. Raymond had a son at the age of 23. If Samantha is now 31, how many years ago was Raymond's son born? To solve this problem, we need to determine the age difference between Raymond and Samantha, and then use that to find out how long ago Raymond's son was born.
+
+1. Determine the age difference between Raymond and Samantha:
+   - Given: Samantha is currently 31 years old.
+   - Given: Raymond was born 6 years before Samantha.
+   - Therefore, Raymond is currently \(31 - 6 = 25\) years old.
+
+2. Calculate the age difference between Raymond and his son:
+   - Given: Raymond had a son at the age of 23.
+   - Therefore, Raymond's son is \(

@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Debra is monitoring a beehive to see how many bees come and go in a day. She sees 30 bees leave the hive in the first 6 hours, and then she sees 1/2 that many bees return in the next 6 hours. She sees two times as many bees as she saw first leave the hive fly from the hive and leave in the next 6 hours. Then every bee that left before that hadn't already returned returns to the hive in the next 6 hours. How many bees did Debra see return to the hive in the last 6 hours of the day? Initial bees leaving: 30
+To solve this, we'll break down the problem step by step.
+
+1. In the first 6 hours, 30 bees leave the hive.
+2. In the next 6 hours, 1/2 of 30 bees return to the hive. 
+   Calculation: 30 / 2 = 15 bees return.
+3. In the following 6 hours, twice as many bees leave as initially lefted.
+   Calculation: 2 * 30 = 60 bees leave.
+4. At this point, we need to calculate how many bees are

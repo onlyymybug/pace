@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"OfficeSoftware.Documents.createDocument","description":"Create a new document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name, required"}},"required":["document_name"]}}
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+{"name":"MusicRadio.RadioStations.radioCreatePlaylist","description":"Create playlist by playlist name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Playlist Name"}},"required":["name"]}}
+{"name":"SocialCommunication.InstantMessaging.createGroup","description":"Create a new group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to be created"}},"required":["group_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey Kobayashi! We are planning a trip to Tokyo next month and I have booked a return flight from Shanghai to Tokyo, as well as a hotel in Tokyo. The trip will probably be from the 15th to the 22nd, and these days we can go to Sensoji Temple to experience traditional culture, and then go to Shibuya and Shinjuku to experience the prosperity of the modern city. By the way, I also heard that the Tokyo Tower looks very beautiful at night, so we must go and see it. What's on your mind? Looking forward to our trip to Tokyo!
+query:Help me create a travel itinerary from April 10th to April 15th based on the message Xiao Li sent me through QQ, mainly visiting Tokyo Tower and Akihabara.<|im_end|>
+<|im_start|>assistant

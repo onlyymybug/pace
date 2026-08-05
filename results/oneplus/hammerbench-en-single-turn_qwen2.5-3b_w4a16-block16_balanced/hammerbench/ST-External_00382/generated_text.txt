@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Search.deleteWebBookmark","description":"Delete bookmarks specified in favorites; delete bookmarks specified in favorites; delete all bookmarks in favorites","parameters":{"type":"object","properties":{"bookmark":{"type":"string","description":"Bookmark title, defaults to all bookmarks from the current collection"}},"required":["bookmark"]}}
+{"name":"UtilityTools.Calendar.deleteCalendarschedule","description":"Delete a schedule based on the schedule name","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","description":"Delete travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"SocialCommunication.Community.deleteCommunityPost","description":"Delete a post from a specific community based on the title of the post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be deleted"},"post_name":{"type":"string","description":"Title of the post to be deleted"}},"required":["community_name","post_name"]}}
+{"name":"NewsMagazines.News.removeSavedNews","description":"Remove Favorited News from Favorites","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"},"news_name":{"type":"string","description":"News Name"}},"required":["source_name","news_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:[Sports technology] Dear team members, In order to strengthen team cohesion and improve physical fitness, sports technology will hold an annual staff sports meeting. The event is scheduled to take place next weekend in the company compound, and we will set up a number of fun events, including relays, tug-of-war races, and more. We invite everyone to actively participate and showcase our team. In order to ensure the smooth running of the activities, each department needs to appoint a person in charge to assist in organizing the work. Please register with the department head within this week, thank you for your cooperation! Looking forward to seeing you all on the field!
+query:Remove the news about the basketball game from your favorites. It was released by the company mentioned in the message Xiao Li sent to me through QQ.<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.News.removeSavedNews","parameters":{"source_name":"Company Mentioned in the Message XiaoLi","news_name":"News about the basketball game"}}<|im_end|>

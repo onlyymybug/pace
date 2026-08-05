@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Liam is 16 years old now. Two years ago, Liam’s age was twice the age of Vince. How old is Vince now? To solve this, we start by determining Liam's age two years ago. 
+
+1. Liam is currently 16 years old.
+2. Two years ago, Liam was \( 16 - 2 = 14 \) years old.
+3. At that time, Liam was twice as old as Vince. Let \( V \) represent Vince's age two years ago.
+4. Therefore, \( 14 = 2V \).
+
+To find Vince's age two years ago:
+
+\[ 14 = 2V \]
+\[ V = \frac{14}{2} \]
+\[ V = 

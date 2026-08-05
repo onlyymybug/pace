@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bill is signing up for a new streaming service. He got a special introductory deal where the first 6 months were $8 a month, then it went up to the normal price of $12 a month. After 8 months of the normal rate, the service increased its price to $14 a month. How much do 2 years of the service cost him? Step 1: Calculate cost for first 6 months: 6 * 8 = 48
+Step 2: Calculate cost for next 2 months (months 7 and 8): 2 * 12 = 2
+Step 3: Calculate cost for remaining 26 months (total 2 years minus initial 8 months): 26 * 14 = 364
+Step 4: Add all costs together: 48 + 2 + 364 = 414
+The answer is 414.<|endoftext|>Human, please solve the following

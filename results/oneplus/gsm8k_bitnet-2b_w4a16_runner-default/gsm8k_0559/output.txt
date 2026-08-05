@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Timothy's locker is 24 cubic inches. Zack's locker is half as big as Timothy's locker. Peter's locker is 1/4 as big as Zack's locker. How big is Peter's locker in cubic inches?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the size of Peter's locker, we need to work step by step through the given relationships.
+
+1. Timothy's locker is 24 cubic inches.
+2. Zack's locker is half as big as Timothy's locker. So, Zack's locker is \( \frac{1}{2} \times 24 = 12 \) cubic inches.
+3. Peter's locker is 1/4 as big as Zack's locker. So, Peter's locker is \( \frac{1}{4} \times 12 = 3 \) cubic inches.
+
+The answer is 3 cubic inches.<|eot_id|>

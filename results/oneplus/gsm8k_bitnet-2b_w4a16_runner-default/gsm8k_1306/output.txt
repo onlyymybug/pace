@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Adams family is busy making cookies. So far, they've made 7995 cookies. They have 2595 rainbow cookies, 3075 oatmeal cookies, and some chocolate chip cookies. How many chocolate chip cookies have they made?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many chocolate chip cookies they have made, we need to subtract the number of rainbow and oatmeal cookies from the total number of cookies.
+
+Total cookies = 7995
+Rainbow cookies = 2595
+Oatmeal cookies = 3075
+
+First, add the number of rainbow and oatmeal cookies together:
+2595 + 3075 = 5670
+
+Now, subtract this sum from the total number of cookies:
+7995 - 5670 = 2325
+
+So, the Adams family has made 2325 chocolate chip cookies.
+
+The answer is 2325.<|eot_id|>

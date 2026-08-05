@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gunther, the gorilla, had 48 bananas hidden under a fern branch.  When Gunther wasn't looking, Arnold, the chimpanzee, stole half of the bananas from the pile.  The next day, Gunther added another 25 bananas to his pile, but later that evening, Arnold stole another 12 of the bananas.  On the third day, Gunther added another 6 bananas to his pile and began counting bananas.  How many bananas did Gunther find were in the pile? Step 1: Initial bananas: 48
+Step 2: Arnold steals half, so Gunther has 48 / 2 = 24 bananas left
+Step 3: Gunther adds 25, so he has 24 + 25 = 49 bananas
+Step 4: Arnold steals another 12, so Gunther has 49 - 12 = 37 bananas
+Step 5: Gunther adds another 6, so he has 37 + 6 = 43 bananas
+Step 6: Final count of the bananas Gunther

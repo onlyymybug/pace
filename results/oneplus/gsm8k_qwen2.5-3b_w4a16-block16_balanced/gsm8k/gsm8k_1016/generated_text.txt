@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Anne purchased a box of sweets that contains 15 packs, and each pack has 60 pieces. She kept two packs and gave the rest to her 10 friends equally. How many pieces of sweets did each of her friends receive? Step 1: Calculate total number of sweets: Total sweets = 15 packs * 60 pieces/pack = 900 pieces
+
+Step 2: Calculate number of sweets Anne kept: Anne kept 2 packs, so Anne kept 2 * 60 = 120 pieces
+
+Step 3: Calculate number of sweets given to friends: Total sweets - Anne's sweets = 900 - 120 = 780 pieces
+
+Step 4: Calculate number of sweets each friend received: Sweets for friends / Number of friends = 780 / 10

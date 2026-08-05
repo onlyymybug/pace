@@ -1,0 +1,20 @@
+To solve the problem, we need to find the median of of 27 consecutive positive integers whose sum is \(3^7\). Let's denote the smallest of integer by \(n\). The 27 consecutive integers can be written as \(n, n+1, n+2, \ldots, n+26\).
+
+The sum of of of these 27 consecutive integers is given by:
+\[
+S = n + (n+1) + (n+2) + \cdots + (n+26)
+\]
+
+This is an arithmetic series with the first term \(a = n\) and the last term \(l = n + 26\). The number of terms \(k\) is 27. The sum \(S\) of of an arithmetic series is given by:
+\[
+S = \frac{k}{2} (a + l)
+\]
+
+Substituting the known values:
+\[
+S = \frac{27}{2} (n + (n + 26)) = \frac{27}{2} (2n + 26)
+\]
+
+We are given that this sum is \(3^7\):
+\[
+\frac{27}{

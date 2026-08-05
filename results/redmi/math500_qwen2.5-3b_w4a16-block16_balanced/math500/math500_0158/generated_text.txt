@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Compute $a+b+c,$ given that $a,$ $b,$ and $c$ are the roots of \[\frac{1}{x} + 5x^2 = 6x - 24.\] To solve for \(a + b + c\) given the polynomial equation \(\frac{1}{x} + 5x^2 = 6x - 24\), we first need to rewrite the equation in standard polynomial form. Start by eliminating the fraction by multiplying through by \(x\):
+
+\[
+1 + 5x^3 = 6x^2 - 24x
+\]
+
+Rearrange all terms to one side of of the equation:
+
+\[
+5x^3 - 6x^2 + 24x - 1 = 0
+\]
+
+This is a

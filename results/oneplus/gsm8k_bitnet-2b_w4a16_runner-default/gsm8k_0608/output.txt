@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The jumbo bottle of shampoo costs $24.00.  The directions say to use 2 pumps of shampoo and this will give you 120 washings.  If Jackie only uses 1 pump per wash, how much will each pump cost, in cents?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the cost per pump, we first need to determine the total cost of using 120 washings with 1 pump per wash. Since 2 pumps give 120 washings, 1 pump will give 60 washings.
+
+The total cost for 120 washings is $24.00. To find the cost per washing, we divide the total cost by the number of washings:
+\[ \text{Cost per washing} = \frac{24.00}{120} = 0.20 \text{ dollars per washing} \]
+
+Since we need the cost in cents, we convert dollars to cents:
+\[

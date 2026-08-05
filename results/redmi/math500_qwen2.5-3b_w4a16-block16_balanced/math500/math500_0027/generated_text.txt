@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In how many ways can $7$ people sit around a round table if no two of the $3$ people Pierre, Rosa, and Thomas can sit next to each other? (Seating arrangements which are rotations of each other are treated as the same.) To solve the problem of of of arranging 7 people around a round table such that no two of of 3 specific people (Pierre, Rosa, and Thomas) sit next to each other, we can follow these steps:
+
+1. **Arrange the 4 people who are not restricted:**
+   - First, we arrange 4 people who are not restricted (let's call them A, B, C, and D) around the table. The number of ways to arrange \( n \) people around a round table is \((n-1)!\). For 4 people, this is:
+     \[
+     (

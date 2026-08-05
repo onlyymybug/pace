@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "lawsuit.check_case", "description": "Verify the details of a lawsuit case and check its status using case ID. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"case_id": {"type": "integer", "description": "The identification number of the lawsuit case."}, "closed_status": {"type": "boolean", "description": "The status of the lawsuit case to be verified."}}, "required": ["case_id", "closed_status"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+I need the details of the lawsuit case with case ID of 1234 and verify if it's already closed.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "lawsuit.check_case", "arguments": {"case_id": 1234, "closed_status": true}}
+</tool_call><|im_end|>

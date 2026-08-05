@@ -1,0 +1,5 @@
+To solve the problem, we need to determine the number of ways to choose 3 boys out of 7 and 2 girls out of 4, and then find the total number of ways to form the group.
+
+First, we calculate the number of ways to choose 3 boys out of 7. This is a combination problem, denoted as \( \binom{7}{3} \), which is calculated as follows:
+\[
+\binom{7}{3} = \frac{7!

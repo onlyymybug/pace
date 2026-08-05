@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A three-toed sloth moves very slowly, and only eats when he is up in his tree.  For a meal of berries, it takes the sloth 4 hours to make the trip down the tree, pick up berries, and climb back up into his tree.  Assuming he picks the same number of berries on each trip, what is the least number of berries he can pick up per trip down to the ground if he wants to collect 24 berries in 8 hours? To solve this problem, we need to determine the rate at which the sloth picks berries.
+
+1. **Total Time and Total Berries:**
+   - Total time required to collect 24 berries: 8 hours
+   - Total berries to be collected: 24 berries
+
+2. **Time for One Trip:**
+   - Time taken for one trip (down and back) to collect berries: 4 hours
+   - Therefore, the time taken to pick berries on one trip: 8 - 4 = 4 hours
+
+3. **Berries Picked Per Trip:**
+   - To pick 

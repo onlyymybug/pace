@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurants","description":"Search for restaurants on Meituan based on user input","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location"},"name":{"type":"string","description":"regional cuisine"},"order":{"type":"string","description":"Sort by e.g. rating, distance, average spend"}},"required":["location","name","order"]}}
+{"name":"Photography.PhotoEditing.sharePicture","description":"Share photos to select locations","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"Photo name or path"},"to":{"type":"string","description":"Destination app name"}},"required":["name_or_path","to"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"MusicRadio.RadioStations.radioShareRadio","description":"Share the station to social platforms based on the station name","parameters":{"type":"object","properties":{"radio_name":{"type":"string","description":"Radio Name"},"to":{"type":"string","description":"Sharing platform"}},"required":["radio_name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The air conditioning in the Qianhai office is wrong again. It's really hot today. Everyone is sweating. Can you trouble the IT department to come and see it as soon as possible? Thank you!
+query:Help me find a halal restaurant, preferably a fast delivery, closer, the location is mentioned in Xiao Li's message to me through QQ.<|im_end|>
+<|im_start|>assistant

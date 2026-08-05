@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jean has 30 lollipops. Jean eats 2 of the lollipops. With the remaining lollipops, Jean wants to package 2 lollipops in one bag. How many bags can Jean fill? To solve this problem, we need to determine how many lollipops Jean has left after eating some, and then how many bags she can fill with the remaining lollipops.
+
+1. Jean starts with 30 lollipops.
+2. She eats 2 lollipops.
+   - Remaining lollipops: \( 30 - 2 = 28 \)
+3. She wants to package the remaining lollipops with 2 lollips per bag.
+   - Number of bags: \( \frac{28}{2} = 14 \)
+
+Therefore, the

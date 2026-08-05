@@ -1,0 +1,29 @@
+To find the value of \( f^{-1}\left(\frac{1}{5}\right) \) for the function \( f(x) = \frac{2}{x+1} \), we need to determine the inverse function \( f^{-1}(x) \) and then evaluate it at \( \frac{1}{5} \).
+
+### Step 1: Find the inverse function \( f^{-1}(x) \)
+
+1. Start with the function \( y = f(x) \):
+   \[
+   y = \frac{2}{x+1}
+   \]
+
+2. Solve for \( x \) in terms of:
+   \[
+   y(x+1) = 2
+   \]
+   \[
+   yx + y = 2
+   \]
+   \[
+   yx = 2 - y
+   \]
+   \[
+   x = \frac{2 - y}{y}
+   \]
+
+3. Therefore, the inverse function \( f^{-1}(x) \) is:
+   \[
+   f^{-1}(x) = \frac{2 - x}{x}
+   \]
+
+### Step 2: Evaluate \( f^{-1}\left(\frac{1}{

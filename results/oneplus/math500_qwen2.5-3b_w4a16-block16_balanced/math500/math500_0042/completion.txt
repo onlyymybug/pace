@@ -1,0 +1,9 @@
+To solve for the coordinates \((x, y)\) of of the parallelogram, we need to use the properties of of a parallelogram. Specifically, the diagonals of of a parallelogram bisect each other. Therefore, the midpoint of the diagonal connecting \((5, 3)\) and \((7, 4)\) is the same as the midpoint of the diagonal connecting \((6, 8)\) and \((x, y)\).
+
+First, we find the midpoint of the diagonal connecting \((5, 3)\) and \((7, 4)\):
+\[
+\left( \frac{5+7}{2}, \frac{3+4}{2} \right) = \left( \frac{12}{2}, \frac{7}{2} \right) = \left( 6, \frac{7}{2} \right)
+\]
+This midpoint is also the midpoint of the diagonal connecting \((6, 8)\) and \((x, y)\). Therefore, we set up the following equations for the midpoint:
+\[
+\left( \frac{6+x}{2}, \frac{8+y}{2} \right) =

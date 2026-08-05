@@ -1,0 +1,3 @@
+To solve this problem, we need to understand the pattern of the calls. In the first round, Ali calls 3 families. In the second round, each of those 3 families calls 3 other families, resulting in an additional 9 calls (3 families * 3 calls each). In the third round, each of the 6 families calls 3 other families, adding another 18 calls (6 families * 3 calls each). In the fourth round, each of the 9 families calls 3 other families, adding another 27 calls (9 families * 3 calls each).
+
+Let's calculate the total number of

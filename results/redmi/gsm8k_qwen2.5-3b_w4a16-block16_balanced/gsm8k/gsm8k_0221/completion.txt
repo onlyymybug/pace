@@ -1,0 +1,15 @@
+Step 1: Calculate time spent on crosswords
+Time per crossword: 10 minutes
+Number ofCrosswords: 3
+TotalCrosswordTime = Time per crossword * Number ofCrosswords
+
+Step 2: Calculate time spent on sudokus
+Time per sudoku: 5 minutes
+NumberNumberOfSudokus: 8
+TotalSudokuTime = Time per sudoku * NumberNumberOfSudokus
+
+Step 3: Calculate total time spent
+TotalTime = TotalCrosswordTime + TotalSudokuTime
+
+Step 1 calculation:
+TotalCrosswordTime = 10 * 3 = 30 minutes

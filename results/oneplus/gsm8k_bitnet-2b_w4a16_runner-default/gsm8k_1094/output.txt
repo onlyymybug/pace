@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tony is painting a room with four walls. The north and south walls are 10 x 8 feet. The east and west walls are 5 x 8 feet. A gallon of paint can cover 20 square feet and cost $12. How much will it cost to paint the room?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost of painting the room, we first need to calculate the total area that needs to be painted. We have two north-south walls and two east-west walls.
+
+The area of one north-south wall is:
+Area = Length x Height
+Area = 10 feet x 8 feet
+Area = 80 square feet
+
+Since there are two north-south walls, the total area for these walls is:
+Total Area (North-South) = 2 x 80 square feet
+Total Area (North-South) = 160 square feet
+
+The area of one east-west wall is:
+Area = Length

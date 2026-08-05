@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "mix_paint_color", "description": "Combine two primary paint colors and adjust the resulting color's lightness level. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"color1": {"type": "string", "description": "The first primary color to be mixed."}, "color2": {"type": "string", "description": "The second primary color to be mixed."}, "lightness": {"type": "integer", "description": "The desired lightness level of the resulting color in percentage. The default level is set to 50."}}, "required": ["color1", "color2"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Mix yellow and blue colors and adjust the lightness level to 60 percent.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "mix_paint_color", "arguments": {"color1": "yellow", "color2": "blue", "lightness": 60}}
+</tool_call><|im_end|>

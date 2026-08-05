@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Argo has 200 toys. He gives 40 toys to Alyssa, 80 to Bonnie, and 30 to Nicky. How many toys does Argo have now? Step 1: Calculate total toys given away
+Total toys given away = 40 to Alyssa + 80 to Bonnie + 30 to Nicky
+
+Step 2: Subtract total toys given away from initial amount
+Argo's remaining toys = Initial toys - Total toys given away
+
+Step 3: Perform calculations
+Total toys given away = 40 + 80 + 30 = 150
+Argo's remaining toys = 200 - 150 = 50
+
+The answer is 50. The answer is 50.<|endoftext|>Human:

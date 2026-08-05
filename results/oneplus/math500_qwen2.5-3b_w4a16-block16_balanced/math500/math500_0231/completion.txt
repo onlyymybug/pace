@@ -1,0 +1,31 @@
+To determine the maximum value of of \( e \), we start by using the given conditions:
+\[
+a + b + c + d + e = 8
+\]
+\[
+a^2 + b^2 + c^2 + d^2 + e^2 = 16
+\]
+
+First, we express \( e \) in terms of the sum of of the other variables:
+\[
+e = 8 - (a + b + c + d)
+\]
+
+Next, we substitute \( e \) into the second equation:
+\[
+a^2 + b^2 + c^2 + d^2 + (8 - (a + b + c + d))^2 = 16
+\]
+
+Let \( S = a + b + c + d \). Then \( e = 8 - S \), and the equation becomes:
+\[
+a^2 + b^2 + c^2 + d^2 + (8 - S)^2 = 16
+\]
+
+We also know:
+\[
+S = a + b + c + d
+\]
+
+Thus, the equation simplifies to:
+\[
+a^2 + b^2 + c^2 + d^2 +

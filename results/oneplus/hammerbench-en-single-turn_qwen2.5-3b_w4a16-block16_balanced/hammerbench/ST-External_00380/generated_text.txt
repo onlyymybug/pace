@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.NewspapersMagazines.cancelCollectMagazine","description":"Unfavorite a magazine or article","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"OnlineShopping.Mall.removeCollectCommodity","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"UtilityTools.Search.deleteWebBookmark","description":"Delete bookmarks specified in favorites; delete bookmarks specified in favorites; delete all bookmarks in favorites","parameters":{"type":"object","properties":{"bookmark":{"type":"string","description":"Bookmark title, defaults to all bookmarks from the current collection"}},"required":["bookmark"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteCollectSecondhandSale","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Product Name"}},"required":["search_name"]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Ok, here is the latest meeting notice, scheduled to start on this Friday (October 6, 2023) at 2pm sharp, in the multi-purpose hall on the third floor of the company. Please be prepared to attend in advance and on time. If you have any questions, you can contact me anytime.
+query:Help me cancel the collection of Scientific American. I don't need the time mentioned in the WeChat message that Xiao Li sent me.<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.NewspapersMagazines.cancelCollectMagazine","parameters":{"name":"Scientific American","issue":"WeChat message that Xiao Li sent me."}}<|im_end|>

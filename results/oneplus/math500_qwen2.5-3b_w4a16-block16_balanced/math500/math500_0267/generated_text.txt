@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A number is selected at random from 1 through 100, inclusive.  What is the probability that the number is a multiple of 3? Express your answer as a fraction in simplest form. To determine the probability that a number selected at random from 1 to 100 is a multiple of of 3, we need to follow these steps:
+
+1. **Count the total number of integers from 1 to 100:**
+   \[
+   \text{Total numbers} = 100
+   \]
+
+2. **Identify the multiples of 3 within the range 1 to 100:**
+   A number \( n \) is a multiple of 3 if \( n = 3k \) for some integer \( k \). We need to find the largest integer \( k \) such that \( 3k \leq 100 \).
+
+   \[
+   k \leq \frac{100}{3} \approx 33.33
+   \]
+
+   Since \( k \) must be an integer, the largest possible value for \( k \) is 33. Therefore, the multiples of 3 are \( 3 \times 1, 3 \times 2, \ldots, 3 \times 33 \).
+
+   The sequence of of these multiples is

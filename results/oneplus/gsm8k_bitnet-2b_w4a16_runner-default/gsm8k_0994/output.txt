@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: An airport has only 2 planes that fly multiple times a day. Each day, the first plane goes to Greece for three-quarters of its flights, and the remaining flights are split equally between flights to France and flights to Germany. The other plane flies exclusively to Poland, and its 44 trips only amount to half the number of trips the first plane makes throughout each day. How many flights to France does the first plane take in one day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the total number of flights the first plane makes in one day as F. Since the first plane goes to Greece for three-quarters of its flights, it goes to Greece for (3/4)F flights. The remaining flights are split equally between France and Germany, so the first plane makes (1/4)F flights to France and (1/4)F flights to Germany.
+
+The other plane, which flies exclusively to Poland, makes half the number of trips the first plane makes. Since the first plane makes F flights, the other plane makes F/2 flights.
+
+We know that the other plane makes 

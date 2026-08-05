@@ -1,0 +1,14 @@
+To solve for the vector \(\mathbf{v}\) such that \(\mathbf{a} \cdot \mathbf{v} = 2\) and \(\mathbf{a} \times \mathbf{v} = \begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}\), we start by letting \(\mathbf{v} = \begin{pmatrix} v_1 \\ v_2 \\ v_3 \end{pmatrix}\).
+
+First, we use the given dot product condition:
+\[
+\mathbf{a} \cdot \mathbf{v} = 1 \cdot v_1 + 1 \cdot v_2 + 1 \cdot v_3 = v_1 + v_2 + v_3 = 2.
+\]
+So, we have:
+\[
+v_1 + v_2 + v_3 = 2. \tag{1}
+\]
+
+Next, we use the given cross product condition:
+\[
+\mathbf{a} \times \mathbf{v} = \begin{pmatrix} 1 \\ 1 \\ 1 \end{pmatrix} \times \

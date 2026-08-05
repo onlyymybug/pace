@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Regina wrote 9 novels last year. If this is 3 quarters of the number of novels she has written this year, how many novels has she written this year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of novels Regina wrote this year as \( N \).
+
+According to the problem, 9 novels is 3 quarters of the number of novels she wrote this year. This can be expressed as:
+
+\[ 9 = \frac{3}{4}N \]
+
+To find \( N \), we need to solve for \( N \) by isolating it on one side of the equation. We can do this by multiplying both sides of the equation by the reciprocal of \(\frac{3}{4}\), which is \(\frac{4}{3}\):
+
+\[ N = 9 \times \frac

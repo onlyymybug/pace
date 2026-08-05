@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jenna and her mother picked some apples from their apple farm. Jenna picked half as many apples as her mom. If her mom got 20 apples, how many apples did they both pick?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine how many apples Jenna picked. Since Jenna picked half as many apples as her mom, and her mom picked 20 apples, we calculate Jenna's apples as follows:
+
+Jenna's apples = Mom's apples / 2
+Jenna's apples = 20 / 2
+Jenna's apples = 10
+
+Now, to find the total number of apples they both picked, we add Jenna's apples to her mom's apples:
+
+Total apples = Mom's apples + Jenna's apples
+Total apples = 20 + 10
+Total apples = 30
+
+The answer is 30.

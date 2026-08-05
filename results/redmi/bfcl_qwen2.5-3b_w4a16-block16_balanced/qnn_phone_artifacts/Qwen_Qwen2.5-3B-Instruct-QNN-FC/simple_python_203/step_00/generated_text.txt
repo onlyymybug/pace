@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_air_quality", "description": "Retrieve real-time air quality and pollution data for a specific location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city that you want to get the air quality data for."}, "detail": {"type": "boolean", "description": "If true, additional data like PM2.5, PM10, ozone levels, and pollution sources will be retrieved. Default is false."}}, "required": ["location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Can you find me the latest information about air quality index and pollution data for Chicago?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_air_quality", "arguments": {"location": "Chicago", "detail": true}}
+</tool_call><|im_end|>

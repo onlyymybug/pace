@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A food caterer was told to prepare gourmet hot dogs for 36 guests. While most people would only eat one hotdog, he prepared enough for half of the guests to be able to have two hotdogs. However, 40 guests showed up, and everyone wanted a second hotdog. How many guests did not get a second hotdog?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine how many hot dogs were prepared for the guests who wanted two hotdogs. Since half of the guests were supposed to get two hotdogs, and there were originally 36 guests, half of them is 36 / 2 = 18 guests. This means 18 guests were supposed to get two hotdogs each.
+
+Next, we calculate how many hot dogs were prepared for the 40 guests who showed up. Since everyone wanted a second hotdog, and there were originally supposed to be 18 guests for two hotdogs each, the caterer prepared 18 * 2 = 36 hot

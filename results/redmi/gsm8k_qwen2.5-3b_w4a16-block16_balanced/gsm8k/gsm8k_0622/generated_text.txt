@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John injured his back and needs to go to physical therapy.  He went to physical therapy for 6 weeks.  Each week he went twice for 2 hours at a time.  If the sessions cost $125 per hour how much did the physical therapy cost? To solve this problem, we need to calculate the total cost of of John's physical therapy sessions.
+
+1. Determine the total number of sessions:
+   - John went twice a week for 6 weeks.
+   - Total sessions = 2 sessions/week * 6 weeks = 12 sessions
+
+2. Calculate the total time spent in sessions:
+   - Each session is 2 hours long.
+   - Total time = 12 sessions * 2 hours/session = 24 hours
+
+3. Calculate the total cost:
+   - Each hour costs $125.
+   - Total cost = 24 hours *

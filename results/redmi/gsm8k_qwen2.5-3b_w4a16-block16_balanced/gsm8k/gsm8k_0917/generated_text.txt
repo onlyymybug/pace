@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Julia and Nadine were given the same amount of allowance by their mother. The two girls decided to combine their allowance to surprise their father on his birthday. They bought a cake which costs $11. They also bought 1 dozen balloons which were sold for $0.5 for 2 balloons. The remaining money was used to buy 2 tubs of ice cream for $7 each. How much did Julia and Nadine's mother give each one of them? Let's break down the problem step by step.
+
+1. **Total Cost Calculation:**
+   - Cost of of cake: $11
+   - Cost of of 1 dozen balloons: 1 dozen balloons = 12 balloons
+     - Cost per 2 balloons: $0.5
+     - Therefore, cost per balloon: $0.5 / 2 = $0.25
+     - Total cost for 12 balloons: 12 balloons * $0.25/balloon = $3
+   - Cost of of 2 tubs of ice cream: 2 tubs

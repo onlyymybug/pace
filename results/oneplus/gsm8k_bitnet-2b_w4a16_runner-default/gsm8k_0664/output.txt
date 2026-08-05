@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James delivers 600 newspapers in a day. He delivers 198 newspapers to District A, some to District B and 209 newspapers to District C. How many newspapers does he deliver to District B?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many newspapers James delivers to District B, we need to subtract the number of newspapers delivered to District A and District C from the total number of newspapers delivered in a day.
+
+Total newspapers delivered = 600
+Newspapers delivered to District A = 198
+Newspapers delivered to District C = 209
+
+Newspapers delivered to District B = Total newspapers delivered - Newspapers delivered to District A - Newspapers delivered to District C
+
+Newspapers delivered to District B = 600 - 198 - 209
+
+Newspapers delivered to District B = 600 - 407
+
+Newspapers delivered

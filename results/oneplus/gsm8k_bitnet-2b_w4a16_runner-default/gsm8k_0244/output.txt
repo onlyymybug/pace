@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jason has a phone plan of 1000 minutes per month. Every day he has a 15-minute call with his boss, and he's had 300 extra minutes of call this month to other people. How many minutes does Jason have left if this month has 30 days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many minutes Jason has left, we first need to calculate the total minutes he used for his daily calls with his boss. Since he has a 15-minute call each day for 30 days, we multiply 15 by 30:
+
+15 minutes/day * 30 days = 450 minutes
+
+Next, we add the extra minutes he used for other calls:
+
+450 minutes + 300 minutes = 750 minutes
+
+Now, we subtract the total minutes used from the initial minutes he had for the month:
+
+1000 minutes - 750 minutes = 250 minutes
+
+The answer is 250 minutes.<|eot_id|>

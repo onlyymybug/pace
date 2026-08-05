@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jana has 27 puppies. Two thirds of Jana's puppies are Pomeranians. One third of the Pomeranians are girls. How many girl Pomeranians does Jana have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many girl Pomeranians Jana has, we need to follow these steps:
+
+1. Calculate the number of Pomeranians.
+2. Calculate the number of girl Pomeranians.
+
+Step 1: Calculate the number of Pomeranians.
+Jana has 27 puppies, and two thirds of them are Pomeranians. So, we calculate two thirds of 27.
+
+\[
+\text{Number of Pomeranians} = \frac{2}{3} \times 27 = 18
+\]
+
+Step 2: Calculate the number of girl Pomeranians.

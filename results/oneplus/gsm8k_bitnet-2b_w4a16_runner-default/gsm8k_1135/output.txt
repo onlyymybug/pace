@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jane has saved $4 of her allowance every week for the past 8 weeks. If she continues to save the same amount each week, how many more weeks will it take for her to have saved a total of $60?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much Jane has saved so far. Since she saves $4 every week for 8 weeks, we multiply the weekly savings by the number of weeks:
+
+$4/week * 8 weeks = $32
+
+Jane has saved $32 so far. To find out how much more she needs to save to reach $60, we subtract the amount she has already saved from the total amount she wants to save:
+
+$60 - $32 = $28
+
+Now, we need to find out how many weeks it will take for Jane to save an additional $28 at a rate of $

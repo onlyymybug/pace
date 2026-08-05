@@ -1,0 +1,11 @@
+To solve the problem, we need to convert the decimal number \(629_{10}\) to both base 7 and base 8, and then count the number of digits that are the same in both representations.
+
+### Step 1: Convert \(629_{10}\) to base 7
+
+To convert \(629_{10}\) to base 7, we repeatedly divide by 7 and keep track of of the remainders.
+
+\[
+629 \div 7 = 89 \quad \text{remainder} \quad 0
+\]
+\[
+89

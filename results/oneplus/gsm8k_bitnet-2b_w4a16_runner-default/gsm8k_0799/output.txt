@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: When Billy was first hired, he was paid at a rate of $10 per hour.  After 2 months, he was given a raise of $0.50 per hour.  On his first anniversary at work, he was given a raise of $1.00 per hour.  Sally just started working at a different business, and her starting salary is $0.50 more per hour than Billy's starting salary was.  If both Billy and Sally work 20 hours, how much more money will Billy earn than Sally, in dollars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine Billy's hourly wage after each raise and then calculate how much he earns in 20 hours. We do the same for Sally and then find the difference between their earnings.
+
+Billy's hourly wage after each raise:
+- Initial wage: $10 per hour
+- After 2 months: $10 + $0.50 = $10.50 per hour
+- After 1 year (6 months): $10.50 + $1.00 = $11.50 per hour
+
+Billy's earnings for 20 hours:
+- Initial wage: $10 per hour * 20 hours

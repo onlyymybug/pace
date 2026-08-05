@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "deck_of_cards.odds", "description": "Compute the probability of drawing a specific suit from a given deck of cards. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"suit": {"type": "string", "description": "The card suit. Valid values include: 'spades', 'clubs', 'hearts', 'diamonds'."}, "deck_type": {"type": "string", "description": "Type of deck, normal deck includes joker, and without_joker deck excludes joker.", "default": "normal"}}, "required": ["suit", "deck_type"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the odds of drawing a heart card from a deck without joker?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "deck_of_cards.odds", "arguments": {"suit": "hearts", "deck_type": "without_joker"}}
+</tool_call><|im_end|>

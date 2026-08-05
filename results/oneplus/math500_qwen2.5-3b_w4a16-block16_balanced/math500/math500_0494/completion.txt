@@ -1,0 +1,18 @@
+To solve the problem, we need to express \((\sqrt{2} + \sqrt{3})^3\) in the form \(a\sqrt{2} + b\sqrt{3} + c\sqrt{6}\) and then find the values of of \(a\), \(b\), and \(c\).
+
+First, we use the binomial expansion to find \((\sqrt{2} + \sqrt{3})^3\):
+
+\[
+(\sqrt{2} + \sqrt{3})^3 = (\sqrt{2} + \sqrt{3}) \cdot (\sqrt{2} + \sqrt{3})^2
+\]
+
+We need to compute \((\sqrt{2} + \sqrt{3})^2\):
+
+\[
+(\sqrt{2} + \sqrt{3})^2 = (\sqrt{2})^2 + 2\sqrt{2}\sqrt{3} + (\sqrt{3})^2 = 2 + 2\sqrt{6} + 3 = 5 + 2\sqrt{6}
+\]
+
+Now, we multiply this result by \(\sqrt{2} + \sqrt{3}\):
+
+\[
+(\

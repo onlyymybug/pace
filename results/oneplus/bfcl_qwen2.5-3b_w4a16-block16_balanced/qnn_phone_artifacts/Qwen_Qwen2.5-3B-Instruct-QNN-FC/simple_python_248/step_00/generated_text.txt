@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "science_history.get_invention", "description": "Retrieve the inventor and year of invention based on the invention's name. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"invention_name": {"type": "string", "description": "The name of the invention."}, "want_year": {"type": "boolean", "default": false, "description": "Return the year of invention if set to true."}}, "required": ["invention_name", "want_year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who invented the theory of relativity and in which year?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "science_history.get_invention", "arguments": {"invention_name": "theory of ofrelativity", "want_year": true}}
+</tool_call><|im_end|>

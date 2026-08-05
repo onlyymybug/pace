@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The area of Billie's rectangular bedroom is 360 square feet. If the length of his room is 3 yards, what is the perimeter of the room in feet?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the perimeter of the room, we first need to convert the length from yards to feet. Since there are 3 feet in a yard, the length of the room in feet is 3 yards * 3 feet/yard = 9 feet.
+
+The area of a rectangle is given by the formula: Area = Length * Width. We know the area is 360 square feet and the length is 9 feet, so we can find the width by rearranging the formula: Width = Area / Length = 360 square feet / 9 feet = 40 feet.
+
+The perimeter of a rectangle is given by the formula:

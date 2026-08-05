@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Consider the rectangular region with the following points as vertices: $$(5,4), (-5,4), (-5,-4), (5,-4).$$ How many points with integer coordinates will be strictly in the interior of this rectangular region? To determine the number of points with integer coordinates strictly inside the rectangular region with vertices \((5,4)\), \((-5,4)\), \((-5,-4)\), and \((5,-4)\), we need to follow these steps:
+
+1. Identify the range of for the \(x\)-coordinates and \(y\)-coordinates of the points strictly inside the rectangle.
+2. Calculate the total number of integer points within these ranges.
+
+### Step 1: Determine the Range for \(x\)-coordinates and \(y\)-coordinates
+
+The vertices of of of the rectangle are:
+- \((5, 4)\)
+- \((-5, 4)\)
+- \((-5, -4)\)
+- \((5, -4)\)
+
+The \(x\)-coordinates range from \(-4\) to \(4\) (excluding the endpoints \(5\) and \(-5\)). This gives us the range:
+\[
+-4 < x < 4
+\]
+The \(y\)-coordinates range from \(-4\) to \(4\) (excluding the endpoints \(4\) and \(-4\)). This gives us the range:
+\[
+-4 < y < 4
+\]
+
+### Step 2

@@ -1,0 +1,11 @@
+To find out how many seats Alex will need, we need to account for all the invitations and the additional guests.
+
+1. Alex invites 100 people via email.
+2. Each of these 100 people invites 2 friends, so that's an additional 100 * 2 = 200 people.
+3. Alex calls 10 friends to invite them, adding 10 more people.
+4. 8 of these friends bring their spouses, adding 8 spouses.
+
+Now, let's add up all the people:
+- Initial invites: 100
+- Additional invites from friends: 200
+- Additional invites from friends' spouses:

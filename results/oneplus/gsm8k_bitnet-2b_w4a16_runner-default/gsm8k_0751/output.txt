@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Candy has a chair rental business. During the weekdays, 60 chairs are rented each day; but during weekends, 100 chairs are rented each day. If this continues, how many chairs in total will Candy be able to rent out in two 4-week months?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of chairs rented in one week. During weekdays, 60 chairs are rented each day, and there are 5 weekdays, so:
+
+60 chairs/day * 5 days = 300 chairs during weekdays.
+
+During weekends, 100 chairs are rented each day, and there are 2 weekend days, so:
+
+100 chairs/day * 2 days = 200 chairs during weekends.
+
+Now, we add the chairs rented during weekdays and weekends to find the total chairs rented in one week:
+
+300 chairs (weekdays) + 200 chairs (weekends) = 500

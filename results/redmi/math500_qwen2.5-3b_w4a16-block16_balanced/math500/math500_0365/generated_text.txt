@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If each point of the circle $x^2 + y^2 = 25$ is reflected in the point $(4,1),$ the set of image points satisfies the equation
+\[x^2 + ay^2 + bx + cy + d = 0.\]Compute the ordered quadruple $(a,b,c,d)$ of real numbers. To solve the problem, we need to understand the effect of of reflecting each point on the circle \(x^2 + y^2 = 25\) in the point \((4,1)\). Let's denote a point on the circle as \((x,y)\). The reflection of of \((x,y)\) in \((4,1)\) is given by the formula:
+\[
+(x', y') = (2 \cdot 4 - x, 2 \cdot 1 - y) = (8 - x, 2 - y).
+\]
+Thus, if \((x,y)\)

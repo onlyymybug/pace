@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mike needed a new pair of jeans.  When he got to the mall he saw that his favorite jeans were advertised 25% off.  The original price of the jeans was $40.  How much money will Mike have left over if he pays with a $50.00 bill?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the amount of money Mike will have left over, we first need to calculate the discounted price of the jeans. The jeans are 25% off the original price of $40. 
+
+First, we calculate 25% of $40:
+25% of $40 = 0.25 * $40 = $10
+
+Now, we subtract the discount from the original price to find the sale price:
+Sale price = Original price - Discount
+Sale price = $40 - $10 = $30
+
+Mike pays with a $50.00 bill. To find out how much money he will have left over, we subtract the

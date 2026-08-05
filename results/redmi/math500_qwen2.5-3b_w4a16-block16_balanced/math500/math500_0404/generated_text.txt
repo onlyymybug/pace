@@ -1,0 +1,13 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: How many of the same digits are found in the base 7 and base 8 representations of $629_{10}$? For example, $121_{3}$ and $413_{5}$ would have one digit in common. To solve the problem, we need to convert the decimal number \(629_{10}\) to both base 7 and base 8, and then count the number of digits that are the same in both representations.
+
+### Step 1: Convert \(629_{10}\) to base 7
+
+To convert \(629_{10}\) to base 7, we repeatedly divide by 7 and keep track of of the remainders.
+
+\[
+629 \div 7 = 89 \quad \text{remainder} \quad 0
+\]
+\[
+89

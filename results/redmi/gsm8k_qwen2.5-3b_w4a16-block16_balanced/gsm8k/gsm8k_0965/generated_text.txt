@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John just started watching a new show.  Each episode is 20 minutes long, and there are half as many episodes in total as there are minutes per episode.  How many minutes will John spend watching the show if he watches every episode? To solve this problem, we need to find the total number of episodes and then multiply by the duration of each episode.
+
+1. Let \( E \) be the number of episodes.
+2. Let \( M \) be the total minutes per episode.
+
+Given:
+- Each episode is 20 minutes long: \( M = 20 \) minutes
+- There are half as many episodes as minutes per episode: \( E = \frac{M}{2} \)
+
+Substitute \( M \) into the equation for \( E \):
+\[ E = \frac{20}{2} = 10 \text

@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Christina is planning a birthday party and needs .75 gift bags per invited guest, because 1/4 of attendees don't show up. She invited 16 friends. Gift bags are $2 each. How much will she spend? Step 1: Calculate the number of guests who will actually receive a gift bag.
+Step 2: Calculate the total cost of for the gift bags.
+Step 1: Number of guests who will receive a gift bag = Total invited friends - Fraction not showing up * Total invited friends
+Step 2: Total cost = Number of guests who will receive a gift bag * Cost per gift bag
+Step 1 Calculation:
+Number of guests who will receive a gift bag = 16 - (1/4 * 16)
+Numberofguests = 16 - 4
+Numberofguests = 12

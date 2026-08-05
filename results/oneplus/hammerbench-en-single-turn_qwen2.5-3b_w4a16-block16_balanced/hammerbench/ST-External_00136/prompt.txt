@@ -1,0 +1,33 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getMagazine","description":"Get a magazine based on its name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryMedicalInsuranceClaimsStatus","description":"Check the progress of your health insurance claim","parameters":{"type":"object","properties":{"claim_number":{"type":"string","description":"Claim No."},"name":{"type":"string","description":"Name, default user's own"}},"required":["claim_number","name"]}}
+{"name":"NewsMagazines.News.searchNews","description":"Search news by keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords Search"}},"required":["keyword"]}}
+{"name":"Finance.Funds.getFundPortfolio","description":"Query the position status of the designated fund based on the fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Update on project progress
+
+Dear Team Member,
+
+Hello everyone, I am Sun Bazu, the project leader.Thank you very much for your hard work on Project Starlight over the past few weeks.The project is progressing well, but we still face some challenges that we need to work on together.
+
+First of all, I would like to thank Li Fang and the technical team for their excellent work in the last phase, especially in terms of system optimization.Next, I hope that Zhang Wei can lead the sales team, strengthen communication with potential customers, and ensure that our project can smoothly proceed to the next stage.
+
+In addition, Zhao Lei of the Marketing Department and her team are preparing a major marketing event, which is expected to take place next month.This event is crucial to raising the public awareness of our project and we hope that all departments will support it accordingly.
+
+Finally, I would like to re-emphasize the importance of teamwork.In the face of the tasks ahead, we need to work more closely together to ensure that each link can operate efficiently.Feel free to give me feedback if you have any questions or suggestions.
+
+Thank you for your efforts and let's embrace greater success together!
+
+Sincerely,
+Sun Ba
+Project Manager
+query:Hello, can you check the progress of the claim form 20230630JKL of the name of the person mentioned in the email? Thank you.<|im_end|>
+<|im_start|>assistant

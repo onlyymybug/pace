@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two sports coaches went shopping together. The baseball coach bought 9 new baseballs for $3 each. The basketball coach bought 8 new basketballs for $14 each. How much more did the basketball coach spend than the baseball coach?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much more the basketball coach spent than the baseball coach, we first need to calculate the total amount each coach spent.
+
+The baseball coach spent:
+9 baseballs * $3/ball = $27
+
+The basketball coach spent:
+8 basketballs * $14/basketball = $112
+
+Now, we subtract the amount spent by the baseball coach from the amount spent by the basketball coach to find the difference:
+$112 - $27 = $85
+
+The basketball coach spent $85 more than the baseball coach. The answer is 85.<|eot_id|>

@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The power goes out in Brianna's house one night so she and her family gather all their candles and flashlights. There are 8 rooms in the house and 4 people living there, including Brianna. There is a flashlight for every person to carry and two for each room. They have a variety of candles available; 4 small candles each for half the rooms and 5 medium candles each for the other half of the rooms. With everything combined, how many candles and flashlights are Brianna's family using when the lights go out? Step 1: Calculate total number of flashlights.
+- There are 4 people, so 4 flashlights are needed for them.
+- There are 8 rooms, and 2 flashlights are needed per room.
+- Total flashlights needed = 4 + (8 * 2) = 16 flashlights.
+
+Step 2: Calculate total number of candles.
+- Half the rooms have 4 small candles each, so 4 rooms * 4 candles = 16 small candles.
+- The other half of of the rooms have 5 medium candles each, so 4 rooms * 5 candles = 

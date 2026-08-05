@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark's car breaks down and he needs to get a new radiator.  The cost for a new radiator is $400 but he goes to get it at a junk shop and gets it for 80% off.  He then hires a mechanic to install it and it takes 3 hours at $50 an hour.  How much did he pay?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Mark paid, we need to calculate the cost of the new radiator after the discount and then add the cost of the mechanic's labor.
+
+1. Calculate the discount on the radiator:
+   - Original cost of the radiator = $400
+   - Discount = 80% of $400 = 0.80 * $400 = $320
+
+2. Calculate the cost of the radiator after the discount:
+   - Discounted cost = Original cost - Discount = $400 - $320 = $80
+
+3. Calculate the cost of the mechanic's labor:
+   - Labor cost = 3 hours * $50

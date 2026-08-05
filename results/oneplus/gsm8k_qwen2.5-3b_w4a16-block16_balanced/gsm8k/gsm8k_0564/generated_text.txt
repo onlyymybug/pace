@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James decides to buy birthday candles for his 2 sons.  One of them is 12 and the other is 4 years younger.  A pack of 5 candles costs $3.  How much does James spend on candles? Step 1: Determine the age difference between the sons.
+The older son is 12 years old, and the younger son is 4 years younger, so:
+Step 2: Calculate the total age of of both sons.
+Total age = Age of older son + Age of younger son
+Step 3: Calculate the number of packs of candles needed.
+Number ofPacks = Total age / 5
+Step 4: Calculate the total cost.
+TotalCost = Number ofPacks * CostPerPack
+Step 5: Plug in the values and calculate.
+TotalAge = 12 + 4
+NumberP

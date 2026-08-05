@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Raymond does half as much laundry as Sarah, and Sarah does 4 times as much laundry as David, calculate the difference in the amount of laundry Raymond and David do if Sarah does 400 pounds of laundry. To solve this problem, we need to determine the amount of laundry each person does and then find the difference between Raymond and David.
+
+1. **Determine Sarah's laundry amount:**
+   - Given: Sarah does 400 pounds of laundry.
+
+2. **Determine Raymond's laundry amount:**
+   - Raymond does half as much laundry as Sarah.
+   - Therefore, Raymond does \( \frac{1}{2} \times 400 = 200 \) pounds of laundry.
+
+3. **Determine David's laundry amount:**
+   - Sarah does 4 times as much laundry as David.

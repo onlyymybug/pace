@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: How many sides would there be in a convex polygon if the sum of all but one of its interior angles is $1070^{\circ}$? To determine the number of sides of of a convex polygon where the sum of of all but one of its interior angles is \(1070^\circ\), we start by using the formula for the sum of of the interior angles of a polygon with \(n\) sides. The sum of of the interior angles of a polygon with \(n\) sides is given by:
+
+\[
+180(n-2) \text{ degrees}
+\]
+
+If we remove one interior angle, the sum of of the remaining \(n-1\) interior angles is \(1070^\circ\). Let's denote the removed angle by \(\theta\). Then, the sum of of the remaining \(n-1\) angles is:
+
+\[
+180(n-2) - \theta = 1070
+\]
+
+From this equation, we can solve for \(\theta\):
+
+\[
+180(n-2) - 1070 = \theta
+\]
+
+\[
+\theta = 180(n-2) - 1070
+\]
+
+Since \(\theta\) is an interior angle of of a convex polygon, it must be between \(0^\circ\) and \(180^\

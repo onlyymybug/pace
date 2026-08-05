@@ -1,0 +1,19 @@
+To solve for \(x^3 - 2x + 1\) given that \(x\) satisfies the equation \(x^2 - x - 1 = 0\), we start by using the given equation to express higher powers of \(x\) in terms of.
+
+Given:
+\[ x^2 - x - 1 = 0 \]
+we can rearrange this to:
+\[ x^2 = x + 1 \]
+
+We need to find \(x^3 - 2x + 1\). Let's express \(x^3\) in terms of. We know:
+\[ x^2 = x + 1 \]
+
+To find \(x^3\), multiply both sides of of \(x\) on both sides of the equation \(x^2 = x + 1\):
+\[ x \cdot x^2 = x \cdot (x + 1) \]
+\[ x^3 = x^2 + x \]
+
+Now substitute \(x^2 = x + 1\) into the equation \(x^3 = x^2 + x\):
+\[ x^3 = (x + 1) + x \]
+\[ x^3 = 2x + 1 \]
+
+Now we substitute \(

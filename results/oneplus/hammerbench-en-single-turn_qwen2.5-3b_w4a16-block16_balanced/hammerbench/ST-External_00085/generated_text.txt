@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.redeemFund","description":"Redeem the designated amount of the designated fund based on the name or code of the fund","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Amount"}},"required":["fund_name","fund_code","amount"]}}
+{"name":"Finance.Banking.redempteFinancialProducts","description":"Redeem purchased wealth management products","parameters":{"type":"object","properties":{"product":{"type":"string","description":"Name of financial product"},"redempte_amount":{"type":"float","description":"Redemption Amount"}},"required":["product","redempte_amount"]}}
+{"name":"Navigation.FlightTickets.useFlightAirlinePoints","description":"Redeem frequent flyer points","parameters":{"type":"object","properties":{"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Passenger's Name"},"points_to_redeem":{"type":"string","description":"Items to redeem"}},"required":["passenger_id","name","points_to_redeem"]}}
+{"name":"VideoPlayback.ShortVideos.coinShortvideo","description":"Coin a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"count":{"type":"integer","description":"Number of coins, default 1 coin"}},"required":["name","count"]}}
+{"name":"ConvenientLiving.FoodDelivery.rateRestaurantOrderDelivery","description":"Rate delivery people on completed orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Name of the order"},"rating":{"type":"integer","description":"Rating between 1 and 5"},"comment":{"type":"string","description":"Review Content"}},"required":["order_name","rating","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, Our airline recently launched a new priority boarding service, which allows passengers who have purchased this service to enjoy the convenience of fast security checks and priority boarding to ensure a smooth and enjoyable trip. The service is available for all flights and is valid for one year, which is a great deal. If you are interested, you can click on the link to learn more or make a purchase directly on our website. We look forward to welcoming you and wishing you a pleasant life!
+query:Xiao Li mentioned a product in my QQ message. I want to redeem Zhou Wuzheng's frequent flyer points. His ID number is 440106198612020056. Can you check it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.FlightTickets.useFlightAirlinePoints","parameters":{"passenger_id":"440106198612020056"}}<|im_end|>

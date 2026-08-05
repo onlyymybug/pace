@@ -1,0 +1,8 @@
+To solve this problem, we need to determine how many jellyfish each spring creates in one hour and then multiply that by the number of springs and the number of hours.
+
+1. **Jellyfish per spring per hour**: Since every second, a spring creates a jellyfish, in one hour (which is 60 seconds), one spring creates:
+   \[
+   \frac{1 \text{ jellyfish}}{2 \text{ seconds}} \times 60 \text{ seconds} = 30 \text{ jellyfish}
+   \]
+
+2. **Total jellyfish for 5 springs in 4 hours**:

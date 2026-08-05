@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sam sells bread. He has a target of selling 120 crates of bread in a week. One week he was closed on Monday and Friday. Over the weekend he sold 20 crates. On Tuesday he sold 15 crates, on Wednesday 12 crates, and Thursday 18 crates. By how many crates was Sam off from his target for the week? To find out how many crates Sam was off by, we need to calculate the total crates sold during the week and compare it to his target.
+
+Total crates sold = Crates sold on Tuesday + Crates sold on Wednesday + Crates sold on Thursday + Crates sold on Friday + Crates sold over the weekend
+
+Total crates sold = 15 crates (Tuesday) + 1 crate (Wednesday) + 18 crates (Thursday) + 0 crates (closed on Friday) + 20 crates (over the weekend)
+
+Total crates sold = 15 + 1 + 18 + 0 + 

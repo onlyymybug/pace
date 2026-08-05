@@ -1,0 +1,11 @@
+To solve the problem, we need to find positive integers \(a\), \(b\), and \(2009\) such that \(a < b < 2009\) and they form a geometric sequence with an integer common ratio. Let the common ratio be \(r\). Then we can express \(b\) and \(a\) in terms of as follows:
+\[ b = ar \]
+\[ 2009 = ar^2 \]
+
+From the equation \(2009 = ar^2\), we can solve for \(a\):
+\[ a = \frac{2009}{r^2} \]
+
+Since \(a\) is a positive integer, \(r^2\) must be a divisor of of of \(2009\). We need to find the divisors of of of \(2009\). First, we factorize \(2009\):
+\[ 2009 = 3 × 669 = 3 × 3 × 223 = 3^2 × 223 \]
+
+The divisors of of of \(2009\) are \(1, 3, 9, 223, 

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.searchWaitlistTrain","description":"Search for alternate train numbers based on the criteria entered by the user","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["ride_date","departure_station","destination_station"]}}
+{"name":"OnlineShopping.ExpressDelivery.searchExpress","description":"Search courier logistics based on information such as designated courier number, recipient, address, etc.","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"date":{"type":"string","description":"Shipping date"},"send_name":{"type":"string","description":"Name Of Sender"},"recipient_name":{"type":"string","description":"Recipient's name"}},"required":["express_id","date","send_name","recipient_name"]}}
+{"name":"OfficeSoftware.Documents.getDocumentStatistics","description":"Get statistics for a given document, such as the number of words, pages, etc.","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"To get the document name of the statistic, it is required"}},"required":["document_name"]}}
+{"name":"Navigation.Bicycles.viewFrequency","description":"See total rides","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10 a.m. on May 20, Li Hua and I met at the coffee house to discuss the progress of the project. At 2pm, attend an online meeting on the theme “Market Strategies for the Second Quarter”. At 5pm, complete the first draft of the client report. Dinner with family at 7pm.
+query:I want to check the train from Chengdu to Chongqing. The time is the day mentioned in the notepad. What train number can I choose?<|im_end|>
+<|im_start|>assistant

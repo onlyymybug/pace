@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_best_sushi_places", "description": "Returns the best sushi places given the city, review_rate and top number. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"city": {"type": "string", "description": "The city in which to look for the sushi places."}, "top": {"type": "integer", "description": "The number of top sushi places to be returned."}, "review_rate": {"type": "float", "description": "The review rating to filter the sushi places. Places with review ratings above this value will be returned. Default 0.00."}}, "required": ["city", "top"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the top five sushi restaurants with high reviews i.e. above 4/5 in Tokyo?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_best_sushi_places", "arguments": {"city": "Tokyo", "top": 5, "review_rate": 4.0}}
+</tool_call><|im_end|>

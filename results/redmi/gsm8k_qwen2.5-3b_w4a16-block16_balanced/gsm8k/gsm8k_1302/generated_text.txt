@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Randy has 9 oatmeal cookies, 4 chocolate chip cookies, and 5 sugar cookies. He ate 3 cookies for an early day snack, one of each flavor. He ate 2 oatmeal cookies for lunch. He gives 2 sugar cookies to his friends. Then, he bakes 4 of each flavor for dinner. How many cookies does he have now? Step 1: Initial count of
+Randy starts with 9 oatmeal, 4 chocolate chip, and 5 sugar cookies.
+
+Step 2: Subtract cookies eaten for early snack
+Eats 1 of each flavor, so subtract 1 oatmeal, 1 chocolate chip, and 1 sugar.
+9 - 1 = 8 oatmeal
+4 - 1 = 3 chocolate chip
+5 - 1 = 4 sugar
+
+Step 3: Subtract cookies eaten for lunch
+Eats 2 oatmeal cookies, so subtract 2.
+8 - 2 = 6 oatmeal
+
+Step 

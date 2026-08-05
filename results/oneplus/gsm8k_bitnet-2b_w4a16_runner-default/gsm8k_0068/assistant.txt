@@ -1,0 +1,11 @@
+To find the total number of gems, we first need to determine the number of each type of gem:
+
+1. Number of diamonds = 175
+2. Number of rubies = Number of diamonds - 35 = 175 - 35 = 140
+3. Number of emeralds = 2 * Number of rubies = 2 * 140 = 280
+
+Now, we add up all the gems to find the total number:
+
+Total number of gems = Number of diamonds + Number of rubies + Number of emeralds
+Total number of gems = 175 + 140 + 280
+Total number

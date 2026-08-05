@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: How many of the first one hundred positive integers are divisible by $3, 4,$ and $5?$
+
+To determine how many of of the first one hundred positive integers are divisible by \(3\), \(4\), and \(5\), we need to find the least common multiple (LCM) of of \(3\), \(4\), and \(5\). The LCM of of three numbers is the smallest number that is divisible by each of the numbers.
+
+First, we find the LCM of of \(3\), \(4\), and \(5\). Since \(3\), \(4\), and \(5\) are pairwise coprime (they have no common factors other than \(1\)), the LCM is simply their product:
+\[
+\text{LCM}(3, 4, 5) = 3 \times 4 \times 5 = 60.
+\]
+So, we need to find how many numbers among the first 100 positive integers are divisible by \(60\). A number is divisible by \(60\) if it is of a multiple of of \(60\). We need to find the largest integer \(k\) such that \(60k \leq 100\).
+
+We solve the inequality:
+\[
+60k \leq

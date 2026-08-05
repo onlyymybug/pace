@@ -1,0 +1,11 @@
+To solve the problem, we need to calculate the total amount the customer paid after applying the rewards and the coupon. Here's the step-by-step reasoning:
+
+1. **Calculate the rewards for the last shopping trip:**
+   - The customer spent $80.
+   - For every $20 spent, they get $1 off.
+   - So, for $80, the rewards are $80 / $20 = 4 times $1 = $4.
+
+2. **Calculate the total amount spent after applying the rewards:**
+   - Original spending: $80.
+   - Rewards: $4.
+   - Total after rewards:

@@ -1,0 +1,9 @@
+To determine the probability that the reciprocal of of a randomly selected positive odd integer less than 2010 gives a terminating decimal, we need to understand when the reciprocal of of an integer \( n \) is a terminating decimal. A fraction \(\frac{1}{n}\) is a terminating decimal if and only if \( n \) has no prime factors other than 2 and 5. Since \( n \) is an odd integer, the only prime factor it can have is 1 (which is not a prime), so \( n \) must be of of a product of only 2 and 5. 
+
+Thus, \( n \) must be of a power of of of of 2 and 5, i.e., \( n = 2^i \cdot 5^j \) where \( i \) and \( j \) are non-negative integers. 
+
+Given \( n \) is an odd integer, the only way \( n \) can be a power of power of \( 2 \) and \( 5 \) is \( n = 1 \). 
+
+So, the only odd integer \( n \) that satisfies this condition is 1. 
+
+Thus, the only positive odd integer less than

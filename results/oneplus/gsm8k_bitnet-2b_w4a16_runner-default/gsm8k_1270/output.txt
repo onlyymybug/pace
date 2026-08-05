@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elvis starts driving from his house and travels west for 5 hours. Then he turns around and travels east for 8 hours. If he was driving at an average speed of 18mph for both parts of the journey, how far is he from his house now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total distance Elvis traveled and then use that to find out how far he is from his house.
+
+1. Calculate the distance traveled west:
+   - Speed = 18 mph
+   - Time = 5 hours
+   - Distance = Speed × Time = 18 mph × 5 hours = 90 miles
+
+2. Calculate the distance traveled east:
+   - Speed = 18 mph
+   - Time = 8 hours
+   - Distance = Speed × Time = 18 mph × 8 hours = 144 miles
+
+3. Calculate the total distance traveled:
+   - Total

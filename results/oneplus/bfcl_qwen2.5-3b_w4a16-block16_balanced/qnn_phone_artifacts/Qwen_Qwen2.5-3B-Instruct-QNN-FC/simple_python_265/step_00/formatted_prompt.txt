@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sculpture_search", "description": "Find sculptures based on location and a specific time frame. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city where the sculptures are located."}, "time_frame": {"type": "string", "description": "The time frame during which the sculptures were made."}, "material": {"type": "string", "description": "Optional material of the sculptures. Default is 'all'"}}, "required": ["location", "time_frame"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me sculptures near Chicago that were made in the 19th century.<|im_end|>
+<|im_start|>assistant

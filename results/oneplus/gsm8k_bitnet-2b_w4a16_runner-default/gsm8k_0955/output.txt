@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jonathan has 2/3 as many measuring spoons as measuring cups. If he has two dozen cups and gifts Pedro 6 measuring spoons for his birthday, calculate the total number of utensils Jonathan has remaining.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of measuring spoons Jonathan initially has. Since he has 2/3 as many measuring spoons as measuring cups and he has two dozen cups, we first convert two dozen cups to a numerical value: 2 dozen = 2 * 12 = 24 cups.
+
+Now, we calculate the number of measuring spoons:
+2/3 * 24 cups = 16 measuring spoons.
+
+Jonathan then gives Pedro 6 measuring spoons, so we subtract these from the initial number of spoons:
+16 measuring spoons - 6 measuring spoons = 10 measuring

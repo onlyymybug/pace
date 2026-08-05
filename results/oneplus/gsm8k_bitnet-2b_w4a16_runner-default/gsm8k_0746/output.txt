@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark decides to buy packs of old magic cards and open them to sell.  He buys 3 packs for $1800 each.  He gets 1 card that is worth $4000 and another card worth $1000.  There are 30 more cards worth an average of $50 each.  How much money profit did he make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit, we first need to calculate the total cost of the packs and the total value of the cards.
+
+Total cost of the packs = 3 packs * $1800 each = $5400
+
+Total value of the cards = $4000 (worth one card) + $1000 (worth another card) + (30 cards * $50 each)
+Total value of the cards = $4000 + $1000 + (30 * $50)
+Total value of the cards = $4000 + $1000 + $1500
+Total value of the cards = $6500
+
+Now, we subtract the

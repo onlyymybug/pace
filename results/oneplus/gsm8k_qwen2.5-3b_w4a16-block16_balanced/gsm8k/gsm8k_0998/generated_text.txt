@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Walter is collecting money for charity. First he collects $500 from his neighbors. Then he collects $1500 from a fund he set up online. His lawyer offers to donate three times as much as everyone else donates. Walter is going to tell him about his neighbors and the online fund until his friend gives him $200 as well. How much is Walter's lawyer going to contribute? Step 1: Calculate total money collected from neighbors and online fund.
+Total from neighbors = $500
+Total from online fund = $1500
+Step 2: Calculate the contribution from Walter's lawyer.
+Walter's lawyer will donate three times the total amount collected from neighbors and online fund.
+Step 3: Calculate the total amount collected.
+Total collected = Total from neighbors + Total from online fund
+Step 4: Calculate the lawyer's contribution.
+Lawyer's contribution = 3 * Total collected
+Step 5: Calculate the final amount contributed by Walter.
+Final contribution = Total collected + Lawyer's contribution

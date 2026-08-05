@@ -1,0 +1,13 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $P(x)$ be a quadratic polynomial with real coefficients satisfying $x^2 - 2x + 2 \le P(x) \le 2x^2 - 4x + 3$ for all real  numbers $x$, and suppose $P(11) = 181$. Find $P(16)$. To solve for the quadratic polynomial \(P(x)\) that satisfies the given inequalities and the specific value \(P(11) = 181\), we start by expressing \(P(x)\) in the general form:
+\[ P(x) = ax^2 + bx + c. \]
+We are given the inequalities:
+\[ x^2 - 2x + 2 \le ax^2 + bx + c \le 2x^2 - 4x + 3. \]
+This can be rewritten as:
+\[ (a-1)x^2 + (b-2)x + (2-c) \le 0 \le (2-a)x^2 + (b-4)x + (3-c). \]
+We need to determine the coefficients \(a\), \(b\), and \(c\) such that these inequalities hold for all \(x\). Let's analyze the boundary conditions by substituting \(x = 11\) and \(x = 16\) into the polynomial and the inequalities.
+
+First, substitute \(x = 11\):
+\[ 11^2 - 2 \cdot 11 + 2 = 1211, \]
+\[ 11

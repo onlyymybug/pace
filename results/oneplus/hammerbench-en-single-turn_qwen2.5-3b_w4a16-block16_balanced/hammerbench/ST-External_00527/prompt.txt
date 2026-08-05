@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleCommodity","description":"View item details by item name","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Trade Name/Keywords"}},"required":["search_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"ConvenientLiving.GovernmentServices.downloadServiceDocument","description":"Download docs for city services","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to download"}},"required":["document_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi there, Thank you for your interest in our fully automated smart sweeping robot.This product is designed for you who are in pursuit of a high quality of life and crave more free time.It has a powerful cleaning ability and can easily cope with all kinds of dust and stains in the home.It not only has an advanced navigation system, which can intelligently plan the cleaning path, but also supports the remote control of the mobile phone app, so that you can start the cleaning task anytime and anywhere.
+
+We are currently running a special promotion where customers who place an order for a fully-automated smart sweeping robot within this month will receive a 10% discount and an extra year of warranty.In addition, the top 100 customers will also receive a set of special detergents, a limited number, on a first come, first served basis!
+
+Please do not hesitate to contact us if you have any questions or need more information about our fully automated smart sweeping robots.We look forward to welcoming you and wishing you a pleasant life!
+
+Sincerely,
+Salute
+
+[Company name] Customer Service Center
+[Contact number]
+[Official Website]
+query:I want to see the details of the self-owned product mentioned in the email, can you check it for me?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Twenty students are working together to raise money for a charity. Each earns the same amount. The charity raises a total of $175,000. $50,000 comes from organizations and the rest from the students. How much did each student raise?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount each student raised as \( x \). Since there are 20 students, the total amount raised by the students is \( 20x \).
+
+The total amount raised by the charity is $175,000, which includes $50,000 from organizations and the rest from the students. Therefore, we can write the equation:
+
+\[ 20x + 50,000 = 175,000 \]
+
+To find \( x \), we subtract $50,000 from both sides of the equation:
+
+\[ 20x = 175,000 - 50,000 \]
+\[ 20x = 125

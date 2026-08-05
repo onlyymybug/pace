@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carla is downloading a 200 GB file. Normally she can download 2 GB/minute, but 40% of the way through the download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file? To solve this problem, we need to break down the download process into segments and calculate the time taken for each.
+
+1. First, we calculate the time taken to download the first 40% of the file:
+   - 40% of 200 GB is 0.4 * 200 = 80 GB
+   - At 2 GB/minute, time taken = 80 GB / 2 GB/min = 40 minutes
+
+2. Then, there's a 20 minute forced restart by Windows.
+
+3. After the restart, she has to start the download from

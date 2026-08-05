@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Arnold, Madeline, Camden, and Sarah painted 56 easter eggs. Arnold and Madeline painted the same number of eggs. Camden and Sarah painted a total of 30 eggs, but Camden painted 12 more than Sarah. How many more eggs did Camden paint than Arnold? Let's denote the number of eggs painted by Arnold as \( A \), by Madeline as \( M \), by Camden as \( C \), and by Sarah as \( S \).
+
+From the problem, we know:
+1. \( A = M \) (Arnold and Madeline painted the same number of eggs)
+2. \( C + S = 30 \) (Camden and Sarah painted a total of 30 eggs)
+3. \( C = S + 12 \) (Camden painted 12 more eggs than Sarah)
+4. \( A + M + C + S = 

@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Siobhan has 2 fewer jewels than Aaron. Aaron has 5 more jewels than half of Raymond's jewels. If Raymond has 40 jewels, how many jewels does Siobhan have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of jewels Aaron has as \( A \), the number of jewels Siobhan has as \( S \), and the number of jewels Raymond has as \( R \).
+
+Given:
+1. \( S = A - 2 \)
+2. \( A = \frac{R}{2} + 5 \)
+3. \( R = 40 \)
+
+First, substitute \( R = 40 \) into the second equation to find \( A \):
+
+\[ A = \frac{40}{2} + 5 \]
+\[ A = 20 + 5 \]
+\[ A = 25

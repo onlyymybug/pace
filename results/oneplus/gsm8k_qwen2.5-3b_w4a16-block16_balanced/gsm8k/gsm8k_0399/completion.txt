@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the total number of bugs Nancy counted. 
+
+1. Number of spiders: Given as 90.
+2. Number of millipedes: Given as 1/3 of the number of spiders.
+3. Number of stink bugs: Given as twice the number of millipedes minus 12.
+
+First, calculate the number of millipedes:
+millipedes = 1/3 * spiders
+millipedes = 1/3 * 90
+millipedes = 30
+
+Next, calculate the number of stink bugs:
+stink_bugs

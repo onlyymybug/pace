@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A stickler for health, Octavia drinks half the daily recommended cups of coffee. By contract, Octavia’s husband Juan drinks 10 times the amount of coffee she drinks. Juan’s doctor has asked him to reduce his coffee intake to the daily recommendation of 4 cups. By how many cups must Juan reduce his daily coffee intake?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much coffee Juan is currently consuming. Since Juan drinks 10 times the amount of coffee Octavia drinks, and Octavia drinks half the daily recommended amount, we can calculate Juan's current intake as follows:
+
+1. Daily recommended cups of coffee for Octavia = \( \frac{1}{2} \) cup
+2. Juan drinks 10 times what Octavia drinks, so Juan's daily intake = \( 10 \times \frac{1}{2} = 5 \) cups
+
+Now, we need to find out how much Juan needs to reduce his

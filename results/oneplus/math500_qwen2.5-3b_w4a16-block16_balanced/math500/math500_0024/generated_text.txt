@@ -1,0 +1,45 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find all values of $x$ that satisfy the equation $x = \!\sqrt{11-2x} + 4$. To solve the equation \(x = \sqrt{11-2x} + 4\), we start by isolating the square root term. Subtract 4 from both sides of of the equation:
+
+\[
+x - 4 = \sqrt{11-2x}
+\]
+
+Next, we square both sides to eliminate the square root:
+
+\[
+(x - 4)^2 = 11 - 2x
+\]
+
+Expanding the left side gives:
+
+\[
+x^2 - 8x + 16 = 11 - 2x
+\]
+
+Now, we move all terms to one side of of the equation to set it to zero:
+
+\[
+x^2 - 8x + 16 - 11 + 2x = 0
+\]
+
+Simplify the equation:
+
+\[
+x^2 - 6x + 5 = 0
+\]
+
+We can factor this quadratic equation:
+
+\[
+(x - 1)(x - 5) = 0
+\]
+
+This gives us two potential solutions:
+
+\[
+x = 1 \quad \text{or} \quad x = 5
+\]
+
+We need to check these solutions in the original equation to

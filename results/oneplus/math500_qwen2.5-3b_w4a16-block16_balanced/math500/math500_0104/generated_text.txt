@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $\lambda$ be a constant, $0 \le \lambda \le 4,$ and let $f : [0,1] \to [0,1]$ be defined by
+\[f(x) = \lambda x(1 - x).\]Find the values of $\lambda,$ $0 \le \lambda \le 4,$ for which there exists an $x \in [0,1]$ such that $f(x) \neq x$ but $f(f(x)) = x.$
+To solve the problem, we need to find the values of \(\lambda\) such that there exists an \(x \in [0,1]\) satisfying \(f(f(x)) = x\) but \(f(x) \neq x\), where \(f(x) = \lambda x (1 - x)\).
+
+First, we need to compute \(f(f(x))\):
+\[
+f(f(x)) = f(\lambda x (1 - x)) = \lambda (\lambda x (1 - x)) (1 - \lambda x (1 - x)).
+\]
+Simplifying the expression inside the function, we get:
+\[
+f(f(x)) = \lambda^2 x (1 - x) (1 - \lambda x + \lambda^2 x^2) = \lambda^2 x (1 - x)(1 - \lambda x + \lambda^2 x^2).
+\]
+We need \(f(f(x)) = x\), so we set up the equation:
+\[
+\lambda^2 x (1 - x)(1 - \lambda x + \lambda^2 x^2) = x.
+\]
+Assuming \(x \neq 0\), we can divide both sides

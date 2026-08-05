@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Uriah's book bag is getting too heavy for him. He needs to remove 15 pounds from it. His comic books weigh 1/4 pound each and his toys weigh 1/2 pound each. If he removes 30 comic books, how many toys does he need to remove?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total weight of the comic books that Uriah removes. Since each comic book weighs 1/4 pound and he removes 30 comic books, the total weight of the comic books is:
+
+\[ 30 \times \frac{1}{4} = \frac{30}{4} = 7.5 \text{ pounds} \]
+
+Uriah needs to remove a total of 15 pounds from his book bag. Since he has already removed 7.5 pounds of comic books, the remaining weight he needs to remove is:
+
+\[ 15 - 7.5

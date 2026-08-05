@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Manolo bought five lollipops and four candies that cost $3.20. If each lollipop costs $0.40, how much will 10 lollipops and 10 candies cost him?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the cost of one candy. We know that five lollipops cost $3.20 and each lollipop costs $0.40. So, the total cost for five lollipops is:
+
+5 lollipops * $0.40/lollipop = $2.00
+
+Now, we subtract the cost of the lollipops from the total cost to find the cost of the candies:
+
+$3.20 - $2.00 = $1.20
+
+This $1.20 is the cost of four candies. To find the cost of one candy

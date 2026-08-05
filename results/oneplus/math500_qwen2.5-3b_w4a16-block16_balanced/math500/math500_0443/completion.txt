@@ -1,0 +1,28 @@
+To solve the problem, we need to evaluate the function \( f(x) = 2^x \) step by step, starting from the innermost function and working our way out.
+
+First, we need to find \( f(1) \):
+\[
+f(1) = 2^1 = 2
+\]
+
+Next, we need to find \( f(f(1)) \), which is \( f(2) \):
+\[
+f(2) = 2^2 = 4
+\]
+
+Then, we need to find \( f(f(f(1))) \), which is \( f(4) \):
+\[
+f(4) = 2^4 = 16
+\]
+
+Now, we need to find \( f(f(f(f(1)))) \), which is \( f(16) \):
+\[
+f(16) = 2^{16}
+\]
+
+We need to find the value of of \( 2^{16} \). Let's calculate it:
+\[
+2^{16} = 65536
+\]
+
+Finally, we need to find \( \sqrt{f(f(f(f(1)))}} \), which is \( \

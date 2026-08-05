@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Catherine goes to the grocery store. She buys 1 kilo of apples for $4, 2 kilos of bananas for $2 per kilo, and 2 kilos of oranges for $3 per kilo. How many dollars does she pay in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount Catherine pays, we need to calculate the cost of each type of fruit and then add those amounts together.
+
+- Cost of apples: 1 kilo * $4/kilo = $4
+- Cost of bananas: 2 kilos * $2/kilo = $4
+- Cost of oranges: 2 kilos * $3/kilo = $6
+
+Total cost = Cost of apples + Cost of bananas + Cost of oranges
+Total cost = $4 + $4 + $6
+Total cost = $14
+
+The answer is 14 dollars.<|eot_id|>

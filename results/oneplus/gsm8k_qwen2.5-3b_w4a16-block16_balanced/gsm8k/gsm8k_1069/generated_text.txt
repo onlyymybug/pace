@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: One meatball sub sandwich contains 4 meatballs.  Sidney ordered 3 less than ten meatball sub sandwiches. Then Mark ate 4 of Sidney's meatball sub sandwiches. So Sidney ordered another three sub sandwiches.  How many meatballs were in the sub sandwiches that remained? Step 1: Calculate the number of meatball subs Sidney ordered.
+Ten sub - three = seven sub
+Seven sub ordered by Sidney
+
+Step 2: Calculate the total number of meatballs Sidney ordered.
+Seven sub * four meatballs/sub = twenty-eight meatballs
+
+Step 3: Calculate the number of meatballs Mark ate.
+Four meatballs / seven sub ordered = eight meatballs
+
+Step 4: Calculate the total number of meatballs eaten by Sidney and Mark.
+Eight meatballs eaten by Mark + twenty-eight meatballs ordered = thirty-six meatballs eaten
+
+Step 5: Calculate the total number of meatballs remaining

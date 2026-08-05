@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Of the 20 available cars for rent, 12 are automatic cars, 4 are manual cars, and the rest are semi-automatic. What percentage of the cars are semi-automatic? To find the percentage of of semi-automatic cars, we first need to determine how many of are semi-automatic. 
+
+Total cars = 20
+Automatic cars = 12
+Manual cars = 4
+
+Semi-automatic cars = Total cars - Automatic cars - Manual cars
+Semi-automatic cars = 20 - 12 - 4 = 4
+
+Now, to find the percentage of of semi-automatic cars:
+Percentage of Semi-automatic cars = (Semi-automatic cars / Total cars) * 100
+Percentage = (4 / 20) * 100
+
+Calculating the fraction

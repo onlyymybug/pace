@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "instrument_price.get", "description": "Retrieve the current retail price of a specific musical instrument. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"brand": {"type": "string", "description": "The brand of the instrument."}, "model": {"type": "string", "description": "The specific model of the instrument."}, "finish": {"type": "string", "description": "The color or type of finish on the instrument."}}, "required": ["brand", "model", "finish"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the retail price of a Fender American Professional II Stratocaster in Rosewood Finish?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "instrument_price.get", "arguments": {"brand": "Fender", "model": "American Professional II Stratocaster", "finish": "Rosewood"}}
+</tool_call><|im_end|>

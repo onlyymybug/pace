@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jay is making snowballs to prepare for a snowball fight with his sister. He can build 20 snowballs in an hour, but 2 melt every 15 minutes. How long will it take before he has 60 snowballs? To solve this problem, we need to calculate the net gain of of snowballs per hour and then determine how long it takes to reach 60 snowballs.
+
+1. Net gain of of snowballs per hour:
+   - Jay builds 20 snowballs per hour.
+   - 20 melted every 15 minutes, which is equivalent to 8 times per hour (60/15).
+   - Net gain = 20 - (8 * 1) = 12 snowballs per hour.
+
+2. Calculate the time needed to reach 60 snowballs:
+   - Jay needs to build

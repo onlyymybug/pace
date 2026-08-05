@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A nurses’ station orders bandages in bulk packs of 50. On the first day, the nurses used 38 bandages and ordered one bulk pack of bandages. On the second day, they used ten fewer bandages. On the third day, they ordered two bulk packs of bandages and only used half a pack. They had 78 bandages left at the end of the third day. How many bandages did they start with on the first day? To solve this, we'll track the bandages step by step.
+
+First day:
+- Ordered: 1 bulk pack (50 bandages)
+- Used: 38 bandages
+- Left: 50 - 38 = 2 bandages
+
+Second day:
+- Ordered: 0 bulk packs (no change)
+- Used: 10 fewer than first day = 38 - 10 = 28 bandages
+- Left: 2 - 28 = -26 bandages (negative, indicating deficit)
+
+Third day:
+- Ordered: 2 bulk packs (10

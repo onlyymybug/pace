@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elvis has a monthly saving target of $1125. In April, he wants to save twice as much daily in the second half as he saves in the first half in order to hit his target. How much does he have to save for each day in the second half of the month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount Elvis saves per day in the first half of the month as x. Since there are 30 days in a month, he saves x * 15 days in the first half.
+
+In the second half, he saves twice as much daily, so he saves 2x per day. There are also 15 days in the second half, so he saves 2x * 15 days.
+
+The total savings for the month is the sum of the savings in the first half and the second half, which should equal his target of $1125.
+
+So, we have the equation:
+15x + 15(

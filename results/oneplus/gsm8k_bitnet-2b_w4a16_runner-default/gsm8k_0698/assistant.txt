@@ -1,0 +1,6 @@
+To solve this problem, we need to count the number of great grand-children from each generation.
+
+1. Great Grandma Jones has three children.
+2. Each of her children has three children, so there are \(3 \times 3 = 9\) great grand-children from her children.
+3. Each of these grandchildren has three babies, so there are \(9 \times 3 = 27\) great grand-children from her grandchildren.
+4. Each of these great grand-children has three babies, so there are \(27 \times 3 = 81\) great grand-children from her great grand-

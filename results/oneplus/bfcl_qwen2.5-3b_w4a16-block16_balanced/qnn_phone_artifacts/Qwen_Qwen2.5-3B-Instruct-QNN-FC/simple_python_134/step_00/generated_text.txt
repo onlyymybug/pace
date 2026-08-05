@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "investment.predictProfit", "description": "Predict the profit for given investment after specified number of years. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"investment_amount": {"type": "integer", "description": "The amount invested in dollars."}, "annual_return": {"type": "float", "description": "The annual return rate of the investment."}, "years": {"type": "integer", "description": "The time period in years for which the investment is made."}}, "required": ["investment_amount", "annual_return", "years"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Predict the total expected profit of stocks XYZ in 5 years given I have invested $5000 and annual return rate is 7%.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "investment.predictProfit", "arguments": {"investment_amount": 5000, "annual_return": 0.07, "years": 5}}
+</tool_call><|im_end|>

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Melanie is a door-to-door saleswoman. She sold a third of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the total number of vacuum cleaners Melanie started with as \( x \).
+
+1. Melanie sold a third of her vacuum cleaners at the green house: \( \frac{x}{3} \).
+2. She sold 2 more vacuum cleaners to the red house.
+3. She sold half of what was left at the orange house.
+
+After these sales, Melanie has 5 vacuum cleaners left. So, we can set up the following equation:
+
+\[ x - \frac{x}{3} - 2 - \frac{1}{2} \left( x - \frac{x}{3} - 2 \

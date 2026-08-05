@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A store offers sandwiches in 3 different package sizes: the first package with 2 sandwiches for $3, the second with 4 sandwiches for $6, and a third with 8 sandwiches, but the price is not indicated. Knowing that the prices are proportional, how much will the package with 8 sandwiches cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the price per sandwich for each package. 
+
+For the first package: 2 sandwiches cost $3, so the price per sandwich is $3 / 2 = $1.50.
+
+For the second package: 4 sandwiches cost $6, so the price per sandwich is $6 / 4 = $1.50.
+
+Since the prices are proportional, the price per sandwich for the third package will also be $1.50.
+
+The third package contains 8 sandwiches. Therefore, the cost of the third package will be 8 sandwiches * $1.50 per sandwich = $12

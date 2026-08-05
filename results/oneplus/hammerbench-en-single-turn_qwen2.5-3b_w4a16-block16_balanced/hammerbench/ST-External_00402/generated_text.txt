@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotTicketPrice","description":"Get ticket prices for selected attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHousingMortgage","description":"Calculate Home Purchase Loan Amount","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"house prices "},"down_payment":{"type":"integer","description":"First installment payment"},"interest_rate":{"type":"integer","description":"Interest Rate"},"loan_term":{"type":"integer","description":"Mortgage term"}},"required":["house_price","down_payment","interest_rate","loan_term"]}}
+{"name":"ConvenientLiving.AutoLife.calculateCarLoan","description":"The loan program is calculated based on information such as the purchase price of the car.","parameters":{"type":"object","properties":{"car_price":{"type":"float","description":"Car price, required"},"down_payment":{"type":"float","description":"First installment payment"}},"required":["car_price","down_payment"]}}
+{"name":"Travel.ItineraryServices.estimateTravelCost","description":"Estimate the approximate cost of a given trip","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 8 am at the International Trade Hotel in Beijing, remember to bring your notebook and related materials. After the meeting, which is expected to last until 2pm, we plan to have lunch at Wangfujing Pedestrian Street in Beijing to experience the local specialties. Meet at Beijing Capital International Airport at 7pm to prepare your flight for your next destination. I will keep you informed of any changes.
+query:I would like to know the approximate cost of visiting the Oriental Pearl and the Bund from the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.estimateTravelCost","parameters":{"origin":"Beijing Capital International Airport","destination":"Wangfujing Pedestal","car_price":0,"down_payment":0}}<|im_end|>

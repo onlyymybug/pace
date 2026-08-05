@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.News.shareNews","description":"Share news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"to":{"type":"string","description":"WeChat/qq/TikTok"}},"required":["news_name","to"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryMedicalInsuranceClaimsStatus","description":"Check the progress of your health insurance claim","parameters":{"type":"object","properties":{"claim_number":{"type":"string","description":"Claim No."},"name":{"type":"string","description":"Name, default user's own"}},"required":["claim_number","name"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Wang Wu, let's go mountain climbing together this weekend. I heard that the scenery there is very good. You can also relax just in time. Is it convenient for you to see the time?
+query:Can you check on the progress of the Medicare claim 20230901ABC for the name of the friend mentioned in the message you received from QQ?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.queryMedicalInsuranceClaimsStatus","parameters":{"claim_number":"20230901ABC","name":"EK"}}<|im_end|>

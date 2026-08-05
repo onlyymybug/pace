@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the total number of windows in the houses first and then add the additional windows.
+
+1. Calculate the number of windows in one bedroom:
+   - Each bedroom has 2 windows.
+
+2. Calculate the total number of windows in all bedrooms of one house:
+   - Each house has 3 bedrooms.
+   - Total windows in one house = 3 bedrooms * 2 windows/bedroom = 6 windows.
+
+3. Calculate the total number of windows in both houses:
+   - Each house has 6 windows.
+   - There are 2 houses.
+   - Total windows in both houses

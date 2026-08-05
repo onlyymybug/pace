@@ -1,0 +1,19 @@
+To find the angle \(\angle ABC\) formed by the vectors \(\overrightarrow{AB}\) and \(\overrightarrow{BC}\), we will use the dot product formula. The angle \(\theta\) between two vectors \(\mathbf{u}\) and \(\mathbf{v}\) is given by:
+
+\[
+\cos \theta = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u\|} \|\mathbf{v}\|}
+\]
+
+First, we need to find the vectors \(\overrightarrow{AB}\) and \(\overrightarrow{BC}\).
+
+Given points:
+\[ A = (1, -11, 2), \quad B = (3, -4, 1), \quad C = (-2, 1, -1) \]
+
+The vector \(\overrightarrow{AB}\) is:
+\[
+\overrightarrow{AB} = B - A = (3 - 1, -4 - (-11), 1 - 2) = (2, 7, -1)
+\]
+
+The vector \(\overrightarrow{BC}\) is:
+\[
+\overrightarrow{BC} =

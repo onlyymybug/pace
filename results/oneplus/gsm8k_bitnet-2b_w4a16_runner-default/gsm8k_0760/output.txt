@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The number of songs in a playlist is 300. If John has 20 such playlists, and each song is 10 hours long, how many hours will the 20 playlists last in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to multiply the number of songs in one playlist by the number of playlists and then by the length of each song.
+
+1. Calculate the total number of songs in all playlists:
+   \[
+   \text{Total songs} = \text{Number of songs per playlist} \times \text{Number of playlists}
+   \]
+   \[
+   \text{Total songs} = 300 \times 20 = 6000
+   \]
+
+2. Calculate the total hours of music:
+   \[
+   \text{Total hours} = \text{Total songs} \times \

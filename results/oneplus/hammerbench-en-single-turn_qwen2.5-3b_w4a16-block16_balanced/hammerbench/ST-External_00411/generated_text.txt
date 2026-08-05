@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","description":"Delete travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"Navigation.PublicTransit.deleteFavoriteRoute","description":"Delete User Favorite Specified Bus Lines","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"bus_name":{"type":"string","description":"Bus name"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["line","bus_name","departure","destination","preferred_line"]}}
+{"name":"UtilityTools.Reading.deleteReadingBookFromShelf","description":"Remove books from shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"UtilityTools.Calendar.deleteCalendarschedule","description":"Delete a schedule based on the schedule name","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"NewsMagazines.News.removeSavedNews","description":"Remove Favorited News from Favorites","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"},"news_name":{"type":"string","description":"News Name"}},"required":["source_name","news_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning we will meet at Sensoji Temple in Tokyo at 9am to visit the whole temple, then we will go to Tokyo Tower and have lunch at an authentic Japanese restaurant near Tokyo Tower in the afternoon. Plan to hang out in Tokyo's Shibuya area in the evening and experience the local nightlife. Make sure you bring comfortable shoes and a camera to record a good day.
+query:I'd like to remove the April 15 trip to the locations mentioned in the notepad, especially the one from Disney.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","parameters":{"destination":"Disney"}}<|im_end|>

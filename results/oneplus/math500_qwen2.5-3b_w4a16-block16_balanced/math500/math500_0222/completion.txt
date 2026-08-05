@@ -1,0 +1,18 @@
+To solve the problem, we need to find the smallest positive integer \( k \) such that the product \( 240 \cdot k \) is a perfect cube. We start by finding the prime factorization of of 240.
+
+First, we factorize 240:
+\[
+240 = 24 \times 10 = (2^3 \times 3) \times (2 \times 5) = 2^4 \times 3^1 \times 5^1
+\]
+Thus, the prime factorization of of 240 is:
+\[
+240 = 2^4 \times 3^1 \times 5^1
+\]
+
+For \( 240 \cdot k \) to be a perfect cube, the exponents in its prime factorization must all be multiples of of 3. Let's denote the prime factorization of of \( k \) as:
+\[
+k = 2^a \times 3^b \times 5^c \times \text{(other primes)}
+\]
+Then the prime factorization of of \( 240 \cdot k \) is:
+\[
+240

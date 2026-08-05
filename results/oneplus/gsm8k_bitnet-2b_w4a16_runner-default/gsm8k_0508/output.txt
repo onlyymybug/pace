@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet takes two bus trips five days a week. If each bus trip costs her $2.20, how much would she save by buying a weekly bus pass for $20?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much Janet spends on bus trips without the pass. Since she takes two bus trips each day for five days, the total number of trips is 2 trips/day * 5 days = 10 trips. At $2.20 per trip, the total cost without the pass is 10 trips * $2.20/trip = $22.00.
+
+If Janet buys a weekly bus pass for $20, she would save $22.00 - $20.00 = $2.00 by using the pass.
+
+The answer is $2.00.<|eot_id|>

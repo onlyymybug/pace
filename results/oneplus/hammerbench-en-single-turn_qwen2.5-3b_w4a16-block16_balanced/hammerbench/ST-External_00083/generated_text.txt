@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.getFlightAirlinePromotions","description":"Get promotions from select airlines","parameters":{"type":"object","properties":{"airline":{"type":"string","description":"Airline Name"}},"required":["airline"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+{"name":"Travel.HotelServices.getHotelPromotions","description":"Search promotions for selected hotels","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"}},"required":["name"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurantDiscounts","description":"Enter keywords to search for deals","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords related to offers"}},"required":["keyword"]}}
+{"name":"SocialCommunication.SocialMedia.getMediumTrendsDetails","description":"Get the details of a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer, This is United, thank you for choosing us. We would like to inform you that your flight from Shanghai to New York has been successfully booked with flight number UA890 departing at 14:00 on October 5, 2023. Please arrive at the airport two hours early for check-in. If you need any help, please contact our Help Center. Have a great trip!
+query:Can you check the airline promotions mentioned in Tom's text?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.FlightTickets.getFlightAirlinePromotions","parameters":{"airline:"United"}}<|im_end|>

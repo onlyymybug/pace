@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mary is two years younger than Joan, who is five years older than Jessa. If Jessa is 20 years old, what is the sum of the ages of the three girls?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Jessa's age as J, Joan's age as P, and Mary's age as M.
+
+Given:
+- Jessa is 20 years old: J = 20
+- Joan is five years older than Jessa: P = J + 5
+- Mary is two years younger than Joan: M = P - 2
+
+First, find Joan's age:
+P = J + 5 = 20 + 5 = 25
+
+Next, find Mary's age:
+M = P - 2 = 25 - 2 = 23
+
+Now, find the sum of their ages:
+Sum

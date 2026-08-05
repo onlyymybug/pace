@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A pirate searches seven islands for buried treasure. If each island has a $\frac{1}{5}$ chance of having treasure, what is the probability that exactly 4 of the islands have treasure? To solve the problem, we need to determine the probability that exactly 4 out of 7 islands have treasure, given that each island has a \(\frac{1}{5}\) chance of having treasure. This situation can be modeled using the binomial distribution.
+
+The binomial distribution formula is given by:
+\[
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+\]
+where:
+- \(n\) is the number of trials (islands),
+- \(k\) is the number of successful trials (islands with treasure),
+- \(p\) is the

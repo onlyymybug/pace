@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.createServiceRequest","description":"Submit a new city service request","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"Navigation.TaxiCarRental.callingTaxi","description":"Send a ride request based on your starting location","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Pickup location, default current location"},"destination":{"type":"string","description":"Destination"},"time":{"type":"string","description":"Taxi time, default current time"}},"required":["departure","destination","time"]}}
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","description":"Get the conditions and requirements to use a city's services","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"SocialCommunication.Calling.makePhoneCall","description":"Used to call designated contacts","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to call"},"phone_number":{"type":"string","description":"Call the number directly"}},"required":["contact_name","phone_number"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForResidentPermit","description":"Provide a residence permit application service for the user","parameters":{"type":"object","properties":{"identity_card_number":{"type":"string","description":"User ID number, default user himself"},"address":{"type":"string","description":"Residential Address"}},"required":["identity_card_number","address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.Regarding the meeting room you booked at Shanghai International Convention Center, we have arranged it for you.The specific location is located at No. 2000 Binjiang Avenue, Pudong New Area, Shanghai.The meeting is scheduled to start at 9am on April 15, 2023 and is expected to continue until 5pm.In order to ensure your smooth arrival, you can choose to take subway line 2 to Lujiazui station, and walk about 10 minutes from the station to the destination.If you have any special needs or need help, please do not hesitate to contact us.
+
+Good luck with your meeting!
+
+Sincerely,
+Salute
+
+Shanghai International Convention Center
+Meetings Group
+query:I would like to submit a city service request for hukou migration in the city mentioned in the email.<|im_end|>
+<|im_start|>assistant

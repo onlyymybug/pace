@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kalinda is working on a 360 piece puzzle with her mom. Kalinda can normally add 4 pieces per minute. Her mom can typically place half as many pieces per minute as Kalinda.  How many hours will it take them to complete this puzzle?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many pieces Kalinda's mom can place per minute. Since Kalinda can add 4 pieces per minute and her mom can place half as many pieces per minute as Kalinda, her mom can place:
+
+4 pieces/minute / 2 = 2 pieces/minute
+
+Now, we need to find out how many pieces they can place together per minute:
+
+Kalinda's pieces/minute + Mom's pieces/minute = 4 pieces/minute + 2 pieces/minute = 6 pieces/minute
+
+Since the puzzle has 360 pieces, we can find out how many

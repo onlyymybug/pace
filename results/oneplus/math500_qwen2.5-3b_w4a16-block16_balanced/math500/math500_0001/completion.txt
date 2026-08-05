@@ -1,0 +1,23 @@
+To convert the point \((0, 3)\) from rectangular coordinates to polar coordinates, we need to find the values of \(r\) and \(\theta\) such that:
+
+\[ r > 0 \]
+\[ 0 \le \theta < 2\pi \]
+
+The formulas to convert from rectangular coordinates \((x, y)\) to polar coordinates \((r, \theta)\) are:
+
+\[ r = \sqrt{x^2 + y^2} \]
+\[ \theta = \tan^{-1}\left(\frac{y}{x}\right) \]
+
+Given the point \((0, 3)\):
+
+1. Calculate \(r\):
+\[ r = \sqrt{x^2 + y^2} \]
+\[ r = \sqrt{0^2 + 3^2} \]
+\[ r = \sqrt{9} \]
+\[ r = 3 \]
+
+2. Calculate \(\theta\):
+\[ \theta = \tan^{-1}\left(\frac{y}{x}\right) \]
+\[ \theta = \tan^{-1}\left(\frac{3}{0}\right) \]
+
+Since \(\frac{3}{0}\) is undefined, \(\theta\) is

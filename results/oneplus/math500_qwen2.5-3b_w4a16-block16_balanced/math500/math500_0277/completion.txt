@@ -1,0 +1,31 @@
+To determine the number of real values of \( x \) for which \(\sqrt{120 - \sqrt{x}}\) is an integer, we start by letting \( k \) be an integer such that \(\sqrt{120 - \sqrt{x}} = k\). This implies:
+
+\[
+120 - \sqrt{x} = k^2
+\]
+
+Rearranging the equation to solve for \(\sqrt{x}\), we get:
+
+\[
+\sqrt{x} = 120 - k^2
+\]
+
+Since \(\sqrt{x}\) must be a non-negative real number, we require:
+
+\[
+120 - k^2 \geq 0
+\]
+
+This inequality simplifies to:
+
+\[
+k^2 \leq 120
+\]
+
+The integer values of \( k \) that satisfy this inequality are:
+
+\[
+k = 0, 1, 2, \ldots, 10
+\]
+
+We now need to ensure that \(\sqrt{x} = 120 - k^2\) is a non-negative real number, which it is for all \( k \) in the range \( 0 \leq k

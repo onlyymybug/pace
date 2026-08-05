@@ -1,0 +1,31 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.shareMeetingLink","description":"Generate share links for specific meetings","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskGetShareLink","description":"Get a shareable link to a cloud drive document","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Validity period (1 day, 7 days, 30 days, permanent validity is -1)"},"password":{"type":"string","description":"File Password"},"file_name":{"type":"string","description":"Document Name"}},"required":["date","password","file_name"]}}
+{"name":"OfficeSoftware.Documents.getDocumentLinks","description":"Get all links in the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"To get the linked document name, required"}},"required":["document_name"]}}
+{"name":"Finance.Payment.linkPayBankCard","description":"Link your card to your account","parameters":{"type":"object","properties":{"card_number":{"type":"string","description":"Bank Card Number"},"card_holder_name":{"type":"string","description":"Card holder name"},"bank_name":{"type":"string","description":"Bank Name"}},"required":["card_number","card_holder_name","bank_name"]}}
+{"name":"MusicRadio.OnlineMusic.bindSocialPlatforms","description":"Link your account to a social platform","parameters":{"type":"object","properties":{"platforms":{"type":"string","description":"Social platforms to be linked"}},"required":["platforms"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Reminder for April 20th meeting
+
+Dear Colleagues,
+
+Hello, As a reminder, we will be holding our quarterly work wrap-up session on April 20th at 8pm.This meeting is very important and will summarize the results of the previous quarter and discuss the work plan for the next phase.Please be sure to attend on time and prepare relevant materials in advance.The meeting will be held online. The specific meeting link is attached to the email. Please log in to the test in advance.
+
+Thank you for your cooperation!
+
+Good luck,
+
+[Your name]  
+[Your Position]  
+[your contact details]  
+[Company name]  
+[Sent Date]
+query:Can you help me generate a meeting sharing link for an urgent project discussion? The meeting ID is 112233 and the time is mentioned in the email.<|im_end|>
+<|im_start|>assistant

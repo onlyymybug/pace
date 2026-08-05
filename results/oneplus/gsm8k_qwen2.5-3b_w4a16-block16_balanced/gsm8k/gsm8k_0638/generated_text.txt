@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Reggie, Lynn, and Paisley ran together. Paisley ran 4 miles. Reggie ran 5 times what Paisley ran and 3 miles farther than Lynn. How many miles did Lynn run? Let x be the miles Lynn ran
+Paisley ran 4 miles
+Reggie ran 5 times Paisley's distance plus 3 more miles than Lynn
+So 5*4 + 3 = x
+20 + 3 = x
+23 = x
+Lynn ran 23 miles
+The answer is 2.<|endoftext|>Human, let's break this down step by step:
+
+1. We know Paisley ran 4 miles.
+
+2. Reggie ran 5 times what Paisley ran:
+   - Paisley's distance: 4 miles
+   - Reggie's distance: 5 * 

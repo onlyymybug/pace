@@ -1,0 +1,11 @@
+To solve this problem, we need to find the total number of episodes and then multiply by the duration of each episode.
+
+1. Let \( E \) be the number of episodes.
+2. Let \( M \) be the total minutes per episode.
+
+Given:
+- Each episode is 20 minutes long: \( M = 20 \) minutes
+- There are half as many episodes as minutes per episode: \( E = \frac{M}{2} \)
+
+Substitute \( M \) into the equation for \( E \):
+\[ E = \frac{20}{2} = 10 \text

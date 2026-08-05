@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carmen goes to an auction to win an antique desk. She accepts the opening bid of $200 and continues bidding until she wins. The bids on the desk rise by $50 each time and 3 other people each bid once. Carmen bids after each of the 3 other people and eventually wins. How much money, in dollars, does the desk cost her? To solve this problem, we need to calculate the total cost of of the desk including all the bids.
+
+First, we need to determine the total number of bids. There are 4 bidders in total, including Carmen. Each of the 3 other bidders makes one bid, and then Carmen bids after each of these 3 bidders.
+
+Number of bids = 3 (from other bidders) + 1 (from Carmen) = 4 bids
+
+The first bid is $200. Each subsequent bid increases by $50. 
+
+We can calculate the total cost as the sum of of an arithmetic series where

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.HotelServices.getHotelCheckInStatus","description":"Check the check-in status of a specific hotel reservation","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"booking_date":{"type":"string","description":"Ordered Date"}},"required":["name","booking_date"]}}
+{"name":"Navigation.TrainTickets.queryTrainTicket","description":"Check the status of the remaining train tickets for the specified date, departure place, and destination","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"train_type":{"type":"string","description":"Train type, optional types are high-speed rail, motor vehicles, general express, express, etc."},"seat_type":{"type":"string","description":"Seat Type"}},"required":["ride_date","departure_station","destination_station","train_type","seat_type"]}}
+{"name":"OfficeSoftware.Conferencing.updateParticipantStatus","description":"Update the status of assigned participants in the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"status":{"type":"string","description":"Person Status"}},"required":["meeting_id","title","time","status"]}}
+{"name":"ConvenientLiving.JobRecruitment.checkJobPositionAvailability","description":"Check if a specific position is still being recruited","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"Navigation.TrainTickets.queryTrainWaitlistStatus","description":"Used to query the current status of train ticket standby orders submitted by users","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"commit_date":{"type":"string","description":"Date/time the order was submitted"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Name of person to query"}},"required":["ride_date","commit_date","departure_station","destination_station","passenger_id","name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi, Your order has been shipped successfully and is expected to be delivered on August 15th. Please pay attention to it. If you have any questions, please feel free to contact our customer service. Enjoy!
+query:I would like to check the reservation check-in status of Marriott International Hotel on the day of the time mentioned in my text message.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,5 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the number of quadratic equations of the form $x^2 + ax + b = 0,$ such that whenever $c$ is a root of the equation, $c^2 - 2$ is also a root of the equation. To solve the problem, we need to find the number of quadratic equations of of the form \(x^2 + ax + b = 0\) such that if \(c\) is a root, then \(c^2 - 2\) is also a root. Let's denote the roots of of the quadratic equation by \(c\) and \(d\). By Vieta's formulas, we know that \(c + d = -a\) and \(cd = b\).
+
+Given that \(c\) is a root, \(c^2 - 2\) is also a root. Let's denote the roots by \(r_

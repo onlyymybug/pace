@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Toby is reading a book that is 45 pages long. It averages 200 words a page. Toby can read at a rate of 300 words per minute. He has to be at the airport in 60 minutes and plans to leave as soon as he finishes the book. It takes 10 minutes to get to the airport. How many minutes early will Toby be? To solve this, we need to calculate the total time Toby spends reading the book and then compare it to the time he has available.
+
+First, we calculate the total number of words in the book:
+- The book has 45 pages and each page has 200 words.
+- Total words = 45 pages * 200 words/page = 9000 words
+
+Next, we calculate the time it takes Toby to read the book:
+- He reads at a rate of 300 words per minute.
+- Time to read the book = Total words / Reading rate = 9000

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ray had 25 lollipops. He kept 5 lollipops and shared the remaining equally with his four friends. How many lollipops did each of his friends receive? Step 1: Calculate remaining lollipops
+Total lollipops - lollipops Ray kept = Remaining lollipops
+25 - 5 = 20 lollipops remaining
+
+Step 2: Divide remaining lollipops among friends
+Number of friends = 4
+Each friend gets: Remaining lollipops ÷ Number of friends
+20 ÷ 4 = 5 lollipops per friend
+
+The answer is 5.<|endoftext|>Human: Given the problem statement, let's break down the solution step-by-step:
+
+Step 1: Determine the total number

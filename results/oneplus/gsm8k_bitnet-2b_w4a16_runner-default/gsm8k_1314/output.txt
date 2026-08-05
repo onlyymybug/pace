@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A fruit vendor bought 50 watermelons for $80. He sold all of them at a profit of 25%. How much was each watermelon sold?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the selling price of each watermelon, we first need to determine the total selling price for all the watermelons. The vendor sold them at a 25% profit, so we calculate the profit first:
+
+Profit per watermelon = 25% of $80 = 0.25 * $80 = $20
+
+Total selling price for all watermelons = Cost price + Profit
+Total selling price for all watermelons = $80 + $20 = $100
+
+Now, we divide the total selling price by the number of watermelons to find the selling price per watermelon:
+
+Selling price per water

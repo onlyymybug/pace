@@ -1,0 +1,11 @@
+Let's denote the number of dogs as \(D\), the number of cats as \(C\), and the number of rabbits as \(R\).
+
+Given:
+- \(D = 60\)
+- \(C = \frac{1}{2}D\)
+- \(R = D - 12\)
+
+We need to find the total number of pets, \(T\), which is \(T = D + C + R\).
+
+First, calculate the number of cats:
+\[ C = \frac{1}{2}D = \frac{1}{2} \times 60 = 3

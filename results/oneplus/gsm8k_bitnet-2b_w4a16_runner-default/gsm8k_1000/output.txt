@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A family of 6 (2 adults and 4 kids) are to divide a watermelon such that each adult gets a slice that is twice as big as that of each kid. What percentage of the watermelon does each adult get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's first denote the size of a kid's slice as \( x \). Since each adult's slice is twice as big as each kid's, the size of an adult's slice is \( 2x \).
+
+The total size of the watermelon is the sum of the sizes of all the slices:
+\[ 4x + 2(2x) = 4x + 4x = 8x \]
+
+Each adult gets \( 2x \) slices, and there are 2 adults, so the total number of slices given to adults is:
+\[ 2 \times 2

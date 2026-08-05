@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Education.OnlineClasses.viewCourseOrders","description":"View a list of my orders (including learning, completed, etc.)","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"time":{"type":"string","description":"Purchase time"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","time","teacher_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrdersDetails","description":"View specific item order details based on criteria","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product name keywords"}},"required":["goods_name"]}}
+{"name":"Navigation.Bicycles.searchBikesOrderDetails","description":"View bike order details","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.TaxiCarRental.viewCarRentalOrdersDetails","description":"Review the details of a rental order","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"}},"required":["time"]}}
+{"name":"OnlineShopping.Mall.searchCommodityOrderDetails","description":"View details of an item order based on criteria","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"order_stage":{"type":"string","description":"Order status, e.g. Pending Payment, Pending Receipt, Completed, Cancelled, Refund/After Sales"},"evaluate_stage":{"type":"string","description":"Review status, e.g. reviewed, pending review"}},"required":["goods","order_stage","evaluate_stage"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello Professor Chen! I am Xiao Li, your student, and I would like to confirm the specific time and place for this Wednesday's academic seminar. You mentioned earlier that it will be held in the multi-purpose hall of the academy at 2 pm, I don't know if there is any change. In addition, I would like to ask you a few questions about the report, and I would like to schedule an appointment with you in advance. I look forward to your reply, thank you!
+query:I want to check the order details of my psychology basic course, which was recommended by a friend mentioned in WeChat, on February 14, 2023.<|im_end|>
+<|im_start|>assistant

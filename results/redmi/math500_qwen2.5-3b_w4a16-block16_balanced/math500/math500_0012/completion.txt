@@ -1,0 +1,10 @@
+To solve for \( p(8) \) given that \( p(x) \) is a polynomial of degree 5 and \( p(n) = \frac{n}{n^2 - 1} \) for \( n = 2, 3, 4, \ldots, 7 \), we start by analyzing the given polynomial values.
+
+First, let's rewrite the given function:
+\[
+p(n) = \frac{n}{n^2 - 1}
+\]
+We can simplify this expression:
+\[
+p(n) = \frac{n}{(n-1)(n+1)}
+\

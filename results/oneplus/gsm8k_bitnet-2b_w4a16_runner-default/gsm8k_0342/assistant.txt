@@ -1,0 +1,14 @@
+To solve this problem, we need to find the weight of each animal and then calculate the total weight including the container.
+
+Let's denote the weights of the animals as follows:
+- Pink frog (F) = 50 pounds
+- Blue beetle (B) = F
+- Green toad (T) = B
+- Yellow snake (S) = T + 10
+- Red bird (R) = S - 20
+
+First, we find the weight of the blue beetle:
+B = F = 50 pounds
+
+Next, we find the weight of the green toad:
+T = B = 50 pounds

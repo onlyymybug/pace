@@ -1,0 +1,14 @@
+To solve this problem, we need to calculate the total number of individuals from all schools participating in the tournament.
+
+1. Each school has:
+   - 2 teams (one girls' and one boys')
+   - Each team has 5 players
+   - Each team also has 1 coach
+
+2. Therefore, for one school:
+   - Number of of players: 2 teams * 5 players/team = 10 players
+   - Number of of coaches: 2 teams * 1 coach/team = 2 coaches
+
+3. Total number of individuals from one school:
+   - Players: 10
+  

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.CloudStorage.netdiskGetShareLink","description":"Get a shareable link to a cloud drive document","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Validity period (1 day, 7 days, 30 days, permanent validity is -1)"},"password":{"type":"string","description":"File Password"},"file_name":{"type":"string","description":"Document Name"}},"required":["date","password","file_name"]}}
+{"name":"OfficeSoftware.Conferencing.shareMeetingLink","description":"Generate share links for specific meetings","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Finance.Payment.changePayPassword","description":"Change account payment password","parameters":{"type":"object","properties":{"old_password":{"type":"string","description":"Old payment password"},"new_password":{"type":"string","description":"New payment password"}},"required":["old_password","new_password"]}}
+{"name":"MusicRadio.OnlineMusic.bindSocialPlatforms","description":"Link your account to a social platform","parameters":{"type":"object","properties":{"platforms":{"type":"string","description":"Social platforms to be linked"}},"required":["platforms"]}}
+{"name":"OfficeSoftware.Documents.setDocumentPermissions","description":"Set access rights for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to set permissions, required"}},"required":["document_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends, we have a group meeting this week. It is scheduled for today, 7 days later, that is, next Monday at 3 pm. Remember to attend on time. The meeting mainly discusses the progress of the project and the next plan, which requires you to prepare a recent work report in advance.
+query:Xiao Ming sent me the time mentioned in the QQ message to help me get the sharing link for the annual financial report. The password is pwd789.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.CloudStorage.netdiskGetShareLink","parameters":{"date":"7 days","password":"pwd789","file_name":"annual financial report"}}<|im_end|>

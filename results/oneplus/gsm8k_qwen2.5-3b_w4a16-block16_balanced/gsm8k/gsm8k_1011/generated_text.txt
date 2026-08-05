@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bethany can run 10 laps on the track in one hour.  Trey can run 4 more laps than Bethany.  Shaelyn can run half as many laps as Trey.  Quinn can run 2 fewer laps than Shaelyn.  How many more laps can Bethany run compared to Quinn? Step 1: Calculate Trey's laps
+Bethany: 10 laps
+Trey: 10 + 4 = 14 laps
+
+Step 2: Calculate Shaelyn's laps
+Shaelyn: 1/2 * Trey's laps = 1/2 * 14 = 7 laps
+
+Step 3: Calculate Quinn's laps
+Quinn: Shaelyn's laps - 2 = 7 - 2 = 5 laps
+
+Step 4: Calculate the difference in laps between Bethany and Quinn
+Difference: Bethany's laps - Quinn's laps = 10 - 

@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A Reddit group has 1000 members. If each member posts an average of 3 posts per day, what's the total number of posts that the group will have in March?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of days in March and then multiply that by the average number of posts per day.
+
+1. March has 31 days.
+2. Each member posts an average of 3 posts per day.
+
+Total posts = Number of members × Average posts per member per day × Number of days in March
+Total posts = 1000 members × 3 posts/member/day × 31 days
+Total posts = 1000 × 3 × 31
+Total posts = 3000 × 31
+Total posts = 93000
+
+The answer is 93000.<|eot_id|>

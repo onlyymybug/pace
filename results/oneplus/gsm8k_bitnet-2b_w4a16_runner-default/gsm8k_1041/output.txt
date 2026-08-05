@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Monday the post office delivered 425 letters. On Tuesday they delivered 17 more than one-fifth as many as Monday. On Wednesday they delivered 5 more than twice as many as they delivered on Tuesday. How many letters did the post office deliver Monday - Wednesday?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of letters delivered each day and then sum them up.
+
+1. **Monday**: The post office delivered 425 letters.
+
+2. **Tuesday**: They delivered 17 more than one-fifth as many as Monday.
+   - One-fifth of Monday's delivery is \( \frac{1}{5} \times 425 = 85 \).
+   - Adding 17 gives \( 85 + 17 = 102 \) letters on Tuesday.
+
+3. **Wednesday**: They delivered 5 more than twice as many as they delivered on Tuesday.
+   - Twice Tuesday's

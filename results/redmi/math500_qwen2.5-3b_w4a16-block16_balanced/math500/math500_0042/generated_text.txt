@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The coordinates of a parallelogram are (5, 3), (6, 8), (7, 4) and $(x, y)$ and $x > 7$. What is the value of $x + y$? To solve for the coordinates \((x, y)\) of of the parallelogram, we need to use the properties of of a parallelogram. Specifically, the diagonals of of a parallelogram bisect each other. Therefore, the midpoint of the diagonal connecting \((5, 3)\) and \((7, 4)\) is the same as the midpoint of the diagonal connecting \((6, 8)\) and \((x, y)\).
+
+First, we find the midpoint of the diagonal connecting \((5, 3)\) and \((7, 4)\):
+\[

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Royce takes 40 minutes more than double Rob to shingle a house. If Rob takes 2 hours, how many minutes does Royce take?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to convert Rob's time from hours to minutes, since the question asks for the time in minutes. 
+
+Rob takes 2 hours. Since there are 60 minutes in an hour, we multiply 2 by 60 to find out how many minutes Rob takes:
+
+2 hours * 60 minutes/hour = 120 minutes
+
+Now, we know that Royce takes 40 minutes more than double the time it takes Rob. So, we first find double the time it takes Rob:
+
+2 * 120 minutes = 240 minutes
+
+Then, we add the 40 minutes that Royce takes

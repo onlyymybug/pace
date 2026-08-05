@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.likeCommunityComment","description":"Like a comment from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the review is to be liked"},"comment_name":{"type":"string","description":"Comments to like"}},"required":["community_name","comment_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"ConvenientLiving.FoodDelivery.rateRestaurantOrderDelivery","description":"Rate delivery people on completed orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Name of the order"},"rating":{"type":"integer","description":"Rating between 1 and 5"},"comment":{"type":"string","description":"Review Content"}},"required":["order_name","rating","comment"]}}
+{"name":"SocialCommunication.Calling.checkPhoneCallQuality","description":"Evaluate metrics such as network quality and sound clarity of the current call","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","description":"Rate courier service","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"rating":{"type":"string","description":"Rating, 1-5 points"},"comment":{"type":"string","description":"Scoring contents"}},"required":["express_id","signing_date","rating","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Wang! Recently, I have been reading the book "A Brief History of the Future", which is really attractive. It is not only rich in content, but also very unique in analyzing future trends. I think you'll be interested too. Shall we discuss it together?
+query:The product mentioned in the message sent to me by Xiao Li via WeChat has been received. The delivery speed is average, and the packaging is a little damaged. I give the delivery person 3 stars.<|im_end|>
+<|im_start|>assistant

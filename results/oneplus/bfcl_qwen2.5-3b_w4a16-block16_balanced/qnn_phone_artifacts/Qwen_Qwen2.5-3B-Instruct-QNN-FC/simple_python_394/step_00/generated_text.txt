@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "maps.get_distance_duration", "description": "Retrieve the travel distance and estimated travel time from one location to another via car Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"start_location": {"type": "string", "description": "Starting point of the journey"}, "end_location": {"type": "string", "description": "Ending point of the journey"}, "traffic": {"type": "boolean", "description": "If true, considers current traffic. Default is false."}}, "required": ["start_location", "end_location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get me the travel distance and duration from the Eiffel Tower to the Louvre Museum<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "maps.get_distance_duration", "arguments": {"start_location": "Eiffel Tower", "end_location": "Louvre"}}
+</tool_call><|im_end|>

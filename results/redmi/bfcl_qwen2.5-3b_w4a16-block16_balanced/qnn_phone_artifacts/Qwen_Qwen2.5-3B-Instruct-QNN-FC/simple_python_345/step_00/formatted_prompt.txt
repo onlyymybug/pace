@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "game_valuation", "description": "Get the current market value of a vintage video game. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game_name": {"type": "string", "description": "The name of the game."}, "release_year": {"type": "integer", "description": "The year the game was released."}, "condition": {"type": "string", "enum": ["New", "Like New", "Used", "Fair", "Poor"], "description": "The condition of the game. Default is 'Used'."}}, "required": ["game_name", "release_year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the value of a vintage Super Mario Bros. game from 1985 like new.<|im_end|>
+<|im_start|>assistant

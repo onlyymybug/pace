@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "whole_foods.check_price", "description": "Check the price of items at a specific Whole Foods location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "Location of the Whole Foods store."}, "items": {"type": "array", "items": {"type": "string"}, "description": "List of items for which the price needs to be checked."}}, "required": ["location", "items"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Check the price of tomatoes and lettuce at the Whole Foods in Los Angeles.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "whole_foods.check_price", "arguments": {"location": "Los Angeles", "items": ["tomatoes", "lettuce"]}}
+</tool_call><|im_end|>

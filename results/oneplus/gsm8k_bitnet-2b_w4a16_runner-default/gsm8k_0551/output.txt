@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A shop sells school supplies. One notebook is sold at $1.50 each, a pen at $0.25 each, a calculator at $12 each, and a geometry set at $10. Daniel is an engineering student, and he wants to buy five notebooks, two pens, one calculator, and one geometry set. The shop gives a 10% discount on all the purchased items. How much does Daniel have to spend on all the items he wants to buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Daniel has to spend, we first need to calculate the total cost of the items before the discount. Then, we apply the 10% discount to the total cost.
+
+1. Calculate the cost of the notebooks:
+   - Cost of one notebook = $1.50
+   - Number of notebooks = 5
+   - Total cost for notebooks = $1.50 * 5 = $7.50
+
+2. Calculate the cost of the pens:
+   - Cost of one pen = $0.25
+   - Number of pens = 2
+   - Total cost for pens = $0

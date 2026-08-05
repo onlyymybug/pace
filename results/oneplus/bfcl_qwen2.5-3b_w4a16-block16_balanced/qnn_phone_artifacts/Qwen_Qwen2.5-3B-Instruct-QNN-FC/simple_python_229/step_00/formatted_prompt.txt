@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_bigfive_scores", "description": "Retrieve Big Five Personality trait scores based on individual's behavioural characteristics. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"characteristics": {"type": "array", "items": {"type": "string"}, "description": "List of user's behavioural characteristics."}, "scale": {"type": "string", "enum": ["high", "medium", "low"], "description": "The scoring scale of traits (default is medium)."}}, "required": ["characteristics"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's my Big Five Personality trait scores given that I am efficient, organized, easy going and compassionate?<|im_end|>
+<|im_start|>assistant

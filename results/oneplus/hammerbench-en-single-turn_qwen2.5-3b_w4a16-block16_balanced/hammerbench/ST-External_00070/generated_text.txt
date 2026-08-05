@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+{"name":"Travel.ScenicAreaServices.createScenicSpotBooking","description":"Create a scenic spot reservation for the user","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"booking_date":{"type":"string","description":"Ordered Date"},"number_of_people":{"type":"integer","description":"Booking Persons"}},"required":["name","booking_date","number_of_people"]}}
+{"name":"UtilityTools.Calendar.addCalendarschedule","description":"Create a new schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"Navigation.TaxiCarRental.createCarRentalOrder","description":"Book a rental car","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, I have arrived at Shanghai Hongqiao Railway Station, and there are many people at the exit. Is it convenient for you to pick me up now? I am waiting for you at the exit, if you can't find me, you can call me. Thank you!
+query:I would like to book a car from May 20th to May 22nd at the place mentioned in Tom's text message, GPS navigation is required.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.createCarRentalOrder","parameters":{"location":"Shanghai Hongqiao Railway Station","start_time":"2023-05-20","end_time":"2023-05-22"}}<|im_end|>

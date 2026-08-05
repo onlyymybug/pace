@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "history_api.get_president_by_year", "description": "Get the name of the U.S. President for a specified year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"year": {"type": "integer", "description": "The year you want to know the U.S. president of."}, "full_term_only": {"type": "boolean", "description": "Flag to determine if we should only return presidents that served a full term for the specified year.", "default": false}}, "required": ["year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who was the President of the United States in 1940?<|im_end|>
+<|im_start|>assistant

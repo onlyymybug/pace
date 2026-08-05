@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.getWeatherForecast","description":"Get weather forecasts for specific locations within a timeframe","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"period":{"type":"string","description":"Forecasted Time Range"}},"required":["location","period"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+{"name":"UtilityTools.Weather.getWeatherInfo","description":"Get the current weather information for a given day","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"}},"required":["location"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotLiveFeed","description":"Get real-time dynamic information on designated scenic spots, including real-time visitor numbers, weather conditions, and more","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"SocialCommunication.Community.getCommunityPostLikes","description":"Get the number of likes on a given community post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"post_name":{"type":"string","description":"Posts to get likes"}},"required":["community_name","post_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, the weather forecast for the next three days shows that there will be small to moderate rain for three consecutive days from tomorrow. Please remember to bring rain gear with you and take precautions to prevent rain. Have a happy life!
+query:What was the weather like at the time mentioned in the Shenzhen SMS?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.getWeatherForecast","parameters":{"location":"Shenzhen","period":"today"}}<|im_end|>

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a race with 240 Asians, 80 were Japanese, and the rest were Chinese. If the number of boys on the Chinese team was 60, how many girls were on the Chinese team?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of Chinese participants. Since there are 240 Asians in total and 80 of them are Japanese, the number of Chinese participants is:
+
+240 - 80 = 160
+
+Next, we know that there are 60 boys on the Chinese team. To find the number of girls, we subtract the number of boys from the total number of Chinese participants:
+
+160 - 60 = 100
+
+Therefore, there were 100 girls on the Chinese team. The answer is 100.<|eot_id|>

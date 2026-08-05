@@ -1,0 +1,26 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mary is making ice cubes with fruit frozen in them for a cocktail party. She makes some strawberry cubes, and a number of blueberry cubes equal to 5 times the number of strawberry cubes minus 4. If she makes 116 ice cubes total, how many blueberry cubes does she make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of strawberry cubes as S. According to the problem, the number of blueberry cubes is 5S - 4. The total number of ice cubes is given as 116. So, we can write the equation:
+
+S + (5S - 4) = 116
+
+Combine like terms:
+
+6S - 4 = 116
+
+Add 4 to both sides:
+
+6S = 120
+
+Divide both sides by 6:
+
+S = 20
+
+Now, we can find the number of blueberry cubes:
+
+Number of blueberry cubes = 5S - 4
+=

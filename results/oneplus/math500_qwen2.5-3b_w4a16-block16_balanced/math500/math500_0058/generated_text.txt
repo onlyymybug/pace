@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Riproarin' Ringo was roping a recalcitrant dogie. Ringo decided to give the dogie a reprieve by calculating \[|(1-i)^8|\]before riding after the dogie. What answer should Ringo have found? To solve the problem, we need to find the magnitude of of of the complex number \((1-i)^8\). Let's break it down step by step.
+
+1. **Magnitude of of a Complex Number:**
+   The magnitude of of of a complex number \(z = a + bi\) is given by \(|z| = \sqrt{a^2 + b^2}\).
+
+2. **Magnitude of of \(1-i\):**
+   For the complex number \(1-i\), we have \(a = 1\) and \(b = -1\). Therefore, the magnitude is:
+   \[
+   |1-i| = \sqrt{1^2 + (-1)^2} = \sqrt{1 + 1} = \sqrt{2}
+   \]
+
+3. **Magnitude of of \((1-i)^8\):**
+   The magnitude of of of a power of of of a complex number is the power power of of the magnitude magnitude. That is, \(|z^n| = |z|^n\). Therefore:
+   \[
+   |(1-i)^8| = |1-i|^8
+   \]
+   We already found that \(|1-i| = \sqrt{2

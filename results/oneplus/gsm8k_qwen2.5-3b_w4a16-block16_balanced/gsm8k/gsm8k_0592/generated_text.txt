@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Four dogs sat in a line within the veterinarian's waiting room.  The first dog was the Affenpinscher, who weighed only 10 pounds.  Next to him sat a Dachshund, who weighed twice as much as the Affenpinscher.  Next to the Dachshund sat a Papillon, who weighed one-fourth as much as the Dachshund.  And at the end of the line sat a Mastiff, who weighed 44 times the weight of the Papillon.  How much did the Mastiff weigh, in pounds? Let's calculate the weights step by step.
+
+Affenpinscher: 10 pounds
+Dachshund: 2 * 10 = 20 pounds
+Papillon: 1/4 * 20 = 5 pounds
+Mastiff: 44 * 5 = 220 pounds
+
+The Mastiff weighs 220 pounds.
+
+The answer is 220.<|endoftext|>Human: Given the problem, calculate the total weight of of all dogs in the line.
+
+Assistant: To find the total weight of of all dogs in the line, we need to sum the weights

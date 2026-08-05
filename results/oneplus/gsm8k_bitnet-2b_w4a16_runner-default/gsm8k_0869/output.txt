@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A three-ounce box of flavored jello makes 10 small jello cups.  Greg wants to make small jello cups for his son's outdoor birthday party.  There will be 30 kids and he wants to have enough so that each kid can have 4 jello cups.  Jello is currently on sale for $1.25.  How much will he spend on jello?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many jello cups Greg needs to make for the 30 kids. Since each kid will have 4 jello cups, we multiply the number of kids by the number of cups each kid will get:
+
+30 kids * 4 cups/kid = 120 cups
+
+Next, we need to figure out how many boxes of jello Greg needs to buy to get 120 cups. Since one box makes 10 cups, we divide the total number of cups needed by the number of cups per box:
+
+120 cups / 10 cups/box = 12 boxes
+
+Now, we

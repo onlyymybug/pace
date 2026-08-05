@@ -1,0 +1,6 @@
+Let's break down the problem step by step.
+
+1. Initially, there are 5 children.
+2. On the second street, each of these 5 children is joined by another child. So, the number of children becomes \(5 + 5 = 10\) children.
+3. On the third street, each of these 10 children is joined by another 2 children. So, the number of children becomes \(10 + 2 \times 10 = 10 + 20 = 30\) children.
+4. At this point, the original 5 children who were initially there

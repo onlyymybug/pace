@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Howie wants to buy cupcakes for everyone in his class as a special treat. He's not sure if people will want vanilla or chocolate cupcakes so he decides to get one of each for everyone. If he gets the same amount of 2 cupcakes for each himself, his teacher, and his 25 classmates, how many cupcakes should Howie buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of cupcakes Howie should buy for himself, his teacher, and his 25 classmates.
+
+1. Howie is buying for himself, his teacher, and his 25 classmates. This means he is buying for a total of 1 (himself) + 1 (teacher) + 25 (classmates) = 27 people.
+
+2. Each person should get 2 cupcakes. Therefore, the total number of cupcakes needed is 27 people * 2 cupcakes/person = 54 cupcakes.
+
+The answer is 54 cupcakes.<|eot_id|>

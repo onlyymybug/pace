@@ -1,0 +1,35 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.getFlightDetails","description":"Get details for a specific flight, including takeoff and landing times, fares, and more","parameters":{"type":"object","properties":{"flight_number":{"type":"string","description":"e.g. CA1234"},"date":{"type":"string","description":"Specify a date, such as 2024-07-05"},"line":{"type":"string","description":"Routes such as Beijing-Shanghai"}},"required":["flight_number","date","line"]}}
+{"name":"ConvenientLiving.AutoLife.viewCarDetails","description":"View the details of the specified car model.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"Finance.Funds.getFundInfo","description":"Query specific fund details based on specific fund name or code","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Navigation.TaxiCarRental.viewTaxiOrderDetail","description":"View details of a ride","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"Navigation.PublicTransit.viewBusRouteDetail","description":"View route details for a given bus (default current city)","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Manager Zhang,
+
+Hello!
+
+Regarding the kick-off meeting for the upcoming project, we decided to hold it on October 11th at 10am.The main content of the meeting includes project background, goal setting, team division of labor, and preliminary timing.We want all project members to participate in order to clarify their responsibilities and tasks and ensure that the project runs smoothly.
+
+Please confirm that you will be able to attend the meeting on October 11th at 10am and respond to the email to let us know.If you have any questions or suggestions, please do not hesitate to contact me.
+
+Thanks,
+
+Sincerely,
+
+Salute!
+
+Li Hua  
+Project Coordinator  
+ABC Company  
+Email: lihua@abc.com  
+Phone: 123-456-7890
+query:I would like to check the details of MU5678 flight from Shanghai to Beijing at the time mentioned in the email, including the take-off and landing time and fare.<|im_end|>
+<|im_start|>assistant

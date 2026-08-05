@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryResidentialPermitInfo","description":"Check the progress of the residence permit, the validity period, etc.","parameters":{"type":"object","properties":{"applicant_name":{"type":"string","description":"Name of Applicant"}},"required":["applicant_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"Finance.Funds.getFundPortfolio","description":"Query the position status of the designated fund based on the fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"OfficeSoftware.Documents.setFolderPermissions","description":"Set access rights for the specified folder","parameters":{"type":"object","properties":{"folder_name":{"type":"string","description":"Folder name to set permissions, required"}},"required":["folder_name"]}}
+{"name":"OfficeSoftware.Email.getMailContent","description":"Get the full content of the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Subject of the message to get the content"}},"required":["mail_title"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Li Si! My name is Wang Wu, and our meeting place next Wednesday has been changed to the meeting room on the 12th floor of the Science and Technology Building, and the time is still 3 pm. In addition, Liu Hong asked me to remind you to bring the project report. Let's go to dinner after the meeting. It's been a long time since we met. Looking forward to meeting you!
+query:Check the person mentioned in the text message, the progress and validity of the residence permit of ID number 440582199507102346.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.queryResidentialPermitInfo","parameters":{"applicant_name":"440582199507102346"}}<|im_end|>

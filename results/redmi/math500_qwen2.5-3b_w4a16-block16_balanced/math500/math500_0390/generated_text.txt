@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In $\triangle{RST}$, shown, $\sin{R}=\frac{2}{5}$.  What is $\sin{T}$?
+
+[asy]
+pair R,S,T;
+T = (0,0);
+S = (2,0);
+R = (2,sqrt(21));
+draw(R--S--T--R);
+draw(rightanglemark(R,S,T,10));
+label("$T$",T,SW);
+label("$S$",S,SE);
+label("$R$",R,NE);
+label("$5$",(R+T)/2,NW);
+[/asy] To solve for \(\sin{T}\) in \(\triangle RST\) where \(\sin{R} = \frac{2}{5}\), we need to analyze the given information and use trigonometric identities.
+
+Given:
+- \(\sin{R} = \frac{2}{5}\)
+- \(RS = 5\) (since \(RS = 5\) and \(\sin{R}\) is the ratio of opposite side to hypotenuse)
+
+First, let's denote the sides of of \(RS = a\), \(RT = b\), and \(ST = c\). Given \(

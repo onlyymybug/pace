@@ -1,0 +1,9 @@
+To solve this problem, we need to calculate the number of fruits produced by each tree at different stages and then sum them up.
+
+1. **Initial production:**
+   - 5-year-old tree: 50 fruits
+   - 6-year-old tree: 3 * 50 = 150 fruits
+   - 7-year-old tree: 7 * 50 = 350 fruits
+   - 8-year-old tree: 200 fruits less than a 10-year-old tree, so 10 * 50 - 200 = 300 fruits
+
+2

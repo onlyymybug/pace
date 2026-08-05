@@ -1,0 +1,13 @@
+Step 1: Calculate the number of history teachers.
+Number ofHistoryTeachers = TotalTeachers * PercentageHistoryTeachers
+NumberofHistoryTeachers = 150 * 0.6
+
+Step 2: Calculate the number of math teachers.
+NumberofMathTeachers = TotalTeachers - NumberofHistoryTeachers
+NumberofMathTeachers = 150 - NumberofHistoryTeachers
+
+Step 3: Calculate the total time spent sleeping by all math teachers in one day.
+TotalSleepingTime = NumberofMathTeachers * HoursPerDay
+TotalSleepingTime = NumberofMathTeachers * 6
+
+Step 1: Numberof

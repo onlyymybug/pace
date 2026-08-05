@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.addContact","description":"Used to add new contact information","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Contact person"},"phone_number":{"type":"string","description":"Missing contact phone number."},"email":{"type":"string","description":"Contact email (optional)"}},"required":["contact_name","phone_number","email"]}}
+{"name":"SocialCommunication.InstantMessaging.addContact","description":"Add New Contact","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Contact person"},"phone":{"type":"string","description":"Cellphone"}},"required":["name","phone"]}}
+{"name":"OnlineShopping.ExpressDelivery.addAddress","description":"Add the specified address to the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name"},"phone":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Address"}},"required":["name","phone","address"]}}
+{"name":"OnlineShopping.Mall.addDeliveryAddress","description":"Add a new shipping address based on the information","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Receiver"},"phoneNumber":{"type":"string","description":"Phone No."},"address":{"type":"string","description":"Shipping Address"}},"required":["receiver","phoneNumber","address"]}}
+{"name":"Navigation.MapNavigation.addCommonAddress","description":"Add usual address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address string to add"}},"required":["address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Ming, Jay Chou's new song has finally been released. I just listened to it a few times, it's really nice! If you have the time to listen to it, I think you will like it. Let's go check out his concert live this weekend!
+query:Can you help me add a new contact? The name is the person mentioned in the text message, the singer, from Taiwan, and the phone number is 13654122789.<|im_end|>
+<|im_start|>assistant

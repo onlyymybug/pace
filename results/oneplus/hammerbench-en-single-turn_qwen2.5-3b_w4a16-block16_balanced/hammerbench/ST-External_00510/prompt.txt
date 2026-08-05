@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.queryTrainDelayInfo","description":"Check if the specified train is late and how long it is","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Trips to inquire about"}},"required":["train_number"]}}
+{"name":"SocialCommunication.Calling.countPhoneCallDuration","description":"Count call duration over time","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Timeframe, call within the default day"}},"required":["time"]}}
+{"name":"UtilityTools.AlarmClock.viewtimer","description":"View assigned timers","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer name, empty by default"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+{"name":"ConvenientLiving.JobRecruitment.checkJobPositionAvailability","description":"Check if a specific position is still being recruited","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"Health.MedicalServices.getDoctorAvailability","description":"Check the doctor's available appointment time according to the doctor's name, hospital name and other conditions","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["doctor_name","hospital_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 8:00 am on April 1, I went to the train station to pick up my mother, and her train arrived at 8:30. After picking up my mom, we went to a cafe near my house for breakfast. At 2:00 pm, go to the library with Mom to help her find some gardening books. Dinner is planned at 6:30 to the newly opened vegetarian restaurant in the north of the city. At 8:00 pm, go home to watch my mother's favorite movies.
+query:What is the duration of our call during the time period mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

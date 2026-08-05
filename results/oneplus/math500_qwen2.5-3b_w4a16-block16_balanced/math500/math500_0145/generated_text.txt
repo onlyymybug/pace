@@ -1,0 +1,36 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A curve is parameterized by
+\[(x,y) = (t^3 + 7, -3t^2 - 6t - 5).\]Find the point the curve passes through at $t = 2.$
+To find the point the curve passes through at \( t = 2 \), we need to substitute \( t = 2 \) into the given parametric equations:
+\[
+(x, y) = (t^3 + 7, -3t^2 - 6t - 5).
+\]
+
+First, we calculate \( x \) when \( t = 2 \):
+\[
+x = t^3 + 7.
+\]
+Substituting \( t = 2 \):
+\[
+x = 2^3 + 7 = 8 + 7 = 15.
+\]
+
+Next, we calculate \( y \) when \( t = 2 \):
+\[
+y = -3t^2 - 6t - 5.
+\]
+Substituting \( t = 2 \):
+\[
+y = -3(2)^2 - 6(2) - 5.
+\]
+Calculate \( (2)^2 \):
+\[
+(2)^2 = 4.
+\]
+Then,
+\[
+y = -3(4) - 6(2) - 5 = -12 - 12 - 5 = -29.
+\]
+
+Thus, the

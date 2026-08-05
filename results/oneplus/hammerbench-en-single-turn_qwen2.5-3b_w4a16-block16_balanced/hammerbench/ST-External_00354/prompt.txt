@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.updateTravelItinerary","description":"Modify a created trip","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"ConvenientLiving.GovernmentServices.updateServiceRequestInfo","description":"Make changes to submitted city service request information","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Service Request Name"}},"required":["name"]}}
+{"name":"SocialCommunication.Community.updateCommunityPost","description":"Update the post content for the specified community based on the title of the post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"To update the name of the community in which the post is located"},"old_title":{"type":"string","description":"Post title before update"},"title":{"type":"string","description":"Updated post title, optional"},"update_content":{"type":"string","description":"Updated post content, optional"}},"required":["community_name","old_title","title","update_content"]}}
+{"name":"UtilityTools.Calendar.alterCalendarschedule","description":"Modify a schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"date_name_before":{"type":"string","description":"Modified Schedule Name"},"start_date":{"type":"string","description":"Schedule start time"},"start_date_before":{"type":"string","description":"Modified Schedule Start Time"}},"required":["date_name","date_name_before","start_date","start_date_before"]}}
+{"name":"SocialCommunication.InstantMessaging.updateGroupInfo","description":"Update announcements and other information for a specific group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to update"},"new_announcement":{"type":"string","description":"Updated group announcements"}},"required":["group_name","new_announcement"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.According to your reservation, we will hold a video conference on September 25th at 10am on time to discuss the progress of the project.Please be prepared in advance and make sure you have a good internet connection.Please do not hesitate to contact us if you have any questions.
+
+Have a great day at work!
+
+Sincerely,
+Salute
+
+[Your company name]  
+[Contact]
+query:Can you change the "weekend carnival" on September 26 to the time mentioned in the email and change the name to "weekend party"?<|im_end|>
+<|im_start|>assistant

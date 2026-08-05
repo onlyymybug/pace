@@ -1,0 +1,29 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.listMeetings","description":"List all meetings","parameters":{"type":"object","properties":{"max_results":{"type":"integer","description":"Maximum number of results, default is 10"},"time":{"type":"string","description":"Default Same Day/Specific Date Range"}},"required":["max_results","time"]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"ConvenientLiving.JobRecruitment.listJobAllPositions","description":"List all posts posted by users","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+{"name":"Education.OnlineClasses.viewCourseSelection","description":"View Selected List","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Type"}},"required":["type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.Regarding your scheduled onsite installation at 10am today, we would like to confirm that your address is still XX XX Rd.Our technicians will arrive on time and the estimated installation time is 1 hour 30 minutes.Please prepare the relevant equipment in advance and keep the phone open so that we can contact you in time.
+
+If you have any changes or need further information, please feel free to reply to this email or call our customer service.We look forward to providing you with excellent service.
+
+Have a great day!
+
+Sincerely,
+Salute
+
+XX Company Service Team
+October 12, 2023
+query:Please list the 3 meetings at the time mentioned in the email.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Charlie is a tennis pro.  He spends most of the day teaching others lessons on how to improve their game.  His standard fee is $80 per hour for lessons, but he reduces his rate by 25% when he is giving lessons to a veteran.   If today Charlie has 4 1-hour lessons at his standard rate and 2 1-hour lessons with a veteran, what is the total amount of money he will make for the day, in dollars? To solve this problem, we need to calculate the total earnings from both types of lessons.
+
+1. **Calculate the earnings from standard lessons:**
+   - Charlie charges $80 per hour for standard lessons.
+   - He has 4 standard lessons.
+   - Total earnings from standard lessons = $80/hour * 4 hours = $320
+
+2. **Calculate the earnings from veteran lessons:**
+   - The rate for veteran lessons is 25% less than the standard rate.
+   - 25% of $80 = 0.25 * $80 = $20 discount

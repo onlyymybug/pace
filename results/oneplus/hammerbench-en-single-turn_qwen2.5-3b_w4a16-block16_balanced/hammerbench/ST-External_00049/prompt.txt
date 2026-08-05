@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.vehicleNavigationRoute","description":"Specify a vehicle as a way to get around and search for a route","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"vehicle":{"type":"string","description":"Specify how you want to travel"}},"required":["departure","destination","vehicle"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOnScreen2TV","description":"Turn on phone projection to TV","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Calling.transferPhoneCall","description":"Transfer the current call to another contact","parameters":{"type":"object","properties":{"transfer_contact_name":{"type":"string","description":"Name of the contact to transfer to"}},"required":["transfer_contact_name"]}}
+{"name":"Navigation.MapNavigation.planNavigationRoute","description":"Search navigation routes by origin and destination","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"time":{"type":"string","description":"Departure time, default current time"},"mode":{"type":"string","description":"Getting around, by car, public transport, bike, or on foot, by default"},"preferred_route":{"type":"string","description":"Preferred route type, such as direct, few transfers, etc., optional"}},"required":["departure","destination","time","mode","preferred_route"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 9am at the People's Square, we will participate in the marathon together. Remember to wear sneakers, bring a cup, and the entrance to People's Square is next to Exit 1 of the subway station. If you have any questions, you can contact me in advance.
+query:How do I take the subway to Shanghai Hongqiao International Airport?<|im_end|>
+<|im_start|>assistant

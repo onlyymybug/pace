@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: For how many two-digit primes is the sum of the digits equal to 8? To solve the problem, we need to find all two-digit prime numbers whose digits sum to 8. Let's denote the two-digit number as \(10a + b\), where \(a\) and \(b\) are its digits, and \(a\) is a non-zero digit (i.e., \(1 \leq a \leq 9\)) and \(b\) is a digit (i.e., \(0 \leq b \leq 9\)). The condition that the sum of of the digits is 8 can be written as:
+\[ a + b = 8. \]
+
+We will now find all pairs \((a, b)\) that satisfy this equation and check which of these pairs form a prime number.
+
+1. If \(a = 1\), then \(b = 7\). The number is \(17\), which is a prime number.
+2. If \(a = 2\), then \(b = 6\). The number is \(26\), which is not a prime number.
+3. If \(a = 3\), then \(b = 5\). The number is \(35\), which is not a prime number.
+4. If \(

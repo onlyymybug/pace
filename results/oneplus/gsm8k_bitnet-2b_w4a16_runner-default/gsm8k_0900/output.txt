@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Susan made 100 cookies for Christmas and was going to equally divide them between her 6 nephews. Before Susan could package them, her husband snuck 4 cookies for himself. How many cookies will each of Susan’s nephews get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, we need to find out how many cookies Susan has left after her husband took some. Susan originally had 100 cookies and her husband took 4, so we subtract:
+
+100 - 4 = 96 cookies left.
+
+Now, Susan wants to divide these 96 cookies equally among her 6 nephews. To find out how many cookies each nephew will get, we divide the remaining cookies by the number of nephews:
+
+96 ÷ 6 = 16 cookies per nephew.
+
+The answer is 16 cookies per nephew.<|eot_id|>

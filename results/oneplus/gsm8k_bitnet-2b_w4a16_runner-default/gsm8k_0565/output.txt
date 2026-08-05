@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In the first week, Judy read for 15 minutes each night before going to sleep. In the second week, she read a total of 100 pages. If she can read 2 pages per 1.5 minutes, how many pages did she read in two weeks?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how many minutes Judy read each night in the second week. Since she read a total of 100 pages and can read 2 pages per 1.5 minutes, we can calculate the total minutes she read by dividing the total pages by the pages read per minute:
+
+Total minutes read = Total pages / Pages per minute
+Total minutes read = 100 pages / 2 pages per 1.5 minutes
+Total minutes read = 100 / 2 * 1.5 minutes
+Total minutes read = 50 * 1.5 minutes
+Total minutes read = 75

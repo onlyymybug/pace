@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Bill walks $\frac{1}{2}$ mile south, then $\frac{3}{4}$ mile east, and finally $\frac{1}{2}$ mile south. How many miles is he, in a direct line, from his starting point?  Express your answer as a decimal to the nearest hundredth. To determine how far Bill is from his starting point, we need to analyze his movements step by step and then calculate the straight-line distance from his starting point to his final position.
+
+1. **Initial Position:**
+   - Bill starts at the origin \((0, 0)\).
+
+2. **First Movement:**
+   - Bill walks \(\frac{1}{2}\) mile south.
+   - New position: \((0, -\frac{1}{2})\).
+
+3. **Second Movement:**
+   - Bill walks \(\frac{3}{4}\) mile east.
+   - New position: \((\frac{3}{4}, -\frac{1}{2})\).
+
+4. **Third Movement:**
+   - Bill walks \(\frac{1}{2}\) mile south.
+   - New position: \((\frac{3}{4}, -\frac{1}{2} - \frac{1}{2}) = (\frac{3}{4}, -1)\).
+
+Now, we need to find the straight-line distance from the starting point \((0, 0)\) to the final position \((\frac{3}{4}, -1)\).
+
+The distance \(d\)

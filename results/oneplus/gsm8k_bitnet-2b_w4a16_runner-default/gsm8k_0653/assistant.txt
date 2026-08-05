@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the cost of the hours James paid for after the first hour, which is free.
+
+1. The first hour is free.
+2. The second hour costs $15.
+3. Each subsequent hour costs twice as much as the previous hour.
+
+Let's calculate the cost for each hour after the first one:
+- The third hour costs $15 * 2 = $30.
+- The fourth hour costs $30 * 2 = $60.
+- The fifth hour costs $60 * 2 = $120.
+
+Now, we add up the costs of all the hours:
+- First hour

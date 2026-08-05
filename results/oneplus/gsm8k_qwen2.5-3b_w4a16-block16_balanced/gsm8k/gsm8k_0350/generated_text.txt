@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every month, Madeline has to buy food, treats, and medicine for her dog. Food costs $25 per week. Treats cost $20 per month. Medicine costs $100 per month. How much money does Madeline spend on her dog per year if there are 4 weeks in a month? Step 1: Calculate the monthly cost of of food:
+Food cost per week = $25
+There are 4 weeks in a month
+Monthly cost of of food = $25/week * 4 weeks/month = $100/month
+
+Step 2: Calculate the total monthly cost for all expenses:
+Total monthly cost = Cost of food + Cost of treats + Cost of medicine
+                 = $100 + $20 + $100 = $120/month
+
+Step 3: Calculate the annual cost:
+There are 12 months in a year
+Annual cost = Monthly cost

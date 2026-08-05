@@ -1,0 +1,9 @@
+To find the correct temperature, we first need to determine what percentage difference there is between the set temperature and the actual temperature. Then, we apply this percentage difference to the actual temperature to find the correct temperature for the recipe.
+
+1. Calculate the percentage difference:
+   \[
+   \text{Percentage difference} = \left( \frac{\text{Actual temperature} - \text{Set temperature}}{\text{Actual temperature}} \right) \times 100
+   \]
+   Substituting the given values:
+   \[
+   \text{Percentage difference} = \left( \frac{468 - 450}{

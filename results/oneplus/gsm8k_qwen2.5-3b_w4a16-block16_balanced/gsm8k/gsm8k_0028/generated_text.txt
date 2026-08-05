@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cynthia eats one serving of ice cream every night.  She buys cartons of ice cream with 15 servings of ice cream per carton at a cost of $4.00 per carton.  After 60 days, how much will she spend on ice cream? Step 1: Calculate total servings needed
+Cynthia eats 1 serving per night, so for 60 days, she needs 60 servings.
+
+Step 2: Calculate total cartons needed
+Each carton contains 15 servings, so to find out how many cartons she needs, we divide total servings needed by servings per carton: 60 servings / 15 servings/carton = 4 cartons.
+
+Step 3: Calculate total cost
+Each carton costs $4.00, so for 4 cartons, the total cost is 4 cartons * $4/carton

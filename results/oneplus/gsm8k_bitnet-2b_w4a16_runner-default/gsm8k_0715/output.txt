@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James decides to pick some blueberries.  It cost $20 to go picking and then another $1.5 per pound.  He picked 30 pounds of blueberries.  How much did he save compared to buying at the store for $2.5 a pound?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total cost of picking blueberries at the farm and compare it to the cost of buying at the store.
+
+First, let's calculate the cost of picking blueberries at the farm:
+- The initial cost to go picking is $20.
+- The cost per pound is $1.5.
+- James picked 30 pounds of blueberries.
+
+The total cost of picking at the farm is:
+\[ \text{Cost at farm} = \text{Initial cost} + (\text{Cost per pound} \times \text{Number of pounds}) \]
+\[ \text{Cost at

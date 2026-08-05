@@ -1,0 +1,18 @@
+To solve the problem, we need to determine the area of of of quadrilateral \(DBEF\) where \(D\) and \(E\) are the midpoints of of \(\overline{AB}\) and \(\overline{BC}\) respectively. Let's start by identifying the coordinates of of the points \(A\), \(B\), \(C\), \(D\), \(E\), and \(F\).
+
+Given:
+- \(A = (0, 6)\)
+- \(B = (0, 0)\)
+- \(C = (8, 0)\)
+
+Since \(D\) is the midpoint of \(\overline{AB}\):
+\[
+D = \left( \frac{0+0}{2}, \frac{6+0}{2} \right) = (0, 3)
+\]
+
+Since \(E\) is the midpoint of \(\overline{BC}\):
+\[
+E = \left( \frac{0+8}{2}, \frac{0+0}{2} \right) = (4, 0)
+\]
+
+Given \(F\) is the point on \(\overline{AC}\) such that \(F\) divides \(\overline

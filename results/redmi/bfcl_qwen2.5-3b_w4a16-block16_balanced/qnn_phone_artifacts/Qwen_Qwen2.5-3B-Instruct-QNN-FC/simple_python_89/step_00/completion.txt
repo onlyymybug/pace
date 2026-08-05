@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "db_fetch_records", "arguments": {"database_name": "StudentDB", "table_name": "Students", "conditions": {"department": "Science", "school": "Bluebird High School"}}}
+</tool_call><|im_end|>

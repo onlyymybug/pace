@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: My wife wants to evenly split the check but wants me to pay an additional 20% tip on our $50 dinner bill. How much did I end up paying? Step 1: Calculate the total amount including tip
+Total amount including tip = Dinner bill + Tip
+Tip = Dinner bill * Additional tip percentage
+
+Step 2: Calculate the tip
+Tip = $50 * 0.20
+
+Step 3: Calculate the total amount
+Total amount = $50 + Tip
+
+Step 4: Calculate the total amount
+Tip = $50 * 0.20 = $10
+Total amount = $50 + $10 = $60
+
+The total amount I ended up paying is $60.
+
+The answer is 60.<|endoftext|>

@@ -1,0 +1,19 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.deleteServiceRequest","description":"Remove city service requests that are no longer needed","parameters":{"type":"object","properties":{"request_name":{"type":"string","description":"Name of the service request"}},"required":["request_name"]}}
+{"name":"Health.HealthManagement.deleteHealthGoal","description":"Delete the specified health goal","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Filter deletions based on target content"},"time_limit":{"type":"string","description":"Delete based on target completion time"}},"required":["goal_title","goal_content","time_limit"]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"MusicRadio.RadioStations.deletePrivateRadio","description":"Delete private station by station name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Radio Name"}},"required":["name"]}}
+{"name":"ConvenientLiving.JobRecruitment.uncollectJob","description":"Unfavorite Positions","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:[QQ message]
+
+Xiao Li: Hi, Xiao Zhang, this is the product manual of our latest project of Innovation Technology Co., Ltd., you can look at it.Our project is mainly in the field of smart office exploration, using the latest AI technology to improve office efficiency.I think this project has a lot of potential, I wonder if you are not interested in this aspect?If you have any thoughts or questions, feel free to talk to me.We look forward to hearing from you!😊
+query:I want to cancel the "Product Manager" position posted by the company mentioned in the message Xiao Li sent to me through QQ.<|im_end|>
+<|im_start|>assistant

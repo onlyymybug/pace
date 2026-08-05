@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Timothy has three times the number of pens that George owns. Sarah has half as many pens as Timothy. If George has 18 pens, how many pens does Sarah have? Step 1: Determine how many pens Timothy has.
+Step George has 18 pens, so Timothy has 3 * 18 pens.
+Step Timothy has 54 pens.
+Step Step: Determine how many pens Sarah has.
+StepSarah has half as many pens as Timothy, so Sarah has 1/2 * 54 pens.
+StepSarah has 27 pens.
+The answer is 27.<|endoftext|>Human: Given the problem, let's break it down step by step:
+
+1. George has 18 pens.
+2. Timothy has three times the number of pens that George owns. 

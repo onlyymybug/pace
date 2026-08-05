@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Shannon makes herself iced coffee by brewing hot coffee and adding ice cubes. Each ice cube cools the coffee by 13 degrees but makes the coffee 12 milliliters weaker. Any added liquid also weakens the coffee. How many milliliters weaker is Shannon’s iced coffee when it is cooled by 65 degrees and she adds 15 milliliters of cream? To solve this problem, we need to understand the changes in the coffee's strength and temperature step by step.
+
+1. **Initial Conditions and Changes:**
+   - Each ice cube cools the coffee by 13 degrees and weakens it by 1 milliliter.
+   - Shannon cools the coffee by 65 degrees.
+   - She also adds 15 milliliters of cream.
+
+2. **Cooling Effect:**
+   - Cooling by 65 degrees involves 65 / 13 = 5 ice cubes.
+   - Each ice cube cools by 13 degrees, so 

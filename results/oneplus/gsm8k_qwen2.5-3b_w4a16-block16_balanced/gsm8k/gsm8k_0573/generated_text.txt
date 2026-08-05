@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ford owns a garden and he grows 40 roses every week. He supplies Roses to the local flower shops. The first flower shop orders 20 roses, the second flower shop orders 15 roses, and the third flower shop orders 30 roses per week. How many roses does Ford lack to supply all the flower shops every month? To solve this, first calculate the total number of roses Ford supplies to all shops per week, then multiply by the number of weeks in a month (assuming 4 weeks in a month). Finally, subtract the total weekly supply from the total monthly supply to find the shortfall.
+
+Total weekly supply: 20 + 15 + 30 = 65 roses
+
+Total monthly supply: 65 * 4 = 260 roses
+
+Total roses grown per month: 40 * 4 = 160 roses
+
+Roses lacking: 260 - 160 = 1

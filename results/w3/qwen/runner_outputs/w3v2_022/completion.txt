@@ -1,1 +1,0 @@
-The meeting should repeat every Monday, Wednesday, and Friday. Set the alarm for 00:00 every day. To arrange the meeting, I will use the "set_alarm" action. To arrange the meeting, I will use the "set_calendar_event" action. Here are the details: {"action": "set_calendar_event", "arguments": {"duration_minutes": 45, "online": true, "attendees": ["Alice", "Bob"], "

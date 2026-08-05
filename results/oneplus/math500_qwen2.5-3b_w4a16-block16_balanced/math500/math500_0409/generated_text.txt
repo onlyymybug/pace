@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A reflection takes $\begin{pmatrix} 5 \\ 0 \end{pmatrix}$ to $\begin{pmatrix} 4 \\ 3 \end{pmatrix}.$  Which vector does the reflection take $\begin{pmatrix} -2 \\ 3 \end{pmatrix}$ to? To solve the problem, we need to determine the reflection matrix that transforms \(\begin{pmatrix} 5 \\ 0 \end{pmatrix}\) to \(\begin{pmatrix} 4 \\ 3 \end{pmatrix}\). Let's denote the reflection matrix by \(R\). Then, we have:
+
+\[ R \begin{pmatrix} 5 \\ 0 \end{pmatrix} = \begin{pmatrix} 4 \\ 3 \end{pmatrix} \]
+
+We need to find the reflection matrix \(R\). A reflection matrix in 2D can be written as:
+
+\[ R = \begin{pmatrix} a & b \\ b & -a \end{pmatrix} \]
+
+Given the transformation, we can set up the following system of of equations:
+
+\[ \begin{pmatrix} a & b \\ b & -a \end{pmatrix} \begin{pmatrix} 5 \\ 0 \end{pmatrix} = \begin{pmatrix} 5a \\ 5b \end{pmatrix} = \begin{pmatrix} 4 \\ 3 \end{pmatrix} \]
+
+This gives us two equations:
+
+\[

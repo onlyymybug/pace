@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "criminal_history.check_felonies", "description": "This function checks if an individual has any prior felony convictions based on their full name and birth date. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"full_name": {"type": "string", "description": "The full name of the individual."}, "birth_date": {"type": "string", "description": "The birth date of the individual. Must be in MM-DD-YYYY format."}, "state": {"type": "string", "description": "The state to search the criminal record in. Default to 'None', which the function will search across all states."}}, "required": ["full_name", "birth_date"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find out if an individual John Doe with a birthday 01-01-1980 has any prior felony convictions in California.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "criminal_history.check_felonies", "arguments": {"full_name": "John Doe", "birth_date": "01-01-1980", "state": "California"}}
+</tool_call><|im_end|>

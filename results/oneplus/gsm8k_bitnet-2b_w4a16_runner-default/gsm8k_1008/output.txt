@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two friends are playing pick-up sticks. While playing, they noticed that there are 9 red sticks, and 5 more blue sticks than red. Also, the number of yellow sticks is 3 less than the blue sticks. How many sticks do they have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of sticks, we first need to determine the number of blue sticks and then the number of yellow sticks. Finally, we add all the sticks together.
+
+1. The number of red sticks is given as 9.
+2. The number of blue sticks is 5 more than the red sticks, so:
+   \[
+   \text{Number of blue sticks} = 9 + 5 = 14
+   \]
+3. The number of yellow sticks is 3 less than the blue sticks, so:
+   \[
+   \text{Number of yellow sticks} = 14 - 3

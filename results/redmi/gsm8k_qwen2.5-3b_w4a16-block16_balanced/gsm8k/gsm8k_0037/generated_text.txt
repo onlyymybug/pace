@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Terry eats 2 yogurts a day.  They are currently on sale at 4 yogurts for $5.00.  How much does he spend on yogurt over 30 days? Step 1: Calculate total yogurts needed
+Terry eats 2 yogurts a day, so in 30 days he eats 2*30 = 60 yogurts.
+
+Step 2: Calculate total cost
+Each pack of 4 yogurts costs $5.00. To find the cost for 60 yogurts, we first find how many packs Terry needs, which is 60/4 = 15 packs. Then we multiply the number of packs by the cost per pack: 15 * 5 = 75.
+
+The answer is 

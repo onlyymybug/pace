@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_velocity", "description": "Calculate the velocity for a certain distance travelled within a specific duration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"distance": {"type": "integer", "description": "The distance travelled by the object, typically in kilometers."}, "duration": {"type": "integer", "description": "The duration of the journey, typically in hours."}, "unit": {"type": "string", "description": "Optional parameter. The unit to return the velocity in. If not provided, the default is km/h."}}, "required": ["distance", "duration"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the velocity of a car that travels a distance of 50 kilometers for a duration of 2 hours?<|im_end|>
+<|im_start|>assistant

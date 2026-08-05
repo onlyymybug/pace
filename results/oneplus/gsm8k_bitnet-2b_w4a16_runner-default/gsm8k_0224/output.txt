@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A company spends $15000 on advertising for a year, and then spends a third of that amount on advertising for another year.  What's the total amount the company spent on advertising for the two years?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the amount spent on advertising for the second year, which is a third of the amount spent for the first year.
+
+1. The company spends $15000 on advertising for the first year.
+2. The company spends a third of $15000 on advertising for the second year.
+
+To find a third of $15000, we divide $15000 by 3:
+
+\[ \frac{15000}{3} = 5000 \]
+
+So, the company spends $5000 on advertising for the second year.
+
+3. To find the total amount spent on advertising for the two years, we

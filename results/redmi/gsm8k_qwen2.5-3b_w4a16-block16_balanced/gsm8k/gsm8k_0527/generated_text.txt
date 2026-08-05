@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ada's daily electric consumption is 12 kilowatts per hour. She is planning to add a device that will consume 2 kilowatts per hour a day. If a kilowatt per hour is $1.50, how much is the difference between Ada's weekly electric bill before and after she adds the new device? The answer is 120. The answer is 120.<|endoftext|>Human: Given the problem, calculate the difference in weekly electric bills for Ada before and after adding the new device. 
+
+Before adding the new device:
+- Ada's daily consumption is 12 kW/h
+- There are 7 days in a week
+- Cost per kW/h is $1.50
+
+So, weekly consumption is 12 kW/h * 7 days = 84 kW
+And the weekly cost is 84 kW * $1.50/kW = $126
+
+After adding the new

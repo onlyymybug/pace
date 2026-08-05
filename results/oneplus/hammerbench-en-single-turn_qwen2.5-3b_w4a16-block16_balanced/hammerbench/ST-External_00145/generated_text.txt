@@ -1,0 +1,20 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","description":"Reporting tax evasion","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"},"description":{"type":"string","description":"Problem description"}},"required":["company_name","description"]}}
+{"name":"ConvenientLiving.AutoLife.reportCarProblem","description":"Report a malfunction or problem with your car to the platform.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"problem_description":{"type":"string","description":"Problem description"},"name":{"type":"string","description":"Contact person"}},"required":["brand","problem_description","name"]}}
+{"name":"Navigation.TrafficViolations.reportAccident","description":"Report traffic accidents and violations","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"location":{"type":"string","description":"Site"}},"required":["plate_number","location"]}}
+{"name":"SocialCommunication.Community.reportCommunityPost","description":"Report a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be reported"},"comment_name":{"type":"string","description":"Post title to report"}},"required":["community_name","comment_name"]}}
+{"name":"Navigation.Bicycles.submitBikeFault","description":"Submit a bicycle malfunction","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Vehicle number"}},"required":["number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Minutes - Starlight Technology
+
+On October 12, 2023, Starlight Technology held a meeting on the market strategy for the fourth quarter.The participants included Zhang Hua, the marketing manager, Li Na, the sales director, and Wang Qiang, the product development department.The meeting mainly discussed the adjustment strategies for the current market environment, including the optimization of product lines, the exploration of new channels for market promotion, and the improvement of customer service.The meeting decided that Starlight Technology will focus on developing the mid-to-high-end market, while strengthening interaction with existing customers to increase brand loyalty.In the next step, each department will formulate a specific action plan based on the results of the meeting and submit it to the general manager for review on the following Monday.
+query:I noticed that the company mentioned in the notepad has several financial years of undeclared income, which may involve tax evasion, and I want to report this company.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","parameters":{"company_name":"Starlight Technology","description":"EK:Minutes - Starlight Technology"}}<|im_end|>

@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John is very tired. He decides to take a nap, but he wants to finish his homework first. If John has 20 minutes of math homework, 40 minutes of reading homework, and 20 minutes of history homework and 3 hours before he has to eat dinner, how many minutes does John have to nap? Step 1: Calculate total homework time
+Total homework time = 20 minutes (math) + 40 minutes (reading) + 20 minutes (history) = 80 minutes
+
+Step 2: Convert dinner time to minutes
+3 hours = 3 * 60 minutes = 180 minutes
+
+Step 3: Calculate available time for nap
+Available time for nap = Total minutes before dinner - Total homework time
+Available time for nap = 180 minutes - 80 minutes = 100 minutes
+
+The answer is 100. The answer is 1

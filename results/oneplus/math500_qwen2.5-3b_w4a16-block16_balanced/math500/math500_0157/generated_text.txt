@@ -1,0 +1,36 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Two runners, $A$ and $B,$ start at a point $O$ on a linear track, and start running in the same direction.  Runner $B$ runs three times as fast as runner $A.$  An observer stands at point $P$ so that $\overline{OP}$ is perpendicular to the track.  Find the maximum of $\angle APB,$ in degrees.
+
+[asy]
+unitsize(2 cm);
+
+pair A, B, O, P;
+
+A = (0.4,0);
+B = (1.2,0);
+O = (0,0);
+P = (0,1);
+
+draw((-0.5,0)--(2,0));
+draw(O--P);
+draw(P--A);
+draw(P--B);
+
+label("$A$", A, S);
+label("$B$", B, S);
+label("$O$", O, S);
+label("$P$", P, N);
+[/asy] To solve the problem, we need to determine the maximum angle \(\angle APB\) where \(A\) and \(B\) are runners starting from point \(O\) and running in the same direction, with \(B\) running three times as fast as \(A\). The observer \(P\) is at a point perpendicular to the track.
+
+Let's denote the speed of of of \(A\) as \(v\). Then the speed of of of \(B\) is \(3v\). Let \(t\) be the time in seconds after they start running. At time \(t\), the positions of of \(A\) and \(B\) are:
+- \(A\) at \((vt, 0)\)
+- \(B\) at \((3vt, 0)\)
+
+The observer \(P\) is at \((0, h)\) where \(h\) is the height of of \(P\) is above the track. Since \(P\) is perpendicular to the track, the vertical distance from \(P\) to the track is the same for both runners.
+
+The coordinates of of \(P\) relative to \(O\) are \((0, h)\).
+
+The distances \(AP\) and \(BP\) are:
+\[
+AP = \sqrt{(

@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $n \equiv 2 \pmod{7}$, then find the remainder when $(n + 2)(n + 4)(n + 6)$ is divided by 7. Given that \( n \equiv 2 \pmod{7} \), we need to find the remainder when \((n+2)(n+4)(n+6)\) is divided by 7.
+
+First, substitute \( n = 2 \) into the expression \((n+2)(n+4)(n+6)\):
+
+\[
+(n+2)(n+4)(n+6) = (2+2)(2+4)(2+6) = 4 \cdot 6 \cdot 8
+\]
+
+Next, we need to find the remainder of of when \(4 \

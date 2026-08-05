@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Russell orders his favorite bagels online.  Each pack of bagels costs $10.00 and has 9 bagels in the pack.  If he orders 4 packs of bagels, he will receive a 10% discount.  After ordering 4 bags, how much will each single bagel cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the cost of each single bagel after the discount, we first need to calculate the total cost of the 4 packs of bagels before the discount. Then, we apply the discount to find the total cost after the discount. Finally, we divide the total cost after the discount by the number of bagels to find the cost per bagel.
+
+1. Calculate the total cost before the discount:
+   \[
+   \text{Total cost before discount} = 4 \text{ packs} \times \$10.00 \text{ per pack} = \$40.00
+   \]
+
+2. Apply the 

@@ -1,0 +1,41 @@
+To solve for \( n \) in the given magic square, we need to ensure that the sum of of each row, column, and the two main diagonals are equal. Let's denote this common sum by \( S \).
+
+Given the magic square:
+
+\[
+\begin{array}{|c|c|c|}
+\hline
+n-3 & 3 & n+1 \\
+\hline
+n+2 & 2n-9 & 1 \\
+\hline
+2 & n & n-1 \\
+\hline
+\end{array}
+\]
+
+We will start by calculating the sum of of the first row:
+
+\[
+S = (n-3) + 3 + (n+1)
+\]
+
+Simplify the expression:
+
+\[
+S = n - 3 + 3 + n + 1 = 2n + 1
+\]
+
+Next, we calculate the sum of of the second row:
+
+\[
+S = (n+2) + (2n-9) + 1
+\]
+
+Simplify the expression:
+
+\[
+S = n + 2 + 2n - 9 + 1 = 3n - 6
+\]
+
+Since both sums must

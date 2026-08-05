@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Andy works in the pro shop of a tennis resort. He has 12 racquets that need restringing. 3 of them are to be strung with synthetic gut, 5 of them will be strung with polyester string, and 4 of them will be strung with a hybrid set (half synthetic gut, half polyester string). How long will it take Andy to string all of those racquets if it takes him an average of 15 minutes for him to string with synthetic gut, 22 minutes to string with polyester string, and 18 minutes for hybrid sets? To solve this problem, we need to calculate the total time required for each type of stringing and then sum them up.
+
+1. **Calculate the time for synthetic gut strings:**
+   - Andy has 3 racquets to be strung with synthetic gut.
+   - Each takes 15 minutes.
+   - Total time = 3 racquets * 15 minutes per racquet = 45 minutes.
+
+2. **Calculate the time for polyester strings:**
+   - Andy has 5 racquets to be strung with polyester string.
+   - Each takes 22 minutes.
+   - Total time = 5

@@ -1,0 +1,28 @@
+Given that \( n \equiv 2 \pmod{7} \), we need to find the remainder when \((n+2)(n+4)(n+6)\) is divided by 7.
+
+First, substitute \( n = 2 \) into the expression \((n+2)(n+4)(n+6)\):
+
+\[
+(n+2)(n+4)(n+6) = (2+2)(2+4)(2+6) = 4 \cdot 6 \cdot 8
+\]
+
+Next, we need to find the remainder of of when \(4 \cdot 6 \cdot 8\) is divided by 7. We can simplify this step by step.
+
+First, calculate \(4 \cdot 6 \mod 7\):
+
+\[
+4 \cdot 6 = 24
+\]
+
+Now, find the remainder when 24 is divided by 7:
+
+\[
+24 \div 7 = 3 \text{ remainder } 3 \quad \text{(since } 24 = 7 \cdot 3 + 3\text{)}
+\]
+
+Thus,
+
+\[
+24 \equiv 3 \pmod{7}
+\]
+

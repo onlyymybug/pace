@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James has 6 more candies than Robert. John has twice as many candies as Robert. If John has 54 candies, how many more candies does John have than James?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of candies Robert has as R. According to the problem, John has twice as many candies as Robert, so John has 2R candies. We are given that John has 54 candies, so we can write the equation 2R = 54.
+
+To find out how many candies Robert has, we divide both sides of the equation by 2:
+R = 54 / 2
+R = 27
+
+So, Robert has 27 candies. Since James has 6 more candies than Robert, James has:
+R + 6 = 27 + 6
+James has 33 candies.
+

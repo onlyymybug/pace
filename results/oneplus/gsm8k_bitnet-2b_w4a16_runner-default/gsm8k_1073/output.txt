@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maggie spent a quarter of her money, while Riza spent one-third of her money. They each had $60. How much money do the two of them have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Maggie's money as M and Riza's money as R. We know that M = R = $60.
+
+Maggie spent a quarter of her money, so she spent (1/4)M.
+Riza spent one-third of her money, so she spent (1/3)R.
+
+The total amount spent by both is (1/4)M + (1/3)R.
+
+Since M = R = $60, we can substitute these values into the equation:
+Total spent = (1/4)(60) + (1/3)(60).
+
+To find the total spent,

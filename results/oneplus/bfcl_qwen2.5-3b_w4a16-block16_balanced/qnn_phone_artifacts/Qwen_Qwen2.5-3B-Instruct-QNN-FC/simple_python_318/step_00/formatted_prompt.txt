@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_team_ranking", "description": "Retrieve the FIFA ranking of a specific soccer team for a certain year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team_name": {"type": "string", "description": "The name of the soccer team."}, "year": {"type": "integer", "description": "The year for which the ranking is to be retrieved."}, "gender": {"type": "string", "description": "The gender of the team. It can be either 'men' or 'women'. Default is 'men'."}}, "required": ["team_name", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the FIFA ranking of Germany's men soccer team for the year 2021?<|im_end|>
+<|im_start|>assistant

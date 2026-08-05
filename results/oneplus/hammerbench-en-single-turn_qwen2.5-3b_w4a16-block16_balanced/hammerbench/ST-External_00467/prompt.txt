@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"NewsMagazines.NewspapersMagazines.shareArticle","description":"Share posts to social media","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Choose Socials To Share Single Post"},"article":{"type":"string","description":"Articles"}},"required":["to","article"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, we are planning to visit The Palace Museum on the weekend, it has a long history and the ancient buildings are well preserved and well worth a visit. We can gather at the noon gate and enter The Palace Museum together to see the main attractions such as Taihe Hall, Zhonghe Hall and Hohe Hall. If you are interested in the history of The Palace Museum, we can find some information in advance to make it more interesting to visit. We look forward to exploring this royal palace with you!
+query:Share the place mentioned in Tom's text message to me on Weibo, with the text: "Looking back on the magnificence of history, I look forward to enjoying it with you."<|im_end|>
+<|im_start|>assistant

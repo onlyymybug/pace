@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nancy is returning her overdue books to the library. She owes $0.50 cents each on 8 books, plus a flat $2.00 fee for having at least one book that's over a week overdue. How much does she have to pay total? Step 1: Calculate the cost for the overdue books.
+Cost per book = 0.50 cents
+Number ofBooksOverdue = 8
+TotalCostOverdueBooks = Cost per book * NumberofBooksOverdue
+
+Step 2: Add the flat fee for having at least one book overdue.
+FlatFee = 2.00
+TotalCostOverdue = TotalCostOverdueBooks + FlatFee
+
+Step 3: Calculate the total amount Nancy has to pay.
+TotalCostOverdue
+TotalCostOverdue is the total cost Nancy has to pay for her overdue books. Let's calculate it.
+Step

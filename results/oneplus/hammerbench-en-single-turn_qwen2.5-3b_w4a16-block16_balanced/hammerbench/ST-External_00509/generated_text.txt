@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Photography.PhotoTaking.takePhotoDelay","description":"Take photos after a set period of time","parameters":{"type":"object","properties":{"delay":{"type":"integer","description":"Delay duration, in seconds"}},"required":["delay"]}}
+{"name":"SystemTools.SystemSettings.setSystemScreenTimeout","description":"Set the auto message screen time for your phone screen","parameters":{"type":"object","properties":{"timeout_duration":{"type":"integer","description":"Maximum duration of screen inactivity, in seconds"}},"required":["timeout_duration"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOrderDeliveryEstimate","description":"Estimated time to get deliveries based on orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"}},"required":["order_name"]}}
+{"name":"Finance.Insurance.getInsuranceRenewalPaymentDate","description":"Check policy renewal date","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"}},"required":["insurance_name"]}}
+{"name":"SocialCommunication.Calling.countPhoneCallDuration","description":"Count call duration over time","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Timeframe, call within the default day"}},"required":["time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS
+query:How long were our calls during the time period mentioned in the email?<|im_end|>
+<|im_start|>assistant
+{"name":"Finance.Insurance.getInsuranceRenewalPaymentDate","parameters":{"insurance_name":"calls"}}<|im_end|>

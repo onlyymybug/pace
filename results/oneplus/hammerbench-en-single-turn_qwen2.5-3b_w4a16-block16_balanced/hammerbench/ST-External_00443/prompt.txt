@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.BuyingRentingHomes.getRealEstateAgencyInfo","description":"Get contact info for a real estate agent","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotTourGuide","description":"Get information about guided tours of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Finance.Insurance.contactInsuranceAgent","description":"Get contact details for your insurance agent","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+{"name":"Finance.Funds.getFundManager","description":"Specify fund manager information based on manager name and fund code query","parameters":{"type":"object","properties":{"manager_name":{"type":"string","description":"Name of Fund Manager"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["manager_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Professor Li,
+
+Hello! My name is Zhang Hua of the Beijing Historical and Cultural Research Association, and we have made preliminary plans for the cultural research project of The Palace Museum that you mentioned last time.A project kick-off meeting is planned for October 15, 2023, at the Palace Museum, where a number of experts and scholars in the field of literature and history will be invited to participate.We would very much like to invite you as a keynote speaker to share with us your unique insights on the history and culture of the Palace.
+
+The meeting will be held at the Arrow Pavilion Plaza of the Palace Museum, and the specific time and agenda will be confirmed with you as soon as possible.If it is convenient for you, I would also like to arrange a time in advance for us to visit some of the open areas of The Palace Museum together so that we can better prepare the contents of the meeting.
+
+We look forward to hearing from you, and please don't hesitate to let us know if you have any questions or suggestions.
+
+Best regards,
+Zhang Hua
+Beijing Historical and Cultural Research Association
+query:Can you check the guide service information for the places mentioned in the email?<|im_end|>
+<|im_start|>assistant

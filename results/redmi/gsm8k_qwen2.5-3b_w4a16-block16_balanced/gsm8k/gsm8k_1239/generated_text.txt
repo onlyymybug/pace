@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bud makes homemade macaroni and cheese once a week.  The pasta costs $1.00 a box, and he spends $3.00 on cheddar cheese and twice that amount for the gruyere cheese.  How much money does Bud spend on making macaroni and cheese in one year? Step 1: Calculate the cost of of cheese per week
+Cost ofCheddar = $3.00
+CostCostGruyere = 2 * CostCostCheddar = 2 * 3 = $6.00
+
+Step 2: Calculate the total cost per week
+TotalCostPerWeek = CostCostCheddar + CostCostGruyere + CostPasta
+                = 3 + 6 + 1
+                = $10.00
+
+Step 3: Calculate the total cost per year
+TotalCostPerYear = TotalCostPerWeek * WeeksPerYear

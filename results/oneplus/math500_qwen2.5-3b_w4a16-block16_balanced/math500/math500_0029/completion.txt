@@ -1,0 +1,23 @@
+To solve the problem of of, we need to understand how a rotation in the complex plane corresponds to multiplication by a complex number. A rotation by an angle \(\theta\) counter-clockwise around the origin is represented by multiplication by \(e^{i\theta}\). For a \(90^\circ\) rotation, \(\theta = 90^\circ = \frac{\pi}{2}\), and \(e^{i\pi/2} = i\).
+
+Given the complex number \(7 + 2i\), we need to multiply it by \(i\) to find the result of of the \(90^\circ\) rotation.
+
+Let's perform the multiplication step-by-step:
+
+1. **Express the complex number and the rotation factor:**
+   \[
+   z = 7 + 2i
+   \]
+   \[
+   \text{Rotation factor} = i
+   \]
+
+2. **Multiply the complex number by \(i\):**
+   \[
+   (7 + 2i) \cdot i
+   \]
+
+3. **Distribute \(i\) through the terms:**
+   \[
+   (7 + 2i) \cdot i = 7i + 2i^2
+  

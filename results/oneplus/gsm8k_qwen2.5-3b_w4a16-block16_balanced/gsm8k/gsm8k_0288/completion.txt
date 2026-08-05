@@ -1,0 +1,13 @@
+Step 1: Calculate total stars in 3 rows of 8 stars
+3 rows * 8 stars/row = 24 stars
+
+Step 2: Calculate total stars in 2 rows of 6 stars
+2 rows * 6 stars/row = 12 stars
+
+Step 3: Calculate remaining stars for 5-star rows
+76 total stars - 24 stars - 12 stars = 42 stars
+
+Step 4: Calculate number of 5-star rows
+42 stars / 5 stars/row = 8.4 rows
+
+Step 5: Since we can

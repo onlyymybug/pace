@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two cars are driving on a highway.  The first car is traveling at an average speed of 60 miles per hour when the second car passes it at an average speed of 70 miles per hour.  If both cars continue on the highway at the same speed, how many miles will separate them after 2 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the relative speed at which the distance between the two cars is increasing. Since the second car is traveling faster than the first car, the relative speed is the difference in their speeds.
+
+Relative speed = Speed of second car - Speed of first car
+Relative speed = 70 mph - 60 mph
+Relative speed = 10 mph
+
+This means that the distance between the two cars is increasing by 10 miles per hour. To find out how far apart they will be after 2 hours, we multiply the relative speed by the time.
+
+Distance apart = Relative speed × Time
+Distance apart =

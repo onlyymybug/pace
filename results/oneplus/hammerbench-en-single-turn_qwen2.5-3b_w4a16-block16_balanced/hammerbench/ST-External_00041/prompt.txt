@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","description":"Add a note to your favorite address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address for note"},"remake":{"type":"string","description":"Comment Message Content"}},"required":["address","remake"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"OfficeSoftware.Documents.addDocumentComment","description":"Add a comment for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to add comment, required"},"comment_content":{"type":"string","description":"Comment (required)"}},"required":["document_name","comment_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+{"name":"MusicRadio.OnlineMusic.commentMusic","description":"Review music by song title and review content","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Song Name"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Ok, already waiting for you at Starbucks Zhongguancun store, remember to bring your umbrella, the weather forecast says it may rain today. I'm near the door, it's easier to find me!
+query:Add a note to the place mentioned in Xiao Li's WeChat, which is a frequent place to write.<|im_end|>
+<|im_start|>assistant

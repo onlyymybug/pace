@@ -1,0 +1,15 @@
+To find the minimum number of points Jane must score on her third test, we start by calculating the total points she has already scored on her first two tests.
+
+First test score: 15 points
+Second test score: 18 points
+
+Total points from first two tests:
+15 + 18 = 33 points
+
+She needs a total of of at least 42 points across all three tests. We need to find the minimum score \( x \) on the third test such that:
+
+\[ 33 + x \geq 42 \]
+
+Solving for \( x \):
+
+\[ x \

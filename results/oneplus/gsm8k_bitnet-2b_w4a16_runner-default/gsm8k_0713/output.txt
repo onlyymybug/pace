@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ginger and Amy both start with 100 pieces of Halloween candy. Ginger eats 4 pieces a day and Amy eats 3 pieces a day. How much more candy does Amy have after two weeks?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine how much candy each person eats over two weeks (14 days).
+
+Ginger eats 4 pieces per day, so over 14 days, she eats:
+4 pieces/day * 14 days = 56 pieces
+
+Amy eats 3 pieces per day, so over 14 days, she eats:
+3 pieces/day * 14 days = 42 pieces
+
+Now, we subtract the total pieces eaten by Amy from the total pieces Ginger had initially:
+100 pieces - 42 pieces = 58 pieces
+
+So, after two weeks, Amy has 58 pieces of candy left. The answer

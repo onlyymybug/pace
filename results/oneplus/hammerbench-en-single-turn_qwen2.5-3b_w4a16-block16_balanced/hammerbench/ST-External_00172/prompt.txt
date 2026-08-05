@@ -1,0 +1,32 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.setPursuringJob","description":"Set job preferences based on job title, salary level, work location, etc.","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"salary":{"type":"string","description":"Salary Level"},"location":{"type":"string","description":"Work Location"}},"required":["job_name","salary","location"]}}
+{"name":"Health.HealthManagement.setHealthGoal","description":"Set health goals based on target type, target weight, target time, etc.","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"goal_content":{"type":"string","description":"Detailed description of the goal, such as weight loss of 10kg, body fat rate reduction of 5%, etc."},"time_limit":{"type":"string","description":"Time to complete goal"}},"required":["goal_title","goal_content","time_limit"]}}
+{"name":"UtilityTools.Calendar.addCalendarschedule","description":"Create a new schedule","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule start time"},"end_date":{"type":"string","description":"Schedule end time; do not write the default start time 24 o'clock on the same day"},"schedule":{"type":"string","description":"Schedule Related Descriptions"}},"required":["date_name","start_date","end_date","schedule"]}}
+{"name":"UtilityTools.Search.addWebBookmark","description":"Add a page to a default collection or to a specified collection","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name"},"bookmark":{"type":"string","description":"Bookmark title, provided by target title by default"}},"required":["name","bookmark"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Notice of the Annual Meeting of the Guangzhou Branch
+
+Dear Colleagues,
+
+Hello everyone! In order to improve communication and cooperation between teams, we plan to hold our annual branch meeting in Guangzhou.The annual meeting will be held on Friday, December 15, 2023 at the Canton Fair and Exhibition Hall in Tianhe District, Guangzhou.The event will run from 9am to 6pm and we will be arranging a series of exciting shows and interactive sessions, as well as a hearty luncheon.
+
+We sincerely invite all employees of Guangzhou Branch to participate in this event.Please confirm your attendance through the event registration page on the company intranet before December 10.If you have any special needs or suggestions, please let us know in advance and we will do our best to make sure everyone enjoys the gathering.
+
+Looking forward to seeing you at the annual meeting, let's leave good memories in Guangzhou!
+
+Best regards,
+
+[Your name]  
+[Your Position]  
+[your contact details]  
+Event Planning Team of Guangzhou Branch
+query:I'm looking for a job as a data analyst with a monthly salary between 15 and 20k, preferably in the location mentioned in the email.<|im_end|>
+<|im_start|>assistant

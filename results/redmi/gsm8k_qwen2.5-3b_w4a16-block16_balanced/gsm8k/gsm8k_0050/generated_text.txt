@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Richard lives in an apartment building with 15 floors. Each floor contains 8 units, and 3/4 of the building is occupied. What's the total number of unoccupied units In the building? Step 1: Calculate total number of units in the building
+Total units = Number of floors * Units per floor
+Total units = 15 * 8
+
+Step 2: Calculate the occupied units
+Occupied units = Total units * Occupancy rate
+Occupied units = (15 * 8) * (3/4)
+
+Step 3: Calculate the unoccupied units
+Unoccupied units = Total units - Occupied units
+Unoccupied units = (15 * 8) - ((15 * 8) * (3/4))
+
+Step 4: Perform the calculations
+Total units =

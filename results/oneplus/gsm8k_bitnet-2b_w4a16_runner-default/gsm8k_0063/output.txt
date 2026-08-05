@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Marcy works for the same company for 40 years, she gets an annual pension of $50,000/year. Starting after 20 years, she becomes entitled to 5% of the value of the pension per year. If she quits after 30 years, what will her annual pension be?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Marcy's annual pension after 30 years, we need to calculate the pension for the first 20 years and the pension for the last 10 years separately, then add them together.
+
+For the first 20 years, Marcy gets a pension of $50,000 per year. So, for 20 years, her pension is:
+\[ 20 \times \$50,000 = \$1,000,000 \]
+
+For the last 10 years, she gets 5% of the pension per year. The pension per year for the last 10 years is:
+\[ 5\% \times \$

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 4 roses in the vase. There are 7 more dahlias than roses in the vase. How many flowers are there in the vase in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the number of daisies. Since there are 7 more daisies than roses, and there are 4 roses, we add 7 to the number of roses to find the number of daisies: 4 roses + 7 daisies = 11 daisies.
+
+Next, we add the number of roses and daisies together to find the total number of flowers in the vase: 4 roses + 11 daisies = 15 flowers.
+
+The answer is 15.<|eot_id|>

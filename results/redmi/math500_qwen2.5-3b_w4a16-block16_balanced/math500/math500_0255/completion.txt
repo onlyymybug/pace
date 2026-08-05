@@ -1,0 +1,5 @@
+To solve the problem of of, we need to determine the number of different ways Pat can select six cookies from a tray containing only chocolate chip, oatmeal, and peanut butter cookies, where there are at least six of each kind, and the cookies of the same type are not distinguishable.
+
+We can use the stars and bars method to solve this problem. Let \( x_1 \), \( x_2 \), and \( x_3 \) represent the number of chocolate chip, oatmeal, and peanut butter cookies selected, respectively. We need to find the number of non-negative integer solutions to the equation:
+
+\[ x_

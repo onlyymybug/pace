@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In how many ways can  5 students be selected from a group of 6 students? To solve the problem of of of selecting 5 students from a group of 6 students, we need to use the concept of combinations. The number of ways to choose \( k \) items from \( n \) items without regard to the order of of selection is given by the binomial coefficient \( \binom{n}{k} \), which is calculated as:
+
+\[
+\binom{n}{k} = \frac{n!

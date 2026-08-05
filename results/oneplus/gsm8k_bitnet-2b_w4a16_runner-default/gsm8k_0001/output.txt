@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet’s ducks lay 16 eggs per day. She eats three for breakfast every morning and bakes muffins for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Janet makes at the farmers' market, we first need to determine how many eggs she sells each day. 
+
+Janet's ducks lay 16 eggs per day. She eats 3 eggs for breakfast and bakes 4 eggs for muffins. So, she uses a total of 3 + 4 = 7 eggs for her personal consumption.
+
+The number of eggs left for sale is 16 - 7 = 9 eggs.
+
+She sells each egg for $2, so the total amount she makes at the farmers' market is 9 eggs * $2 per egg = $18.
+
+The

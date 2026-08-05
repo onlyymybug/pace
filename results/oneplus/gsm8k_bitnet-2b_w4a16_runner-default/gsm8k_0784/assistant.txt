@@ -1,0 +1,15 @@
+Let's denote the number of white fish Bob bought as \( w \).
+
+Initially, Bob had 7 fish in total:
+- 3 orange fish
+- 4 white fish
+
+After buying \( w \) white fish, he had:
+- \( 3 + w \) orange fish
+- \( 4 + w \) white fish
+
+According to the problem, after adding the new fish, he had twice as many orange fish as white fish:
+\[ 3 + w = 2(4 + w) \]
+
+Now, solve for \( w \):
+\[ 3 + w = 8 + 2w

@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Topher, the green giant, wears enormous shoes.  The length of one of his shoes is 10 inches longer than 9 times the length of one of Bobby’s shoes.  If the length of one of Topher’s shoes is 8-feet and 4-inches, how long, in inches, is one of Bobby’s shoes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to convert the length of Topher's shoe from feet and inches to just inches. Since there are 12 inches in a foot, we can convert 8 feet to inches by multiplying 8 by 12, which gives us 8 * 12 = 96 inches. Adding the remaining 4 inches, we get a total length of 96 + 4 = 100 inches for Topher's shoe.
+
+Let's denote the length of one of Bobby's shoes as x inches. According to the problem, the length of one of Topher's shoes is 

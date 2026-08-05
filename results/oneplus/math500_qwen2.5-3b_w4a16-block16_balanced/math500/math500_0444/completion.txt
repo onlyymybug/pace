@@ -1,0 +1,35 @@
+To solve the problem, we need to determine the integer value \( x \) in the arithmetic sequence \( 3^2, x, 3^4 \). Let's start by simplifying the terms in the sequence.
+
+First, calculate \( 3^2 \) and \( 3^4 \):
+\[
+3^2 = 9 \quad \text{and} \quad 3^4 = 81
+\]
+Thus, the sequence becomes \( 9, x, 81 \).
+
+In an arithmetic sequence, the difference between consecutive terms is constant. Let this common difference be \( d \).
+
+We can express \( x \) in terms of:
+\[
+x - 9 = d
+\]
+and
+\[
+81 - x = d
+\]
+
+Since both expressions equal \( d \), we set them equal to each other:
+\[
+x - 9 = 81 - x
+\]
+
+Now, solve for \( x \):
+\[
+x - 9 = 81 - x
+\]
+Add \( x \) to both sides:
+\[
+2x - 9 = 81
+\]
+Add 9 to both sides:
+\[
+2x = 9

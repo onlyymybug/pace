@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrders","description":"Search for item orders by keyword, and query all current status orders directly by default","parameters":{"type":"object","properties":{"goods_order":{"type":"string","description":"Product name keywords"}},"required":["goods_order"]}}
+{"name":"OnlineShopping.Mall.searchCommodityOrders","description":"Query all eligible orders by commodity name and other criteria","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"order_stage":{"type":"string","description":"Order status, e.g. Pending Payment, Pending Receipt, Completed, Cancelled, Refund/After Sales"},"evaluate_stage":{"type":"string","description":"Review status, e.g. reviewed, pending review"}},"required":["goods","order_stage","evaluate_stage"]}}
+{"name":"Education.OnlineClasses.viewCourseOrders","description":"View a list of my orders (including learning, completed, etc.)","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"time":{"type":"string","description":"Purchase time"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","time","teacher_name"]}}
+{"name":"Navigation.Bicycles.searchBikesOrders","description":"See a list of bike rides","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I saw a sneaker in the mall today, the brand is Adidas, the style is a classic white three-bar series, the size is 40, 41, 42, the price is 1299 yuan. After trying it on, it feels very comfortable, the cushioning effect of the sole is very good, and the breathability of the upper is also great. Consider buying it in the near future.
+query:What are the pending shipping orders for the items mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

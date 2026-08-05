@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lani baked 55 cookies. She ate 5 five cookies and placed the rest equally into five jars. How many cookies were in each jar?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many cookies were in each jar, we first subtract the cookies Lani ate from the total number of cookies:
+
+55 cookies - 5 cookies = 50 cookies
+
+Then, we divide the remaining cookies by the number of jars:
+
+50 cookies ÷ 5 jars = 10 cookies per jar
+
+The answer is 10 cookies per jar. In that final sentence, 10 must be a plain integer.<|eot_id|>

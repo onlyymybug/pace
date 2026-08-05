@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Three people invested $1200 in a joint savings account.  After Dylan's investment of 2/5 of the total amount, Frances invested 2/3 of the remaining amount.  Skyler's investment accounted for the rest. How much money was Skyler's investment?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the total amount of money as $T = 1200.
+
+Dylan's investment is $\frac{2}{5}$ of $T$, which is $\frac{2}{5} \times 1200 = 480$.
+
+After Dylan's investment, the remaining amount is $T - 480 = 1200 - 480 = 720$.
+
+Frances invested $\frac{2}{3}$ of the remaining amount, which is $\frac{2}{3} \times 720 = 480$.
+
+So, after both Dylan and Frances have invested, the total amount invested by them is $

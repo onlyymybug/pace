@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: While on vacation in Bali, Thea bought a hat from a craftsman worth $70. If she gave the craftsman four $20 bills, how much change did she get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much change Thea received, we first need to calculate the total amount she paid with the four $20 bills. 
+
+Total paid = 4 * $20 = $80
+
+The cost of the hat is $70. 
+
+Change = Total paid - Cost of the hat
+Change = $80 - $70
+Change = $10
+
+The answer is $10.<|eot_id|>

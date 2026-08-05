@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.applyForResidentPermit","description":"Provide a residence permit application service for the user","parameters":{"type":"object","properties":{"identity_card_number":{"type":"string","description":"User ID number, default user himself"},"address":{"type":"string","description":"Residential Address"}},"required":["identity_card_number","address"]}}
+{"name":"OnlineShopping.Mall.addCommodityToCart","description":"Add items to cart based on product name","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"UtilityTools.Reading.addReadingNote","description":"Add reading notes to the assigned text on the current reading page","parameters":{"type":"object","properties":{"book_location":{"type":"string","description":"Add a location for your notes"},"book_note":{"type":"string","description":"Note content"}},"required":["book_location","book_note"]}}
+{"name":"UtilityTools.Reading.addReadingBookShelf","description":"Add online and local books to your shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"},"path":{"type":"string","description":"Local Book Path"}},"required":["book_name","book_author","path"]}}
+{"name":"Navigation.MapNavigation.addRemakeToCommonAddress","description":"Add a note to your favorite address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address for note"},"remake":{"type":"string","description":"Comment Message Content"}},"required":["address","remake"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Join the project kickoff meeting tomorrow at 9am in the co-working space in Dreamtown. The meeting will discuss the development plan of the new product, the specific address is the second floor of Building 3, Dream Town Creative Center. Be sure to arrive on time and bring information about the project.
+query:I would like to apply for a residence permit for the place mentioned in the notepad, my ID number is 430522198807078899.<|im_end|>
+<|im_start|>assistant

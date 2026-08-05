@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Henry made two stops during his 60-mile bike trip. He first stopped after 20 miles. His second stop was 15 miles before the end of the trip. How many miles did he travel between his first and second stops?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many miles Henry traveled between his first and second stops, we need to subtract the distance of the first stop from the total trip distance and then subtract the distance of the second stop from that result.
+
+Total trip distance = 60 miles
+Distance of the first stop = 20 miles
+Distance of the second stop = 15 miles
+
+Distance between the first and second stops = Total trip distance - Distance of the first stop - Distance of the second stop
+Distance between the first and second stops = 60 miles - 20 miles - 15 miles
+Distance between the first and second stops = 25 miles
+

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_zodiac_compatibility", "description": "Retrieve the compatibility score between two Zodiac signs. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"sign1": {"type": "string", "description": "The first Zodiac sign."}, "sign2": {"type": "string", "description": "The second Zodiac sign."}, "scale": {"type": "string", "enum": ["percentage", "0-10 scale"], "description": "The scale on which compatibility should be shown. Default is 'percentage'."}}, "required": ["sign1", "sign2"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the compatibility score in percentage of Aries with Gemini.<|im_end|>
+<|im_start|>assistant

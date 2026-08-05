@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.HealthManagement.shareHealthPlan","description":"Share a health plan","parameters":{"type":"object","properties":{"goal_title":{"type":"string","description":"Target Headings"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["goal_title","media","name"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+{"name":"Navigation.TrafficViolations.viewDriverInfo","description":"View driver's license details","parameters":{"type":"object","properties":{"driver_license_number":{"type":"string","description":"Licence Number:"}},"required":["driver_license_number"]}}
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello Wang! I found the document number you mentioned earlier, it is E123987654. Please confirm that this number is correct and, if it is, I will continue to follow up with you. If this is incorrect, please let me know the correct ID number in a timely manner. Thanks,
+query:I would like to see the details of the driver's license mentioned in the message Xiao Li sent to me via QQ.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.DriverLicenseDetails.viewDriverLicenseDetails","parameters":{"driver_license_number":"E123987654"}}<|im_end|>

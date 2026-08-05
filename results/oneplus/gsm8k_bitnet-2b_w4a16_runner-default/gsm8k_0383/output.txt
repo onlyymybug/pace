@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Axel has 50 silver pesos and 80 gold pesos. He visits her friend Anna who has twice as many silver pesos as he has and 40 more gold pesos. What's the total number of pesos they have together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of pesos they have together, we first need to determine how many silver and gold pesos Anna has.
+
+Axel has:
+- Silver pesos: 50
+- Gold pesos: 80
+
+Anna has:
+- Silver pesos: twice as many as Axel, so 2 * 50 = 100
+- Gold pesos: 40 more than Axel, so 80 + 40 = 120
+
+Now, we add up all the pesos they have together:
+- Total silver pesos: 50 (Axel) + 100 (Anna) = 150
+- Total gold pesos: 80 (Ax

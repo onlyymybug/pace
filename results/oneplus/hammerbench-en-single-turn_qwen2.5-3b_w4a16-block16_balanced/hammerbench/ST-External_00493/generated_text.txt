@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.cancleMediumLikes","description":"Unlike assigned activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteCollectSecondhandSale","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Product Name"}},"required":["search_name"]}}
+{"name":"OnlineShopping.Mall.removeCollectCommodity","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"SocialCommunication.Community.unlikeCommunityPost","description":"Unlike a specific post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to unlike the post"},"post_name":{"type":"string","description":"Title of the post to unlike"}},"required":["community_name","post_name"]}}
+{"name":"OfficeSoftware.Email.uncollectMail","description":"Unfavorite the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to unfavorite"}},"required":["mail_title"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Yesterday at 3pm, we held a project progress meeting in the company conference room to discuss the next work schedule and goals. At the meeting, everyone expressed their affirmation of the phased results of the project, and also put forward some suggestions for improvement. Please check the minutes of the meeting and give your feedback before closing today.
+query:I want to remove the likes on the travel news shared by Li Si in the WeChat circle of friends. The news was sent at the time mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.SocialMedia.cancleMediumLikes","parameters":{"medium_name":"WeChat circle circle friends","correlation":"minutes of oftheprojectmeeting","publisher":"Li Si","publish_time":"Yesterday at 3pm"}}<|im_end|>

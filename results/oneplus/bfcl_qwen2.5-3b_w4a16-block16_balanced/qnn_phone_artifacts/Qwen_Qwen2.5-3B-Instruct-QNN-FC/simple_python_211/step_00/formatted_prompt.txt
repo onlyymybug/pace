@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "send_email", "description": "Send an email to the specified email address. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"to": {"type": "string", "description": "The email address to send to."}, "subject": {"type": "string", "description": "The subject of the email."}, "body": {"type": "string", "description": "The body content of the email."}, "cc": {"type": "string", "description": "The email address to carbon copy. Default is empty if not specified."}, "bcc": {"type": "string", "description": "The email address to blind carbon copy. Default is empty if not specified."}}, "required": ["to", "subject", "body"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Send an email to John Doe at john.doe@example.com with the subject 'Meeting' and body 'Let's meet at 10 AM tomorrow'.<|im_end|>
+<|im_start|>assistant

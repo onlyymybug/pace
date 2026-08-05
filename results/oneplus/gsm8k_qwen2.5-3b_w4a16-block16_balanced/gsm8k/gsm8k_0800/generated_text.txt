@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A loaf of bread at the bakery costs $2. Bagels cost $1 each. How much more do 3 loaves of bread cost than 2 bagels? Step 1: Calculate cost of of 3 loaves of bread
+Cost of3Loaves = 3 * $2
+
+Step 2: Calculate cost of of 2 bagels
+CostCost2Bagels = 2 * $1
+
+Step 3: Find the difference
+Difference = CostCost3Loaves - CostCost2Bagels
+
+Step 4: Calculate
+CostCost3Loaves = 3 * 2 = 6
+CostCost2Bagels = 2 * 1 = 2
+Difference = 6 - 2 = 4
+
+The answer is 4.<|endoftext|>

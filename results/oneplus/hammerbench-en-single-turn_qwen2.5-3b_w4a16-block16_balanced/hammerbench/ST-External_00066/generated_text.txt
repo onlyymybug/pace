@@ -1,0 +1,20 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Navigation.TaxiCarRental.issueTaxiInvoice","description":"Invoicing taxi rides","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Okay, I understand the requirements.
+
+Tomorrow we will go to the Beijing International Convention Center to participate in that environmental protection forum. It is located at No. 8, Beichen East Road, Chaoyang District, Beijing. Remember to arrive before 9 am.If we have time, we can advance a little, and the exhibition area there is also very interesting, and a lot of high-tech eco-friendly products were added last year.After we meet, we can sign in first, and then we can go and have a look together.We look forward to joining you!
+query:I would like to issue a taxi trip invoice from the hotel to the place mentioned in my WeChat sent to Xiao Li on March 1.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.issueTaxiInvoice","parameters":{"time":"2023-03-01","destination":"Beijing International Convention Center"}}<|im_end|>

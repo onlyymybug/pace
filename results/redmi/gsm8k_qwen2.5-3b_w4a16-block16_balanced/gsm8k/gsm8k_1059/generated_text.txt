@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Leo collects stickers. Two years ago, he had 100 stickers in his collection. Last year, Leo collected 50 stickers. This year, he collected twice the number of stickers as the previous year. How many stickers does Leo have in his collection? Step  Calculation:
+Two years ago, Leo had 100 stickers.
+Last year, he collected 50 stickers, so before collecting those, he had 100 - 50 stickers.
+This year, he collected twice the number of as the previous year, so he collected 2 * (100 - 50) stickers.
+
+Total stickers Leo has now = (100 - 50) + 50 + 2 * (100 - 50)
+
+Calculation:
+Total stickers Leo has now = 50 + 50 + 2 * 5

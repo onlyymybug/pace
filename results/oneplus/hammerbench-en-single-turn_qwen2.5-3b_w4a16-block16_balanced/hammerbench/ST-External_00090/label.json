@@ -1,0 +1,12 @@
+{
+  "name": "Navigation.TrainTickets.bookTrainTicket",
+  "arguments": {
+    "departure_station": "Beijing West Railway Station",
+    "destination_station": "Hangzhou East",
+    "passenger_id": "234567890123456789",
+    "passenger_name": "Li Si",
+    "ride_date": "October 5th",
+    "seat_type": "Second class",
+    "train_type": "electric train"
+  }
+}

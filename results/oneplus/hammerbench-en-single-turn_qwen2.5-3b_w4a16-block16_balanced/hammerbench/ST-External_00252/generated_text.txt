@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.appealViolation","description":"Appealing a Designated Violation Record","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"time":{"type":"string","description":"Billing Time"},"appeal_reason":{"type":"string","description":"Reasons for appealing"}},"required":["plate_number","time","appeal_reason"]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"MusicRadio.Karaoke.getAccompaniments","description":"Get a list of song accompaniments for a given song title","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"singer_name":{"type":"string","description":"Singer name"}},"required":["song_name","singer_name"]}}
+{"name":"Navigation.TaxiCarRental.issueTaxiInvoice","description":"Invoicing taxi rides","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"Navigation.TaxiCarRental.reportCarRentalFault","description":"Escalate vehicle issue based on order","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Booking Order ID"},"content":{"type":"string","description":"Questions"}},"required":["order_id","content"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tonight at 8 o'clock, let's go to the new Italian restaurant over there for dinner, I have already reserved a seat. Dress casually, don't be too formal. Looking forward to a great evening with you!
+query:Please arrange an urgent financial audit meeting for me, the meeting ID is 404, the participants include the head of the finance department and the auditor, the time is the time mentioned in the text message. Thank you!<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","parameters":{"meeting_id":"404","title":"Urgent Financial Audit Meeting","time":"Time mentioned in the text message","participant_list":"head.of.department;auditor"}}<|im_end|>

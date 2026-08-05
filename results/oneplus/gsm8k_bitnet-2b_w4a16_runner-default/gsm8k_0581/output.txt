@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maggie's oven is malfunctioning. When she sets it to 450 the actual temperature is 468. If it's off by the same percentage for any recipe, what temperature should she set it at if her recipe calls for 520 degrees?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the correct temperature, we first need to determine what percentage difference there is between the set temperature and the actual temperature. Then, we apply this percentage difference to the actual temperature to find the correct temperature for the recipe.
+
+1. Calculate the percentage difference:
+   \[
+   \text{Percentage difference} = \left( \frac{\text{Actual temperature} - \text{Set temperature}}{\text{Actual temperature}} \right) \times 100
+   \]
+   Substituting the given values:
+   \[
+   \text{Percentage difference} = \left( \frac{468 - 450}{

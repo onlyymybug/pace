@@ -1,0 +1,31 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A square and a regular heptagon  are coplanar and share a common side $\overline{AD}$, as shown. What is the degree measure of angle $BAC$?  Express your answer as a common fraction.
+
+[asy]
+for(int i=0; i <=7; ++i) {
+draw(dir(360*i/7+90)--dir(360*(i+1)/7+90));
+}
+pair A = dir(360*3/7+90);
+pair F = dir(360*4/7+90);
+pair C = A+dir(90)*(F-A);
+pair D = C+F-A;
+pair B = dir(360*2/7+90);
+
+draw(A--C--D--F);
+
+label("$A$",A,S);
+label("$B$",B,W);
+label("$C$",C,SE);
+label("$D$",F,S);
+
+[/asy] To solve for the measure of of angle \( \angle BAC \), we need to analyze the geometric properties of of the square and the regular heptagon (12-sided polygon).
+
+1. **Identify Key Angles in the Square:**
+   - In a square, each internal angle is \(90^\circ\).
+   - The diagonals of of a square intersect at \(45^\circ\) angles.
+
+2. **Identify Key Angles in the Regular Heptagon:**
+   - Each internal angle of of of a regular heptagon is calculated as:
+     \[
+     \text{Internal

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "concert.get_details", "description": "Fetch the details for a particular concert based on the artist and location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"artist": {"type": "string", "description": "Name of the artist/band who's performing."}, "location": {"type": "string", "description": "City where the concert is taking place."}, "date": {"type": "string", "description": "Date of the concert in 'mm-yyyy' format. Default is the current month if not specified."}}, "required": ["artist", "location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get concert details for the artist Beyonce performing in San Diego next month (April 2022).<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "concert.get_details", "arguments": {"artist": "Beyonce", "location": "San Diego", "date": "04-2022"}}
+</tool_call><|im_end|>

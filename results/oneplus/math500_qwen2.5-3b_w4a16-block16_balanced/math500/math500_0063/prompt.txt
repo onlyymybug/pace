@@ -1,0 +1,6 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the smallest positive real number $C$ for which
+\[\left\| \begin{pmatrix} 2 & 3 \\ 0 & -2 \end{pmatrix} \bold{v} \right\| \le C \|\bold{v}\|\]for all two-dimensional vectors $\bold{v}.$
+
+Note that for a two-dimensional vector $\mathbf{a},$ $\|\mathbf{a}\|$ is the magnitude of $\mathbf{a}.$

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "lawsuit_info", "description": "Retrieves details of a lawsuit given a case number Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"case_number": {"type": "string", "description": "The unique identifier of the lawsuit case"}, "year": {"type": "integer", "description": "The year in which the lawsuit case was initiated. Default is 2023 if not specified.", "optional": true, "default": 2023}, "location": {"type": "string", "description": "The location or court jurisdiction where the case was filed. Default is 'all'.", "optional": true}}, "required": ["case_number"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Retrieve all the lawsuit details for case number XYZ123.<|im_end|>
+<|im_start|>assistant

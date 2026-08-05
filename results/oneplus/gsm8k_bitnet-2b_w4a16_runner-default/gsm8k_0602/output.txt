@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Steve loves playing video games.  His parents get him a console along with 5 games for his birthday.  He saves up enough money to buy 1 game per month for a year, and then the following year he starts buying 2 games a month.  For the third year he buys 4 games a month as he has a new part-time job that makes him more money.  He also gets 5 games for Christmas every year.  How many games does Steve have after 3 years?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down year by year:
+
+1. **First Year:**
+   - Steve gets 5 games for his birthday.
+   - He buys 1 game per month for 12 months.
+   - Total games bought in the first year: \(1 \times 12 = 12\).
+   - Total games after the first year: \(5 + 12 = 17\).
+
+2. **Second Year:**
+   - Steve buys 2 games per month for 12 months.
+   - Total games bought in the second year: \(2 \times 12 = 24\

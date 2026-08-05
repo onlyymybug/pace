@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_resonant_frequency", "description": "Calculate the resonant frequency of an LC (inductor-capacitor) circuit. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"inductance": {"type": "float", "description": "The inductance (L) in henries (H)."}, "capacitance": {"type": "float", "description": "The capacitance (C) in farads (F)."}, "round_off": {"type": "integer", "description": "Rounding off the result to a certain decimal places, default is 2."}}, "required": ["inductance", "capacitance"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the resonant frequency of an LC circuit given capacitance of 100µF and inductance of 50mH.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adam really wants to ride the biggest roller coaster at the park. You have to be 4 feet tall to ride it. Adam’s height is 40 inches and he grows 2 inches a year. How many years until he is tall enough to ride it?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many years it will take for Adam to grow to 4 feet, we first need to convert Adam's current height to feet and then determine how much more he needs to grow.
+
+Adam's current height is 40 inches. Since there are 12 inches in a foot, we convert his height to feet:
+\[ \text{Current height in feet} = \frac{40 \text{ inches}}{12 \text{ inches/foot}} = \frac{40}{12} = \frac{10}{3} \text{ feet} \]
+
+Adam needs to grow from \(\frac{10

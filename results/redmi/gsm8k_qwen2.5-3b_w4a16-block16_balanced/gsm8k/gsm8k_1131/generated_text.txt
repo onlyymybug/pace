@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nik has 200 crayons. He wants to separate them into groups of 8 and put them into boxes.  Each box weighs 8 ounces. Each crayon weighs 1 ounce. If he puts all of his crayons into boxes, what is the total weight, in pounds, of the crayons and the boxes, when there are 16 ounces to a pound? To solve this problem, we need to determine the total weight of of the crayons and the boxes.
+
+1. Nik has 200 crayons and wants to separate them into groups of 8. 
+   - Number of groups = Total crayons / Crayons per group = 200 / 8 = 25 groups
+
+2. Each group of 8 crayons is placed into a box.
+   - Number of boxes = Number of groups = 25 boxes
+
+3. Each box weighs 8 ounces.
+   - Total weight of boxes = Number of boxes * Weight per box = 2

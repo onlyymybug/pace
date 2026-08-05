@@ -1,0 +1,5 @@
+To solve the problem, we need to find the number of students \( n \) such that \( 30 \leq n \leq 50 \) and \( n \) is not divisible by any number between 2 and \( n-1 \). Additionally, if we include Betty and Wilma, the total number of people, \( n+2 \), should also not be divisible by any number between 2 and \( n \).
+
+First, let's list the numbers between 30 and 50 and check their divisibility conditions:
+
+1. **Check \( n = 33 \):

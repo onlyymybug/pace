@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.Mall.removeCollectCommodity","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"Travel.ItineraryServices.deleteTravelItinerary","description":"Delete travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteCollectSecondhandSale","description":"Remove the specified item from the wishlist (empty by default)","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Product Name"}},"required":["search_name"]}}
+{"name":"UtilityTools.Search.deleteWebBookmark","description":"Delete bookmarks specified in favorites; delete bookmarks specified in favorites; delete all bookmarks in favorites","parameters":{"type":"object","properties":{"bookmark":{"type":"string","description":"Bookmark title, defaults to all bookmarks from the current collection"}},"required":["bookmark"]}}
+{"name":"UtilityTools.Weather.removeCity","description":"Remove selected cities from the weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet tomorrow morning at 9am in the East End of New York's Central Park to remember to bring sunscreen and water, and we plan to do outdoor activities in the park. Visit the Museum of Modern Art in New York at 2pm and dine at an Italian restaurant near Times Square at 6pm. I hope that everyone will not be late, especially Xiao Wang, remember to leave in advance to avoid traffic jams.
+query:Can you help me remove the locations mentioned in the notepad from the list of weather concerns?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.removeCity","parameters":{"city":"East End"}}<|im_end|>

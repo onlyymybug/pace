@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ram uses a lot of pens. He discovered that he can save money by mixing the ink from five empty pens to make one full pen. If he buys 25 pens and then uses them to make new pens when the ink runs low, how many total pens does he get to have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to understand the concept of a "savings ratio" and how it applies to the situation. If Ram can make one full pen from five empty pens, then the savings ratio is 5:1. This means that for every five pens he buys, he can make one full pen.
+
+Let's denote the number of full pens Ram can make from the 25 pens he buys as \( x \). According to the savings ratio, for every 5 pens he buys, he gets 1 full pen. Therefore, we can set up the following proportion:
+
+\[ \frac{5}{1} =

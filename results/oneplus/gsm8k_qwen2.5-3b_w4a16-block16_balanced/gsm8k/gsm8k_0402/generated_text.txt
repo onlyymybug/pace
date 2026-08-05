@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A builder works for 4 weeks every month and for 6 days every week. If he gets paid $50 every day, how much does he earn if he works for a year? Step 1: Calculate total work days in a year
+- Weeks in a year: 52
+- Weeks worked per month: 4
+- Total work weeks in a year: 52 * 4
+
+Step - Calculate total work days in a year
+- Days per week: 6
+- Total work days in a year: (52 * 4) * 6
+
+Step- Calculate total earnings
+- Earnings per day: $50
+- Total earnings: (52 * 4 * 6) * 50
+
+Step: Calculate the total earnings
+- Total

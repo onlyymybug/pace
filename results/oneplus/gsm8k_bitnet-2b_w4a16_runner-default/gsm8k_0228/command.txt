@@ -1,0 +1,8 @@
+adb -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/single_llama || exit 1
+export LD_LIBRARY_PATH="$PWD"
+export LD_PRELOAD="$PWD/libc++_shared.so"
+export ADSP_LIBRARY_PATH="$PWD${ADSP_LIBRARY_PATH:+;$ADSP_LIBRARY_PATH}"
+unset QNN_OP_PACKAGE_PATHS
+./qnn_llama_runner --model_path hybrid_llama_qnn_1024.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Chad ordered a build-your-own burrito for lunch.  The base burrito is $6.50.  He adds extra meat for $2.00, extra cheese for $1.00, avocado for $1.00 and 2 sauces for $0.25 each.  He decides to upgrade his meal for an extra $3.00 which will add chips and a drink.  He has a gift card for $5.00 that he uses at check out.  How much does he still owe?'"'"' --system_prompt '"'"''"'"' --seq_len 314 --eval_mode 1 --kv_updater ShiftPointer --temperature 0 --logits_scale 0.0012398984981700778 --logits_offset 32310 --num_iters 1 --output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0228_output.txt --performance_output_path /data/local/tmp/lyy/executorch/single_llama/outputs/gsm8k_hybrid_1024/bitnet_gsm8k/gsm8k_0228_inference_speed.txt'

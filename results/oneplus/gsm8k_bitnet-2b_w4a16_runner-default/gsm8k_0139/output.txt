@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many questions Mark left incomplete, we first need to determine how long he spent on each test and how many questions he could complete in that time.
+
+For the first test:
+- Time spent: 8 hours
+- Questions per hour: 5 questions/hour
+- Total questions for the first test: 75 questions
+- Questions completed in the first test: 8 hours * 5 questions/hour = 40 questions
+
+For the second test:
+- Time spent: 6 hours
+- Questions per hour: 5 questions/hour
+- Total questions for the second test: 100 questions
+-

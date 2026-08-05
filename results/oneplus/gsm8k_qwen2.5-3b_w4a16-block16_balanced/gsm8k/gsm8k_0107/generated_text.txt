@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John has 3 boxes.  Each box is 5 inches by 6 inches by 4 inches.  The walls are 1 inch thick.  What is the total inner volume of all 3 boxes? To solve this, we first calculate the inner volume of of one box, then multiply by three.
+
+1. Calculate the outer dimensions of of one box: 5+1+1 = 7 inches long, 6+1+1 = 8 inches wide, 4+1+1 = 6 inches high (adding 1 inch twice for the thickness of of walls).
+
+2. Calculate the outer volume of of one box: 7 * 8 * 6 = 336 cubic inches.
+
+3. Calculate the inner dimensions of of one box: 5-2 = 3 inches long, 

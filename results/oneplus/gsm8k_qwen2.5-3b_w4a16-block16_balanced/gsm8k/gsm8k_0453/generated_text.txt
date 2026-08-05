@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A car is on a road trip and drives 60 mph for 2 hours, and then 30 mph for 1 hour. What is the car's average speed in mph during this trip? To find the average speed, we need to calculate the total distance traveled and divide it by the total time taken.
+
+First, calculate the distance for each segment of the trip:
+- For the first segment: 60 mph * 2 hours = 120 miles
+- For the second segment: 30 mph * 1 hour = 30 miles
+
+Total distance = 120 miles + 30 miles = 150 miles
+
+Total time = 2 hours + 1 hour = 3 hours
+
+Now, calculate the average speed:
+Average speed = Total distance / Total time
+Average

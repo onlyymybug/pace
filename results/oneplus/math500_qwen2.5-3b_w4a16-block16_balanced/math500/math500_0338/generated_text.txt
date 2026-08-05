@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The product of three consecutive integers is 120. That product divided by the mean of the three integers is 24. What is the largest of the three consecutive integers? To solve the problem, we need to find three consecutive integers whose product is 120 and then verify that the quotient of of the product by their mean is 24. Let's denote the three consecutive integers as \( n-1 \), \( n \), and \( n+1 \).
+
+First, we know the product of of these three integers is 120:
+\[
+(n-1) \cdot n \cdot (n+1) = 120
+\]
+
+Next, we need to find the mean of of these three integers. The mean is given by:
+\[
+\text{Mean} = \frac{(n-1) + n + (n+1)}{3} = \frac{3n}{3} = n
+\]
+
+According to the problem, the product divided by the mean is 24:
+\[
+\frac{(n-1) \cdot n \cdot (n+1)}{n} = 24
+\]
+
+Simplifying the left-hand side:
+\[
+\frac{(n-1) \cdot n \cdot (n+1)}{n} = (n-1)(n+1) = n^2 - 1

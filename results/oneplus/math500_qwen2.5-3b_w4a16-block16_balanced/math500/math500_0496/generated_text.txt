@@ -1,0 +1,20 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the domain of the function $f(x) = \frac{2-x}{\log(2-\log(x-2))}$, where $\log$ is the base $10$ logarithm function? Express your answer in interval notation. To determine the domain of of of the function \( f(x) = \frac{2-x}{\log(2-\log(x-2))} \), we need to identify the values of of of \( x \) for which the function is defined. This involves ensuring that the denominator is not zero and that all logarithmic expressions are defined.
+
+1. **Denominator Condition:**
+   The denominator of \( \log(2 - \log(x-2)) \) must not be zero. Therefore, we need:
+   \[
+   2 - \log(x-2) \neq 0
+   \]
+   Solving for \( \log(x-2) \):
+   \[
+   2 - \log(x-2) \neq 0 \implies \log(x-2) \neq 2
+   \]
+   Converting this logarithmic equation to its exponential form:
+   \[
+   x - 2 \neq 10^2 \implies x - 2 \neq 100 \implies x \neq 102
+   \]
+
+2. **Logarithm Conditions:**
+   The arguments of of the logarithms must be positive:

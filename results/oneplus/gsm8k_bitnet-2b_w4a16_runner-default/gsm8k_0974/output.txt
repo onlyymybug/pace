@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: India has 4 more than half the number of states in the USA. What's the total number of states in both countries together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's denote the number of states in the USA as \( x \). According to the problem, India has 4 more than half the number of states in the USA. This can be expressed mathematically as:
+
+\[ \text{Number of states in India} = \frac{x}{2} + 4 \]
+
+Since the total number of states in both countries together is the sum of the states in the USA and India, we can write:
+
+\[ \text{Total number of states} = x + \left(\frac{x}{2} + 4\right) \]
+
+Simplifying

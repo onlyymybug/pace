@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mike's teacher, leaves as homework the reading of a 200-page book. The assignment is to be completed within 30 days. Mike plans to read 10 pages a day. How many days before the deadline will Mike finish his reading?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many days it will take Mike to read the entire 200-page book at a rate of 10 pages per day. We can set up the equation as follows:
+
+\[ \text{Number of days} = \frac{\text{Total pages}}{\text{Pages per day}} \]
+
+Plugging in the given values:
+
+\[ \text{Number of days} = \frac{200}{10} \]
+
+\[ \text{Number of days} = 20 \]
+
+So, Mike will finish his reading in 20 days. Since the assignment is due in 30

@@ -1,0 +1,26 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotCheckInLocations","description":"Get popular punch card (influencer) locations in scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotLiveFeed","description":"Get real-time dynamic information on designated scenic spots, including real-time visitor numbers, weather conditions, and more","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.searchScenicSpotByLocation","description":"Search nearby attractions based on user-provided location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location"}},"required":["location"]}}
+{"name":"OnlineShopping.ExpressDelivery.complaintExpress","description":"Make a complaint about a courier issue","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"complaint_content":{"type":"string","description":"Complaint Contents"}},"required":["express_id","signing_date","complaint_content"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotEntertainment","description":"Get information about entertainment in designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: The long-awaited trip to Disneyland
+
+Dear Amy,
+
+Hello! Finally, our long-planned trip to Disneyland.I checked, Shanghai Disneyland not only has all kinds of wonderful rides, but also many delicious restaurants and exquisite souvenir shops.We can take on the Thundering Mountain Rafting on Adventure Island for a thrilling aquatic adventure, or visit the Garden of Wonders for fun with Disney friends.I also heard that there is also a spectacular fireworks display at night, which must not be missed.Our accommodation has been booked at Shanghai Disneyland Hotel so that you can enjoy the park more conveniently.
+
+Looking forward to spending time with you at Disneyland!
+
+Best regards,
+[sender name]
+query:How many tourists are there in the scenic spots mentioned in the email? What's the weather like?<|im_end|>
+<|im_start|>assistant

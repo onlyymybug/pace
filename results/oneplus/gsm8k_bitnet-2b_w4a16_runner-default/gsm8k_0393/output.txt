@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tim decides to cancel his cable subscription and get streaming services.  He gets Netflix for $10 a month.  Hulu and Disney Plus normally cost $10 a month each but he saves 20% for bundling.  How much money does he save by cancelling his $60 cable package?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total cost of the streaming services without the discount and then compare it to the cost of the cable package.
+
+1. Cost of Netflix: $10 per month
+2. Cost of Hulu: $10 per month
+3. Cost of Disney Plus: $10 per month
+4. Total cost without discount: $10 + $10 + $10 = $30 per month
+
+5. Discount for bundling Hulu and Disney Plus: 20%
+6. Discount amount: 20% of $30 = 0.20 * $30 = $6
+7. Total cost

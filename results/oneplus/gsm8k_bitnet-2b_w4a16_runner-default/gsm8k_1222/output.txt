@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Aiden is making his famous steakhouse-seasoned meatballs for a neighborhood cookout. He adds two tablespoons of his secret steakhouse seasoning for every pound of ground beef he uses. He gets sixteen meatballs from each pound of meat. If he wants to make 80 meatballs for the cookout, how much of his secret seasoning will he need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much seasoning Aiden will need, we first need to determine how many pounds of ground beef he will use to make 80 meatballs. Since he gets 16 meatballs from each pound of meat, we divide the total number of meatballs by the number of meatballs per pound:
+
+80 meatballs ÷ 16 meatballs per pound = 5 pounds of ground beef.
+
+Next, we need to calculate how much seasoning he will need for 5 pounds of ground beef. The problem states that he adds two tablespoons of seasoning for every pound of ground beef. So, we multiply the number of pounds by

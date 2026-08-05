@@ -1,0 +1,42 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.JobRecruitment.collectJob","description":"Favorite posts of interest","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"UtilityTools.Memo.setPrivateNotes","description":"Set a memo as private","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Memo Title"},"category":{"type":"string","description":"Classify"},"is_private":{"type":"boolean","description":"true is private"}},"required":["title","category","is_private"]}}
+{"name":"Navigation.PublicTransit.shareBusRoute","description":"Share designated bus routes with others","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"Destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."},"recipient":{"type":"string","description":"recipient"},"medium":{"type":"string","description":"Medium"}},"required":["line","departure","destination","preferred_line","recipient","medium"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Invitation for Project Cooperation with Innovation Technology Co., Ltd.
+
+Dear Manager Wang,
+
+Hello!
+
+I am Li Hua from Innovation Technology Co., Ltd. Our company focuses on the research and development and marketing of high-tech products, especially in the field of artificial intelligence and big data analysis. We have deep technical accumulation and successful cases.Recently, we have noticed that your company has made significant progress in the development of new energy materials, which is highly in line with our company's development direction.Therefore, on behalf of Innovation Technology Co., Ltd., I sincerely invite your company to cooperate and hope to jointly develop intelligent material solutions to promote the further development of the business of both parties.
+
+We believe that through the strong combination of technology and resources from both sides, we will be able to create a new world in the field of new energy.To be more specific about the details of the partnership, we suggest scheduling a face-to-face meeting over the next week so that team members from both sides can have an in-depth conversation.
+
+We look forward to your response and hope to establish a long-term and stable relationship with your company in the near future.
+
+Sincerely,
+
+Salute!
+
+Li Hua  
+Innovation Technology Co., Ltd.  
+Marketing Manager  
+Phone: 010-12345678  
+Email: lihua@chuangxin-tech.com  
+
+[Innovation Technology Co., Ltd.]  
+[No.123, Science Park, Chaoyang District, Beijing]  
+[Official website: www.chuangxin-tech.com]
+query:I would like to save the product manager position of the company mentioned in the email, is it okay?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.JobRecruitment.collectJob","parameters":{"job_name":"Product Manager","company_name":"Innovation Technology Co., Ltd."}}<|im_end|>

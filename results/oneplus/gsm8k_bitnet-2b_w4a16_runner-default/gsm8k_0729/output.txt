@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Candy has 15 light blue spools of thread, 45 dark blue spools of thread, 40 light green spools of thread, and 50 dark green spools of thread. What percent of her spools are blue?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the percentage of blue spools, we first need to determine the total number of spools Candy has.
+
+Total spools = 15 (blue) + 45 (dark blue) + 40 (light green) + 50 (dark green)
+Total spools = 150
+
+Next, we calculate the percentage of blue spools by dividing the number of blue spools by the total number of spools and then multiplying by 100.
+
+Percentage of blue spools = (Number of blue spools / Total spools) * 100
+Percentage of blue spools = (15 / 150) * 100

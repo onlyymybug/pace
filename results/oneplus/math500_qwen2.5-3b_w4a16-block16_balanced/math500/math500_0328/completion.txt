@@ -1,0 +1,11 @@
+To solve for \(P(5)\), we start by noting that \(P(x)\) is a monic polynomial of of degree 3. Let's denote \(P(x) = x^3 + ax^2 + bx + c\).
+
+Given that \(P(x)\) has a remainder \(R(x)\) when divided by \((x-1)(x-4)\), we can write:
+\[ P(x) = (x-1)(x-4)Q(x) + R(x) \]
+where \(R(x)\) is a polynomial of of degree less than 2, i.e., \(R(x) = dx + e\).
+
+Similarly, given that \(P(x)\) has a remainder \(2R(x)\) when divided by \((x-2)(x-3)\), we can write:
+\[ P(x) = (x-2)(x-3)S(x) + 2R(x) \]
+where \(R(x) = dx + e\) and \(S(x)\) is a polynomial of of degree less than 2, i.e., \(R(x) = fx + g\).
+
+Since \(P(x)\) is a polynomial of of degree 3, we can express

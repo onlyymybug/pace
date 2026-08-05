@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: When the positive integers with exactly three positive divisors are listed in ascending order, what is the fifth number listed? To determine the fifth number in the sequence of of of positive integers with exactly three positive divisors, we need to understand the structure of of such numbers. A number has exactly three positive divisors if and only if it is of the form \( p^2 \), where \( p \) is a prime number. This is because the divisors of of \( p^2 \) are \( 1, p, \) and \( p^2 \).
+
+Let's list the numbers in ascending order:
+- The smallest prime number is \( 2 \), so \( 2^2 = 4 \).
+- The next prime number is \( 3 \), so \( 3^2 = 9 \).
+- The next prime number is \( 5 \), so \( 5^2 = 25 \).
+- The next prime number is \( 7 \), so \( 7^2 = 49 \).
+- The next prime number is \( 11 \), so \( 11^2 = 1211 \).
+
+Thus, the first five numbers with exactly three positive divisors are \( 4, 9, 25, 49, 121 11^

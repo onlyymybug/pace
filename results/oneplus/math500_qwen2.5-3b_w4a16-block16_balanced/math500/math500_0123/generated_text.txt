@@ -1,0 +1,27 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Daniel works at an electronics store, and he claims that the popularity of a television (measured in number of sales) is inversely proportional to its cost. If 15 customers buy a television that costs $\$$1500, according to Daniel's theory, how many customers would buy a television that costs $\$$2500? To solve the problem, we need to use the concept of inverse proportionality. If the popularity (number of sales) of \( P \) of of a television is inversely proportional to its cost \( C \), then we can express this relationship as:
+
+\[ P \times C = k \]
+
+where \( k \) is a constant.
+
+Given:
+- \( P_1 = 15 \) customers when \( C_1 = 1500 \) dollars.
+
+We need to find \( P_2 \) when \( C_2 = 2500 \) dollars.
+
+First, we find the constant \( k \) using the given values:
+
+\[ P_1 \times C_1 = k \]
+\[ 15 \times 1500 = k \]
+\[ k = 22500 \]
+
+Now, we use this constant to find \( P_2 \) when \( C_2 = 2500 \):
+
+\[ P_2 \times C_2 = k \]
+\[ P_2 \times 2500 = 22500 \]
+
+Solving for \( P_2 \):
+
+\[ P_2 = \frac{2

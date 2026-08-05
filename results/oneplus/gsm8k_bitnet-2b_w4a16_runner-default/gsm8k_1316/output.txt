@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are some oranges in a basket. Ana spends 3 minutes peeling an orange and Jane spends 4 minutes doing the same. If Ana and Jane start picking oranges from this basket to peel at the same time, how many more oranges will Ana have peeled than Jane after an hour?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of oranges in the basket as \( x \).
+
+Ana spends 3 minutes peeling one orange, so in one hour (which is 60 minutes), she will peel \( \frac{60}{3} = 20 \) oranges.
+
+Jane spends 4 minutes peeling one orange, so in one hour, she will peel \( \frac{60}{4} = 15 \) oranges.
+
+The difference in the number of oranges peeled by Ana and Jane after an hour is \( 20 - 15 = 5 \) oranges.
+
+The answer is 5.<|eot_id|>

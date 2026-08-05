@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John wins an award at work.  The award has a 1 time monetary reward of $5000 and a 5% raise in salary.  If he makes 2000 a week, every week of the year and he got the award on the first day of the year how much money did he make that year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money John made in a year, we first need to calculate his new weekly salary after the raise. The raise is 5% of his original weekly salary, which is $2000.
+
+5% of $2000 is calculated as:
+0.05 * $2000 = $100
+
+So, his new weekly salary is:
+$2000 + $100 = $2100
+
+Since there are 52 weeks in a year, we multiply his new weekly salary by the number of weeks in a year:
+$2100 * 52 = $109200
+
+The answer is 109200.<|eot_id|>

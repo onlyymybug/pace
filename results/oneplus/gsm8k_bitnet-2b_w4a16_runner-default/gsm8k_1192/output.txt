@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: May is getting her hair cut and colored. It costs $40 for the color and $30 per inch of haircut. If her hair started at 10 inches and ended at 8, how much did her cut and color cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost of May's haircut and color, we first need to calculate the length of hair cut. Her hair started at 10 inches and ended at 8 inches, so the length of hair cut is:
+
+10 inches - 8 inches = 2 inches
+
+Next, we calculate the cost of the haircut by multiplying the length of hair cut by the cost per inch:
+
+2 inches * $30 per inch = $60
+
+Now, we add the cost of the color to the cost of the haircut to find the total cost:
+
+$60 (haircut) + $40 (color) = $100
+
+The answer

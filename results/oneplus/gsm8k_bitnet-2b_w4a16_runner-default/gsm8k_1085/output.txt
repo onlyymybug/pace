@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Sam and Harry have 100 feet of fence between them, and they agree to split it with Harry getting 60 feet more than Sam, how much is left over for Sam?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the length of the fence Sam gets as \( S \) feet. According to the problem, Harry gets 60 feet more than Sam, so Harry gets \( S + 60 \) feet.
+
+The total length of the fence is 100 feet, so we can write the equation:
+
+\[ S + (S + 60) = 100 \]
+
+Combining like terms, we get:
+
+\[ 2S + 60 = 100 \]
+
+Subtracting 60 from both sides, we get:
+
+\[ 2S = 40 \]
+
+Dividing both sides by 2, we get:
+
+\[

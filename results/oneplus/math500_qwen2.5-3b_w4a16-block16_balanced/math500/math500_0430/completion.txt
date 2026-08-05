@@ -1,0 +1,28 @@
+To find the minimum value of of \(a^4 + b^8\) given that \(ab^2 = 5\), we start by expressing \(a\) in terms of \(b\). From the given equation \(ab^2 = 5\), we can solve for \(a\):
+
+\[
+a = \frac{5}{b^2}
+\]
+
+Next, we substitute \(a = \frac{5}{b^2}\) into the expression \(a^4 + b^8\):
+
+\[
+a^4 + b^8 = \left(\frac{5}{b^2}\right)^4 + b^8
+\]
+
+Simplify the expression:
+
+\[
+a^4 = \left(\frac{5}{b^2}\right)^4 = \frac{5^4}{(b^2)^4} = \frac{625}{b^8}
+\]
+
+Thus,
+
+\[
+a^4 + b^8 = \frac{625}{b^8} + b^8
+\]
+
+Let \(x = b^8\). Then the expression becomes:
+
+\[
+a^4 + b^8 = \frac{625}{x} +

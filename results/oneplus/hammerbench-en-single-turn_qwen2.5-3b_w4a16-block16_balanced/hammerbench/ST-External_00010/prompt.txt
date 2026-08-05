@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantLicense","description":"Get licensing info for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.checkLicenseStatus","description":"Check the validity status of various licenses (such as driver's license)","parameters":{"type":"object","properties":{"license_type":{"type":"string","description":"Type of licence Trainee attorneys"},"license_number":{"type":"string","description":"License number"}},"required":["license_type","license_number"]}}
+{"name":"Navigation.TrafficViolations.viewDriverInfo","description":"View driver's license details","parameters":{"type":"object","properties":{"driver_license_number":{"type":"string","description":"Licence Number:"}},"required":["driver_license_number"]}}
+{"name":"Navigation.TrafficViolations.viewCarInfo","description":"View license details","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear user, the document you applied for on October 15, 2023 has been reviewed and approved. Your ID number is D5566778899. Please keep it safe and collect it in time. If you have any questions, please contact our service hotline: 400-123-4567. Thank you for your cooperation and support!
+query:I would like to see the details of the driver's license mentioned in the text message Tom sent me.<|im_end|>
+<|im_start|>assistant

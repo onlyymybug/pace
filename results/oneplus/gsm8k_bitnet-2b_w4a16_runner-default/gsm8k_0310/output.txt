@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Helena is a mad scientist testing her latest creation, the Lots-of-Limbs Serum. The serum will make the drinker grow an extra arm every three days and an extra leg every five days. After fifteen days, how many new limbs will Helena’s serum cause a person to grow if they drink it?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many times the drinker will grow an extra arm and an extra leg over the course of fifteen days, given the growth rates of three days for an extra arm and five days for an extra leg.
+
+First, let's calculate the number of extra arms grown:
+- The drinker grows an extra arm every 3 days.
+- Over 15 days, the number of extra arms grown is given by the integer division of 15 by 3.
+
+Number of extra arms = 15 / 3 = 5
+
+Next, let's calculate the number of extra legs grown:

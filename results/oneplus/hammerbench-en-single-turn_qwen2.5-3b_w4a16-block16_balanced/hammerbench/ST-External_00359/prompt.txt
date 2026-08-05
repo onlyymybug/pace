@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.Mall.viewMessage","description":"View messages for a specific friend or time, and see the entire list of messages by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.InstantMessaging.searchSystemMessage","description":"Search system SMS to specified keywords","parameters":{"type":"object","properties":{"message_key":{"type":"string","description":"Search SMS keywords"},"message_type":{"type":"string","description":"Search SMS type: text, image, audio, video, default text"}},"required":["message_key","message_type"]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"Education.ChildrenEducation.searchChildSong","description":"Search songs for kids","parameters":{"type":"object","properties":{"song_type":{"type":"string","description":"Types of songs, such as children's songs, nursery rhymes"}},"required":["song_type"]}}
+{"name":"UtilityTools.Search.searchWeb","description":"Web search (text, voice, photo search default text)","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search Content"},"type":{"type":"string","description":"Text; Voice; Picture; Default Text"}},"required":["keyword","type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Ming, how have you been? I found a super nice classic nursery rhyme "Little Star". The melody is gentle and full of childlike fun, and it feels especially suitable for you. You can listen to it when you have time, I hope you like it!
+query:Are the songs mentioned in Tom's text messages to me suitable for children? Can you help me find it?<|im_end|>
+<|im_start|>assistant

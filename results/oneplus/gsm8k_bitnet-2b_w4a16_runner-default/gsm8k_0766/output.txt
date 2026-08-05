@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: George has 45% more pears than bananas. If George has 200 bananas, how many fruits does George have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many pears George has, we first need to calculate 45% of the number of bananas he has. Then we add that to the number of bananas.
+
+Step 1: Calculate 45% of the number of bananas.
+45% of 200 bananas = 0.45 * 200 = 90 bananas.
+
+Step 2: Add the number of bananas to the number of bananas calculated in Step 1 to find the total number of fruits.
+Total fruits = Number of bananas + Number of pears = 200 bananas + 90 bananas = 290 bananas.
+
+George has a total of 290 fruits

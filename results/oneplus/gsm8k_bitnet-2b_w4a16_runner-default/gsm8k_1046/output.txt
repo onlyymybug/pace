@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Three people divided an amount of $1920. The second took $80 more than the first and the third took twice what the second took. Calculate the share of the first one.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the share of the first person as \( x \).
+
+The second person took \( x + 80 \) dollars.
+
+The third person took \( 2(x + 80) \) dollars.
+
+The total amount is $1920, so we can write the equation:
+
+\[ x + (x + 80) + 2(x + 80) = 1920 \]
+
+Simplifying the equation:
+
+\[ x + x + 80 + 2x + 160 = 1920 \]
+\[ 4x + 240 = 1920 \]
+\[ 4x = 1920

@@ -1,0 +1,34 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.bookFlightTicket","description":"To book a flight, you need to give the departure location, destination, departure time, etc.","parameters":{"type":"object","properties":{"flight_number":{"type":"string","description":"e.g. CA1234"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"name":{"type":"string","description":"Name of person who booked"},"time":{"type":"string","description":"Trip start time"},"passenger_id":{"type":"string","description":"Rider ID number"}},"required":["flight_number","departure","destination","name","time","passenger_id"]}}
+{"name":"Navigation.MapNavigation.startNavigation","description":"Start navigating to your destination","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"OfficeSoftware.Documents.importDocument","description":"Import an external document into a document","parameters":{"type":"object","properties":{"import_path":{"type":"string","description":"Document path to import, required"}},"required":["import_path"]}}
+{"name":"Navigation.TaxiCarRental.callingTaxi","description":"Send a ride request based on your starting location","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Pickup location, default current location"},"destination":{"type":"string","description":"Destination"},"time":{"type":"string","description":"Taxi time, default current time"}},"required":["departure","destination","time"]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOnFlashlight","description":"Turn on flashlight","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for your support and trust.Regarding your business development project in Shanghai, we have arranged a dedicated team to follow up.Our team will have in-depth communication and cooperation with you at our office in Shanghai Lujiazui Financial District.In addition, we have arranged a study tour in Shanghai's Pudong New Area to give you a more intuitive understanding of the local market environment and business opportunities.
+
+We hope to create a bright future together with you in the vibrant land of Shanghai.Looking forward to meeting you in Shanghai, I believe it will be a pleasant and fruitful journey of cooperation.
+
+Best regards,
+
+Sincerely,
+Salute
+
+[Your name]  
+[Your Position]  
+[your contact details]  
+[Company name]  
+Shanghai Office Address: 1000 Lujiazui Ring Road, Pudong New Area, Shanghai  
+[Company Website]
+query:Departing from Beijing tomorrow, go to the place mentioned in the email and book me a flight ticket for CA1234. The passenger's name is Zhang San, and the ID number is 123456789012345678.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.callingTaxi","parameters":{"departure":"Beijing","destination":"Shanghai Lujiazui Financial District","time":"Tomorrow"}}>{"name":"Navigation.FlightTickets.bookFlightTicket","parameters":{"flight_number":"CA1234","departure":"Beijing Capital International Airport","destination":"Shanghai Hongqiao International Airport","name":"Zhang San","passenger_id":"123456789012345678"}}<|im_end|>

@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A palindrome is a number that reads the same forwards and backwards. The sum of a particular set of three consecutive positive integers is a three-digit palindrome. If the sum is less than 220, what is the greatest possible value for the largest of the three integers in the set? To solve the problem, we need to find three consecutive positive integers whose sum is a three-digit palindrome and is less than 220. Let's denote the three consecutive integers as \( n-1 \), \( n \), and \( n+1 \). The sum of of of these three integers is:
+
+\[
+(n-1) + n + (n+1) = 3n
+\]
+
+We need \( 3n \) to be a three-digit palindrome and \( 3n < 220 \). First, we determine the range for \( n \):
+
+\[
+3n < 220 \implies n < \frac{220}{3} \approx 73.33
+\]
+
+Thus, \( n \) must be an integer such that \( 1 \leq n \leq 73 \).
+
+Next, we need \( 3n \) to be a three-digit palindrome. We will check the largest possible values of of \( n \) to find the largest \( 3n \) that is a three-digit palindrome and \( 3n < 220 \).
+
+We start by checking the largest three-digit palindromes less than 

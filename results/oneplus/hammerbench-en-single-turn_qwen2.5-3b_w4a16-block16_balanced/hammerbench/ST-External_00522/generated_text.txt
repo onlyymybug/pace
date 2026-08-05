@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.deleteEmergencyContact","description":"Delete emergency contact","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Name of emergency contact"},"phone_number":{"type":"string","description":"Emergency contact's phone number"}},"required":["user_name","phone_number"]}}
+{"name":"OnlineShopping.ExpressDelivery.removeAddress","description":"Remove the specified address from the address book","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Recipient's name"},"phone":{"type":"string","description":"Recipient phone number"},"address":{"type":"string","description":"To"}},"required":["name","phone","address"]}}
+{"name":"Navigation.MapNavigation.deleteCommonAddress","description":"Delete the specified Primary Address","parameters":{"type":"object","properties":{"address":{"type":"string","description":"Primary address to delete"}},"required":["address"]}}
+{"name":"OnlineShopping.Mall.deleteDeliveryAddress","description":"Delete designated shipping address based on address, logo","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Calling.deleteContact","description":"Delete the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to be deleted"}},"required":["contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Zhou Qi! I'm Xiao Ming, our high school classmate. Recently, I heard that you went to Shanghai to develop, I'm really envious. The last Xiaohua party also mentioned you, and everyone missed those moments we spent together. Come back sometime to see old friends, or don't miss the next party! Looking forward to your reply, we are all waiting to hear your new story!
+query:I want to delete the emergency contact, the first name is the friend mentioned in the message received from QQ, the phone is 15975348620.<|im_end|>
+<|im_start|>assistant
+{"name":"SystemTools.SystemSettings.deleteEmergencyContact","parameters":{"user_name":"EK", "phone_number":"15975348620"}}<|im_end|>

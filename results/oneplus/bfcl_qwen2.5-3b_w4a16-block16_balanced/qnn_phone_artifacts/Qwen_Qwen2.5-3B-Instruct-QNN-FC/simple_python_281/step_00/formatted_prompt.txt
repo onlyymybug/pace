@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_instrument_info", "description": "Retrieve the details about a specific musical instrument based on its name, maker, and manufacturing year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"name": {"type": "string", "description": "The name of the instrument."}, "maker": {"type": "string", "description": "The name of the maker who created the instrument."}, "year": {"type": "integer", "description": "The year the instrument was made."}}, "required": ["name", "maker", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the details about the musical instrument 'Violin' from 'Stradivarius' maker, made in the year 1721.<|im_end|>
+<|im_start|>assistant

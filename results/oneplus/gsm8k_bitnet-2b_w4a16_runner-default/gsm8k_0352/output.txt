@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: April is donating plant pots to a local school for their new garden. They ask for 30 plant pots for the daisies, and twice as many for the roses. April had already bought 100 plant pots from the garden center before she knew how many she needed. How many plant pots does April have left over?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of plant pots April needs for the daisies and roses.
+
+- The daisies require 30 plant pots.
+- The roses require twice as many plant pots as the daisies, which means 2 * 30 = 60 plant pots.
+
+So, the total number of plant pots needed is:
+30 (for daisies) + 60 (for roses) = 90 plant pots.
+
+April initially had 100 plant pots. To find out how many she has left over after donating, we subtract the total needed from the initial amount:
+100 (

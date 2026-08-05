@@ -1,0 +1,24 @@
+To find the modular inverse of \(17^{-1} \pmod{83}\), we need to find an integer \(x\) such that:
+\[ 17x \equiv 1 \pmod{83} \]
+
+This means we need to solve the equation:
+\[ 17x = 83k + 1 \]
+for some integer \(k\). This can be rewritten as:
+\[ 17x - 83k = 1 \]
+
+This is a linear Diophantine equation, and we can solve it using the Extended Euclidean Algorithm. First, we apply the Euclidean Algorithm to find the greatest common divisor (gcd) of of 17 and 83.
+
+1. **Euclidean Algorithm:**
+   \[
+   83 = 17 \cdot 5 + 8
+   \]
+   \[
+   17 = 8 \cdot 2 + 1
+   \]
+   \[
+   8 = 1 \cdot 8 + 0
+   \]
+
+Since the gcd is 1, we can backtrack to express 1 as a combination of of 17 and 83.
+
+2. **Back Substitution:**

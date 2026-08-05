@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "discoverer.get", "description": "Retrieve the name of the discoverer of an element based on its name. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"element_name": {"type": "string", "description": "The name of the element."}, "year": {"type": "integer", "description": "Optional parameter that refers to the year of discovery. It could be helpful in case an element was discovered more than once. Default to 0, which means not use it."}, "first": {"type": "boolean", "default": true, "description": "Optional parameter indicating if the first discoverer's name should be retrieved."}}, "required": ["element_name"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who discovered radium?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "discoverer.get", "arguments": {"element_name": "radium", "first": true}}
+</tool_call><|im_end|>

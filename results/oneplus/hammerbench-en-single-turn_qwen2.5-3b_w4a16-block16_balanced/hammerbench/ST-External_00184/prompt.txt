@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.checkCarAvailability","description":"Check the inventory of the designated car model at the dealership.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"ConvenientLiving.JobRecruitment.collectJob","description":"Favorite posts of interest","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"SocialCommunication.Community.pinCommunityPost","description":"Pin a post to a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to pin the post to"},"post_name":{"type":"string","description":"Title of the post to sticky"}},"required":["community_name","post_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Need to buy winter tires for this Porsche 911, the budget is about 5000 yuan, the best color is black or silver, next week go to the nearby tire shop to check the winter maintenance of the vehicle.
+query:Are the models mentioned in the notepad still in stock at the dealership in Binjiang, Hangzhou?<|im_end|>
+<|im_start|>assistant

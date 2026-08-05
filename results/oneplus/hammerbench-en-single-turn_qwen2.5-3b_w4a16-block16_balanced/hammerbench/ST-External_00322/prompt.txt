@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.rateDoctor","description":"Evaluate visiting physicians","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"content":{"type":"string","description":"Review Content"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","content","doctor_name"]}}
+{"name":"Health.MedicalServices.getHopitalReviews","description":"Query hospital reviews by hospital name","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["hospital_name"]}}
+{"name":"SocialCommunication.Community.likeCommunityComment","description":"Like a comment from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the review is to be liked"},"comment_name":{"type":"string","description":"Comments to like"}},"required":["community_name","comment_name"]}}
+{"name":"Education.OnlineClasses.postCourseReview","description":"User commented on a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"},"content":{"type":"string","description":"Review Content"}},"required":["course_name","teacher_name","content"]}}
+{"name":"ConvenientLiving.AutoLife.readCarReviews","description":"Read user reviews for the specified car model.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Feng, tomorrow's meeting time is changed to 2 pm, and the location is still in the company's large conference room. Wang and I have confirmed all the details, you just need to bring your laptop and the latest version of the project report. Let me know if you have any questions.
+query:I would like to evaluate the doctor who visited the Department of Cardiology at Peking Union Medical College Hospital. His medical skills are excellent and his attitude is very cordial. The doctor's name is the name of the friend mentioned in the WeChat.<|im_end|>
+<|im_start|>assistant

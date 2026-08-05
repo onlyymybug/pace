@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kimberly bought 8 packages of cat food and 6 packages of dog food. Each package of cat food contained 11 tins, and each package of dog food contained 6 tins. How many more tins of cat food than dog food did Kimberly buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many more tins of cat food than dog food Kimberly bought, we first need to calculate the total number of tins for each type of food.
+
+For cat food:
+8 packages * 11 tins/package = 88 tins
+
+For dog food:
+6 packages * 6 tins/package = 36 tins
+
+Now, we subtract the number of tins of dog food from the number of tins of cat food:
+88 tins (cat food) - 36 tins (dog food) = 52 tins
+
+The answer is 52 tins.<|eot_id|>

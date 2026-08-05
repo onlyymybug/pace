@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maria was charging her power bank before going to the park when she disconnected it and noticed the power bank wasn’t fully charged yet. Once at the park, her friends asked her if they could charge their phones. While charging her friends’ phones, she noticed that her power bank was losing 9% of the total capacity each hour. 5 hours later the battery started to lose instead 7% of the total capacity each hour for about 3 hours. In the end, the charge remaining was 28%. What was the charge of the power bank when Maria went out to the park? Let's break down the problem step by step.
+
+1. **Initial Charge Calculation:**
+   - Maria's power bank loses 9% of its capacity each hour initially.
+   - After 5 hours, the remaining charge can be calculated as:
+     \[
+     \text{Remaining charge} = \text{Initial charge} \times (1 - 0.09)^5
+     \]
+   - Let \( x \) be the initial charge percentage. Then:
+     \[
+     x \times (0.91)^5 = 0.9126561x
+     \]

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Manny signed up for Karate classes for $60. His parents tell him that if his classes end up costing more than $10 per class, then they won't sign him up again. If there are 10 total classes, how many can he miss before they don't sign him up again?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many classes Manny can miss before the cost per class exceeds $10. We know that the total cost is $60 for 10 classes. 
+
+First, we calculate the cost per class:
+\[ \text{Cost per class} = \frac{\text{Total cost}}{\text{Number of classes}} = \frac{60}{10} = 6 \]
+
+Since Manny can miss any number of classes and the cost per class remains $6, which is less than $10, he can miss any number of classes without exceeding the $10 cost limit for each class. 
+

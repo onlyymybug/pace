@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Goldy bought 20 sacks of rice and gave 3 sacks to her cousin and 4 sacks to her brother, if there are 25 kilograms of rice per sack, how many kilograms does she gave to her cousin and brother? Step 1: Determine the total number of sacks given away.
+Total sacks given away = Sacks to cousin + Sacks to brother
+Total sacks given away = 3 + 4
+
+Step 2: Calculate the total weight of of the sacks given away.
+Total weight = Total sacks given away × Weight per sack
+Total weight = (3 + 4) × 25
+
+Step 3: Perform the calculation.
+Total weight = 7 × 25
+Total weight = 175
+
+The answer is 175.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly

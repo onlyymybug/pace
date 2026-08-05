@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the roots of $(x - 3)^3 + (x -7)^3 = (2x - 10)^3.$
+To solve the equation \((x - 3)^3 + (x - 7)^3 = (2x - 10)^3\), we start by making a substitution to simplify the equation. Let \( y = x - 5 \). Then the equation becomes:
+
+\[
+((y + 2)^3 + (y - 2)^3 = (y)^3
+\]
+
+We will expand each term using the binomial theorem. First, expand \((y + 2)^3\):
+
+\[
+(y + 2)^3 = y^3 + 3 \cdot y^2 \cdot 2 + 3 \cdot y \cdot 2^2 + 2^3 = y^3 + 6y^2 + 12y + 8
+\]
+
+Next, expand \((y - 2)^3\):
+
+\[
+(y - 2)^3 = y^3 - 3 \cdot y^2 \cdot 2 + 3 \cdot y \cdot 2^2 - 2^3 = y^3 - 6y^2 + 12y - 8
+\]
+
+Now, add these two expansions together:
+
+\[
+(y

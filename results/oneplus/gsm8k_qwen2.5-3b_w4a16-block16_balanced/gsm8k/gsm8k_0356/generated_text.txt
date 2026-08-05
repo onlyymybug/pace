@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are three trees in Eddy's backyard. The shortest tree has a height of 6 feet, and the second tree has a height of 5 feet more than the shortest tree. The height of the tallest tree is twice the height of the two trees combined. How tall is the tallest tree? Step 1: Determine the height of of the second tree.
+Second tree height = Shortest tree height + 5 feet
+Second tree height = 6 feet + 5 feet
+Second tree height = 11 feet
+
+Step 2: Calculate the combined height of of of the shortest and second tallest trees.
+Combined height = Shortest tree height + Second tree height
+Combined height = 6 feet + 11 feet
+Combined height = 17 feet
+
+Step 3: Determine the height of of the tallest tree.
+Tallest tree height = 2 * Combined height
+Tallest tree height = 2

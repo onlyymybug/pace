@@ -1,0 +1,13 @@
+Step 1: Calculate the number of 20 dollar bills Thomas initially withdraws.
+Number ofBills = TotalWithdrawn / ValuePerBill
+NumberBills = 1000 / 20
+
+Step 2: Calculate the number of bills Thomas has after losing some.
+RemainingBills = NumberBills - LostBills
+RemainingBills = RemainingBills - 10
+
+Step 3: Calculate the remaining money after paying for the bill.
+RemainingMoney = RemainingBills * ValuePerBill
+RemainingMoney = RemainingBills * 20
+
+Step 4: Calculate the money after

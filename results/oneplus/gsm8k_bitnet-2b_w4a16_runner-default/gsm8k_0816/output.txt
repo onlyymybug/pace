@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tanya makes a salt scrub from salt, oil, fragrance, citrus zest, and sugar. She makes enough to fill a 10-ounce jar each time. She uses the same amount of citrus zest as fragrance and the same amount of salt as sugar. She uses twice as much oil as salt and twice as much salt as zest. How many ounces of oil does she use?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of each ingredient as follows:
+- Let \( S \) be the amount of salt.
+- Let \( O \) be the amount of oil.
+- Let \( F \) be the amount of fragrance.
+- Let \( C \) be the amount of citrus zest.
+- Let \( G \) be the amount of sugar.
+
+From the problem, we have the following relationships:
+1. \( S + O + F + C + G = 10 \) (total weight of the jar)
+2. \( F = S \) (same amount of fragrance as salt)
+3. \( S = C

@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At a restaurant, Juice Box A is 4 dollars. Juice Box B is 5 dollars more than Juice Box A. Juice Box C is 7 dollars more than Juice Box A. How much more is Juice box C than Juice Box B? Step 1: Determine the cost of of Juice Box B
+Juice Box B costs 5 dollars more than Juice Box A, so:
+Juice Box B = Juice Box A + 5
+Juice Box B = 4 + 5
+Juice Box B = 9 dollars
+
+Step 2: Determine the cost of of Juice Box C
+Juice Box C costs 7 dollars more than Juice Box A, so:
+Juice Box C = Juice Box A + 7
+Juice Box C = 4 + 7
+Juice Box C = 11 dollars
+
+Step 3: Calculate

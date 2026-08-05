@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gene is sewing a quilt out of old souvenir t-shirts. He has one shirt from each vacation he has been on. Every shirt is its own quilt block. Each row is made of blocks from a different year of vacations. He goes on four vacations a year and has been vacationing since he was 23 years old. He is now 34. How many quilt blocks does he have in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many quilt blocks Gene has, we first need to determine how many years he has been vacationing. Gene is now 34 years old and was 23 years old when he started vacationing. So, the number of years he has been vacationing is:
+
+34 (current age) - 23 (age when started) = 11 years
+
+Since Gene goes on four vacations a year, the total number of vacations he has gone on is:
+
+11 years * 4 vacations/year = 44 vacations
+
+Since each vacation corresponds to one shirt, Gene has 44 quilt blocks in total.<|eot_id|>

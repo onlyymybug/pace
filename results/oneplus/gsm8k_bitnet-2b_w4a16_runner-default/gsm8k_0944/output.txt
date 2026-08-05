@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James gets 10 new CDs.  Each CD cost $15.  He gets them for 40% off.  He decides he doesn't like 5 of them and sells them for 40. How much money was he out?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money James was out, we need to calculate the total cost of the CDs he bought, subtract the amount he got back from selling them, and then subtract the cost of the CDs he doesn't like.
+
+First, calculate the total cost of the CDs before the discount:
+10 CDs * $15/CD = $150
+
+Next, calculate the discount amount:
+40% of $150 = 0.4 * $150 = $60
+
+Now, calculate the total cost after the discount:
+$150 - $60 = $90
+
+Then, calculate the amount he got back from selling 5 CDs:
+5

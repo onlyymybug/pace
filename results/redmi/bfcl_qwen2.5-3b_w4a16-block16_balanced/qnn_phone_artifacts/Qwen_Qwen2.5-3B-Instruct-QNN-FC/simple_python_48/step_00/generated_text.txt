@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_density", "description": "Calculate the density of a substance based on its mass and volume. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"mass": {"type": "integer", "description": "The mass of the substance in kilograms."}, "volume": {"type": "integer", "description": "The volume of the substance in cubic meters."}, "unit": {"type": "string", "description": "The unit of density. Default is kg/m\u00b3"}}, "required": ["mass", "volume"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the density of a substance with a mass of 45 kg and a volume of 15 m³?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_density", "arguments": {"mass": 45, "volume": 15}}
+</tool_call><|im_end|>

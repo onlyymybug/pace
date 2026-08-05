@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Abraham owns 80 square meters of unused land. He sold half of the land for $50, and after a month, he sold another 1/4 of his land for $30. He then sold the remaining land for $3 per square meter. How much money will he be able to earn after selling all his unused land?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to break it down into steps:
+
+1. Calculate the amount of land sold in the first transaction.
+2. Calculate the amount of land sold in the second transaction.
+3. Calculate the remaining land after both transactions.
+4. Calculate the total earnings from the remaining land.
+
+Let's go through each step:
+
+1. **First Transaction:**
+   - Abraham sold half of his land for $50.
+   - Since he owns 80 square meters, half of the land is \( \frac{80}{2} = 40 \) square meters.
+   - Therefore, he earned $50 for 

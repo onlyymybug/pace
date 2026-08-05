@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bubbles collects stuffed animals. She has three stuffed puppies, five stuffed koalas, two stuffed zebras and four stuffed frogs. If she wants to buy enough stuffed goats, such that the percentage of stuffed goats is 30% of all of her stuffed animals, how many stuffed goats should she buy? Let's solve this step-by-step:
+
+1. First, let's calculate the total number of stuffed animals Bubbles currently has:
+   - Puppies: 3
+   - Koalas: 5
+   - Zebras: 2
+   - Frogs: 4
+   Total: 3 + 5 + 2 + 4 = 14 animals
+
+2. We need to find out how many more animals she needs to add to reach 30% of goats. Let's denote the number of goats she needs as 'g'.
+
+3. The total number of animals after adding 'g'

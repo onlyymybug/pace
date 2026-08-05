@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.OnlineVideos.downloadOnlineVideo","description":"Download online video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"definition":{"type":"string","description":"Download Video Quality Selection"},"path":{"type":"string","description":"Download Path Select Default Path"}},"required":["name","definition","path"]}}
+{"name":"UtilityTools.Reading.downloadReadingBook","description":"Download books by title","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"title of a book"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"ConvenientLiving.GovernmentServices.downloadServiceDocument","description":"Download docs for city services","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to download"}},"required":["document_name"]}}
+{"name":"Finance.Insurance.downloadInsuranceDocument","description":"Download insurance documents","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, etc."},"document_type":{"type":"string","description":"Document type, such as policy contract, claim description, etc."}},"required":["insurance_name","insurance_type","document_type"]}}
+{"name":"NewsMagazines.NewspapersMagazines.downloadMagazine","description":"Download magazines locally based on magazine name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear J.K. Rowling, I am Li Ming, your loyal reader. I would like to share the impact of your Harry Potter series on my life. I have reread your work countless times since I first read it, each time with new revelation and power. Thank you for creating such a magical world, which not only enriched my imagination, but also taught me a lot about the true meaning of courage, friendship and love. Looking forward to seeing more of your work! Best regards,
+query:I want to download the Harry Potter Sorcerer's Stone book, can you help me?<|im_end|>
+<|im_start|>assistant

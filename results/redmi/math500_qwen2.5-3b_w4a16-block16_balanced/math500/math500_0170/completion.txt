@@ -1,0 +1,9 @@
+To determine the area of of a triangle with sides measuring 5, 5, and 6 units, we can use Heron's formula. Heron's formula states that the area \( A \) of of a triangle with sides \( a \), \( b \), and \( c \) is given by:
+
+\[ A = \sqrt{s(s-a)(s-b)(s-c)}\]
+
+where \( s \) is the semi-perimeter of of of the triangle, calculated as:
+
+\[ s = \frac{a + b + c}{2} \]
+
+Given the sides \( a = 5 \), \(

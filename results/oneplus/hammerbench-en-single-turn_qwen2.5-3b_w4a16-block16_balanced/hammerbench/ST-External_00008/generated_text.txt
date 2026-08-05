@@ -1,0 +1,26 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.reportAccident","description":"Report traffic accidents and violations","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"location":{"type":"string","description":"Site"}},"required":["plate_number","location"]}}
+{"name":"Navigation.Bicycles.submitBikeFault","description":"Submit a bicycle malfunction","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Vehicle number"}},"required":["number"]}}
+{"name":"SocialCommunication.Community.reportCommunityPost","description":"Report a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is to be reported"},"comment_name":{"type":"string","description":"Post title to report"}},"required":["community_name","comment_name"]}}
+{"name":"ConvenientLiving.AutoLife.reportCarProblem","description":"Report a malfunction or problem with your car to the platform.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"problem_description":{"type":"string","description":"Problem description"},"name":{"type":"string","description":"Contact person"}},"required":["brand","problem_description","name"]}}
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","description":"Reporting tax evasion","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"},"description":{"type":"string","description":"Problem description"}},"required":["company_name","description"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Owner,
+
+Regarding the vehicle under your name (license plate number: Beijing C98765), we found during a recent routine inspection that the vehicle's annual inspection is about to expire.To ensure the safety of your vehicle and avoid fines or other inconveniences caused by late inspections, we strongly recommend that you schedule an annual vehicle inspection as soon as possible.If you have any questions or need to make an appointment, please do not hesitate to contact us and we will be happy to assist you.
+
+Enjoy your ride and be safe every day!
+
+Salute
+XX Automotive Service Center
+10 October 2023
+query:I encountered a bicycle accident on Chang 'an Street. The car was seriously damaged. The license plate number was mentioned in the email sent to me by Li Hua and needs to be reported.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.reportAccident","parameters":{"plate_number":"BEIJINGC98765", "location":"Chang'an Street"}}<|im_end|>

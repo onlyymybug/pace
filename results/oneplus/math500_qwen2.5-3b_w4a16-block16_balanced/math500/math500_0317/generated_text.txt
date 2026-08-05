@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$ are integers. What is $AB + B$? To solve the problem, we need to express the quadratic expression \(10x^2 - x - 24\) in the form \((Ax - 8)(Bx + 3)\) and then determine the values of of of \(A\) and \(B\).
+
+First, let's expand \((Ax - 8)(Bx + 3)\):
+\[
+(Ax - 8)(Bx + 3) = ABx^2 + 3Ax - 8Bx - 24
+\]
+We need this to be equal to \(10x^2 - x - 24\). Therefore, we can equate the coefficients of of corresponding powers of \(x\) from both expressions:
+\[
+ABx^2 + (3A - 8B)x - 24 = 10x^2 - x - 24
+\]
+
+From the above, we get the following system of of equations by comparing coefficients:
+\[
+AB = 10
+\]
+\[
+3A - 8B = -1
+\]
+
+We solve the first equation \(AB = 10\) for \(A\) and \(B\). Since \(A\) and \(B

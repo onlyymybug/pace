@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James is putting together 4 tables.  Each table has 4 legs and each leg needs 2 screws.  He has 40 screws.  How many screws will he have left over? Step 1: Calculate total number of screws needed
+- Each table has 4 legs, and each leg needs 2 screws, so each table needs 4 * 2 screws.
+- James is assembling 4 tables, so total screws needed = 4 tables * (4 legs/table * 2 screws/leg).
+
+Step 2: Calculate total screws needed
+- Total screws needed = 4 * (4 * 2).
+
+Step 3: Calculate leftover screws
+- James has 40 screws.
+- Subtract total screws needed from 40 to find leftover screws.
+
+Step 4: Perform calculations
+- Total

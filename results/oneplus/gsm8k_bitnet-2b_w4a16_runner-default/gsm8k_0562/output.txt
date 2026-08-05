@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: If Mark weighs 150 pounds and Susan weighs 20 pounds less than Mark.  And their friend Bob weighs twice as much as Susan.  What is the average weight of the 3 friends?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average weight, we first need to determine the weights of Susan and Bob.
+
+1. Mark's weight = 150 pounds
+2. Susan's weight = Mark's weight - 20 pounds = 150 - 20 = 130 pounds
+3. Bob's weight = 2 * Susan's weight = 2 * 130 = 260 pounds
+
+Now, we calculate the average weight:
+
+Average weight = (Mark's weight + Susan's weight + Bob's weight) / 3
+Average weight = (150 + 130 + 260) / 3
+Average weight = 540 / 3

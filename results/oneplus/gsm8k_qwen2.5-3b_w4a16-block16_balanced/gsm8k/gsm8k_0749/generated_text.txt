@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carl has four times as many marbles as Sean and Sean has half as many marbles as Cal. If Sean has 56 marbles, how many marbles do Carl and Cal have combined? To solve this problem, we start by defining the number of marbles each person has in terms of.
+
+1. Let \( S \) represent the number of marbles Sean has.
+2. According to the problem, \( S = 56 \).
+
+Given:
+\[ S = 56 \]
+
+Next, we determine the number of marbles Carl has. The problem states Carl has four times as many marbles as Sean:
+\[ C = 4S \]
+
+Substituting \( S = 56 \) into the equation for Carl's marbles:
+\[ C = 4 \times 56 \]

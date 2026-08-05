@@ -1,0 +1,12 @@
+To determine the value of of \( a \) that makes the function \( f(n) \) continuous, we need to ensure that the left-hand limit and the right-hand limit of of \( f(n) \) at \( n = a \) are equal to \( f(a) \).
+
+Given the piecewise function:
+\[
+f(n) =
+\begin{cases}
+4n + 3 & \text{if } n < a, \\
+7n - 12 & \text{if } n \ge a,
+\end{cases}
+\]
+
+we need to find \( a \) such that:

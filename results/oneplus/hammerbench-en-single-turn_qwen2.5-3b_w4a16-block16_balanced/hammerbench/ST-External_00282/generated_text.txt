@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.HealthManagement.getDietHistory","description":"Get dietary history based on timeframe, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Time range"}},"required":["time"]}}
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleMessage","description":"View message list by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.JobRecruitment.checkJobPositionAvailability","description":"Check if a specific position is still being recruited","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"UtilityTools.AlarmClock.viewtimer","description":"View assigned timers","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer name, empty by default"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Your order has been shipped successfully and is expected to be delivered in mid-April. Please be prepared to receive the goods in advance, if you have any questions, please feel free to contact us. Enjoy!
+query:Can you check what kind of dinner we had at the time mentioned in the text?<|im_end|>
+<|im_start|>assistant
+{"name":"Health.HealthManagement.getDietHistory","parameters":{"time":"mid-April"}}<|im_end|>

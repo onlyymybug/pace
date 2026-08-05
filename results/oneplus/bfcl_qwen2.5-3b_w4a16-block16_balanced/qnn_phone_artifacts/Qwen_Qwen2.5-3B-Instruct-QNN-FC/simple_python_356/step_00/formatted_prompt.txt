@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "recipe_finder.find", "description": "Find a recipe based on dietary preferences, number of servings, and preparation time. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"servings": {"type": "integer", "description": "The number of people that the recipe should serve."}, "diet": {"type": "string", "description": "Any dietary restrictions like 'vegan', 'vegetarian', 'gluten-free' etc."}, "prep_time": {"type": "integer", "description": "The maximum amount of time (in minutes) the preparation should take. Default is 60 minutes."}}, "required": ["servings", "diet"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me a recipe that serves 2 people, is vegan, and takes under 30 minutes to prepare.<|im_end|>
+<|im_start|>assistant

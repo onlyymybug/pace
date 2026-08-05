@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Romeo boards a train with 120 people. At the first stop, 20 more people board the train. At the second stop, 50 people descended from the train while twice that number boarded the train. If 80 more people descended at the third station, calculate the total number of people on the train at the final stop.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. Initially, there are 120 people on the train.
+2. At the first stop, 20 more people board the train. So, the total number of people becomes:
+   \( 120 + 20 = 140 \)
+3. At the second stop, 50 people descend from the train while twice that number (50 * 2 = 100) board the train. So, the total number of people becomes:
+   \( 140 - 50 + 100 = 190 \)
+4. At the third station, 80 more

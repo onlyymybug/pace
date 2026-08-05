@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.addCity","description":"Add specified city to weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+{"name":"SocialCommunication.InstantMessaging.addContact","description":"Add New Contact","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Contact person"},"phone":{"type":"string","description":"Cellphone"}},"required":["name","phone"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskAddAddresbookFriend","description":"Add friends to Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.addFriend","description":"Add friends by phone number or username","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"username"},"phone_number":{"type":"string","description":"Phone No."}},"required":["user_name","phone_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friends, how about we go to the Summer Palace in Beijing this weekend? I heard that the autumn scenery there is very beautiful. We can start from the morning, go to Wanshou Mountain to see the Buddha Fragrance Pavilion, and then go to Kunming Lake for a walk and take photos. You can try Beijing specialty snacks such as fried sauce noodles and soy sauce at a nearby restaurant at noon. Check out the promenade in the afternoon and feel the cultural atmosphere of old Beijing, don't you think?
+query:Add the cities mentioned in Xiaoming QQ message to my weather watch list.<|im_end|>
+<|im_start|>assistant

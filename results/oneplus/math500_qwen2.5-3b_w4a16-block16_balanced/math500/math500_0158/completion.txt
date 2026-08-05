@@ -1,0 +1,16 @@
+To solve for \(a + b + c\) given the polynomial equation \(\frac{1}{x} + 5x^2 = 6x - 24\), we first need to rewrite the equation in standard polynomial form. Start by eliminating the fraction by multiplying through by \(x\):
+
+\[
+1 + 5x^3 = 6x^2 - 24x
+\]
+
+Rearrange all terms to one side of of the equation:
+
+\[
+5x^3 - 6x^2 + 24x - 1 = 0
+\]
+
+This is a cubic equation in \(x\). By Vieta's formulas, for a cubic equation of of \(ax^3 + bx^2 + cx + d = 0\), the sum of of the roots \(a + b + c\) is given by \(-\frac{b}{a}\). Here, the coefficients are \(a = 5\), \(b = -6\), \(c = 24\), and \(d = -1\). Thus, the sum of of the roots is:
+
+\[
+a + b + c = -\frac{-6}{5} = \frac{6

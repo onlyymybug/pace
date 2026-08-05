@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.cancelCarRentalOrder","description":"Cancel the rental (all pending reservations are canceled by default)","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"}},"required":["time"]}}
+{"name":"SocialCommunication.Community.unlikeCommunityPost","description":"Unlike a specific post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to unlike the post"},"post_name":{"type":"string","description":"Title of the post to unlike"}},"required":["community_name","post_name"]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"Navigation.TrainTickets.cancelTrainTicket","description":"Cancelling a booked train ticket","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Wagon Number"},"name":{"type":"string","description":"Rider's name"},"time":{"type":"string","description":"To cancel a reservation for a certain time"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["train_number","name","time","departure_station","destination_station"]}}
+{"name":"SocialCommunication.SocialMedia.cancleCollectMediumTrends","description":"Unfavorite the specified activity in the specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Ming, April 1, 2023 is the last submission date for our project, please make sure that all documents and code are completed and uploaded to the server before then. We also have a team meeting at 2pm where the final checks will be discussed in detail. Remember to prepare ahead of time. Thanks,
+query:I want to cancel the dynamics of the secrets of healthy eating released by Zhang Qiang, a nutritionist, which was mentioned in the WeChat message Xiao Li sent me.<|im_end|>
+<|im_start|>assistant

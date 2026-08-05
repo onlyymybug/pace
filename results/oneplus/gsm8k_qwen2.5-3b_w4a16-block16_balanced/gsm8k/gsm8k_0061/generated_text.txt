@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A basket contains 25 oranges among which 1 is bad, 20% are unripe, 2 are sour and the rest are good. How many oranges are good? To solve this problem, we need to determine the number of good oranges in the basket. 
+
+Given:
+- Total oranges: 25
+- Bad oranges: 1
+- Unripe oranges: 20% of total oranges
+- Sour oranges: 2
+
+First, calculate the number of unripe oranges:
+Unripe oranges = 20% of total oranges
+Unripe oranges = 0.20 * 25
+Unripe oranges = 5
+
+Next, calculate the total number of unripe and sour oranges:
+Total unripe and sour oranges = Unripe oranges + Sour oranges
+Total un

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elaina is holding the final concert in her tour. To celebrate her final concert, she makes the concert twice as long as her usual concerts. At the end of the concert, she also performs a 15-minute encore. If the runtime of this final concert is 65 minutes then how long, in minutes, do her usual concerts run for?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the usual runtime of Elaina's concerts as \( x \) minutes. According to the problem, the final concert is twice as long as her usual concerts, so its runtime is \( 2x \) minutes. Additionally, there is a 15-minute encore performance. The total runtime of the final concert is given as 65 minutes. We can set up the following equation to represent this situation:
+
+\[ 2x + 15 = 65 \]
+
+To find the runtime of her usual concerts, we need to solve for \( x \):
+
+\[ 2x + 15 = 65 \]
+
+First

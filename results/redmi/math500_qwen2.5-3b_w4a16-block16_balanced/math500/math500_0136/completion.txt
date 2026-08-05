@@ -1,0 +1,4 @@
+To determine the number of trailing zeroes in \(42!\), we need to find the highest power of \(10\) that divides \(42!\). Since \(10 = 2 \times 5\), and there are generally more factors of \(2\) than \(5\) in factorials, the number of trailing zeroes is determined by the number of times \(5\) is a factor in \(42!\).
+
+To find the number of times \(5\) is a factor in \(42!\), we use the formula for the highest power of \(p\) dividing \(n!\), which is given by:
+\

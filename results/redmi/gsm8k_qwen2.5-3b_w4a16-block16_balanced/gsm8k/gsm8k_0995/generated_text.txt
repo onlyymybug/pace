@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tobias, Chikote, and Igneous are the three little wolves who live in the forest and howl at the moon every night. When Tobias howls, each howl lasts for a total of 20 seconds.  Chikote howls for twice as long as Tobias.  And Igneous howls for as long as the other two wolves combined.  What is the combined length of time, in minutes, of the three wolves' howls? To find the total time in seconds, we first calculate the time each wolf spends howling.
+
+Tobias howls for 20 seconds.
+
+Chikote howls for twice as long as Tobias, so:
+\[ \text{Chikote's howl time} = 2 \times 20 = 40 \text{ seconds} \]
+
+Igneous howls for as long as Tobias and Chikote combined, so:
+\[ \text{Igneous's howl time} = 20 + 40 = 60 \text{ seconds} \]
+
+Now, we sum

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotRating","description":"Get user ratings for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.checkScenicSpotAvailability","description":"View the current availability of selected scenic spots by scenic spot name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Navigation.TrafficViolations.queryDrivingLicensePoints","description":"Check the remaining points on your driver's license","parameters":{"type":"object","properties":{"driving_license_number":{"type":"string","description":"Licence Number:"}},"required":["driving_license_number"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotList","description":"Search for scenic spots by preference, region, category, etc.","parameters":{"type":"object","properties":{"preference":{"type":"string","description":"User preferences such as family-friendly, couple-friendly, etc."},"region":{"type":"string","description":"Area Names"},"category":{"type":"string","description":"Categories of scenic spots, such as natural landscapes, cultural landscapes, etc."}},"required":["preference","region","category"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.searchRentingHouses","description":"Search for rentals by criteria","parameters":{"type":"object","properties":{"price":{"type":"string","description":"Rents"},"house_area":{"type":"string","description":"Area"},"level":{"type":"string","description":"Floor"},"age":{"type":"integer","description":"fixed number of years"},"house_type":{"type":"string","description":"Layout"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"},"indoor_decoration":{"type":"string","description":"decorate"},"furniture":{"type":"string","description":"Furniture"}},"required":["price","house_area","level","age","house_type","housing_estate","location","indoor_decoration","furniture"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet tomorrow morning at 9am outside The Palace Museum Donghua Gate to prepare for the guided tour. Remember to bring your ID card and a water glass. The inside of The Palace Museum is relatively large, and you may be tired when you walk around. We are expected to come out from the Shenwu Gate at 3 pm.
+query:What is the score of the scenic spot mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

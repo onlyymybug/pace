@@ -1,0 +1,24 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the smallest positive perfect cube that can be written as the sum of three consecutive integers? To find the smallest positive perfect cube that can be written as the sum of of three consecutive integers, we start by expressing the sum of of three consecutive integers in a general form. Let the three consecutive integers be \( n-1 \), \( n \), and \( n+1 \). Their sum is:
+
+\[
+(n-1) + n + (n+1) = 3n
+\]
+
+We need this sum to be a perfect cube. Let's denote this perfect cube by \( k^3 \), where \( k \) is an integer. Therefore, we have:
+
+\[
+3n = k^3
+\]
+
+This implies:
+
+\[
+n = \frac{k^3}{3}
+\]
+
+For \( n \) to be an integer, \( k^3 \) must be divisible by 3. This means \( k \) must be divisible by 3. Let \( k = 3m \), where \( m \) is an integer. Substituting \( k = 3m \) into the equation for \( n \), we get:
+
+\[
+n = \frac{(3m)^3}{3} = \frac{27m^3}{3} = 9m

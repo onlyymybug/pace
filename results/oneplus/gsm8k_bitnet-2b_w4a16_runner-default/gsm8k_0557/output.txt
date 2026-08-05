@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: How much does it cost you for lunch today at Subway if you pay $40 for a foot-long fish sub and thrice as much for a six-inch cold-cut combo sub?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the cost of the six- inch cold- cut combo sub, we multiply the cost of the foot-long fish sub by 3:
+
+Cost of cold- cut combo sub = $40 * 3 = $120
+
+Now, we add the cost of the foot-long fish sub and the cold- cut combo sub to find the total cost:
+
+Total cost = Cost of foot-long fish sub + Cost of cold- cut combo sub
+Total cost = $40 + $120
+Total cost = $160
+
+The answer is $160.<|eot_id|>

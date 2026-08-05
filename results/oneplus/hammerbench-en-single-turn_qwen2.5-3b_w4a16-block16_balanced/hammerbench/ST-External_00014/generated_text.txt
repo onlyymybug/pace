@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.appealViolation","description":"Appealing a Designated Violation Record","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"time":{"type":"string","description":"Billing Time"},"appeal_reason":{"type":"string","description":"Reasons for appealing"}},"required":["plate_number","time","appeal_reason"]}}
+{"name":"Navigation.TaxiCarRental.reportCarRentalFault","description":"Escalate vehicle issue based on order","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Booking Order ID"},"content":{"type":"string","description":"Questions"}},"required":["order_id","content"]}}
+{"name":"OnlineShopping.ExpressDelivery.signForOrderExpress","description":"Sign and receive courier orders according to the designated courier number","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Express date"},"express_id":{"type":"string","description":"Tracking Number"}},"required":["date","express_id"]}}
+{"name":"OnlineShopping.ExpressDelivery.complaintExpress","description":"Make a complaint about a courier issue","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"complaint_content":{"type":"string","description":"Complaint Contents"}},"required":["express_id","signing_date","complaint_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.reportTaxEvasion","description":"Reporting tax evasion","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"},"description":{"type":"string","description":"Problem description"}},"required":["company_name","description"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, the project kickoff meeting will be held on March 15, 2023 at 10 am in the company's large conference room. Please attend on time. Thank you!
+query:My license plate number is Yue B12345. I want to appeal this violation record. The reason is that the timer is not turned on during parking hours. The specific time is the time mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.appealViolation","parameters":{"plate_number":"YueB12345","time":"time mentioned in the text message","appeal_reason":"the timer is not turned on during parking hours"}}<|im_end|>

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"Health.HealthManagement.createHealthReminder","description":"Create health reminders by reminder content and reminder time","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Alert Content"},"time":{"type":"string","description":"Reminder time"}},"required":["content","time"]}}
+{"name":"UtilityTools.Memo.setNotesReminders","description":"Set a reminder at a certain time","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Memo Title"},"time":{"type":"string","description":"Reminder time"},"category":{"type":"string","description":"Classify"}},"required":["title","time","category"]}}
+{"name":"SystemTools.SystemSettings.setSystemNotification","description":"Set notification permissions and reminder methods for your phone","parameters":{"type":"object","properties":{"app_name":{"type":"string","description":"Αpp Name"},"notification_enable":{"type":"boolean","description":"Whether to allow notifications"},"notification_sound":{"type":"boolean","description":"Notification sounds, such as default, mute"}},"required":["app_name","notification_enable","notification_sound"]}}
+{"name":"UtilityTools.Calendar.addCalendarClock","description":"Set a schedule reminder","parameters":{"type":"object","properties":{"date_name":{"type":"string","description":"Visiting program name"},"start_date":{"type":"string","description":"Schedule Reminder Time"}},"required":["date_name","start_date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:When in Shanghai, remember to go to the Bund for a walk. The scenery there is really good, especially at night, the lights are bright, and you can feel the unique urban charm of Shanghai. In addition, you can also go to the Chengxiang Temple to taste the authentic Shanghai snacks and experience the old Shanghai style. If you have enough time, it is recommended to go to Disneyland, both adults and children will like it very much. Hope you have a wonderful trip in Shanghai!
+query:If there is high temperature weather in the place mentioned in the WeChat that Xiao Li sent me, please remind me to bring sunscreen by text message.<|im_end|>
+<|im_start|>assistant

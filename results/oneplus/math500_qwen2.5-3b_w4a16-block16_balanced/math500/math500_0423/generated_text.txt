@@ -1,0 +1,20 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The complex numbers $\alpha_1, \alpha_2, \alpha_3$, and $\alpha_4$ are the four distinct roots of the equation $x^4+2x^3+2=0$. Determine the unordered set \[
+\{\alpha_1\alpha_2 + \alpha_3\alpha_4, \alpha_1\alpha_3 + \alpha_2\alpha_4, \alpha_1\alpha_4 + \alpha_2\alpha_3\}.
+\] To solve the problem, we start by finding the roots of of of the polynomial equation \(x^4 + 2x^3 + 2 = 0\). Let's denote the roots by \(\alpha_1, \alpha_2, \alpha_3, \alpha_4\). By Vieta's formulas, we know the following relationships among the roots:
+
+\[
+\alpha_1 + \alpha_2 + \alpha_3 + \alpha_4 = -2,
+\]
+\[
+\alpha_1\alpha_2 + \alpha_1\alpha_3 + \alpha_1\alpha_4 + \alpha_2\alpha_3 + \alpha_2\alpha_4 + \alpha_3\alpha_4 = 0,
+\]
+\[
+\alpha_1\alpha_2\alpha_3 + \alpha_1\alpha_2\alpha_4 + \alpha_1\alpha_3\alpha_4 + \alpha_2\alpha_3\alpha_4 = 0,
+\]
+\[
+\alpha_1\alpha_2\alpha_3\alpha_4 = -2.
+\]
+
+We need to find the value of

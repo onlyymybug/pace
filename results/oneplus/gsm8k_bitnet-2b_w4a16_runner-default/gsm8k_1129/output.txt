@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Liam is 16 years old now. Two years ago, Liam’s age was twice the age of Vince. How old is Vince now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Vince's current age as \( V \).
+
+Two years ago, Liam was \( 16 - 2 = 14 \) years old, and Vince was \( V - 2 \) years old.
+
+According to the problem, two years ago, Liam's age was twice the age of Vince. So we can write the equation:
+
+\[ 14 = 2(V - 2) \]
+
+Now, solve for \( V \):
+
+\[ 14 = 2V - 4 \]
+\[ 14 + 4 = 2V \]
+\[ 18 = 2V \]
+\[ V

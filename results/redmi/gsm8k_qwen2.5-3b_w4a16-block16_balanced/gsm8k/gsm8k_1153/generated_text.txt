@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark buys one lottery ticket with a 20% chance of winning and a second lottery ticket that's three times more likely to win. What is the probability, expressed as a percentage, that both tickets are winners? To solve this problem, we need to calculate the probability of that both tickets are winners.
+
+1) First, we determine the probability of of the second ticket being a winner. Given that the second ticket is three times more likely to win than the first, and the first has a 20% chance, the second has 3 * 20 = 60% chance.
+
+2) Next, we calculate the combined probability of both events happening. Since the events are independent, we multiply the probabilities: 20% * 60% = 0.20 * 0.60 = 0.

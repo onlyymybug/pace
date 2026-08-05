@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "detailed_weather_forecast", "description": "Retrieve a detailed weather forecast for a specific location and time frame, including high/low temperatures, humidity, and precipitation. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city that you want to get the weather for."}, "days": {"type": "integer", "description": "Number of days for the forecast."}, "details": {"type": "array", "items": {"type": "string", "enum": ["high_low_temperature", "humidity", "precipitation"]}, "description": "Specific weather details required in the forecast."}}, "required": ["location", "days", "details"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the high and low temperatures, humidity, and precipitation for London, United Kingdom for the next 3 days.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "detailed_weather_forecast", "arguments": {"location": "London, United Kingdom", "days": 3, "details": ["high_low_temperature", "humidity", "precipitation"]}}
+</tool_call><|im_end|>

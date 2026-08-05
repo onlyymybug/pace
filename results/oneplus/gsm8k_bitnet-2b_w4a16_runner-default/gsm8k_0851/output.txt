@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mr. Smith has two farms, Farm X and Farm Y. He has 55 goats in Farm X and 45 goats in Farm Y. He sold 10 goats from Farm X and twice as many goats from Farm Y. How many goats are left in the two farms altogether?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of goats left in both farms, we first calculate the number of goats remaining in each farm after the sales.
+
+In Farm X, Mr. Smith sold 10 goats out of 55. So, the number of goats left in Farm X is:
+55 - 10 = 45
+
+In Farm Y, Mr. Smith sold twice as many goats as he did from Farm X. Since he sold 10 goats from Farm X, he sold:
+2 * 10 = 20 goats from Farm Y
+
+So, the number of goats left in Farm Y is:
+45 - 20 = 25
+
+Now

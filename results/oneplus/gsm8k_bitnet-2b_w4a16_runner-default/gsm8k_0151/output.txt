@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Steve and Tim decide to see who can get home from school the fastest. Steve lives further away than Tim, so he is allowed to ride his bike. Steve lives 3 miles from the school and can bike at 440 feet per minute. Tim lives 2 miles away from the school. If Tim can ride his skateboard at 264 feet per minute, how long will the winner be waiting at their house before the loser finishes the race?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how long it takes each of them to get home, we need to calculate the time it takes for each to travel the distance to school.
+
+For Steve:
+Distance = 3 miles
+Speed = 440 feet per minute
+
+First, convert Steve's distance to feet:
+3 miles * 5280 feet/mile = 15,120 feet
+
+Now, calculate the time it takes for Steve to ride his bike:
+Time = Distance / Speed
+Time = 15,120 feet / 440 feet/minute
+Time = 34.3636 minutes
+
+For Tim:
+Distance = 2 miles
+Speed = 

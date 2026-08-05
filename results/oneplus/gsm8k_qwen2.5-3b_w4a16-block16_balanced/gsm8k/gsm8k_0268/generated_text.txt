@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It takes 20 minutes for the oil to heat up to 300 degrees.  It then takes 40% longer for the oil to heat up to the desired temperature of 400 degrees.  After warming the oil it takes 5 minutes less time to cook than it took to warm up the oil.  How much time passes from starting the oil to having cooked chicken? 
+
+Reasoning: First find the time to heat to 400: 20 plus 40% more than 20, or 20 plus 8, is 28 minutes. Then find the time to cook: double the warming time 20, is 40, then subtract 5 minutes, so 40 minus 5 is 35 minutes. Add all three times together: 20 plus 28 plus 35.
+
+The answer is 83. The answer is 83.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning

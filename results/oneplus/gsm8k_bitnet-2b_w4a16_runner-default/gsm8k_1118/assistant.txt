@@ -1,0 +1,9 @@
+To solve this problem, we first determine the rate at which the light blinks. We know that the light blinks 255 times in 5 minutes. To find out how long it takes for one blink, we divide the total number of blinks by the number of minutes:
+
+255 blinks / 5 minutes = 51 blinks per minute
+
+Now, we need to find out how long it takes for the light to blink 459 times at this rate. We divide the total number of blinks by the rate of blinking:
+
+459 blinks / 51 blinks per minute = 9 minutes
+
+The answer is

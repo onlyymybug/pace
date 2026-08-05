@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Hannah needs to drink 100 ml of water for every 200 calories she burns. She spends 2 hours doing aerobics, which burns 500 calories/hour, and 1 hour running, which burns 600 calories/hour. How many ml of water does she need to drink?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total number of calories Hannah burns during her aerobics and running sessions. 
+
+1. Calculate calories burned during aerobics:
+   - Calories burned per hour: 500 calories/hour
+   - Total hours of aerobics: 2 hours
+   - Total calories burned during aerobics: \(500 \text{ calories/hour} \times 2 \text{ hours} = 1000 \text{ calories}\)
+
+2. Calculate calories burned during running:
+   - Calories burned per hour: 600 calories/hour
+   - Total hours of running

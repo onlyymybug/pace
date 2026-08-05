@@ -1,0 +1,8 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rita hand-picks Junebugs off of her plants every summer.  On Monday, she removed 39 Junebugs.  On both Tuesday and Wednesday, she removed twice as many Junebugs as she did on Monday.  Thursday she removed 48 and on Friday she removed 57.  What is the average number of Junebugs that she removes per day? To find the average, we need to add up all the Junebugs and divide by the number of days.
+Total Junebugs: Monday:39 + Tuesday:78 + Wednesday:78 + Thursday:48 + Friday:57
+Total Junebugs: 39+78+78+48+57=270
+Number ofDays: Monday:1 + Tuesday:1 + Wednesday:1 + Thursday:1 + Friday:1 = 5
+Average: 270/5=54
+The answer is 54.<|endoftext|>Human: Solve the grade-school

@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark works at his job for 8 hours a day for 5 days a week.  He used to make $10 an hour but they raised his pay by $2 per hour.  How much does he make a week? Step 1: Calculate Mark's new hourly wage
+Mark's new hourly wage is $10 + $2 = $12
+
+Step 2: Calculate the total hours Mark works in a week
+Mark works 8 hours a day for 5 days a week, so total hours in a week = 8 * 5
+
+Step 3: Calculate Mark's weekly earnings
+Weekly earnings = Total hours in a week * New hourly wage
+
+Step 4: Perform the calculations
+Total hours in a week = 8 * 5 = 40 hours
+Weekly earnings = 40 * 12
+

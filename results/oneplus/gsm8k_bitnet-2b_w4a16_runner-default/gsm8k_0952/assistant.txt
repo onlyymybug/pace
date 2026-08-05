@@ -1,0 +1,13 @@
+To find the number of pages in the book, we need to determine how many pages fit into the thickness of the book when it is stacked.
+
+Given:
+- Each inch of paper contains 100 pages.
+- Each side of the paper (front and back) contains one page of the book.
+
+Since the book is 1.5 inches thick, we can calculate the total number of pages by multiplying the thickness by the number of pages per inch.
+
+Number of pages = Thickness of the book × Number of pages per inch
+
+Number of pages = 1.5 inches × 100 pages/inch
+
+Number of pages = 150 pages

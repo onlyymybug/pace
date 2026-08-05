@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Evaluate
+\[\sin (\arcsin 0.4 + \arcsin 0.5) \cdot \sin (\arcsin 0.5 - \arcsin 0.4).\] To solve the given problem, we need to evaluate the expression \(\sin (\arcsin 0.4 + \arcsin 0.5) \cdot \sin (\arcsin 0.5 - \arcsin 0.4)\).
+
+First, let's denote:
+\[ x = \arcsin 0.4 \]
+\[ y = \arcsin 0.5 \]
+
+By definition of \(x\) and \(y\), we have:
+\[ \sin x = 0.4 \]
+\[ \sin y = 0.5 \]
+
+We need to find

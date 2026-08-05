@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.PublicTransit.viewBusRouteDetail","description":"View route details for a given bus (default current city)","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"SocialCommunication.InstantMessaging.openSystemMessage","description":"Read system text messages with the specified number","parameters":{"type":"object","properties":{"message_number":{"type":"string","description":"The incoming code of the system SMS to be read"}},"required":["message_number"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+{"name":"UtilityTools.AlarmClock.openTimer","description":"Set and turn on the specified timer","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer name, empty by default"},"timer":{"type":"string","description":"Timer Time Settings"}},"required":["timer_name","timer"]}}
+{"name":"SocialCommunication.InstantMessaging.sendSystemMessage","description":"Send a system text message to a specific number or contact","parameters":{"type":"object","properties":{"receiver_number":{"type":"string","description":"Phone number to receive SMS messages"},"receiver_name":{"type":"string","description":"Username to receive SMS"},"message_content":{"type":"string","description":"Text content of the text message to be sent"},"attachment_path":{"type":"string","description":"Image or file URL"}},"required":["receiver_number","receiver_name","message_content","attachment_path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, your friend has arrived safely at Pudong International Airport and is heading to the airport exit. Do you need to pick up the airport? There are many people at the exit of Pudong International Airport, so it is recommended to confirm the pick-up location to avoid missing it. Have a great trip!
+query:I want to start from Hongqiao Railway Station and go to the place mentioned in the text message sent to me by Tom to help me check the bus route with the least number of transfers.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.PublicTransit.viewBusRouteDetail","parameters":{"departure":"Hongqiao Railway Station","destination":"destination","preferred_line":"less transfer"}}<|im_end|>

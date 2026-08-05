@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "map_service.get_directions", "arguments": {"start": "New York", "end": "Los Angeles", "avoid": ["highways", "tolls"]}}
+</tool_call><|im_end|>

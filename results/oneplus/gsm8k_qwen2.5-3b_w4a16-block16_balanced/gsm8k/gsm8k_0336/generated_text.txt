@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mason needs 30 ounces of sugar to make a batch of suckers and 70 ounces of sugar to make a batch of fudge. How much sugar does he need to make 8 batches of suckers and 1 batch of fudge? Step 1: Calculate the total sugar needed for batches of of suckers.
+- For 1 batch of suckers: 30 ounces
+- For 8 batches of suckers: 30 * 8 = 240 ounces
+
+Step 2: Calculate the total sugar needed for 1 batch of fudge.
+- For 1 batch of fudge: 70 ounces
+
+Step 3: Add the sugar needed for batches of of suckers and fudge.
+- Total sugar needed: 240 + 70 = 310 ounces
+
+The answer is 310

@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a neighborhood, the number of rabbits pets is twelve less than the combined number of pet dogs and cats. If there are two cats for every dog, and the number of dogs is 60, how many pets in total are in the neighborhood? Let's denote the number of dogs as \(D\), the number of cats as \(C\), and the number of rabbits as \(R\).
+
+Given:
+- \(D = 60\)
+- \(C = \frac{1}{2}D\)
+- \(R = D - 12\)
+
+We need to find the total number of pets, \(T\), which is \(T = D + C + R\).
+
+First, calculate the number of cats:
+\[ C = \frac{1}{2}D = \frac{1}{2} \times 60 = 3

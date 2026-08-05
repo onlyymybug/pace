@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A teacher uses a 5-inch piece of chalk to write math equations on a chalkboard for his students. The teacher likes to conserve chalk, so he tries to only use 20% of the chalk each day. Since the teacher cannot write with a very small piece of chalk, he recycles the chalk when it is smaller than 2 inches. On Monday the teacher used a new piece of chalk. His students need extra help that day, so he ended up writing more than usual. He used up 45% of the chalk by the end of the day. If the teacher goes back to using only 20% of the chalk each day, how many days does he have before he has to recycle this piece?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the length of the chalk the teacher used on Monday. Since he used 45% of the chalk by the end of the day, we can calculate the length of chalk he used as follows:
+
+Let \( L \) be the length of chalk the teacher started with on Monday. Then, 45% of \( L \) is equal to the length of chalk he used:
+
+\[ 0.45L = \text{length of chalk used} \]
+
+Since the teacher uses 20% of the chalk each day, the length of chalk he has left after using some each

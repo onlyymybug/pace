@@ -1,0 +1,18 @@
+adb -P 5037 -s 192.168.110.67:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; { ./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path . --prompt '"'"'<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "entropy_change.calculate", "description": "Calculate the change in entropy for a mass of a specific substance under set initial and final conditions. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"substance": {"type": "string", "description": "The substance for which the change in entropy is calculated."}, "mass": {"type": "integer", "description": "The mass of the substance in kg."}, "initial_temperature": {"type": "integer", "description": "The initial temperature of the substance in degree Celsius."}, "final_temperature": {"type": "integer", "description": "The final temperature of the substance in degree Celsius."}, "pressure": {"type": "integer", "default": 1, "description": "The pressure the substance is under in atmospheres."}}, "required": ["substance", "mass", "initial_temperature", "final_temperature"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the change in entropy in Joules per Kelvin of a 1kg ice block at 0°C if it is heated to 100°C under 1 atmosphere of pressure?<|im_end|>
+<|im_start|>assistant
+'"'"' --system_prompt '"'"''"'"' --seq_len 1024 --eval_mode 1 --temperature 0.0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/speed.txt; runner_rc=$?; printf "\nrunner_returncode=%s\n" "$runner_rc"; exit "$runner_rc"; } > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_50/step_00/runner.log 2>&1'

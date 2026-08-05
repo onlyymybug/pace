@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.deleteMeetingRecord","description":"Delete the specified meeting minutes","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"OnlineShopping.Mall.deleteCommodityOrders","description":"Delete an item order based on criteria such as the item name","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"order_stage":{"type":"string","description":"Order status, e.g. Pending Payment, Pending Receipt, Completed, Cancelled, Refund/After Sales"},"evaluate_stage":{"type":"string","description":"Review status, e.g. reviewed, pending review"}},"required":["goods","order_stage","evaluate_stage"]}}
+{"name":"UtilityTools.AppSearchInstallation.removeApp","description":"Delete selected mobile apps","parameters":{"type":"object","properties":{"app_name":{"type":"string","description":"Mobile App Name"}},"required":["app_name"]}}
+{"name":"Navigation.TaxiCarRental.deleteTaxiOrders","description":"Delete trip history","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"ConvenientLiving.JobRecruitment.deleteJobPosition","description":"Delete Published Jobs","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"}},"required":["position_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Last Friday at 8pm, we met at the old place, remember to bring your guitar, we played and sang together until late at night. Looking forward to spending time with you!
+query:I want to delete the taxi order to the library, departing from home, the time is the time mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TaxiCarRental.deleteTaxiOrders","parameters":{"time":"Last Friday at 8pm","destination":"library"}}<|im_end|>

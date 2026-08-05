@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brianne and Ashley make greek orange pie. Ashley brought five boxes with ten oranges in each box, while Brianne brought 20 more oranges than Ashley. If one greek orange pie needs three oranges, how many greek orange pies can they make? Step 1: Calculate total oranges Ashley brought
+Ashley brought 5 boxes with 10 oranges in each box, so Ashley brought 5*10 = 50 oranges.
+
+Step 2: Calculate total oranges Brianne brought
+Brianne brought 20 more oranges than Ashley, so Brianne brought 50+20 = 70 oranges.
+
+Step 3: Calculate total oranges brought by both
+Total oranges brought = Ashley's oranges + Brianne's oranges = 50 + 70 = 120 oranges.
+
+Step 4: Calculate total greek orange pies they can make

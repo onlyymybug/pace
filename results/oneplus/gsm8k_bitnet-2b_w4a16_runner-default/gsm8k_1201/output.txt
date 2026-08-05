@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Eight more than four times the number of coffee mugs in the teacher’s lounge is 40. How many coffee mugs are in the teacher’s lounge?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of coffee mugs in the teacher's lounge as \( x \).
+
+The problem states that eight more than four times the number of coffee mugs is 40. We can write this as an equation:
+
+\[ 4x + 8 = 40 \]
+
+To solve for \( x \), we first subtract 8 from both sides of the equation:
+
+\[ 4x = 40 - 8 \]
+\[ 4x = 32 \]
+
+Next, we divide both sides by 4:
+
+\[ x = \frac{32}{4} \]
+\[ x = 8 \

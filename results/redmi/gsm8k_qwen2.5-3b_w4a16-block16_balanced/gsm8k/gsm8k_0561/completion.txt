@@ -1,0 +1,13 @@
+Step 1: Calculate total hamsters
+Number ofHamstersCages = 3
+NumberHamstersPerCage = 10
+TotalHamsters = NumberNumberHamstersCages * NumberHamstersPerCage
+
+Step 2: Calculate total guinea pigs
+NumberNumberGuineaPigsCages = 3
+NumberGuineaPigsPerCage = 5
+TotalGuineaPigs = NumberNumberGuineaPigsCages * NumberGuineaPigsPerCage
+
+Step 3: Calculate total rodents
+TotalRodents = TotalHamsters + TotalGuineaPigs
+

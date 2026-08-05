@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPersonalTaxInfo","description":"Inquire about the user's personal tax information","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Username"}},"required":["user_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.getDueDate","description":"Deadline for payment of fees for the acquisition of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Zhang San! My name is Li Si. I would like to talk to you in detail about the project we discussed last time. Monday at 10am, do you have a moment? We can discuss this further in a virtual meeting. Looking forward to your reply, Zhang San!
+query:Friend, can you help me check the deadline for payment of water and electricity bills in Chaoyang District, Beijing?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.UtilityPayments.getDueDate","parameters":{"service_type":"water_electricity","user_name":"LiSi"}}<|im_end|>

@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the maximum value of
+\[\frac{x - y}{x^4 + y^4 + 6}\]over all real numbers $x$ and $y.$ To find the maximum value of of
+\[
+\frac{x - y}{x^4 + y^4 + 6},
+\]
+we start by analyzing the expression and considering different cases for \(x\) and \(y\).
+
+First, let's set \(x = y\). Substituting \(x = y\) into the expression, we get:
+\[
+\frac{x - y}{x^4 + y^4 + 6} = \frac{x - x}{x^4 + x^4 + 6} = \frac{0}{2x^4 + 6} = 0

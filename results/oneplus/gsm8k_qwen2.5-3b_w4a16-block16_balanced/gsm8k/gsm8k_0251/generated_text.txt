@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Each class in a school has 20 students. There are 3 classes. The school as a whole is 50% boys and 50% girls. The first class has 15 girls. The second class has 12 girls. How many boys are in the third class? Step 1: Calculate total students in school
+There are 3 classes with 20 students each, so total students in school is 3*20 = 60 students.
+
+Step 2: Calculate total number of girls in school
+Given that 50% are girls, total number of girls in school is 0.5*60 = 30 girls.
+
+Step 3: Calculate total number of boys in school
+Since 50% are boys, total number of boys in school is also 0.5*60 = 30 boys.
+
+Step 4: Calculate total number

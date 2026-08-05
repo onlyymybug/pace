@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Four dogs sat in a line within the veterinarian's waiting room.  The first dog was the Affenpinscher, who weighed only 10 pounds.  Next to him sat a Dachshund, who weighed twice as much as the Affenpinscher.  Next to the Dachshund sat a Papillon, who weighed one-fourth as much as the Dachshund.  And at the end of the line sat a Mastiff, who weighed 44 times the weight of the Papillon.  How much did the Mastiff weigh, in pounds?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the weight of the Mastiff, we need to work our way through the relationships given for each dog.
+
+1. The Affenpinscher weighs 10 pounds.
+2. The Dachshund weighs twice as much as the Affenpinscher, so the Dachshund weighs \(10 \times 2 = 20\) pounds.
+3. The Papillon weighs one-fourth as much as the Dachshund, so the Papillon weighs \(20 \div 4 = 5\) pounds.
+4. The Mastiff weighs 44 times the weight of the Papillon, so the Mastiff

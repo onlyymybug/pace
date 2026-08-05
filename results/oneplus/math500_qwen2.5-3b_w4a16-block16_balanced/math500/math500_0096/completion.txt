@@ -1,0 +1,7 @@
+To find the value of of of \( y \) such that the projection of \(\begin{pmatrix} 2 \\ y \\ -5 \end{pmatrix}\) onto \(\begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}\) is \(\frac{5}{6} \begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}\), we need to use the formula for the projection of of a vector \(\mathbf{a}\) onto a vector \(\mathbf{b}\). The projection is given by:
+
+\[
+\text{proj}_{\mathbf{b}} \mathbf{a} = \frac{\mathbf{a} \cdot \mathbf{b}}{\mathbf{b} \cdot \mathbf{b}} \mathbf{b}
+\]
+
+Here, \(\mathbf{a} = \begin{pmatrix} 2 \\ y \\ -5 \end{pmatrix}\) and \(\mathbf{b} = \begin{pmatrix} 1 \\ -2 \\ 1 \end{pmatrix}\). First, we calculate the dot product \(\

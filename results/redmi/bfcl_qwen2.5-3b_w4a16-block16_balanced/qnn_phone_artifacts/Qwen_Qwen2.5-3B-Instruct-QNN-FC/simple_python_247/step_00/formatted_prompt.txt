@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "historical_contrib.get_contrib", "description": "Retrieve historical contribution made by a scientist on a specific date. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"scientist": {"type": "string", "description": "The scientist whose contributions need to be searched."}, "date": {"type": "string", "description": "The date when the contribution was made in yyyy-mm-dd format."}, "category": {"type": "string", "description": "The field of the contribution, such as 'Physics' or 'Chemistry'. Default is 'all'."}}, "required": ["scientist", "date"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What was Albert Einstein's contribution to science on March 17, 1915?<|im_end|>
+<|im_start|>assistant

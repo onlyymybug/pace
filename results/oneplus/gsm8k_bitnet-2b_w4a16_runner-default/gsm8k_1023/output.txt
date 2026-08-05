@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Teresa sells large stuffed animals for three times the price of small stuffed animals. Today, she sold twice as many small stuffed animals as large ones and earned $120 from the sales. Each small stuffed animal costs $4. How many small stuffed animals did she sell?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of large stuffed animals sold as L and the number of small stuffed animals sold as S. We know that S = 2L. The total earnings from selling the stuffed animals can be expressed as 3 * (4 * L) + 4 * S = 120.
+
+Substituting S = 2L into the equation, we get:
+3 * (4 * L) + 4 * (2L) = 120
+12L + 8L = 120
+20L = 120
+L = 6
+
+Since S = 2L, then S = 2

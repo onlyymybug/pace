@@ -1,0 +1,8 @@
+{
+  "name": "OfficeSoftware.Email.createDraftMail",
+  "arguments": {
+    "content": "Please note that there will be an emergency meeting tomorrow at 9am in the large conference room.",
+    "mail_title": "Emergency Meeting Notification",
+    "receivers": "all@company.com"
+  }
+}

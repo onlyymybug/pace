@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Eve had 20 pieces of pomelos. After giving her friend some pomelos, Eve is left with 1/4 of the pomelos she originally had. How many pomelos did Eve give away? Let x be the number of pomelos Eve gave away.
+Original number of pomelos - Number of pomelos given away = Remaining number of pomelos
+20 - x = 1/4 * 20
+To solve for x, we first simplify the equation:
+20 - x = 1/4 * 20
+20 - x = 5
+Then, we isolate x:
+-x = 5 - 20
+-x = -15
+Finally, we multiply both sides by -1 to solve for x:
+x = 15
+The answer is 1

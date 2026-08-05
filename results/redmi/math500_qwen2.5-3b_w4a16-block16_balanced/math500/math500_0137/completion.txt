@@ -1,0 +1,7 @@
+To solve the problem, we start by considering the given conditions for the sequence \((a_1, a_2, \dots, a_n)\):
+
+\[
+\sum_{i=1}^n a_i = 96, \quad \sum_{i=1}^n a_i^2 = 144, \quad \sum_{i=1}^n a_i^3 = 21.
+\]
+
+We will use the identity for the power sums of and the elementary symmetric sums. Let \(S_k = \sum_{i=1}^n a_i^k

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jennifer's dog has 8 puppies, 3 of which have spots. Brandon's dog has 12 puppies, 4 of which have spots. What percentage of all the puppies have spots? Percentage calculated: 33.33
+The answer is 33 1/3. To solve this problem, we need to find the total number of puppies and the total number that have spots, then calculate the percentage of of those with spots.
+
+First, we find the total number of puppies:
+Jennifer's puppies: 8
+Brandon's puppies: 12
+Total puppies: 8 + 12 = 20
+
+Next, we find the total number of puppies with spots:
+Jennifer's spotted puppies: 3
+Brandon's spotted puppies: 4
+Total spotted puppies: 3 + 

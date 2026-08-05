@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A charity group decides to do a yard sale.  10 people donate 5 boxes of stuff each.  They also have 10 boxes of stuff already.  They can fit 2 boxes worth of stuff per table.  If they already own 15 tables, how many new tables do they need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of boxes of stuff available. 
+
+10 people donate 5 boxes each, so they donate a total of 10 * 5 = 50 boxes.
+
+They already have 10 boxes.
+
+So, the total number of boxes of stuff available is 50 + 10 = 60 boxes.
+
+Since each table can fit 2 boxes of stuff, we need to divide the total number of boxes by 2 to find out how many tables are needed.
+
+60 boxes / 2 boxes per table = 30 tables.
+
+They already own 15 tables, so they need 

@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Students in class 3B are collecting school points for behavior. If they get enough points in total, they can go on a trip. In the class, there are Adam, Martha, Betty, and Tom. Adam has collected 50 points. Betty was better than Adam and collected 30% more. Marta managed to collect 3 times more points than Tom, who has 30 points less than Betty. How many points is the class missing to go on the trip if the minimum threshold is 400 points?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total points collected by the class and compare it to the minimum threshold of 400 points.
+
+Let's denote:
+- Adam's points as \( A \)
+- Betty's points as \( B \)
+- Tom's points as \( T \)
+- Marta's points as \( M \)
+
+From the problem, we know:
+1. Adam has 50 points: \( A = 50 \)
+2. Betty collected 30% more points than Adam: \( B = A + 0.3A = 1.3A \)
+3. Tom has 30 points

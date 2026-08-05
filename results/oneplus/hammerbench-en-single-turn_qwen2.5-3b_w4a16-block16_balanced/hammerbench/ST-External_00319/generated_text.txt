@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.viewDoctorDetails","description":"View details for assigned physician","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"location":{"type":"string","description":"Area"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","location","doctor_name"]}}
+{"name":"SocialCommunication.SocialMedia.getMediumTrendsDetails","description":"Get the details of a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","time"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobApplicantsForPosition","description":"Get information about people applying for specific roles","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"}},"required":["position_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.getServiceProviders","description":"Get information on suppliers that provide services such as utilities","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"location":{"type":"string","description":"Region, default local"}},"required":["service_type","location"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryHousingSubsidyInfo","description":"Find out about housing allowances","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"User name, default user himself"}},"required":["user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Wei, I have already read the project report you sent me last week. There are several places I think we can discuss again. Especially the market analysis part, I think we can go a little deeper. Do you have time, we can arrange a time to talk in detail.
+query:I want to see the details of the doctor mentioned in the QQ message from the cardiac surgery department of Peking Union Medical College Hospital, can you check it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.viewDoctorDetails","parameters":{"hospital_name":"Peking Union Medical College Hospital","department":"Cardiac Surgery Department","location":"Beijing","doctor_name":"EK"}}<|im_end|>

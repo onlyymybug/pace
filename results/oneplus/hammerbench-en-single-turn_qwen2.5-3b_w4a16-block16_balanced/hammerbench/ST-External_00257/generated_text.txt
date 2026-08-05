@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.unlockMeeting","description":"Unlock Locked Meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Navigation.Bicycles.unlockBike","description":"Unlock based on bike number","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Bike number"}},"required":["number"]}}
+{"name":"SocialCommunication.Calling.cancleBlockPhoneCall","description":"Unblock set call","parameters":{"type":"object","properties":{"blocked_number":{"type":"string","description":"Phone number to block"}},"required":["blocked_number"]}}
+{"name":"SocialCommunication.Community.restoreHiddenCommunityPost","description":"Restore hidden posts in selected communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"post_name":{"type":"string","description":"Title of the hidden post to restore"}},"required":["community_name","post_name"]}}
+{"name":"UtilityTools.AlarmClock.restartTimer","description":"Reset the current timer or continue with the paused timer","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear customer, Thank you for attending our spring launch. We sincerely invite you to come to our exhibition hall at 10am on April 1 to witness the wonderful appearance of new products. There are wonderful refreshments and expert tutoring team waiting for your arrival and looking forward to having a great time with you. Enjoy!
+query:Help me unlock the April Fools' Day event meeting. The time is mentioned in the text message. The meeting ID is 2023-04-01-001.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Conferencing.unlockMeeting","parameters":{"meeting_id":"2023-04-01-001","title":"Spring Launch","time":"2023-04-01"}}<|im_end|>

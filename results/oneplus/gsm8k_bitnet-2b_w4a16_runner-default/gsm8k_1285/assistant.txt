@@ -1,0 +1,9 @@
+To solve this problem, let's break it down step by step:
+
+1. **First Street**: There are 5 children.
+2. **Second Street**: Each of the 5 children is joined by another child. So, the number of children now is \(5 + 5 = 10\).
+3. **Third Street**: Each of the 10 children is joined by another 2 children. So, the number of children now is \(10 + 10 = 20\).
+
+After the original 5 children leave, the total number of children following the truck is 20.
+
+The answer is 20.

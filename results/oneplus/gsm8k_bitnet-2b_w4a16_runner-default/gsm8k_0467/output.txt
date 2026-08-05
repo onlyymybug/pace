@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Becky bought 20 apples for 45 cents each and received a $1 discount. Kelly bought 20 apples for 50 cents each and received a 10 percent discount. How much more did Kelly pay than Becky?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the total cost for Becky:
+- Becky bought 20 apples for 45 cents each.
+- Total cost for Becky = 20 apples * 45 cents/apple = 900 cents.
+
+Convert Becky's total cost to dollars:
+- 900 cents = $9.
+
+Next, calculate the total cost for Kelly:
+- Kelly bought 20 apples for 50 cents each.
+- Total cost for Kelly = 20 apples * 50 cents/apple = 1000 cents.
+
+Convert Kelly's total cost to dollars:
+- 1000 cents = $10.
+
+Apply the discounts:
+- Becky received a $1 discount.
+- Kelly

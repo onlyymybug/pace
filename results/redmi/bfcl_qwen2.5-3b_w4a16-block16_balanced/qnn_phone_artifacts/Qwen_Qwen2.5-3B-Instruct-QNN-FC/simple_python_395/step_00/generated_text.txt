@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "parking_lot.find_nearest", "description": "Locate the nearest parking lot based on a specific location and radius. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The reference location e.g. Central Park, NY"}, "radius": {"type": "integer", "description": "The maximum distance from the location in miles. Default is 5 miles"}, "type": {"type": "string", "description": "The type of parking lot. Default is 'public'."}}, "required": ["location", "radius"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the nearest parking lot within 2 miles of Central Park in New York.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "parking_lot.find_nearest", "arguments": {"location": "Central Park, NY", "radius": 2, "type": "public"}}
+</tool_call><|im_end|>

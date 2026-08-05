@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A magazine costs half as much as a book. The book costs $4. A pen costs $1 less than a magazine. How much is the pen?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the cost of the pen, we first determine the cost of the magazine, which is half the cost of the book. The book costs $4, so the magazine costs $4 / 2 = $2.
+
+Next, we find the cost of the pen, which is $1 less than the cost of the magazine. Therefore, the pen costs $2 - $1 = $1.
+
+The answer is 1.<|eot_id|>

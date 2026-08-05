@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ben bought a car for $20000 in 2007. The price of the car depreciates at a constant rate of 21% per year. Find the price of the car in the year 2010.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the price of the car in the year 2010, we need to account for the depreciation over the years from 2007 to 2010. The depreciation rate is 21% per year, which means the car retains 79% of its value each year.
+
+Let's denote the initial price of the car as P = $20000. The depreciation factor for each year is 1 - 0.21 = 0.79.
+
+The price of the car after one year (in 2008) is:
+\[ P_{2008} = P \times 0.79 \]
+
+The price of

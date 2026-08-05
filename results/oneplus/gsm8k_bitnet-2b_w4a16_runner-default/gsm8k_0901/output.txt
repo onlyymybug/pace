@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Denise and Daniel are reading the same book. Yesterday, Denise read 10 pages while Daniel read 13 pages. Today, Denise read 5 more than as many pages as what Daniel read yesterday, while Daniel was not able to read any pages today. How many more pages did Denise read more than Daniel?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many more pages Denise read than Daniel, we first need to determine how many pages Denise read today. Since Denise read 5 more pages than Daniel read yesterday, and Daniel read 13 pages yesterday, Denise read 13 + 5 = 18 pages today.
+
+Now, we compare the total pages read by Denise and Daniel. Denise read 18 pages today, and Daniel read 0 pages today. Therefore, Denise read 18 - 0 = 18 more pages than Daniel.
+
+The answer is 18.<|eot_id|>

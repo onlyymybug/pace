@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+{"name":"OfficeSoftware.Conferencing.viewParticipants","description":"Get a list of participants for the current meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Navigation.FlightTickets.getFlightAirlinePromotions","description":"Get promotions from select airlines","parameters":{"type":"object","properties":{"airline":{"type":"string","description":"Airline Name"}},"required":["airline"]}}
+{"name":"Travel.HotelServices.getHotelPromotions","description":"Search promotions for selected hotels","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 3pm today, I will have a conference call with the marketing manager of Air China to discuss the details of the marketing plan and cooperation for the next quarter. Make sure you have the data and information ready before the meeting.
+query:I would like to know what promotions are available for the airlines mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

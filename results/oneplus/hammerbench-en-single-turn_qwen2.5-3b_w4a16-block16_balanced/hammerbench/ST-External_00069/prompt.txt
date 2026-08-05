@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Memo.finishUpcoming","description":"Complete a to-do","parameters":{"type":"object","properties":{"upcoming_name":{"type":"string","description":"To-do name"}},"required":["upcoming_name"]}}
+{"name":"Finance.Insurance.payInsurancePremium","description":"Contribute to insurance premiums","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"Navigation.TaxiCarRental.createCarRentalOrder","description":"Book a rental car","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"ConvenientLiving.UtilityPayments.getDueDate","description":"Deadline for payment of fees for the acquisition of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.payBill","description":"Payment of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"pay":{"type":"float","description":"Contribution Amount, Default Billing Amount"},"address":{"type":"string","description":"user address, default address"}},"required":["service_type","user_name","pay","address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet Li Hua at the cafe at 6pm on April 15 to discuss next month's project plan.
+query:I want to rent a car at Beijing Capital International Airport. From 9 am on the 10th of this month to the end of the time mentioned in the notepad, the daily rental fee should not exceed 200 yuan.<|im_end|>
+<|im_start|>assistant

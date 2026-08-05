@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Misha picks out 4 blouses from the 30% off rack.  The regular price for each blouse is $20.  How much is the total cost of the discounted blouses? Step 1: Calculate the discount amount for one blouse.
+Discount = 30% of $20 = 0.30 * 20 = $6
+
+Step 2: Calculate the discounted price for one blouse.
+Discounted Price = Regular Price - Discount
+Discounted Price = $20 - $6 = $14
+
+Step 3: Calculate the total cost for 4 discounted blouses.
+Total Cost = Discounted Price * Number of Blouses
+Total Cost = $14 * 4 = $56
+
+The answer is 56.<|endoftext|>Human, let's reason through this

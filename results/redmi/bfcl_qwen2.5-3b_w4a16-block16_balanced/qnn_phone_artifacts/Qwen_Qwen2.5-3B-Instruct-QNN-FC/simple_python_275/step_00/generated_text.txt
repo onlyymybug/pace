@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "metropolitan_museum.get_top_artworks", "description": "Fetches the list of popular artworks at the Metropolitan Museum of Art. Results can be sorted based on popularity. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"number": {"type": "integer", "description": "The number of artworks to fetch"}, "sort_by": {"type": "string", "description": "The criteria to sort the results on. Default is 'popularity'.", "enum": ["popularity", "chronological", "alphabetical"]}}, "required": ["number"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get the list of top 5 popular artworks at the Metropolitan Museum of Art. Please sort by popularity.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "metropolitan_museum.get_top_artworks", "arguments": {"number": 5, "sort_by": "popularity"}}
+</tool_call><|im_end|>

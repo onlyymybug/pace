@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Finn watches 11 tadpoles swimming in the pond.  Suddenly he sees 6 of them come out of hiding from under a lily pad ,then he sees 2 of them hide under a rock.  How many tadpoles can Finn see in the pond now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of tadpoles Finn can see in the pond after the changes.
+
+Initially, Finn sees 11 tadpoles.
+
+First, 6 tadpoles come out of hiding from under a lily pad. This increases the number of tadpoles Finn can see from 11 to 11 + 6 = 17.
+
+Then, 2 tadpoles hide under a rock. This decreases the number of tadpoles Finn can see from 17 to 17 - 2 = 15.
+
+Therefore, Finn can see 15 tadpoles in the pond now

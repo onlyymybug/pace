@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Given that \begin{align*}x_{1}&=211,\\ x_{2}&=375,\\ x_{3}&=420,\\ x_{4}&=523,\ \text{and}\\ x_{n}&=x_{n-1}-x_{n-2}+x_{n-3}-x_{n-4}\ \text{when}\ n\geq5, \end{align*}find the value of $x_{531}+x_{753}+x_{975}$. To solve the problem, we need to understand the recurrence relation and find the pattern in the sequence \(x_n\). The sequence is defined as follows:
+\[ x_1 = 211, \quad x_2 = 375, \quad x_3 = 420, \quad x_4 = 523, \]
+and for \(n \geq 5\),
+\[ x_n = x_{n-1} - x_{n-2} + x_{n-3} - x_{n-4}. \]
+
+Let's compute the first few terms to

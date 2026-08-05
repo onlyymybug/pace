@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A basic manicure starts at $35 while a pedicure starts at $40. A certain salon offers 20% off if you get both. Suppose Karen chooses to do both and would also like to add nail art on each of her fingers, which costs $3 per nail. How much would she pay in all?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost, first calculate the discount on the manicure and pedicure. Then add the cost of the nail art. 
+
+The manicure costs $35, and with a 20% discount, it becomes $35 - ($35 * 0.20) = $35 - $7 = $28. 
+
+The pedicure costs $40, and with a 20% discount, it becomes $40 - ($40 * 0.20) = $40 - $8 = $32. 
+
+Karen also wants to add nail art for $3 per finger, and she has 10 fingers (

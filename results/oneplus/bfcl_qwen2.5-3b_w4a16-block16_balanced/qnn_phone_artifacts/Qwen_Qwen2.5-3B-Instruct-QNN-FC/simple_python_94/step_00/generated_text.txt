@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "update_user_info", "description": "Update user information in the database. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"user_id": {"type": "integer", "description": "The user ID of the customer."}, "update_info": {"type": "dict", "properties": {"name": {"type": "string", "description": "The customer's updated name."}, "email": {"type": "string", "description": "The customer's updated email."}}, "description": "The new information to update."}, "database": {"type": "string", "description": "The database where the user's information is stored.", "default": "CustomerInfo"}}, "required": ["user_id", "update_info"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Update my customer information with user id 43523 'name':'John Doe', 'email':'johndoe@email.com' in the database.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "update_user_info", "arguments": {"user_id": 43523, "update_info": {"name": "John Doe", "email": "johndoe@email.com"}}}
+</tool_call><|im_end|>

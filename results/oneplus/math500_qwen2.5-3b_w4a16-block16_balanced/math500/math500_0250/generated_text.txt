@@ -1,0 +1,26 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the unique $\textbf{odd}$ integer $t$ such that $0<t<23$ and $t+2$ is the inverse of $t$ modulo $23$. To solve for the unique odd integer \( t \) such that \( 0 < t < 23 \) and \( t + 2 \) is the inverse of of \( t \) modulo 23, we need to find \( t \) such that:
+
+\[ t + 2 \equiv t^{-1} \pmod{23} \]
+
+This implies:
+
+\[ t + 2 \equiv t^{-1} \pmod{23} \]
+
+Multiplying both sides by \( t \), we get:
+
+\[ t(t + 2) \equiv 1 \pmod{23} \]
+
+This simplifies to:
+
+\[ t^2 + 2t \equiv 1 \pmod{23} \]
+
+or equivalently:
+
+\[ t^2 + 2t - 1 \equiv 0 \pmod{23} \]
+
+We need to find \( t \) such that this quadratic congruence holds for \( 0 < t < 23 \) and \( t \) is odd. We can solve this quadratic congruence by testing each odd number in the range \( 0 < t < 23 \).
+
+Let's test each odd number:
+

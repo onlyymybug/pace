@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The equation
+\[x^{10}+(13x-1)^{10}=0\,\]has 10 complex roots $r_1,$ $\overline{r}_1,$ $r_2,$ $\overline{r}_2,$ $r_3,$ $\overline{r}_3,$ $r_4,$ $\overline{r}_4,$ $r_5,$ $\overline{r}_5,$ where the bar denotes complex conjugation. Find the value of
+\[\frac 1{r_1\overline{r}_1}+\frac 1{r_2\overline{r}_2}+\frac 1{r_3\overline{r}_3}+\frac 1{r_4\overline{r}_4}+\frac 1{r_5\overline{r}_5}.\] To solve the given problem, we start by analyzing the equation \(x^{10} + (13x-1)^{10} = 0\). This equation can be rewritten as:
+
+\[x^{10} = -(13x-1)^{10}.\]
+
+This implies that \(x^{10} = - (13x-1)^{10}\). Let's denote \(y = 13x - 1\). Then the equation becomes \(x^{10} = -y^{10}\). This can be rewritten as:
+
+\[x^{10} + y^{10} = 0.\]
+
+This means that \(x\) and \(y\) are roots of of the equation \(t^{10} + (-1)^{10}t^{10} = 0\), which simplifies to \(t^{10} + t^{10} = 0\) or \(t^{10} + t^{10} = 0\). This is a polynomial equation of of degree 10, and the roots are symmetrically distributed around the origin in the complex plane.
+
+The roots of of of the equation \(t^{

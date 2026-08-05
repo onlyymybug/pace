@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In the city of Soda, there are exactly 23786 inhabitants. They include 8417 men and 9092 women. The rest of the population is made up of children. How many kids are there in Soda?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of children in Soda, we need to subtract the number of men and women from the total population.
+
+Total population = 23786
+Number of men = 8417
+Number of women = 9092
+
+Number of children = Total population - (Number of men + Number of women)
+Number of children = 23786 - (8417 + 9092)
+Number of children = 23786 - 17449
+Number of children = 7437
+
+The answer is 7437.<|eot_id|>

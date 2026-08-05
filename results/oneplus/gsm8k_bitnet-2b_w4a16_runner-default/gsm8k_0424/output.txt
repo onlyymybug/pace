@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cole wanted to buy new jeans for a dance contest. At the store, he couldn't decide between tattered jeans and jogger jeans. Since the jeans were on sale, he decided to buy them both. The tattered jeans cost $28 while the jogger jeans cost $6 less than the tattered jeans. He saved a total of $6. If he saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans, how much more do jogger jeans originally cost than the tattered jeans?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the original price of the jogger jeans as \( x \).
+
+Given:
+- The tattered jeans cost $28.
+- The jogger jeans cost $6 less than the tattered jeans, so \( x = 28 - 6 = 22 \).
+- Cole saved a total of $6.
+- He saved 1/3 of the total savings from the jogger jeans and the rest from the tattered jeans.
+
+Let's calculate the savings from each type of jeans:
+- Savings from tattered jeans = \( \frac{1}{3} \times 6 = 2 \) dollars.
+-

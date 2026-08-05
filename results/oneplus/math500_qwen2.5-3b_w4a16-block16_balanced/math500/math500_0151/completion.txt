@@ -1,0 +1,14 @@
+To solve for \( f(2015, 2) \), we need to understand the recursive function \( f(i, j) \) and how it behaves. Let's break down the function step by step.
+
+The function \( f(i, j) \) is defined as follows:
+\[ f(i, j) = \begin{cases} 
+\text{mod}_5 (j+1) & \text{ if } i = 0 \text{ and } 0 \le j \le 4, \\
+f(i-1, 1) & \text{ if } i \ge 1 \text{ and } j = 0, \text{ and} \\
+f(i-1, f(i, j-1)) & \text{ if } i \ge 1 \text{ and } 1 \le j \le 4. 
+\end{cases} \]
+
+First, let's compute \( f(i, j) \) for small values of of \( i \) and \( j \) to identify a pattern.
+
+1. For \( i = 0 \):
+\[ f(0, j) = \text{mod}_5 (j+1) \]
+This

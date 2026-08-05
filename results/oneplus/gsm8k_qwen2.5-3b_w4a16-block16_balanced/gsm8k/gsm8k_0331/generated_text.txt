@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A customer’s loyalty card at a store gives them rewards of $1 off their next purchase for every $20 they spend. Their last shopping trip, they spent $80. This shopping trip, they spent $43, used their rewards, and applied a coupon that took twice the amount of rewards off the price. How many dollars did the customer pay on this shopping trip? Step 1: Calculate the rewards from the first shopping trip.
+Rewards = $80 / $20 = 4 discounts
+
+Step 2: Calculate the total discount from the rewards.
+Total discount = 4 * $1 = $4
+
+Step 3: Calculate the total amount spent before the coupon.
+Total before coupon = $80 - $4 (discount) = $76
+
+Step 4: Calculate the discount from the coupon.
+Coupon discount = 2 * $4 (from rewards) = $8
+
+Step 5: Calculate the final amount paid after applying the coupon discount.
+Final amount =

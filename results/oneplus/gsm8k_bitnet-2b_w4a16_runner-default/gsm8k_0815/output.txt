@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A new arcade opens up and Jack decides to play with his 3 friends.  Jack can play a game with 1 quarter for 20 minutes.  Two of his friends are significantly worse than him and can only play half as long.  One of them is significantly better and can play for 1.5 times as long.  They play for 4 hours.  How much money is used?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how much time each friend plays and then calculate the total time spent playing the game. Finally, we will use the time per game to find out how much money is used.
+
+1. Jack plays for 20 minutes.
+2. Two friends play for half as long as Jack. So, each of these two friends plays for \( \frac{20}{2} = 10 \) minutes.
+3. One friend plays for 1.5 times as long as Jack. So, this friend plays for \( 1.5 \times 20 = 30 \) minutes.
+
+Now

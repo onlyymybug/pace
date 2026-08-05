@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"MusicRadio.OnlineMusic.getRecommendedPlaylists","description":"Get recommended songs by mood and scene","parameters":{"type":"object","properties":{"mood":{"type":"string","description":"Emotions"},"scene":{"type":"string","description":"setting"}},"required":["mood","scene"]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+{"name":"Travel.ScenicAreaServices.recommendSimilarScenicSpots","description":"Recommend similar other scenic spots based on designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of scenic spot for reference"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We went to The Palace Museum together on the weekend. The ancient buildings there are really spectacular, and each brick reveals the traces of history. We took a lot of photos at the noon gate, and also went to the Taihe Hall, the Zhonghe Hall and the Hohe Hall, which was a full day of harvest. Next time we can explore other areas of the palace, such as the Imperial Garden, which is also said to be very beautiful.
+query:What other similar attractions can I recommend near the location mentioned in Tom's text message to me?<|im_end|>
+<|im_start|>assistant

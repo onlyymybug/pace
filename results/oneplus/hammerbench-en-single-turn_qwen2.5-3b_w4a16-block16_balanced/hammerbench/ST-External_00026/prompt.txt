@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+{"name":"Finance.Payment.setPayNotifications","description":"Turn payment notifications on or off","parameters":{"type":"object","properties":{"open":{"type":"boolean","description":"Whether to turn on payment notifications"},"notification_type":{"type":"string","description":"Default app notifications, notification methods, such as SMS, email"}},"required":["open","notification_type"]}}
+{"name":"Navigation.PublicTransit.viewBusStopInfo","description":"View designated bus stop information","parameters":{"type":"object","properties":{"stop_plate":{"type":"string","description":"Station Name"}},"required":["stop_plate"]}}
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, let's go to the Pentagon on the weekend. I heard that a new super-fire dessert shop has opened. Why don't you try it? There are also many options for eating there, and we can go and eat something else. The traffic on the other side of the Pentagon is also quite convenient. We can go directly to the subway, don't you think?
+query:Can you check the bus stop information mentioned in the message Xiao Li sent me?<|im_end|>
+<|im_start|>assistant

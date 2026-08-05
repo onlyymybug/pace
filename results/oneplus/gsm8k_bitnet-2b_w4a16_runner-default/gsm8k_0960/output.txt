@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Coach brought one bag filled with basketballs to practice and dumped them all out onto the gym floor before practice began.  After the practice time was over, he asked Jordan, Jason, and Jeffrey to pick up the balls and carry them over to the bag.  The three boys picked up and carried all of the balls in one trip.  Jordan carried twice as many balls as Jason, and Jason carried twice as many balls as Jeffrey. If Jason had picked up and carried 2 balls, what is the total number of balls that the coach brought to practice?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of balls Jason carried as J, the number of balls Jordan carried as R, and the number of balls Jeffrey carried as E. We are given that J = 2 (since Jason carried 2 balls), R = 2J (since Jordan carried twice as many balls as Jason), and E = J/2 (since Jason carried twice as many balls as Jeffrey).
+
+Substituting J = 2 into the equations for R and E, we get:
+R = 2 * 2 = 4
+E = 2 / 2 = 1
+
+Now, we can find the total number

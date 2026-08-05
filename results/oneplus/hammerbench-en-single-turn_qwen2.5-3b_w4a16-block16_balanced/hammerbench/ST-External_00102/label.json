@@ -1,0 +1,8 @@
+{
+  "name": "Navigation.TrainTickets.queryHighSpeedRailRoutes",
+  "arguments": {
+    "departure_station": "Nanjing",
+    "destination_station": "Hangzhou",
+    "max_results": 10
+  }
+}

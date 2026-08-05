@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Photography.VideoEditing.videoQualityEnhance","description":"Increase or decrease video quality","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"adjust_type":{"type":"string","description":"Adjust options to enhance or decrease"}},"required":["name_or_path","adjust_type"]}}
+{"name":"ConvenientLiving.FoodDelivery.updateRestaurantOrder","description":"Updating order information based on the order, such as delivery address, notes, etc.","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"},"delivery_address":{"type":"string","description":"Delivery address"},"delivery_time":{"type":"string","description":"Expected delivery time in HH: mm format"},"note":{"type":"string","description":"Remarks"}},"required":["order_name","delivery_address","delivery_time","note"]}}
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","description":"Rate courier service","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"rating":{"type":"string","description":"Rating, 1-5 points"},"comment":{"type":"string","description":"Scoring contents"}},"required":["express_id","signing_date","rating","comment"]}}
+{"name":"ConvenientLiving.FoodDelivery.rateRestaurantOrder","description":"Evaluate a specific order","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"},"order_name":{"type":"string","description":"Contents of the order"},"order_time":{"type":"string","description":"Order time"},"rating":{"type":"integer","description":"Rating, 1 to 5"},"comment":{"type":"string","description":"Review Content"}},"required":["restaurant_name","order_name","order_time","rating","comment"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to Shu Da Xia for hot pot on the weekend. It is in the newly opened store. The address is No. 151, Kehua North Road, Wuhou District, Chengdu. I heard that the environment is super nice, and the dishes are very unique. I have already reserved a seat for 5 pm. Do you have a moment? Come with us!
+query:The sauerkraut fish at the place mentioned in the WeChat sent to me by Xiao Li yesterday was rated 5 stars, the fish is fresh and tender, and the taste of the sauerkraut is authentic.<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","parameters":{"express_id":"ShuDaXia_SauerkrautFish", "signing_date":"2023-04-05", "rating":5, "comment":"The sauerkraut fish is fresh and tender, the taste is authentic."}}<|im_end|>

@@ -1,0 +1,21 @@
+To solve the problem, we need to determine the shortest distance to visit all four points \(A\), \(B\), \(C\), and \(D\) exactly once, starting from any one of of them. We will calculate the total distance for each possible starting point and find the minimum.
+
+First, let's label the distances between the points as given in the problem:
+- \(AB = 6\)
+- \(AC = 5\)
+- \(AD = 5\)
+- \(BC = 3\)
+- \(BD = 4\)
+- \(CD = 6\)
+
+We will calculate the total distance for each starting point and then find the minimum.
+
+### Case 1: Start at \(A\)
+- Visit \(B\), \(C\), and \(D\)
+- Distance: \(AB + BC + CD + DA = 6 + 3 + 6 + 5 = 19\)
+
+### Case 2: Start at \(B\)
+- Visit \(A\), \(C\), and \(D\)
+- Distance: \(BA + AC + CD + DA = 6 + 5 + 6 + 5 = 22\)
+
+### Case 3: Start

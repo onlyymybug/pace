@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maddy is buying pizza for her cousin's soccer game. There are 12 team members and 3 coaches. Each team member brings 2 guests. A pizza will serve 3 people. If each pizza costs $15, how many dollars will Maddy spend?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of people attending the soccer game and then calculate how many pizzas are required. Finally, we will calculate the total cost.
+
+1. Calculate the total number of people:
+   - Team members: 12
+   - Coaches: 3
+   - Guests for each team member: 2
+   - Total guests: 12 team members * 2 guests/team member = 24 guests
+   - Total people: 12 team members + 3 coaches + 24 guests = 39 people
+
+2. Determine the number of pizzas needed:
+   - Each pizza serves

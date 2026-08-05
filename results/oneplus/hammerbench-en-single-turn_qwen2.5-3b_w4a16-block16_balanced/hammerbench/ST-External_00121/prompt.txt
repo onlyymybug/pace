@@ -1,0 +1,32 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPersonalTaxInfo","description":"Inquire about the user's personal tax information","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"Username"}},"required":["user_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, we have sorted out the details of the property you inquired about located at No. 30 Linhe West Road, Tianhe District, Guangzhou as follows:
+
+The property is located in the central area of Guangzhou, with very convenient transportation and complete supporting facilities in the surrounding area.30 Linhe West Road is very close to many large shopping malls and dining and entertainment places, and life is very convenient.There are many bus stops and subway stops around the property, making it easy to get around.In addition, there are many well-known schools near the address, which are suitable for families to live in.
+
+Please do not hesitate to contact us if you have any questions about the property at this address or would like further details.We look forward to providing you with a more comprehensive service.
+
+Enjoy!
+
+Sincerely,
+Salute
+
+[Your name]
+[Your Position]
+[Contact]
+query:I want to know the property tax information of the place mentioned in the email, can you check it for me?<|im_end|>
+<|im_start|>assistant

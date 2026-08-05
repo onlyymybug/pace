@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: George, a grade six teacher, ordered 600 burritos for the sixth-grade class picnic. If there were 50 students at the picnic, and each student was given ten burritos, with Mr. George eating 20 of them, calculate the total number of leftover burritos from the picnic?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of leftover burritos, we first need to determine how many burritos were given to the students and then subtract the burritos Mr. George ate.
+
+1. Calculate the total number of burritos given to the students:
+   \[
+   \text{Total burritos given to students} = \text{Number of students} \times \text{Burritos per student}
+   \]
+   \[
+   \text{Total burritos given to students} = 50 \times 10 = 500
+   \]
+
+2. Subtract the burritos Mr. George ate:
+   \[
+  

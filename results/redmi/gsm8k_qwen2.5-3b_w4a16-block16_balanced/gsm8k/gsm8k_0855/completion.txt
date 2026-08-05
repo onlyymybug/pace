@@ -1,0 +1,14 @@
+Step 1: Calculate homes built in the first year
+homes_first_year = 12
+
+Step 2: Calculate homes built in the second year
+homes_second_year = homes_first_year * 3
+
+Step 3: Calculate total homes built by the end of the second year
+total_homes_end_second_year = homes_first_year + homes_second_year
+
+Step 4: Calculate homes to be built in the third year
+homes_third_year = 2 * total_homes_end_second_year
+
+Step 5: Calculate total homes built over the three years
+total_homes = total_homes_end_second_year + homes_third

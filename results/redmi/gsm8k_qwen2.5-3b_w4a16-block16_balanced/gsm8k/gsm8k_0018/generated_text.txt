@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jill gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary? To solve this, first calculate her total earnings from teaching and coaching separately, then sum them up.
+
+Earnings from teaching: 35 hours/week * $20/hour * 50 weeks/year = 35000
+Earnings from coaching: 15 hours/week * $30/hour * 50 weeks/year = 22500
+
+Total annual salary: 35000 + 22500 = 57500
+
+The answer is 57500. The answer is 57500.<|endoftext|>

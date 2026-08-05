@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"Photography.VideoEditing.videoQualityEnhance","description":"Increase or decrease video quality","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"adjust_type":{"type":"string","description":"Adjust options to enhance or decrease"}},"required":["name_or_path","adjust_type"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"Finance.Insurance.payInsurancePremium","description":"Contribute to insurance premiums","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"Travel.HotelServices.searchHotel","description":"Search for hotels that match the criteria entered by the user","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"},"checkin_date":{"type":"string","description":"Check-in date (default today)"},"checkout_date":{"type":"string","description":"DEPARTURE DATE"},"price_range":{"type":"string","description":"Price range: 0 ~ 300; 300 ~ 600; 600 ~ 1000; 1000 to Shenyang"}},"required":["destination","checkin_date","checkout_date","price_range"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, remember that the next time we agreed to meet is April 15th at 3pm. I can't wait to see you in that small cafe! I will definitely be on time that day, I can wait for you there 10 minutes in advance. I hope it was a nice day, so we can have a good chat.
+query:I want to book a hotel. The check-in time is the day mentioned in the Xiaoming QQ message. The check-out date is April 20. The destination is Shanghai. The price is between 300 and 600. It should be 4 stars or more.<|im_end|>
+<|im_start|>assistant

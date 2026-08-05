@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lauren is a cartoonist.  She can draw 5 large-sized picture scenes per day, or she can draw 6 medium-sized picture scenes per day, or she can draw 7 small-sized picture scenes per day.  She was hired for a big project to create 45 large-sized picture scenes, 36 medium-sized picture scenes, and 49 small-sized picture scenes.  How many days will it take for her to create all of the picture scenes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many days it will take Lauren to create all the picture scenes, we need to calculate the total number of scenes she can draw per day for each size and then determine the maximum number of days required to complete the project.
+
+Lauren can draw:
+- 5 large- sized picture scenes per day
+- 6 medium- sized picture scenes per day
+- 7 small- sized picture scenes per day
+
+First, let's calculate how many days it will take for her to draw the large- sized scenes:
+\[ \text{Days for large- sized

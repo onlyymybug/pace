@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bailey starts with a certain amount of money. Then she receives a weekly allowance of $5 for 8 weeks. At the end of the 8 weeks, if she has a total of $100, how much money did Bailey start with? To solve this problem, we need to determine how much money Bailey had initially. 
+
+First, calculate the total allowance received over 8 weeks:
+\[ \text{Total allowance} = \$5 \times 8 \]
+
+Then, subtract this total allowance from the final total amount to find the initial amount:
+\[ \text{Initial amount} = \text{Total final amount} - \text{Total allowance} \]
+
+Given:
+- Final total amount = \$100
+- Total allowance = \$5 \times 8
+
+Let's calculate the total allowance:
+\[ \text{Total allowance} = 5 \times

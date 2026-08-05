@@ -1,0 +1,28 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Education.OnlineClasses.viewCourseOrdersDetails","description":"View a reservation's details","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrdersDetails","description":"View specific item order details based on criteria","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product name keywords"}},"required":["goods_name"]}}
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"evaluation":{"type":"string","description":"Content of the review"}},"required":["goods","evaluation"]}}
+{"name":"Finance.Stocks.cancelorderStock","description":"Withdrawal of Designated Shares","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"},"price":{"type":"float","description":"Amount in Yuan"},"amount":{"type":"string","description":"Shipment quantity; specific value; full warehouse; half warehouse; 1/3 warehouse; 1/4 warehouse"}},"required":["stock_code","stock_name","price","amount"]}}
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrders","description":"Search for item orders by keyword, and query all current status orders directly by default","parameters":{"type":"object","properties":{"goods_order":{"type":"string","description":"Product name keywords"}},"required":["goods_order"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi there, Thank you for your interest and support.We are pleased to inform you that our latest sneakers are now available.Made from high-quality materials, this sneaker offers exceptional comfort and durability for all sports occasions.Sneakers come in a variety of colors to showcase your style and professionalism, whether it's your daily run or gym workout.
+
+To celebrate the launch of the new model, we have a special limited-time offer where the top 100 buyers will get 20% off.If you have any questions or need further assistance with our sneakers, please do not hesitate to contact our customer service team and we will be happy to assist you.
+
+We look forward to welcoming you and hope that these sneakers will become a part of your athletic life!
+
+Best regards,
+
+[Your company name] Team
+query:I want to see the details of the refunded order for the item (s) mentioned in the email.<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrders","parameters":{"goods_order":"refund"}}<|im_end|>

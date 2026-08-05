@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Peter plans to go to the movies this week. He always gets a ticket for $7 and popcorn for $7. If he has 42 dollars for the week, how many times can he go to the movies?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many times Peter can go to the movies with the money he has. Each time he goes to the movies, he spends $7 on a ticket and $7 on popcorn, which totals to $14 per trip.
+
+We can set up the equation as follows:
+
+Number of trips = Total money / Money per trip
+
+Number of trips = $42 / $14 per trip
+
+Number of trips = 3
+
+So, Peter can go to the movies 3 times this week.
+
+The answer is 3.<|eot_id|>

@@ -1,0 +1,10 @@
+{
+  "name": "Navigation.TrainTickets.cancelTrainTicket",
+  "arguments": {
+    "train_number": "G123",
+    "name": "Zhang San",
+    "time": "Tomorrow",
+    "departure_station": "Beijing",
+    "destination_station": "Shanghai"
+  }
+}

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_cell_density", "description": "Calculate the cell density of a biological sample based on its optical density and the experiment dilution. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"optical_density": {"type": "float", "description": "The optical density of the sample, usually obtained from a spectrophotometer reading."}, "dilution": {"type": "integer", "description": "The dilution factor applied during the experiment."}, "calibration_factor": {"type": "float", "description": "The calibration factor to adjust the density, default value is 1e9 assuming cell density is in CFU/mL."}}, "required": ["optical_density", "dilution"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the cell density in a sample with an optical density of 0.6, where the experiment dilution is 5 times.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_cell_density", "arguments": {"optical_density": 0.6, "dilution": 5}}
+</tool_call><|im_end|>

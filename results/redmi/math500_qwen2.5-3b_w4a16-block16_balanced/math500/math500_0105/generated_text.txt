@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The graphs of $x^2 + y^2 + 6x - 24y + 72 = 0$ and $x^2 - y^2 + 6x + 16y - 46 = 0$ intersect at four points.  Compute the sum of the distances from these four points to the point $(-3,2).$ To solve the problem, we first need to determine the points of of of intersection of the two given circles. The equations of of of the circles are:
+
+\[ x^2 + y^2 + 6x - 24y + 72 = 0 \]
+\[ x^2 - y^2 + 6x + 16y - 46 = 0 \]
+
+We start by rewriting these equations in a more convenient form. Completing the square for the first equation:
+
+\[ x^2 + 6x + y^2 - 24y + 72 = 0

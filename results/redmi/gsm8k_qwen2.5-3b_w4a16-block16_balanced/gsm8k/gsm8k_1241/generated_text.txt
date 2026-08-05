@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elly is organizing her books on the new bookcases her parents bought her. Each of the middle 2 shelves can hold 10 books. The bottom shelf can hold twice as many books as a middle shelf. The top shelf can hold 5 fewer books than the bottom shelf. If she has 110 books, how many bookcases does she need to hold all of them? Step 1: Determine capacity of each shelf.
+- Middle shelves: 10 books each
+- Bottom shelf: 2 * 10 = 20 books
+- Top shelf: 20 - 5 = 15 books
+
+Step 2: Calculate total capacity of all shelves.
+- Total capacity: 2 * 10 (middle) + 20 (bottom) + 15 (top) = 20 + 20 + 15 = 55 books
+
+Step 3: Determine number of bookcases needed.
+- Since total capacity is 55 books

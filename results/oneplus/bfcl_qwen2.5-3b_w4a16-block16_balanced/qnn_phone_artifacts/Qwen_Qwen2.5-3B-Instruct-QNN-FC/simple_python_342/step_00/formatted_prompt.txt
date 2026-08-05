@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "game_list.get_games", "description": "Get a list of video games based on release year, multiplayer functionality and ESRB rating Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"release_year": {"type": "integer", "description": "The year the game was released."}, "multiplayer": {"type": "boolean", "description": "Whether the game has multiplayer functionality."}, "ESRB_rating": {"type": "string", "description": "The ESRB rating of the game."}}, "required": ["release_year", "multiplayer", "ESRB_rating"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find all multi-player games released in 2019 with an ESRB rating of 'Everyone'<|im_end|>
+<|im_start|>assistant

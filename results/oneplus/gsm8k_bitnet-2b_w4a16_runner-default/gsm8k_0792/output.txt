@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A train has 172 people traveling on it. At the first stop 47 people get off and 13 more people get on, and at the next stop another 38 people get off. How many people are on the train?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we need to track the number of people on the train after each stop.
+
+1. Initially, there are 172 people on the train.
+2. At the first stop, 47 people get off, so we subtract 47 from 172:
+   \[
+   172 - 47 = 125
+   \]
+   Now there are 125 people left.
+3. At the next stop, 13 more people get on, so we add 13 to 125:
+   \[
+   125 + 13 = 138
+   \]
+   Now there are 138 people left.

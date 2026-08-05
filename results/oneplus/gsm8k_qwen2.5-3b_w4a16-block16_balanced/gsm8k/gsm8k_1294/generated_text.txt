@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A company produces chocolate in bars. In one day, it can produce 5000 bars. The company sells all the produced bars for $2 per bar. How much money will the company receive for selling produced chocolate bars during two weeks? Step 1: Calculate total production in two weeks
+One day production: 5000 bars
+Two weeks: 14 days
+Total production: 5000 bars * 14 days = 70000 bars
+
+Step 2: Calculate total sales revenue
+Price per bar: $2
+Total sales revenue: 70000 bars * $2/bar = 140000
+
+The answer is 140000.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar

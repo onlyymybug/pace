@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sid traveled 110 miles in 2 hours. If Sid then traveled an additional 140 miles in 3 hours, what's the average speed he was traveling?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the average speed, we need to calculate the total distance traveled and the total time taken, then divide the total distance by the total time.
+
+Total distance = 110 miles + 140 miles = 250 miles
+Total time = 2 hours + 3 hours = 5 hours
+
+Average speed = Total distance / Total time = 250 miles / 5 hours = 50 miles per hour
+
+The answer is 50 miles per hour.<|eot_id|>

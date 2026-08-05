@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $m$ and $n$ are integers such that $3m + 4n = 100$, what is the smallest possible value of $\left| m - n \right|$ ? To solve the problem, we need to find the smallest possible value of of \( |m - n| \) given the equation \(3m + 4n = 100\).
+
+1. **Express \( m \) in terms of:**
+   \[
+   3m = 100 - 4n
+   \]
+   \[
+   m = \frac{100 - 4n}{3}
+   \]
+
+2. **Ensure \( m \) is an integer:**
+   For \( m \) to be an integer, \( 100 - 4n \) must be divisible by 3. Therefore, we need:
+   \[
+   100 - 4n \equiv 0 \pmod{3}
+   \]
+   Simplify \( 100 \mod 3 \):
+   \[
+   100 \div 3 = 33 \text{ remainder } 1 \quad \Rightarrow \quad 100 \equiv 1 \pmod{3}
+   \]
+   Thus, we need:
+   \[
+   1 - 4n \equiv 0 \pmod{3}
+   \]

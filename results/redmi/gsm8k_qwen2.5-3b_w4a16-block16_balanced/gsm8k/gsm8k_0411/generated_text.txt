@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sally went to the seashore for vacation.  Her parents gave her $10 to buy whatever she wanted.  At the trinket shop, taffy was on sale for "Buy 1 pound at $3, get 1 pound 1/2 off."  She scooped up 2 pounds.  She also bought a mixed bag of seashells for $1.50 and 4 magnets that were $0.25 each.  How much money does Sally have left? Step 1: Calculate the total cost of of taffy.
+- For 2 pounds, she gets 1 pound at full price and 1 pound at 1/2 off.
+- Full price for 1 pound: $3
+- Discounted price for 1 pound: $3 / 2
+- Total cost for 2 pounds: $3 + ($3 / 2)
+
+Step 2: Calculate the total cost of of seashells and magnets.
+- Cost of of seashells: $1.50
+- Cost per magnet: $0.25
+- Total number of magnets

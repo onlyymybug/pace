@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.getPolicyUpdates","description":"Check the latest policy information issued by the State Council","parameters":{"type":"object","properties":{"category":{"type":"string","description":"Policy categories such as economic, environmental, etc."},"date":{"type":"string","description":"Query Date"}},"required":["category","date"]}}
+{"name":"SystemTools.SystemOptimization.checkSystemUpdates","description":"Check for available system updates","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Finance.Banking.viewCreditCardBill","description":"View bank card statement","parameters":{"type":"object","properties":{"card_no":{"type":"string","description":"Credit Card Number"},"time":{"type":"string","description":"Credit Card Statement Month"}},"required":["card_no","time"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getLatestIssue","description":"Get the latest issues of newspapers and magazines based on their name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+{"name":"OfficeSoftware.Conferencing.updateParticipantStatus","description":"Update the status of assigned participants in the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"status":{"type":"string","description":"Person Status"}},"required":["meeting_id","title","time","status"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, March 15, 2023 is the date of our company's annual general meeting, which is located at the Beijing International Convention Center. We invite you to participate in this event and look forward to the future together. Please be sure to respond by March 10, 2023 to be able to attend so we can make the necessary arrangements. Looking forward to hosting you!
+query:Please help me check the recent policy updates issued by the State Council on economic aspects, especially the time-related ones mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.getPolicyUpdates","parameters":{"category":"economic","date":"2023-03-10"}}<|im_end|>

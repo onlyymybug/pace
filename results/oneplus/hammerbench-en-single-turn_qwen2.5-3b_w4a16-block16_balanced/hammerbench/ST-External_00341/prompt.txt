@@ -1,0 +1,31 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Stocks.getStockFundInfo","description":"Query details and real-time information on selected stocks","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"}},"required":["stock_code","stock_name"]}}
+{"name":"UtilityTools.Weather.getWeatherMap","description":"Get a real-time visual weather map of a given location and type","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Types of maps, such as temperature, air pressure, wind, etc."},"location":{"type":"string","description":"Location, defaults to local"}},"required":["type","location"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotLiveFeed","description":"Get real-time dynamic information on designated scenic spots, including real-time visitor numbers, weather conditions, and more","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Navigation.PublicTransit.queryRealTimeBus","description":"Find the real-time location and estimated time of arrival of a given bus route","parameters":{"type":"object","properties":{"bus_line_number":{"type":"string","description":"Bus line number"},"stop_name":{"type":"string","description":"Name of bus stop"}},"required":["bus_line_number","stop_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for your support and trust.We are pleased to inform you that the event schedule for the Shanghai area you previously consulted has been finalized.The event will be held at the International Convention Center in central Shanghai on April 15, 2023.Our professional team will provide you with a full range of services, including transfers on the day of the event, starting from Shanghai Pudong International Airport and ending at the event location.
+
+In addition, we have reserved a 5-star hotel near the Shanghai International Convention Center for you to ensure your comfortable and convenient stay.If you have any special requests or would like more details, please feel free to contact us.We look forward to welcoming you and believe that this trip to beautiful Shanghai will leave you with unforgettable memories.
+
+Best regards,
+
+[Your name]  
+[Your Position]  
+[your contact details]  
+[Your email address]  
+[Company name]  
+[Company Address]  
+Shanghai
+query:I'd like to see a real-time barogram of the locations mentioned in the email, with high accuracy.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Benny threw bologna at his balloons.  He threw two pieces of bologna at each red balloon and three pieces of bologna at each yellow balloon.  If Benny threw 58 pieces of bologna at a bundle of red and yellow balloons, and twenty of the balloons were red, then how many of the balloons in the bundle were yellow?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of red balloons as R and the number of yellow balloons as Y. We know that R = 20 and each red balloon gets 2 pieces of bologna, while each yellow balloon gets 3 pieces of bologna. The total number of pieces of bologna thrown is 58.
+
+The equation representing the total pieces of bologna thrown is:
+2R + 3Y = 58
+
+Substituting R = 20 into the equation:
+2(20) + 3Y = 58
+40 + 3Y = 58
+3Y = 58 - 40
+3Y

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marilyn's first record sold 10 times as many copies as Harald's. If they sold 88,000 copies combined, how many copies did Harald sell?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of copies Harald sold as \( H \). According to the problem, Marilyn sold 10 times as many copies as Harald, so Marilyn sold \( 10H \) copies.
+
+The total number of copies sold by both of them is given as 88,000. Therefore, we can write the equation:
+
+\[ H + 10H = 88,000 \]
+
+Combining like terms, we get:
+
+\[ 11H = 88,000 \]
+
+To find the number of copies Harald sold, we divide both sides of the equation by 11:
+
+\[ H = \frac{

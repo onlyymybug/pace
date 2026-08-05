@@ -1,0 +1,33 @@
+To determine the median number of students per county in 2005, we need to follow these steps:
+
+1. Extract the number of students in 2005 from the given table.
+2. Arrange these numbers in ascending order.
+3. Identify the median value, which is the middle value in the ordered list.
+
+Let's start by extracting the data for 2005 from the table:
+
+\[
+\begin{array}{|c|}
+\hline
+\text{COUNTY} & \text{2005} \\
+\hline
+Aiken & 136 \\
+\hline
+Bamberg & 11 \\
+\hline
+Barnwell & 29 \\
+\hline
+Berkeley & 524 \\
+\hline
+Calhoun & 111 \\
+\hline
+Cherokee & 19 \\
+\hline
+Chesterfield & 29 \\
+\hline
+Colleton & 4115 \\
+\hline
+\end{array}
+\]
+
+The numbers of of students in 2005 are: \(136, 11, 11, 29, 524

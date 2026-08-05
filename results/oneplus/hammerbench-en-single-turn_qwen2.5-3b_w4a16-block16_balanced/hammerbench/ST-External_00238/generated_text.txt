@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryBusinessLicenseInfo","description":"Get information about your business license","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the Enterprise"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantLicense","description":"Get licensing info for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryPropertyTaxInfo","description":"Get tax info about your property","parameters":{"type":"object","properties":{"property_address":{"type":"string","description":"property Address"}},"required":["property_address"]}}
+{"name":"Navigation.TrafficViolations.viewDriverInfo","description":"View driver's license details","parameters":{"type":"object","properties":{"driver_license_number":{"type":"string","description":"Licence Number:"}},"required":["driver_license_number"]}}
+{"name":"Finance.Funds.getFundSubscriptionFee","description":"Query subscription fee information for designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Ok, it has become a reality, I will wait for you at Starbucks (People's Square store) tomorrow, about 2 pm, you can get there five minutes in advance, we will talk about it after we meet.
+query:I want to know the license information of this restaurant that Xiao Li sent to the place mentioned in my WeChat.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantLicense","parameters":{"restaurant_name":"XiaoLi's Restaurant"}}<|im_end|>

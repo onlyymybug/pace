@@ -1,0 +1,12 @@
+{
+  "name": "Navigation.TrainTickets.bookTrainTicket",
+  "arguments": {
+    "departure_station": "Shanghai Hongqiao Railway Station",
+    "destination_station": "Nanjing South Railway Station",
+    "passenger_id": "345678901234567890",
+    "passenger_name": "Wangwu",
+    "ride_date": "Next Monday",
+    "seat_type": "First class seat",
+    "train_type": "High iron"
+  }
+}

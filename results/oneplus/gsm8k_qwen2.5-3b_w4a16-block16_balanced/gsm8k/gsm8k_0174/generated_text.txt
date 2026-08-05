@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jessica is trying to figure out how much to pay on all her debts each month. Her student loans have a minimum payment of $300/month, her credit card's minimum is $200/month, and her mortgage's minimum is $500/month. If Jessica wants to pay 50% more than the minimum, how much does she pay in a year? To solve this, first calculate the total minimum monthly payment, then increase that amount by 50%, and finally multiply by 12 to get the annual payment.
+
+Total minimum monthly payment: $300 + $200 + $500 = $1000
+
+Increase by 50%: $1000 * 1.5 = $1500
+
+Annual payment: $1500 * 12 = $1500
+
+The answer is 1500.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly. End

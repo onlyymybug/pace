@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Charisma works for 8 hours every day.  She has a timer to remind her to get up and walk for 5 minutes every hour she’s at work.  After 5 days at the office, how many minutes has she walked? To solve this problem, we need to calculate the total time Charisma spends walking over 5 days.
+
+1. Charisma walks every hour for 5 minutes.
+2. She works 8 hours each day.
+3. Therefore, she walks 5 minutes every 8-hour workday.
+
+First, calculate the total walking time per day:
+\[ 8 \text{ hours/day} \times 5 \text{ minutes/hour} = 40 \text{ minutes/day} \]
+
+Next, calculate the total walking time over 5 days:
+\[ 40 \text{ minutes/day} \times 5 \

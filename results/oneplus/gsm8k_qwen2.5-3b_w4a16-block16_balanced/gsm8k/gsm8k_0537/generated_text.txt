@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Chenny is 10 years old. Alyana is 4 years younger than Chenny. How old is Anne if she is 2 years older than Alyana? Anne is 6 years old. The answer is 6. The answer is 6.<|endoftext|>Human: Given the problem, let's break it down step by step:
+
+1. Chenny's age is given as 10 years.
+
+2. Alyana is 4 years younger than Chenny:
+   - Chenny's age: 10
+   - Alyana's age: 10 - 4 = 6
+
+3. Anne is 2 years older than Alyana:
+   - Alyana's age: 6
+   - Anne's age: 6 + 2 = 8
+
+Therefore

@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 4 snails in one aquarium and 32 snails in another aquarium. The difference between the number of snails in the two aquariums is twice the amount of fish in both aquariums. If both aquariums have the same number of fish in them, how many fish are there in each aquarium?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of fish in each aquarium as \( f \).
+
+The total number of snails in both aquariums is:
+\[ 4 + 32 = 36 \]
+
+The difference between the number of snails is:
+\[ 32 - 4 = 28 \]
+
+According to the problem, this difference is twice the amount of fish in both aquariums:
+\[ 28 = 2f \]
+
+Solving for \( f \):
+\[ f = \frac{28}{2} = 14 \]
+
+So, there are 14 fish in each aquarium.
+
+The answer is 14.<|eot_id|>

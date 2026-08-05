@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Tuesday, Clara bought 20 pomegranates at $20 each. At the till she got $2 off because she had a voucher. The next day, the price shot to $30 per fruit, but the store also offered a 10% discount on the total cost. Sheila took advantage of the discount and bought 20 pomegranates. What is the difference between the final prices paid for the pomegranates on the two days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the difference between the final prices paid for the pomegranates on the two days, we need to calculate the final price for each day separately and then find the difference between those two prices.
+
+**Day 1:**
+
+- Clara bought 20 pomegranates at $20 each.
+- She got a $2 discount.
+- Total cost before discount: \( 20 \times 20 = 400 \) dollars.
+- Total cost after discount: \( 400 - 2 = 398 \) dollars.
+
+**Day 2:**
+
+- The price per pomegranate shot to $30.
+-

@@ -1,0 +1,16 @@
+To solve the problem, we need to analyze the given trapezoid \(ABCD\) with \(AD \parallel BC\) and the given conditions. Let's break down the problem step by step.
+
+1. **Identify Key Properties and Relationships:**
+   - \(AD \parallel BC\) implies \(ABCD\) is a trapezoid.
+   - \(\overline{AC} \perp \overline{CD}\) means \(\angle ACD = 90^\circ\).
+   - \(\overline{AC}\) bisects \(\angle BAD\), so \(\angle BAC = \angle CAD\).
+
+2. **Coordinate Geometry Setup:**
+   - Place \(C\) at the origin \((0,0)\).
+   - Place \(D\) on the x-axis at \((d,0)\).
+   - Place \(A\) at \((0, h)\).
+   - Place \(B\) at \((b, h)\).
+
+3. **Using Perpendicularity and Angle Bisector:**
+   - Since \(\overline{AC} \perp \overline{CD}\), \(A\) and \(C\) form a right angle.
+   - Since \(\

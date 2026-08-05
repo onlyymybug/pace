@@ -1,0 +1,14 @@
+To solve the problem, we need to determine how many meals should be ordered so that there is enough food for 12 people, given that the portions are such that 18 meals are enough for 12 people.
+
+First, let's establish the relationship between the number of meals and the number of people they can feed. We know that 18 meals are enough for 12 people. This means that each meal feeds \(\frac{12}{18} = \frac{2}{3}\) of a person.
+
+We need to find out how many meals are required to feed 12 people. Let \(x\) be the number of meals needed. Since each meal feeds \(\frac{2}{3}\) of a person, \(x\) meals will feed \(x \cdot \frac{2}{3}\) people. We need this to be equal to 12 people:
+
+\[
+x \cdot \frac{2}{3} = 12
+\]
+
+To solve for \(x\), we can isolate \(x\) by multiplying both sides of of the equation by the reciprocal of of \(\frac{2}{3}\), which is \(\frac{3}{2}\):
+
+\[
+x

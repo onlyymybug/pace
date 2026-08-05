@@ -1,0 +1,8 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Positive integers $a$, $b$, and $2009$, with $a<b<2009$, form a geometric sequence with an integer ratio. What is $a$? To solve the problem, we need to find positive integers \(a\), \(b\), and \(2009\) such that \(a < b < 2009\) and they form a geometric sequence with an integer common ratio. Let the common ratio be \(r\). Then we can express \(b\) and \(a\) in terms of as follows:
+\[ b = ar \]
+\[ 2009 = ar^2 \]
+
+From the equation \(2009 = ar^2\), we can solve for \(a\):
+\[ a = \frac{2009}{

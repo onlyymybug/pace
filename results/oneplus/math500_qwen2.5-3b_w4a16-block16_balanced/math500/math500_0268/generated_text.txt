@@ -1,0 +1,32 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In circle $J$, $HO$ and $HN$ are tangent to the circle at $O$ and $N$. Find the number of degrees in the sum of $m\angle J$ and $m\angle H$. [asy]
+size(150);
+import graph;
+pair J = (0,0), H = (6,0), O, N;
+path circ = Circle(J,3);
+pair M = midpoint(J--H);
+path secCirc = Circle(M,3);
+pair[] tangentPoints = intersectionpoints(circ,secCirc);
+O = tangentPoints[0]; N = tangentPoints[1];
+draw(J--N--H--O--cycle);
+draw(circ);
+label("$H$",H,E);
+label("$J$",J,W);
+label("$N$",N,S);
+label("$O$",O,NE);
+[/asy] To solve the problem, we need to analyze the geometric configuration and use properties of of tangents and angles in a circle.
+
+1. **Identify Key Properties:**
+   - \( HO \) and \( HN \) are tangents to the circle at points \( O \) and \( N \) respectively.
+   - By the property of of of tangents from a point to a circle, the lengths of of the tangents drawn from an external point to a circle are equal. Thus, \( HO = ON \).
+
+2. **Angle Relationships:**
+   - Since \( HO \) and \( HN \) are tangents from point \( H \), \( \angle HON = 90^\circ \) (angle between two tangents drawn from an external point to a circle is a right angle).
+
+3. **Sum of of Angles:**
+   - The sum of of angles in a quadrilateral \( JHON \) is \( 360^\circ \).
+   - Given \( \angle HON = 90^\circ \), we need to find \( \angle J + \angle H \).
+
+4. **Calculate \( \angle J \) and \( \angle H \):**
+   -

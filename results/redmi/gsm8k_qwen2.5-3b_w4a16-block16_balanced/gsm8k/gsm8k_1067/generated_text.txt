@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The glee club ordered 20 pizzas and ate 70% of them. The football team ordered twice as many pizzas and ate 80% of them. How many pizzas are left? Step 1: Calculate the number of pizzas eaten by the glee club.
+Pizzas ordered by glee club = 2
+Pizzas eaten by glee club = 2 * 70% = 1.4 pizzas
+
+Step 2: Calculate the number of pizzas ordered by the football team.
+Pizzas ordered by football team = 2 * 2 = 4
+
+Step 3: Calculate the number of pizzas eaten by the football team.
+Pizzas eaten by football team = 4 * 80% = 3.2 pizzas
+
+Step 4: Calculate the total number of pizzas ordered.

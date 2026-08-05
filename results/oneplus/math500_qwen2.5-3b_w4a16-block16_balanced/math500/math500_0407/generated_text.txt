@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the remainder of 2004 divided by 12? To determine the remainder when 2004 is divided by 12, we can use the division algorithm, which states that for any integers \(a\) and \(b\) with \(b > 0\), there exist unique integers \(q\) (the quotient) and \(r\) (the remainder) such that \(a = bq + r\) and \(0 \leq r < b\).
+
+Here, \(a = 2004\) and \(b = 12\). We need to find \(q\) and \(r\) such that:
+\[2004 = 12q + r \quad \text{and} \quad 0 \leq r < 12.\]
+
+First, we perform the division of of 2004 by 12 to find the quotient \(q\):
+\[2004 \div 12 = 167.\]
+This tells us that \(q = 167\). Now, we calculate the remainder \(r\) by finding the product of of the quotient and the divisor and subtracting it from 2004:
+\[12 \times 167 = 2004 - 20

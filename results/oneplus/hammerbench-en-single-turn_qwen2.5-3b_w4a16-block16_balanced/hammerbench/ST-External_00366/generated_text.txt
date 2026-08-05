@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrdersDetails","description":"View specific item order details based on criteria","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product name keywords"}},"required":["goods_name"]}}
+{"name":"Education.OnlineClasses.viewCourseOrdersDetails","description":"View a reservation's details","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"OnlineShopping.Mall.searchCommodityOrderDetails","description":"View details of an item order based on criteria","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"order_stage":{"type":"string","description":"Order status, e.g. Pending Payment, Pending Receipt, Completed, Cancelled, Refund/After Sales"},"evaluate_stage":{"type":"string","description":"Review status, e.g. reviewed, pending review"}},"required":["goods","order_stage","evaluate_stage"]}}
+{"name":"Education.OnlineClasses.viewCourseOrders","description":"View a list of my orders (including learning, completed, etc.)","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"time":{"type":"string","description":"Purchase time"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","time","teacher_name"]}}
+{"name":"Navigation.TaxiCarRental.viewCarRentalOrdersDetails","description":"Review the details of a rental order","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"}},"required":["time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:In December last year, our company held an annual year-end appreciation meeting, thank you for your support and trust in us during the year. I hope that in the new year, we can continue to cooperate and create brilliance together!
+query:I would like to check the details of my order with Teacher Chen about the machine learning course, especially the time mentioned in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"Education.OnlineClasses.viewCourseOrders","parameters":{"course_name":"machine learning","teacher_name":"陈老师"}}<|im_end|>

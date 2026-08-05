@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","description":"Get the conditions and requirements to use a city's services","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"UtilityTools.Memo.searchNotes","description":"Search memos by keyword (see all by default)","parameters":{"type":"object","properties":{"key_words":{"type":"string","description":"KEYWORDS"}},"required":["key_words"]}}
+{"name":"Travel.ItineraryServices.searchTravelRoute","description":"Search for relevant travel itineraries based on keywords","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search keywords"}},"required":["keyword"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.searchRentingHouses","description":"Search for rentals by criteria","parameters":{"type":"object","properties":{"price":{"type":"string","description":"Rents"},"house_area":{"type":"string","description":"Area"},"level":{"type":"string","description":"Floor"},"age":{"type":"integer","description":"fixed number of years"},"house_type":{"type":"string","description":"Layout"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"},"indoor_decoration":{"type":"string","description":"decorate"},"furniture":{"type":"string","description":"Furniture"}},"required":["price","house_area","level","age","house_type","housing_estate","location","indoor_decoration","furniture"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 8 o'clock in Chongqing Hongya Cave, and then go to the ancient town of Magneto. Lunch We plan to eat at a specialty restaurant in Ancient Town with local twist and fondue. In the afternoon, stroll through the streets of the ancient town and feel the history and culture of Chongqing. Return to Hongya Cave at night to enjoy the night view and end the day. Remember to bring your camera and record the good moments.
+query:I want to check the conditions and requirements for the use of the CPF in the places mentioned in the notepad, can you help me?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","parameters":{"city_name":"Chongqing"}}<|im_end|>

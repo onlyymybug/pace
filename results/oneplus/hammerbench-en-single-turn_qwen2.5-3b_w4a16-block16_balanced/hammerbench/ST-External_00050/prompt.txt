@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.vehicleNavigationRoute","description":"Specify a vehicle as a way to get around and search for a route","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"vehicle":{"type":"string","description":"Specify how you want to travel"}},"required":["departure","destination","vehicle"]}}
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOpenHours","description":"Get hours at select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Restaurant name:"}},"required":["restaurant_name"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Go to Bondi Beach with friends tomorrow and plan to arrive at 9am with sunscreen and swimwear, as well as beach umbrellas and folding chairs. Lunch is planned to be served at a seafood restaurant near the beach where it is said that there are delicious seafood salads and grilled fish. In the afternoon, if the weather is nice, I want to hike the trails of Bondi Beach and see the beautiful sea view. Come home around 6pm and look forward to the day!
+query:From the Sydney Opera House, how to get to the place mentioned in the notepad by bus?<|im_end|>
+<|im_start|>assistant

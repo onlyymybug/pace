@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ryan’s allowance is $6 each week he completes his chores. He did his chores for 3 weeks. Then he bought ice cream cones for himself and 3 friends at $1.25 each. Now they all want to go to the movies and tickets cost $6.50 each. How many movie tickets can Ryan buy? Step 1: Calculate total allowance.
+Total allowance = allowance per week * weeks = 6 * 3 = 18 dollars.
+
+Step 2: Calculate total cost of of ice cream.
+Cost ofIceCream = 3 friends * 1.25 dollars/friend = 3.75 dollars.
+
+Step 3: Calculate remaining money after buying ice cream.
+RemainingMoney = Total allowance - CostCostIceCream = 18 - 3.75 = 14.25 dollars.
+
+Step 4: Calculate total cost of of movie tickets.
+TotalCostMovieTickets = 4 people * 

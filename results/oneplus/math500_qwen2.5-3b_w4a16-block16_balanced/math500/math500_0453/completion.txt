@@ -1,0 +1,29 @@
+Let the two-digit number be represented as \(10a + b\), where \(a\) and \(b\) are the digits of, with \(a\) being the tens digit and \(b\) being the units digit. We are given two conditions:
+
+1. The sum of of the digits is 13:
+   \[
+   a + b = 13
+   \]
+
+2. The difference between the number and the number with its digits reversed is 27:
+   \[
+   (10a + b) - (10b + a) = 27
+   \]
+   Simplifying the second equation:
+   \[
+   10a + b - 10b - a = 27 \implies 9a - 9b = 27 \implies a - b = 3
+   \]
+
+We now have a system of linear equations:
+\[
+\begin{cases}
+a + b = 13 \\
+a - b = 3
+\end{cases}
+\]
+
+To solve this system, we can add and subtract the equations to eliminate \(b\):
+
+Adding the equations:
+\[
+(a + b) + (a - b) = 1

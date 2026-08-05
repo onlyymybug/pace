@@ -1,0 +1,10 @@
+To find the integer roots of of the polynomial equation \(x^4 + 5x^3 + 9x^2 - x - 14 = 0\), we will use the Rational Root Theorem. The Rational Root Theorem states that any potential rational root, \(p/q\), of of of the polynomial \(a_n x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0\) is a factor of of \(a_0\) divided by a factor of of \(a_n\).
+
+For the polynomial \(x^4 + 5x^3 + 9x^2 - x - 14 = 0\):
+- The constant term \(a_0 = -14\)
+- The leading coefficient \(a_n = 1\)
+
+Thus, the potential rational roots are the factors of of \(-14\) divided by the factors of of \(1\). The factors of of \(-14\) are:
+\[ \pm 1, \pm 2, \pm 7, \pm 14 \]
+
+We will test these potential roots by substituting them into the polynomial and checking if

@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John invited 20 people to a birthday party.  Each guest will eat 2 hot dogs.  He already has 4 hot dogs left over from a previous party.  If a pack of hot dogs contains 6 hot dogs and costs $2, how much does he need to spend on hot dogs? Step 1: Calculate total hot dogs needed
+Total guests: 20
+Hot dogs per guest: 2
+Total hot dogs needed: 20 * 2 = 40 hot dogs
+
+Step 2: Adjust for leftover hot dogs
+Hot dogs left over: 4
+Total hot dogs needed including leftovers: 40 + 4 = 44 hot dogs
+
+Step 3: Calculate packs needed
+Hot dogs per pack: 6
+Total packs needed: 44 / 6 = 7.3333 packs
+
+Step 4: Calculate total cost
+Cost per pack

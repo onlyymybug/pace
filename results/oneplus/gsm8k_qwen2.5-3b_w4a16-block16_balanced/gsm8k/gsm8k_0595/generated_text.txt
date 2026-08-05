@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A cup of mushrooms weighs 100 grams and has 3 grams of protein.  If John eats 200 grams of mushrooms every day how many grams of protein does he get per week? To solve this, first calculate the protein content per gram of of mushrooms, then multiply by the total grams John eats daily, and finally multiply by the number of days in a week.
+
+Protein content per gram: 3 grams protein / 100 grams total weight = 0.03 grams protein per gram
+
+Daily protein intake: 0.03 grams protein / gram * 20 grams eaten = 0.6 grams protein
+
+Weekly protein intake: 0.6 grams protein / day * 7 days = 4.2 grams
+
+The answer is 4.2.<|endoftext|>Human: Given

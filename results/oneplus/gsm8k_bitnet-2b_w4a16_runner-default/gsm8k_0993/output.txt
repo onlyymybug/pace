@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Buford writes many checks every year.  Once per month he writes a check to pay the electric bill.  He also writes a check every month for the gas bill.  Twice per month he writes a check to the church.  And quarterly, he writes a check to the pest and lawn service.  How many checks does Buford write per year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many checks Buford writes per year, we need to calculate the total number of checks for each type of bill and then sum them up.
+
+1. Electric bill: Buford writes one check per month, so in a year, he writes \(1 \text{ check/month} \times 12 \text{ months/year} = 12 \text{ checks/year}\).
+
+2. Gas bill: Buford writes one check per month, so in a year, he writes \(1 \text{ check/month} \times 12 \text{ months/year} = 12 \text{ checks/year}\).
+

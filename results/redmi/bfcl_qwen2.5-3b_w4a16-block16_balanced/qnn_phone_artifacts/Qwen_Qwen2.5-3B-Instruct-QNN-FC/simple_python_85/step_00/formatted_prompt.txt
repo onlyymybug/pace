@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "geo_distance.calculate", "description": "Calculate the geographic distance between two given locations. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"start_location": {"type": "string", "description": "The starting location for the distance calculation. Specify the location in the format of City, State."}, "end_location": {"type": "string", "description": "The destination location for the distance calculation. Specify the location in the format of City, State."}, "units": {"type": "string", "description": "Optional. The desired units for the resulting distance ('miles' or 'kilometers'). Defaults to 'miles'."}}, "required": ["start_location", "end_location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the approximate distance between Boston, MA, and Washington, D.C. in mile?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "museum_working_hours.get", "description": "Get the working hours of a museum in a specific location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"museum": {"type": "string", "description": "The name of the museum."}, "location": {"type": "string", "description": "The location of the museum."}, "day": {"type": "string", "description": "Specific day of the week. Default is 'Monday'"}}, "required": ["museum", "location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get the working hours of Louvre Museum in Paris.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+"name": "museum_working_hours.get", "arguments": {"museum": "LouvreMuseum", "location": "Paris"}
+</tool_call><|im_end|>

@@ -1,0 +1,6 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: $18 is shared among 3 boys. The eldest added $5 to his share and added another $10 the following day. He later needed some money and spent $8 from his total so far. After saving some more, he was able to triple the amount he had left after spending the $8. How much does he have now? Step 1: First, we need to find out how much each boy gets. Total money is 18, divided by 3 boys, so each boy gets 18/3 = 6 dollars.
+Step 2: The eldest boy adds $5 to his share, so he now has 6+5 = 11 dollars.
+Step 3: The following day, he adds another $10, so he has 11+10 = 21 dollars in total.
+Step 4: He spends $8, so he has 2-8 = -6 dollars left, but since

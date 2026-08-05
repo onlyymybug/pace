@@ -1,0 +1,14 @@
+To solve this problem, we need to determine the number of clouds Alice counts each day and then sum those numbers.
+
+- On Monday, Alice counts 3 clouds.
+- Each day after Monday, she sees double the number of clouds as the day before.
+
+Let's calculate the number of clouds for each day:
+
+- Monday: 3 clouds
+- Tuesday: 3 * 2 = 6 clouds
+- Wednesday: 6 * 2 = 12 clouds
+- Thursday: 12 * 2 = 24 clouds
+- Friday: 24 * 2 = 48 clouds
+
+Now, we add up the clouds

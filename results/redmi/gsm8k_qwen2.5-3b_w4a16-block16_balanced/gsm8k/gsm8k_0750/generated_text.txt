@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a school activity, fifty-four students are to be separated into six groups of equal size. If the activity requires 12 groups, how many more groups are needed to form? To solve this problem, we first need to determine how many students would be in each group if there are 6 groups. Then, we'll see how many groups are needed if there are 12 groups instead.
+
+1) Calculate students per group with 6 groups:
+   - Total students: 54
+   - Number of groups: 6
+   - Students per group: 54 / 6 = 9 students per group
+
+2) Calculate students per group with 12 groups:
+   - Total students: 54
+   - Number of groups: 12
+   - Students per group

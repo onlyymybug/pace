@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.searchExpress","description":"Search courier logistics based on information such as designated courier number, recipient, address, etc.","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"date":{"type":"string","description":"Shipping date"},"send_name":{"type":"string","description":"Name Of Sender"},"recipient_name":{"type":"string","description":"Recipient's name"}},"required":["express_id","date","send_name","recipient_name"]}}
+{"name":"OnlineShopping.Mall.viewOrdersLogistics","description":"View shipping information for an order","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleLogistics","description":"View shipping information for an order","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getRealEstateAgencyInfo","description":"Get contact info for a real estate agent","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today, I went to the electronic market and saw a used iPhone, which is a 13 Pro Max, 64GB, and the color is silver. The exterior looks good, there are almost no scratches, and the screen is clean. The store owner said that the previous owner of this mobile phone only used it for half a year, and there has been film and case protection. In terms of performance, I tried it on the spot, it was really smooth and there was no stuttering. In terms of price, the store owner opened a price of 3,200 yuan, which can be negotiated appropriately. I think the price is reasonable and worth considering. If you are interested, it is recommended to go to the store as soon as possible to see, this kind of colorful second-hand goods are rare.
+query:I want to check the logistics information of the item mentioned in the notepad, can you help me?<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.SecondhandTrading.viewSecondhandSaleLogistics","parameters":{"goods_name":"iPhone 13 Pro Max 64GB 银色"}}<|im_end|>

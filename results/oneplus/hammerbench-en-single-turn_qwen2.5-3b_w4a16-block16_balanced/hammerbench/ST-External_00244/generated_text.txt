@@ -1,0 +1,29 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.CloudStorage.netdiskDeleteAddresbookFriend","description":"Delete Friend in Cloud Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+{"name":"OfficeSoftware.Conferencing.removeParticipants","description":"Remove participants from the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Remove people list"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"SocialCommunication.InstantMessaging.removeContact","description":"Remove the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Contact name to remove, required"}},"required":["contact_name"]}}
+{"name":"SocialCommunication.SocialMedia.deleteMediumFriend","description":"Delete specified friends in specified media (delete all by default)","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"SocialCommunication.Calling.deleteContact","description":"Delete the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to be deleted"}},"required":["contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Manager Zhang,
+
+Hello, I would like to update you on the progress of the project we discussed last week.Since the meeting last week, I have been working closely with the team members, the project has completed the preliminary market research and needs analysis, and we plan to start the prototyping phase next week.In the process, we identified a number of potential challenges, such as the difficulty of technology realization exceeding expectations, but we are already looking for suitable solutions.
+
+In addition, I have prepared the corresponding presentation materials for the project review meeting scheduled for next Friday, and I hope to get your valuable comments at that time.If you have any questions or suggestions before the meeting, please do not hesitate to contact me.
+
+Thanks,
+
+Sincerely,
+Salute
+
+Li Si
+query:Can you help me remove the friend whose name corresponds to the person mentioned in the email from the cloud drive?<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.CloudStorage.netdiskDeleteAddresbookFriend","parameters":{"name":"EK"}}<|im_end|>

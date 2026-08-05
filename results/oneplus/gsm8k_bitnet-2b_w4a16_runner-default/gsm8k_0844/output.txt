@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Craig has 2 twenty dollar bills. He buys six squirt guns for $2 each.  He also buys 3 packs of water balloons for $3 each.  How much money does he have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount Craig spends and then subtract that from the total amount he initially had.
+
+First, calculate the total cost of the squirt guns:
+6 squirt guns * $2 each = $12
+
+Next, calculate the total cost of the water balloons:
+3 packs * $3 each = $9
+
+Now, add the costs of the squirt guns and water balloons to find the total amount spent:
+$12 (s squirt guns) + $9 (water balloons) = $21
+
+Craig initially had:
+2 twenty dollar bills = $40
+
+Subtract the total amount spent from the initial amount

@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alice likes to count the puffs of clouds in the sky while she eats her lunch outside at school. On Monday she counts just 3 puffs of clouds. Each day after that through Friday, though, she sees double the number of clouds in the sky as the day before. At the end of the week, how many clouds will she have counted in the sky at lunch across all five days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of clouds Alice counts each day and then sum those numbers.
+
+- On Monday, Alice counts 3 clouds.
+- Each day after Monday, she sees double the number of clouds as the day before.
+
+Let's calculate the number of clouds for each day:
+
+- Monday: 3 clouds
+- Tuesday: 3 * 2 = 6 clouds
+- Wednesday: 6 * 2 = 12 clouds
+- Thursday: 12 * 2 = 24 clouds
+- Friday: 24 * 2 = 48 clouds
+
+Now, we add up the clouds

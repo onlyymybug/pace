@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_future_value", "description": "Calculate the future value of an investment given the initial amount, interest rate, and investment duration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"initial_investment": {"type": "integer", "description": "The initial investment amount."}, "interest_rate": {"type": "float", "description": "The annual interest rate in decimal form."}, "duration": {"type": "integer", "description": "The investment duration in years."}, "compounded": {"type": "integer", "description": "The number of times the interest is compounded per year. Default is 1 (annual compounding)."}}, "required": ["initial_investment", "interest_rate", "duration"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the future value of my investment of $1000 with an annual interest rate of 5% over 2 years.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_future_value", "arguments": {"initial_investment": 1000, "interest_rate": 0.05, "duration": 2}}
+</tool_call><|im_end|>

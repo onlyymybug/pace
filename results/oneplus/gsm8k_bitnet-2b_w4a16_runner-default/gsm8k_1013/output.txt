@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maria was charging her power bank before going to the park when she disconnected it and noticed the power bank wasn’t fully charged yet. Once at the park, her friends asked her if they could charge their phones. While charging her friends’ phones, she noticed that her power bank was losing 9% of the total capacity each hour. 5 hours later the battery started to lose instead 7% of the total capacity each hour for about 3 hours. In the end, the charge remaining was 28%. What was the charge of the power bank when Maria went out to the park?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the initial charge of the power bank as \( x \).
+
+For the first 5 hours, the power bank loses 9% of its charge each hour. So, after 5 hours, the charge lost is \( 0.09 \times 5 = 0.45 \) times the initial charge. Therefore, the charge remaining after 5 hours is \( x - 0.45x = 0.55x \).
+
+For the next 3 hours, the power bank loses 7% of its charge each hour. So, after these 3 hours, the charge lost is \( 

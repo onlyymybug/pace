@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.Mall.viewStoreRating","description":"View store ratings by store name","parameters":{"type":"object","properties":{"store":{"type":"string","description":"Store Name"}},"required":["store"]}}
+{"name":"Finance.Funds.getFundRating","description":"Query rating information for specified funds based on fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotRating","description":"Get user ratings for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"SocialCommunication.Calling.checkPhoneCallQuality","description":"Evaluate metrics such as network quality and sound clarity of the current call","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.TrafficViolations.queryDrivingLicensePoints","description":"Check the remaining points on your driver's license","parameters":{"type":"object","properties":{"driving_license_number":{"type":"string","description":"Licence Number:"}},"required":["driving_license_number"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's climb the Great Wall on the weekend. I heard that the scenery there is very good. We can meet at Beiguan Station and then leave together. When you get to the Great Wall, you can go to Hanpo first. The scenery there is really spectacular, and you can see the beauty of the whole mountain area. In the afternoon, we can find a tea house near the exit to rest, chat over tea, and enjoy the tranquility of the mountains. Well, sounds like a good plan, doesn't it?
+query:What is Xiao Li's user rating on the locations mentioned in my WeChat?<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.Mall.viewStoreRating","parameters":{"store":"XiaoLi"}}<|im_end|>

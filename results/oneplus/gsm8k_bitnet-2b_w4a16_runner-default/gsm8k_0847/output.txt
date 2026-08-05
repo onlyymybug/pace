@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Vicki is planning a pop concert at her high school. The show will be 2 hours. She is allowing each group 2 minutes to get on stage, 6 minutes to perform, and then 2 minutes to exit the stage. If she allows a 10-minute intermission, how many groups can perform in the concert?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total time available for performances and then determine how many groups can fit within that time frame.
+
+1. Total time for the concert: 2 hours = 2 * 60 minutes = 120 minutes.
+2. Time for each group:
+   - Time to get on stage: 2 minutes.
+   - Time to perform: 6 minutes.
+   - Time to exit the stage: 2 minutes.
+   - Total time per group: 2 + 6 + 2 = 10 minutes.
+
+3. Time available for performances: 120 minutes - 10 minutes (

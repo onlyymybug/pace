@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Erika is saving for a new laptop. The laptop she wants costs $600. The sales assistant told her that if she traded in her old laptop, the price of the new one would be reduced by $200. She thinks this is a good deal and agrees to do it. She already has some savings in her purse, and has also been paid $150 this week for her part-time job. Her mom agrees to give her $80 to help her. If Erika now only needs an extra $50 to buy the laptop, how much money does she have in her purse?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Erika has in her purse, we need to calculate the total amount she currently has and then determine how much more she needs to reach the $600 price of the laptop.
+
+1. The price of the new laptop is reduced by $200 due to trading in her old laptop. So, the new price is:
+   \[
+   600 - 200 = 400
+   \]
+
+2. Erika has been paid $150 for her part-time job. Her mom is giving her $80. So, the total amount she has from her job and her mom is:
+   \[
+  

@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John has 10 hectares of a pineapple field. There are 100 pineapples per hectare. John can harvest his pineapples every 3 months. How many pineapples can John harvest within a year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many pineapples John can harvest in one year.
+
+1. First, calculate the total number of pineapples John can harvest from his entire field in one harvest cycle (3 months).
+   - John has 10 hectares.
+   - There are 100 pineapples per hectare.
+   - Total pineapples per harvest cycle = 10 hectares * 100 pineapples/hectare = 1000 pineapples.
+
+2. Next, determine how many harvest cycles there are in one year.
+   - There are 12 months in a year.
+   - John

@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brittany's quilted comforter has many 1-foot by 1-foot colored squares. The comforter had 14 red squares, 4 more blue squares than red squares, 6 more green squares than blue squares, and 12 fewer white squares than green squares.  How many square feet is Brittany's comforter? Let's break down the problem step by step.
+
+1. **Determine the number of blue squares:**
+   - Number of red squares = 14
+   - Number of blue squares = Number of red squares + 4
+   - Number of blue squares = 14 + 4 = 18
+
+2. **Determine the number of green squares:**
+   - Number of green squares = Number of blue squares + 6
+   - Number of green squares = 18 + 6 = 24
+
+3. **Determine the number of white squares:**
+   - Number of white

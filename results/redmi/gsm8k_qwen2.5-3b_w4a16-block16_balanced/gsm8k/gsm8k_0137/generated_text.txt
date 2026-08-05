@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 27 unicorns left in the world.  One third of them are in the Scottish Highlands.  Two thirds of the Scottish unicorns are female.  How many female Scottish unicorns are there? Step 1: Total unicorns = 27
+Step 2: Calculate the number of unicorns in the Scottish Highlands:
+   Total unicorns / 3 = 27 / 3 = 9 unicorns in Scottish Highlands
+Step 3: Calculate the number of female unicorns in the Scottish Highlands:
+   (2/3) * 9 = 6 female unicorns in Scottish Highlands
+Therefore, the answer is 6. The answer is 6.<|endoftext|>Human: Given the problem statement, let's break it down step by step to find the number of female unicorns in the Scottish Highlands.
+

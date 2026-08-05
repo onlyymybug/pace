@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The three angles in a triangle add up to 180 degrees. One angle is twice the smallest angle, and one angle is three times the smallest angle. What is the measure of the largest angle in the triangle, in degrees?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the smallest angle as x degrees. According to the problem, the other two angles are twice and three times the smallest angle, respectively. So, the angles of the triangle are 2x, 3x, and x.
+
+The sum of the angles in a triangle is 180 degrees, so we can write the equation:
+
+2x + 3x + x = 180
+
+Combine like terms:
+
+6x = 180
+
+Divide both sides by 6:
+
+x = 30
+
+Now, we can find the measures of the other two angles:
+
+2x = 2 * 30 = 60

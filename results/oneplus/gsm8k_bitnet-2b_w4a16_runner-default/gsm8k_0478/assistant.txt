@@ -1,0 +1,10 @@
+To find out how many kids aren't allergic to anything, we first need to determine the total number of kids who are allergic to at least one of the allergens.
+
+Let's denote:
+- \( D \) as the set of kids allergic to dairy.
+- \( P \) as the set of kids allergic to peanuts.
+- \( D \cap P \) as the set of kids allergic to both dairy and peanuts.
+
+We are given:
+- \( |D \cap P| = 3 \) (kids allergic to both)
+- \( |D \cup P| = 6 + 9 - |D \cap

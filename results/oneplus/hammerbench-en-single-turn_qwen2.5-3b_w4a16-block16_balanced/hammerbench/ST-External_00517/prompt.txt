@@ -1,0 +1,29 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.setSystemLlanguageAndRegion","description":"Set your phone's language and region options","parameters":{"type":"object","properties":{"language":{"type":"string","description":"Select a language, such as Chinese, English"},"region":{"type":"string","description":"Region, e.g. China, US"}},"required":["language","region"]}}
+{"name":"UtilityTools.AIGC.aigcSpeechTranslation","description":"Translate speech to corresponding target speech","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Speech file to be translated"},"source_lang":{"type":"string","description":"Source language"},"target_lang":{"type":"string","description":"Target language (s)"}},"required":["file","source_lang","target_lang"]}}
+{"name":"MusicRadio.OnlineMusic.setMusicPreferences","description":"Set your preferences by music type, musician, and language","parameters":{"type":"object","properties":{"genres":{"type":"string","description":"Music type"}},"required":["genres"]}}
+{"name":"MusicRadio.Karaoke.setMusicPreferences","description":"Set your preferences by music type, musician, and language","parameters":{"type":"object","properties":{"genres":{"type":"string","description":"Music type"}},"required":["genres"]}}
+{"name":"UtilityTools.AIGC.aigcTranslation","description":"Translate input text to target language","parameters":{"type":"object","properties":{"text":{"type":"string","description":"literal content"},"source_lang":{"type":"string","description":"Source language"},"target_lang":{"type":"string","description":"Target language (s)"}},"required":["text","source_lang","target_lang"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Li Hua,
+
+Hello, There are a few specific details that need to be discussed with you in person about the project we discussed earlier.We plan to have an in-depth exchange at your company's headquarters in Beijing, China on April 5, 2023.During this visit, we would like to learn more about your needs and discuss specific options for cooperation.
+
+To make sure this meeting goes smoothly, please let us know the details of your business address so we can schedule a ride in advance.In the meantime, please do not hesitate to contact us if you have any suggestions for adjustments.
+
+Looking forward to meeting you, I am sure this will be a very pleasant and productive partnership.
+
+Best regards,
+
+Zhang Wei  
+Project Manager  
+Alibaba Group
+query:I want to set the language of my phone to Chinese and the region to the location mentioned in the email. How do I do that?<|im_end|>
+<|im_start|>assistant

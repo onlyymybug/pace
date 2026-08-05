@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Liam and Mitchell own competing lemonade stands across the street from one another. When Liam bragged that he had made $63 one weekend, Mitchell laughed and told Liam he had sold 21 lemonades at $4 apiece the same weekend. How many more dollars did Mitchell make selling lemonade that weekend than Liam?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Mitchell made, we multiply the number of lemonades he sold by the price per lemonade:
+
+Mitchell's earnings = 21 lemonades * $4/lemonade = $84
+
+Now, we subtract Liam's earnings from Mitchell's earnings to find out how much more Mitchell made:
+
+Difference = Mitchell's earnings - Liam's earnings = $84 - $63 = $21
+
+The answer is $21.<|eot_id|>

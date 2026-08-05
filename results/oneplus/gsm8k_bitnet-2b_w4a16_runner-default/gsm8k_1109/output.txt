@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: My mom went to a gardening shop. She bought a set of pots for $19 and a sack of garden soil for $26. At checkout, she used a coupon for $7 off. How much money did my mom spend at the gardening shop?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money my mom spent, we need to first add the cost of the pots and the garden soil, and then subtract the coupon value.
+
+Cost of pots = $19
+Cost of garden soil = $26
+Coupon value = $7
+
+Total cost before coupon = Cost of pots + Cost of garden soil
+Total cost before coupon = $19 + $26
+Total cost before coupon = $45
+
+Total cost after coupon = Total cost before coupon - Coupon value
+Total cost after coupon = $45 - $7
+Total cost after coupon = $38
+
+The answer is $38.<|eot_id|>

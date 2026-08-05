@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jim decides to go to college to earn some more money.  It takes him 4 years to finish and he gets $50,000 in loans per year.  If he had a 25k a year job before college and his college degree tripled his income, how long would it take to earn the money equivalent to the loans and the money lost from not working while in school.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount of money Jim lost due to not working during college and the total amount he earned from his college job. Then, we need to determine how long it would take for him to earn the equivalent amount of money.
+
+1. Calculate the total amount of money lost due to not working during college:
+   - Jim worked for 4 years.
+   - His annual salary was $50,000.
+   - Total lost = 4 years * $50,000/year = $200,000.
+
+2. Calculate the total amount earned from his college job:
+   - Jim earned $50

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "convert_currency", "description": "Converts an amount from a particular currency to another currency. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"base_currency": {"type": "string", "description": "The base currency in which the original amount is present."}, "target_currency": {"type": "string", "description": "The currency to which you want to convert."}, "amount": {"type": "integer", "description": "The amount you want to convert."}}, "required": ["base_currency", "target_currency", "amount"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+How much will 20000 Japanese Yen be in United States Dollar?<|im_end|>
+<|im_start|>assistant

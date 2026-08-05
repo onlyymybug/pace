@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Eve had 20 pieces of pomelos. After giving her friend some pomelos, Eve is left with 1/4 of the pomelos she originally had. How many pomelos did Eve give away?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of pomelos Eve gave away as x. After giving away x pomelos, Eve is left with 1/4 of the original 20 pieces.
+
+So, the equation representing the situation is:
+20 - x = (1/4) * 20
+
+First, simplify the right side of the equation:
+20 - x = 5
+
+Now, solve for x:
+x = 20 - 5
+x = 15
+
+Eve gave away 15 pieces of pomelos.
+
+The answer is 15.<|eot_id|>

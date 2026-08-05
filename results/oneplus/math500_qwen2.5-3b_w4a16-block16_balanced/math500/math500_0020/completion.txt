@@ -1,0 +1,21 @@
+To solve the problem, we need to find the smallest possible value of \(a\) such that all the roots of of the polynomial \(x^3 + ax^2 + ax + 1 = 0\) are real. Let's denote the roots by \(r_1, r_2, r_3\). By Vieta's formulas, we know:
+
+\[
+r_1 + r_2 + r_3 = -a,
+\]
+\[
+r_1r_2 + r_2r_3 + r_3r_1 = a,
+\]
+\[
+r_1r_2r_3 = -1.
+\]
+
+We will use the identity for the sum of of the product of of the roots taken two at a time:
+
+\[
+r_1r_2 + r_2r_3 + r_3r_1 = a.
+\]
+
+Given \(r_1r_2r_3 = -1\), we can express \(r_1, r_2, r_3\) as roots of of the polynomial. Let's assume \(r_1, r_2, r_3\) are real and solve for \(a\).
+
+Consider the polynomial \(P

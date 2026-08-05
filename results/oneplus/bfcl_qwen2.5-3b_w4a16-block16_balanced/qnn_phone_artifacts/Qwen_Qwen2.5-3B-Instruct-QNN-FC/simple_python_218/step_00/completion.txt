@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "patient.get_mri_report", "arguments": {"patient_id": "546382", "mri_type": "brain", "status": "concluded"}}
+</tool_call><|im_end|>

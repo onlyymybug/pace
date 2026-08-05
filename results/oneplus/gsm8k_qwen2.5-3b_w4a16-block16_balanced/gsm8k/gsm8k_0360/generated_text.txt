@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Billy is buying some candy with $10 his father gave him. The candy costs $1.5 a pound. After buying candy, he takes half his change and spends it on gumballs, which cost $.05 each. If he bought 40 gumballs, how many pounds of candy did he buy? Let's break down the problem step by step.
+
+1. **Total money Billy has:** $10
+2. **Cost per pound of candy:** $1.5
+3. **Cost per gumball:** $0.05
+4. **Number of gumballs bought:** 40
+
+First, we calculate how much money Billy spends on candy:
+- Total money: $10
+- Cost per pound of candy: $1.5
+- Number of pounds of candy bought = Total money / Cost per pound candy
+\[ \text{Pounds of candy} = \frac{10

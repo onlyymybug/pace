@@ -1,0 +1,9 @@
+<tool_call>
+"name": "run_linear_regression",
+"arguments": {
+"predictors": ["Age", "Income", "Education"],
+"target": "Purchase_Amount",
+"standardize": true
+}
+}()
+<|im_end|>

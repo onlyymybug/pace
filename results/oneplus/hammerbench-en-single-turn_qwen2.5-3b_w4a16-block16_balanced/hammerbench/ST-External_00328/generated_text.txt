@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.getWeatherAlert","description":"Get upcoming weather warnings for selected locations","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"time":{"type":"string","description":"Time range"}},"required":["location","time"]}}
+{"name":"Travel.ItineraryServices.getTravelWarnings","description":"Get travel safety warnings for your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryTrafficViolations","description":"Check the traffic violation information of the user's vehicle","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"Vehicle license plate"}},"required":["plate_number"]}}
+{"name":"Finance.Insurance.purchaseInsurance","description":"Purchase insurance products","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."},"insurance_benefit":{"type":"string","description":"Beneficiary/Protected Property"},"amount":{"type":"float","description":"Coverage Amount"},"period":{"type":"integer","description":"Insurance period, fixed time for some products, units (years)"}},"required":["insurance_name","insurance_type","insurance_benefit","amount","period"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotCheckInLocations","description":"Get popular punch card (influencer) locations in scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Starting tomorrow at 9am, the three-day annual sales meeting will be held in the company's headquarters conference room. Please ensure that all preparations are completed prior to this, in particular the final review of the reporting materials. After the meeting, a project wrap-up is scheduled for Friday at 3pm, also in the headquarters conference room. Please arrange a reasonable time to attend on time.
+query:Will there be a smog warning at the time mentioned in the Shenzhen Notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.getWeatherAlert","parameters":{"location":"Shenzhen","time":"9am tomorrow"}}<|im_end|>

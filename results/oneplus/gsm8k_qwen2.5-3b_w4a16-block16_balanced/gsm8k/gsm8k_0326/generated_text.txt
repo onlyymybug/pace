@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jaime is a computer programmer for a company that currently has employed 100 people. Senior programmers are paid $400 more than junior programmers. If the number of Junior programmers is 2/5 of the total number of employees, and they are each paid $2000 per month, calculate the total amount of money the company pays to all the programmers per month. Step 1: Determine the number of junior programmers.
+Number of junior programmers = 2/5 * Total employees = 2/5 * 100 = 40
+
+Step 2: Determine the number of senior programmers.
+Number of senior programmers = Total employees - Number of junior programmers = 100 - 40 = 60
+
+Step 3: Calculate the monthly salary for junior programmers.
+Monthly salary for junior = $2000
+
+Step 4: Calculate the monthly salary for senior programmers.
+Senior salary = Junior salary + Senior bonus = $2000 + $40

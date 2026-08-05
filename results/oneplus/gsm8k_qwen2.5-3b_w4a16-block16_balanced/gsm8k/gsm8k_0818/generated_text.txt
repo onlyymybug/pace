@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Paul needs 63 cupcakes for a birthday party happening on Saturday. He already has 8 chocolate cupcakes and 40 toffee cupcakes. How many more cupcakes should Paul buy? Step 1: Calculate total cupcakes Paul already has
+Total already = chocolate + toffee
+Total already = 8 + 40
+
+Step 2: Calculate how many more cupcakes Paul needs to buy
+Total needed = 63
+Total bought = 8 + 40
+Cupcakes to buy = Total needed - Total bought
+
+Step 3: Perform the calculation
+Total already = 8 + 40 = 48
+Cupcakes to buy = 63 - 48
+
+Step 4: Find the difference
+Cupcakes to buy = 15
+
+The answer

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "fetch_DNA_sequence", "description": "Retrieve the sequence of a DNA molecule with the given id from a public database. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"DNA_id": {"type": "string", "description": "Unique ID of the DNA molecule in the database."}, "format": {"type": "string", "description": "Optional parameter to get sequence in specific format (default to 'fasta')."}, "upstream": {"type": "integer", "description": "Optional parameter to include certain number of base pairs upstream the DNA sequence (default to 0)."}}, "required": ["DNA_id"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Retrieve the sequence of DNA molecule with id `DNA123`.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "fetch_DNA_sequence", "arguments": {"DNA_id": "DNA123"}}
+</tool_call><|im_end|>

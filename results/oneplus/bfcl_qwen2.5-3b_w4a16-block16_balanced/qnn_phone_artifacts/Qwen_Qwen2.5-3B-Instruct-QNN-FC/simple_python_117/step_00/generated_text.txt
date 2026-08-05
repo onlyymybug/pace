@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "probability_of_event", "description": "Calculates the probability of an event. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"success_outcomes": {"type": "integer", "description": "The number of successful outcomes."}, "total_outcomes": {"type": "integer", "description": "The total number of possible outcomes."}, "format_as_ratio": {"type": "boolean", "description": "When true, formats the output as a ratio instead of a decimal. Default is false."}}, "required": ["success_outcomes", "total_outcomes"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What are the odds of pulling a heart suit from a well-shuffled standard deck of 52 cards? Format it as ratio.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "probability_of_event", "arguments": {"success_outcomes": 13, "total_outcomes": 52, "format_as_ratio": true}}
+</tool_call><|im_end|>

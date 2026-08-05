@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carly had 80 cards, 2/5 of the cards had the letter A on them, 1/2 of the remaining had the letter B, 5/8 of the rest had the letter C on them, and the others had the letter D. How many of the cards had the letter D on them?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many cards had the letter D on them, we need to work backwards from the given fractions.
+
+1. Start with the total number of cards: 80.
+2. Calculate the number of cards with letter A: 2/5 of 80 = (2/5) * 80 = 32 cards.
+3. Subtract the cards with letter A from the total to find the remaining cards: 80 - 32 = 48 cards.
+4. Calculate the number of cards with letter B: 1/2 of the remaining 48 cards = (1/2) * 48 = 24

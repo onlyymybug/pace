@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "generate_law_contract", "description": "Generates a customized law contract given involved parties, contract type and location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"parties": {"type": "array", "items": {"type": "string"}, "description": "Parties involved in the contract."}, "contract_type": {"type": "string", "description": "Type of the contract."}, "location": {"type": "string", "description": "Location where the contract will be in effect."}}, "required": ["parties", "contract_type", "location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Generate a customized law contract between John and Alice for rental agreement in California.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "generate_law_contract", "arguments": {"parties": ["John", "Alice"], "contract_type": "Rental Agreement", "location": "California"}}
+</tool_call><|im_end|>

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carson lives in an old house where the pipes will freeze if the temperature inside the house falls below 32 degrees. Every log of wood Carson burns heats the house up by 5 degrees. If it was 45 degrees during the day, and it's 33 degrees colder during the night compared to the day, how many logs does Carson need to burn to prevent the pipes from freezing? To solve this problem, we need to determine how much the temperature drops at night and how many logs are needed to bring it back up to 32 degrees.
+
+1. Calculate the temperature drop at night:
+   - Daytime temperature: 45 degrees
+   - Nighttime temperature: 33 degrees lower than daytime
+   - Temperature drop: 45 - 33 = 12 degrees
+
+2. Determine how many logs are needed to raise the temperature by 12 degrees:
+   - Each log raises the temperature by 5 degrees
+   - Number of logs needed: 12 / 5

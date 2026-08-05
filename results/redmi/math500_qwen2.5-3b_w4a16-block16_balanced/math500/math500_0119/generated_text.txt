@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the number of ordered pairs $(a,b)$ of integers such that $|a + bi| \le 5.$
+
+To solve the problem of, we need to find the number of ordered pairs \((a, b)\) of integers such that \(|a + bi| \le 5\).
+
+1. **Understanding the Magnitude:**
+   The magnitude of of of a complex number \(a + bi\) is given by:
+   \[
+   |a + bi| = \sqrt{a^2 + b^ - 2}
+   \]
+   We are given that \(|a + bi| \le 5\), which translates to:
+   \[
+   \sqrt{a^2 + b^2}

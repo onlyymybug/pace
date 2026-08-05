@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Prince Thaddeus slew 100 dragons with his mighty sword, while Prince Arthur, using a spear, slew three quarters as many dragons as Prince Thaddeus.  Using a rusty iron axe, Prince Walter slew twice as many dragons as Prince Arthur.  But Prince Bruce, having forgot his sword at home, slew one-fifth as many dragons as Prince Walter using a nail file.  How many Dragons has Prince Bruce slain?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many dragons Prince Bruce slew, we need to work backwards from the information given about Prince Bruce.
+
+1. Prince Bruce slew one-fifth as many dragons as Prince Walter using a nail file.
+2. Prince Walter slew twice as many dragons as Prince Arthur.
+3. Prince Arthur slew three-quarters as many dragons as Prince Thaddeus.
+
+Let's denote the number of dragons each prince slew as follows:
+- Thaddeus: T
+- Arthur: A
+- Walter: W
+- Bruce: B
+
+From the information given:
+- T = 100 (since Thaddeus slew 100

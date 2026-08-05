@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The elevator in Jack's building supports a maximum load of 700 kg. An adult weighs an average of 80 kg. If Jack rides the elevator with 8 other adults, by how much will they have exceeded the maximum load of the elevator?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total weight of Jack and the 8 other adults and then compare it to the maximum load of the elevator.
+
+1. Calculate the total weight of Jack and the 8 other adults:
+   - Jack's weight: 80 kg
+   - Weight of 8 adults: 8 adults * 80 kg/adult = 640 kg
+   - Total weight: 80 kg + 640 kg = 720 kg
+
+2. Compare the total weight to the maximum load of the elevator:
+   - Maximum load of the elevator: 700 kg
+   - Total weight of Jack

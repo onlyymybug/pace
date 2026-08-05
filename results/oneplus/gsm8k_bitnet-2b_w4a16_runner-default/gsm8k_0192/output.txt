@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ducks need to eat 3.5 pounds of insects each week to survive. If there is a flock of ten ducks, how many pounds of insects do they need per day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many pounds of insects the ten ducks need per day, we first need to determine the total amount of insects needed per week and then divide that by the number of days in a week.
+
+1. Calculate the total weekly insect requirement for ten ducks:
+   - Each duck needs 3.5 pounds per week.
+   - For ten ducks, the total weekly requirement is \(10 \times 3.5 = 35\) pounds.
+
+2. Convert the weekly requirement to a daily requirement:
+   - There are 7 days in a week.
+   - The daily requirement is \(\frac{35}{7} =

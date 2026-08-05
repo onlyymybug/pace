@@ -1,0 +1,3 @@
+<tool_call>
+"name": "get_lawsuit_details", "arguments": {"case_number": "123456-ABC", "court_location": "Los Angeles", "with_verdict": true}
+</tool_call><|im_end|>

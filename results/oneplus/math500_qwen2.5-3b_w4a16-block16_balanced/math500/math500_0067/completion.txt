@@ -1,0 +1,37 @@
+To solve the given expression step-by-step, we start with the expression:
+
+\[
+x\left(x(1+x) + 2x\right) - 3(x^2 - x + 2)
+\]
+
+First, we need to expand the terms inside the expression. We start by expanding \(x(1 + x) + 2x\):
+
+\[
+x(1 + x) + 2x = x + x^2 + 2x = x^2 + 3x
+\]
+
+Now, substitute this back into the original expression:
+
+\[
+x(x^2 + 3x) - 3(x^2 - x + 2)
+\]
+
+Next, distribute \(x\) in the first term and distribute \(-3\) in the second term:
+
+\[
+x(x^2 + 3x) = x^3 + 3x^2
+\]
+
+\[
+-3(x^2 - x + 2) = -3x^2 + 3x - 6
+\]
+
+Now, combine these results:
+
+\[
+x^3 + 3x^2 - 3x^2 + 3x - 6
+\]
+
+Combine like terms:
+
+\[

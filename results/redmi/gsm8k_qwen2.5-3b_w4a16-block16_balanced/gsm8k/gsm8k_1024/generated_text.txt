@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A man eats 5 sandwiches per day, his wife eats 4 sandwiches per day, and their son eats 2 sandwiches per day. How many sandwiches does this family eat in one week? To solve this problem, we first calculate the total number of sandwiches consumed by the family in one day, then multiply that by the number of days in a week.
+
+Total sandwiches eaten per day = (sandwiches eaten by man per day) + (sandwiches eaten by wife per day) + (sandwiches eaten by son per day)
+= 5 + 4 + 2
+= 11 sandwiches per day
+
+Total sandwiches eaten in one week = (sandwiches eaten per day) * (number of days in a week)
+= 11 * 7
+= 77 sandwiches
+
+The

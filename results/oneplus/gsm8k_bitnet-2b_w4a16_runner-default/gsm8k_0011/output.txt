@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A new program had 60 downloads in the first month. The number of downloads in the second month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the number of downloads for each month and then sum them up.
+
+1. In the first month, the program had 60 downloads.
+2. In the second month, the number of downloads was three times the first month, which is \(3 \times 60 = 180\) downloads.
+3. In the third month, the number of downloads reduced by 30% from the second month. To find 30% of 180, we calculate \(0.30 \times 180 = 54\). Then, we subtract this from the second month's total: \(180 -

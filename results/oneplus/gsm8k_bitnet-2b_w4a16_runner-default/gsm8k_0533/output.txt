@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jame will turn 27 in 5 years.  In 8 years his cousin will be 5 years younger than twice his age.  How many years separate the age of the two now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Jame's current age as \( J \) and his cousin's current age as \( C \).
+
+In 5 years, Jame will be \( J + 5 \) years old. In 8 years, his cousin will be \( C + 8 \) years old.
+
+According to the problem, in 8 years, Jame's cousin will be 5 years younger than twice his age. This gives us the equation:
+\[ C + 8 = 2(J + 5) - 5 \]
+
+Simplifying the equation:
+\[ C + 8 = 2J + 10 - 

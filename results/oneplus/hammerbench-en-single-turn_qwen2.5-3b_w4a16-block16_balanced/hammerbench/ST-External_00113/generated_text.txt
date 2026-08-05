@@ -1,0 +1,32 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","description":"Find information about public city services in selected cities","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"Name of the city to query"}},"required":["city_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.getServiceRequirements","description":"Get the conditions and requirements to use a city's services","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"City"}},"required":["city_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Partner,
+
+Hello!
+
+I would like to give you some details about our upcoming market expansion conference in Shanghai.The conference will be held at the Shanghai International Convention Center on October 15, 2023.During the meeting, we will detail new market strategies, share success stories, and arrange one-on-one meetings with key clients.In order to ensure the smooth progress of the meeting, we have booked a room at the Shangri-La Hotel in Pudong, Shanghai, for the accommodation of the participants.
+
+Please confirm your interest in attending by replying to this email and let us know if you need to book a stay.If you have any special requests or need help, please do not hesitate to contact me.
+
+We look forward to seeing you in Shanghai and discussing our plans for cooperation!
+
+Zhu Shangqi,
+[Your name]  
+[Your Position]  
+[your contact details]  
+[Company name]
+query:Inquire about medical-related public city services at the locations mentioned in the email<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","parameters":{"city_name":"Shanghai"}}<|im_end|>

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ashley has an internet connection speed of 20kb per second. Knowing that 1 Mb has 1000 kb, she wants to know her internet connection speed in Mb per hour. What is Ashley’s internet connection speed in Mb per hour?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Ashley's internet connection speed in Mb per hour, we need to convert her current speed from kb per second to Mb per hour.
+
+1. First, we know that 1 Mb = 1000 kb.
+2. Ashley's current speed is 20 kb per second.
+3. There are 60 seconds in a minute, so her speed in Mb per minute is:
+   \[
+   \frac{20 \text{ kb/second}}{1000 \text{ kb/Mb}} \times 60 \text{ seconds/minute} = \frac{20}{1000} \times 60 =

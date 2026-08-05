@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A train travels between 3 different cities.  It goes 75 miles from the first city to the second city, 100 miles from the second city to the third city, and 50 miles less than that combined distance to go from the third city to the first city.  It does this trip 3 times a day.  The train needs service every 18,000 miles so how many days does it go between services?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total distance the train travels for one round trip. 
+
+1. Distance from the first city to the second city: 75 miles
+2. Distance from the second city to the third city: 100 miles
+3. Distance from the third city back to the first city: 75 + 100 - 50 = 125 miles
+
+Total distance for one round trip = 75 + 100 + 125 = 300 miles
+
+Since the train makes this trip 3 times a day, the daily distance is:
+300 miles * 3 = 900 miles
+
+The

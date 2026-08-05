@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Octavia wants to make a quilt for her sister. She is going to build it from small, medium, and large t-shirts that her family is done with. A small t-shirt is 3 square feet of fabric. A medium one is 4 square feet. A large one is 6 square feet. If she uses 11 small shirts, 8 medium, and 6 large shirts, how many square feet is the quilt?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total square feet of fabric for the quilt, we need to calculate the fabric used for each type of shirt and then add them together.
+
+- For the small shirts: 11 shirts * 3 square feet/shirt = 33 square feet
+- For the medium shirts: 8 shirts * 4 square feet/shirt = 32 square feet
+- For the large shirts: 6 shirts * 6 square feet/shirt = 36 square feet
+
+Now, add the square feet for each type of shirt together:
+
+33 square feet + 32 square feet + 36 square feet = 101

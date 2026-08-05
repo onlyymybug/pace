@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "group_dynamics.pattern", "description": "Examine the social dynamics and interactions within a group based on the personality traits and group size. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"total": {"type": "integer", "description": "The total group size."}, "extroverts": {"type": "integer", "description": "The number of extroverted members in the group."}, "introverts": {"type": "integer", "description": "The number of introverted members in the group."}}, "required": ["total", "extroverts", "introverts"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find social behaviors and patterns in a group size of 50 with extroverted members being 15 and introverted members being 35.<|im_end|>
+<|im_start|>assistant

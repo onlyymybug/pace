@@ -1,0 +1,10 @@
+To solve this problem, we need to calculate the time Bill spends digging through both soil and clay.
+
+1. Bill digs at a rate ofsoil = 4 feet/hour and at half that speed through clay, so his rate through clay is: 
+   rate_clay = 4 / 2 = 2 feet/hour.
+
+2. Calculate the time taken to dig through soil:
+   time_soil = distance_soil / rate_soil = 24 / 4 = 6 hours.
+
+3. Calculate the time taken to dig through clay:
+   time_clay = distance_clay / rate_clay =

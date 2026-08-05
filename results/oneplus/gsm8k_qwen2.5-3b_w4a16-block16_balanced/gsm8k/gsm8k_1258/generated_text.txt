@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob thinks he needs 56 popsicle sticks to recreate the Washington Monument for his history project.  His favorite popsicles come 8 to a box and cost $2.00 per box.  How much will it cost Bob to build his project? Step 1: Calculate the number of boxes needed.
+Number ofBoxes = TotalPopsicleSticksNeeded / PopsicleSticksPerBox
+Step 2: Calculate the total cost.
+TotalCost = NumberofBoxes * CostPerBox
+Step 3: Plug in the numbers.
+PopsicleSticksPerBox = 8
+TotalPopsicleSticksNeeded = 56
+CostPerBox = $2.00
+Step 4: Perform the calculations.
+NumberofBoxes = 56 / 8 = 7
+TotalCost = 7 * 2 = 14

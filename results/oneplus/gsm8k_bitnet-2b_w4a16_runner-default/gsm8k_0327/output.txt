@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Some people got on a bus at the terminal. At the first bus stop, 5 more people got in. Then at the second bus stop, 7 people got down and 8 more got in. If there were a total of 20 people heading to the third stop, how many people got on the bus at the terminal?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of people who got on the bus at the terminal as \( x \).
+
+1. At the first bus stop, 5 more people got in, so the number of people on the bus became \( x + 5 \).
+2. At the second bus stop, 7 people got down, so the number of people on the bus became \( x + 5 - 7 \).
+3. Then, 8 more people got in, so the number of people on the bus became \( x + 5 - 7 + 8 \).
+
+We know that after all these changes, there were 

@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A house and a lot cost $120,000. If the house cost three times as much as the lot, how much did the house cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the cost of the lot as \( L \) and the cost of the house as \( H \). According to the problem, we have two pieces of information:
+
+1. The total cost of the house and the lot is $120,000.
+2. The house cost three times as much as the lot.
+
+We can express these pieces of information as equations:
+\[ H + L = 120,000 \]
+\[ H = 3L \]
+
+We can substitute the second equation into the first to find \( L \):
+\[ 3L + L = 120,000 \]
+\[ 4L =

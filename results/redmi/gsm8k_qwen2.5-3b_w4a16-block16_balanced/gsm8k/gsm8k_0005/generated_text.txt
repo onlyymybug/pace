@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every day, Wendi feeds each of her chickens three cups of mixed chicken feed, containing seeds, mealworms and vegetables to help keep them healthy.  She gives the chickens their feed in three separate meals. In the morning, she gives her flock of chickens 15 cups of feed.  In the afternoon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens? Step 1: Calculate total feed needed per chicken per day.
+Total feed per chicken = 3 cups
+
+Step 2: Calculate total feed needed for the entire flock.
+Total feed for flock = 3 cups/chicken * 20 chickens = 6 cups
+
+Step 3: Calculate total feed given in the morning and afternoon.
+Morning feed = 15 cups
+Afternoon feed = 25 cups
+Total morning and afternoon feed = 15 + 25 = 40 cups
+
+Step 4: Subtract the total feed given in the morning and afternoon from the total feed needed for the flock to

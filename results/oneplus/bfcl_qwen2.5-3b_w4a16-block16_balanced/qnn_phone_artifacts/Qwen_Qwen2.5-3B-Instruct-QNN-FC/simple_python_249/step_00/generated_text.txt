@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "religion.history_info", "description": "Provides comprehensive historical details about a specified religion till a specified century. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"religion": {"type": "string", "description": "The name of the religion for which historical details are needed."}, "till_century": {"type": "integer", "description": "The century till which historical details are needed."}, "include_people": {"type": "boolean", "description": "To include influential people related to the religion during that time period, default is False"}}, "required": ["religion", "till_century"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Tell me more about Christianity and its history till the 14th century<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "religion.history_info", "arguments": {"religion": "Christianity", "till_century": 14}}
+</tool_call><|im_end|>

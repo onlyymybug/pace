@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tony is painting a room with four walls. The north and south walls are 10 x 8 feet. The east and west walls are 5 x 8 feet. A gallon of paint can cover 20 square feet and cost $12. How much will it cost to paint the room? To solve this, first calculate the total wall area, then determine how many gallons of of paint are needed, and finally calculate the total cost.
+
+Total wall area = (2 * 10 * 8) + (2 * 5 * 8) = 160 + 80 = 240 square feet
+
+Gallons of paint needed = Total wall area / Coverage per gallon = 240 / 20 = 12 gallons
+
+Cost = Gallons needed * Cost per gallon = 12 * 12 = 144
+
+The answer is 14

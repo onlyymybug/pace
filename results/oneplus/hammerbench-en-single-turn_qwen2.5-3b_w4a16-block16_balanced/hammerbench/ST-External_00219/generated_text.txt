@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantDetails","description":"Get restaurant details based on restaurant","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.queryBillInfo","description":"Used to get billing details for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"time":{"type":"string","description":"Bill Time"}},"required":["service_type","user_name","time"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today at 3 pm, I will go to my grandmother's house, the old house in the north of the city. Remember to bring the new sweater that my mother knitted for you, and the good luck oranges that she bought for my grandmother, she has always loved. The weather forecast indicates that it may rain. Don't forget to fill up the car and drive safely.
+query:I want to know the details of the restaurant mentioned in the notepad, can you check it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantDetails","parameters":{"restaurant_name":"Old House North City"}}<|im_end|>

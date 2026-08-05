@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotInfo","description":"Get detailed descriptions of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Finance.Stocks.getStockFundInfo","description":"Query details and real-time information on selected stocks","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"}},"required":["stock_code","stock_name"]}}
+{"name":"Finance.Stocks.viewStockoperate","description":"Query the stock market on the day of trading; the day of consignment; historical trading; historical consignment; T operation","parameters":{"type":"object","properties":{"transaction_today":{"type":"boolean","description":"Deal of the day Default: 0 No"},"entrust_today":{"type":"boolean","description":"Delegation of the day default: 0 No"},"transaction_his":{"type":"boolean","description":"History Closing Default: 0 No"},"entrust_his":{"type":"boolean","description":"Historical delegation default: 0 No"},"T_operate":{"type":"boolean","description":"T Operation default: 0 No"}},"required":["transaction_today","entrust_today","transaction_his","entrust_his","T_operate"]}}
+{"name":"OnlineShopping.ExpressDelivery.searchExpress","description":"Search courier logistics based on information such as designated courier number, recipient, address, etc.","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"date":{"type":"string","description":"Shipping date"},"send_name":{"type":"string","description":"Name Of Sender"},"recipient_name":{"type":"string","description":"Recipient's name"}},"required":["express_id","date","send_name","recipient_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We plan to hike to the Great Wall on the weekend, gather at the entrance of the Great Wall at 8am, remember to bring more water and put on comfortable shoes. The scenery there is really beautiful, I look forward to exploring with you.
+query:Where did Tom text me? Can you tell me more about the location, features, and ticket information of this attraction?<|im_end|>
+<|im_start|>assistant

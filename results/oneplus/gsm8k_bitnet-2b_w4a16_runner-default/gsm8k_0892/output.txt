@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A whirligig spins at five times the speed of a thingamabob. A whatchamacallit spins eleven times faster than a thingamabob. A whatchamacallit spins at 121 meters per second. How fast does a whirligig spin?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the speed at which the whirligig spins, we need to work backward from the information given about the whatchamacallit.
+
+1. The whatchamacallit spins at 121 meters per second.
+2. The whatchamacallit spins eleven times faster than a thingamabob.
+3. The whatchamacallit spins five times the speed of a thingamabob.
+
+Let's denote the speed of the thingamabob as \( v \) meters per second. Then, the speed of the whatchamacallit is \( 11v \) meters per second, and the

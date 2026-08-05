@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ralph has a record store where people can trade their own records for new ones. People can trade 2 old records for 1 new one. 5 people come in with old records and leave with 7 new records between them. How many old records did the 5 people bring in?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of old records each person brought in as \( x \). Since there are 5 people, the total number of old records brought in is \( 5x \).
+
+Each person can trade 2 old records for 1 new record. Therefore, for each old record brought in, the number of new records received is \( \frac{1}{2} \).
+
+Since each of the 5 people received 7 new records, the total number of new records received is \( 5 \times 7 = 35 \).
+
+We can set up the equation based on the trade:
+\[ 5x \

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.Mall.deleteMyFollow","description":"Unfollow an item or store","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.AutoLife.unfollowCarModels","description":"Dismiss the focus on the specified car model.","parameters":{"type":"object","properties":{"brands":{"type":"string","description":"Car Brand"}},"required":["brands"]}}
+{"name":"SocialCommunication.Community.unfollowCommunityUser","description":"Unfollow users from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to unfollow"}},"required":["community_name","user_nickname"]}}
+{"name":"MusicRadio.OnlineMusic.unfollowMusician","description":"Unfollow artist by artist name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Artist Name"}},"required":["name"]}}
+{"name":"NewsMagazines.News.unfollowNewsSource","description":"Unfollow assigned news source","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"}},"required":["source_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The latest Audi A6L now has a special offer that you can consider if you are interested in this car. The configuration of this car is really good, the power is strong, the interior is luxurious, and the safety is very high. There are also additional small gifts in the shop now.
+query:Unfollow the A4 for me.<|im_end|>
+<|im_start|>assistant

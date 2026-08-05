@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Greta wanted brownies for her birthday.  She made a batch for herself; one dozen cream cheese swirl brownies.  At her office, they threw her a party and sent her home with 1/2 a dozen brownies.  When she arrived home, her friends were there to throw her a surprise party and had 4 dozen brownies waiting.  During the party, 1 1/2 dozen brownies were eaten.  How many individual brownies did Greta have left over from the entire day? Step 1: Calculate total brownies made and received.
+- At her office: 1/2 dozen brownies
+- At home: 4 dozen brownies
+- Total brownies: 1/2 + 4 = 4.5 dozen
+
+Step 2: Convert total brownies to individual pieces.
+- 1 dozen = 12 pieces
+- Total pieces: 4.5 * 12 = 54 pieces
+
+Step 3: Calculate brownies eaten.
+- Total eaten: 1.5 dozen
+- Eaten pieces: 1.5 * 12 = 

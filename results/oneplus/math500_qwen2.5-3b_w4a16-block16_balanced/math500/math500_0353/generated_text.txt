@@ -1,0 +1,40 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Triangle $ABC$ is isosceles, with $AB=AC$ and altitude $AM=11.$ Suppose that there is a point $D$ on $\overline{AM}$ with $AD=10$ and $\angle BDC=3\angle BAC.$  Find the perimeter of triangle $ABC.$
+
+[asy]
+unitsize(0.4 cm);
+
+pair A, B, C, D, M;
+
+A = (0,11);
+D = (0,1);
+B = (-11/2,0);
+C = (11/2,0);
+M = (B + C)/2;
+
+draw(A--B--C--cycle);
+draw(A--M);
+draw(B--D--C);
+
+label("$A$", A, N);
+label("$B$", B, SW);
+label("$C$", C, SE);
+label("$D$", D, NW);
+label("$M$", M, S);
+[/asy] To solve the problem, we need to determine the perimeter of of of triangle \(ABC\). Let's start by analyzing the given information and using geometric properties.
+
+1. **Identify Key Properties:**
+   - Triangle \(ABC\) is isosceles with \(AB = AC\) and \(AM\) as the altitude from \(A\) to \(BC\).
+   - \(AM = 11\).
+   - Point \(D\) is on \(\overline{AM}\) such that \(AD = 10\).
+   - \(\angle BDC = 3 \angle BAC\).
+
+2. **Determine \(\angle BAC\):**
+   Since \(AM\) is the altitude, \(\angle BAM\) and \(\angle CAM\) are right angles. Let \(\angle BAC = \theta\). Then, \(\angle BAM = \angle CAM = 90^\circ - \theta\).
+
+3. **Use the Given Angle Relationship:**
+   Given \(\angle BDC = 3 \theta\), we need to relate this to the angles in triangle \(ABC\).
+
+4. **Analyze Triangle \(BDC\):**
+   Since \(D\) is on \(AM\) and

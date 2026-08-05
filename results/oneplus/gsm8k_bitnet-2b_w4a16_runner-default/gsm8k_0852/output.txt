@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James buys 2 pairs of shoes a month.  He spends $2640 on shoes each year.  How much does he pay on average for each pair of shoes?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much James pays on average for each pair of shoes, we need to divide the total amount he spends on shoes in a year by the number of pairs he buys in a year.
+
+Total amount spent on shoes in a year = $2640
+Number of pairs bought in a year = 2
+
+Average cost per pair of shoes = Total amount spent on shoes in a year / Number of pairs bought in a year
+The answer is $1320.<|eot_id|>

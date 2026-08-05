@@ -1,0 +1,21 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $\arccos x + \arccos 2x + \arccos 3x = \pi,$ then $x$ satisfies a cubic polynomial of the form
+\[ax^3 + bx^2 + cx + d = 0,\]where $a,$ $b,$ $c,$ and $d$ are integers, and $a \neq 0.$  Find the smallest possible value of $|a| + |b| + |c| + |d|.$ To solve the problem, we start with the given equation:
+
+\[
+\arccos x + \arccos 2x + \arccos 3x = \pi
+\]
+
+First, recall that if \(\theta = \arccos x\), then \(x = \cos \theta\) and \(0 \leq \theta \leq \pi\). The equation becomes:
+
+\[
+\theta + \arccos (2\cos \theta) + \arccos (3\cos \theta) = \pi
+\]
+
+Since \(\arccos\) is the angle whose cosine is \(x\), we need to find \(x\) such that the sum of of the angles is \(\pi\). Let's test some values of of \(x\) that might satisfy this equation.
+
+First, let's test \(x = \frac{1}{2}\):
+
+\[
+\arccos \left(\frac{1}{2}\right) + \arccos (2 \cdot \frac{1}{2}) + \arccos (3 \cdot \frac{1}{2}) = \arccos \left(\frac{1}{2}\right) + \

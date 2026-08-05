@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Frances sells 20 cupcakes for $2 for each cupcake and  40  cookies at $1 each.  She buys five trays at $4 for each tray. How much money does Frances have left? The answer is -26
+To solve this problem, let's break it down step by step:
+
+1. Calculate Frances' earnings:
+   - From cupcakes: 20 cupcakes * $2/cupcake = $40
+   - From cookies: 40 cookies * $1/cookie = $40
+   - Total earnings: $40 + $40 = $80
+
+2. Calculate Frances' expenses:
+   - Cost of of trays: 5 trays * $4/tray = $20
+
+3. Calculate Frances' net earnings:
+   - Net earnings = Total earnings - Expenses

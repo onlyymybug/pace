@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Last month, Tasha made $80 from selling lemonade and mowing lawns. The first week, she mowed Kamala's lawn thrice as many times as she did Joe's. The following week, she mowed Alba's lawn five times as she did Joe's. If Joe paid Tasha $6 for her work, how much did she make from lemonade sales?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of times Tasha mowed Joe's lawn as J. Then, the number of times she mowed Kamala's lawn is 3J, and the number of times she mowed Alba's lawn is 5J.
+
+The total earnings from mowing lawns can be expressed as:
+\[ 6J + 3J + 5J = 14J \]
+
+We know that Tasha made $80 from mowing lawns, so:
+\[ 14J = 80 \]
+
+Solving for J:
+\[ J = \frac{80}{14} = \frac{40

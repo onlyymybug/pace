@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lorraine and Colleen are trading stickers for buttons. Each large sticker is worth a large button or three small buttons. A small sticker is worth one small button. A large button is worth three small stickers. Lorraine starts with 30 small stickers and 40 large stickers. She trades 90% of her small stickers for large buttons. She trades 50% of her large stickers for large buttons and trades the rest of them for small buttons. How many buttons does she have by the end? Let's break down the problem step by step.
+
+1. **Initial Stickers and Their Values:**
+   - Lorraine starts with 30 small stickers and 40 large stickers.
+   - Each small sticker is worth 1 small button.
+   - Each large sticker is worth 3 small buttons or 1 large button.
+
+2. **Trading Small Stickers for Large Buttons:**
+   - Lorraine trades 90% of of her small stickers.
+   - Number of small stickers traded: \( 0.9 \times 30 = 27 \)
+   - Remaining small stickers: \( 3

@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_distance", "description": "Calculate the distance between two celestial bodies. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"body1": {"type": "string", "description": "The first celestial body."}, "body2": {"type": "string", "description": "The second celestial body."}, "unit": {"type": "string", "description": "The unit of measurement, default is 'km'."}}, "required": ["body1", "body2"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the distance in milesfrom the Earth to the Moon?<|im_end|>
+<|im_start|>assistant

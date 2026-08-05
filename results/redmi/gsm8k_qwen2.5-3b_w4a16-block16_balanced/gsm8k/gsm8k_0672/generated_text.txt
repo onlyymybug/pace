@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adam went to a store to buy some sweets. He bought 7 candies of type A and 10 candies of type B. One candy of type A costs $0.5, and one candy of type B costs $0.75. How much change did Adam get, if he paid the cashier $15? To solve this problem, we first calculate the total cost of of Adam's purchase. 
+
+Cost of of type A candies: 7 * $0.5 = $3.5
+Cost of of type B candies: 10 * $0.75 = $7.5
+Total cost: $3.5 + $7.5 = $11
+
+Now we calculate the change Adam received after paying $15 to the cashier.
+
+Change received: $15 - $11 = $4
+
+The answer is 4.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly.

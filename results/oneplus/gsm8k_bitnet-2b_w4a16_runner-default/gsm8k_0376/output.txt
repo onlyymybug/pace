@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mrs. Sherman made a dozen bread rolls for breakfast. After feeding her 6 children with one each, she broke each of the remaining rolls into 8 pieces and fed them to the chickens. How many pieces of rolls did she feed to the chickens?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Problem: Mrs. Sherman made a dozen bread rolls for breakfast. After feeding her 6 children with one each, she broke each of the remaining rolls into 8 pieces and fed them to the chickens. How many pieces of rolls did she feed to the chickens?
+
+Reasoning: Mrs. Sherman started with 12 rolls. She fed 6 rolls to her children, leaving her with 12 - 6 = 6 rolls. Each of these remaining rolls was broken into 8 pieces, so she fed 6 * 8 = 48 pieces to the chickens.
+
+Answer: 48 pieces.<|eot_id|>

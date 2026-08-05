@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jane planted a beanstalk in her backyard. After the first week, it was 3 inches tall. It doubled in height the second week. It grew another 4 inches in the third week. How tall was the beanstalk after 3 weeks?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the height of the beanstalk after 3 weeks, we need to calculate the height incrementally week by week.
+
+- Week 1: The beanstalk is 3 inches tall.
+- Week 2: It doubles in height, so it becomes \(3 \times 2 = 6\) inches tall.
+- Week 3: It grows an additional 4 inches, so it becomes \(6 + 4 = 10\) inches tall.
+
+The answer is 10 inches.<|eot_id|>

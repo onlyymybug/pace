@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tim spends 6 hours each day at work answering phones.  It takes him 15 minutes to deal with a call.  How many calls does he deal with during his 5 day work week? Step 1: Calculate total work hours in a week
+Total work hours per day = 6
+Total work days in a week = 5
+Total work hours in a week = Total work hours per day * Total work days in a week
+
+Step 2: Convert total work hours to minutes
+Total work hours in a week * 60 minutes per hour
+
+Step 3: Calculate total calls handled
+Total calls handled = Total minutes in a week / Minutes per call
+
+Step 1 calculation:
+Total work hours in a week = 6 * 5 = 30 hours
+
+Step 2 calculation:
+Total

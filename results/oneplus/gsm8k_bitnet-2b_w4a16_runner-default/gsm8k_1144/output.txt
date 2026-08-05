@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tim grows 5 trees.  Each year he collects 6 lemons from each tree.  How many lemons does he get in a decade?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of lemons Tim collects over a decade. 
+
+First, calculate the number of lemons collected from one tree in a year:
+5 trees * 6 lemons/tree = 30 lemons/year
+
+Next, calculate the total number of lemons collected from all trees in a year:
+30 lemons/year * 5 trees = 150 lemons/year
+
+Finally, calculate the total number of lemons collected over a decade (10 years):
+150 lemons/year * 10 years = 1500 lemons
+
+The answer is 1500 lemons.<|eot_id|>

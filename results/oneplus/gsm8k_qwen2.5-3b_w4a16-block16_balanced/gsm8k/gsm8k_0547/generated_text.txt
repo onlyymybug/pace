@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elise is learning to write and decides to keep re-writing the alphabet until she knows it. She writes it in full twice, writes half of it once, then re-writes everything she has already written. How many letters has Elise written in total? Step 1: Identify the total number of letters in the alphabet.
+Step 2: Calculate the number of letters written for each action.
+Step 3: Sum up all the letters written to find the total.
+Step 1: The English alphabet has 26 letters.
+Step Step 2: Actions and calculations:
+- Writing the alphabet twice: 2 * 26 letters
+- Writing half the alphabet once: 0.5 * 26 letters
+- Rewriting all previous work: 3 * 26 letters (2 * 26 for first two actions, plus the half alphabet action)

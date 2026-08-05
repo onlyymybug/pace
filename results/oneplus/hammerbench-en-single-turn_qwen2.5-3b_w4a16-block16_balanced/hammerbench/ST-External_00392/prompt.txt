@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.setSystemLAccessibility","description":"Set accessibility options for your phone","parameters":{"type":"object","properties":{"screen_reader":{"type":"boolean","description":"Whether to turn on the screen reader"},"magnification":{"type":"boolean","description":"Whether to turn on the zoom function"}},"required":["screen_reader","magnification"]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOnScreenShare","description":"Turn on screen sharing","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Travel.ItineraryServices.getTravelReviews","description":"Get user reviews for specific travel destinations","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"SocialCommunication.Community.replyToComment","description":"Reply to the specified comment","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"To get the community name of a hidden post"},"comment_name":{"type":"string","description":"Post Title Title"},"reply_content":{"type":"string","description":"Reply Content"},"comment_content":{"type":"string","description":"Comment content to reply to"}},"required":["community_name","comment_name","reply_content","comment_content"]}}
+{"name":"Health.MedicalServices.getHopitalReviews","description":"Query hospital reviews by hospital name","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"}},"required":["hospital_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.We have arranged all the details for your trip to Cairo.Depending on your itinerary, you will arrive at Cairo International Airport next Monday at 10am, our chauffeur will wait at the exit and you will be taken directly to the majestic hotel on the banks of the Nile.While in Cairo, you'll have plenty of time to explore the ancient city, including a visit to the world-famous Pyramids of Giza and the Egyptian Museum.We have also arranged a Nile Cruise Dinner for you to enjoy the food while enjoying the view of Cairo at night.
+
+If you have any special requests or questions, please feel free to contact us.We look forward to welcoming you and hope this trip to Cairo will leave you with good memories.
+
+Have a great trip!
+
+Best regards,
+[Name of your travel agent]
+Tourism Advisor: Zhang Hua
+query:I want to see the travel reviews and sharing of the place mentioned in the email, can you help me find it?<|im_end|>
+<|im_start|>assistant

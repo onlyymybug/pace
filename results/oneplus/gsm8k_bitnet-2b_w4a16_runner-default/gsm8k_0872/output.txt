@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tobias bought a big pizza with 60 pieces. He ate 2/5 of the pieces on the first day, 10 pieces on the second day, and 7/13 of the remaining pieces on the third day. How many pizza pieces has he eaten so far?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the number of pieces Tobias ate each day and then sum them up.
+
+1. **First Day:**
+   Tobias ate 2/5 of the 60 pieces.
+   \[
+   \frac{2}{5} \times 60 = \frac{120}{5} = 24 \text{ pieces}
+   \]
+
+2. **Second Day:**
+   Tobias ate 10 pieces.
+
+3. **Third Day:**
+   Tobias ate 7/13 of the remaining pieces after the first two days.
+   First, calculate the remaining pieces after the first day:
+  

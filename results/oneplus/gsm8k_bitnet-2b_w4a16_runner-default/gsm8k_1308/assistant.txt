@@ -1,0 +1,6 @@
+To solve this problem, we need to determine the total number of screws required for all the tables and then subtract that from the number of screws James has.
+
+1. Calculate the number of legs per table: 4 tables * 4 legs/table = 16 legs
+2. Calculate the number of screws needed per table: 16 legs/table * 2 screws/leg = 32 screws/table
+3. Calculate the total number of screws needed for all 4 tables: 32 screws/table * 4 tables = 128 screws
+4. Subtract the total screws needed from the screws James has: 128 screws - 40

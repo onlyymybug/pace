@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bahati, Azibo, and Dinar each contributed to their team's 45 points. Bahati scored the most points and it was 20 more than Azibo scored and 10 more points than Dinar scored. How many points did Azibo score?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the points scored by Bahati, Azibo, and Dinar as B, A, and D respectively. We know the following:
+
+1. B + A + D = 45 (total points)
+2. B = A + 20 (Bahati scored 20 more points than Azibo)
+3. B = D + 10 (Bahati scored 10 more points than Dinar)
+
+First, we can express B in terms of A and D using equations 2 and 3:
+- From B = A + 20, we get A = B - 20
+- From B = D +

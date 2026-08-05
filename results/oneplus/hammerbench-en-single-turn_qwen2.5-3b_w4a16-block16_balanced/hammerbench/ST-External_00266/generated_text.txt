@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"Navigation.MapNavigation.shareTravelRoute","description":"Share travel plans or directions","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"The name or address of the departure location, the default current location"},"destination":{"type":"string","description":"Name or address of the destination"},"to":{"type":"string","description":"Ways to share, like social media, texting, etc."}},"required":["departure","destination","to"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+{"name":"OfficeSoftware.Documents.exportDocument","description":"Export the specified document to the specified format","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to export, required"},"export_format":{"type":"string","description":"Export format, such as PDF, DOCX, etc., required"}},"required":["document_name","export_format"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, I just checked your store and am interested in your PDF version of Introduction to Modern Psychology. Is this PDF in HD? In addition, is there a set of accompanying exercises or extended reading materials? I look forward to your reply, thank you!
+query:I want to export the document "Life Tips" to the format mentioned in Xiao Li's message to me via WeChat.<|im_end|>
+<|im_start|>assistant
+{"name":"OfficeSoftware.Documents.exportDocument","parameters":{"document_name":"Life Tips","export_format":"PDF"}}<|im_end|>

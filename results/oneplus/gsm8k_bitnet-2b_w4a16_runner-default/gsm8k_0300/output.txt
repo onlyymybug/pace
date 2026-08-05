@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John hires a driving service to get him to work each day.  His work is 30 miles away and he has to go there and back each day.  He goes to work 5 days a week for 50 weeks a year.  He gets charged $2 per mile driven and he also gives his driver a $150 bonus per month.  How much does he pay a year for driving?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much John pays for driving in a year, we need to calculate the total miles driven, the cost per mile, and the total bonus given to the driver.
+
+1. Calculate the total miles driven per day:
+   - John drives to work and back, so that's 30 miles * 2 = 60 miles per day.
+
+2. Calculate the total miles driven per week:
+   - John drives 5 days a week, so that's 60 miles/day * 5 days/week = 300 miles/week.
+
+3. Calculate the total miles driven per year:
+   - John drives for 50

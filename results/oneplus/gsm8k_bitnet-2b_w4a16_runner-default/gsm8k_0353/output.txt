@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: After Andrea saved some money, she then spent the rest of her money on an $11 sweater and gave her brother $4. If she had $36 in the beginning, how much did Andrea save?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of money Andrea saved as \( x \).
+
+After saving \( x \), Andrea spent the rest of her money on an $11 sweater. This means she spent \( x + 11 \) dollars on the sweater.
+
+Then, she gave her brother $4.
+
+The total amount of money Andrea spent is the sum of what she spent on the sweater and what she gave to her brother:
+\[ x + 11 + 4 = x + 15 \]
+
+We know that Andrea had $36 in the beginning. So, the amount she saved plus the amount she spent equals $36:
+\[ x + (

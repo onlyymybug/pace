@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet goes to the mall and spends $3.50 on ice cream, $7.50 each for movie tickets for herself and her younger sister, and $8.50 on a bracelet. If her parents gave her $40, how many dollars does she have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Janet has left, we need to calculate the total amount she spent and then subtract that from the money her parents gave her.
+
+1. Ice cream: $3.50
+2. Movie tickets for herself and her sister: $7.50 + $7.50 = $15.00
+3. Bracelet: $8.50
+
+Total spent: $3.50 + $15.00 + $8.50 = $27.00
+
+Money left: $40.00 - $27.00 = $13.00
+
+The answer is 13.<|eot_id|>

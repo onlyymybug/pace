@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sam ran 3 miles on Monday, Wednesday and Friday.  On Tuesday and Thursday, Sam ran 5 miles.  How many miles did Sam run this week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many miles Sam ran this week, we need to add the miles he ran on each day.
+
+- On Monday, Wednesday, and Friday, Sam ran 3 miles each day. So, for these three days, he ran \(3 + 3 + 3 = 9\) miles.
+- On Tuesday and Thursday, Sam ran 5 miles each day. So, for these two days, he ran \(5 + 5 = 10\) miles.
+
+Now, we add the miles from both sets of days together: \(9 + 10 = 19\) miles.
+
+The answer is 19 miles.

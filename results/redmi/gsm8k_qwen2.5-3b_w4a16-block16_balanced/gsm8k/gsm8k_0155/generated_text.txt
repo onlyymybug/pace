@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On Mondays, Wednesdays, and Fridays, college student Kimo has three 1-hour  classes each day.  On Tuesdays and Thursdays, he has two 2-hour classes each day.  In one semester, there are 16 weeks of school.  In one semester, how many hours does Kimo spend attending classes? To solve this, we first calculate the total hours Kimo spends on each type of day, then sum these totals.
+
+Kimo has 3 classes each Monday, Wednesday, and Friday, each lasting 1 hour. So, per weekday (MWF), he spends 3*1 = 3 hours in classes.
+
+On Tuesday and Thursday, he has 2 classes each lasting 2 hours. So, per TTh (Tuesday and Thursday), he spends 2*2 = 4 hours in classes.
+
+In one week, he spends 3 hours * 3 MWF days + 4 hours * 2 TTh

@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A steel sphere with a 3-inch radius is made by removing metal from the corners of a cube that has the shortest possible side lengths. How many cubic inches are in the volume of the cube? Express your answer as a decimal to the nearest tenth. To solve the problem, we need to determine the side length of of the cube from which the steel sphere is made by removing metal from the corners. The sphere has a radius of 1.5 inches (since the radius of of the sphere is half of the diameter, and the diameter is the distance from one corner of of to the opposite corner, which is the same as the side length of of the cube).
+
+The volume of of the sphere is given by the formula:
+\[ V_{\text{sphere}} = \frac{4}{3} \pi r^3 \]
+where \( r = 1.5 \) inches. Plugging in the value, we get:
+\[ V_{\text{sphere}} = \frac{4}{3} \pi (1.5)^3 = \frac{4}{3} \pi (3.375) = 14.137231 \text{ cubic inches} \]
+
+The volume of of the cube is \( V_{\text{cube}} = s^3 \), where \( s \) is the side length of of the cube. The volume of of the metal removed is the difference

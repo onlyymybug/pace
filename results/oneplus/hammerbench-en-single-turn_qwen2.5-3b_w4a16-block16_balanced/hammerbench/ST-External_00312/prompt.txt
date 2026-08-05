@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.deletePatientMedicalRecord","description":"Delete a patient's medical record information based on their name, etc.","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"OnlineShopping.Mall.delectChat","description":"Delete the specified session message (delete all by default)","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+{"name":"UtilityTools.Search.deleteWebHistoryrecord","description":"deleting history; deleting multiple histories based on date","parameters":{"type":"object","properties":{"announcer":{"type":"string","description":"Publisher Name"},"title":{"type":"string","description":"Article title"},"datetime":{"type":"string","description":"browsing time; last day, specific date; default all descending"}},"required":["announcer","title","datetime"]}}
+{"name":"SocialCommunication.InstantMessaging.deleteMessage","description":"Delete messages for specified contacts or groups (delete all by default)","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group the message belongs to"},"message_content":{"type":"string","description":"Message content to delete"}},"required":["receiver_name","message_content"]}}
+{"name":"OnlineShopping.SecondhandTrading.deleteSecondhandSaleMessage","description":"Delete the specified session message","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Conversation Objects"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Wang Xiaomei, hello! How have you been lately? I heard that you went to Shanghai, and I especially wanted to know if you had a good time, and did you bring anything fun for Xiao Zhang? Shall we get together on Friday night and recount the past?
+query:Please help me delete the asthma medical record information of the friend mentioned in the message received from QQ.<|im_end|>
+<|im_start|>assistant

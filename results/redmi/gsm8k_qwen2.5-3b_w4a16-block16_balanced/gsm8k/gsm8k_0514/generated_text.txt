@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Julie had $500. She spent 20% of it on clothes and then 25% of the remaining money on CDs. How much money did Julie have left? Step 1: Calculate the amount spent on clothes
+Amount spent on clothes = 20 / 100 * 500 = 100
+
+Step 2: Calculate the remaining money after buying clothes
+Remaining money = 500 - 100 = 400
+
+Step 3: Calculate the amount spent on CDs
+Amount spent on CDs = 25 / 100 * 400 = 100
+
+Step 4: Calculate the remaining money after buying CDs
+Remaining money = 400 - 100 = 30

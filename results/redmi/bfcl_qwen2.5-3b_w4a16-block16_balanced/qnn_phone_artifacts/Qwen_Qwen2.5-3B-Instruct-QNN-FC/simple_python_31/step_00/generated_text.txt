@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_final_velocity", "description": "Calculate the final velocity of an object under constant acceleration, knowing its initial velocity, acceleration, and time of acceleration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"initial_velocity": {"type": "integer", "description": "The initial velocity of the object."}, "acceleration": {"type": "float", "description": "The acceleration of the object."}, "time": {"type": "integer", "description": "The time of acceleration."}}, "required": ["initial_velocity", "acceleration", "time"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the final velocity of an object, knowing that it started from rest, accelerated at a rate of 9.8 m/s^2 for a duration of 5 seconds.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_final_velocity", "arguments": {"initial_velocity": 0, "acceleration": 9.8, "time": 5}}
+</tool_call><|im_end|>

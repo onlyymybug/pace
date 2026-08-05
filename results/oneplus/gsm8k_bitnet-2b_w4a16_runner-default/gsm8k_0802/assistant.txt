@@ -1,0 +1,15 @@
+To solve this problem, we need to calculate the total number of trees planted by students and teachers separately and then add them together.
+
+First, calculate the total number of students:
+40 classes * 25 students/class = 1000 students
+
+Next, calculate the total number of trees planted by students:
+1000 students * 1 tree/student = 1000 trees
+
+Now, calculate the total number of teachers:
+40 classes * 3 teachers/class = 120 teachers
+
+Then, calculate the total number of trees planted by teachers:
+120 teachers * 2 trees/teacher = 240 trees
+
+Finally, add the trees planted by students

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.contactCustomerService","description":"Contact Live Chat for courier related questions","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobEmployerInfo","description":"Get employer details based on company name","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"}},"required":["company_name"]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, regarding the cooperation between Alibaba and your company, we have completed the preliminary program development. Alibaba's team will detail the program at next Wednesday's meeting, and we hope you'll be able to attend. If you have any questions or suggestions, please do not hesitate to contact me. Alibaba looks forward to working with you to create a better future together.
+query:Can you check the company details mentioned in the WeChat message that Xiao Li sent me?<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.InstantMessaging.readMessage","parameters":{"receiver_name":"XiaoLi"}}<|im_end|>

@@ -1,0 +1,9 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the least positive integer multiple of 30 that can be written with only the digits 0 and 2? To find the least positive integer multiple of 30 that can be written with only the digits 0 and 2, we need to ensure that the number meets two criteria: it must be a multiple of 30 and it must be the smallest such number. A number is a multiple of 30 if and only if it is a multiple of both 10 and 3. Since the number can only contain the digits 0 and 2, it must end in 0 to be a multiple of 10. Additionally, the sum of of the digits of of the number must be a multiple of 3.
+
+Let's start by checking the smallest possible numbers that end in 0 and contain only the digits 0 and 2:
+
+1. \(20\) (ends in 0, but the sum of of the digits is \(2 + 0 = 2\), which is not a multiple of 3).
+2. \(200\) (ends in 0, but the sum of of the digits is \(2 + 0 + 0 = 2\), which is not a multiple of 3).
+3. \(2000\) (ends in 0, but the sum sum of of

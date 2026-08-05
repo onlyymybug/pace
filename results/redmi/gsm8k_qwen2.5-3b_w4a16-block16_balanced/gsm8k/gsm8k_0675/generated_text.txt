@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mrs. Jameson's bamboo in the backyard grows up to 30 inches a day. Today, its height is 20 feet. In how many days will its height be 600 inches? Step 1: Convert the initial height to inches
+Today's height is 20 feet, which is 20*12=240 inches.
+
+Step 2: Calculate the difference in height
+The bamboo needs to grow from 240 inches to 600 inches, so the difference is 600 - 240 = 360 inches.
+
+Step 3: Determine the number of days
+Since the bamboo grows 30 inches per day, to grow 360 inches, it will take 360 / 30 = 12 days.
+

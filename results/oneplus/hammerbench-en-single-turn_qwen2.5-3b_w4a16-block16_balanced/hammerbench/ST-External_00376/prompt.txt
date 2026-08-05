@@ -1,0 +1,29 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.NewspapersMagazines.downloadMagazine","description":"Download magazines locally based on magazine name, number of issues, etc.","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"issue":{"type":"string","description":"Number of periods"}},"required":["name","issue"]}}
+{"name":"ConvenientLiving.GovernmentServices.downloadServiceDocument","description":"Download docs for city services","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to download"}},"required":["document_name"]}}
+{"name":"VideoPlayback.OnlineVideos.downloadOnlineVideo","description":"Download online video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"definition":{"type":"string","description":"Download Video Quality Selection"},"path":{"type":"string","description":"Download Path Select Default Path"}},"required":["name","definition","path"]}}
+{"name":"UtilityTools.Reading.downloadReadingBook","description":"Download books by title","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"title of a book"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"Finance.Insurance.downloadInsuranceDocument","description":"Download insurance documents","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, etc."},"document_type":{"type":"string","description":"Document type, such as policy contract, claim description, etc."}},"required":["insurance_name","insurance_type","document_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for your continued support and trust in our company.In order to further improve the quality of service, we will be performing a system maintenance upgrade from 10:00 am to 6:00 pm on Saturday, October 15, 2023.During this time, you may not be able to access our online service platform, and we apologize for the inconvenience.
+
+We will restore all services as soon as maintenance is complete and ensure that this upgrade significantly improves system stability and security.If you have any questions or need further assistance, please do not hesitate to contact our customer service team at 400-123-4567, Monday to Friday, 9:00 am to 5:00 pm.
+
+Thank you again for your understanding and support, and we look forward to continuing to provide you with better service.
+
+Sincerely,  
+Salute
+
+[Company name] Customer Service  
+10 October 2023
+query:I want to download "Harper's Bazaar" magazine. The number of issues is the time mentioned in the email. Can you help me download it locally?<|im_end|>
+<|im_start|>assistant

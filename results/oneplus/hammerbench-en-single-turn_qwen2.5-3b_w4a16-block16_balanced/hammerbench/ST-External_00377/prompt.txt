@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.BuyingRentingHomes.searchRentingHouses","description":"Search for rentals by criteria","parameters":{"type":"object","properties":{"price":{"type":"string","description":"Rents"},"house_area":{"type":"string","description":"Area"},"level":{"type":"string","description":"Floor"},"age":{"type":"integer","description":"fixed number of years"},"house_type":{"type":"string","description":"Layout"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"},"indoor_decoration":{"type":"string","description":"decorate"},"furniture":{"type":"string","description":"Furniture"}},"required":["price","house_area","level","age","house_type","housing_estate","location","indoor_decoration","furniture"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskSearchDeletedFile","description":"Search for files by keyword in the Drive Recycle Bin","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords Search"}},"required":["keyword"]}}
+{"name":"UtilityTools.Memo.viewNotes","description":"View the current memo; view a memo with a specific title; view a specific section of content in a title; view a category memo; view a favorite memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"category":{"type":"string","description":"Classify"},"time":{"type":"string","description":"Creation Time"}},"required":["title","category","time"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getAuthorArticles","description":"Get articles written by authors based on author name","parameters":{"type":"object","properties":{"author_name":{"type":"string","description":"Author name"}},"required":["author_name"]}}
+{"name":"UtilityTools.Memo.searchNotes","description":"Search memos by keyword (see all by default)","parameters":{"type":"object","properties":{"key_words":{"type":"string","description":"KEYWORDS"}},"required":["key_words"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Li Xiaoming will come to your office at 3pm this afternoon to discuss the new project plan. He has prepared detailed information and would like you to prepare relevant questions and suggestions in advance. In addition, Li Xiaoming mentioned that after the meeting, you may need to arrange a short meeting to share the results of the discussion with the project team. Please confirm your schedule to make sure you can attend.
+query:I want to see the article written by the name mentioned in the notepad, can you help me find it?<|im_end|>
+<|im_start|>assistant

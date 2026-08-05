@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Harry slept 9 hours last night. His friend James slept only 2/3 of what Harry slept. How many more hours did Harry sleep than James?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, first determine how many hours James slept. Since James slept 2/3 of what Harry slept, and Harry slept 9 hours, we calculate James's sleep time as follows:
+
+James's sleep time = (2/3) * Harry's sleep time
+James's sleep time = (2/3) * 9
+James's sleep time = 6 hours
+
+Now, to find out how many more hours Harry slept than James, we subtract James's sleep time from Harry's sleep time:
+
+Difference = Harry's sleep time - James's sleep time
+Difference = 9 hours - 6 hours

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"Health.HealthManagement.createHealthReminder","description":"Create health reminders by reminder content and reminder time","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Alert Content"},"time":{"type":"string","description":"Reminder time"}},"required":["content","time"]}}
+{"name":"Travel.ItineraryServices.searchTravelBlogs","description":"Search travel blog posts for specific destinations","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"SystemTools.SystemSettings.setSystemNotification","description":"Set notification permissions and reminder methods for your phone","parameters":{"type":"object","properties":{"app_name":{"type":"string","description":"Αpp Name"},"notification_enable":{"type":"boolean","description":"Whether to allow notifications"},"notification_sound":{"type":"boolean","description":"Notification sounds, such as default, mute"}},"required":["app_name","notification_enable","notification_sound"]}}
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear friends, this weekend we are planning to explore the local food and culture in the old part of Bangkok, especially the spectacular view of the Grand Palace. If interested, we can meet together at the entrance of the Grand Palace at 10am on Saturday. Looking forward to a great day with you!
+query:I'm looking for food recommendations for the place mentioned in Tom's text message. Do you have relevant travel blog posts?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.searchTravelBlogs","parameters":{"destination":"Bangkok food recommendations"}}<|im_end|>

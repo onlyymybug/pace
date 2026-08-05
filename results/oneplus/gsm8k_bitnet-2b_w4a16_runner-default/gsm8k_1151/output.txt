@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Patricia has 30 roses. She gave 24 roses to her mother. She bought 15 more roses.  How many roses did she have now?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow the sequence of events and perform the necessary arithmetic operations.
+
+1. Start with the initial number of roses Patricia has: 30 roses.
+2. Subtract the number of roses she gave to her mother: 30 - 24 = 6 roses.
+3. Add the number of roses she bought: 6 + 15 = 21 roses.
+
+The answer is 21 roses.<|eot_id|>

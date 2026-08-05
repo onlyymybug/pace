@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Two numbers, $x$ and $y$ are selected at random from the interval $(0,3)$.  What is the probability that a triangle with sides of length 1, $x$, and $y$ exists? To determine the probability that a triangle with sides of length 1, \(x\), and \(y\) exists, we need to use the triangle inequality theorem. The triangle inequality theorem states that for any triangle with sides \(a\), \(b\), and \(c\), the following must be true:
+
+1. \(a + b > c\)
+2. \(a + c > b\)
+3. \(b + c > a\)
+
+In our case, the sides are 1, \(x\), and \(y\). Applying the triangle inequality, we get the following conditions:
+
+1. \(1 +

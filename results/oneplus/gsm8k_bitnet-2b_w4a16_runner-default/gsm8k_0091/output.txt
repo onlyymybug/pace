@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ted the T-Rex was planning to bring potato salad to the dinosaur picnic.  He knows that an adult dinosaur will eat 10 lbs of potato salad, and a child will eat half as much as an adult.  If there will be 20 adults and 5 children at the picnic, how many pounds of potato salad does Ted need to bring to the picnic if he hopes to have enough to feed everyone?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much potato salad Ted needs to bring, we first need to determine the amount each adult and child will eat.
+
+- Each adult eats 10 lbs of potato salad.
+- Each child eats half as much as an adult, which is 10 lbs / 2 = 5 lbs.
+
+Now, we calculate the total amount of potato salad needed for the adults and children separately and then add them together.
+
+For the adults:
+20 adults * 10 lbs/adult = 200 lbs
+
+For the children:
+5 children * 5 lbs/child = 25 lbs
+
+Total potato salad needed:
+200 lbs + 

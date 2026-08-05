@@ -1,0 +1,5 @@
+To solve for the least possible value of \( |a_{n-1}| \) given the polynomial \( f(x) = 2x^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + 66 \) with integer coefficients and distinct integer roots, we start by noting that the polynomial can be expressed as:
+
+\[ f(x) = 2(x-r_1)(x-r_2) \cdots (x-r_n) \]
+
+where \( r_1, r_2, \ldots, r_n

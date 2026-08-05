@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "music_composer.create_mix", "description": "Create a mix of a song based on a particular music scale and duration Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"scale": {"type": "string", "description": "The musical scale to be used. E.g: C Major, A Minor, etc."}, "note_duration": {"type": "string", "description": "Duration of each note. Options: 'whole', 'half', 'quarter', 'eighth', 'sixteenth'.", "enum": ["whole", "half", "quarter", "eighth", "sixteenth"]}, "track_length": {"type": "integer", "description": "Length of the mix track in seconds."}}, "required": ["scale", "note_duration", "track_length"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Create a mix track using notes of C major scale and duration of each note being quarter of a second with a duration of 3 minutes.<|im_end|>
+<|im_start|>assistant

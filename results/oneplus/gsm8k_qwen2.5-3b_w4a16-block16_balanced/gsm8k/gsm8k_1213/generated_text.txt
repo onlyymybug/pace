@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ali is a dean of a private school where he teaches one class. John is also a dean of a public school. John has two classes in his school. Each class has 1/8 the capacity of Ali’s class which has the capacity of 120 students. What is the combined capacity of both schools? To solve this problem, we need to find the total capacity of both schools combined.
+
+1. First, we determine the capacity of Ali's class, which is given as 120 students.
+2. Next, we calculate the capacity of John's class. Since John's classes have 1/8 the capacity of Ali's class, we calculate:
+   \[
+   \text{John's class capacity} = \frac{1}{8} \times 120 = 15 \text{ students}
+   \]
+3. Since John has two classes, the total capacity of John's school is:
+  

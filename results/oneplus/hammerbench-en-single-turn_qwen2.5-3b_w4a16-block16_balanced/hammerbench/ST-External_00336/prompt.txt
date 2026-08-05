@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.removeCity","description":"Remove selected cities from the weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+{"name":"OfficeSoftware.Conferencing.removeParticipants","description":"Remove participants from the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Remove people list"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"SocialCommunication.InstantMessaging.removeContact","description":"Remove the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Contact name to remove, required"}},"required":["contact_name"]}}
+{"name":"UtilityTools.Reading.deleteReadingBookFromShelf","description":"Remove books from shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"}},"required":["book_name","book_author"]}}
+{"name":"SocialCommunication.Calling.deleteContact","description":"Delete the specified contact","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to be deleted"}},"required":["contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Scheduled a trip to Paris? I checked on the side, the promenade by the Seine is really beautiful, especially at dusk, and the view of Notre Dame is even more charming. If you have time, you can also go to Montmartre Heights, where the artist street is particularly chic. I hope you will come soon and explore this romantic city together!
+query:Can you help me remove the city mentioned in Xiao Li's WeChat from my weather watch list?<|im_end|>
+<|im_start|>assistant

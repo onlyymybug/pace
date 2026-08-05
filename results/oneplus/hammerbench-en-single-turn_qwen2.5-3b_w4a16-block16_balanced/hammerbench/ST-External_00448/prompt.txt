@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Documents.setDocumentPermissions","description":"Set access rights for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to set permissions, required"}},"required":["document_name"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskSetFileAccessPermission","description":"Set access rights for files in Drive","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"},"permission_level":{"type":"string","description":"Permission level, such as public, private, etc."}},"required":["file_path","permission_level"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurantDiscounts","description":"Enter keywords to search for deals","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords related to offers"}},"required":["keyword"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotEntertainment","description":"Get information about entertainment in designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumTrends","description":"Find relevant activity in specific media based on keyword searches","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"To Find Dynamic Media Names"},"key_words":{"type":"string","description":"Keywords to find"}},"required":["medium_name","key_words"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Disneyland Travel Plan
+
+Dear team members,
+
+Hi everyone! We have identified a destination for our planned team building event - Disneyland in California.It will be a journey full of fun and creativity, where we will experience a variety of exciting entertainment and feel the unique charm of Disney.
+
+Our itinerary has been tentatively scheduled as follows: Meet at the main entrance of Disneyland at 9am to officially begin our exploration of the park.We arranged several must-visit programs such as “Pirates of the Caribbean,” “Flying Over Space Mountain,” and “Crazy Rollercoaster.”Of course, you are also free to choose other items according to your personal interests.Lunch will be served at the “Astral Restaurant” at Disneyland, where a variety of cuisine awaits us.
+
+To ensure this trip goes smoothly, please be prepared in advance, wear comfortable shoes and clothing, and bring enough sunscreen.Feel free to contact me with any special requests or suggestions.
+
+Looking forward to meeting you at Disneyland and let's create unforgettable memories together!
+
+Best regards,
+[Your name]
+query:What are the entertainment options for the locations mentioned in the email?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 50 deer in a field.  50 percent of them are bucks.  20 percent of the bucks are 8 points.  How many 8 point bucks are there?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of 8-point bucks, we need to follow these steps:
+
+1. Calculate the number of bucks.
+2. Calculate the number of 8-point bucks from the number of bucks.
+
+Step 1: Calculate the number of bucks.
+50 percent of 50 deer are bucks.
+Number of bucks = 50 * 0.50 = 25 bucks.
+
+Step 2: Calculate the number of 8-point bucks.
+20 percent of the 25 bucks are 8 points.
+Number of 8-point bucks = 25 * 0.20 = 5.
+
+The answer is 5.<|eot_id|>

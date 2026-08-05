@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The cheese pizza is cut into 12 slices and the pepperoni pizza is cut into 8 slices.  If Kate’s 6 friends each eat 6 cheese pizza slices and 4 pepperoni pizza slices, how many pizza pies does she need to buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the total number of pizza slices Kate's friends eat and then figure out how many pizza pies are required to provide those slices.
+
+1. Calculate the total number of cheese pizza slices eaten:
+   - Each of Kate’s 6 friends eats 6 slices.
+   - Total cheese pizza slices eaten = 6 friends * 6 slices/friend = 36 slices.
+
+2. Calculate the total number of pepperoni pizza slices eaten:
+   - Each of Kate’s 6 friends eats 4 slices.
+   - Total pepperoni pizza slices eaten = 6 friends * 4 slices/friend

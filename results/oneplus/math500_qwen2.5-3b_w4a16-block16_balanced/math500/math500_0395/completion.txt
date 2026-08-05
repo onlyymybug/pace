@@ -1,0 +1,18 @@
+To solve the problem, we need to analyze the function \( z(x, y) = (2x - y)^2 - 2y^2 - 3y \) and determine the optimal strategy for both Archimedes and Brahmagupta. We will start by finding the critical points of of the function with respect to \( y \) for a fixed \( x \).
+
+First, we compute the partial derivative of \( z \) with respect to \( y \):
+\[
+z(x, y) = (2x - y)^2 - 2y^2 - 3y
+\]
+\[
+\frac{\partial z}{\partial y} = \frac{\partial}{\partial y} \left[ (2x - y)^2 - 2y^2 - 3y \right]
+\]
+Using the chain rule and the power rule, we get:
+\[
+\frac{\partial z}{\partial y} = 2(2x - y)(-1) - 4y - 3
+\]
+\[
+\frac{\partial z}{\partial y} = -2(2x - y) - 4y - 3
+\]
+\[
+\frac{\partial

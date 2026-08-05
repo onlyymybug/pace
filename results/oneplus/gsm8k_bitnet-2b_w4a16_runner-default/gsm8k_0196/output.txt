@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A pen costs as much as a pencil and eraser combined. A pencil costs $1.20 and an eraser costs $0.30. How much will 8 pens cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the cost of one pen. We know that a pen costs as much as a pencil and eraser combined. The cost of a pencil is $1.20 and the cost of an eraser is $0.30. 
+
+Let's denote the cost of one pen as \( P \). According to the problem, \( P = \text{(cost of pencil) + (cost of eraser)} \).
+
+So, \( P = 1.20 + 0.30 \).
+
+Now, let's calculate the total cost of one pen:
+\( P = 1.20

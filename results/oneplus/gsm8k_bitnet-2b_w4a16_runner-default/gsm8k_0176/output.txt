@@ -1,0 +1,7 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Juan and his brother Carlos are selling lemonade. For each gallon they make it costs $3 for lemons and $2 for sugar. They sell each glass for $0.50 and get 20 glasses per gallon. If they made $25 in profit, how much did they spend on lemons?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount spent on lemons as \( L \) dollars. Since each gallon costs $3 for lemons, the total cost for lemons for one gallon is \( L \) dollars. For each gallon, they make 20 glasses, so the total cost for sugar per gallon is \( 2 \times 20 = 40 \) dollars. The total cost for one gallon is the sum of the cost of lemons and sugar, which is \( L + 40 \) dollars. Since they made $25 in profit, the total revenue from selling lemonade is \( 25 + L \) dollars

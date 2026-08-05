@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dave bought a large pack of french fries and ate fourteen before a hungry seagull stole the pack out of his hand. When the seagull landed, he gobbled down half the amount of french fries that Dave ate. Then three pigeons bullied him away from the food, and each pigeon ate three fries. Later, a raccoon stole two thirds of the remaining fries. Ants carried off a final french fry, leaving five behind. How many french fries were in the pack when Dave bought it?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the initial number of french fries as \( x \).
+
+1. Dave ate 14 fries, so \( x - 14 \) fries remained.
+2. The seagull ate half of the remaining fries, so \( \frac{1}{2}(x - 14) \) fries were left.
+3. Three pigeons ate 3 fries each, so \( 3 \times 3 = 9 \) fries were eaten by the pigeons.
+4. After the pigeons, \( \frac{1}{2}(x - 14) - 9 \) fries remained.
+5.

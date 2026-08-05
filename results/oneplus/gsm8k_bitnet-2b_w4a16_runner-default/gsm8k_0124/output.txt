@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rosie can run 10 miles per hour for 3 hours. After that, she runs 5 miles per hour. How many miles can she run in 7 hours?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first calculate the distance Rosie runs at each speed. 
+
+For the first part of the run:
+Distance = Speed × Time
+Distance1 = 10 miles/hour × 3 hours
+Distance1 = 30 miles
+
+For the second part of the run:
+Distance2 = 5 miles/hour × 4 hours (since she runs for 7 hours total and has already run for 3 hours)
+Distance2 = 5 miles/hour × 4 hours
+Distance2 = 20 miles
+
+Total distance Rosie can run in 7 hours is the sum of Distance1 and Distance2:

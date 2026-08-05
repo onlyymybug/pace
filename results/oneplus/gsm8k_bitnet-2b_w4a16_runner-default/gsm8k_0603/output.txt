@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A plane travels 1200 miles in 3 hours. At the same rate, how many additional hours would it take to travel an additional 2000 miles?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the rate at which the plane is traveling. We can do this by dividing the total distance traveled by the total time taken:
+
+Rate = Total Distance / Total Time
+Rate = 1200 miles / 3 hours
+Rate = 400 miles per hour
+
+Now that we know the plane's rate, we can calculate how long it would take to travel an additional 2000 miles at that rate:
+
+Additional Time = Additional Distance / Rate
+Additional Time = 2000 miles / 400 miles per hour
+Additional Time = 5 hours
+
+The answer is 5 hours.<|eot_id|>

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet gets a job as a waitress.  She makes $10 an hour from wages and another $15 an hour from tips.  She wants to save up 20% of the cost of a $10000 car for a downpayment.  If she works 40 hours a week how many weeks will she need to work to save the down payment?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Janet needs to save for the down payment, we first calculate 20% of the cost of the car:
+
+20% of $10000 = 0.20 * $10000 = $2000
+
+Now, we need to determine how much Janet earns per week:
+
+Wages: $10/hour * 40 hours/week = $400/week
+Tips: $15/hour * 40 hours/week = $600/week
+Total earnings per week = $400/week + $600/week = $1000/week
+
+To find out how many weeks Janet needs to work

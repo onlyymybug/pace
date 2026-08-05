@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bill is ordering a new truck. He has decided to purchase a two-ton truck with several added features: a king cab upgrade, a towing package, leather seats, running boards, and the upgraded exterior light package.  The base price of the truck is $30,000, and the other features are at extra cost. The king cab is an extra $7,500, leather seats are one-third the cost of the king cab upgrade, running boards are $500 less than the leather seats, and the upgraded exterior light package is $1500.  What is the total cost of Bill's new truck, in dollars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost of Bill's new truck, we need to calculate the cost of each additional feature and then add it to the base price of the truck.
+
+1. The king cab upgrade costs $7,500.
+2. The leather seats cost one-third the cost of the king cab upgrade, which is $7,500 / 3 = $2,500.
+3. The running boards cost $500 less than the leather seats, which is $2,500 - $500 = $2,000.
+4. The upgraded exterior light package costs $1,500.
+
+Now, we add up the costs of

@@ -1,0 +1,6 @@
+To solve for the integer \( n \) that satisfies \( 0 \le n < 18 \) and \( n \equiv -11213141 \pmod{18} \), we need to find the remainder when \(-11213141\) is divided by \(18\). This can be done by first finding the remainder when \(11213141\) is divided by \(18\), and then adjusting for the negative sign.
+
+First, we find the remainder when \(11213141\) is divided by \(18\). We can use the fact that \(18 = 2 \times 9\), but it's simpler to use \(18 = 2 \times 9\) and check the last digit of of to simplify the division.
+
+We start by finding the remainder of of the number \(11213141\) divided by \(9\). The sum of of of the digits of of \(11213141\) is:
+\[1 + 1 + 2 + 1 + 3 + 1 + 4 + 1 = 13.\

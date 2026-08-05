@@ -1,0 +1,6 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark took a test yesterday that consisted of 75 questions. He completed the test at a rate of 5 questions per hour. Today, he took another test of 100 questions at the same rate. If Mark had 8 hours to complete the first test and 6 hours to complete the second one, how many questions did he leave incomplete? Yesterday, Mark spent 8 hours on the test, so he could finish 8 * 5 = 40 questions. Thus, he left 75 - 40 = 35 questions unanswered. Today, he could finish 6 * 5 = 30 questions, so 100 - 30 = 70 questions were left unanswered. Total, Mark left unanswered 35 + 70 = 105 questions.
+The answer is 105 The student's reasoning contains a mistake in the calculation for the second test. Let's correct it step by step:
+
+1

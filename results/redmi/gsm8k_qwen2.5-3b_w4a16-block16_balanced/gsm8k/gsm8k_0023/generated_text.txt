@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Billy sells DVDs. He has 8 customers on Tuesday. His first 3 customers buy one DVD each.  His next 2 customers buy 2 DVDs each.  His last 3 customers don't buy any DVDs. How many DVDs did Billy sell on Tuesday? Step 1: Calculate sales for the first group of customers.
+Step 1 Reasoning: The first 3 customers each bought 1 DVD.
+Step Step 1: 3 customers * 1 DVD/customer = 3 DVDs
+
+Step 2: Calculate sales for the next group of customers.
+Step 2 Reasoning: The next 2 customers each bought 2 DVDs.
+Step Step 2: 2 customers * 2 DVDs/customer = 4 DVDs
+
+Step 3: Calculate total sales.
+Step 3 Reasoning: Add the sales from all groups of of customers.
+StepStep 3: 

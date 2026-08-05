@@ -1,0 +1,32 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"MusicRadio.Karaoke.shareKsongWorks","description":"Share work based on song name","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song Name"},"media":{"type":"string","description":"Media"},"name":{"type":"string","description":"Friend name"}},"required":["song_name","media","name"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Health.HealthManagement.createDietRecord","description":"Create dietary records based on food name, type of meal, etc.","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"}},"required":["food_name","meal_type","time"]}}
+{"name":"OnlineShopping.ExpressDelivery.shareExpress","description":"Share specific courier logistics information with the intended audience","parameters":{"type":"object","properties":{"to":{"type":"string","description":"Shared with"},"date":{"type":"string","description":"Shipping date"}},"required":["to","date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Manager Zhang,
+
+Hello! Regarding next week's marketing campaign, we are planning to hold it on Saturday at 7pm in the city center square.At that time, we expect about 500 participants, and the event will include product demonstrations, interactive games, and live draws.In order to ensure the smooth running of the event, we will start setting up the site at 4 pm on Saturday, and we hope that you will come to the site to guide the work.
+
+Please confirm if it is convenient to attend on time on Saturday night and let us know if we need to prepare a special seat or information for you.If your schedule changes, please let us know in advance so we can adjust accordingly.
+
+Thank you for your support and cooperation, and we look forward to welcoming you.
+
+Best,
+
+Best regards,
+[Your name]
+[Your Position]
+[Company name]
+[Contact number]
+[email]
+query:The roast chicken was eaten for dinner, and the time was mentioned in the email.<|im_end|>
+<|im_start|>assistant

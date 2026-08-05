@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "compose_melody", "description": "Compose a melody using the specified chord progression for a certain number of measures on specified instrument. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"progression": {"type": "array", "items": {"type": "string"}, "description": "The progression of chords."}, "measures": {"type": "integer", "description": "The number of measures of the melody."}, "instrument": {"type": "string", "description": "The instrument for the composition. Default is 'Piano'."}}, "required": ["progression", "measures"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Compose a simple piano melody with a progression of C, F and G for 4 measures.<|im_end|>
+<|im_start|>assistant

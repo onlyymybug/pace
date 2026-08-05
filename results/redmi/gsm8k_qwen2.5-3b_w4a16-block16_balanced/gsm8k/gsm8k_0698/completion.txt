@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the total number of great-grandchildren (great grand-babies) at the family reunion.
+
+1. Great Grandma Jones has 3 children.
+2. Each of her 3 children has 3 grandchildren.
+3. Each of these 9 grandchildren has 3 great-grandchildren.
+
+Let's calculate step by step:
+
+- Number of children of Great Grandma Jones: 3
+- Number of grandchildren of each child: 3
+- Number of great-grandchildren (great-grandchildren) of each grandchild: 3
+
+Total number of great-grandchildren = Number of children × Number of grandchildren

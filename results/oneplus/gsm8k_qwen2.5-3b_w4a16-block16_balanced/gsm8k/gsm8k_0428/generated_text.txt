@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kenny is selling his Pokemon cards to buy a ticket to an amusement park, which costs $100. He has a collection of cards and plans to sell them for $1.5 each. He keeps 1/3 of them and gets to go to the amusement park with $50 in spending cash. How many cards did he start with? Let x be the number of cards Kenny started with.
+He sells x cards, keeping 1/3 and selling 2/3.
+So he keeps (1/3)x and sells (2/3)x.
+The money from selling cards is (2/3)x * 1.5
+He has (2/3)x * 1.5 + 50
+We know this equals the 50 he has in cash, so
+(2/3)x * 1.5 + 50 = 50
+Solving for x:
+(2/3)x * 1.5 =

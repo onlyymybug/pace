@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Stocks.viewStockComment","description":"View stock comment section","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantCustomerSatisfactionRate","description":"Get customer satisfaction data for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"OnlineShopping.Mall.viewCommodityEvaluation","description":"View a list of user reviews for an item based on its name","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"}},"required":["goods"]}}
+{"name":"ConvenientLiving.AutoLife.readCarReviews","description":"Read user reviews for the specified car model.","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"}},"required":["brand"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getHouseComment","description":"Read user reviews for selected listings","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Wang! Recently, I was watching the Tesla Model 3, the color is deep ocean blue, equipped with an automatic driving assistance system, and the range is more than 600 kilometers, which is really heartbreaking. Did you know much about Tesla before? Is there any recommendation or need to pay attention to, can you give me some reference? Thank you!
+query:I want to see the user reviews of the Model S, can you help me find them?<|im_end|>
+<|im_start|>assistant

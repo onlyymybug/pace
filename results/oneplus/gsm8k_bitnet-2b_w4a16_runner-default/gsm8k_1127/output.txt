@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alfie, the albatross, flies 400 kilometers every day.  If the circumference of the earth is 40,000 kilometers, how many days will it take Alfie to fly a distance equal to half of the way around the earth?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many days it will take Alfie to fly half the circumference of the earth, we first need to calculate half of the earth's circumference.
+
+1. Calculate half of the earth's circumference:
+   \[
+   \frac{40,000 \text{ km}}{2} = 20,000 \text{ km}
+   \]
+
+2. Determine how many days it will take Alfie to fly 20,000 kilometers, given that he flies 400 kilometers per day:
+   \[
+   \frac{20,000 \text{ km}}{400 \text{ km/day}} = 50

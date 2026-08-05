@@ -1,0 +1,26 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Twelve 1 by 1 squares form a rectangle, as shown. What is the total area of the shaded region? [asy]
+size(4cm);defaultpen(linewidth(0.75));
+
+// Filled portions
+fill((0, 4)--(0, 0)--(2, 0)--cycle, gray(0.75));
+fill((0, 4)--(3, 4)--(3, 0)--cycle, gray(0.75));
+
+// grid
+int j;
+for (j = 0; j < 4; ++j) {draw((j, 0)--(j, 4));}
+for (j = 0; j < 5; ++j) {draw((0, j)--(3, j));}
+
+//diagonals
+draw((0, 4)--(3, 0)); draw((0, 4)--(2, 0));
+[/asy] To solve the problem, we need to determine the total area of of the shaded region in the given rectangle. Let's break down the problem step by step.
+
+1. **Identify the total area of of the rectangle:**
+   The rectangle is composed of 12 unit squares, each with an area of \(1 \text{ unit}^2\). Therefore, the total area of of the rectangle is:
+   \[
+   12 \text{ unit}^2
+   \]
+
+2. **Analyze the shaded regions:**
+   From the diagram, we observe that the shaded regions are formed by two

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Krissa needs to order field trip shirts for her preschool students. 11 students need size extra-small.  Twice as many students need size small as extra small. Four less than the number of size small students need size medium.  Half as many students need size large as size medium.  Six more students need size extra-large than large.  Altogether, how many shirts did Krissa order?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of shirts for each size category and then sum them up.
+
+1. **Size Extra-Small**: 11 students
+2. **Size Small**: Twice as many as Extra-Small, so \(11 \times 2 = 22\) students
+3. **Size Medium**: Four less than Size Small, so \(22 - 4 = 18\) students
+4. **Size Large**: Half as many as Size Medium, so \(18 / 2 = 9\) students
+5. **Size Extra-Large**: Six more than Size Large, so

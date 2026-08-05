@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gary does laundry twice a week. Each load of laundry uses 20 gallons of water, and a gallon of water costs $0.15. How much does Gary spend on water for laundry in a year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount of water Gary uses in a year and then determine the cost based on the price per gallon.
+
+1. Calculate the number of loads of laundry per year:
+   Gary does laundry twice a week, so in a year (52 weeks), he does:
+   \( 2 \text{ loads/week} \times 52 \text{ weeks/year} = 104 \text{ loads/year} \)
+
+2. Calculate the total gallons of water used per year:
+   Each load uses 20 gallons of water, so for 104 loads:
+   \( 104 \text

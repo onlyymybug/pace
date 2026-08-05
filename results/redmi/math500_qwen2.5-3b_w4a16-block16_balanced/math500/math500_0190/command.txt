@@ -1,0 +1,86 @@
+adb -P 5037 -s 192.168.110.76:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/sampler.pid;
+pace_sample() {
+  printf '"'"'__PACE_SAMPLE_BEGIN__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+  printf '"'"'__PACE_TS_BEGIN__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+  dumpsys thermalservice >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw 2>&1;
+  printf '"'"'__PACE_MEMORY__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+  if [ -r "/proc/$runner_pid/status" ]; then
+    printf '"'"'pid=%s\n'"'"' "$runner_pid" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+    awk '"'"'/^VmRSS:/{print "rss_kb=" $2}          /^VmHWM:/{print "vmhwm_kb=" $2}'"'"' "/proc/$runner_pid/status" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+  fi;
+  printf '"'"'__PACE_TS_END__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+  printf '"'"'__PACE_SAMPLE_END__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+};
+./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path tokenizer.json --prompt '"'"'Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Five points $A$, $B$, $C$, $D$, and $O$ lie on a flat field.  $A$ is directly north of $O$, $B$ is directly west of $O$, $C$ is directly south of $O$, and $D$ is directly east of $O$. The  distance between $C$ and $D$ is 140 m.  A hot-air balloon is positioned in the air at $H$ directly above $O$. The balloon is held in place by four ropes $HA$, $HB$, $HC$, and $HD$.  Rope $HC$ has length 150 m and rope $HD$ has length 130 m. [asy]
+size(250);
+pair A, B, C, D, O, H, W, X, Y, Z;
+O=(0,0);
+A=(1,1);
+D=(1.5,-.3);
+B=(-1.5,.3);
+C=(-1,-1);
+H=(0,2.5);
+W=(5/3)*(A+D);
+X=(5/3)*(A+B);
+Y=(-1)*(W);
+Z=(-1)*(X);
+draw(W--X--Y--Z--W);
+draw(A--C);
+draw(B--D);
+draw(O--H, linewidth(1));
+draw(A--H, dashed);
+draw(B--H, dashed);
+draw(C--H, dashed);
+draw(D--H, dashed);
+dot(A);
+dot(B);
+dot(C);
+dot(D);
+dot(O);
+dot(H);
+label("A", A, NE);
+label("B", B, SW);
+label("C", C, SE);
+label("D", D, NE);
+label("O", O, SE);
+label("H", H, NW);
+[/asy]
+
+To reduce the total length of rope used, rope $HC$ and rope $HD$ are to be replaced by a single rope $HP$ where $P$ is a point on the straight line between $C$ and $D$. (The balloon remains at the same position $H$ above $O$ as described above.)  Determine the greatest length of rope that can be saved.'"'"' --system_prompt '"'"''"'"' --seq_len 627 --eval_mode 1 --temperature 0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/speed.txt > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.log 2>&1 &
+runner_pid=$!;
+printf '"'"'%s\n'"'"' "$runner_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.pid;
+(
+  sampler_started=$(date +%s);
+  pace_sample;
+  while kill -0 "$runner_pid" 2>/dev/null; do
+    [ -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.stop ] && break;
+    sampler_now=$(date +%s);
+    if [ $((sampler_now - sampler_started)) -ge 1800 ]; then
+      printf '"'"'__PACE_WATCHDOG_TIMEOUT__=1800\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.raw;
+      kill -TERM "$runner_pid" 2>/dev/null || true;
+      sleep 1;
+      kill -KILL "$runner_pid" 2>/dev/null || true;
+      break;
+    fi;
+    sleep 0.5;
+    pace_sample;
+  done;
+  pace_sample;
+) &
+sampler_pid=$!;
+printf '"'"'%s\n'"'"' "$sampler_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/sampler.pid;
+pace_cleanup() {
+  touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.stop;
+  kill -TERM "$runner_pid" 2>/dev/null || true;
+  wait "$sampler_pid" 2>/dev/null || true;
+};
+trap '"'"'pace_cleanup; exit 130'"'"' HUP INT TERM;
+wait "$runner_pid"; runner_rc=$?;
+printf '"'"'\nrunner_returncode=%s\n'"'"' "$runner_rc" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.log;
+touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.stop;
+wait "$sampler_pid" 2>/dev/null || true;
+trap - HUP INT TERM;
+rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/math500_qwen2.5-3b_w4a16-block16_balanced/math500/math500_0190/sampler.pid;
+exit "$runner_rc"'

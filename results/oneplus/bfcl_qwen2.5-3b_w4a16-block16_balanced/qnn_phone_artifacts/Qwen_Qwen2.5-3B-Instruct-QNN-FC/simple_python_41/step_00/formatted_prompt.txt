@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "electromagnetic_force", "description": "Calculate the electromagnetic force between two charges placed at a certain distance. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"charge1": {"type": "integer", "description": "The magnitude of the first charge in coulombs."}, "charge2": {"type": "integer", "description": "The magnitude of the second charge in coulombs."}, "distance": {"type": "integer", "description": "The distance between the two charges in meters."}, "medium_permittivity": {"type": "float", "description": "The relative permittivity of the medium in which the charges are present. Default is 8.854e-12 (Vacuum Permittivity)."}}, "required": ["charge1", "charge2", "distance"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the electromagnetic force between two charges of 5C and 7C placed 3 meters apart.<|im_end|>
+<|im_start|>assistant

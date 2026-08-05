@@ -1,0 +1,8 @@
+To solve the problem, we need to determine the number of dice \( n \) such that the probability that exactly two out of \( n \) fair 6-sided dice show a number other than 1 is \(\frac{25}{26}\).
+
+First, let's define the probability that a single die does not show a 1. Since there are 6 faces and only one of them is a 1, the probability that a die does not show a 1 is:
+\[
+P(\text{not 1}) = \frac{5}{6}
+\]
+
+Next, we need to find the

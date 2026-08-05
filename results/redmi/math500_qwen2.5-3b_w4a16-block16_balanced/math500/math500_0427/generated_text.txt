@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A square and an equilateral triangle have	equal	perimeters.	The area of the triangle is $16\sqrt{3}$ square centimeters. How long, in centimeters, is a diagonal of the square? Express your answer in simplest radical form.
+
+[asy]
+defaultpen(linewidth(1));
+draw((0,0)--(1,0)--(1,1)--(0,1)--cycle);
+pair a = (1.25,0)+1.25*dir(60);
+pair b = a+1.25*dir(-60);
+draw((1.25,0)--a--b--cycle);
+
+[/asy] To solve the problem, we need to find the side length of of the equilateral triangle and then use that to find the side length of of the square. Finally, we will determine the length of of the diagonal of of the square.
+
+1. **Determine the side length of of the equilateral triangle:**
+
+   Given that the area of of the equilateral triangle is \(16\sqrt{3}\) square centimeters, we use the formula for the area of of an equilateral triangle:
+   \[
+   \text{Area} = \frac{\sqrt{3}}{4} s^2
+  

@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Milly needs to return a book she decided was really boring. The book weighs 4 pounds, cost $32, and needs to be returned to a distribution center 20 miles away. If the shipping company charges $0.35 per pound plus $0.08 per mile, and Amazon will only refund 75% of the book's purchase price, how much money will Milly lose?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the total cost of shipping the book. The cost per pound is $0.35, and the book weighs 4 pounds, so the cost for the weight is 4 * $0.35 = $1.40. The cost per mile is $0.08, and the distance is 20 miles, so the cost for the distance is 20 * $0.08 = $1.60. The total shipping cost is $1.40 + $1.60 = $3.00.
+
+Amazon will only refund 75% of the book's purchase price, which is 0.75 *

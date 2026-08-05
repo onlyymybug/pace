@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculus.derivative", "description": "Compute the derivative of a function at a specific value. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"function": {"type": "string", "description": "The function to calculate the derivative of."}, "value": {"type": "integer", "description": "The value where the derivative needs to be calculated at."}, "function_variable": {"type": "string", "description": "The variable present in the function, for instance x or y, etc. Default is 'x'."}}, "required": ["function", "value"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the derivative of the function 2x^2 at x = 1.<|im_end|>
+<|im_start|>assistant

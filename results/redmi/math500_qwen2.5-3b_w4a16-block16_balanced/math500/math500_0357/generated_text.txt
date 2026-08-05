@@ -1,0 +1,5 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: For what real values of $x$ is $-4<x^{4}+4x^{2}<21$ satisfied? Express your answer in interval notation. To solve the inequality \(-4 < x^4 + 4x^2 < 2\), we need to break it into two separate inequalities and solve each one individually.
+
+First, consider the inequality \(x^4 + 4x^2 > -4\). Since \(x^4 \geq 0\) and \(4x^2 \geq 0\) for all real \(x\), it is clear that \(x^4 + 4x^2 \geq 0\). Therefore, \(x^4 + 4x^2 > -4\) is always true for

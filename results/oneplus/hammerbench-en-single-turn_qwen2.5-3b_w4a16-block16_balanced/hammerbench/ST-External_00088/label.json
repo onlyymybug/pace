@@ -1,0 +1,10 @@
+{
+  "name": "Navigation.TrainTickets.queryTrainTicket",
+  "arguments": {
+    "departure_station": "Guangzhou South",
+    "destination_station": "Changsha South",
+    "ride_date": "April 10",
+    "seat_type": "Second class",
+    "train_type": "High iron"
+  }
+}

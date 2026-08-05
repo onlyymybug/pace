@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The area of $\triangle ABC$ is 6 square centimeters. $\overline{AB}\|\overline{DE}$. $BD=4BC$. What is the number of square centimeters in the area of $\triangle CDE$? [asy]
+draw((-.3,-3)--(.1,1)--(-1,0)--(3,0)--cycle);
+label("$A$",(.1,1),N);
+label("$B$",(-1,0),W);
+label("$C$",(0,0),NE);
+label("$D$",(3,0),E);
+label("$E$",(-.3,-3),S);
+[/asy] To solve the problem, we need to determine the area of of \(\triangle CDE\) given that the area of of \(\triangle ABC\) is 6 square centimeters, \(\overline{AB} \parallel \overline{DE}\), and \(BD = 4BC\).
+
+1. **Identify Similar Triangles:**
+   Since \(\overline{AB} \parallel \overline{DE}\), \(\triangle ABC\) and \(\triangle CDE\) are similar by the AA (Angle-Angle) similarity criterion. This is because corresponding angles are equal due to the parallel lines.
+
+2. **Determine the Ratio of of the Sides:**
+   Given \(BD = 4BC\), we need to find the ratio of of the sides of of \(\triangle ABC\) to \(\triangle CDE\).
+
+   Let \(BC = x\). Then \(BD = 4x\).
+
+   Since \(\overline{AB} \parallel \overline{DE}\), the triangles are similar, and the ratio of of the sides is the same as the ratio of the segments on the transversal. Therefore, the ratio of of the sides of is:
+   \[
+   \frac

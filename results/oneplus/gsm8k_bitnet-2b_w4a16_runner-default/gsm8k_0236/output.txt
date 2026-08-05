@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John orders some pizzas to share with his friends.  There are 20 friends in total, and John wants to make sure each can have 4 slices.  Pizzas are only sold sliced into 8 portions.  How many Pizzas does John need to order?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many slices of pizza John needs in total and then figure out how many pizzas are required to provide those slices.
+
+1. John wants each of the 20 friends to have 4 slices. So, the total number of slices needed is:
+   \[
+   20 \text{ friends} \times 4 \text{ slices/friend} = 80 \text{ slices}
+   \]
+
+2. Each pizza is sliced into 8 portions. To find out how many pizzas are needed, we divide the total number of slices by the number of slices per pizza:
+   \

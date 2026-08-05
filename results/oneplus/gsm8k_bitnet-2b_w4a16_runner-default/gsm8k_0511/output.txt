@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: For a New Year's resolution, Andy wants to lose 30 lbs. by his birthday, which is July 19th. Today is December 31st. If Andy needs to burn 3500 calories to lose a pound, how much of a calorie deficit (net amount of calories burned vs. calories consumed) does he need each day to reach his goal?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much of a calorie deficit Andy needs each day, we first need to calculate the total number of days from December 31st to July 19th.
+
+December has 31 days, January has 31 days, February has 28 days (since it's not a leap year), and March has 31 days. April has 30 days, May has 31 days, and June has 30 days. July has 19 days up to July 19th.
+
+Total days = 31 + 31 + 28 + 31 + 30 + 31 + 30 + 19 = 212

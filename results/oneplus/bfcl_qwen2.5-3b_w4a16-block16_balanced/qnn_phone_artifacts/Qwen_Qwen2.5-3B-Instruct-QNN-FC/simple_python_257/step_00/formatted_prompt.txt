@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "identify_color_rgb", "description": "This function identifies the RGB values of a named color. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"color_name": {"type": "string", "description": "Name of the color."}, "standard": {"type": "string", "description": "The color standard (e.g. basic, pantone). Default is 'basic'"}}, "required": ["color_name"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Can you help me identify the basic RGB value of Sea Green color?<|im_end|>
+<|im_start|>assistant

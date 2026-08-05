@@ -1,0 +1,15 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: If $2^8=4^x$, what is the value of $x$? To solve the equation \(2^8 = 4^x\), we start by expressing both sides of of the equation with the same base. Notice that \(4\) can be written as \(2^2\). Therefore, we can rewrite the equation as:
+
+\[
+2^8 = (2^2)^x
+\]
+
+Next, we use the property of of exponents \((a^m)^n = a^{mn}\) to simplify the right-hand side:
+
+\[
+2^8 = 2^{2x}
+\]
+
+Since the bases are the same, we can set the exponents equal to

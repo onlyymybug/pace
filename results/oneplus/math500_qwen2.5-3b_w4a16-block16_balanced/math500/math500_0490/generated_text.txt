@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $f(x)=|x-p|+|x-15|+|x-p-15|,$ where $0 < p < 15.$ Determine the minimum value taken by $f(x)$ for $x$ in the interval $p \leq x\leq15.$ To determine the minimum value of of of \( f(x) = |x-p| + |x-15| + |x-p-15| \) for \( p \leq x \leq 15 \), we need to analyze the behavior of the function \( f(x) \) within the given interval.
+
+1. **Define the function and interval:**
+   \[
+   f(x) = |x-p| + |x-15| + |x-p-15|
+   \]
+   Given \( p \leq x \leq 15 \).
+
+2. **Analyze the absolute value terms:**
+   - For \( p \leq x \leq 15 \), we can break down the absolute values based on the critical points \( p \) and \( 15 \).
+
+3. **Break down the absolute values:**
+   - For \( p \leq x \leq 15 \), we have:
+     \[
+     |x-p| = x - p, \quad |x-15| = 15 - x, \quad |x-p-15| = x - p - 15
+     \]
+  

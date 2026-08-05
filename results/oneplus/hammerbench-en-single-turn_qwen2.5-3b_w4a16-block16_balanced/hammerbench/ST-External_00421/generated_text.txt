@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"Finance.Stocks.viewStockincome","description":"Reference profit and loss for the day","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Travel.HotelServices.bookHotel","description":"Book a room at a selected hotel","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Hotel Name"},"checkin_date":{"type":"string","description":"Check-in Date"},"checkout_date":{"type":"string","description":"DEPARTURE DATE"},"room_type":{"type":"string","description":"Room types"},"tenant_name":{"type":"string","description":"Name of the guest staying"},"tenant_number":{"type":"string","description":"Telephone number of the guest staying at the hotel"}},"required":["name","checkin_date","checkout_date","room_type","tenant_name","tenant_number"]}}
+{"name":"SocialCommunication.Community.likeCommunityPost","description":"Like a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to like the post"},"post_name":{"type":"string","description":"Title of the post to like"}},"required":["community_name","post_name"]}}
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, please be reminded that May 1st is Labor Day and our company will have a day off. Happy holidays, if you have an urgent matter, you can contact the duty number 123456789. Thank you!
+query:I would like to book an executive single room at Marriott International Hotel. The check-in time is the time mentioned in the text message. The check-out time is May 5. The booker is Miss Wang.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.HotelServices.bookHotel","parameters":{"name":"Marriott International Hotel","checkin_date":"May 1st","checkout_date":"May 5","room_type":"executive single","tenant_name":"Miss Wang"}}<|im_end|>

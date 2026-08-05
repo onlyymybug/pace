@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.modifyFlightBooking","description":"Changing the departure time of a booked flight is not supported for departure and destination changes","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"name":{"type":"string","description":"Name of person who booked"},"time":{"type":"string","description":"Flight duration before modification"},"alter_time":{"type":"string","description":"Revised flight time"},"alter_seat":{"type":"string","description":"Class Selection"}},"required":["departure","destination","name","time","alter_time","alter_seat"]}}
+{"name":"Travel.ItineraryServices.updateTravelItinerary","description":"Modify a created trip","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"Destination"}},"required":["destination"]}}
+{"name":"Health.HealthManagement.updateDietRecord","description":"Changing dietary records based on updated conditions","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"},"update_content":{"type":"string","description":"Updates, such as changes to food names, meal types, meal times, etc."}},"required":["food_name","meal_type","time","update_content"]}}
+{"name":"ConvenientLiving.GovernmentServices.updateServiceRequestInfo","description":"Make changes to submitted city service request information","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Service Request Name"}},"required":["name"]}}
+{"name":"ConvenientLiving.JobRecruitment.updateJobPosition","description":"Modify Published Job Information","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Position name"},"work_location":{"type":"string","description":"Work Location"}},"required":["position_name","work_location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:QUERY LENGTH LIMIT EXCEEDED. MAX ALLOWED QUERY : 500 CHARS
+query:Can I change the apple in my meal to a banana? The time is the one mentioned in the email.<|im_end|>
+<|im_start|>assistant

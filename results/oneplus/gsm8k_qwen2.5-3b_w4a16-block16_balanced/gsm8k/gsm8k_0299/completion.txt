@@ -1,0 +1,9 @@
+To solve this problem, we need to calculate the total cost of of the desk including all the bids.
+
+First, we need to determine the total number of bids. There are 4 bidders in total, including Carmen. Each of the 3 other bidders makes one bid, and then Carmen bids after each of these 3 bidders.
+
+Number of bids = 3 (from other bidders) + 1 (from Carmen) = 4 bids
+
+The first bid is $200. Each subsequent bid increases by $50. 
+
+We can calculate the total cost as the sum of of an arithmetic series where

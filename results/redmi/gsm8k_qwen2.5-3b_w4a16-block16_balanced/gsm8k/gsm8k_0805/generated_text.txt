@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two cars are driving on a highway.  The first car is traveling at an average speed of 60 miles per hour when the second car passes it at an average speed of 70 miles per hour.  If both cars continue on the highway at the same speed, how many miles will separate them after 2 hours? Step 1: Calculate the distance covered by the first car in 2 hours.
+Distance = Speed * Time
+Distance for first car = 60 mph * 2 hours = 120 miles
+
+Step 2: Calculate the distance covered by the second car in 2 hours.
+Distance for second car = 70 mph * 2 hours = 140 miles
+
+Step 3: Calculate the difference in distance covered by the two cars after 2 hours.
+Difference = Distance for second car - Distance for first car
+Difference = 140 miles - 120 miles = 20

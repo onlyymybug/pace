@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "random_forest.train", "description": "Train a Random Forest Model on given data Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"n_estimators": {"type": "integer", "description": "The number of trees in the forest."}, "max_depth": {"type": "integer", "description": "The maximum depth of the tree."}, "data": {"type": "any", "description": "The training data for the model."}}, "required": ["n_estimators", "max_depth", "data"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Generate a random forest model with 100 trees and a depth of 5 on the provided data my_data.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "random_forest.train", "arguments": {"n_estimators": 100, "max_depth": 5, "data": "my_data"}}
+</tool_call><|im_end|>

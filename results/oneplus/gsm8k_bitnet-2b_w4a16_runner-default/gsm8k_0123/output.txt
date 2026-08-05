@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sadie slept 8 hours on Monday. For the next two days, she slept 2 hours less, each, because she had to complete some assignments. If the rest of the week she slept 1 hour more than those two days, how many hours did she sleep in total throughout the week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. Sadie slept 8 hours on Monday.
+2. For the next two days (Tuesday and Wednesday), she slept 2 hours less each day. So, she slept 8 - 2 = 6 hours on Tuesday and 6 hours on Wednesday.
+3. For the rest of the week (Thursday to Sunday), she slept 1 hour more than the total she slept on Tuesday and Wednesday. So, she slept 6 + 6 + 1 = 13 hours on Thursday, Friday, Saturday, and Sunday.
+
+Now, let's add

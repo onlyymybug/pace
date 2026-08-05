@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At 8:00, 5000 people lined up at a polling station to cast their vote on election day. By midday 2/5 of the people had voted and by 16:00 2/3 of the remaining people had voted. What's the number of those who had not voted by 16:00?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to work backwards from the given information. Let's denote the total number of people as P. We know that P = 5000.
+
+By midday, 2/5 of the people had voted. So, the number of people who had voted by midday is (2/5) * P = (2/5) * 5000 = 2000.
+
+This means that 1/5 of the people had not voted by midday. So, the number of people who had not voted by midday is (1/5) * P = (1/5)

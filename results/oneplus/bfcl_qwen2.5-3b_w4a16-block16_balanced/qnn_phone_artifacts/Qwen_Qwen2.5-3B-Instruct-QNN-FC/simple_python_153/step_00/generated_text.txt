@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_compounded_interest", "description": "Calculate the compounded interest for a given initial deposit, interest rate, time and number of times the interest is compounded per unit time. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"principal": {"type": "integer", "description": "The initial amount of money that is being invested or loaned."}, "rate": {"type": "float", "description": "The annual interest rate."}, "time": {"type": "integer", "description": "The number of time periods the money is invested or loaned for."}, "n": {"type": "integer", "description": "The number of times that interest is compounded per unit time."}}, "required": ["principal", "rate", "time", "n"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the compounded interest on an initial deposit of $5000 at an annual interest rate of 3% for 5 years, compounded quarterly.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_compounded_interest", "arguments": {"principal": 5000, "rate": 0.03, "time": 5, "n": 4}}
+</tool_call><|im_end|>

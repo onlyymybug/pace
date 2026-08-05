@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+{"name":"VideoPlayback.ShortVideos.publishShortVideo","description":"Post a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"filepath":{"type":"string","description":"Video"}},"required":["name","filepath"]}}
+{"name":"Navigation.FlightTickets.useFlightAirlinePoints","description":"Redeem frequent flyer points","parameters":{"type":"object","properties":{"passenger_id":{"type":"string","description":"Rider ID number"},"name":{"type":"string","description":"Passenger's Name"},"points_to_redeem":{"type":"string","description":"Items to redeem"}},"required":["passenger_id","name","points_to_redeem"]}}
+{"name":"Navigation.TrafficViolations.shareViolationDetail","description":"Share Designated Violation Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"},"media":{"type":"string","description":"Ways to share"},"name":{"type":"string","description":"Shared content recipients"}},"required":["plate_number","city","time","media","name"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friend A: Hey, Wang, I just saw an airport lounge access on Taobao, and I think it suits you! This access allows you to enjoy a more comfortable rest environment while waiting for the airport, free drinks and snacks, and most importantly, Internet access, which is really convenient for frequent travelers. If you're interested, I'll share the link with you!
+query:Zhao Qiansun, I want to use my frequent flyer points to redeem the item mentioned by Xiao Ming in the QQ message. My passenger ID is 123456.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.FlightTickets.useFlightAirlinePoints","parameters":{"passenger_id":"123456","name":"Zhao Qiansun","points_to_redeem":"机场休息室访问"}}<|im_end|>

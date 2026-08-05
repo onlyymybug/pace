@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A football team has 105 members.  There are twice as many players on the offense as there is on the defense. There is half the number of players on the special teams as there is on the defense.  How many players are on the defense? Let x be the number of players on the defense.
+Then the number of players on offense is 2x
+And the number of players on special teams is 1/2x
+Total players is 105
+So we have the equation: x + 2x + 1/2x = 105
+Simplifying, 3.5x = 105
+Dividing both sides by 3.5, x = 30
+The answer is 30. The setup of the equation was correct, but there was a mistake in the simplification. The correct simpl

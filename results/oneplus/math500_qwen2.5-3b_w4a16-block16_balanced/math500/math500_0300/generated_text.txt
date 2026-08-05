@@ -1,0 +1,22 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Consider the rectangle with vertices at $(5,4),$ $(5,-4),$ $(-5,4),$ $(-5,-4)$. How many integer coordinates will be strictly inside the rectangular region? To determine the number of integer coordinates strictly inside the rectangle with vertices at \((5,4)\), \((5,-4)\), \((-5,4)\), and \((-5,-4)\), we need to follow these steps:
+
+1. Identify the range of of for the \(x\) and \(y\) coordinates.
+2. Calculate the total number of integer coordinates within these ranges.
+3. Subtract the coordinates on the boundary to find the number of integer coordinates strictly inside the rectangle.
+
+### Step 1: Identify the range of for \(x\) and \(y\) coordinates
+
+The vertices of of the rectangle are:
+- \((5, 4)\)
+- \((5, -4)\)
+- \((-5, 4)\)
+- \((-5, -4)\)
+
+The \(x\)-coordinates range from \(-5\) to \(5\), inclusive. This gives us:
+\[ x \text{-coordinates range from } -5 \text{ to } 5 \]
+The total number of integer values for \(x\) is:
+\[ 5 - (-5) + 1 = 11 \]
+
+The \(y\)-coordinates range from \(-4\) to \(4\), inclusive. This gives

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A clothing store has 40 white shirts and 50 floral shirts. Half of the white shirts have collars, and 20 of the floral shirts have buttons. How many more floral shirts with no buttons are there than white shirts with no collars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, find out how many white shirts have collars: 40 white shirts / 2 = 20 white shirts with collars.
+
+Next, find out how many floral shirts have no buttons: 50 floral shirts - 20 floral shirts with buttons = 30 floral shirts with no buttons.
+
+Now, compare the number of floral shirts with no buttons to the number of white shirts with no collars: 30 floral shirts with no buttons - 20 white shirts with collars = 10.
+
+The answer is 10.<|eot_id|>

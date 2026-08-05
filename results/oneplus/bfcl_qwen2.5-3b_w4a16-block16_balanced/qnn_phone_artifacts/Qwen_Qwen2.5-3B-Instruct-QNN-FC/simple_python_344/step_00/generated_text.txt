@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_game_item_stats", "description": "Retrieve the statistics of a specific item in a specific video game. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game": {"type": "string", "description": "The game to retrieve information from."}, "item": {"type": "string", "description": "The name of the item in the game."}, "stat": {"type": "string", "description": "Specific statistic required."}}, "required": ["game", "item", "stat"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the power rating for the Weapon 'Guardian Sword+' in the game 'Legend of Zelda: Breath of the Wild'?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_game_item_stats", "arguments": {"game": "Legend of Zelda: Breath of the Wild", "item": "Guardian Sword+", "stat": "power"}}
+</tool_call><|im_end|>

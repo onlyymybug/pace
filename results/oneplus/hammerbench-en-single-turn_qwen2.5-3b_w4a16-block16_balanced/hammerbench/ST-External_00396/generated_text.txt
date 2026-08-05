@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Calling.makePhoneCall","description":"Used to call designated contacts","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to call"},"phone_number":{"type":"string","description":"Call the number directly"}},"required":["contact_name","phone_number"]}}
+{"name":"OfficeSoftware.Conferencing.inviteParticipants","description":"Send meeting invitations to designated people","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Invitee List"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"Travel.ItineraryServices.getTravelCulturalActivities","description":"Get information on unique cultural activities in your destination","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"Finance.Funds.recommendFunds","description":"Recommend user-friendly funds based on investment objectives and duration","parameters":{"type":"object","properties":{"objective":{"type":"string","description":"Investment objectives such as robust, aggressive"},"investment_term":{"type":"string","description":"Investment term, e.g. short term, long term"}},"required":["objective","investment_term"]}}
+{"name":"Navigation.PublicTransit.favoriteBusRoutes","description":"Favorite Bus Routes","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"bus_name":{"type":"string","description":"Bus name"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["line","bus_name","departure","destination","preferred_line"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Walking around the Charles Bridge in Prague, the scenery is fascinating, the river is shining in the sun, and the buildings on both sides are antique and full of history. Don't forget that we also plan to go to the Old Town Square to watch the astronomical clock at night!
+query:Are there any special cultural experiences at the locations mentioned in Xiao Li's WeChat?<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.Calling.makePhoneCall","parameters":{"contact_name":"Xiao Li","phone_number":"5551234"}}<|im_end|>

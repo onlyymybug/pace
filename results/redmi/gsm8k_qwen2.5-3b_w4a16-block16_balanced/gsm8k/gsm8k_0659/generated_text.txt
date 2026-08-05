@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Finley went to the grocery store and bought rice, beans, and pork for use in their home. It took her 20 more minutes to cook pork than rice, while beans took half the combined cooking time of pork and rice. If it took her 30 minutes to cook rice, how long in minutes did it take to cook all the food? To solve this, let's denote the cooking times as follows:
+- \( R \) for rice
+- \( P \) for pork
+- \( B \) for beans
+
+Given:
+- \( R = 30 \) minutes
+- \( P = R + 20 \) minutes
+- \( B = \frac{1}{2}(R + P) \) minutes
+
+First, calculate \( P \):
+\[ P = R + 20 = 30 + 20 = 50 \text{ minutes} \]
+
+Next, calculate \( B \):
+\[ B = \frac

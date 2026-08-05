@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Wendy wants to place 20 more than double the number of books in a shelving system with 6 rows and 6 columns. How many books will she need to carry to complete her task?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of books that can fit in the shelving system. Since there are 6 rows and 6 columns, the total number of books is:
+
+6 rows * 6 columns = 36 books
+
+Wendy wants to place 20 more than double the number of books. Double the number of books is:
+
+2 * 36 books = 72 books
+
+Now, we add 20 more books to this amount:
+
+72 books + 20 books = 92 books
+
+So, Wendy will need to carry 92 books to complete her task. The answer is 

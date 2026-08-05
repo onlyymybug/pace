@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.evaluateHospitals","description":"Evaluate based on hospital name and visit date","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"visit_date":{"type":"string","description":"Date of Visit :"},"content":{"type":"string","description":"Review Content"}},"required":["hospital_name","visit_date","content"]}}
+{"name":"SocialCommunication.Community.createCommunityComment","description":"Create a new comment under a post in a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the review"},"post_name":{"type":"string","description":"Title of the post to comment on"},"comment":{"type":"string","description":"The content of the review"}},"required":["community_name","post_name","comment"]}}
+{"name":"NewsMagazines.News.postNewsComment","description":"Post user comments under specified news","parameters":{"type":"object","properties":{"news_name":{"type":"string","description":"News Name"},"comment_content":{"type":"string","description":"Comments"}},"required":["news_name","comment_content"]}}
+{"name":"Travel.ScenicAreaServices.addScenicSpotComment","description":"Comment on user-specified scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"comment":{"type":"string","description":"Comments"}},"required":["name","comment"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Last Monday we had a project meeting where we discussed our next work plan and we all had a lot of constructive comments. After the meeting, we are scheduled to meet again next Monday at the same time to follow up on the progress of each task. Please remember to schedule a time to attend. Thank you!
+query:The time in the text message I visited the city center hospital, I want to comment on the waiting time is too long, I hope it can be improved.<|im_end|>
+<|im_start|>assistant

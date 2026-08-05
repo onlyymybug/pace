@@ -1,0 +1,15 @@
+Step 1: Calculate total number of seats in the auditorium.
+Total seats = rows * seats per row
+Total seats = 4 * 18
+
+Step 2: Calculate the number of seats occupied by administrators.
+Occupied by administrators = Total seats * 1/4
+
+Step 3: Calculate the remaining seats after administrators.
+Remaining seats = Total seats - Occupied by administrators
+
+Step 4: Calculate the number of seats occupied by parents.
+Occupied by parents = Remaining seats * 1/3
+
+Step 5: Calculate the number of seats occupied by students.
+Occupied by students = Remaining seats -

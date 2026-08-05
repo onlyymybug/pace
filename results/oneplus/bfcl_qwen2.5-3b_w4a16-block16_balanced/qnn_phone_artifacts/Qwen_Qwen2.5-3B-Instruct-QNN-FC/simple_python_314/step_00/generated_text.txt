@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sports_celebrity.get_major_achievements", "description": "Returns a list of major achievements of a particular sports celebrity. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"celebrity_name": {"type": "string", "description": "Name of the sports celebrity."}, "sports": {"type": "string", "description": "Type of sports the celebrity involved in. Default is Football."}, "team": {"type": "string", "description": "Optional. Team where celebrity currently plays. Default is 'all'"}}, "required": ["celebrity_name"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find all the major achievements of the footballer Lionel Messi.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "sports_celebrity.get_major_achievements", "arguments": {"celebrity_name": "Lionel Messi", "sports": "Football"}}
+</tool_call><|im_end|>

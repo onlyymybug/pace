@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 6 trees in Chris's yard.  Ferdinand has half the number of trees that Chris has.  Harry has 5 more than twice the number of trees that Ferdinand has.  How many more trees are in Harry's yard than Ferdinand's yard?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of trees each person has.
+
+1. Chris has 6 trees.
+2. Ferdinand has half the number of trees that Chris has, so Ferdinand has \( \frac{6}{2} = 3 \) trees.
+3. Harry has 5 more than twice the number of trees that Ferdinand has. Twice the number of trees Ferdinand has is \( 2 \times 3 = 6 \). Adding 5 more gives Harry \( 6 + 5 = 11 \) trees.
+
+Now, we need to find out how many more trees are in Harry's

@@ -1,0 +1,11 @@
+To solve the problem, we need to determine the probability that a randomly chosen point inside the rectangle \(ABCD\) is closer to the center \(O\) than to any of of the four vertices \(A\), \(B\), \(C\), and \(D\).
+
+1. **Understanding the Geometry:**
+   - The center \(O\) of of the rectangle \(ABCD\) is equidistant from all four vertices.
+   - The condition that a point is closer to \(O\) than to any vertex implies that the point lies within the circle centered at \(O\) with radius equal to the distance from \(O\) to \(O\) (which is 0) or the distance from \(O\) to the midpoint of the sides of of \(O\) is the same as the distance from \(O\) to the midpoint of the sides.
+
+2. **Symmetry and Circle Analysis:**
+   - The region where a point is closer to \(O\) than to any vertex is the intersection of of of the four regions formed by the perpendicular bisectors of of the sides of.
+   - These regions are symmetric and each is a quarter of of of the circle with radius equal to half the length of of the sides of.
+
+3. **Calculating the

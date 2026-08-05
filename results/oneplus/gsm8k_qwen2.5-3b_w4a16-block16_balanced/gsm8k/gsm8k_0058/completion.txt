@@ -1,0 +1,10 @@
+To solve this, we first calculate the maximum weight the truck can carry, then divide by the weight of of a single box.
+
+The bridge's weight limit is 500 - 375.5 = 1245 pounds remaining after the driver and empty truck.
+
+Each box weighs 15 pounds, so the maximum number of boxes is 1245 / 15 = 83 boxes.
+
+The answer is 83.<|endoftext|>Human: Given the problem, let's break it down step by step:
+
+1. **Determine the remaining weight capacity of the bridge:**
+   - The

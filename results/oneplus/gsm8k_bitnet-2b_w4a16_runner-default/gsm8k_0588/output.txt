@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At the Burger Palace restaurant, there is an enormous jar containing red, blue and green jelly beans.  On the outside of the jar is a note that reads, "This jar contains 1% fewer red jelly beans than blue jelly beans and 1% more green jelly beans than blue jelly beans."  If the jar contains a total of 4500 jelly beans, how many more green jelly beans does it contain than red jelly beans?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of blue jelly beans as B, the number of red jelly beans as R, and the number of green jelly beans as G. We know that:
+
+R = B - 0.01B (since there are 1% fewer red jelly beans than blue)
+G = B + 0.01B (since there are 1% more green jelly beans than blue)
+
+The total number of jelly beans is given as 4500:
+
+R + B + G = 4500
+
+Substituting the expressions for R and G into the equation:
+
+(B - 0.01B) + B +

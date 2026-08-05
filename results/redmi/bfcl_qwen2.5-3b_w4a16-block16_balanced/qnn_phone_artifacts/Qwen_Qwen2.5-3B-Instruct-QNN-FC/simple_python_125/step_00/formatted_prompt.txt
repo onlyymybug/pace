@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "predict_house_price", "description": "Predict house price based on area, number of rooms and year of construction. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"area": {"type": "integer", "description": "Area of the house in square feet."}, "rooms": {"type": "integer", "description": "Number of rooms in the house."}, "year": {"type": "integer", "description": "Year when the house was constructed."}, "location": {"type": "string", "description": "The location or city of the house."}}, "required": ["area", "rooms", "year", "location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Predict house price in San Francisco based on its area of 2500 square feet, number of rooms as 5 and year of construction is 1990.<|im_end|>
+<|im_start|>assistant

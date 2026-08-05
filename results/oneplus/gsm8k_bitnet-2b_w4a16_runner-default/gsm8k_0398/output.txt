@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark has $50 in his bank account. He earns $10 per day at his work. If he wants to buy a bike that costs $300, how many days does Mark have to save his money?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many days it will take for Mark to save enough money to buy the bike. We can set up an equation where the total amount of money Mark has after saving for \(d\) days is equal to the cost of the bike.
+
+Mark's initial amount of money is $50. Each day, he earns $10. So, after \(d\) days, he will have:
+\[ 50 + 10d \]
+
+We need this amount to be at least $300 (since that's the cost of the bike):
+\[ 50 + 10d \geq 300 \

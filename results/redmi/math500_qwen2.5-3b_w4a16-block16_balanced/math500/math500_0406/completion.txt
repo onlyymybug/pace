@@ -1,0 +1,3 @@
+To determine the number of ways to assign 3 people to 5 different offices such that no one shares an office, we need to consider the permutations of of the 3 people among the 5 offices. Here's the step-by-step reasoning:
+
+1. **Choose 3 offices out of 5 for the 3 people**: The number of ways to choose 3 offices out of 5 is given by the combination formula \( \binom{5}{3} \), but since we are assigning specific people to specific offices, we need to consider permutations. The number of ways to choose 3 offices out of 5 is

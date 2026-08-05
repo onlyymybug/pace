@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The data in the table below shows the percent of bus riders in a survey of Central H.S. students; 300 males and 300 females in each grade were surveyed. For which grade is the number of its male bus riders closest to $135\%$ of the number of its female bus riders? \begin{tabular}{|l|c|c|}\hline
+Grade & Males & Females \\ \hline
+$9^{\mathrm{th}}$ grade & $41.1\%$ & $39.4\%$ \\ \hline
+$10^{\mathrm{th}}$ grade & $34.4\%$ & $33.1\%$ \\ \hline
+$11^{\mathrm{th}}$ grade & $20.6\%$ & $13.8\%$ \\ \hline
+$12^{\mathrm{th}}$ grade & $11.6\%$ & $8.6\%$ \\ \hline
+\end{tabular} To determine which grade has the number of male bus riders closest to \(135\%\) of the number of female bus riders, we need to calculate the number of male and female bus riders for each grade and then compare the ratio of the number of male bus riders to the number of female bus riders to \(135\%\).
+
+Let's denote the total number of students surveyed in each grade as \(N\). Since 300 males and 300 females were surveyed in each grade, the total number of students surveyed in each grade is \(N = 300 + 300 =

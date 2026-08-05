@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Chris is way behind on his math homework. He has 100 math problems to complete in total. He completes 12 problems on Monday night. On Tuesday, he completes 3 times as many problems as he did on Monday. On Wednesday, he completes one-quarter of the remaining math problems. How many math problems does he have left to complete on Thursday? Step 1: Calculate total problems completed on Monday and Tuesday.
+Total Monday: 12
+Total Tuesday: 12 * 3 = 36
+Total completed: 12 + 36 = 48
+
+Step 2: Calculate remaining problems after Monday and Tuesday.
+Remaining: 100 - 48 = 52
+
+Step 3: Calculate problems completed on Wednesday.
+Wednesday: 1/4 * Remaining = 1/4 * 52 = 13
+
+Step 4: Calculate remaining problems after Wednesday.
+Remaining: 52 - 13 =

@@ -1,0 +1,5 @@
+To solve the problem, we need to determine for which primes \( p \) the congruence \( 8x \equiv 1 \pmod{p} \) has no solutions. This congruence has no solutions if and only if the greatest common divisor (gcd) of of 8 and \( p \) is greater than 1. This is because the congruence \( ax \equiv b \pmod{p} \) has a solution if and only if \(\gcd(a, p) = 1\).
+
+Given \( a = 8 \) and \( b = 1 \), the congruence \( 8x \equiv 1 \pmod{p} \) has no solutions if and only if \(\gcd(8, p) > 1\). This means \( p \) must be a prime divisor of of 8. The prime factorization of of 8 is \( 8 = 2^3 \), so the only prime divisor of of 8 is 2.
+
+Thus, the only prime \( p \) for which the congruence \( 8x \equiv 1 \pmod{p} \) has no solutions is \( p = 2

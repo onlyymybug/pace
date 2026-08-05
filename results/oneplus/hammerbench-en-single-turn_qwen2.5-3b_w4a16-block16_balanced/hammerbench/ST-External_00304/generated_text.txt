@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"VideoPlayback.OnlineVideos.shareOnlineVideo","description":"Share a video to other media","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Video Name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"Health.MedicalServices.bookDoctorAppointment","description":"Schedule a appointment with a designated doctor for the user","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"appointment_time":{"type":"string","description":"Specific time of appointment '"}},"required":["doctor_name","appointment_time"]}}
+{"name":"Navigation.TaxiCarRental.shareTaxiOrder","description":"Share route","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"destination"},"media":{"type":"string","description":"Choose Socials To Share Single Post"}},"required":["time","destination","media"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Ming! At 2:30 pm on March 10th, our school has a lecture on environmental protection at the Lecture Hall on the third floor of the library. Remember to attend on time, we can also discuss how to practice environmental protection in daily life. Looking forward to meeting you!
+query:I would like to make an appointment with Dr. Li. The time is mentioned in the QQ message sent to me by Xiao Ming. Can you arrange it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.bookDoctorAppointment","parameters":{"doctor_name":"Dr. Li","appointment_time":"14:30"}}<|im_end|>

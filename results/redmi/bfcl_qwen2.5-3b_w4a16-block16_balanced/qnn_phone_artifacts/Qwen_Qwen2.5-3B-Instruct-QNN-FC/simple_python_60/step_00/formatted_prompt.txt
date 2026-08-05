@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "mutation_type.find", "description": "Finds the type of a genetic mutation based on its SNP (Single Nucleotide Polymorphism) ID. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"snp_id": {"type": "string", "description": "The ID of the Single Nucleotide Polymorphism (SNP) mutation."}, "species": {"type": "string", "description": "Species in which the SNP occurs, default is 'Homo sapiens' (Humans)."}}, "required": ["snp_id"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the type of gene mutation based on SNP (Single Nucleotide Polymorphism) ID rs6034464.<|im_end|>
+<|im_start|>assistant

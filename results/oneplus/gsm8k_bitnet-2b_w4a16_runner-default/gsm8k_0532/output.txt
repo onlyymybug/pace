@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: 48 people are riding a bus. On the first stop, 8 passengers get off, and 5 times as many people as the number who got off from the bus get into the bus. On the second stop 21, passengers get off and 3 times fewer passengers get on. How many passengers are riding the bus after the second stop?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the number of passengers who get on the bus after the first stop:
+
+- Initially, there are 48 passengers.
+- 8 passengers get off, so there are 48 - 8 = 40 passengers left.
+- 5 times as many people as the number who got off get on, so 5 * 8 = 40 passengers get on.
+- Now there are 40 + 40 = 80 passengers on the bus.
+
+Next, calculate the number of passengers who get on the bus after the second stop:
+
+- Initially, there are 80 passengers.
+- 21 passengers get off, so there

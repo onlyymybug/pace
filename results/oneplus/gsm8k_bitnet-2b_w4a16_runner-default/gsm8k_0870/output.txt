@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: An electronics seller bought 5 phones for $700 each and gives the seller $4000 in dollar bills. How much will the seller give back in change?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much the seller will give back in change, we need to calculate the total cost of the phones and then subtract that from the amount the seller paid.
+
+First, calculate the total cost of the phones:
+5 phones * $700 per phone = $3500
+
+Now, subtract the total cost from the amount paid:
+$4000 - $3500 = $500
+
+The seller will give back $500 in change. The answer is 500.<|eot_id|>

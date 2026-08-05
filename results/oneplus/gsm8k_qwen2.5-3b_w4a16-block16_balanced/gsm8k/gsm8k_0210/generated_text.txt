@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Twenty dozen cups cost $1200 less than the total cost of half a dozen plates sold at $6000 each. Calculate the total cost of buying each cup. To solve this problem, we need to find the cost of of one cup. 
+
+First, calculate the total cost of for half a dozen plates:
+Half a dozen plates cost $6000, so one dozen plates costs $6000 / 2 = $3000.
+
+Next, calculate the total cost of for twenty dozen cups:
+Let x be the cost of of one cup. Then, twenty dozen cups cost 20x.
+
+According to the problem, twenty dozen cups cost $120 sharp less than half a dozen plates:
+20x = 3000 - 12

@@ -1,0 +1,3 @@
+To solve the problem, we need to determine the probabilities for each face of of \( F \) and its opposite face, and then use these probabilities to find the probability of obtaining a sum of 7 when two such dice are rolled.
+
+Let's denote the probability of of obtaining face \( F \) as \( P(F) = \frac{m}{n} \). Since the probability of obtaining the face opposite face \( F \) is less than \( \frac{1}{6} \), the probability of obtaining the face opposite face \( F \) is \( \frac{n-m}{n} \). The probabilities for

@@ -1,0 +1,10 @@
+To determine the degree of of the polynomial \( p(x) \), we start by examining the given expression:
+
+\[
+p(x) = \frac{(x - b)(x - c)}{(a - b)(a - c)} + \frac{(x - a)(x - c)}{(b - a)(b - c)} + \frac{(x - a)(x - b)}{(c - a)(c - b)}
+\]
+
+First, let's simplify the terms in the sum. Consider the general form of of each term in the sum:
+
+\[
+\frac{(x - b)(x - c)}

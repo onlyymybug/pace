@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.searchDoctors","description":"Search doctors by department, region, and more","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"location":{"type":"string","description":"Area"}},"required":["hospital_name","department","location"]}}
+{"name":"Health.Fitness.searchFitnessCoaches","description":"Search for the right fitness trainer by criteria","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords such as name, area of expertise, etc."}},"required":["keyword"]}}
+{"name":"SocialCommunication.SocialMedia.searchMediumFriend","description":"Search for friends based on keywords in specific media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"keyword":{"type":"string","description":"Search for a friend's keyword, required"}},"required":["medium_name","keyword"]}}
+{"name":"ConvenientLiving.AutoLife.findCarNearbyDealers","description":"Find a car dealership near you.","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Health.MedicalServices.rateDoctor","description":"Evaluate visiting physicians","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"department":{"type":"string","description":"Department"},"content":{"type":"string","description":"Review Content"},"doctor_name":{"type":"string","description":"Doctor Name"}},"required":["hospital_name","department","content","doctor_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The meeting is scheduled for next Wednesday at 10am in the conference room on the first floor of the Oriental Pearl Tower, 100 Nanjing East Road, Huangpu District, Shanghai. Be sure to be on time to discuss specifics regarding the launch of a new project.
+query:I want to find a doctor in the gastroenterology department of East China Hospital at the place mentioned in the notebook, can you help me find it?<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.searchDoctors","parameters":{"hospital_name":"East China Hospital","department":"Gastroenterology","location":"100 Nanjing East Road, Huangpu District, Shanghai"}}<|im_end|>

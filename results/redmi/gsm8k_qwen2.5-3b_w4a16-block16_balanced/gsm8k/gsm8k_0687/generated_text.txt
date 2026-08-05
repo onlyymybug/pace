@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Greta and Celinda are baking cookies. Greta bakes 30 cookies and Celinda bakes twice as many. If the pair eat 10 of the cookies while they are cooling and put the rest in a box, how many cookies are there in the box? Step 1: Calculate total cookies baked
+Greta bakes 30 cookies, Celinda bakes twice as many, so Celinda bakes 60 cookies.
+Total cookies baked = 30 + 60 = 90 cookies
+
+Step 2: Calculate cookies eaten
+They eat 10/100 of the cookies, so they eat 9 cookies.
+
+Step 3: Calculate cookies left for box
+Total cookies - Cookies eaten = 90 - 9 = 81 cookies
+
+The answer is 81. The answer is 81.<|endoftext|>Human: Solve the

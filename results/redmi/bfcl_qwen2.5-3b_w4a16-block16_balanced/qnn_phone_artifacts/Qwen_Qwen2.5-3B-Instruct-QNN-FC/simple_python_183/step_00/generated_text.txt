@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "lawsuit_search", "description": "Retrieve all lawsuits involving a particular entity from specified jurisdiction. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"entity": {"type": "string", "description": "The entity involved in lawsuits."}, "county": {"type": "string", "description": "The jurisdiction for the lawsuit search for example Alameda county."}, "state": {"type": "string", "description": "The state for the lawsuit search. Default is California."}}, "required": ["entity", "county"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Search for current lawsuits filed against Apple in Santa Clara County.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "lawsuit_search", "arguments": {"entity": "Apple", "county": "Santa Clara"}}
+</tool_call><|im_end|>

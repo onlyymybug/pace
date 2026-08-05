@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Memo.setNotesReminders","description":"Set a reminder at a certain time","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Memo Title"},"time":{"type":"string","description":"Reminder time"},"category":{"type":"string","description":"Classify"}},"required":["title","time","category"]}}
+{"name":"Health.HealthManagement.createHealthReminder","description":"Create health reminders by reminder content and reminder time","parameters":{"type":"object","properties":{"content":{"type":"string","description":"Alert Content"},"time":{"type":"string","description":"Reminder time"}},"required":["content","time"]}}
+{"name":"Health.Fitness.setExerciseReminder","description":"Set fitness reminders based on time and frequency of reminders, etc.","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Reminder time"},"frequency":{"type":"string","description":"Reminder Repetition"}},"required":["time","frequency"]}}
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"Education.OnlineClasses.scheduleCourses","description":"Set course start reminder","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","teacher_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 8:30 pm, go to Li Lei's birthday party at the City Garden Hotel, remember to bring gifts.
+query:On weekday evenings, remind me to do yoga to relax, and the time is as mentioned in the notepad.<|im_end|>
+<|im_start|>assistant

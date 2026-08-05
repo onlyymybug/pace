@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.shareMessage","description":"Share a message with a specific person or group","parameters":{"type":"object","properties":{"share_recipient":{"type":"string","description":"Recipient or group"},"share_content":{"type":"string","description":"Text to share"},"share_source":{"type":"string","description":"Share source or group"},"time":{"type":"string","description":"Release Date"}},"required":["share_recipient","share_content","share_source","time"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"Navigation.TrafficViolations.shareViolationDetail","description":"Share Designated Violation Information","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"},"media":{"type":"string","description":"Ways to share"},"name":{"type":"string","description":"Shared content recipients"}},"required":["plate_number","city","time","media","name"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Li, how are you? I just got back from Cairo, and the pyramids there are spectacular, so you must have a chance to see them for yourself. I also took a cruise on the Nile, the night view is very beautiful and it feels very good. The old town of Cairo is also quite flavorful, there are many historic buildings, if you are interested in history and culture, you will definitely like it. Next time we go on holiday, let's go to Cairo together!
+query:Xiao Li sent me a message through QQ to the place mentioned in Alexandria, can you help me find a route to avoid traffic congestion?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","parameters":{"origin":"XiaoLi's location","destination":"Alexandria"}}<|im_end|>

@@ -1,0 +1,15 @@
+To solve the inequality \(\frac{|x^2 - 81|}{x^2 - 36x} < 0\), we need to analyze the expression step by step.
+
+First, let's simplify the denominator:
+\[x^2 - 36x = x(x - 36).\]
+So the inequality becomes:
+\[\frac{|x^2 - 81|}{x(x - 36)} < 0.\]
+
+Next, we need to factor the numerator \(|x^2 - 81|\):
+\[|x^2 - 81| = |(x-9)(x+9)|.\]
+Thus, the inequality is:
+\[\frac{|(x-9)(x+9)|}{x(x-36)} < 0.\]
+
+We need to determine where this expression is negative. The expression \(\frac{|(x-9)(x+9)|}{x(x-36)}\) will be negative if the numerator and the denominator have opposite signs. We need to find the critical points where the expression is zero or undefined, which are \(x = -9, 9, 0, 36\).
+
+We will test the sign

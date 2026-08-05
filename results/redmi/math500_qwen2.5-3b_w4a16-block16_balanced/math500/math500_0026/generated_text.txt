@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The function $f$ satisfies the functional equation
+\[f(x) + f(y) = f(x + y) - xy - 1\]for all real numbers $x$ and $y.$  If $f(1) = 1,$ then find all integers $n$ such that $f(n) = n.$  Enter all such integers, separated by commas. To solve the functional equation \( f(x) + f(y) = f(x + y) - xy - 1 \) with the initial condition \( f(1) = 1 \), we start by analyzing the equation with specific values for \( x \) and \( y \).
+
+First, let's set \( y = 0 \):
+\[
+f(x) + f(0) = f(x + 0) - x \cdot 0 - 1
+\]
+This simplifies to:
+\[
+f(x) + f(0) = f(x) - 1
+\]
+By subtracting

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Brandon's iPhone is four times as old as Ben's iPhone. Ben's iPhone is two times older than Suzy's iPhone. If Suzy’s iPhone is 1 year old, how old is Brandon’s iPhone?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the age of Suzy's iPhone as S, the age of Ben's iPhone as B, and the age of Brandon's iPhone as R.
+
+Given:
+- Suzy’s iPhone (S) is 1 year old.
+- Ben's iPhone (B) is two times older than Suzy's iPhone (S).
+- Brandon's iPhone (R) is four times as old as Ben's iPhone (B).
+
+First, we express Ben's iPhone in terms of Suzy's iPhone:
+B = 2 * S
+B = 2 * 1
+B = 2 years old
+
+Next, we

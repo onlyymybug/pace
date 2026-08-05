@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Robert is building a 15 foot long, 10 foot wide, rectangular wooden fence around his garden.  He needs 2 wood slats for every foot of fencing he builds.  How many wooden slats will he need? To solve this problem, we first calculate the perimeter of of of the rectangular fence, which is 2*(length+width). Then, we multiply this perimeter by 2 to get the total number of wooden slats needed, as Robert needs 2 slats per foot of of.
+
+Step 1: Calculate the perimeter of
+Perimeter = 2 * (length + width) = 2 * (15 + 10) = 2 * 25 = 50 feet
+
+Step 2: Calculate the number of wooden slats needed
+Total slats needed = Perimeter * 2 slats

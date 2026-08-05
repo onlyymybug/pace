@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The light on a lighthouse blinks 255 times in 5 minutes. How long will it take the light to blink 459 times?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the rate at which the light blinks. We know that the light blinks 255 times in 5 minutes. To find out how long it takes for one blink, we divide the total number of blinks by the number of minutes:
+
+255 blinks / 5 minutes = 51 blinks per minute
+
+Now, we need to find out how long it takes for the light to blink 459 times at this rate. We divide the total number of blinks by the rate of blinking:
+
+459 blinks / 51 blinks per minute = 9 minutes
+
+The answer is 

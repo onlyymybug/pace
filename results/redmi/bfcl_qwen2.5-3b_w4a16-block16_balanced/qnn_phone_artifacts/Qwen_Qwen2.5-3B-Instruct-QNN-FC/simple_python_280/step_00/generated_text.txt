@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "find_instrument", "description": "Search for a musical instrument within specified budget and of specific type. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"budget": {"type": "integer", "description": "Your budget for the instrument."}, "type": {"type": "string", "description": "Type of the instrument"}, "make": {"type": "string", "description": "Maker of the instrument. Default to not use if not specified."}}, "required": ["budget", "type"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find an acoustic instrument within my budget of $1000.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "find_instrument", "arguments": {"budget": 1000, "type": "acoustic"}}
+</tool_call><|im_end|>

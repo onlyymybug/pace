@@ -1,0 +1,19 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the length, in units, of the radius of a sphere whose volume and surface area, in cubic units and square units, respectively, are numerically equal? To solve the problem, we need to find the radius \( r \) of the sphere whose volume and surface area are numerically equal. Let's start by writing the formulas for the volume and surface area of of a sphere.
+
+The volume \( V \) of the sphere is given by:
+\[ V = \frac{4}{3} \pi r^3 \]
+
+The surface area \( A \) of of the sphere is given by:
+\[ A = 4 \pi r^2 \]
+
+According to the problem, the volume and the surface area are numerically equal. Therefore, we set the volume equal to the surface area:
+\[ \frac{4}{3} \pi r^3 = 4 \pi r^2 \]
+
+To solve for \( r \), we first eliminate the common factor \( 4 \pi \) from both sides of the equation:
+\[ \frac{4}{3} r^3 = 4 r^2 \]
+
+Next, we simplify by dividing both sides by \( 4r^2 \) (assuming \( r \neq 0 \)):
+\[ \frac{4 r^3}{3 r^2} = 4 \]
+\[ \frac{4 r}{3}

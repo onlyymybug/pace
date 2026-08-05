@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every 2 miles a car drives the tires rotate 725 times.  Jeremy drives 400 miles a month.  If each tire can undergo 10,440,000 rotations how many years before the tire needs to be replaced?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many rotations each tire undergoes per month and then calculate how many rotations it will undergo in one year. Finally, we will divide the total number of rotations by the number of rotations per tire to find out how many years the tire will last.
+
+1. Calculate the number of rotations per tire per month:
+   - Every 2 miles, the tires rotate 725 times.
+   - Jeremy drives 400 miles a month.
+   - Therefore, the number of rotations per tire per month is:
+     \[
+     \frac{400 \text{ miles}}{2 \text{ miles

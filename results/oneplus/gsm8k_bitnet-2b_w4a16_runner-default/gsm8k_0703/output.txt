@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Gissela, Gordy, and Gary are truck drivers.  Gissela has a truck large enough to haul 4,000 pounds of gravel. Gordy's truck can haul 800 pounds more than Gissela's truck.  And when Gary brings his truck and joins Gissela and Gordy, the three trucks combined can haul a total of 11,600 pounds of gravel. How many pounds of gravel can Gary's truck carry?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of gravel Gary's truck can carry as \( G \) pounds.
+
+Gordy's truck can carry \( G + 800 \) pounds of gravel.
+
+The total amount of gravel that Gissela, Gordy, and Gary can carry is given as 11,600 pounds.
+
+So, we can write the equation:
+
+\[ 4,000 + (G + 800) + G = 11,600 \]
+
+Simplifying the equation:
+
+\[ 4,000 + G + 800 + G = 11,600 \]
+\[ 4,800 + 2G = 

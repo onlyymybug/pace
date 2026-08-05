@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "random.normalvariate", "description": "Generates a random number from a normal distribution given the mean and standard deviation. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"mu": {"type": "integer", "description": "Mean of the normal distribution."}, "sigma": {"type": "integer", "description": "Standard deviation of the normal distribution."}}, "required": ["mu", "sigma"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Generate a random number from a normal distribution with mean 0 and standard deviation 1.<|im_end|>
+<|im_start|>assistant

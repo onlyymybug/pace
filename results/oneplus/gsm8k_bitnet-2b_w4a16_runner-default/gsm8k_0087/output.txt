@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Greg has an alarm set to ring three times a day as a reminder. When the alarm goes off, it continues to ring until Greg turns it off. The first time it went off today, it rang four times. The second time it went off, it rang for three times as long as the first time. The third time, it rang for half as long as the second time. How many times did the alarm ring in all?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the number of rings for each of the three times the alarm went off and then sum them up.
+
+1. The first time the alarm rang, it rang for 4 times.
+2. The second time, it rang for three times as long as the first time, which is \(4 \times 3 = 12\) times.
+3. The third time, it rang for half as long as the second time, which is \(\frac{12}{2} = 6\) times.
+
+Now, we add up the number of rings for all three times:
+\[4 + 

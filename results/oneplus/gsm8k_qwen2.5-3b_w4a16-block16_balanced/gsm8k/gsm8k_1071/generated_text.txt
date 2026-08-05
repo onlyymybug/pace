@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dennis uses 1 pound of butter for every dozen croissants that he makes.  He needs to make 6 dozen croissants.  The grocery store currently has a promotion for buy one pound of butter get one half off.  If the butter costs $4.00 a pound, how much will it cost him to purchase 6 pounds of butter? Step 1: Calculate total butter needed
+Total croissants needed: 6 dozen
+Bought 1 pound of butter for every dozen croissants
+Total butter needed: 6 * 1 = 6 pounds
+
+Step 2: Calculate total cost without discount
+Cost per pound: $4.00
+Total butter needed: 6 pounds
+Total cost without discount: 6 * 4 = $24.00
+
+Step 3: Apply discount
+For every pound bought, get one half off
+Total butter needed: 6 pounds
+Half off for every pound: 6 / 

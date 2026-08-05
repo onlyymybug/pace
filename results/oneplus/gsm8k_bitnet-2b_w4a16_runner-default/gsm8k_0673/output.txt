@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Christina records her mood every day on a calendar. Over the past thirty days of moods, she had twelve good days and eight bad days and the rest were neutral. Her first eight days were good, her second eight days were bad, and her third eight days were neutral. If the next three days were good, neutral, and good, how many good days were left in the month?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total number of days in the month. We know that Christina had eight good days, eight bad days, and eight neutral days for the first three weeks. This totals to 24 days (8 good + 8 bad + 8 neutral).
+
+Next, we account for the next three days, which were all good days. This adds 3 more good days to the month.
+
+Now, we add the good days from the first three weeks (24 days) to the good days from the next three days (3 days). This gives us a total of 27 good days.
+
+Since

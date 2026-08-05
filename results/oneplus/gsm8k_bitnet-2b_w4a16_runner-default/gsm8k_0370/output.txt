@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: 44 seniors need to receive awards.  Each senior receives a picture frame that costs $20.  Each picture frame needs to be etched with the logo for an additional 20% cost per frame.  2 of the seniors will also receive pins that are $5.  1/4 of the seniors are officers and they will need to receive cords that are $12 each.  How much will be spent on the senior gifts?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total cost for each type of gift and then sum these costs.
+
+1. **Cost of picture frames:**
+   - Each frame costs $20.
+   - There are 44 seniors, so the total cost for frames is \( 44 \times 20 = 880 \) dollars.
+
+2. **Etching cost per frame:**
+   - The etching cost is 20% of the frame cost.
+   - So, the etching cost per frame is \( 20\% \times 20 = 0.20 \times 20 = 4 \)

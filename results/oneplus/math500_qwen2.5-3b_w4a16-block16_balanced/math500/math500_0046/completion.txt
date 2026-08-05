@@ -1,0 +1,26 @@
+To solve the problem, we start by using the given information and the properties of of of a right triangle. Given that \(\sin A = 2 \cos A\) in the right triangle \(ABC\) with \(\angle B = 90^\circ\), we need to find \(\tan A\).
+
+First, recall the definitions of of the trigonometric functions in a right triangle:
+\[
+\sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{BC}{AB}
+\]
+\[
+\cos A = \frac{\text{adjacent}}{\text{hypotenuse}} = \frac{AC}{AB}
+\]
+
+Given \(\sin A = 2 \cos A\), we substitute the trigonometric definitions:
+\[
+\frac{BC}{AB} = 2 \cdot \frac{AC}{AB}
+\]
+
+Since \(AB\) is the common denominator, we can cancel it out:
+\[
+BC = 2AC
+\]
+
+In a right triangle, the Pythagorean theorem states:
+\[
+AB^2 = AC^2 + BC^2
+\]
+
+Substituting \(BC = 2AC\) into the Pythagorean

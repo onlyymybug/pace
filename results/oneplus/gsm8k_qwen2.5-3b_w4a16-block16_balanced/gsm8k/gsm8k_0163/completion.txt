@@ -1,0 +1,11 @@
+To solve this problem, we need to calculate the price increase over time and apply it to the original price.
+
+1. **Determine the number of price increases:**
+   - The price increases every 2 months.
+   - Total time period: 36 months.
+   - Number of increases = Total time / Interval between increases
+   - Number of increases = 36 / 2 = 18 increases
+
+2. **Calculate the multiplier for each increase:**
+   - Original price increase is 20%.
+   - Multiplier for each increase = 1 + (increase percentage / 100)

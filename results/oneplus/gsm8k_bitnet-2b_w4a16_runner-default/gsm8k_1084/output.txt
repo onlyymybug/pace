@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The bananas at the supermarket cost $0.80 each, or a bunch for $3.00.  Jenny buys 10 bunches that average 4 bananas per bunch. How much money, in dollars, did she save by buying the bananas in bunches instead of individually?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total cost of buying the bananas individually and then compare it to the cost of buying them in bunches.
+
+1. Calculate the total number of bananas Jenny buys:
+   - She buys 10 bunches.
+   - Each bunch contains 4 bananas.
+   - Total bananas = 10 bunches * 4 bananas/bunch = 40 bananas.
+
+2. Calculate the cost of buying 40 bananas individually:
+   - Each banana costs $0.80.
+   - Total cost for 40 bananas = 40 bananas * $0.80/banana = $32.00

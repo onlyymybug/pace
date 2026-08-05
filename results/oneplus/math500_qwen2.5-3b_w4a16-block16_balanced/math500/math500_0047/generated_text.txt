@@ -1,0 +1,12 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the smallest positive integer $n$ such that all the roots of $z^4 + z^2 + 1 = 0$ are $n^{\text{th}}$ roots of unity? To solve the problem, we need to find the smallest positive integer \( n \) such that all the roots of of the equation \( z^4 + z^2 + 1 = 0 \) are also \( n \)-th roots of of unity. Let's start by analyzing the given equation.
+
+First, we rewrite the equation:
+\[ z^4 + z^2 + 1 = 0. \]
+
+We can factorize the left-hand side by noting that \( z^4 + z^2 + 1 \) can be related to the roots of of unity. Recall that the \( n \)-th roots of of unity are the solutions to \( z^n = 1 \). Let's consider the polynomial \( z^4 + z^2 + 1 \) and its roots.
+
+To find the roots, we can use the fact that the roots of of unity satisfy \( z^n = 1 \). Let's test some small values of of \( n \) to see if the roots of of unity satisfy \( z^4 + z^2 + 1 = 0 \).
+
+First, let's check \( n = 5 \). The 5th roots of of unity are \( z = e^{2

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Nathan has a bouncy ball that bounces to 2/3rds of its starting height with each bounce. If he drops it from the third-floor balcony in the mall, where each story is 24 feet high, how high does the ball go on its second bounce?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the height of the ball on its second bounce, we need to calculate the height after the first bounce and then again after the second bounce. Since the ball bounces to 2/3rds of its height with each bounce, we can use the formula for the height after the nth bounce, which is given by:
+
+Height after nth bounce = Initial height × (2/3)^n
+
+Here, the initial height is 24 feet, and we want to find the height after the second bounce (n = 2).
+
+Height after second bounce = 24 feet × (2/3)^2
+
+First,

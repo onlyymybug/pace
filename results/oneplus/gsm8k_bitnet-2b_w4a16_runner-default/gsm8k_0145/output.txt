@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kim has started his own housekeeping business and is calculating how much profit he will make from his clients. He already has 3 clients, but is talking to another 5 potential clients and feels confident enough to include them in his calculations. Each client’s home will need 2 bottles of bleach and a pack of cloths to clean. Bottles of bleach will cost $2 each and packs of cloths will cost $5 each. These are his only expenses. He calculates that his total income each week will be $92. Profit is the difference between total income and total expenses, so how much profit, in dollars, will Lucas make each week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit Lucas will make each week, we first need to calculate the total expenses for cleaning all his clients' homes.
+
+1. Calculate the total number of bottles of bleach needed:
+   - Each client needs 2 bottles of bleach.
+   - He has 3 clients already and is talking to 5 more.
+   - Total clients = 3 + 5 = 8 clients.
+   - Total bottles of bleach needed = 8 clients * 2 bottles/client = 16 bottles.
+
+2. Calculate the total cost of bleach:
+   - Each bottle of bleach costs $2.
+   - Total cost of bleach =

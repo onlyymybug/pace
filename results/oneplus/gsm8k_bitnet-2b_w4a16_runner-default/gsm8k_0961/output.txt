@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A pirate crew is digging for buried treasure on the island marked X on a map. They dug ten holes the first day, thirteen holes the second day, and eight holes the third day. They stopped digging early on the third day to fill in two holes the pirates kept falling in. On the fourth day of digging, they unearthed a treasure chest full of gold, jewels, and an aged hat. The island had four times as many holes by then as it did at the end of the first day. How many holes did the pirates dig on the fourth day before finding the treasure?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's first determine the total number of holes dug by the pirates by the end of the third day. They dug 10 holes on the first day, 13 on the second, and 8 on the third, but they stopped digging two holes on the third day. So, the total number of holes dug by the end of the third day is:
+
+10 (first day) + 13 (second day) - 2 (stopped digging) + 8 (third day) = 25 holes
+
+The problem states that by the end of the fourth day, the island had four times as many holes

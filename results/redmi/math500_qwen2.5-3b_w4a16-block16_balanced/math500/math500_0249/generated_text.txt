@@ -1,0 +1,5 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Given
+\[\mathbf{A} = \begin{pmatrix} 3 & 7 \\ -1 & -2 \end{pmatrix},\]compute $\mathbf{A}^{27} + \mathbf{A}^{31} + \mathbf{A}^{40}.$
+To solve for \(\mathbf{A}^{27} + \mathbf{A}^{31} + \mathbf{A}^{40}\) where \(\mathbf{A} = \begin{pmatrix} 3 & 7 \\ -1 & -2 \end{pmatrix}\), we first need to find the eigenvalues and eigenvectors of of the matrix \(\mathbf{A}\). The eigenvalues \(\lambda\) are found by solving the characteristic equation \(\det(\mathbf{A} - \lambda \mathbf{I}) =

@@ -1,0 +1,11 @@
+To solve the problem, we need to analyze the polynomial \(P(x) = 2x^3 - 2ax^2 + (a^2 - 81)x - c\) and its roots, which are all positive integers. Let's denote the roots by \(r_1, r_2, r_3\). By Vieta's formulas, we know:
+
+1. \(r_1 + r_2 + r_3 = a\)
+2. \(r_1r_2 + r_2r_3 + r_3r_1 = \frac{a^2 - 81}{2}\)
+3. \(r_1r_2r_3 = \frac{c}{2}\)
+
+From the second Vieta's formula, we have:
+\[r_1r_2 + r_2r_3 + r_3r_1 = \frac{a^2 - 81}{2}\]
+Multiplying both sides by 2, we get:
+\[2(r_1r_2 + r_2r_3 + r_3r_1) = a^2 - 81\]
+\[2r_1r_2 +

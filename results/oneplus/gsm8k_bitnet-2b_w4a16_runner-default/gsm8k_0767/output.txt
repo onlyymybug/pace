@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marissa bought a ball at the store for $20. If she had $80 on her and used the rest of the money to buy her brother Jimmy, candy bars sold at $5 each, how many candy bars did Marissa buy for Jimmy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many candy bars Marissa bought for Jimmy, we first need to determine how much money she spent on Jimmy. Marissa started with $80 and spent $20 on the ball, so the remaining money is:
+
+$80 - $20 = $60
+
+Each candy bar costs $5, so the number of candy bars Marissa bought for Jimmy is:
+
+$60 / $5 = 12
+
+The answer is 12 candy bars.<|eot_id|>

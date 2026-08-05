@@ -1,0 +1,7 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Suzie loves to chew fruit-flavored gum. She bought four packs of gum the last time she was at the store. She got two packs of her favorite flavor, strawberry. She paid $2 for a pack of grape gum that she also liked. She wanted to try something new, so she paid half as much for a small pack of green apple gum. If she paid $7 in all, how many dollars did each pack of strawberry gum cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the cost of each pack of strawberry gum as \( x \) dollars. Since Suzie bought two packs of strawberry gum, the total cost for strawberry gum is \( 2x \) dollars. The cost of each pack of grape gum is $2, so for two packs, it is \( 2 \times 2 = 4 \) dollars. The cost of each pack of green apple gum is half the cost of a pack of strawberry gum, so it is \( \frac{x}{2} \) dollars. Since she bought one pack of green apple gum, the total cost for green apple gum

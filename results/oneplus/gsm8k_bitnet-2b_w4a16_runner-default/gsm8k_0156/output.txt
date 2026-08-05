@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bill bakes 300 rolls, 120 chocolate croissants, and 60 baguettes every day. Each roll is 4 inches long, each croissant is 6 inches long, and each baguette is two feet long. If Bill puts all the baked goods end to end, how long will they be in feet?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total length of all the baked goods, we need to calculate the length of each type of baked good and then sum them up.
+
+1. Calculate the total length of the rolls:
+   - Each roll is 4 inches long.
+   - Bill bakes 300 rolls.
+   - Total length of rolls = 300 rolls * 4 inches/roll = 1200 inches.
+
+2. Calculate the total length of the croissants:
+   - Each croissant is 6 inches long.
+   - Bill bakes 120 croissants.
+   - Total length of croissants = 120 croissants

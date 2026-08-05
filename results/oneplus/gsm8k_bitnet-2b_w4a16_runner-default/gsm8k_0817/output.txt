@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John goes to the market and buys 3 goats for $500 each and 2 cows for $1500 each.  How much money did he spend?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money John spent, we need to calculate the total cost of the goats and the cows separately and then add those amounts together.
+
+First, calculate the total cost of the goats:
+3 goats * $500 each = $1500
+
+Next, calculate the total cost of the cows:
+2 cows * $1500 each = $3000
+
+Now, add the total cost of the goats and the cows to find the total amount spent:
+$1500 (goats) + $3000 (cows) = $4500
+
+The answer is 4500.<|eot_id|>

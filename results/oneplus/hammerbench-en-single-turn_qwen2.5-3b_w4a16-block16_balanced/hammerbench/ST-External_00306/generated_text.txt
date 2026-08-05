@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.cancelDoctorAppointment","description":"Cancelling an appointment with a doctor","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"appointment_time":{"type":"string","description":"Specific time of appointment '"}},"required":["doctor_name","appointment_time"]}}
+{"name":"SocialCommunication.Community.unlikeCommunityPost","description":"Unlike a specific post","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to unlike the post"},"post_name":{"type":"string","description":"Title of the post to unlike"}},"required":["community_name","post_name"]}}
+{"name":"Health.Fitness.cancelBookFitnessClass","description":"Cancel scheduled fitness class","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Course Title"}},"required":["name"]}}
+{"name":"Navigation.TrainTickets.cancelTrainTicket","description":"Cancelling a booked train ticket","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Wagon Number"},"name":{"type":"string","description":"Rider's name"},"time":{"type":"string","description":"To cancel a reservation for a certain time"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"}},"required":["train_number","name","time","departure_station","destination_station"]}}
+{"name":"Navigation.TaxiCarRental.cancelCarRentalOrder","description":"Cancel the rental (all pending reservations are canceled by default)","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Release Date"}},"required":["time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Dr. Wang! I am your old patient Li Hua. I have recently felt unwell, especially the pain in my waist has increased. I would like to ask you to help me take a look. Remember that you mentioned earlier that there are some special treatments for this symptom. I don't know if you are available this week, I would like to reserve a number and hope to get back to you as soon as possible. Best regards, Li Hua
+query:I would like to cancel my appointment with the doctor mentioned at 9am on March 10th and in the text message.<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.cancelDoctorAppointment","parameters":{"doctor_name":"EK","appointment_time":"9am on March 10th"}}<|im_end|>

@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Juan asked his neighbor, Herb, how much his house was worth. Herb answered that he paid $76,000 for the house. If Juan's house is 30% less expensive than Herb's, calculate the value of the two houses combined.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the value of Juan's house, we first need to calculate 30% of Herb's house value and then subtract that from Herb's value.
+
+First, calculate 30% of $76,000:
+30% of $76,000 = 0.30 * $76,000 = $22,800
+
+Now, subtract this amount from Herb's house value to find Juan's house value:
+Juan's house value = Herb's house value - 30% of Herb's house value
+Juan's house value = $76,000 - $22,800
+Juan's house value = $53,200
+
+Now

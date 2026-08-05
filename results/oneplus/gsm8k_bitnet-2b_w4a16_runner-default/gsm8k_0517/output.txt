@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On average Joe throws 25 punches per minute.  A fight lasts 5 rounds of 3 minutes.  How many punches did he throw?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of punches Joe threw during the entire fight. 
+
+First, we determine the total time of the fight. Since there are 3 minutes per round and the fight consists of 5 rounds, the total time is:
+\[ 3 \text{ minutes/round} \times 5 \text{ rounds} = 15 \text{ minutes} \]
+
+Next, we calculate the total number of punches Joe threw by multiplying the number of punches per minute by the total time of the fight:
+\[ 25 \text{ punches/minute} \times 15 \text{

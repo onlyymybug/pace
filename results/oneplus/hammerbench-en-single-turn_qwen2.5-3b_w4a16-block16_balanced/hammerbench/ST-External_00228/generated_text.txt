@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","description":"Rate courier service","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"rating":{"type":"string","description":"Rating, 1-5 points"},"comment":{"type":"string","description":"Scoring contents"}},"required":["express_id","signing_date","rating","comment"]}}
+{"name":"OnlineShopping.SecondhandTrading.evaluateSecondhandSaleOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"ConvenientLiving.FoodDelivery.rateRestaurant","description":"Rate selected restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"},"rating":{"type":"integer","description":"Rating, 1 to 5"},"comment":{"type":"string","description":"Review Content"}},"required":["restaurant_name","rating","comment"]}}
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"evaluation":{"type":"string","description":"Content of the review"}},"required":["goods","evaluation"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 3 pm today, remember to go to the old Beijing fried sauce noodle shop, the address is 123 Wangfujing Street, Dongcheng District, and meet with Xiao Li to discuss the progress of the project. Don't forget to bring your project report and notebook.
+query:I think the place mentioned in the notepad tastes average, but the price is fair, give it a 3 star.<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","parameters":{"goods":"old Beijing fried sauce noodle shop","evaluation":"give it a 3 star"}}<|im_end|>

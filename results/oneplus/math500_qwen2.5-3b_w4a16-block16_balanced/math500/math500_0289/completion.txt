@@ -1,0 +1,5 @@
+To find the distance between the two parallel lines, we start by confirming that the direction vectors of are parallel. The direction vectors are \(\begin{pmatrix} 2 \\ -9 \\ -2 \end{pmatrix}\) and \(\begin{pmatrix} 4 \\ -18 \\ -4 \end{pmatrix}\). Notice that \(\begin{pmatrix} 4 \\ -18 \\ -4 \end{pmatrix} = 2 \begin{pmatrix} 2 \\ -9 \\ -2 \end{pmatrix}\), confirming that the lines are parallel.
+
+Next, we need to find the distance between the lines. The distance between two parallel lines can be found using the formula involving the distance between a point on one line and the other line. Let's choose the point \(\begin{pmatrix} 3 \\ -10 \\ 1 \end{pmatrix}\) from the first line and the point \(\begin{pmatrix} -5 \\ -3 \\ 6 \end{pmatrix}\) from the second line. The vector connecting these points is:
+\[
+\begin{pmatrix} -5 - 3 \\ -3 + 10 \\ 

@@ -1,0 +1,24 @@
+To solve the problem \(58_9 - 18_9\) and express the answer in base \(9\), we will follow these steps:
+
+1. Convert the base \(9\) numbers \(58_9\) and \(18_9\) to base \(10\).
+2. Perform the subtraction in base \(10\).
+3. Convert the result back to base \(9\).
+
+### Step 1: Convert \(58_9\) to base \(10\)
+
+The number \(58_9\) can be expressed in base \(10\) as:
+\[
+58_9 = 5 \cdot 9^1 + 8 \cdot 9^0
+\]
+Calculating the powers of of:
+\[
+9^1 = 9 \quad \text{and} \quad 9^0 = 1
+\]
+Thus,
+\[
+58_9 = 5 \cdot 9 + 8 \cdot 1 = 45 + 8 = 53_{10}
+\]
+
+### Step 2: Convert \(18_9\) to base \(10\)
+
+The number \(18_9\) can be expressed in base

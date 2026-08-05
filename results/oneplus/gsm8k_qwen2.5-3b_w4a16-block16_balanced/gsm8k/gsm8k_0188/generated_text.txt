@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mandy owes Benedict $100. They agreed to have monthly interest of 2%. If Mandy was able to pay it after 3 months, how much should she give to Benedict? To solve this problem, we need to calculate the total amount Mandy owes after 3 months with monthly interest of 2%.
+
+1. **Initial Amount Owed:**
+   Mandy initially owes Benedict $100.
+
+2. **Monthly Interest Calculation:**
+   Monthly interest rate is 2%, which can be expressed as a decimal: \( 0.02 \).
+
+3. **Total Interest After 3 Months:**
+   To find the total interest accumulated over 3 months, we multiply the initial amount by the monthly interest rate raised to the power of the number of months:
+   \[
+   \text{

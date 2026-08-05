@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHousingMortgage","description":"Calculate Home Purchase Loan Amount","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"house prices "},"down_payment":{"type":"integer","description":"First installment payment"},"interest_rate":{"type":"integer","description":"Interest Rate"},"loan_term":{"type":"integer","description":"Mortgage term"}},"required":["house_price","down_payment","interest_rate","loan_term"]}}
+{"name":"ConvenientLiving.AutoLife.calculateCarLoan","description":"The loan program is calculated based on information such as the purchase price of the car.","parameters":{"type":"object","properties":{"car_price":{"type":"float","description":"Car price, required"},"down_payment":{"type":"float","description":"First installment payment"}},"required":["car_price","down_payment"]}}
+{"name":"ConvenientLiving.UtilityPayments.getDueDate","description":"Deadline for payment of fees for the acquisition of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.calculateHouseTax","description":"Calculate the property tax amount of the property","parameters":{"type":"object","properties":{"house_price":{"type":"integer","description":"Property value"},"tax_rate":{"type":"integer","description":"Local Property Tax Rate"}},"required":["house_price","tax_rate"]}}
+{"name":"Navigation.TrafficViolations.payViolations","description":"Pay fines for violations online","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"}},"required":["plate_number","city","time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear, the Mercedes-Benz car you are looking for, we have it in stock here. The price is 380,000 yuan. Now you have the opportunity to enjoy our limited-time discounts and giveaways. Would you consider it? Feel free to contact me with any questions.
+query:What is the price of the car mentioned in the message Xiao Li sent to me through WeChat? I want to calculate the loan plan with a loan term of 5 years if the down payment is 80,000.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mrs. Sherman made a dozen bread rolls for breakfast. After feeding her 6 children with one each, she broke each of the remaining rolls into 8 pieces and fed them to the chickens. How many pieces of rolls did she feed to the chickens? Step 1: Calculate total rolls made
+Total rolls made = 12
+
+Step 2: Subtract rolls fed to children
+Remaining rolls = Total rolls - Rolls fed to children
+Remaining rolls = 12 - 6
+
+Step 3: Calculate pieces fed to chickens
+Pieces fed to chickens = Remaining rolls * Pieces per roll
+Pieces per roll = 8
+
+Step 4: Perform calculations
+Remaining rolls = 12 - 6 = 6
+Pieces fed to chickens = 6 * 8 = 48
+
+The answer is 48.<|endoftext|>Human: Solve the grade-school math problem

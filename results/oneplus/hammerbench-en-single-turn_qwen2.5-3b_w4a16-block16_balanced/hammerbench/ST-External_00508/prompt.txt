@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Payment.transferPayMoney","description":"Transfer money to someone else","parameters":{"type":"object","properties":{"receiver":{"type":"string","description":"Beneficiary name or account number"},"amount":{"type":"float","description":"Transfer amount, unit (yuan)"},"message":{"type":"string","description":"Transfer Note"}},"required":["receiver","amount","message"]}}
+{"name":"UtilityTools.Search.shareWebPage","description":"Share the current page to other platforms/media","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Media or platform to share"},"person":{"type":"string","description":"Specify who to share with"}},"required":["media","person"]}}
+{"name":"SocialCommunication.Calling.transferPhoneCall","description":"Transfer the current call to another contact","parameters":{"type":"object","properties":{"transfer_contact_name":{"type":"string","description":"Name of the contact to transfer to"}},"required":["transfer_contact_name"]}}
+{"name":"VideoPlayback.ShortVideos.shareShortVideo","description":"Share a short video to other media platforms","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"media":{"type":"string","description":"Share video to: WeChat, etc."}},"required":["name","media"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Mr. Zhang, hello! My name is Li Hua. Regarding the project we discussed last time, I have prepared a detailed plan. I will be in your office tomorrow morning at 10 am. I don't know if it is convenient for you? If there are any adjustments, please let me know in advance, thank you!
+query:Can I transfer the call to the person mentioned in the text?<|im_end|>
+<|im_start|>assistant

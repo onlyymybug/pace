@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John just started watching a new show.  Each episode is 20 minutes long, and there are half as many episodes in total as there are minutes per episode.  How many minutes will John spend watching the show if he watches every episode?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of minutes per episode as \( m \). According to the problem, there are half as many episodes as there are minutes per episode, so the number of episodes is \( \frac{m}{2} \).
+
+Since each episode is 20 minutes long, the total time spent watching the show is the number of episodes multiplied by the length of each episode. Therefore, the total time spent watching the show is:
+
+\[ \text{Total time} = \frac{m}{2} \times 20 \]
+
+Simplifying this expression:
+
+\[ \text{Total time} = \frac{20m

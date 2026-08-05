@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_collectables_in_season", "description": "Retrieve a list of collectable items in a specific game during a specified season. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game_name": {"type": "string", "description": "Name of the game."}, "season": {"type": "string", "description": "The season for which to retrieve the collectable items."}, "item_type": {"type": "string", "description": "The type of item to search for. Default is 'all'. Possible values: 'all', 'bug', 'fish', 'sea creatures', etc."}}, "required": ["game_name", "season"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get all collectable items from the game 'Animal Crossing: New Horizons' during the Spring season.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_collectables_in_season", "arguments": {"game_name": "Animal Crossing: New Horizons", "season": "Spring"}}
+</tool_call><|im_end|>

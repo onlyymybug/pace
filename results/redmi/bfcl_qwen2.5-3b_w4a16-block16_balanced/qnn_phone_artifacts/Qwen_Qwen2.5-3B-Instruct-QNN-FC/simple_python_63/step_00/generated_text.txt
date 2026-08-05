@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "genetics.calculate_similarity", "description": "Calculates the genetic similarity between two species based on their DNA sequences. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"species1": {"type": "string", "description": "The first species to compare."}, "species2": {"type": "string", "description": "The second species to compare."}, "format": {"type": "string", "description": "The format of the result (percentage or fraction). Default is percentage."}}, "required": ["species1", "species2"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find out how genetically similar a human and a chimp are in percentage.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "genetics.calculate_similarity", "arguments": {"species1": "human", "species2": "chimp"}}
+</tool_call><|im_end|>

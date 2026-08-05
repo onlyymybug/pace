@@ -1,0 +1,33 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.FlightTickets.searchFlight","description":"Find tickets for specific dates","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Trip start time"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"type":{"type":"string","description":"One-way, round-trip, multi-trip"},"site_type":{"type":"string","description":"Economy, Business"}},"required":["date","departure","destination","type","site_type"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryTaxDeclarationStatus","description":"Check the progress and results of your tax returns","parameters":{"type":"object","properties":{"tax_type":{"type":"string","description":"Tax types, such as personal income tax, corporate income tax, etc."},"tax_period":{"type":"string","description":"Tax reporting period"}},"required":["tax_type","tax_period"]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Finance.Stocks.cancelorderStock","description":"Withdrawal of Designated Shares","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"},"price":{"type":"float","description":"Amount in Yuan"},"amount":{"type":"string","description":"Shipment quantity; specific value; full warehouse; half warehouse; 1/3 warehouse; 1/4 warehouse"}},"required":["stock_code","stock_name","price","amount"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","description":"Find information about public city services in selected cities","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"Name of the city to query"}},"required":["city_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Mr. Li Hua,
+
+Hello, Regarding the specific arrangements for the annual general meeting of our company held on May 1, 2023, we would like to inform you of the following:
+
+Meetings will begin punctually at 9:00 a.m. on May 1, 2023, in the Multifunctional Conference Room located on the third floor of the Headquarters Building.Please be sure to arrive at the venue before 8:45 to complete the check-in.The meeting is expected to last until 12:00, there will be a tea break during the meeting, you can take a break.
+
+The agenda of the meeting mainly includes the annual work report, the financial audit report, and the development plan for the new year.In addition, we have arranged a shareholder questioning session, in which all shareholders are welcome to actively participate and provide valuable opinions and suggestions.
+
+Please confirm the schedule in this email and prepare accordingly in advance.Please do not hesitate to contact me if you have any questions or need further information.
+
+Best,
+
+Best regards,
+[Your name]  
+[Your Position]  
+[Company name]  
+[Contact]
+query:Check for economy class return tickets from London to Paris at the time mentioned in the email.<|im_end|>
+<|im_start|>assistant

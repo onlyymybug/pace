@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Reggie, Lynn, and Paisley ran together. Paisley ran 4 miles. Reggie ran 5 times what Paisley ran and 3 miles farther than Lynn. How many miles did Lynn run?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the distance that Paisley ran as P, Reggie ran as R, and Lynn ran as L.
+
+Given:
+- Paisley ran 4 miles, so P = 4.
+- Reggie ran 5 times what Paisley ran, so R = 5P = 5 * 4 = 20 miles.
+- Reggie ran 3 miles farther than Lynn, so R = L + 3.
+
+We need to find L.
+
+Using the equation for Reggie's distance:
+20 = L + 3
+
+Solving for L:
+L = 20 - 3
+L = 17
+
+So, Lynn ran

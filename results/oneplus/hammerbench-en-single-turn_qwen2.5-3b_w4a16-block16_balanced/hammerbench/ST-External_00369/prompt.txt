@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotRating","description":"Get user ratings for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Finance.Funds.getFundRating","description":"Query rating information for specified funds based on fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantCustomerSatisfactionRate","description":"Get customer satisfaction data for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"Education.OnlineClasses.getCourseReviews","description":"Get user reviews for a given course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"teacher_name":{"type":"string","description":"Educator name:"}},"required":["course_name","teacher_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello Professor Wang, this is Xiao Li. Regarding next week's academic exchange meeting, I would like to confirm whether it is convenient for you to attend. The meeting is scheduled for next Friday at 9am in the conference room on the third floor of the library. We hope to hear from you and look forward to your response. Thank you!
+query:I want to see the evaluation and rating of the advanced calculus course taught by my friend mentioned in my WeChat, can you check it for me?<|im_end|>
+<|im_start|>assistant

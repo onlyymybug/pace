@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jeff and Brad are trying to divide 100 dollars between them. Jeff gets 4 times as much as Brad. How much does Jeff get in dollars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of money Brad gets as \( b \) dollars. Since Jeff gets 4 times as much as Brad, Jeff gets \( 4b \) dollars. The total amount of money they have together is 100 dollars, so we can write the equation:
+
+\[ b + 4b = 100 \]
+
+Combining like terms, we get:
+
+\[ 5b = 100 \]
+
+To find the amount of money Brad gets, we divide both sides of the equation by 5:
+
+\[ b = \frac{100}{5} \]
+
+\[ b = 20 \]
+
+So, Brad gets

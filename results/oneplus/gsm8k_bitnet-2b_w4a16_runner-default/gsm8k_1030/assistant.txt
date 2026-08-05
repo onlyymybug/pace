@@ -1,0 +1,15 @@
+To solve this problem, we need to calculate the number of balloons Sally had after each event and then add them up.
+
+Initially, Sally had:
+- 25 red balloons
+- 7 green balloons
+- 12 yellow balloons
+
+First, calculate the number of red balloons that burst:
+- 40% of 25 red balloons = 0.4 * 25 = 10 red balloons burst
+
+So, the remaining red balloons are:
+- 25 - 10 = 15 red balloons
+
+Next, calculate the number of yellow balloons that were released:
+- Half of 12 yellow balloons = 12 / 2 =

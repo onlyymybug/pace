@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Maria buys 8 shares of a stock for $8 each. The stock price increases 50% the first year Maria holds it, then decreases 25% in the second year. What is the final value of all Maria's shares?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first calculate the initial total value of Maria's shares. Then, we determine the value after the first year's increase and the second year's decrease.
+
+Initial value of shares = 8 shares * $8/share = $64
+
+First year increase: 50% of $64 = 0.5 * $64 = $32
+Value after first year = $64 + $32 = $96
+
+Second year decrease: 25% of $96 = 0.25 * $96 = $24
+Value after second year = $96 - $24 = $72
+
+The final value of

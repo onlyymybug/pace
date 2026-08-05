@@ -1,0 +1,18 @@
+To determine which equation has the largest solution \( x \), we need to analyze each equation and compare the values of of \( x \) that satisfy each equation. We will do this by rewriting each equation in the form \( x = \log_a b \), where \( a \) is the base and \( b \) is the number inside the parentheses.
+
+### Analysis of:
+
+#### (A) \( 3(1 + r)^x = 7 \)
+\[ x = \log_3 (7 / (1 + r)) \]
+
+#### (B) \( 3(1 + r/10)^x = 7 \)
+\[ x = \log_3 (7 / (1 + r/10)) \]
+
+#### (C) \( 3(1 + 2r)^x = 7 \)
+\[ x = \log_3 (7 / (1 + 2r)) \]
+
+#### (D) \( 3(1 + \sqrt{r})^x = 7 \)
+\[ x = \log_3 (7 / (1 + \sqrt{r})) \]
+
+#### (E) \( 3(1 + 1/r)^x = 7 \)
+\[ x

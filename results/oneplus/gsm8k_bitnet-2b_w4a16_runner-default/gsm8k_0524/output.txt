@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The bakers at the Beverly Hills Bakery baked 200 loaves of bread on Monday morning. They sold 93 loaves in the morning and 39 loaves in the afternoon. A grocery store returned 6 unsold loaves. How many loaves of bread did they have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many loaves of bread the bakers had left, we need to follow these steps:
+
+1. Start with the total number of loaves baked on Monday morning.
+2. Subtract the number of loaves sold in the morning.
+3. Subtract the number of loaves sold in the afternoon.
+4. Add back the number of loaves returned by the grocery store.
+
+Let's calculate it step by step:
+
+1. Total loaves baked on Monday morning = 200 loaves
+2. Loaves sold in the morning = 93 loaves
+3. Loaves sold in the afternoon = 39 loaves

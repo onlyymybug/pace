@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cho hiked 14 kilometers per hour for 8 hours. Chloe hiked 9 kilometers per hour and stopped after 5 hours. How many kilometers farther did Cho hike?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the distance each person hiked and then find the difference between those distances.
+
+First, calculate the distance Cho hiked:
+Distance = Speed × Time
+Distance_cho = 14 km/h × 8 h
+Distance_cho = 112 km
+
+Next, calculate the distance Chloe hiked:
+Distance_cho = 9 km/h × 5 h
+Distance_cho = 45 km
+
+Now, find out how many kilometers farther Cho hiked compared to Chloe:
+Difference = Distance_cho - Distance_cho
+Difference = 112 km - 45 km
+Difference = 

@@ -1,0 +1,22 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.queryTrainTicket","description":"Check the status of the remaining train tickets for the specified date, departure place, and destination","parameters":{"type":"object","properties":{"ride_date":{"type":"string","description":"Date of trip"},"departure_station":{"type":"string","description":"Departure Station"},"destination_station":{"type":"string","description":"arrival station"},"train_type":{"type":"string","description":"Train type, optional types are high-speed rail, motor vehicles, general express, express, etc."},"seat_type":{"type":"string","description":"Seat Type"}},"required":["ride_date","departure_station","destination_station","train_type","seat_type"]}}
+{"name":"UtilityTools.Memo.shareNotes","description":"Share a memo","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Title"},"to":{"type":"string","description":"Shared with"},"category":{"type":"string","description":"Classify"}},"required":["title","to","category"]}}
+{"name":"SocialCommunication.InstantMessaging.sendFile","description":"Send a file to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the file"},"file_path":{"type":"string","description":"The path or document name of the file to send locally"}},"required":["receiver_name","file_path"]}}
+{"name":"SocialCommunication.SocialMedia.mediumContinue","description":"Forwarding actions on specified dynamics","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"SocialCommunication.Community.shareCommunityPost","description":"Share a specific post to a specific medium or to someone","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the post is located"},"title":{"type":"string","description":"Prev Post Caption"},"medium":{"type":"string","description":"Share media"},"user_name":{"type":"string","description":"Shared by"}},"required":["community_name","title","medium","user_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Okay, here's a simulated WeChat message:
+
+---
+
+I have found out. Tomorrow's high-speed rail from Lanzhou West to Xi 'an North. There are still tickets for the 8:20 am train. The journey is about 4 hours. Do you see if the time is right?If you can, I'll book it for you.
+query:Is there a soft sleeping ticket for the express train from Xi 'an North to the place mentioned in the WeChat sent to me by Xiao Li this Saturday?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrainTickets.queryTrainTicket","parameters":{"ride_date":"2023-04-06","departure_station":"Lanzhou West","destination_station":"Xi'an North","train_type":"high-speed rail","seat_type":"soft sleeping"}}<|im_end|>

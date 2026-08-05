@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","description":"Find information about public city services in selected cities","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"Name of the city to query"}},"required":["city_name"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+{"name":"Navigation.MapNavigation.searchLocation","description":"Search for a location by keyword, which can be a location, a point of interest such as a gas station, a charging pile, etc., and return a list of address information","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords for search"}},"required":["keyword"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Meet tomorrow morning at 9am at the entrance of the National Library in Beijing and we will take part in that free tour together. Remember to wear comfortable shoes as we will walk a lot. If we have time, we can also go to the nearby Summer Palace.
+query:What is the fastest way to get to Shanghai from the place mentioned in the notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.ItineraryServices.getTravelTransportationOptions","parameters":{"origin":"National Library, entrance of, Beijing","destination":"Shanghai"}}<|im_end|>

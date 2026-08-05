@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jenny buys 1 bag of cookies a week.  The bag has 36 cookies and she puts 4 cookies in her son's lunch box 5 days a week.  Her husband eats 1 cookie a day for 7 days.  Jenny eats the rest of the cookies.  How many cookies does Jenny eat?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of cookies consumed by Jenny's family and then subtract that from the total number of cookies bought.
+
+Jenny buys 1 bag of cookies a week, and each bag contains 36 cookies. So, the total number of cookies bought is:
+36 cookies/bag * 1 bag = 36 cookies
+
+Jenny's son eats 4 cookies a day for 5 days a week. So, the total number of cookies eaten by her son is:
+4 cookies/day * 5 days = 20 cookies
+
+Jenny's husband eats 1 cookie a day for 7

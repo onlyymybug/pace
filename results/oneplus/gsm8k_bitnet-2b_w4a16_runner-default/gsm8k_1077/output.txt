@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Terry sells 6 milkshakes for $5.50 each, nine burger platters for $11 each, and 20 sodas for $1.50 each. How much money does he make in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount of money Terry makes, we need to calculate the money from each type of item and then add them together.
+
+1. Money from milkshakes:
+   - Number of milkshakes: 6
+   - Price per milkshake: $5.50
+   - Total from milkshakes = 6 * $5.50 = $33.00
+
+2. Money from burger platters:
+   - Number of burger platters: 9
+   - Price per burger platter: $11
+   - Total from burger platters = 9 * $11 = $99.00
+

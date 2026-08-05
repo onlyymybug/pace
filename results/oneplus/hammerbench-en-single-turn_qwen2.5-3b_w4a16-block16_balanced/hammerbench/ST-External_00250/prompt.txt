@@ -1,0 +1,32 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Conferencing.joinMeeting","description":"Join the specified meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"MusicRadio.OnlineMusic.bindSocialPlatforms","description":"Link your account to a social platform","parameters":{"type":"object","properties":{"platforms":{"type":"string","description":"Social platforms to be linked"}},"required":["platforms"]}}
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+{"name":"NewsMagazines.NewspapersMagazines.subscribeMagazine","description":"Subscribe to magazine by magazine name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"}},"required":["name"]}}
+{"name":"OnlineShopping.Mall.addMyFollow","description":"Follow an item or store","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Team Member,
+
+Hello, In regards to this Wednesday morning 9am project progress meeting, I would like to inform you of the following:
+
+1. The meeting is scheduled to start at 9am this Wednesday, so please be on time.
+2. The main agenda of the meeting is to discuss the progress of the current project, as well as to discuss and develop solutions to the problems encountered in the project.
+3. Please prepare some of the reports you are responsible for in advance to ensure that the objectives of the meeting can be accomplished efficiently.
+4. The meeting place is the meeting room on the third floor of the company building, I hope you can arrive on time.
+
+Please let me know if you have any questions.We look forward to your active participation!
+
+Best regards,
+
+[Your name]  
+[Your Position]  
+[your contact details]
+query:I would like to join the meeting at the time mentioned in the email, the meeting ID is 13579.<|im_end|>
+<|im_start|>assistant

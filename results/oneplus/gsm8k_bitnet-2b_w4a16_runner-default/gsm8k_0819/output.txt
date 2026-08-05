@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Joe has twice as many cars as Robert. He sells 20% of them and gives away twice as many cars as the number he sold to his mother. If Robert has 20 cars, how many cars does joe remain with after selling and giving some to his mother?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Determine the number of cars Joe initially has.
+2. Calculate the number of cars Joe sells.
+3. Calculate the number of cars Joe gives to his mother.
+4. Subtract the number of cars sold and given away from the initial number of cars Joe had.
+
+Let's go through each step:
+
+1. **Determine the number of cars Joe initially has:**
+
+   Joe has twice as many cars as Robert. Since Robert has 20 cars, Joe initially has:
+   \[
+   2 \times 20 = 40 \text{ cars}
+   \

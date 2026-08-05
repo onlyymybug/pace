@@ -1,0 +1,19 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Marilyn wants to buy a pair of boots online. On Amazon.com, the boots cost $16 and shipping costs $4. On eBay, those same pair of shoes are only $13, but shipping costs twice as much as it does on Amazon. How much more expensive do the boots work out to be on eBay? To solve this problem, we need to calculate the total cost for both Amazon and eBay, then find the difference.
+
+Amazon total cost:
+Cost of of boots: $16
+Shipping cost: $4
+Total cost Amazon: $16 + $4 = $20
+
+Ebay total cost:
+Cost of of boots: $13
+Shipping cost: 2 * $4 = $8
+Total cost Ebay: $13 + $8 = $21
+
+Now, find the difference:
+Difference: Total cost Ebay - Total cost Amazon
+Difference: $2 - $20 = -$18
+
+The

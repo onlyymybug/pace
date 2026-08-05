@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Louise is an artist and needs to apply a coat of varnish to her latest paintings. Usually it takes 7 minutes for the coat of varnish to dry on one painting. However, today she is using a new varnish and it takes 12 minutes for the coat to dry. How much longer will it take for the coat of varnish on 6 paintings with the new varnish to dry as it would with the old varnish? The answer is a/b. The answer is 36/a/b.<|endoftext|>Given the problem, we need to calculate the difference in drying time between the old and new varnishes for 6 paintings.
+
+1. **Drying Time for Old Varnish:**
+   - Each painting dries in 7 minutes.
+   - For 6 paintings: \( 7 \text{ minutes/painting} \times 6 \text{ paintings} = 42 \text{ minutes} \).
+
+2. **Drying Time for New Varnish:**
+   - Each painting dries in 12 minutes.

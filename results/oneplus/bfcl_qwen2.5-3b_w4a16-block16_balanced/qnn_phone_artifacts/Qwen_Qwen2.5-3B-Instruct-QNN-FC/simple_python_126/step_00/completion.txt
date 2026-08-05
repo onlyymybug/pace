@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "linear_regression.get_r_squared", "arguments": {"dataset_path": "C:/data/cars.csv", "independent_variables": ["engine_size", "fuel_economy"], "dependent_variable": "car_price"}}
+</tool_call><|im_end|>

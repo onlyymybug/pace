@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"OnlineShopping.Mall.viewMessage","description":"View messages for a specific friend or time, and see the entire list of messages by default","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SystemTools.SystemSettings.setSystemTurnOnScreenShare","description":"Turn on screen sharing","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.InstantMessaging.readMessage","description":"Read messages for specific contacts or groups","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"The name of the contact or group for which you want to read the message"}},"required":["receiver_name"]}}
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Zhang Wei, please remember to participate in our group activities on Sunday. The venue is still the same place, the seminar room on the third floor of the library. Li Na and Wang Qiang will come. This time, we mainly discussed the progress of the group project at the end of the period. Remember to bring your laptop, we may need to split up to find some information. In addition, Zhao Min said that she would arrive an hour in advance to prepare some tea and snacks for everyone. You can also think about the specific content you want to discuss in advance. Looking forward to seeing you all!
+query:Can you help me read my friend's name mentioned in the message I received from QQ?<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","parameters":{"receiver_name":"EK:Zhang Wei"}}<|im_end|>

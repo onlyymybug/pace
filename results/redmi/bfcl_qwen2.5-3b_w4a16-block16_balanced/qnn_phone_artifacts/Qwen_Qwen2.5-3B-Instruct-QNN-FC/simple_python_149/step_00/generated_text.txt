@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_stock_price", "description": "Retrieves the current stock price of the specified companies Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"company_names": {"type": "array", "items": {"type": "string"}, "description": "The list of companies for which to retrieve the stock price."}}, "required": ["company_names"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the current stock price of Apple and Microsoft?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_stock_price", "arguments": {"company_names": ["Apple", "Microsoft"]}}
+</tool_call><|im_end|>

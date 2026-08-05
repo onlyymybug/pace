@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ashley has an internet connection speed of 20kb per second. Knowing that 1 Mb has 1000 kb, she wants to know her internet connection speed in Mb per hour. What is Ashley’s internet connection speed in Mb per hour? To solve this, first calculate the total number of kilobytes (kb) Ashley gets in one hour, then convert that to megabits (Mb).
+
+1 hour = 3600 seconds
+So, total kb in 1 hour = 3600 * 20 kb
+
+Since 1 Mb = 1000 kb, we can convert kb to Mb by dividing the total kb by 1000.
+
+Let's calculate this.
+total_kb_in_1_hour = 3600 * 20
+total_Mb_in_1_hour = total_kb_in_1_hour

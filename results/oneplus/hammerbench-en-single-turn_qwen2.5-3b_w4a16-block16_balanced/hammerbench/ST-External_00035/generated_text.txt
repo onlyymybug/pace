@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.getFundHistoryNetWorth","description":"Historical Net Worth of Designated Funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"start_date":{"type":"string","description":"Start date"},"end_date":{"type":"string","description":"结束日期"}},"required":["fund_name","fund_code","start_date","end_date"]}}
+{"name":"Navigation.MapNavigation.searchSurrounding","description":"Search for nearby points of interest, including shops, food, gas stations, office buildings, hotels, shopping malls, etc.","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The name or address of the central location of the search, the default current location"},"category":{"type":"string","description":"Categories of points of interest, such as restaurants, hotels, shopping malls, etc."},"radius":{"type":"integer","description":"Search radius, in meters, defaults to 500"}},"required":["location","category","radius"]}}
+{"name":"VideoPlayback.ShortVideos.searchShortVideo","description":"Search for short videos based on keywords (vlog blogger/video keywords/taxonomy keywords)","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Short video blogger name/video keyword search"},"type":{"type":"string","description":"Recommended, Popular, Chase, Film and TV New Journey/Reference bilibili, etc."},"datetime":{"type":"string","description":"Release time: unlimited, within a day, within a week, within half a year"},"duration":{"type":"string","description":"Video time: unlimited, 1 minute, 1--5 minutes, more than 5 minutes"},"ai_search":{"type":"string","description":"Based on search history, viewing history can only be searched"}},"required":["keyword","type","datetime","duration","ai_search"]}}
+{"name":"VideoPlayback.ShortVideos.coinShortvideo","description":"Coin a short video","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Short video name"},"count":{"type":"integer","description":"Number of coins, default 1 coin"}},"required":["name","count"]}}
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to the Wuhou Temple in Chengdu on the weekend. The historical atmosphere there is very strong, so you can feel it. And the environment there is also very beautiful, suitable for taking photos. If you are interested in the history of the three kingdoms, you will love it. We can learn more about the cultural background there, or try the snacks around, I heard that the Chengdu snacks there are particularly authentic.
+query:Help me find food within 800 meters of the place mentioned in Xiao Li's WeChat.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.MapNavigation.searchSurrounding","parameters":{"category":"food","location":"Xiao Li","radius":800}}<|im_end|>

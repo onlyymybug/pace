@@ -1,0 +1,5 @@
+To solve this problem, we need to calculate the total time Paul will wait for the fourth train. We will do this by breaking down the problem into parts and calculating the waiting time for each segment.
+
+1. The first train arrives in 10 minutes and stays for 20 minutes.
+2. The second train arrives half an hour after the first train leaves, so it arrives in \(10 + 0.5 = 10.5\) minutes after the first train leaves. This train stays for a quarter of the time the first train stayed, which is \(\frac{20}{4} = 5\) minutes.
+3.

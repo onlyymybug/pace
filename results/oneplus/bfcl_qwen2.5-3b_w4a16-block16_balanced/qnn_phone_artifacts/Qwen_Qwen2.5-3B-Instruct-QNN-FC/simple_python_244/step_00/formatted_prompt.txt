@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "publication_year.find", "description": "Fetches the year a particular scientific work was published. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"author": {"type": "string", "description": "Name of the author of the work."}, "work_title": {"type": "string", "description": "Title of the scientific work."}, "location": {"type": "string", "description": "Place of the publication, if known. Default to 'all'."}}, "required": ["author", "work_title"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What year was the law of universal gravitation published by Isaac Newton?<|im_end|>
+<|im_start|>assistant

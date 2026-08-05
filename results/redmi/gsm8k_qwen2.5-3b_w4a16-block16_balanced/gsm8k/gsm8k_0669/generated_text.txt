@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a company of 50 employees, 20% of the employees are management.  Out of this 20%, only 30% oversee the entire company.  How many employees oversee the company? Step 1: Calculate total management employees
+Total employees: 50
+Management percentage: 20%
+Management employees = Total employees * Management percentage
+= 50 * 20/100
+= 10 employees
+
+Step 2: Calculate employees who oversee the company
+Out of these management employees, 30% oversee the company.
+Employees who oversee = Management employees * Oversee percentage
+= 10 * 30/10 - 0
+= 3 employees
+
+The answer is 3.<|endoftext|>Human, walk me through the solution steps for this problem. Certainly!

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mulan has $40. Her father gave her $100. She buys two pairs of jeans at $30 each and a bag for $20. How much money does Mulan have left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total amount of money Mulan has after her father gives her the additional $100. Mulan initially has $40, and her father gives her $100, so the total amount of money she has is:
+
+$40 (initial amount) + $100 (from father) = $140
+
+Next, we need to calculate the total cost of the items Mulan buys. She buys two pairs of jeans at $30 each and a bag for $20. The total cost for the jeans is:
+
+2 pairs * $30/pair = $60
+
+Adding the cost of the bag

@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Three friends: Mike, Jim, and Tony decided to play a game. After 3 rounds Mike has 21 points, Jim 3 points less than Mike, and Tony 2 times more than Mike. In the fourth round, every player gets an extra point if they have over 20 points. How many points do all three players have in total after the extra points had been distributed?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the points each player has after the third round and then calculate the points after the extra points are distributed.
+
+1. **Points after the third round:**
+   - Mike has 21 points.
+   - Jim has 3 points less than Mike, so Jim has \(21 - 3 = 18\) points.
+   - Tony has 2 times more than Mike, so Tony has \(2 \times 21 = 42\) points.
+
+2. **Determine points after the extra points are distributed:**
+   - In the fourth round, every player gets an extra point if

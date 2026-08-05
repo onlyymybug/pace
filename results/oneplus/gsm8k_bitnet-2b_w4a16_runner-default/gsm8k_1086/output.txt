@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A crocodile grows 8 inches long in 4 years. At this rate, how many inches will it grow in 13 years?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first determine the rate at which the crocodile grows. We know it grows 8 inches in 4 years. So, the growth rate per year is:
+
+8 inches / 4 years = 2 inches per year
+
+Now, we want to find out how much it will grow in 13 years at this rate. We multiply the growth rate per year by the number of years:
+
+2 inches/year * 13 years = 26 inches
+
+The answer is 26 inches.<|eot_id|>

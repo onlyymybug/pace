@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.compareWeather","description":"Compare weather in two locations","parameters":{"type":"object","properties":{"location1":{"type":"string","description":"Venue"},"location2":{"type":"string","description":"Venues"}},"required":["location1","location2"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskSetFileAccessPermission","description":"Set access rights for files in Drive","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"},"permission_level":{"type":"string","description":"Permission level, such as public, private, etc."}},"required":["file_path","permission_level"]}}
+{"name":"ConvenientLiving.JobRecruitment.setJobPositionVisibility","description":"Set if the position is visible to the candidate","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"},"visibility":{"type":"boolean","description":"Visibility, required"}},"required":["position_name","visibility"]}}
+{"name":"OfficeSoftware.Documents.setDocumentPermissions","description":"Set access rights for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to set permissions, required"}},"required":["document_name"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getPurchasingHousePolicies","description":"Check purchasing policies for specific areas","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"}},"required":["location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for your support and trust.We are pleased to inform you that we will be hosting our annual International Art Exhibition on 15 October 2023 at the Royal Albert Hall in London, UK.The event will bring together artists from all over the world to bring a feast of sight and sound.You will have the opportunity to see works in various art forms including painting, sculpture, photography, etc.
+
+To make sure your experience is perfect, we have booked you a stay at the Hyde Park Hilton in central London for the duration of the event, which is just a 10-minute walk from the event location.We also have an extensive guidebook to London to help you better plan your time in London.
+
+We look forward to meeting you in beautiful London to share this artistic extravaganza.If you have any questions or need further assistance, please do not hesitate to contact us.
+
+Best regards,
+
+[Your name]
+[Your Position]
+[your contact details]
+query:How are the locations mentioned in the email different from the weather in Paris?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.compareWeather","parameters":{"location1":"Royal Albert Hall, London, UK","location2":"Paris, France"}}<|im_end|>

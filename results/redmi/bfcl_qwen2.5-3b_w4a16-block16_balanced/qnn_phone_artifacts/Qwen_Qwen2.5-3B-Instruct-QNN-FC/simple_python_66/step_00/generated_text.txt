@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "ecology_data.precipitation_stats", "description": "Retrieve precipitation data for a specified location and time period. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The name of the location, e.g., 'Amazon rainforest'."}, "time_frame": {"type": "string", "enum": ["six_months", "year", "five_years"], "description": "The time period for which data is required."}}, "required": ["location", "time_frame"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Get me data on average precipitation in the Amazon rainforest for the last six months.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "ecology_data.precipitation_stats", "arguments": {"location": "Amazon rainforest", "time_frame": "six_months"}}
+</tool_call><|im_end|>

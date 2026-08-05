@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A bag of flour is divided into 8 portions of 2 kilograms each. How much flour (in kilograms) was in three bags in total, before it was divided into portions?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total amount of flour before it was divided into portions, we need to multiply the amount of flour in one bag by the number of bags.
+
+Each bag contains 2 kilograms of flour, and there are 3 bags.
+
+So, the total amount of flour is:
+2 kilograms/bag * 3 bags = 6 kilograms
+
+The answer is 6 kilograms.<|eot_id|>

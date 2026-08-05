@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A tomato vendor decides to switch who he buys his tomatoes for.  He sells 500 tomatoes a day.  He used to buy them for $.5 each but he gets a new vendor who sells them for $.4 each.  How much money does he save a week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money the vendor saves a week, we first need to calculate the daily savings and then multiply that by the number of days in a week.
+
+1. Calculate the daily savings:
+   - Original price per tomato: $0.5
+   - New price per tomato: $0.4
+   - Daily savings per tomato: $0.5 - $0.4 = $0.1
+
+2. Calculate the total daily savings:
+   - Number of tomatoes sold per day: 500
+   - Total daily savings: $0.1 * 500 = $50
+
+3. Calculate the weekly

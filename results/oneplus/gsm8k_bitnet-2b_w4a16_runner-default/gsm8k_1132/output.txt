@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John cuts down an 80-foot tree.  He can make logs out of 80% of it. He cuts it into 4-foot logs.  From each of those logs, he cuts 5 planks.  He then sells each plank for $1.2.  How much does he make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow the steps sequentially:
+
+1. Calculate the length of the tree that can be turned into logs.
+2. Determine how many 4-foot logs can be made from the tree.
+3. Calculate the number of planks that can be made from the logs.
+4. Determine the total amount of money John makes from selling the planks.
+
+Let's go through each step:
+
+1. **Calculate the length of the tree that can be turned into logs:**
+   - John can make logs out of 80% of the tree.
+   - The tree is 80 feet tall.
+  

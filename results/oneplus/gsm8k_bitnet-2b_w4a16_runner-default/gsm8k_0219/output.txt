@@ -1,0 +1,9 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adrian's age is three times the age of Harriet, and Harriet is half the age of Zack. Calculate the average age of the three in three years if Harriet is 21 years old now.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the current ages of Adrian, Harriet, and Zack. We know Harriet is currently 21 years old. Since Harriet is half the age of Zack, Zack's age is twice Harriet's age, which is 42 years old. Adrian's age is three times Harriet's age, so Adrian is 3 * 21 = 63 years old.
+
+In three years, Harriet will be 21 + 3 = 24 years old, Zack will be 42 + 3 = 45 years old, and Adrian will be 63 + 3 =

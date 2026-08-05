@@ -1,0 +1,28 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"ConvenientLiving.AutoLife.compareCarModels","description":"Compare the key parameters of the specified multiple models","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"models":{"type":"string","description":"List of models to compare"}},"required":["brand","models"]}}
+{"name":"MusicRadio.OnlineMusic.participateInMusicTopicDiscussion","description":"Participate in musical conversations by topic and comment content","parameters":{"type":"object","properties":{"topic":{"type":"string","description":"Topic"},"comment":{"type":"string","description":"Comments"}},"required":["topic","comment"]}}
+{"name":"Finance.Funds.getFundDividend","description":"Query dividend information of designated funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi there, Thank you for your interest and support.We have recently launched a brand new Toyota product that is especially suitable for you who are pursuing a high quality of life.Featuring advanced energy-efficient technology, this Toyota boasts superior safety performance and a comfortable driving experience.We also provide comprehensive after-sales service for this Toyota, including regular maintenance, breakdown repairs, etc., to ensure that you have no worries during use.
+
+To give back to new and existing customers, we've created a special limited-time offer that includes exclusive discounts and extra giveaways for customers who complete their order within this month.If you are interested in this Toyota, please feel free to contact us and we will be happy to provide you with detailed advice and services.
+
+Enjoy!
+
+Sincerely,
+Salute
+
+[Your company name]
+query:Help me compare the main parameters of Corolla and Prius.<|im_end|>
+<|im_start|>assistant

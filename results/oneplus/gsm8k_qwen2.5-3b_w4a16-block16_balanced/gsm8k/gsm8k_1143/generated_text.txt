@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jess is trying to guess the number of blue jellybeans in a jar. She can see that there are 17 green jelly beans and twice as many red jelly beans. The rest of the jellybeans are blue jelly beans. If there are a total of 60 jelly beans in total, how many blue jellybeans are there? Step 1: Calculate the number of red jellybeans
+Number ofRedJellybeans = 2 * NumberofGreenJellybeans
+NumberofRedJellybeans = 2 * 17
+NumberofRedJellybeans = 34
+
+Step 2: Calculate the total number of jellybeans that are not blue
+TotalJellybeansNotBlue = NumberofGreenJellybeans + NumberofRedJellybeans
+TotalJellybeansNotBlue = 17 + 34
+TotalJellybeansNotBlue = 51
+
+Step 3: Calculate the number of blue jellybeans

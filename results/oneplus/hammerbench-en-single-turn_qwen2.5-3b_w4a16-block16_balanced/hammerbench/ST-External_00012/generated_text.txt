@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.viewCarInfo","description":"View license details","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate"}},"required":["plate_number"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.checkLicenseStatus","description":"Check the validity status of various licenses (such as driver's license)","parameters":{"type":"object","properties":{"license_type":{"type":"string","description":"Type of licence Trainee attorneys"},"license_number":{"type":"string","description":"License number"}},"required":["license_type","license_number"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantLicense","description":"Get licensing info for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Your vehicle (license plate number: Yue B12345) was illegally parked on Shennan Avenue, Futian District, Shenzhen at 10am today and has been recorded. Please proceed to the designated location within three business days to avoid additional charges. Thank you for your cooperation.
+query:I want to see the vehicle travel license details of the license plate number mentioned in the text message Tom sent me.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.viewCarInfo","parameters":{"plate_number":"YueB12345"}}<|im_end|>

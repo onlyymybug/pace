@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Hannah needs to drink 60 ml of water for each kilometer she runs. If her gym teacher tells her to run 8 laps and each lap is 0.25 km, how many milliliters of water will Hannah need to drink? To solve this problem, we need to calculate the total distance Hannah runs and then determine the total amount of water she needs to drink.
+
+1. **Calculate the total distance run:**
+   - Each lap is 0.25 km.
+   - Hannah runs 8 laps.
+   - Total distance = Number of laps × Distance per lap
+   - Total distance = 8 laps × 0.25 km/lap = 2 km
+
+2. **Calculate the total amount of water needed:**
+   - Hannah needs to drink 60 ml of water per kilometer.
+   - Total water needed = Total distance

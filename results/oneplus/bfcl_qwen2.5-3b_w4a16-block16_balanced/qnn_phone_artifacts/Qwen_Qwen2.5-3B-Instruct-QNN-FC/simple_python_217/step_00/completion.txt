@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "fMRI.analyze", "arguments": {"data_source": "~/data/myfMRI.nii", "sequence_type": "multi-band", "smooth": 6}}
+</tool_call><|im_end|>

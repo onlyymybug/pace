@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John has 2 houses with 3 bedrooms each.  Each bedroom has 2 windows each.  There are an additional 4 windows in each house not connected to bedrooms.  How many total windows are there between the houses?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total number of windows in the houses first and then add the additional windows.
+
+1. Calculate the number of windows in one bedroom:
+   - Each bedroom has 2 windows.
+
+2. Calculate the total number of windows in all bedrooms of one house:
+   - Each house has 3 bedrooms.
+   - Total windows in one house = 3 bedrooms * 2 windows/bedroom = 6 windows.
+
+3. Calculate the total number of windows in both houses:
+   - Each house has 6 windows.
+   - There are 2 houses.
+   - Total windows in both houses

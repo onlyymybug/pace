@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: For a New Year's resolution, Andy wants to lose 30 lbs. by his birthday, which is July 19th. Today is December 31st. If Andy needs to burn 3500 calories to lose a pound, how much of a calorie deficit (net amount of calories burned vs. calories consumed) does he need each day to reach his goal? To solve this, first calculate the total number of days Andy has to lose the weight, then calculate the total calories he needs to burn, and finally divide that by the number of days.
+
+Total days = 31 - 19 + 1 = 13 days
+Total calories to burn = 30 lbs * 3500 calories = 105000 calories
+Calorie deficit needed per day = 105000 calories / 13 day
+The answer is 81428.571429
+The answer is 814

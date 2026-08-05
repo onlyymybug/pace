@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Lana is brewing cups of tea for her friends. She has 27 cups, and she divides these into 3 rows. In each row, she creates equal amounts of chamomile and mint tea cups. She then uses the remaining cups to brew a total of 15 cups of cinnamon tea. How many cups of mint tea are in each row? To solve this, first find total mint and chamomile cups, then divide by rows, then subtract cinnamon cups from total cups.
+
+Total cups: 27
+Cinnamon cups: 15
+
+Total mint and chamomile: 27 - 15 = 12
+
+Divide remaining cups equally into 3 rows: 12 / 3 = 4
+
+Each row has 4 cups of mint tea.
+
+The answer is 4. The calculation shows that each row contains 4 cups of mint tea. The total number of cups of mint tea across all rows is 12, leaving

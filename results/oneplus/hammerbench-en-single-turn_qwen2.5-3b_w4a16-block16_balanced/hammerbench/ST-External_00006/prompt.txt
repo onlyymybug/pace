@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.applyForEducationGrant","description":"Submit an application for an education grant","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Applicant, default user self"},"school":{"type":"string","description":"Schools"}},"required":["name","school"]}}
+{"name":"ConvenientLiving.UtilityPayments.payBill","description":"Payment of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"pay":{"type":"float","description":"Contribution Amount, Default Billing Amount"},"address":{"type":"string","description":"user address, default address"}},"required":["service_type","user_name","pay","address"]}}
+{"name":"ConvenientLiving.UtilityPayments.getDueDate","description":"Deadline for payment of fees for the acquisition of utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"Navigation.TrafficViolations.payViolations","description":"Pay fines for violations online","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"}},"required":["plate_number","city","time"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForBusinessLicense","description":"Apply for a business license online","parameters":{"type":"object","properties":{"business_name":{"type":"string","description":"Name of the Enterprise"},"name":{"type":"string","description":"Objects that contain information about the business owner, such as name, ID number, etc."},"id_card":{"type":"string","description":"ID No."}},"required":["business_name","name","id_card"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 10am today, a blue sedan with the license plate Su E12345 was parked at the entrance of the east gate of the community. The owner did not turn off the flame or pull the handbrake after getting off the car, resulting in a slight slip of the vehicle. Fortunately, it was found and handled by the security guard in time. Please ask the owner to pay attention to the safety of parking.
+query:Use Alipay to help me pay the fine for violation of the license plate number mentioned in the notepad in Nanjing.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A mother goes shopping. She buys cocoa at $4.20, laundry at $9.45 and a package of pasta at $1.35. She pays $20. How much change does the cashier give back? To solve this, we first need to find the total cost of of of all items bought. So, we add the cost of of each item: 
+
+Cocoa: $4.20
+Laundry: $9.45
+Pasta: $1.35
+
+Total cost = $4.20 + $9.45 + $1.35 = $14.90
+
+The mother pays $20. To find the change, we subtract the total cost from the amount paid:
+
+Change = Amount Paid - Total Cost
+Change = $20 - $14.90

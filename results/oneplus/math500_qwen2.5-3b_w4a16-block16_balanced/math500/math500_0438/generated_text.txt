@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The symbols $\triangle$, $\square$, $\diamond$, $\clubsuit$ represent four different integers from 1 to 9. Using the equations below, what is the value of   $\square$ ? \begin{align*}
+\triangle + \square &= \clubsuit \\
+\triangle + \triangle &= \diamond +\diamond + \diamond + \diamond + \diamond \\
+\triangle + \triangle &= \clubsuit + \diamond.
+\end{align*} To solve the problem, we need to determine the values of of of \(\triangle\), \(\square\), \(\diamond\), and \(\clubsuit\) from the given equations. Let's analyze the equations step by step.
+
+Given equations:
+1. \(\triangle + \square = \clubsuit\)
+2. \(\triangle + \triangle = \diamond + \diamond + \diamond + \diamond + \diamond\)
+3. \(\triangle + \triangle = \clubsuit + \diamond\)
+
+First, let's simplify the second equation:
+\[
+\triangle + \triangle = 5\diamond
+\]
+This simplifies to:
+\[
+2\triangle = 5\diamond
+\]
+Since \(\triangle\) and \(\diamond\) are integers between 1 and 9, we need to find values that satisfy this equation. Testing possible values for \(\diamond\):
+
+- If \(\diamond = 1\), then \(2\triangle = 5 \times 1 = 5\) (not possible since 2\(\triangle\) cannot be 5).
+- If \(\diamond = 2\), then \(2\triangle = 5 \times 2 = 10\)

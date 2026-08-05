@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carmen has $100, Samantha has $25 more than Carmen, and Daisy has $50 more than Samantha. How much do all three girls have combined? Step 1: Identify the amounts each person has
+- Carmen has $100
+- Samantha has $25 more than Carmen, so Samantha has $100 + $25 = $125
+- Daisy has $50 more than Samantha, so Daisy has $125 + $50 = $175
+
+Step 2: Calculate the total amount
+- Total = Carmen's amount + Samantha's amount + Daisy's amount
+- Total = $100 + $125 + $175
+
+Step 3: Perform the calculation
+- Total = $1

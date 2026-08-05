@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Christina is planning a birthday party and needs .75 gift bags per invited guest, because 1/4 of attendees don't show up. She invited 16 friends. Gift bags are $2 each. How much will she spend?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Christina will spend, we first need to determine the total number of gift bags she will need. Since 1/4 of the 16 guests don't show up, Christina will need gift bags for 16 - 1/4 * 16 guests. 
+
+First, calculate 1/4 of 16:
+1/4 * 16 = 4 guests
+
+So, Christina will need gift bags for:
+16 - 4 = 12 guests
+
+Now, calculate the total number of gift bags needed:
+12 guests * 0.75 gift bags/guest = 9 gift bags
+
+Finally,

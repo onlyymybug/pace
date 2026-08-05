@@ -1,0 +1,14 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Suppose the polynomial
+$$f(x) = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + a_0$$has integer coefficients, and its roots are distinct integers.
+
+Given that $a_n=2$ and $a_0=66$, what is the least possible value of $|a_{n-1}|$? To solve for the least possible value of \( |a_{n-1}| \) given the polynomial \( f(x) = 2x^n + a_{n-1}x^{n-1} + \cdots + a_2x^2 + a_1x + 66 \) with integer coefficients and distinct integer roots, we start by noting that the polynomial can be expressed as:
+
+\[ f(x) = 2(x-r_1)(x-r_2) \cdots (x-r_n) \]
+
+where \( r_1, r_2, \ldots, r_n \) are the distinct integer roots. Given \( a_0 = 66 \), the constant term of is the product of of the roots with the leading coefficient \( a_n = 2 \):
+
+\[ 2 \cdot r_1 \cdot r_2 \cdots r_n = 66 \]
+
+We need to find distinct integers \( r_1, r_2, \ldots, r_n \) such that their product is 33 (since \( 2 \cdot 33 = 66 \)). The factorization of of 33 is \( 33 = 

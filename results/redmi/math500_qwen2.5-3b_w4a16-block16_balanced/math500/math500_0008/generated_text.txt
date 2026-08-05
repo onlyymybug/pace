@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The set of points $(x,y,z)$ that satisfy
+\[2x = 3y = -z\]is a line.
+
+The set of points $(x,y,z)$ that satisfy
+\[6x = -y = -4z\]is another line.
+
+Find the angle between these lines, in degrees. To find the angle between the lines defined by the equations \(2x = 3y = -z\) and \(6x = -y = -4z\), we first need to express these lines in parametric form.
+
+### Step 1: Parametric form of the first line
+The first line is given by \(2x = 3y = -z\). We can introduce a parameter \(t\) such that:
+\[
+2x = 3y = -z = t
+\]
+From this, we can express \(x\), \(y\), and \(z\) in terms of:
+\

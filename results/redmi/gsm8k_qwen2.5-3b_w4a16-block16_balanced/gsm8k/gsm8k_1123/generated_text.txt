@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A toy manufacturer receives an order for 400 toys. 5 workers are available to work on the order. 2 of the workers produce 6 toys an hour, and another 2 workers produce 4 toys an hour. They all work on the order during their 10-hour shift, and by the end of their shift the manufacturer still needs another 20 toys to be able to ship the order. How many toys per hour does the fifth worker produce? To solve this problem, we need to calculate the total production of of the workers and compare it with the order requirements.
+
+First, calculate the production of of the first 2 workers:
+- Each of the first 2 workers produces 6 toys per hour.
+- Total production of of these 2 workers in 10 hours = 6 toys/hour * 10 hours = 60 toys
+
+Next, calculate the production of of the next 2 workers:
+- Each of the next 2 workers produces 4 toys per hour.
+- Total production production of of these 2 workers in 10 hours = 

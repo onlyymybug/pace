@@ -1,0 +1,22 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Duncan's age eight years ago was two times Adam's age four years ago. If Duncan's age is 60 now, how old will Adam be in 8 years?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote Adam's current age as \( A \).
+
+Eight years ago, Duncan's age was \( 60 - 8 = 52 \).
+
+Four years ago, Adam's age was \( A - 4 \).
+
+According to the problem, eight years ago, Duncan's age was two times Adam's age four years ago:
+
+\[ 52 = 2 \times (A - 4) \]
+
+Solving for \( A \):
+
+\[ 52 = 2A - 8 \]
+\[ 52 + 8 = 2A \]
+\[ 60 = 2A \]
+\[ A = 

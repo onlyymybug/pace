@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a set of magicians cards, there are 15 red cards, and 60% more green cards. Yellow cards are as many, as the sum of red and green cards. How many cards of all mentioned colors are there?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+First, calculate the number of green cards. Since there are 60% more green cards than red cards, we find the number of green cards by multiplying the number of red cards by 1.60 (100% + 60%).
+
+Number of green cards = 15 * 1.60 = 24
+
+Next, calculate the number of yellow cards, which is equal to the sum of red and green cards.
+
+Number of yellow cards = Number of red cards + Number of green cards
+Number of yellow cards = 15 + 24 = 39
+
+Now, add up the total number of cards of all colors.
+
+Total

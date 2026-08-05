@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alex, Stan, and Adelwolfe are trying to catch them all, Pokemon that is.  Together they have caught 339 Pokemon.  Alex has caught 5 more than Stan, and Stan has caught 13 less than 4 times as many as Adelwolfe has caught. How many Pokemon has Stan caught?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of Pokemon caught by Alex as \( A \), by Stan as \( S \), and by Adelwolfe as \( D \).
+
+From the problem, we have the following relationships:
+1. \( A + S + D = 339 \)
+2. \( A = S + 5 \)
+3. \( S = 4D - 13 \)
+
+We can substitute the expressions for \( A \) and \( S \) from the second and third equations into the first equation.
+
+First, substitute \( A = S + 5 \) into \( A + S + D = 

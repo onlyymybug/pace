@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_probability", "description": "Calculate the probability of an event. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"total_outcomes": {"type": "integer", "description": "Total number of possible outcomes."}, "favorable_outcomes": {"type": "integer", "description": "Number of outcomes considered as 'successful'."}, "round_to": {"type": "integer", "description": "Number of decimal places to round the result to.", "default": 2}}, "required": ["total_outcomes", "favorable_outcomes"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the probability of drawing a king from a deck of cards.<|im_end|>
+<|im_start|>assistant

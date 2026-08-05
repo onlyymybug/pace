@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sasha notices that prices for lumber have gone up 50% in the last few months after she bought some lumber. Since she has leftovers, she decides to sell them. She has leftover ten 2 x 4 x 10 boards that cost her $10 each. She also has five 4 x 4 x 10 boards she bought for $16 each. If she sells them all, how much profit does she make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit, we first need to calculate the total cost of the lumber and the total revenue from selling it. Then, we subtract the total cost from the total revenue to find the profit.
+
+Total cost of 10 x 2 x 4 x 10 boards:
+- Cost of one board: $10
+- Total cost for ten boards: $10 x 10 = $100
+
+Total cost of 5 x 4 x 4 x 10 boards:
+- Cost of one board: $16
+- Total cost for five boards: $16 x 5 = $80
+
+Total cost of all boards:

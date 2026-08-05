@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryHousingSubsidyInfo","description":"Find out about housing allowances","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"User name, default user himself"}},"required":["user_name"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.JobRecruitment.checkJobPositionAvailability","description":"Check if a specific position is still being recruited","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"Navigation.Bicycles.viewBikeCoupons","description":"View riding-related vouchers","parameters":{"type":"object","properties":{},"required":[]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We had an in-depth discussion with the project leader of Tencent today, and the two sides agreed on the details of the cooperation. Tencent will provide the latest technical support, and we will be responsible for marketing and user feedback collection. It is expected that the cooperation will be officially launched next month, which will bring a significant contribution to the development of both sides.
+query:Are the companies mentioned in the notepad still hiring product managers?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,21 @@
+To solve this problem, we need to determine the cost of of the gold paint and the concrete for different-sized cubes and then use that information to find the cost of of a 3-inch cube.
+
+1. **Determine the cost per unit volume and surface area:**
+
+   - For a 1-inch cube:
+     - Volume \( V_1 = 1^3 = 1 \) cubic inch.
+     - Surface area \( A_1 = 6 \times 1^2 = 6 \) square inches.
+     - Cost \( C_1 = 1.30 \) dollars.
+
+   - For a 2-inch cube:
+     - Volume \( V_2 = 2^3 = 8 \) cubic inches.
+     - Surface area \( A_2 = 6 \times 2^2 = 24 \) square inches.
+     - Cost \( C_2 = 6.80 \) dollars.
+
+2. **Express the cost in terms of:**
+
+   Let \( k \) be the cost per unit volume and \( c \) be the cost per unit surface area.
+
+   - For the 1-inch cube:
+     \[
+     k \cdot 1 + c \cdot

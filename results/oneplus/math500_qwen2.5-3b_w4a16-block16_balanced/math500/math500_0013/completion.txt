@@ -1,0 +1,19 @@
+To solve the problem, we need to find the sum of of the proper divisors of of 284. Let's start by identifying the proper divisors of of 284.
+
+First, we list all the proper divisors of of 284. A proper divisor divisor \( d \) of of \( N \) is a positive divisor divisor \( d \) of of \( N \) such that \( d < N \).
+
+The proper divisors of of 284 are:
+\[ 1, 2, 4, 71, 13, 26, 14, 91 \]
+
+We can verify that:
+\[ 1 + 2 + 4 + 7 + 13 + 26 + 14 + 91 = 284 \]
+
+Next, we need to find the sum of of the proper divisors divisor of 284. We repeat the process for each of these proper divisors.
+
+1. **Sum of Proper Divisors of of 1:**
+   \[
+   \text{Proper divisors: } 1
+   \]
+   \[
+   \text{Sum: } 1
+  

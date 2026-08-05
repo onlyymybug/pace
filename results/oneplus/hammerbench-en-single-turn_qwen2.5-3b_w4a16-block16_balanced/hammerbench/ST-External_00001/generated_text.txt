@@ -1,0 +1,28 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Insurance.getInsuranceClaimProgress","description":"Check the progress of your insurance claim","parameters":{"type":"object","properties":{"insurance_name":{"type":"string","description":"Insurance Product Name"},"insurance_type":{"type":"string","description":"Types of insurance products, such as life insurance, health insurance, property insurance, car insurance, etc."}},"required":["insurance_name","insurance_type"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"Finance.Funds.getFundPortfolio","description":"Query the position status of the designated fund based on the fund code or name","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"}},"required":["fund_name","fund_code"]}}
+{"name":"Navigation.TrafficViolations.queryViolation","description":"Query traffic violation records by conditions","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"city":{"type":"string","description":"Violating city"},"time":{"type":"string","description":"Billing Time"}},"required":["plate_number","city","time"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Notice on Team Building Activities in Guangzhou Branch
+
+Dear Colleagues,
+
+Hello everyone! In order to enhance team cohesion and enhance the working atmosphere, the company plans to hold a team building event at Guangzhou Tower on the 25th of this month.The event will start at 9am and is expected to continue until 5pm.We have prepared a wealth of activities for each colleague, including team games, exchange discussions, and dinner parties.Please be sure to arrive at the south gate of Guangzhou Tower on time.In order to ensure the smooth running of the event, please inform your department head in advance if there are any special circumstances that prevent you from attending.
+
+Looking forward to spending a great day with you all at Guangzhou Tower!
+
+Good luck,
+[Your name]
+Human Resources
+query:Check the license plate number is Yue B67890, the place mentioned in the email, the violation record on April 1, 2023.<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.TrafficViolations.queryViolation","parameters":{"plate_number":"Yue B67890","city":"Guangzhou","time":"2023-04-01"}}<|im_end|>

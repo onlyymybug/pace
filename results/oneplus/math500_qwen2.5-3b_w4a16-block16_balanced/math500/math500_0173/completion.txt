@@ -1,0 +1,19 @@
+To solve for the sixth term of of an arithmetic sequence where the fourth term is 200 and the eighth term is 500, we need to use the properties of of arithmetic sequences. 
+
+An arithmetic sequence has a common difference \(d\) and the \(n\)-th term is given by:
+\[ a_n = a_1 + (n-1)d \]
+
+Given:
+\[ a_4 = 200 \]
+\[ a_8 = 500 \]
+
+We can express these terms using the general formula for the \(n\)-th term:
+\[ a_4 = a_1 + 3d = 200 \]
+\[ a_8 = a_1 + 7d = 500 \]
+
+We now have a system of linear equations:
+\[ a_1 + 3d = 200 \quad \text{(1)} \]
+\[ a_1 + 7d = 500 \quad \text{(2)} \]
+
+To find \(a_1\) and \(d\), we subtract equation (1) from equation (2):
+\[ (a_1 + 7d) - (a_1 + 3d) =

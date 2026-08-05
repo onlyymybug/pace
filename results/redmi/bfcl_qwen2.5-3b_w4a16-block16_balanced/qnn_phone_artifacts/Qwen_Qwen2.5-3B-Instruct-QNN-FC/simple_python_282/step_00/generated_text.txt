@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "find_flute", "description": "Locate a flute for sale based on specific requirements. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"brand": {"type": "string", "description": "The brand of the flute. Example, 'Yamaha'"}, "specs": {"type": "array", "items": {"type": "string", "enum": ["open hole", "C foot", "silver headjoint"]}, "description": "The specifications of the flute desired."}}, "required": ["brand", "specs"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find a Yamaha flute with the specifications of open hole, C foot, and silver headjoint available for sale.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "find_flute", "arguments": {"brand": "Yamaha", "specs": ["open hole", "C foot", "silver headjoint"]}}
+</tool_call><|im_end|>

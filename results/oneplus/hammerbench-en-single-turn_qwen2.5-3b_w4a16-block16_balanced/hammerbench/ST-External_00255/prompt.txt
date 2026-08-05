@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.setSystemTurnOnScreenShare","description":"Turn on screen sharing","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Navigation.PublicTransit.shareBusRoute","description":"Share designated bus routes with others","parameters":{"type":"object","properties":{"line":{"type":"string","description":"line"},"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"Destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."},"recipient":{"type":"string","description":"recipient"},"medium":{"type":"string","description":"Medium"}},"required":["line","departure","destination","preferred_line","recipient","medium"]}}
+{"name":"OfficeSoftware.Conferencing.shareScreen","description":"Share your screen in a meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Health.Fitness.shareExerciseProgress","description":"Share your fitness progress with the people you want to share it with","parameters":{"type":"object","properties":{"target":{"type":"string","description":"Share with"},"exercise_progress":{"type":"string","description":"Fitness Progress"}},"required":["target","exercise_progress"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 3pm, remember to pick up the children from school, and then we will go to the supermarket to buy some ingredients for dinner. How about that?
+query:Xiao Li, can you help me turn on screen sharing during the weekly meeting? The meeting ID is 789456, the time is the one mentioned in your WeChat. Thank you!<|im_end|>
+<|im_start|>assistant

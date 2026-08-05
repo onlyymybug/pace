@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cody and Trevor had 12 sandwiches. Cody ate a third of the sandwiches, and Trevor ate a quarter of the sandwiches. How many sandwiches are left?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many sandwiches are left, we first need to determine how many sandwiches Cody and Trevor ate.
+
+Cody ate a third of the sandwiches:
+12 sandwiches / 3 = 4 sandwiches
+
+Trevor ate a quarter of the sandwiches:
+12 sandwiches / 4 = 3 sandwiches
+
+Total sandwiches eaten:
+4 sandwiches (Cody) + 3 sandwiches (Trevor) = 7 sandwiches
+
+Sandwiches left:
+12 sandwiches - 7 sandwiches = 5 sandwiches
+
+The answer is 5 sandwiches.<|eot_id|>

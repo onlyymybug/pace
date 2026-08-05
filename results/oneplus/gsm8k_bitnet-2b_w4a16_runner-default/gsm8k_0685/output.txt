@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John and Jack have 30 minutes to walk to school together. It takes them 6 minutes to get to the corner where the library is. It takes them another 13 minutes to get to the fire station. How much longer do they have to get to school without being late?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much longer John and Jack have to get to school without being late, we need to subtract the total time they have already spent walking from the total time they have to reach school.
+
+Total time to reach school = 30 minutes
+Time spent walking to the library = 6 minutes
+Time spent walking to the fire station = 13 minutes
+
+Total time spent walking = 6 minutes + 13 minutes = 19 minutes
+
+Time left to reach school without being late = Total time to reach school - Total time spent walking
+Time left = 30 minutes - 19 minutes = 11 minutes
+
+The answer is

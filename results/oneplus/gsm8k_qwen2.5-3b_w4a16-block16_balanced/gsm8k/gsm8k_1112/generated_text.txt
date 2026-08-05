@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are currently 3 red balls, 11 blue balls, and 25 green balls in the store. Red balls cost $9, Blue balls cost $5 and green balls cost $3. How much will the store have received after all the balls are sold? To solve this, we first calculate the total cost for each color of of balls and then sum them up.
+
+Cost for red balls: 3 red balls * $9 each = $27
+Cost for blue balls: 11 blue balls * $5 each = $55
+Cost for green balls: 25 green balls * $3 each = $75
+
+Total cost: $27 + $55 + $75 = $157
+
+The store will have received $157 after all the balls are sold. The answer is 157.<|endoftext|>Human: Solve the grade

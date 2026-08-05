@@ -1,0 +1,7 @@
+To solve this problem, first calculate the number of pennies in two thirds of of the cup, then convert that number to dollars.
+
+Number ofPennies = 9300
+NumberPenniesTwoThirds = 9300 * 2/3
+TotalDollars = NumberPenniesTwoThirds / 100
+
+The answer is 62.1. The number of pennies in two thirds of of the cup is 6200. Converting 6200 pennies to dollars, where 1 penny equals $0.01, gives 62

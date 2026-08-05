@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Keegan was running a car wash with his friend Tashay to raise money for a baseball camp. They needed to raise $200 for the two of them. By 3 pm, Keegan had earned $83 and Tasha had earned $91. How much more did they need to earn to reach their goal?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much more they needed to earn, we need to calculate the total amount they had earned together and then subtract that from their goal of $200.
+
+First, let's add the amounts earned by Keegan and Tasha:
+$83 (Keegan) + $91 (Tasha) = $174
+
+Now, we subtract this total from their goal:
+$200 (goal) - $174 (total earned) = $26
+
+So, they needed to earn an additional $26 to reach their goal.
+
+The answer is <integer>$.<|eot_id|>

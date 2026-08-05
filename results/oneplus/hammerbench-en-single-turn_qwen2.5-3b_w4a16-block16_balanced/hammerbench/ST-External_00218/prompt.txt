@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.searchLocation","description":"Search for a location by keyword, which can be a location, a point of interest such as a gas station, a charging pile, etc., and return a list of address information","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Keywords for search"}},"required":["keyword"]}}
+{"name":"ConvenientLiving.FoodDelivery.searchRestaurants","description":"Search for restaurants on Meituan based on user input","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location"},"name":{"type":"string","description":"regional cuisine"},"order":{"type":"string","description":"Sort by e.g. rating, distance, average spend"}},"required":["location","name","order"]}}
+{"name":"MusicRadio.RadioStations.searchMusicRadio","description":"Search stations by keyword","parameters":{"type":"object","properties":{"keywords":{"type":"string","description":"Keywords, such as station type, etc."}},"required":["keywords"]}}
+{"name":"Health.MedicalServices.getNearbyHospitals","description":"Find a hospital near your location","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Navigation.MapNavigation.searchSurrounding","description":"Search for nearby points of interest, including shops, food, gas stations, office buildings, hotels, shopping malls, etc.","parameters":{"type":"object","properties":{"location":{"type":"string","description":"The name or address of the central location of the search, the default current location"},"category":{"type":"string","description":"Categories of points of interest, such as restaurants, hotels, shopping malls, etc."},"radius":{"type":"integer","description":"Search radius, in meters, defaults to 500"}},"required":["location","category","radius"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's meet at the newly opened restaurant in Wudaokou on the weekend. The address is about 300 meters from the west exit of Wudaokou subway station. The environment there is very good and it is very suitable for gathering. See you Saturday at 2pm, don't be late.
+query:I want to find a hot pot shop. The place is the place mentioned in Tom's text message. Is it okay to sort by distance?<|im_end|>
+<|im_start|>assistant

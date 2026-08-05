@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_religion_history", "description": "Retrieves significant religious events, including the details of the event, its historical context, and its impacts. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"religion": {"type": "string", "description": "Name of the religion to be queried."}, "century": {"type": "integer", "description": "The century in which the event(s) took place."}, "sort_by": {"type": "string", "enum": ["importance", "chronological"], "default": "chronological", "description": "Order of sorting the events. Default is chronological."}, "count": {"type": "integer", "default": 5, "description": "Number of events to return. Default is 5."}}, "required": ["religion", "century"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find ten major historical events related to Christianity in the 16th century sort by importance.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_religion_history", "arguments": {"religion": "Christianity", "century": 16, "count": 10, "sort_by": "importance"}}
+</tool_call><|im_end|>

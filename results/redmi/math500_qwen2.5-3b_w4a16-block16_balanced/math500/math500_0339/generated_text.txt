@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the base six equivalent of $999_{10}$? To convert the decimal number \(999_{10}\) to its base six equivalent, we need to repeatedly divide the number by 6 and keep track of the remainders. The remainders will form the digits of of the base six number, starting from the least significant digit (rightmost) to the most significant digit (leftmost).
+
+Here are the steps:
+
+1. Divide 999 by 6.
+   \[
+   999 \div 6 = 166 \text{ remainder } 3
+   \]
+   So, the least significant digit (rightmost) is 

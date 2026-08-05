@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Milo is making a mosaic with chips of glass. It takes twelve glass chips to make every square inch of the mosaic. A bag of glass chips holds 72 chips. Milo wants his mosaic to be three inches tall. If he has two bags of glass chips, how many inches long can he make his mosaic? Step 1: Calculate total glass chips Milo has
+- Each bag holds 7 chips, and he has 2 bags
+- Total chips = 7 chips/bag * 2 bags = 14 chips
+
+Step 2: Determine the area of of can be covered
+- 12 chips cover 1 square inch
+- 14 chips cover 14/12 square inches
+
+Step 3: Calculate the length of of
+- He wants a 3 inch tall mosaic
+- Area covered = 3 inches * Length inches
+- 14/12 square inches = 3 inches

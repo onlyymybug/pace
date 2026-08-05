@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.BuyingRentingHomes.getPurchasingHousePolicies","description":"Check purchasing policies for specific areas","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Area"}},"required":["location"]}}
+{"name":"Navigation.FlightTickets.checkAirlinesBaggagePolicy","description":"Learn about airline baggage rules","parameters":{"type":"object","properties":{"flight_type":{"type":"string","description":"Flight type e.g. domestic, international"},"name":{"type":"string","description":"Airline Name"}},"required":["flight_type","name"]}}
+{"name":"Navigation.TrafficViolations.queryTrafficRegulations","description":"Find specific traffic laws","parameters":{"type":"object","properties":{"regulation_keyword":{"type":"string","description":"Keywords for Traffic Regulations"}},"required":["regulation_keyword"]}}
+{"name":"OfficeSoftware.Documents.setDocumentPermissions","description":"Set access rights for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to set permissions, required"}},"required":["document_name"]}}
+{"name":"SystemTools.SystemSettings.setSystemPrivacy","description":"Set permissions for mobile app","parameters":{"type":"object","properties":{"app_name":{"type":"string","description":"Αpp Name"},"location_access":{"type":"boolean","description":"Whether to allow fetching locations"},"camera_access":{"type":"boolean","description":"Whether to allow the use of cameras"}},"required":["app_name","location_access","camera_access"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I am going to visit the Palace Museum in Beijing this weekend, and I heard that there are a lot of historical relics there, and there are many exhibitions to see. If you're free, why don't you join us?
+query:Check the purchase policy of the location mentioned in the text message Tom sent me<|im_end|>
+<|im_start|>assistant

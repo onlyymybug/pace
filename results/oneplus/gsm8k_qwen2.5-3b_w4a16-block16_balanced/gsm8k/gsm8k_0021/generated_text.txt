@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: I have 10 liters of orange drink that are two-thirds water and I wish to add it to 15 liters of pineapple drink that is three-fifths water. But as I pour it, I spill one liter of the orange drink. How much water is in the remaining 24 liters? Step 1: Calculate the amount of water in the orange drink.
+Orange drink: 10 liters, 2/3 water
+Water in orange drink = 10 * 2/3 = 20/3 liters
+
+Step 2: Calculate the amount of water in the pineapple drink.
+Pineapple drink: 15 liters, 3/5 water
+Water in pineapple drink = 15 * 3/5 = 9 liters
+
+Step 3: Calculate the total amount of water before spilling.
+Total water before spilling = Water in orange drink + Water in pineapple drink
+Total

@@ -1,0 +1,31 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the product $CD$ of the integers $C$ and $D$ for which
+\[\frac{C}{x-3}+\frac{D}{x+8}=\frac{4x-23}{x^2+5x-24}\]for all real values of $x$ except $-8$ and $3$. To solve for \(C\) and \(D\) in the equation
+
+\[
+\frac{C}{x-3} + \frac{Do}{x+8} = \frac{4x-23}{x^2+5x-24},
+\]
+
+we start by noting that the denominator on the right-hand side can be factored as follows:
+
+\[
+x^2 + 5x - 24 = (x-3)(x+8).
+\]
+
+Thus, the equation becomes
+
+\[
+\frac{C}{x-3} + \frac{D}{x+8} = \frac{4x-23}{(x-3)(x+8)}.
+\]
+
+To combine the fractions on the left-hand side, we need a common denominator, which is \((x-3)(x+8)\). This gives us:
+
+\[
+\frac{C(x+8) + D(x-3)}{(x-3)(x+8)} = \frac{4x-23}{(x-3)(x+8)}.
+\]
+
+Since the denominators are the same, we can equate the numerators:
+
+\[
+C(x+8) + D(x

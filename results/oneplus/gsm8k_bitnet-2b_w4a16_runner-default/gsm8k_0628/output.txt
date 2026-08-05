@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: On a particular week, a tow truck pulled ten cars for each of the first three days and then four fewer cars on each of the remaining days of the week. Calculate the total number of cars it towed that week.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. **First three days:** On each of the first three days, the tow truck pulled ten cars.
+   - Number of cars per day for the first three days = 10 cars/day
+   - Total for the first three days = 10 cars/day * 3 days = 30 cars
+
+2. **Remaining days:** On each of the remaining four days, the tow truck pulled four fewer cars than on the first three days.
+   - Number of cars per day for the remaining four days = 10 cars/day - 4 cars/day = 

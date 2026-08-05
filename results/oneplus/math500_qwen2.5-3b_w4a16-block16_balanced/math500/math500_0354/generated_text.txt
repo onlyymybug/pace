@@ -1,0 +1,9 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Suppose that I have $6$ different books, $2$ of which are math books. In how many ways can I stack my $6$ books on a shelf if I do not want the math books to be next to each other? To solve the problem of where we need to arrange 6 books with 2 math books such that they are not next to each other, we can use the following steps:
+
+1. **Arrange the Non-Math Books:**
+   - We have 4 non-math books (since there are 6 books in total and 2 are math books).
+   - The number of ways to arrange 4 non-math books is given by the factorial of function:
+     \[
+     4!

@@ -1,0 +1,4 @@
+To solve the problem, we need to find the smallest positive integer solutions to the congruence \(14u \equiv 46 \pmod{100}\). We start by simplifying the congruence.
+
+First, we find the greatest common divisor (gcd) of of 14 and 100. Since 14 and 100 are coprime (they have no common factors other than 1), we can divide the entire congruence by 14:
+\[ 14u \equiv 46 \pmod{100} \implies u

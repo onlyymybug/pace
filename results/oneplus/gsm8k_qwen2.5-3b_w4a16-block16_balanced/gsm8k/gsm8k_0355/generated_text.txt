@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Annabelle is saving for a phone that costs $400. She already has $80 in her savings. Her first job, where she earns $10 per hour, pays her for 20 hours of work. She is also paid for 15 hours of work at her second job, where she earns $5 an hour. In dollars, how much money does Annabelle still need to save? Step 1: Calculate total earnings from first job.
+Earnings from first job = 10 per hour * 20 hours = 200 dollars
+
+Step 2: Calculate total earnings from second job.
+Earnings from second job = 5 per hour * 15 hours = 75 dollars
+
+Step 3: Calculate total savings including initial amount.
+Total savings = Initial amount + Earnings from first job + Earnings from second job
+Total savings = 80 + 200 + 75 = 355 dollars
+
+Step 4: Calculate remaining amount needed.
+Remaining amount

@@ -1,0 +1,13 @@
+To solve this problem, we need to calculate the total capacity of all vehicles rented for the day trip.
+
+First, we calculate the capacity of the buses:
+4 buses * 60 employees per bus = 240 employees
+
+Next, we calculate the capacity of the minibusses:
+6 minibusses * 30 employees per minibus = 180 employees
+
+Then, we calculate the capacity of the minivans:
+10 minivans * 15 employees per minivan = 150 employees
+
+Finally, we add up the capacities of all vehicles:
+240 employees (from buses) +

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobEmployerInfo","description":"Get employer details based on company name","parameters":{"type":"object","properties":{"company_name":{"type":"string","description":"Company name"}},"required":["company_name"]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"Education.ChildrenEducation.searchChildKnowledge","description":"Search all types of children's knowledge","parameters":{"type":"object","properties":{"knowledge_type":{"type":"string","description":"Types of knowledge, e.g. astronomy, geography"}},"required":["knowledge_type"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer, Thank you for choosing NetEase. Your order has been successfully submitted and will be processed as soon as possible. NetEase is committed to providing the best quality service, and if you have any questions, please feel free to contact our customer service. Enjoy! Sincerely, NetEase.
+query:Can you check the basic information of the company name mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant

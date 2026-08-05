@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","description":"Set how messages are notified","parameters":{"type":"object","properties":{"vibration_type":{"type":"string","description":"Type of vibration, e.g. no vibration, persistent, intermittent (no vibration by default)"},"sound_type":{"type":"string","description":"Sound type, e.g. mute, light music, song name (mute by default)"}},"required":["vibration_type","sound_type"]}}
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"Travel.ItineraryServices.getTravelTransportationOptions","description":"Provide transportation and directions to your destination","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"}},"required":["origin","destination"]}}
+{"name":"Finance.Payment.setPayNotifications","description":"Turn payment notifications on or off","parameters":{"type":"object","properties":{"open":{"type":"boolean","description":"Whether to turn on payment notifications"},"notification_type":{"type":"string","description":"Default app notifications, notification methods, such as SMS, email"}},"required":["open","notification_type"]}}
+{"name":"SystemTools.SystemSettings.timerOnorOff","description":"Set the phone to power on and off regularly","parameters":{"type":"object","properties":{"on_time":{"type":"string","description":"Up time"},"off_time":{"type":"string","description":"Shutdown time"}},"required":["on_time","off_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Friend A: Hey, I recently discovered a super nice light music called "Cannon". You must listen to it sometime, it's really super healing!
+query:Set my message notification method to no vibration, and the voice selects the songs mentioned in the QQ message Xiaoming sent to me.<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.InstantMessaging.setMessageNotification","parameters":{"vibration_type":"no vibration","sound_type":"song_name"}}<|im_end|>

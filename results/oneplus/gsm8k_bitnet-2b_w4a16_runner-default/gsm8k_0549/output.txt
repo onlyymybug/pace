@@ -1,0 +1,7 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mark was unwell for 3 months, during which he lost 10 pounds per month. If his final weight was 70 pounds, what was his initial weight?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Mark's initial weight, we need to reverse the weight loss. Since he lost 10 pounds per month for 3 months, the total weight loss is 10 pounds/month * 3 months = 30 pounds. If his final weight was 70 pounds, we subtract the total weight loss from the final weight to find the initial weight: 70 pounds - 30 pounds = 40 pounds. The answer is 40 pounds.<|eot_id|>

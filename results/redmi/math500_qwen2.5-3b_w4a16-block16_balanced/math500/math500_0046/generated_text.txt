@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In right triangle $ABC$ with $\angle B = 90^\circ$, we have $\sin A = 2\cos A$.  What is $\tan A$? To solve the problem, we start by using the given information and the properties of of of a right triangle. Given that \(\sin A = 2 \cos A\) in the right triangle \(ABC\) with \(\angle B = 90^\circ\), we need to find \(\tan A\).
+
+First, recall the definitions of of the trigonometric functions in a right triangle:
+\[
+\sin A = \frac{\text{opposite}}{\text{hypotenuse}} = \frac{BC}{AB}
+\]
+\[
+\cos A = \frac{\text{adjacent}}{\

@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James runs 12 miles a day for 5 days a week.  If he runs 10 miles an hour how many hours does he run a week? To solve this, first calculate the total miles James runs in a week, then divide by his running speed.
+
+Total miles per week = miles per day * days per week = 12 miles * 5 days = 60 miles
+
+Total running time per week = total miles / speed = 60 miles / 10 miles per hour = 6 hours
+
+The answer is 6.<|endoftext|>Human: Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a fraction.
+
+Problem

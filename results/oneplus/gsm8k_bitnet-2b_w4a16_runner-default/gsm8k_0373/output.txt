@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Hallie had dance practice for 1 hour on Tuesdays and 2 hours on Thursdays.  On Saturdays, she had dance practice that lasted twice as long as Tuesday's night class.  How many hours a week did she have dance practice?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many hours Hallie had dance practice in a week, we need to calculate the total hours for each day of the week and then add them up.
+
+- Tuesday: 1 hour
+- Thursday: 2 hours
+- Saturday: Twice as long as Tuesday, which is 2 * 1 = 2 hours
+
+Now, add up the hours for each day:
+
+1 (Tuesday) + 2 (Thursday) + 2 (Saturday) = 5 hours
+
+So, Hallie had dance practice for a total of 5 hours a week.
+
+The answer is 5.<|eot_id|>

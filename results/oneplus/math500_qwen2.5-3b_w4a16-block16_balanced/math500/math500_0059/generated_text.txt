@@ -1,0 +1,27 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Compute $99^2+99+1$ in your head. Note that $99^2$ is easy to compute because $99$ is very close to $100$. To solve \(99^2 + 99 + 1\) in my head, I'll break it down step by step.
+
+First, let's recall the algebraic identity for \((a-1)^2\):
+\[
+(a-1)^2 = a^2 - 2a + 1
+\]
+If we let \(a = 100\), then:
+\[
+99^2 = (100-1)^2 = 100^2 - 2 \cdot 100 + 1
+\]
+Calculating each term:
+\[
+100^2 = 10000
+\]
+\[
+2 \cdot 100 = 200
+\]
+\[
+10000 - 200 + 1 = 9801
+\]
+Thus, \(99^2 = 9801\).
+
+Next, we need to compute \(99^2 + 99 + 1\):
+\[
+99^2 + 99 + 1

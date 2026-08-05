@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "monopoly_odds_calculator", "description": "Calculates the probability of rolling a certain sum with two dice, commonly used in board game like Monopoly. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"number": {"type": "integer", "description": "The number for which the odds are calculated."}, "dice_number": {"type": "integer", "description": "The number of dice involved in the roll."}, "dice_faces": {"type": "integer", "description": "The number of faces on a single die. Default is 6 for standard six-faced die."}}, "required": ["number", "dice_number"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the odds of rolling a 7 with two dice in the board game Monopoly.<|im_end|>
+<|im_start|>assistant

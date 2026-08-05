@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.searchMessage","description":"Search historical messages for a specific contact or group based on keywords","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group to search for the message"},"keyword":{"type":"string","description":"Keywords for search"}},"required":["receiver_name","keyword"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryCityServiceInfo","description":"Find information about public city services in selected cities","parameters":{"type":"object","properties":{"city_name":{"type":"string","description":"Name of the city to query"}},"required":["city_name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotParkingInfo","description":"Get parking information for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+{"name":"OfficeSoftware.Email.searchMail","description":"Search messages by email keyword","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"KEYWORDS"},"max_results":{"type":"integer","description":"Maximum number of returned results, default is 10"}},"required":["keyword","max_results"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We plan to go to the Great Wall Scenic Area on the weekend, gather at the entrance of the Scenic Area at 8am, remember to wear comfortable shoes, bring water and sunscreen. We look forward to exploring this historic site with you!
+query:Can you find the parking lot information of the place mentioned in the text message Tom sent me?<|im_end|>
+<|im_start|>assistant

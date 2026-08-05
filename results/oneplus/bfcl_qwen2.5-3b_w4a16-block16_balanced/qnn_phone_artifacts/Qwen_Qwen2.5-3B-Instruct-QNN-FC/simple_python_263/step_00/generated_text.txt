@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_sculpture_info", "description": "Retrieves the most recent artwork by a specified artist with its detailed description. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"artist_name": {"type": "string", "description": "The name of the artist."}, "detail": {"type": "boolean", "description": "If True, it provides detailed description of the sculpture. Defaults to False."}}, "required": ["artist_name"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find me the most recent art sculpture by James Plensa with detailed description.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_sculpture_info", "arguments": {"artist_name": "James Plensa", "detail": true}}
+</tool_call><|im_end|>

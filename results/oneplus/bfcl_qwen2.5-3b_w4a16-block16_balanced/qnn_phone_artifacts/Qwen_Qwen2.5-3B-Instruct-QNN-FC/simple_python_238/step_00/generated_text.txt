@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "us_history.get_president", "description": "Retrieve the U.S. president during a specific event in American history. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"event": {"type": "string", "description": "The event in U.S. history."}, "year": {"type": "integer", "description": "The specific year of the event."}}, "required": ["event", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who was the president of the United States during the American Civil War?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "us_history.get_president", "arguments": {"event": "American Civil War", "year": 1861}}
+</tool_call><|im_end|>

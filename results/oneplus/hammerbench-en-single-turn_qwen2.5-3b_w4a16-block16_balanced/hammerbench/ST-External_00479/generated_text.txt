@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.receiveFile","description":"Receive files from specified contacts or groups","parameters":{"type":"object","properties":{"sender_name":{"type":"string","description":"The contact or group who sent the file"}},"required":["sender_name"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskRestoreDeletedFile","description":"Recover Specified Files from Drive Recycle Bin","parameters":{"type":"object","properties":{"file_name":{"type":"string","description":"File name to recover"}},"required":["file_name"]}}
+{"name":"Health.HealthManagement.shareHealthData","description":"Share the user's health data through a third-party app","parameters":{"type":"object","properties":{"media":{"type":"string","description":"Choose Socials To Share Single Post"},"name":{"type":"string","description":"Friend name"}},"required":["media","name"]}}
+{"name":"ConvenientLiving.GovernmentServices.downloadServiceDocument","description":"Download docs for city services","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Name of the document to download"}},"required":["document_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.returnExpressPreOrder","description":"Specify a time to initiate the shipment to the courier","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Shipping time"},"recipient_address":{"type":"string","description":"<g id=\"Bold\">Receiver's</g> <g id=\"Bold\">Address:</g>"}},"required":["date","recipient_address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Boss Li,
+
+Hello!
+
+I am Zhang Hua. I would like to give you a brief report on the progress of the project we discussed at the last meeting.At present, the project team has completed the preliminary market research work and adjusted the product positioning according to your suggestions.President Wang spoke highly of this and instructed us to move forward with the next stage of R&D as soon as possible.
+
+In addition, regarding the funding arrangement of the project, Manager Liu of the Finance Department has communicated with me to ensure that the budget can be smoothly put in place in the next few months.We plan to hold a meeting of all members next Friday to plan the follow-up work in more detail, and we hope that you will be able to participate and give more guidance and support.
+
+Please do not hesitate to contact me if you have any questions or need further discussion.Looking forward to hearing from you!
+
+Good luck,
+
+Zhang Hua
+query:Can you help me receive the documents from the person mentioned in the email?<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.InstantMessaging.receiveFile","parameters":{"sender_name":"EK"}}<|im_end|>

@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Consider the function \[ f(x) =
+\begin{cases}
+ax^2 & \text{if } x \geq a,\\
+ax +2a& \text{if } x <a,
+\end{cases}
+\]where $a$ is some number.
+
+What is the largest value of $a$ such that the graph of $y=f(x)$ intersects every horizontal line at least once?

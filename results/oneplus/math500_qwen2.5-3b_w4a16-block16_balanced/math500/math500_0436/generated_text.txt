@@ -1,0 +1,21 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the domain of the real-valued function $f(x)=\frac{2x-7}{\sqrt{x^2-5x+6}}$? To determine the domain of of of the real-valued function \( f(x) = \frac{2x-7}{\sqrt{x^2-5x+6}} \), we need to identify the values of of of \( x \) for which the function is defined. Specifically, we need to ensure that the denominator is not zero and that the expression under the square root is non-negative.
+
+1. **Identify where the denominator is zero:**
+   The denominator of \( \sqrt{x^2 - 5x + 6} \) must not be zero. Therefore, we need to solve:
+   \[
+   x^2 - 5x + 6 \neq 0
+   \]
+   Factor the quadratic expression:
+   \[
+   x^2 - 5x + 6 = (x-2)(x-3)
+   \]
+   Set each factor to zero to find the values that make the denominator zero:
+   \[
+   x - 2 = 0 \quad \text{or} \quad x - 3 = 0
+   \]
+   \[
+   x = 2 \quad \text{or} \quad x = 3
+   \]
+   Thus

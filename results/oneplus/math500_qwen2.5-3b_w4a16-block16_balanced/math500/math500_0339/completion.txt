@@ -1,0 +1,23 @@
+To convert the decimal number \(999_{10}\) to its base six equivalent, we need to repeatedly divide the number by 6 and keep track of the remainders. The remainders will form the digits of of the base six number, starting from the least significant digit (rightmost) to the most significant digit (leftmost).
+
+Here are the steps:
+
+1. Divide 999 by 6.
+   \[
+   999 \div 6 = 166 \text{ remainder } 3
+   \]
+   So, the least significant digit (rightmost) is 3.
+
+2. Now, take the quotient from the previous division, which is 166, and divide it by 6.
+   \[
+   166 \div 6 = 27 \text{ remainder } 4
+   \]
+   So, the next digit is 4.
+
+3. Take the new quotient, which is 27, and divide it by 6.
+   \[
+   27 \div 6 = 4 \text{ remainder } 3
+   \]
+   So, the next digit is 3.
+
+4. Finally, take the new quotient

@@ -1,0 +1,16 @@
+To determine the number of different possible rational roots of the polynomial \(2x^4 + a_3 x^3 + a_2 x^2 + a_1 x + 1 = 0\), we use the Rational Root Theorem. The Rational Root Theorem states that any potential rational root, expressed as a fraction \(\frac{p}{q}\), must have \(p\) as a factor of of the constant term (here, 1) and \(q\) as a factor of of the leading coefficient (here, 2).
+
+Given the polynomial:
+\[2x^4 + a_3 x^3 + a_2 x^2 + a_1 x + 1 = 0,\]
+the constant term is 1 and the leading coefficient is 2. The factors of of 1 are \(\pm 1\) and the factors of of 2 are \(\pm 1, \pm 2\).
+
+Thus, the possible rational roots are:
+\[
+\pm 1, \pm \frac{1}{2}
+\]
+
+We now list all these potential rational roots:
+\[
+1, -1, \frac{1}{2}, -\frac{1}{2}
+\]
+

@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: 9 out of 10 cheerleaders are 64" tall.  The 10th cheerleader is 60" tall.  If they build a human pyramid, where 4 girls are on the bottom,  3 stand on top of the 4, 2 stand on top of the 3 and the shortest girl is at the top, how tall is the human pyramid in feet? To solve this problem, we need to find the total height of of the human pyramid formed by the cheerleaders.
+
+First, we calculate the average height of of the 9 cheerleaders who are 64 inches tall:
+9 * 64 = 576 inches
+
+Then we add the height of of the 10th cheerleader who is 60 inches tall:
+576 + 60 = 636 inches
+
+Now we need to calculate the height of of of the pyramid. The formula for the height of of of a pyramid with n layers is:
+Height = (n * (n

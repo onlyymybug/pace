@@ -1,0 +1,39 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.MapNavigation.collectLocation","description":"Favorite a place","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Places to save"}},"required":["location"]}}
+{"name":"Photography.PhotoEditing.savePicture","description":"Save edited photos","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"Photography.VideoEditing.saveVideo","description":"Save edited video","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"NewsMagazines.News.saveNews","description":"Save news of interest to the user's favorites","parameters":{"type":"object","properties":{"source_name":{"type":"string","description":"News Source Name"},"news_name":{"type":"string","description":"News Name"}},"required":["source_name","news_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.addCollectSecondhandSale","description":"Collect products by trade name","parameters":{"type":"object","properties":{"search_name":{"type":"string","description":"Product Name"}},"required":["search_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Subject: Your Nike Air Max Limited Edition order has shipped
+
+Dear Customer,
+
+Thank you for purchasing Nike Air Max limited edition sneakers at our store.We're happy to let you know that your order has been processed and sent today.Here are the details of your order:
+
+Order number: 123456789
+Item: Nike Air Max Limited Edition
+Color: Black
+Size: 42
+Quantity: 1
+
+Please keep your phone open so that the courier company can contact you to confirm the delivery time.Depending on the logistics, you will typically receive the item within the next 3-5 business days.If you have any questions in the meantime, please don't hesitate to contact us and we'll be happy to help.
+
+Thank you again for your support and I hope you will enjoy these limited edition Nike Air Max sneakers, which are not only stylish in design, but also have excellent comfort and are believed to bring you an unprecedented wearing experience.
+
+Enjoy!
+
+Sincerely,
+Salute
+
+[Store Name Omitted] Support Team
+query:I want to save the item mentioned in the email, can you help me?<|im_end|>
+<|im_start|>assistant
+{"name":"NewsMagazines.News.saveNews","parameters":{"source_name":"Salute","news_name":"Dear Customer,\nThank you for your purchase of of of Nike Air Max limited edition sneakers. Here are the details of of your order:\nOrder number: 123456789\nItem: Nike AirMax Limited Edition\nColor: Black\nSize: 42\nQuantity: 1"}}<|im_end|>

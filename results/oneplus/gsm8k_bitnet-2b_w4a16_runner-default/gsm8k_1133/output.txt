@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Valerie earns $5000 per month, 1/2 of what her brother earns. If their mother earns twice their combined salary, what's the total amount of money they all have together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the salaries of Valerie and her brother. Let's denote Valerie's brother's salary as \( B \).
+
+Given:
+- Valerie earns $5000 per month.
+- Valerie earns half of what her brother earns.
+
+From the given information, we can write the equation for Valerie's brother's salary as:
+\[ 5000 = \frac{1}{2}B \]
+
+To find \( B \), we multiply both sides of the equation by 2:
+\[ B = 5000 \times 2 \]
+\[ B = 10000 \]
+
+So, Valerie's brother earns

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.getCommunityNotifications","description":"Get notifications from select communities","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"}},"required":["community_name"]}}
+{"name":"Navigation.TrafficViolations.viewTrafficEvent","description":"View notifications about traffic events","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Additional conditions, such as area of occurrence, duration of impact, etc."}},"required":["keyword"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+{"name":"MusicRadio.OnlineMusic.participateInMusicTopicDiscussion","description":"Participate in musical conversations by topic and comment content","parameters":{"type":"object","properties":{"topic":{"type":"string","description":"Topic"},"comment":{"type":"string","description":"Comments"}},"required":["topic","comment"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryTaxDeclarationStatus","description":"Check the progress and results of your tax returns","parameters":{"type":"object","properties":{"tax_type":{"type":"string","description":"Tax types, such as personal income tax, corporate income tax, etc."},"tax_period":{"type":"string","description":"Tax reporting period"}},"required":["tax_type","tax_period"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Alice! How about we go hiking this weekend? The last time I heard you say you love the outdoors, I thought it would be a great opportunity. We can meet at the school gate at 8am and leave together. After returning from the climb, if everyone has no other arrangements, we can go eat something delicious together and relax. Well, I look forward to your reply!
+query:Check the educational background of the friend mentioned in the message received from QQ at Harvard University to verify the authenticity.<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","parameters":{"graduate_name":"EK","school_name":"Harvard University"}}<|im_end|>

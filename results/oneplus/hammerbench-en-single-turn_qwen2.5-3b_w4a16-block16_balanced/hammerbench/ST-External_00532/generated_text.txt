@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrders","description":"Search for item orders by keyword, and query all current status orders directly by default","parameters":{"type":"object","properties":{"goods_order":{"type":"string","description":"Product name keywords"}},"required":["goods_order"]}}
+{"name":"OnlineShopping.SecondhandTrading.evaluateSecondhandSaleOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"Education.OnlineClasses.viewCourseOrdersDetails","description":"View a reservation's details","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrdersDetails","description":"View specific item order details based on criteria","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product name keywords"}},"required":["goods_name"]}}
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"evaluation":{"type":"string","description":"Content of the review"}},"required":["goods","evaluation"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hi there, Thank you for your interest and support.We have recently launched a very delicate pen made of high quality stainless steel with smooth lines and comfortable grip, which is especially suitable for long writing.The nib uses German imported precision technology to ensure smooth and stable writing every time.In addition, this pen is also equipped with a beautiful gift box package, whether it is for personal use or as a gift for friends and family, it is a great choice.
+
+For a limited time, we are offering a 10% discount on this fountain pen with free shipping of $500 or more.We hope you don't miss out on this opportunity.Please do not hesitate to contact us if you have any questions or need more details about this pen.
+
+Have a great life and good luck!
+
+Best regards,
+[Your Live Chat Team]
+query:I want to see the order details for the items mentioned in the email, especially those I've reviewed.<|im_end|>
+<|im_start|>assistant
+{"name":"OnlineShopping.SecondhandTrading.searchSecondhandSaleOrdersDetails","parameters":{"goods_name":"EK"}}<|im_end|>

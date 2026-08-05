@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A boy has 5 cards. His brother has 3 fewer cards than he has. How many cards do they have together?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we first determine how many cards the brother has. Since the brother has 3 fewer cards than the boy, we subtract 3 from the number of cards the boy has:
+
+5 cards (boy) - 3 cards = 2 cards (brother)
+
+Now, we add the number of cards the boy has to the number of cards the brother has to find the total number of cards they have together:
+
+5 cards (boy) + 2 cards (brother) = 7 cards
+
+The answer is 7 cards.<|eot_id|>

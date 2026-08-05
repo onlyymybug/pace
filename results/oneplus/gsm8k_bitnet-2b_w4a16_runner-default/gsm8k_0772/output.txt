@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bennet is a farmer. He sells 20 of his eggplants for $3 each. He has 25 ears of corn that he can sell as well. If Bennet wants to make a total of $135, how much should he sell each ear of corn for?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Bennet should sell each ear of corn for, we first need to calculate the total amount he earns from selling the eggplants and then determine how much more he needs to earn from the corn.
+
+1. Calculate the total earnings from selling the eggplants:
+   \[
+   \text{Total earnings from eggplants} = 20 \times 3 = 60 \text{ dollars}
+   \]
+
+2. Determine how much more Bennet needs to earn to reach his goal of $135:
+   \[
+   \text{Amount needed from corn} = 135 - 60 = 75 \

@@ -1,0 +1,15 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Micheal loves riding a bike. He rode it at least 5 times a week and makes 25 kilometers each time. He did that for four weeks, and then he decided, to ride the bike only 2 times a week, but for 60 kilometers each time, and he did that for 3 weeks. How many kilometers did Micheal do in total? To solve this problem, we need to calculate the total kilometers Michael rode in two different periods and then sum them up.
+
+1. **First Period:**
+   - Michael rode at least 5 times a week.
+   - Each time he rode, he roded 25 kilometers.
+   - He rode for 4 weeks.
+
+   Total kilometers in the first period:
+   \[
+   5 \text{ rides/week} \times 25 \text{ km/ride} \times 4 \text{ weeks} = 500 \text{ km}
+   \]
+
+2. **Second Period:

@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Roy has saved 40% more in money earned by chores than his brother Anthony.  Anthony has saved $10.00 more than their sister Eva.   Eva has saved $20.00.  How much money does Roy have? Step 1: Determine how much money Anthony has.
+Eva has $20.00 and Anthony has $10.00 more than Eva.
+So, Anthony has 20 + 10 = $30.00.
+
+Step 2: Determine how much money Roy has.
+Roy has 40% more money than Anthony.
+So, Roy has 30 + (0.4 * 30) = $42.00.
+
+The answer is 42.0.<|endoftext|>Human, walk me through the solution steps for this problem. Sure, let's break down the

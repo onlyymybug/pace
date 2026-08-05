@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: While at the dollar store, Sloane counts 100 customers entering the store. The next day, she counts 50 more customers than the first day. If the total number of customers by the third day was 500, how many customers did she count on the third day?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of customers on the first day as \( x \). According to the problem, the number of customers on the second day is \( x + 50 \). The total number of customers over the three days is given as 500.
+
+We can set up the equation based on the information provided:
+
+\[ x + (x + 50) + \text{number of customers on the third day} = 500 \]
+
+Let's denote the number of customers on the third day as \( y \). So the equation becomes:
+
+\[ x + (x + 50) + y = 500 \]
+
+S

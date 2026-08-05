@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rong has been saving 20 coins in his piggy bank every month. Neil has been saving 2/5 times more coins in his piggy bank per month than Rong. How many coins are they having ten years after they started their savings? Step  1: Calculate how many coins Neil saves per month.
+Rong saves 20 coins per month. Neil saves 2/5 more coins than Rong, so Neil saves 20 + (2/5 * 20) = 20 + 8/5 = 24.4 coins per month.
+Step    2: Calculate total coins saved by both in 10 years.
+In 10 years, there are 10 * 12 = 120 months.
+Total coins saved by Rong in 10 years = 20 coins/month

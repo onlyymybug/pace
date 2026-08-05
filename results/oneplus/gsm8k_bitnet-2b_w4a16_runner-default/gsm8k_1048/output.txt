@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rory is retrieving tennis balls from the court after a tennis match. In the first of three sets, he had to retrieve four more balls than in the second set. In the third set, he retrieved half as many balls as in the second. He retrieved 19 tennis balls in all. How many tennis balls did he retrieve in the first set of the match?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of balls retrieved in the first set as \( x \). According to the problem, Rory retrieved 4 more balls in the first set than in the second set, so the number of balls in the second set is \( x - 4 \). In the third set, he retrieved half as many balls as in the second set, which means he retrieved \( \frac{x - 4}{2} \) balls in the third set.
+
+The total number of balls retrieved in all three sets is given as 19. Therefore, we can write the equation:
+
+\[ x + (x - 4) +

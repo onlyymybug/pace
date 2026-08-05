@@ -1,0 +1,7 @@
+To solve the problem of of of arranging the committee members around a circular table with the given constraints, we need to follow a systematic approach. Here's the step-by-step reasoning:
+
+1. **Treat the groups as single units:**
+   Since all members of each party must sit together, we can initially treat each group as a single "super member". This simplifies the problem to arranging 3 "super members" around a circular table.
+
+2. **Circular permutations:**
+   For \( n \) objects arranged in a circle, the number of distinct arrangements is \((n-1)!\). Here, \( n =

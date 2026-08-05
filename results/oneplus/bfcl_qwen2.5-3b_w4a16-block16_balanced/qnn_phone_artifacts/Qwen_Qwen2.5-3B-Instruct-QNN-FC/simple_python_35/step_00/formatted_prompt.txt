@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "vegan_restaurant.find_nearby", "description": "Locate nearby vegan restaurants based on specific criteria like operating hours. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The city and state, e.g. New York, NY, you should format it as City, State."}, "operating_hours": {"type": "integer", "description": "Preferred latest closing time of the restaurant. E.g. if 11 is given, then restaurants that close at or after 11 PM will be considered. This is in 24 hour format. Default is 24."}}, "required": ["location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find an all vegan restaurant in New York that opens until at least 11 PM.<|im_end|>
+<|im_start|>assistant

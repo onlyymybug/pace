@@ -1,0 +1,10 @@
+To solve this problem, let's first determine how many books each shelf can hold:
+
+- Each middle shelf can hold 10 books.
+- The bottom shelf can hold twice as many books as a middle shelf, so it can hold \(10 \times 2 = 20\) books.
+- The top shelf can hold 5 fewer books than the bottom shelf, so it can hold \(20 - 5 = 15\) books.
+
+Now, let's calculate the total number of books that can be held by one bookcase:
+
+- The middle two shelves can hold \(2 \times 10 = 20\) books.
+- The

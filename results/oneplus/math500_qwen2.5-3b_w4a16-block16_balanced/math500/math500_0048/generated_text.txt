@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The graph of $f(x)=\frac{2x}{x^2-5x-14}$ has vertical asymptotes $x=a$ and $x=b$, and horizontal asymptote $y=c$.  Find $a+b+c$. To solve for the vertical asymptotes, we need to find the values of of of \(x\) that make the denominator zero, but not the numerator, because at these points, the function is undefined but approaches infinity. The function \(f(x) = \frac{2x}{x^2 - 5x - 14}\) has vertical asymptotes where the denominator is zero, but the numerator is not zero at those points. 
+
+First, we solve the equation for the denominator:
+\[ x^2 - 5x - 14 = 0 \]
+
+We factorize the quadratic equation:
+\[ x^2 - 5x - 14 = (x - 7)(x + 2) = 0 \]
+
+Setting each factor to zero gives the solutions:
+\[ x - 7 = 0 \implies x = 7 \]
+\[ x + 2 = 0 \implies x = -2 \]
+
+Thus, the vertical asymptotes are at \( x = 7 \) and \( x = -2 \).
+
+Next, we determine the horizontal asymptote by examining the behavior of \( f(x) \) as \( x \) approaches infinity. To find the horizontal asymptote, we consider

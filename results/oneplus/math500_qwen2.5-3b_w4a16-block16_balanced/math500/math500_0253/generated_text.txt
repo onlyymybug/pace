@@ -1,0 +1,29 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the maximum value of $4(x + 7)(2 - x)$, over all real numbers $x$? To find the maximum value of of \(4(x + 7)(2 - x)\), over all real numbers \(x\), we start by simplifying the expression and then finding its maximum value.
+
+First, let's rewrite the expression:
+\[
+4(x + 7)(2 - x)
+\]
+
+We can expand the product \((x + 7)(2 - x)\):
+\[
+(x + 7)(2 - x) = x \cdot 2 + x \cdot (-x) + 7 \cdot 2 + 7 \cdot (-x)
+\]
+\[
+= 2x - x^2 + 14 - 7x
+\]
+\[
+= -x^2 - 5x + 14
+\]
+
+Now, we multiply the entire expression by 4:
+\[
+4(x + 7)(2 - x) = 4(-x^2 - 5x + 14)
+\]
+\[
+= -4x^2 - 20x + 56
+\]
+
+We need to find the maximum value of of of \(-4x^2 - 20x + 56\). This is a quadratic function in the form

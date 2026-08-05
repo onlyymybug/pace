@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Smith family is getting ready for summer and needs to have their swimming pool filled. The pool company instructed them to measure to find the volume of the pool, then to multiply it by 5.9 to calculate how many gallons of water they need. The cost for the pool company to come and fill the pool is $0.10 per gallon. Mr. Smith measured and found the pool is 14 feet wide, 25 feet long, and 4 feet deep. How much will it cost to fill the pool? Step 1: Calculate the volume of of of the pool.
+Volume = length * width * depth
+Volume = 25 * 14 * 4
+Volume = 1400 cubic feet
+
+Step 2: Convert the volume from cubic feet to gallons.
+1 cubic foot = 7.48 gallons
+1400 cubic feet * 7.48 gallons/cubic foot = 10432 gallons
+
+Step 3: Multiply the volume in gallons by 5.9 to find the total gallons needed.
+Total gallons needed = 10432 * 5.

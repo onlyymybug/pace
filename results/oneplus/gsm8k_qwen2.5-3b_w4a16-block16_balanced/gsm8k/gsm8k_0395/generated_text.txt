@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Wendy wants to place 20 more than double the number of books in a shelving system with 6 rows and 6 columns. How many books will she need to carry to complete her task? To solve this, first calculate double the number of columns, then add 20 more books, and finally multiply by the number of rows.
+
+Double columns: 6*2=12
+Add 20 more: 12 20 0 + 20 = 22 books
+Rows: 6*columns=6*6=36 books
+
+The answer is 36. The calculation shows Wendy needs to carry 36 books to complete her task. The reasoning is as follows: Double the columns (6*2) gives 12 books, then adding 20 more

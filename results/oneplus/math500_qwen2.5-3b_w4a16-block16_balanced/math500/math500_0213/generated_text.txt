@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Recently, Frank took a one-hundred question aptitude test where each correct answer scored $5$ points, each incorrect answer scored $-2$ points, and each question not answered scored zero points. Frank answered $80$ questions and scored $232$ points. How many questions did he answer correctly? Let's denote the number of questions Frank answered correctly as \( x \), the number of questions he answered incorrectly as \( y \), and the number of questions he left blank as \( z \). We know the following:
+
+1. The total number of questions is 100, so \( x + y + z = 100 \).
+2. Frank answered 80 questions, so \( x + y = 80 \).
+3. Frank scored 232 points, so \( 5x - 2y = 232 \).
+
+From the second equation, we can express \( z \) in terms of:
+\[ z = 100 - x - y. \]
+Since \( x + y = 80 \), we can substitute \( y = 80 - x \) into the third equation:
+\[ 5x - 2(80 - x) = 232. \]
+Simplifying the equation, we get:
+\[ 5x - 160 + 2x = 232, \]
+\[ 7x - 160 = 232, \]
+\[ 7x = 392, \

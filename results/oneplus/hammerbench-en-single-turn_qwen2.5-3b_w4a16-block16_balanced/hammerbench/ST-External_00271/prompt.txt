@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"SocialCommunication.Community.createCommunityPost","description":"Create a new post in a specific community with keywords","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to create the post"},"title":{"type":"string","description":"Posts with Title"},"comment":{"type":"string","description":".Post Content - Divi Machine"}},"required":["community_name","title","comment"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"Photography.PhotoEditing.createPictureAlbum","description":"Create an album, specify an album name, and include a photo collection","parameters":{"type":"object","properties":{"name":{"type":"string","description":"New Gallery Name"},"photo_video_list":{"type":"string","description":"Albums contain photos and videos, separated by commas"}},"required":["name","photo_video_list"]}}
+{"name":"OfficeSoftware.Conferencing.createMeeting","description":"Create a new meeting","parameters":{"type":"object","properties":{"title":{"type":"string","description":"Meeting Title:"},"start_time":{"type":"string","description":"Conference Start Time"},"end_time":{"type":"string","description":"Meeting end time"},"location":{"type":"string","description":"Meeting Address"},"participant_list":{"type":"string","description":"List of participants in the meeting"}},"required":["title","start_time","end_time","location","participant_list"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:The meeting is scheduled for tomorrow morning at 10am in the large conference room. Ask all colleagues at all@company.com to attend on time and we will mainly discuss the market strategy for the fourth quarter. Please prepare relevant materials, especially Zhang Hua and Li Ming, and the part you are responsible for will be the focus of discussion. Thank you for your cooperation!
+query:Please help me create a draft of the email with the name mentioned in the notepad and the subject line “Emergency Meeting Notification” which reads: “Please note that there will be an emergency meeting in the conference room tomorrow morning at 9am." and mark it as high priority.<|im_end|>
+<|im_start|>assistant

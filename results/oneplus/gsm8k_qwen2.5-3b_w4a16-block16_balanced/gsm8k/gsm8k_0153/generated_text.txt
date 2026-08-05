@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carl buys ten packs of cookies. Each pack of cookies has six cookies inside. Each cookie cost $0.10. How much change does Carl receive if he pay with a $10 bill? Step 1: Calculate total number of cookies
+Number ofCookies = NumberofPacks * CookiesPerPack
+NumberofPacks = 10
+CookiesPerPack = 6
+NumberofCookies = 10 * 6 = 60
+
+Step 2: Calculate total cost of of cookies
+TotalCost = NumberofCookies * CostPerCookie
+CostPerCookie = 0.10
+TotalCost = 60 * 0.10 = 6
+
+Step 3: Calculate change received
+TotalPaid = 10
+ChangeReceived = TotalPaid - TotalCost
+ChangeReceived

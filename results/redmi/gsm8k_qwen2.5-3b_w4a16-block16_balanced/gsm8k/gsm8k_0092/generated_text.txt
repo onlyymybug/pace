@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jan has three times the number of pets as Marcia. Marcia has two more pets than Cindy. If Cindy has four pets, how many total pets do the three have? Step 1: Identify the number of pets Cindy has
+Cindy has 4 pets.
+
+Step 2: Calculate the number of pets Marcia has
+Since Marcia has two more pets than Cindy, Marcia has 4 + 2 = 6 pets.
+
+Step 3: Calculate the number of pets Jan has
+Given that Jan has three times the number of pets as Marcia, Jan has 3 * 6 = 18 pets.
+
+Step 4: Calculate the total number of pets
+Total pets = Cindy's pets + Marcia's pets + Jan's pets
+Total pets = 4 + 

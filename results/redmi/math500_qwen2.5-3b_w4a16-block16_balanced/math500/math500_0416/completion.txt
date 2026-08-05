@@ -1,0 +1,15 @@
+To solve the problem of of, we need to find the remainder when \(129^{34} + 96^{38}\) is divided by \(11\). We will use modular arithmetic to simplify the calculations.
+
+First, we reduce the bases \(129\) and \(96\) modulo \(11\):
+
+\[
+129 \mod 11
+\]
+
+To find \(129 \mod 11\), we perform the division:
+
+\[
+129 \div 11 = 11 \text{ remainder } 18
+\]
+
+Thus

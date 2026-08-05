@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "environmental_data.air_quality_index", "description": "Retrieves Air Quality Index (AQI) for specified location over a number of days. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "Name of the city or town to retrieve air quality index for."}, "days": {"type": "integer", "description": "Number of days for which to retrieve data. If not provided, default to today."}}, "required": ["location"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find air quality index in San Jose for next three days.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "environmental_data.air_quality_index", "arguments": {"location": "San Jose", "days": 3}}
+</tool_call><|im_end|>

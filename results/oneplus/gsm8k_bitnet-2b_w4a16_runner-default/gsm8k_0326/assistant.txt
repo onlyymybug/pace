@@ -1,0 +1,11 @@
+To solve this problem, we first need to determine the number of junior and senior programmers.
+
+Given:
+- Total number of employees = 100
+- Number of junior programmers = (2/5) * 100 = 40
+- Number of senior programmers = Total employees - Number of junior programmers = 100 - 40 = 60
+- Payment per junior programmer = $2000
+- Payment per senior programmer = Payment per junior programmer + $400 = $2000 + $400 = $2400
+
+Now, we calculate the total monthly payment for all programmers:
+- Total payment for junior programmers = Number of junior programmers

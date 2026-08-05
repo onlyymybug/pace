@@ -1,0 +1,30 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.shareTravelItinerary","description":"Sharing travel itineraries to designated locations","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"Navigation.Bicycles.findBikes","description":"Find a bike/moped in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, default current location"}},"required":["location"]}}
+{"name":"Travel.ScenicAreaServices.shareScenicSpotBooking","description":"Share the designated scenic spot information to the destination app","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"to":{"type":"string","description":"Destination app name"}},"required":["name","to"]}}
+{"name":"OfficeSoftware.Email.downloadMailAttachment","description":"Download attachments to specified messages locally","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Subject of the message with the attachment"}},"required":["mail_title"]}}
+{"name":"Travel.ItineraryServices.searchTravelRoute","description":"Search for relevant travel itineraries based on keywords","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search keywords"}},"required":["keyword"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.We are very pleased to inform you that the Oriental Pearl Sightseeing itinerary you have booked has been successfully arranged.The specific time of the trip is this Saturday at 10am, and the meeting point is at the main entrance.Please be sure to arrive 15 minutes in advance for necessary security checks and formalities.
+
+As a landmark building in Shanghai, Oriental Pearl offers not only a 360-degree panoramic view of the city, but also a wealth of exhibitions and entertainment facilities waiting for you to explore.We recommend wearing comfortable shoes and bringing a camera to record this unforgettable moment.
+
+If you have any questions or need further assistance, please do not hesitate to contact us.Looking forward to hosting you and have a great trip!
+
+Sincerely,
+Salute
+
+[Travel Agency Name] Customer Service Department
+[Contact number]
+[email]
+query:Help me find a bike or moped near the location mentioned in the email.<|im_end|>
+<|im_start|>assistant

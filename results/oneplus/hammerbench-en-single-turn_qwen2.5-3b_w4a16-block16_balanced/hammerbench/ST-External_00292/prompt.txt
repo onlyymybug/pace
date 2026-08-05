@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.Fitness.createExerciseRecord","description":"Create exercise records based on type of exercise, duration of exercise, etc.","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Exercises"},"duration":{"type":"string","description":"Motion Duration"}},"required":["type","duration"]}}
+{"name":"OfficeSoftware.Conferencing.recordMeeting","description":"Start recording a meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"}},"required":["meeting_id","title","time"]}}
+{"name":"Health.MedicalServices.createPatienMedicalRecord","description":"Create a medical record for a new patient","parameters":{"type":"object","properties":{"patient_name":{"type":"string","description":"Patient Name"}},"required":["patient_name"]}}
+{"name":"Health.HealthManagement.createDietRecord","description":"Create dietary records based on food name, type of meal, etc.","parameters":{"type":"object","properties":{"food_name":{"type":"string","description":"Food Name"},"meal_type":{"type":"string","description":"Types of meals, such as breakfast, lunch, dinner, or add-ons"},"time":{"type":"string","description":"Meal Time"}},"required":["food_name","meal_type","time"]}}
+{"name":"SocialCommunication.Calling.recordPhoneCall","description":"Record the call","parameters":{"type":"object","properties":{"enable_recording":{"type":"boolean","description":"Whether to enable recording, true is on, false is off"}},"required":["enable_recording"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Customer,
+
+Hello, Thank you for choosing our service.Regarding the service you booked, we have arranged for you to start on time tomorrow at 2:30 pm.The entire service is expected to last 30 minutes.Please arrive 10 minutes early so we have plenty of time to prepare for you.
+
+If you have any questions or need to adjust the time, please contact us by 10am tomorrow.We look forward to welcoming you and wish you a pleasant experience!
+
+Sincerely,
+Salute
+
+Customer Service Team
+Alibaba Cloud
+query:Start jogging at 6am, the time mentioned in the email, help me create a sports record.<|im_end|>
+<|im_start|>assistant

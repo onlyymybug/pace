@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A book is said to have $n$ leaves if it is composed of $n$ pieces of paper. On the other hand, the number of pages is twice the number of leaves because each side of a piece of paper is defined as a page.
+
+If the number of pages in a book is $3$ more than a multiple of $7$, and the number of leaves is greater than $100$, then what is the smallest possible number of leaves? To solve the problem, we need to determine the smallest number of leaves \( L \) such that the number of pages \( P \) satisfies the conditions given. Specifically, \( P = 2L \) and \( P = 7k + 3 \) for some integer \( k \), and \( L > 100 \).
+
+First, we express \( P \) in terms of \( L \):
+\[ P = 2L \]
+Since \( P \) must also be of of the form \( 7k + 3 \), we substitute \( P \) in the second equation:
+\[ 2L = 7k + 3 \]
+This equation tells us that \( 2L \equiv 3 \pmod{7} \). We need to find the smallest \( L > 100 \) that satisfies this congruence.
+
+To solve \( 2L \equiv 3 \pmod{7} \), we need to find the multiplicative inverse of of 2 modulo 7. The inverse \( x \) satisfies:
+\[ 2x \equiv 1 \pmod{7} \]
+By testing values, we find:
+\[ 2 \times 4 =

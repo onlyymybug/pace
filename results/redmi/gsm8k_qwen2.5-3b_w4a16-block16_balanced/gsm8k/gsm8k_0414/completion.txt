@@ -1,0 +1,13 @@
+Step 1: Calculate total number of candles
+Total candles = 50000
+
+Step 2: Calculate number of dangerous candles
+Dangerous candles = 5% of total candles
+Dangerous candles = 0.05 * 50000
+
+Step 3: Calculate number of defective dangerous candles
+Defective dangerous candles = 5% of dangerous candles
+Defective dangerous candles = 0.05 * (0.05 * 50000)
+
+Step 4: Calculate number of defective dangerous candles that will explode
+Defective dangerous candles that explode = 9

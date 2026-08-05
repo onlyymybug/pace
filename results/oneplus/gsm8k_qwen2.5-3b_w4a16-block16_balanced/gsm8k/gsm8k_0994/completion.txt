@@ -1,0 +1,10 @@
+To solve this, we first need to determine the total number of flights for each plane. Let's denote the total number of flights for the first plane as \( F \).
+
+Given:
+- The first plane goes to Greece for \( \frac{3}{4}F \) flights.
+- The remaining \( \frac{1}{4}F \) flights are split equally between France and Germany.
+
+Since the remaining \( \frac{1}{4}F \) flights are split equally:
+- Flights to France = Flights to Germany = \( \frac{1}{8}F \)
+
+Thus, the total number of

@@ -1,0 +1,7 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Oscar has 24 lollipops and eats 2 on his way to school.  He passes 14 out to his friends.  He buys twice as many lollipops on his way home as he gave to his friends.  He eats 3 more that night and 2 more in the morning.  How many lollipops does Oscar have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Oscar starts with 24 lollipops. He eats 2, so he has 24 - 2 = 22 lollipops left. He passes 14 to his friends, leaving him with 22 - 14 = 8 lollipops. He buys twice as many lollipops as he gave to his friends, which is 14 * 2 = 28 lollipops. Adding these, he has 8 + 28 = 36 lollipops. He eats 3 more that night and 2 more in the morning, so he eats a total of 

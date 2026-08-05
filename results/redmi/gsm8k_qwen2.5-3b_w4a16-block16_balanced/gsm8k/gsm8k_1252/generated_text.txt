@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It takes John 5 minutes to get to the first side of the Rubik's cube.  The second and third sides each take twice that long.  The last 2 sides each take half as long as the first, and once you get the 5th side you have all 6 sides.  How long does the Rubik's cube take? To solve this problem, we need to calculate the total time John spends solving the Rubik's cube.
+
+1. Time to first side: 5 minutes
+2. Time to second side: 2 * 5 minutes (twice as long as first)
+3. Time to third side: 2 * 5 minutes (twice as long as first)
+4. Time to fourth side: 1/2 * 5 minutes (half as long as first)
+5. Time to fifth side: 5 minutes (same as first)
+
+Now, we sum these times:
+
+5 + 2*5 + 2*

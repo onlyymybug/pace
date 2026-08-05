@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The ice cream parlor was offering a deal, buy 2 scoops of ice cream, get 1 scoop free.  Each scoop cost $1.50.  If Erin had  $6.00, how many scoops of ice cream should she buy?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many scoops of ice cream Erin can buy with her $6.00, considering the deal where she gets 1 scoop free for every 2 scoops she buys.
+
+First, let's calculate the cost for 2 scoops and the free scoop she gets:
+- Cost for 2 scoops = $2.00
+- Cost for the free scoop = $0.00
+- Total cost for 3 scoops = $2.00 + $0.00 = $2.00
+
+Now, we need to find out how many sets of 3 scoops

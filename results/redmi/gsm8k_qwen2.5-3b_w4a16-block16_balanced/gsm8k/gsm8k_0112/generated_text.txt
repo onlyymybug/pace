@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore? To solve this problem, we need to calculate the total amount of water the boat has accumulated by the time Julia reaches the shore.
+
+First, we determine the rate at which the boat is taking on water. Given that the boat takes on 2 liters of water for every 10 feet rowed, we can calculate the rate as follows:
+
+\[ \text{Rate of of water intake} = \frac{2 \text{ liters}}{10 \text{ feet}} = 0.2 \text{ liters/foot} \]
+
+Next, we need to find out how long it takes Julia to row the entire distance

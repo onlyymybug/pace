@@ -1,0 +1,13 @@
+To solve this problem, we need to multiply the number of songs in one playlist by the number of playlists and then by the length of each song.
+
+1. Calculate the total number of songs in all playlists:
+   \[
+   \text{Total songs} = \text{Number of songs per playlist} \times \text{Number of playlists}
+   \]
+   \[
+   \text{Total songs} = 300 \times 20 = 6000
+   \]
+
+2. Calculate the total hours of music:
+   \[
+   \text{Total hours} = \text{Total songs} \times \

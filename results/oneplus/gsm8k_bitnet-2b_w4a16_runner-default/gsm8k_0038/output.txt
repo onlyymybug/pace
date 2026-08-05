@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of lego sets John still has as \( L \).
+
+John sells each lego set for $15, so the total money he gets from selling all his lego sets is \( 15L \).
+
+He buys 8 video games for $20 each, so the total cost for the video games is \( 8 \times 20 = 160 \) dollars.
+
+He also has $5 left after buying the video games. Therefore, the total money he had initially is the sum of the money from selling the lego sets and the money left: \( 15L + 5 \).
+
+Since

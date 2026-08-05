@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Emily has 4 kids named Amy, Jackson, Corey, and James. Amy is 5 years older than Jackson and 2 years younger than Corey. If James is 10 and is 1 year younger than Corey, how old is Jackson? To solve this problem, we need to establish the relationships between the ages of of Emily's kids.
+
+1. Let Jackson's age be \( J \).
+2. Amy is 5 years older than Jackson, so Amy's age is \( J + 5 \).
+3. Amy is also 2 years younger than Corey, so Corey's age is \( J + 2 + 2 = J + 4 \).
+4. James is 1 year younger than Corey, so James' age is \( J + 4 - 1 = J + 3 \).
+5. We know James is 10 years old

@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Two sides of a triangle are each $8$ units long. If the third side has a whole number length, what is the greatest possible perimeter, in units, for the triangle? To determine the greatest possible perimeter of of the triangle, we need to use the triangle inequality theorem. The theorem states that the sum of of the lengths of of any two sides of of a triangle must be greater than the length of of the third side. Given two sides of of the triangle are each 8 units long, let's denote the third side as \( x \).
+
+The triangle inequality conditions are:
+1. \( 8 + 8 > x \)
+2. \( 8 + x > 8 \)
+3. \( 8 + x > 8 \)
+
+The third condition \( 8 + x > 8 \) simplifies to \( x > 0 \), which is always true for positive \( x \).
+
+The second condition \( 8 + x > 8 \) simplifies to \( x > 0 \), which is also always true for positive \( x \).
+
+The first condition \( 8 + 8 > x \) simplifies to \( 16 > x \) or \( x < 16 \).
+
+Thus, the third side \( x \) must satisfy \( 0 < x < 16 \). Since \( x \) must be a whole number, the possible values for \(

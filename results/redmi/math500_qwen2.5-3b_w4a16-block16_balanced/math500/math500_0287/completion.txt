@@ -1,0 +1,6 @@
+To solve the problem, we need to understand the conditions under which the sides \(a\), \(b\), and \(c\) can form a triangle. For \(a\), \(b\), and \(c\) to be the sides of of a triangle, they must satisfy the triangle inequalities:
+\[a + b > c,\]
+\[a + c > b,\]
+\[b + c > a.\]
+
+Given the set \(T\) of of all triples \((a, b, c)\) of positive integers for which there exist triangles with side lengths \(a\), \(b\), \(c\), we

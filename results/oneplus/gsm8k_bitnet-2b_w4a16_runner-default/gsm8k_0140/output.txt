@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a candy machine, there are 22 more than four times the number of pink gumballs as there are blue gumballs. If there are 12 blue gumballs how many pink ones are there?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of blue gumballs as B and the number of pink gumballs as P. According to the problem, we have:
+
+P = 4B + 22
+
+Given that there are 12 blue gumballs (B = 12), we can substitute this value into the equation to find the number of pink gumballs:
+
+P = 4(12) + 22
+P = 48 + 22
+P = 70
+
+The answer is 70.<|eot_id|>

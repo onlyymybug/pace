@@ -1,0 +1,11 @@
+To solve this problem, we need to first determine the number of chairs left after some were sent to the carpenter for repair. We start with the initial number of chairs and subtract the number sent away.
+
+Initial number of normal chairs = 170
+Number of normal chairs sent away = 20
+Number of normal chairs left = 170 - 20 = 150
+
+Initial number of baby chairs = 23
+Number of baby chairs sent away = 13
+Number of baby chairs left = 23 - 13 = 10
+
+Now, we add the remaining normal chairs and baby chairs to find the total number of chairs left

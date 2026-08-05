@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "integrate", "arguments": {"function": "x^3", "start_x": -2, "end_x": 3, "method": "simpson"}}
+</tool_call><|im_end|>

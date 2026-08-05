@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ItineraryServices.searchTravelRoute","description":"Search for relevant travel itineraries based on keywords","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Search keywords"}},"required":["keyword"]}}
+{"name":"Navigation.TaxiCarRental.searchCarRental","description":"See cars available in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+{"name":"Navigation.Bicycles.findBikes","description":"Find a bike/moped in your location","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, default current location"}},"required":["location"]}}
+{"name":"ConvenientLiving.BuyingRentingHomes.getHouseSurroundings","description":"Check the amenities around the house","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"},"housing_estate":{"type":"string","description":"Community"},"location":{"type":"string","description":"Position"}},"required":["house_name","housing_estate","location"]}}
+{"name":"Navigation.FlightTickets.searchCheapFlights","description":"Search cheap flights by specified criteria","parameters":{"type":"object","properties":{"type":{"type":"string","description":"One way, round trip"},"departure":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"Reach ground"},"travel_date":{"type":"string","description":"Specify date, next month, next three months, etc."}},"required":["type","departure","destination","travel_date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow at 2pm in front of the Chongqing Library, we will attend that lecture on the preservation of ancient documents. Remember to bring your laptop and pen, and after the lecture, we can exchange experiences at a nearby cafe.
+query:Are there bikes or mopeds near the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant

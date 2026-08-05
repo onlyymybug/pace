@@ -1,0 +1,18 @@
+To solve the problem, we need to determine the decimal representation of of the fraction \(\frac{4321}{5^7 \cdot 2^8}\) and then find the sum of of its digits.
+
+1. **Simplify the denominator:**
+   \[
+   5^7 \cdot 2^8 = 5^7 \cdot 2^7 \cdot 2 = (5 \cdot 2)^7 \cdot 2 = 10^7 \cdot 2
+   \]
+   Therefore, the fraction becomes:
+   \[
+   \frac{4321}{10^7 \cdot 2} = \frac{4321}{10000000} \cdot \frac{1}{2} = \frac{4321}{20000000}
+   \]
+
+2. **Convert the fraction to a decimal:**
+   \[
+   \frac{4321}{20000000} = 0.0021605
+   \]
+
+3. **Identify the decimal representation:**
+   The decimal representation of the fraction is \(0.0

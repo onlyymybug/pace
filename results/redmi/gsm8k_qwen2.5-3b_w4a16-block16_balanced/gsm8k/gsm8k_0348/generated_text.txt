@@ -1,0 +1,17 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Davos bought 2 shirts from the mall that cost $30 each. If he bought them with a 40% discount, how much did Davos pay for the 2 shirts? Step 1: Calculate the total cost before discount
+Cost per shirt = $30
+Total shirts = 2
+Total cost before discount = Cost per shirt * Total shirts
+
+Step 2: Calculate the discount amount
+Discount percentage = 40%
+Discount amount = Total cost before discount * Discount percentage
+
+Step 3: Calculate the final amount paid
+Final amount paid = Total cost before discount - Discount amount
+
+Step 4: Perform the calculations
+Total cost before discount = 30 * 2 = 60
+Discount amount = 60 * 40 / 100 = 2

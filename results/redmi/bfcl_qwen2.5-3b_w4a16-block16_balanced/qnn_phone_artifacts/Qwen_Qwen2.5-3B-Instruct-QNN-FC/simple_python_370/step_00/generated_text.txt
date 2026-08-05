@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "safeway.order", "description": "Order specified items from a Safeway location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"location": {"type": "string", "description": "The location of the Safeway store, e.g. Palo Alto, CA."}, "items": {"type": "array", "items": {"type": "string"}, "description": "List of items to order."}, "quantity": {"type": "array", "items": {"type": "integer"}, "description": "Quantity of each item in the order list."}}, "required": ["location", "items", "quantity"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Order three bottles of olive oil and a five pound bag of rice from Safeway in Palo Alto.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "safeway.order", "arguments": {"location": "Palo Alto, CA", "items": ["olive oil", "rice"], "quantity": [3, 5}]}
+</tool_call><|im_end|>

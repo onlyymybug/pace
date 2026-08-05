@@ -1,0 +1,27 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Jim and Martha are standing together at the corner of a rectangular field. Jim walks diagonally across the field. Martha gets to the same location by walking along its length and width. The field is 300 feet wide and 400 feet long. How many feet less than Martha does Jim walk? To solve the problem, we need to determine the distances walked by Jim and Martha and then find the difference between these distances.
+
+First, let's calculate the distance Jim walks. Jim walks diagonally across the rectangular field. The diagonal of \(d\) of of a rectangle with length \(l\) and width \(w\) can be found using the Pythagorean theorem:
+\[
+d = \sqrt{l^2 + w^2}
+\]
+Given the dimensions of of the field are 300 feet wide and 400 feet long, we substitute \(l = 400\) and \(w = 300\) into the formula:
+\[
+d = \sqrt{400^2 + 300^2}
+\]
+Calculate the squares:
+\[
+400^2 = 160000
+\]
+\[
+300^2 = 90000
+\]
+Add these squares:
+\[
+160000 + 90000 = 250000
+\]
+Now, take the square root of:
+\[
+d = \sqrt{250000} = 500
+\]

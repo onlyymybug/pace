@@ -1,0 +1,10 @@
+To solve this problem, we first need to determine the number of faulty pieces of equipment. Since 40% of the total number of pieces were faulty, we calculate the number of faulty pieces as follows:
+
+Number of faulty pieces = Total number of pieces * Percentage of faulty pieces
+Number of faulty pieces = Total number of pieces * 0.40
+Number of faulty pieces = 400000 * 0.40
+Number of faulty pieces = 160000
+
+Next, we calculate the number of functioning pieces of equipment by subtracting the number of faulty pieces from the total number of pieces:
+
+Number of functioning pieces = Total number of

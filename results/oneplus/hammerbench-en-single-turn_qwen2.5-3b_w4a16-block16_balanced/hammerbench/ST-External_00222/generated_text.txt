@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.FoodDelivery.viewRestaurantMenu","description":"Get menu information for select restaurants","parameters":{"type":"object","properties":{"restaurant_name":{"type":"string","description":"Name of the restaurant"}},"required":["restaurant_name"]}}
+{"name":"MusicRadio.Karaoke.viewFriendRecordList","description":"View a friend's recording","parameters":{"type":"object","properties":{"friend_name":{"type":"string","description":"Friend name"}},"required":["friend_name"]}}
+{"name":"UtilityTools.AppSearchInstallation.viewGameAppLeaderboard","description":"See the leaderboard of gaming apps","parameters":{"type":"object","properties":{"type":{"type":"string","description":"Chart types such as Hot, Soaring, Shooting, Adventure, etc."}},"required":["type"]}}
+{"name":"NewsMagazines.NewspapersMagazines.getAuthorArticles","description":"Get articles written by authors based on author name","parameters":{"type":"object","properties":{"author_name":{"type":"string","description":"Author name"}},"required":["author_name"]}}
+{"name":"UtilityTools.AIGC.aigcVQA","description":"Answer the question based on the content of the image","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Enter the URL for your photo"},"question":{"type":"string","description":"Problem description"}},"required":["file","question"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:I am waiting for you in Fangxiang Chicken. The location is on the third floor of Wanda Plaza. The location is by the window. You can see the street view outside here, which is very easy to find. When you came over, you walked along the main road. When you reached Wanda Plaza, you could see the sign of the fellow chicken directly on the third floor. Remember to bring your coupon so we can have a nice meal today!
+query:I want to see the menu of the restaurant that Xiao Li sent me on WeChat. Can you check it for me?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.FoodDelivery.viewRestaurantMenu","parameters":{"restaurant_name":"Xiao Li"}}<|im_end|>

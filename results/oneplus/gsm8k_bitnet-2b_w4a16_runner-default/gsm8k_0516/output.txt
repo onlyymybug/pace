@@ -1,0 +1,22 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tara bought 8 packs of 5 canvas bags for $4 each. She painted them and sold them at a craft fair for $8 each. How much profit did she earn on her bags?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit, we first need to calculate the total cost and the total revenue.
+
+Total cost = Number of packs × Number of bags per pack × Cost per bag
+Total cost = 8 × 5 × $4
+Total cost = 40 × $4
+Total cost = $160
+
+Total revenue = Number of bags × Selling price per bag
+Total revenue = 8 × $8
+Total revenue = $64
+
+Profit = Total revenue - Total cost
+Profit = $64 - $160
+Profit = -$96
+
+The answer is -$96.<|eot_id|>

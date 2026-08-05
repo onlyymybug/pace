@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $n$ be a positive integer.  What is the greatest possible value of $\gcd(n + 7, 2n + 1)$? To find the greatest possible value of of \(\gcd(n + 7, 2n + 1)\), we start by letting \(d\) be the greatest common divisor of of \(n + 7\) and \(2n + 1\). This means \(d\) divides both \(n + 7\) and \(2n + 1\). Therefore, \(d\) must also divide any linear combination of of \(n + 7\) and \(2n + 1\).
+
+First, express \(2n + 1\) in terms of involving \(n + 7\):
+\[
+2n + 1 = 2(n + 7) - 13
+\]
+This shows that \(d\) divides \(2n + 1 - 2(n + 7) = -13\). Hence, \(d\) must divide 13. The divisors of of 13 are \(1\) and \(13\).
+
+To determine the greatest possible value of of \(d\), we need to check if \(d = 13\) is achievable. Suppose \(d = 13\). Then \(n + 7\) must be a multiple of 13. Let:

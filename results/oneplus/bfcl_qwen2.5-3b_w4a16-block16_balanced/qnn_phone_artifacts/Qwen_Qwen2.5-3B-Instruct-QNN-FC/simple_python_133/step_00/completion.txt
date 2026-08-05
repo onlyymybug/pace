@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "finance.predict_future_value", "arguments": {"present_value": 5000, "annual_interest_rate": 0.05, "compounding_periods_per_year": 12, "time_years": 3}}
+</tool_call><|im_end|>

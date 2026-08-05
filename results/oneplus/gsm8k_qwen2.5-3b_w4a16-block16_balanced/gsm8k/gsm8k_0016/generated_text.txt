@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A merchant wants to make a choice of purchase between 2 purchase plans: jewelry worth $5,000 or electronic gadgets worth $8,000. His financial advisor speculates that the jewelry market will go up 2.5% while the electronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be? To solve this, we need to calculate the potential profit from each purchase plan, considering the market growth.
+
+For jewelry:
+- Initial value: $5000
+- Market growth: 2.5%
+
+For electronic gadgets:
+- Initial value: $8000
+- Market growth: 1.2%
+
+Profit calculation formula: Profit = (Final Value - Initial Value)
+
+For jewelry:
+Final Value = Initial Value * (1 + Market Growth)
+Final Value = $5000 * 1.025 = $5125
+Profit = $5125 - $500

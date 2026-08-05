@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","description":"Rate courier service","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"rating":{"type":"string","description":"Rating, 1-5 points"},"comment":{"type":"string","description":"Scoring contents"}},"required":["express_id","signing_date","rating","comment"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"SocialCommunication.SocialMedia.mediumComment","description":"Comment on a given activity","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+{"name":"OnlineShopping.SecondhandTrading.evaluateSecondhandSaleOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.createPolicyFeedback","description":"Submit feedback on State Council policy","parameters":{"type":"object","properties":{"policy_name":{"type":"string","description":"Name of the policy being fed back"}},"required":["policy_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Your coffee machine has been shipped and is expected to arrive within 3-5 business days. This coffee machine uses advanced grinding technology to bring you a richer coffee taste, and we hope that it will be a good companion for you to enjoy a good time every day. If you have any questions, please do not hesitate to contact support. Enjoy!
+query:The product mentioned in the text message sent to Tom was a 5-star review, easy to use, and the coffee tasted great.<|im_end|>
+<|im_start|>assistant

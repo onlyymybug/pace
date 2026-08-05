@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Ronnie was given $5 while Rissa was given thrice as much. After each of them had given an equal amount of money to their little sister, Rissa is left with 4/5 of her money. How much is left in Ronnie's money?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the amount of money Ronnie has as R and the amount Rissa has as R2. According to the problem, Rissa is given thrice as much money as Ronnie, so R2 = 3R.
+
+After each of them gives an equal amount of money to their little sister, Rissa is left with 4/5 of her money. This means Rissa gives away 1/5 of her money to her sister. So, the amount of money Rissa gives away is (4/5) * R2.
+
+Since Rissa gives away the same amount of money as Ronnie gives to his sister,

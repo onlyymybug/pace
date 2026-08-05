@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Katerina makes designer jewelry.  Her specialty is topaz necklaces.  She uses 8 topaz gemstones per necklace, and fills the space between gemstones using sterling silver beads.  If each topaz gemstone is one inch long, each sterling silver bead is one-quarter of an inch long, and each necklace is made to a total length of 25 inches, how many sterling silver beads does Katerina use per necklace? To solve this, first calculate the total length of of used by the topaz gemstones, then subtract that from the total length of of of the necklace to find the length used by the sterling silver beads. Then divide that length by the length of of of each sterling silver bead to find the number of beads used.
+
+Length of of one topaz gemstone = 1 inch
+Total number of topaz gemstones = 8
+Total length of of of the necklace = 25 inches
+
+Length of used by topaz gemstones = 8 * 1 = 8 inches
+Lengthused by sterling silver beads = 

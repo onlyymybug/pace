@@ -1,0 +1,13 @@
+Step 1: Calculate the initial number of occupied beds.
+Occupied beds = Total capacity * Occupancy
+Occupied beds = 1000 * 1/5
+Occupied beds = 200
+
+Step 2: Calculate the total number of patients admitted in 2 weeks.
+Patients admitted = Admissions per day * Number of days
+Patients admitted = 50 * 14
+Patients admitted = 700
+
+Step 3: Calculate the total number of occupied beds after 2 weeks.
+Total occupied beds = Initial occupied beds + Additional occupied beds
+Total occupied beds = 20

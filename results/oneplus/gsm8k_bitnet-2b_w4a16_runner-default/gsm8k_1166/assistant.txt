@@ -1,0 +1,7 @@
+To solve this problem, we need to first determine the total number of apartments John collects garbage from. We know that the first two apartment complexes each have 200 apartments. The last complex is 60% bigger than the other two combined, so we need to calculate 60% of the total number of apartments from the first two complexes and add that to the total.
+
+First, calculate the total number of apartments from the first two complexes:
+2 complexes * 200 apartments = 400 apartments
+
+Next, calculate 60% of the total number of apartments from the first two complexes:
+60% of 400 apartments = 0.60

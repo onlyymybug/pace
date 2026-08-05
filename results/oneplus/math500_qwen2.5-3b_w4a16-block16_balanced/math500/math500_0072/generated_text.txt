@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The binary number $10101001110_{2}$ is equal to what number in base eight? To convert the binary number \(10101001110_2\) to its decimal (base 10) equivalent, we first express it as a sum of of of its digits multiplied by powers of of 2. Then, we convert the resulting decimal number to base 8.
+
+The binary number \(10101001110_2\) can be expanded as follows:
+\[
+1 \cdot 2^10 + 0 \cdot 2^9 + 1 \cdot 2^8 + 0 \cdot 2^7 + 1 \cdot 2^6 + 0 \cdot 2^5 + 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 + 0 \cdot 2^{-1}
+\]
+Calculating each term, we get:
+\[
+1 \cdot 1024 + 0 \cdot 512 + 1 \cdot 256 + 0 \cdot 128 + 1 \cdot 64 + 0 \cdot 32 + 1 \

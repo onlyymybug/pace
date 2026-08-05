@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Amber, Micah, and Ahito ran 52 miles in total. Amber ran 8 miles. Micah ran 3.5 times what Amber ran. How many miles did Ahito run?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many miles Ahito ran, we first need to determine how many miles Micah ran. Since Micah ran 3.5 times what Amber ran, and Amber ran 8 miles, we calculate Micah's distance as follows:
+
+Micah's distance = Amber's distance * 3.5
+Micah's distance = 8 * 3.5
+Micah's distance = 28 miles
+
+Now, we know that the total distance run by all three is 52 miles. To find out how many miles Ahito ran, we subtract the distances run by Amber and Micah from the total distance

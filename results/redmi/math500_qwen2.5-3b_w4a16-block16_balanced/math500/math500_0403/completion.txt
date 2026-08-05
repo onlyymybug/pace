@@ -1,0 +1,4 @@
+To solve the problem, we need to understand how a rotation of around a complex number works in the complex plane. A rotation of by an angle \(\theta\) around a complex number \(z_0\) can be represented as a composition of of of a translation, a rotation, and a translation back. Specifically, we need to translate the point \(3\) to the origin, rotate it by \(-90^\circ\) (or \(\pi/2\) radians), and then translate it back.
+
+1. **Translation to the Origin:**
+   Translate \(3\) to the origin by subtracting \(z_0\

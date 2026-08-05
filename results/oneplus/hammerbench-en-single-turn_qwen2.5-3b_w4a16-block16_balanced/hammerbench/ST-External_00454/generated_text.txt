@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.getScenicSpotEntertainment","description":"Get information about entertainment in designated scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"Travel.ScenicAreaServices.checkScenicSpotAvailability","description":"View the current availability of selected scenic spots by scenic spot name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotList","description":"Search for scenic spots by preference, region, category, etc.","parameters":{"type":"object","properties":{"preference":{"type":"string","description":"User preferences such as family-friendly, couple-friendly, etc."},"region":{"type":"string","description":"Area Names"},"category":{"type":"string","description":"Categories of scenic spots, such as natural landscapes, cultural landscapes, etc."}},"required":["preference","region","category"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotLiveFeed","description":"Get real-time dynamic information on designated scenic spots, including real-time visitor numbers, weather conditions, and more","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Plan to meet at the foot of the Great Wall tomorrow morning at 7am to prepare for our hike. Remember to wear comfortable shoes, bring water and some snacks. The Great Wall is a long way, but the scenery along the way is definitely worth it. We look forward to exploring this historic corridor with you.
+query:How many tourists are there in the scenic spots mentioned in the notepad? What's the weather like?<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ScenicAreaServices.getScenicSpotLiveFeed","parameters":{"name":"Great Wall"}}<|im_end|>

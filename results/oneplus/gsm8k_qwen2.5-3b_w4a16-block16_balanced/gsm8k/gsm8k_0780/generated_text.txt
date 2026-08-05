@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The Llesis family drove and hiked 6 hours to their vacation spot. They drove an average of 50 miles per hour and hiked an average of 5 miles per hour less than half their speed when they drive. If it took them 1.5 hours to hike, how far was their vacation spot? To solve this, we first calculate the distance driven by the Llesis family. 
+
+They drove for 6 hours at an average speed of of 50 mph. 
+Distance driven = Speed * Time = 50 mph * 6 hours = 300 miles
+
+Next, we calculate the distance they hiked. 
+They hiked at an average speed of of 5 mph less than half their driving speed. 
+Half their driving speed was 50/2 = 25 mph
+So their hiking speed was 25 - 5 = 20 mph
+Distance hiked = Speed *

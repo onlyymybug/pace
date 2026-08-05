@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A glass of milk is 8 ounces of milk.  John drinks 2 glasses of milk.  If milk has 3 calories per ounce how many calories did he consume?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow these steps:
+
+1. Determine the total amount of milk John drank.
+2. Calculate the total calories consumed based on the amount of milk and the calories per ounce.
+
+Step 1: Determine the total amount of milk John drank.
+John drinks 2 glasses of milk, and each glass contains 8 ounces of milk. So, the total amount of milk John drank is:
+2 glasses * 8 ounces/glass = 16 ounces
+
+Step 2: Calculate the total calories consumed.
+Milk has 3 calories per ounce. To find the total calories consumed, we multiply the total ounces

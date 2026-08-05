@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.getFundSectorInfo","description":"Check the details of a fund based on a specific sector","parameters":{"type":"object","properties":{"sector":{"type":"string","description":"Fund Segment Name"}},"required":["sector"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotInfo","description":"Get detailed descriptions of designated attractions","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobApplicantsForPosition","description":"Get information about people applying for specific roles","parameters":{"type":"object","properties":{"position_name":{"type":"string","description":"Job title, required"}},"required":["position_name"]}}
+{"name":"ConvenientLiving.UtilityPayments.queryBillInfo","description":"Used to get billing details for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"},"time":{"type":"string","description":"Bill Time"}},"required":["service_type","user_name","time"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEnterpriseInfo","description":"Enter the business name to get basic information about the business","parameters":{"type":"object","properties":{"enterprise_name":{"type":"string","description":"Name of the business to query"}},"required":["enterprise_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to the West Lake for a walk together on the weekend. I heard that the scenery there is very good now. We can start from the broken bridge and walk along the lake to the Thunder Tower. It should be interesting.
+query:Xiao Li sent me the location mentioned in the WeChat, can you help me check the detailed description of this scenic spot? Includes location, features, and ticket information.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ScenicAreaServices.getScenicSpotInfo","parameters":{"name":"West Lake"}}<|im_end|>

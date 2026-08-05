@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Simplify $\frac{1+\sqrt{2}}{2+\sqrt{3}}$. Your solution can be converted to the form $A(1+\sqrt{B})-(\sqrt{C}+\sqrt{D})$, where $A$, $B$, $C$, and $D$ are positive integers. What is $A+B+C+D$? To simplify \(\frac{1+\sqrt{2}}{2+\sqrt{3}}\), we need to rationalize the denominator. We do this by multiplying the numerator and the denominator by the conjugate of of of the denominator, which is \(2-\sqrt{3}\).
+
+First, let's write the expression:
+\[
+\frac{1+\sqrt{2}}{2+\sqrt{3}}
+\]
+
+Multiply the numerator and the denominator by \(2-\sqrt{3}\):
+\[
+\frac{(1+\sqrt{2})(2-\sqrt{3})}{(2+\sqrt{3})(2-\sqrt{3})}
+\]
+
+The denominator simplifies as follows:
+\[
+(2+\sqrt{3})(2-\sqrt{3}) = 2^2 - (\sqrt{3})^2 = 4 - 3 = 1
+\]
+
+Now, simplify the numerator:
+\[
+(1+\sqrt{2})(2-\sqrt{3}) = 1 \cdot 2 + 1 \cdot (-\sqrt{3}) + \sqrt{2} \cdot 2 + \sqrt{2} \cdot (-\sqrt{3})
+\]
+\[
+= 2 - \sqrt{

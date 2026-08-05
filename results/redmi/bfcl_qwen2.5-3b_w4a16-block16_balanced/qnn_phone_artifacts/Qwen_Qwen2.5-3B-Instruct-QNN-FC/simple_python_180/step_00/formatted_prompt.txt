@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "lawsuits_search", "description": "Search for lawsuits against a specific company within a specific time and location. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"company_name": {"type": "string", "description": "The name of the company."}, "location": {"type": "string", "description": "The location where the lawsuit was filed."}, "year": {"type": "integer", "description": "The year when the lawsuit was filed."}, "case_type": {"type": "string", "description": "The type of the case. Options include: 'civil', 'criminal', 'small_claims', etc. Default is 'all'."}}, "required": ["company_name", "location", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the lawsuits filed against the company Google in California in the year 2020.<|im_end|>
+<|im_start|>assistant

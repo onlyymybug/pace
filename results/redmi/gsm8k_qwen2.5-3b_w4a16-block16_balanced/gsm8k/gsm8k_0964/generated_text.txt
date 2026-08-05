@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alex, Stan, and Adelwolfe are trying to catch them all, Pokemon that is.  Together they have caught 339 Pokemon.  Alex has caught 5 more than Stan, and Stan has caught 13 less than 4 times as many as Adelwolfe has caught. How many Pokemon has Stan caught? Let x be the number of Pokemon caught by Adelwolfe
+Stan caught 4x-13 Pokemon
+Alex caught 4x-13+5 = 4x+2 Pokemon
+Total caught is x+4x-13+4x-13+2 = 9x-19
+9x-19 = 339
+9x = 358
+x = 39.7777777778
+Stan caught 4*39.7777777778 - 13 =

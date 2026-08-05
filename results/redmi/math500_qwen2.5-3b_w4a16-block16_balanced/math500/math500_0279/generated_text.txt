@@ -1,0 +1,5 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What's the largest eight-digit base 2 integer?  Express your answer in base 10. To determine the largest eight-digit number in base 2, we first need to understand what an eight-digit number in base 2 looks like. An eight-digit number in base 2 can be represented as \(a_7a_6a_5a_4a_3a_2a_1a_0\), where each \(a_i\) is a binary digit (either 0 or 1). The largest possible value for each \(a_i\) is 1, so the largest eight-digit binary number is \(11111111_2\).
+
+Next, we need to convert \(

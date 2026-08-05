@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Finance.Funds.setFundAutoPurchase","description":"Set auto-requisition for specified funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"amount":{"type":"float","description":"Value (Unit: yuan)"},"frequency":{"type":"string","description":"Frequency, default is monthly, value is monthly, weekly or daily"}},"required":["fund_name","fund_code","amount","frequency"]}}
+{"name":"ConvenientLiving.UtilityPayments.setAutoPayment","description":"Set up automatic payment for utilities, etc.","parameters":{"type":"object","properties":{"service_type":{"type":"string","description":"Types of paid services, such as utilities, gas, etc."},"user_name":{"type":"string","description":"User Name"}},"required":["service_type","user_name"]}}
+{"name":"SocialCommunication.Community.markCommunityNotificationRead","description":"Mark notifications for the specified community as read (defaults to all read)","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"},"notification_name":{"type":"string","description":"Notifications to mark as read"}},"required":["community_name","notification_name"]}}
+{"name":"UtilityTools.AlarmClock.editTimer","description":"Modify timer ring settings","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer Name:      {0}"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+{"name":"SocialCommunication.Calling.setCallRingtone","description":"Set a ringtone for the specified contact","parameters":{"type":"object","properties":{"ringtone":{"type":"string","description":"*Ringtones"},"contact_name":{"type":"string","description":"Contact person"}},"required":["ringtone","contact_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:At 3pm today, Li Hua will wait for us at the entrance of the library to go to the student union. Remember to bring your student ID, Li Hua said that the inspection will be very strict.
+query:Set up automatic gas billing for the names mentioned in my notepad.<|im_end|>
+<|im_start|>assistant

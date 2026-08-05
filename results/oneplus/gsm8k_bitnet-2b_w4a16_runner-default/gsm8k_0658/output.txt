@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: James buys a plane.  The plane cost $150,000.  He pays $5000 a month to rent a hanger to keep it in.  He also spends twice as much as that on fuel per month.  How much did it cost him to get and maintain the plane for the first year?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total cost for the first year, we need to calculate the monthly costs for renting the hanger and fuel, then multiply by 12, and finally add the initial cost of the plane.
+
+1. Monthly cost for renting the hanger: $5000
+2. Monthly cost for fuel: twice the monthly cost of the hanger, so $5000 * 2 = $10000
+3. Total monthly cost for both: $5000 + $10000 = $15000
+4. Total annual cost for both: $15000 * 12 = $180000
+5. Initial cost of the

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Julia’s boat sprang a leak while she was out on the lake. The boat was taking on two liters of water for every ten feet she rowed back towards shore. It took her sixteen seconds to row twenty feet. The shore was 64 seconds away. How much water had the boat taken on by the time Julia reached shore?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine Julia's rowing speed in feet per second. We know she rowed 20 feet in 16 seconds. So, her speed is 20 feet / 16 seconds = 1.25 feet per second.
+
+Next, we need to find out how long it takes her to row 64 feet at this speed. Time = Distance / Speed, so Time = 64 feet / 1.25 feet per second = 51.2 seconds.
+
+Now, we know the boat takes on two liters of water for every ten feet rowed. So, for every ten feet

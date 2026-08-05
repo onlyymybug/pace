@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Bob is 75 miles ahead of Tom, driving 55 miles per hour. Tom is driving 70 miles per hour. How long will it take Tom to catch up with Bob?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the time it takes for Tom to close the 75-mile gap between him and Bob. We can use the formula:
+
+\[ \text{Time} = \frac{\text{Distance}}{\text{Relative Speed}} \]
+
+First, we calculate the relative speed at which Tom is closing the gap. Tom's speed is 70 miles per hour, and Bob's speed is 55 miles per hour. Therefore, Tom is closing the gap at a rate of:
+
+\[ 70 \text{ mph} - 55 \text{ mph} = 15 \text{ mph} \

@@ -1,0 +1,9 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Find the product of the $y$-coordinates of all the distinct solutions $(x,y)$ for the two equations $y=x^2-8$ and $y^2=-5x+44$. To solve the problem, we need to find the points of of \((x, y)\) that satisfy both equations \(y = x^2 - 8\) and \(y^2 = -5x + 44\). We will substitute \(y\) from the first equation into the second equation and solve for \(x\).
+
+First, substitute \(y = x^2 - 8\) into \(y^2 = -5x + 44\):
+\[
+(x^2 - 8)^2 = -5x + 44
+\]
+Expanding the left side, we get:

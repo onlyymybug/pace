@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "light_travel_time", "description": "Calculate the time taken for light to travel from a celestial body to another. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"distance_in_light_years": {"type": "integer", "description": "The distance between the two celestial bodies in light years."}, "speed_of_light": {"type": "integer", "description": "The speed of light in vacuum, in m/s. Default value is 299792458 m/s."}}, "required": ["distance_in_light_years"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+How much time will it take for the light to reach earth from a star 4 light years away?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "light_travel_time", "arguments": {"distance_in_light_years": 4}}
+</tool_call><|im_end|>

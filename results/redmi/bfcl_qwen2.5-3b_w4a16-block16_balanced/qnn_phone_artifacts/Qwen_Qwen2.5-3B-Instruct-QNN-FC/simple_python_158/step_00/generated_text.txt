@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_criminal_records", "description": "Retrieve the criminal records of a specific person in a specific area during a certain time period. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"name": {"type": "string", "description": "The name of the person."}, "location": {"type": "string", "description": "The city and state, e.g. New York, NY"}, "from_year": {"type": "integer", "description": "The start year of the time frame."}, "to_year": {"type": "integer", "description": "The end year of the time frame."}}, "required": ["name", "location", "from_year", "to_year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the information of criminal cases of Mr. X in New York between 2012 and 2015.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_criminal_records", "arguments": {"name": "Mr. X", "location": "New York, NY", "from_year": 2012, "to_year": 2015}}
+</tool_call><|im_end|>

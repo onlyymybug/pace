@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The tooth fairy left Sharon $5.00 in exchange for the first tooth Sharon lost.  Then, the tooth fairy gave Sharon $1.00 for each of the next three teeth Sharon lost.  And for each of the last 2 teeth Sharon lost, the tooth fairy gave Sharon half the amount of money per tooth as Sharon had received for each of the previous three teeth.  How much money did the tooth fairy leave Sharon, in dollars?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total amount of money the tooth fairy left Sharon for each set of teeth.
+
+1. For the first tooth, the tooth fairy left Sharon $5.00.
+2. For each of the next three teeth, the tooth fairy left Sharon $1.00 each.
+3. For each of the last two teeth, the tooth fairy left Sharon half the amount of money per tooth as for the previous three teeth. This means for each of the last two teeth, the tooth fairy left Sharon $0.50.
+
+Now, let's add up the amounts:
+
+- First tooth: $5.

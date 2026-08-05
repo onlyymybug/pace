@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_crime_rate", "description": "Retrieve the official crime rate of a city. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"city": {"type": "string", "description": "The name of the city."}, "state": {"type": "string", "description": "The state where the city is located."}, "type": {"type": "string", "description": "Optional. The type of crime. Default is 'violent'"}, "year": {"type": "integer", "description": "Optional. The year for the crime rate data. Default is year 2001."}}, "required": ["city", "state"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Provide me the official crime rate of violent crime in San Francisco in 2020.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_crime_rate", "arguments": {"city": "San Francisco", "state": "CA", "type": "violent", "year": 2020}}
+</tool_call><|im_end|>

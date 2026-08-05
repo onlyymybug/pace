@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.createGroup","description":"Create a new group","parameters":{"type":"object","properties":{"group_name":{"type":"string","description":"Name of the group to be created"}},"required":["group_name"]}}
+{"name":"Travel.ItineraryServices.createTravelItinerary","description":"Create a personalized travel itinerary","parameters":{"type":"object","properties":{"destination":{"type":"string","description":"destination"}},"required":["destination"]}}
+{"name":"Photography.PhotoEditing.createPictureAlbum","description":"Create an album, specify an album name, and include a photo collection","parameters":{"type":"object","properties":{"name":{"type":"string","description":"New Gallery Name"},"photo_video_list":{"type":"string","description":"Albums contain photos and videos, separated by commas"}},"required":["name","photo_video_list"]}}
+{"name":"Travel.ItineraryServices.searchTravelPackage","description":"Search travel packages by destination, time, price, and more","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"},"start_time":{"type":"string","description":"Start date"},"end_time":{"type":"string","description":"End Date"},"price":{"type":"float","description":"Price, unit (yuan)"}},"required":["origin","destination","start_time","end_time","price"]}}
+{"name":"UtilityTools.Search.addWebBookmark","description":"Add a page to a default collection or to a specified collection","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name"},"bookmark":{"type":"string","description":"Bookmark title, provided by target title by default"}},"required":["name","bookmark"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Tomorrow morning at 8am, we will meet at Potala Palace Square in Lhasa for a day-long cultural tour. Please make sure to bring sunglasses and sunscreen as the sun is very strong in Lhasa. Lunch will be served at a Tibetan restaurant near Daisho-ji Temple. In the afternoon you will visit Loblinka and admire the exquisite gardens and architectural art. At 7pm, gather at an open-air cafe on the banks of the Lhasa River for a delicious Tibetan BBQ. Please arrive on time and don't be late.
+query:I want to start from Chengdu and go to the places mentioned in the notepad. From June 1 to June 7, the budget is 8,000 yuan. I hope to have a cultural experience travel package.<|im_end|>
+<|im_start|>assistant

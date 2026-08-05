@@ -1,0 +1,10 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet is collecting the results of Herbert Hoover Elementary School's annual standardized test. 340 out of 500 third-graders passed, along with 40 out of 100 fourth graders. The 400 fifth graders had a pass rate that was twice the fourth grades' pass rate. What is the school's overall pass rate? To solve this problem, we need to calculate the overall pass rate for all grades combined.
+
+1) Calculate the pass rates for each grade:
+   - Third grade: 340 out of 500 passed, so pass rate is 340/50 - 0.68
+   - Fourth grade: 40 out of 100 passed, so pass rate is 40/100 = 0.4
+   - Fifth grade: Twice the fourth grade's pass rate, so 2 * 0.4 = 0.8
+
+2) Calculate the total

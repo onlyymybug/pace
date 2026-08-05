@@ -1,0 +1,12 @@
+To solve the given expression \(\frac{1}{\cos^2 10^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ}\), we will use trigonometric identities and properties of of angles in degrees.
+
+First, let's rewrite the expression in a more manageable form:
+\[
+\frac{1}{\cos^2 10^\circ} + \frac{1}{\sin^2 20^\circ} + \frac{1}{\sin^2 40^\circ}.
+\]
+Since \(22^\circ = 2 \times 11^\circ\) and \(44^\circ = 2 \times 22^\circ\), we can use the double-angle identity for sine, \(\sin 2\theta = 2 \sin \theta \cos \theta\), to express \(\sin 22^\circ\) and \(\sin 44^\circ\) in terms of:
+\[
+\sin 22^\circ = 2 \sin 11^\circ \cos 11^\circ,
+\]
+\[
+\sin

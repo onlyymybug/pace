@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Frankie and Binkie went bowling together.  Frankie's score was 15 better more than twice as high as Binkie's. If Binkie bowled a score of 90, what was Frankie's score?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find Frankie's score, we first need to understand the relationship between their scores. Binkie's score is given as 90. According to the problem, Frankie's score is 15 more than twice Binkie's score. We can express this relationship mathematically as:
+
+Frankie's score = 2 * Binkie's score + 15
+
+Substituting Binkie's score (90) into the equation:
+
+Frankie's score = 2 * 90 + 15
+Frankie's score = 180 + 15
+Frankie's score = 195
+
+Therefore, Frankie's score

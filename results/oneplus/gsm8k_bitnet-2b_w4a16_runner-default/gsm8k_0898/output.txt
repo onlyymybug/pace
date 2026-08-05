@@ -1,0 +1,22 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Joseph had 3 times as many notebooks as Martha. Martha decided she needed more notebooks and then bought 5 more for a total of 7 notebooks. How many more than Joseph does she now have?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of notebooks Joseph had as J and the number of notebooks Martha had as M. According to the problem, Joseph had 3 times as many notebooks as Martha, so we can write the equation:
+
+J = 3M
+
+After Martha bought 5 more notebooks, she had a total of 7 notebooks. So we can write another equation:
+
+M + 5 = 7
+
+Now, we solve for M:
+
+M = 7 - 5
+M = 2
+
+So Martha originally had 2 notebooks. Since Joseph had 3 times as many notebooks as Martha, we can find J:
+
+J

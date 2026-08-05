@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Anna is trying to buy books for her local library. She had a budget of $16, and she has already spent $4. She also bought 2 books today, and both books cost her the same amount of money. If Anna has $2 left in her budget, how much did each of the books cost? To solve this, we first calculate the total amount spent so far, then subtract that from the remaining budget to find the total cost of of the two books. Then we divide that total by 2 to find the cost of of each book.
+
+Total budget: $16
+Amount spent so far: $4
+Remaining budget: $2
+Books bought today: 2
+
+Total cost of of 2 books = Remaining budget - Amount spent so far
+Total cost of of 2 books = $2 - $4 = -$2 (This negative value indicates an error, as budget can't be negative)
+
+Since the calculation shows

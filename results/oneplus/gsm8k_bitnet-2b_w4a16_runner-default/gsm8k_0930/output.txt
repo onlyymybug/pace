@@ -1,0 +1,23 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A bus travels 60 miles per hour for 5 hours. A car travels 30 miles per hour for 8 hours. How much farther did the bus go than the car, in miles?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much farther the bus went than the car, we need to calculate the distance each traveled and then find the difference.
+
+The distance the bus traveled is:
+Distance = Speed × Time
+Distance_bus = 60 miles/hour × 5 hours
+Distance_bus = 300 miles
+
+The distance the car traveled is:
+Distance_car = 30 miles/hour × 8 hours
+Distance_car = 240 miles
+
+Now, we find the difference in distance:
+Difference = Distance_bus - Distance_car
+Difference = 300 miles - 240 miles
+Difference = 60 miles
+
+The answer is 60 miles.<|eot_id|>

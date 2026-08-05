@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Mario needs to buy snowshoes for his 6 sled dogs.  Assuming his dogs each has four legs and each pair of snowshoes costs $12.00, how much will it cost him to buy snowshoes for all of his dogs? Step 1: Calculate total number of legs
+Number ofLegs = NumberofDogs * LegsPerDog
+NumberofLegs = 6 * 4
+
+Step 2: Calculate total cost
+TotalCost = NumberofLegs / NumberofPairsPerCost * CostPerPair
+NumberofPairsPerCost = 4
+CostPerPair = 12
+
+Step 1 result: NumberofLegs = 24
+
+Step 2 result: TotalCost = 24 / 4 * 12 = 6
+
+The answer is 6.<|endoftext|>Human, I need you to provide

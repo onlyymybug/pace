@@ -1,0 +1,18 @@
+To solve the problem, we start by analyzing the given sequence \( (a_n) \) defined by the recurrence relation:
+\[ a_{i+1} = \frac{1}{1 - a_i} \]
+for \( i \ge 1 \). We need to find \( (a_9)^9 \) given that \( a_3 = a_1 \).
+
+First, let's compute the first few terms of of the sequence to identify any patterns.
+
+1. **Compute \( a_2 \):**
+   \[
+   a_2 = \frac{1}{1 - a_1}
+   \]
+
+2. **Compute \( a_3 \):**
+   \[
+   a_3 = \frac{1}{1 - a_2}
+   \]
+   Substitute \( a_2 \) from the previous step:
+   \[
+   a_3 = \frac{1}{1 - \frac{1}{1 - a_1}} = \frac{1 - a_1}{1 - a_1 - 1} = \frac{1 - a_1}{-a_1} = \frac{1 - a_1}{-a_1} = \frac{

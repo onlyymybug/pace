@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A fog bank rolls in from the ocean to cover a city. It takes 10 minutes to cover every 3 miles of the city. If the city is 42 miles across from the oceanfront to the opposite inland edge, how many minutes will it take for the fog bank to cover the whole city?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine how many 3-mile segments are in the 42-mile city and then calculate the time it takes for the fog bank to cover those segments.
+
+1. Calculate the number of 3-mile segments in the 42-mile city:
+   \[
+   \frac{42 \text{ miles}}{3 \text{ miles/segment}} = 14 \text{ segments}
+   \]
+
+2. Since it takes 10 minutes to cover each segment, the total time required is:
+   \[
+   14 \text{ segments} \times 10 \text{ minutes/segment

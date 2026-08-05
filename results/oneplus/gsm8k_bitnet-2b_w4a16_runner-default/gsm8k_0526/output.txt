@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Heather bought a jumbo bag of raisins with 27 cups of raisins in it. She wants to make oatmeal cookies, granola, and snack mix with the raisins. A batch of oatmeal cookies takes 3/4 of a cup of raisins. How many batches of oatmeal cookies can Heather make if she divides the bag of raisins equally among the cookies, granola, and snack mix?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many batches of oatmeal cookies Heather can make, we need to divide the total amount of raisins by the amount needed for one batch of oatmeal cookies.
+
+Total raisins = 27 cups
+Raisins needed for one batch of oatmeal cookies = 3/4 cup
+
+Number of batches = Total raisins / Raisins needed for one batch of oatmeal cookies
+Number of batches = 27 / (3/4)
+
+To divide by a fraction, we multiply by its reciprocal:
+
+Number of batches = 27 * (4/3)
+
+Now, multiply:
+
+Number of batches = (27

@@ -1,0 +1,38 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In the diagram, two circles, each with center $D$, have radii of $1$ and $2$. The total area of the shaded region is $\frac5{12}$ of the area of the larger circle. How many degrees are in the measure of (the smaller) $\angle ADC$?
+[asy]
+size(4cm);
+defaultpen(linewidth(0.75));
+real adc = 100;
+pair d = (0, 0); pair a = 2 * dir(100); pair c = (2, 0);
+path inner = arc(d, a/2, c/2, CW);
+
+path outer = arc(d, c, a, CCW);
+guide region1 = (a--a/2)..inner..(c/2--c)..outer..cycle;
+guide region2 = arc(d, a/2, c/2, CCW)..(c/2--d--a/2)..cycle;
+fill(region1, gray(0.75));
+fill(region2, gray(0.75));
+draw(unitcircle); draw(scale(2) * unitcircle);
+draw(a--d--c);
+label("$A$", a, N); label("$C$", c, E); label("$D$", d, NE);
+[/asy] To solve the problem, we need to determine the measure of of the smaller angle \(\angle ADC\) in degrees. We start by calculating the areas of of the circles and the shaded regions.
+
+1. **Calculate the areas of of the circles:**
+   - The area of of of the larger circle with radius \(2\) is:
+     \[
+     \text{Area of of the larger circle} = \pi \times 2^2 = 4\pi
+     \]
+   - The area of of of the smaller circle with radius \(1\) is:
+     \[
+     \text{Areaarea of the smaller circle} = \pi \times 1^2 = \pi
+     \]
+
+2. **Determine the area of of of the shaded region:**
+   - The total area of the shaded region is the area of of of the larger circle minus the area area of the smaller circle:
+     \[
+     \text{Area of shaded region} = 4\pi - \pi = 3\pi
+     \]
+
+3. **Relate the shaded area to the area of of the larger circle:**
+   - According to the problem, the area area of of the shaded region is \(\frac{

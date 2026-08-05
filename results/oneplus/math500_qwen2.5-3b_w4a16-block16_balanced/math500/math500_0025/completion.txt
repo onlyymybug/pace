@@ -1,0 +1,8 @@
+To determine the minimal compound interest rate required for the worker to have at least \$66,200 in the account by the end of the third year, we need to work backwards from the end of of the third year to the beginning of the first year.
+
+Let's denote the annual interest rate by \( r \). The worker deposits \$20,000 at the end of each year, and we need to find the rate \( r \) such that the account balance at the end of the third year is at least \$66,200.
+
+The balance at the end of the third year can be expressed as the sum of of the future values of of the deposits made at the end of each of the previous years. Specifically, the balance at the end of the third year is the sum of of the future values of of the deposits made at the end of the first, second, and third years, respectively. The future value of of a deposit made at the end of the \( n \)-th year is given by \( 20000 \times (1 + r)^{3-n} \).
+
+So, the balance at the end of the third year is:
+\[ 20000 \times (

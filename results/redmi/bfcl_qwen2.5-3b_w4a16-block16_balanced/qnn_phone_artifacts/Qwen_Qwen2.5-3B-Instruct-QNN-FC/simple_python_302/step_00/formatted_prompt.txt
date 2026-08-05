@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_batting_average", "description": "Calculate the batting average for a baseball player based on their number of hits and at-bats. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"hits": {"type": "integer", "description": "The number of hits."}, "at_bats": {"type": "integer", "description": "The number of at-bats."}, "decimal_places": {"type": "integer", "description": "The number of decimal places to return in the batting average. Default is 3."}}, "required": ["hits", "at_bats"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the batting average for a baseball player who has 180 hits and 600 at-bats. Round to 3 decimals.<|im_end|>
+<|im_start|>assistant

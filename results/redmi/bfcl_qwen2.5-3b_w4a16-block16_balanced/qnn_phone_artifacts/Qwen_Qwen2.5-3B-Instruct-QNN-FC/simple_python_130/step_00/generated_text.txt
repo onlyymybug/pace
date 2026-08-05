@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "finance_calculator.npv", "description": "Calculate the Net Present Value (NPV) for a series of cash flows discounted at a certain interest rate. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"cash_flows": {"type": "array", "items": {"type": "integer"}, "description": "A list of cash flows."}, "discount_rate": {"type": "float", "description": "The annual interest rate used to discount the cash flows."}, "years": {"type": "array", "items": {"type": "integer"}, "description": "A list of years when the cash flow occurs. Default is empty array."}}, "required": ["cash_flows", "discount_rate"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What's the NPV (Net Present Value) of a series of cash flows: [-50000, 10000, 15000, 20000, 25000, 30000] discounted at 8% annually?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "finance_calculator.npv", "arguments": {"cash_flows": [-50000, 10000, 15000, 20000, 25000, 30000], "discount_rate": 0.08}}
+</tool_call><|im_end|>

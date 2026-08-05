@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Violetta wants to buy new crayons. She needs them in 5 different colors and prepared $20 for this purchase. One crayon costs $2. How much change will she get?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much change Violetta will get, we need to calculate the total cost of the crayons and then subtract that from the $20 she has.
+
+1. Calculate the total cost of the crayons:
+   - Each crayon costs $2.
+   - Violetta needs 5 different colors.
+   - Total cost = Number of crayons × Cost per crayon
+   - Total cost = 5 × $2
+   - Total cost = $10
+
+2. Calculate the change Violetta will get:
+   - She has $20.
+   - The total cost of the crayons is $10.
+  

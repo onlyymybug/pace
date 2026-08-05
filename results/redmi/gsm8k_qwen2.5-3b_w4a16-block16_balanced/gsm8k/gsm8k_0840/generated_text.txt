@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A farmer extracts 5 liters of milk a day from a cow. Since he has 3 cows, how many more cows does he need to have to produce 25 liters of milk a day? To solve this problem, we need to determine how many cows are required to produce 25 liters of milk per day, given that one cow produces 5 liters per day.
+
+1. **Determine milk production per cow:**
+   - One cow produces 5 liters of milk per day.
+
+2. **Calculate total milk production needed:**
+   - The goal is to produce 25 liters of milk per day.
+
+3. **Calculate the number of cows needed:**
+   - If one cow produces 5 liters, then the number of cows (\( n \)) needed to produce 25 liters is calculated as:

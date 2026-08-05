@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jordan wanted to surprise her mom with a homemade birthday cake.  From reading the instructions, she knew it would take 20 minutes to make the cake batter and 30 minutes to bake the cake.  The cake would require 2 hours to cool and an additional 10 minutes to frost the cake.  If she plans to make the cake all on the same day, what is the latest time of day that Jordan can start making the cake to be ready to serve it at 5:00 pm?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To determine the latest time Jordan can start making the cake, we need to add up the total time required for each step and then subtract that from the desired serving time of 5:00 pm.
+
+1. Making the cake batter: 20 minutes
+2. Baking the cake: 30 minutes
+3. Cooling the cake: 2 hours (which is 120 minutes)
+4. Frosting the cake: 10 minutes
+
+First, let's add up the time for each step:
+20 minutes + 30 minutes + 120 minutes + 10 minutes = 180 minutes
+
+Now, we need to convert 180

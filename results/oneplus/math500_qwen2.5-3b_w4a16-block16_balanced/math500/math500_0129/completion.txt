@@ -1,0 +1,14 @@
+To determine the fewest number of miles Suzanne can walk in February, we need to analyze the structure of of the month and how many days are in February. Typically, February has 28 or 29 days, depending on whether it is a common year or a leap year. 
+
+First, we calculate the number of days in February:
+- A common year has 28 days in February.
+- A leap year has 29 days in February.
+
+Next, we need to find out how many days it takes for Suzanne to walk 4 miles. Since she walks 4 miles every third day, we need to determine the number of days required to walk the total miles in February.
+
+Let's denote the number of days in February as \( d \). The number of days it takes for Suzanne to walk 4 miles is \( \frac{d}{3} \) days, where \( d \) is the total number of days in February.
+
+We need to find the smallest \( d \) such that \( \frac{d}{3} \) is an integer. This means \( d \) must be a multiple of of 3.
+
+### Case 1: February has 28 days
+If February has 28 days,

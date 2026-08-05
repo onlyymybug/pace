@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Sunny is selling gingerbread and apple pie for a fundraiser. On Saturday, he sold 10 boxes of gingerbread and 4 fewer boxes of apple pie, than on Sunday. On Sunday, he sold 5 more boxes of gingerbread than on Saturday and 15 boxes of apple pie. If the gingerbread cost $6 and the apple pie cost $15, how much did Sunny earn for two days?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the number of boxes Sunny sold each day and then calculate the total earnings for both days.
+
+On Saturday:
+- Gingerbread boxes sold: 10
+- Apple pie boxes sold: 10 - 4 = 6
+
+On Sunday:
+- Gingerbread boxes sold: 10 + 5 = 15
+- Apple pie boxes sold: 15
+
+Now, we calculate the total earnings for each day:
+
+Saturday's earnings:
+- Gingerbread earnings: 10 boxes * $6/box = $60
+- Apple pie earnings: 6 boxes * $15/box =

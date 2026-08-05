@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Miguel uses 2 pads of paper a week for his drawing. If there are 30 sheets of paper on a pad of paper, how many sheets of paper does he use every month? To solve this, we first calculate the total sheets of of paper Miguel uses in a week, then multiply by the number of weeks in a month.
+
+Miguel uses 2 pads * 30 sheets/pad = 60 sheets/week.
+
+There are 4 weeks in a month, so we multiply the weekly usage by 4:
+
+60 sheets/week * 4 weeks/month = 240 sheets/month
+
+The answer is 240.<|endoftext|>Human: Given the problem, calculate the total number of sheets of of paper Miguel uses in a month. Show your work.
+
+Miguel uses 

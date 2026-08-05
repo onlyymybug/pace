@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A trader buys some bags of wheat from a farmer at a rate of $20 per bag. If it costs $2 to transport each bag from the farm to the warehouse, and the trader made a total profit of $400 after selling all the bags at a rate of $30 each, how many bags did he sell?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of bags the trader bought as \( x \).
+
+The cost to transport each bag is $2, so the total transportation cost for \( x \) bags is \( 2x \) dollars.
+
+The trader bought each bag for $20, so the total cost for \( x \) bags is \( 20x \) dollars.
+
+The total profit is given by the total revenue minus the total cost. The total revenue from selling \( x \) bags at $30 each is \( 30x \) dollars.
+
+The total profit is given as $400, so we can write the equation:
+
+\[ 

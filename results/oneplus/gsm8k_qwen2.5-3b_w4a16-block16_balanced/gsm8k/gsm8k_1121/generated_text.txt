@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John visits his parents twice a month.  It takes him 2 hours to drive there at a speed of 70 mph.  Considering the round trip, how many miles a month does he drive when visiting his parents? To solve this problem, we need to determine the total distance John drives each month to visit his parents and then convert that distance into miles.
+
+1. **Calculate the one-way driving time:**
+   - Given: It takes 2 hours to drive to his parents.
+   - Speed: 70 mph.
+   - Time = Distance / Speed.
+   - Rearranging, Distance = Time * Speed.
+   - One-way driving distance = 2 hours * 70 mph = 140 miles.
+
+2. **Calculate the round-trip distance:**
+   - Since John drives to his parents and back, the

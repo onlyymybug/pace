@@ -1,0 +1,9 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12. $$
+
+To determine the modulo 4 remainder of of the sum \(1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12\), we can start by finding the sum of of the numbers from 1 to 12 and then find the remainder when this sum is divided by 4.
+
+First, we calculate the sum of of the numbers from 1 to 12. The sum of of the first \(n\) natural numbers is given by the formula:
+\[
+S = \frac{n(n+

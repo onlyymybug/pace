@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrafficViolations.reportAccident","description":"Report traffic accidents and violations","parameters":{"type":"object","properties":{"plate_number":{"type":"string","description":"License plate number"},"location":{"type":"string","description":"Site"}},"required":["plate_number","location"]}}
+{"name":"SocialCommunication.Calling.quickPhoneCallReply","description":"Set up some common response statements ahead of time, or set them up individually for a contact to send quickly during a call","parameters":{"type":"object","properties":{"reply_content":{"type":"string","description":"Quick replies"},"contact_name":{"type":"string","description":"Contact person"}},"required":["reply_content","contact_name"]}}
+{"name":"Navigation.Bicycles.submitBikeFault","description":"Submit a bicycle malfunction","parameters":{"type":"object","properties":{"number":{"type":"string","description":"Vehicle number"}},"required":["number"]}}
+{"name":"Navigation.TaxiCarRental.reportCarRentalFault","description":"Escalate vehicle issue based on order","parameters":{"type":"object","properties":{"order_id":{"type":"string","description":"Booking Order ID"},"content":{"type":"string","description":"Questions"}},"required":["order_id","content"]}}
+{"name":"UtilityTools.AIGC.aigcText2Pictrue","description":"Based on the text description entered, the corresponding image content is generated, and the text is converted into an image.","parameters":{"type":"object","properties":{"text":{"type":"string","description":"literal content"}},"required":["text"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, boss! This is Xiao Li. I have finished the project report for this month, so you can take a moment to take a look. In addition, Manager Zhang of the Finance Department asked me to remind you that there is an important budget meeting tomorrow at 3pm in Conference Room 2. Hope you're doing well! Sincerely, Xiao Li.
+query:The name of the person mentioned in the text message, I am currently inconvenient to answer, please text me.<|im_end|>
+<|im_start|>assistant

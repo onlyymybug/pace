@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: In a dance class of 20 students, 20% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance? Step 1: Calculate the number of students who enrolled in contemporary dance.
+20% of 20 students = 0.20 * 20 = 4 students
+
+Step 2: Calculate the remaining students after those who enrolled in contemporary dance.
+Remaining students = Total students - Students in contemporary dance
+Remaining students = 20 - 4 = 16 students
+
+Step 3: Calculate the number of students who enrolled in jazz dance from the remaining.
+25% of the remaining students = 0.25 * 16 = 4 students
+
+Step 4: Calculate the remaining students

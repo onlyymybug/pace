@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TaxiCarRental.viewTaxiOrderDetail","description":"View details of a ride","parameters":{"type":"object","properties":{"time":{"type":"string","description":"Order time"},"destination":{"type":"string","description":"Destination"}},"required":["time","destination"]}}
+{"name":"MusicRadio.OnlineMusic.getMusicRecommendationsByScene","description":"Get a list of music recommendations based on the scene","parameters":{"type":"object","properties":{"scene":{"type":"string","description":"Music Scene"}},"required":["scene"]}}
+{"name":"UtilityTools.Weather.getWeatherForecast","description":"Get weather forecasts for specific locations within a timeframe","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"period":{"type":"string","description":"Forecasted Time Range"}},"required":["location","period"]}}
+{"name":"ConvenientLiving.JobRecruitment.getJobDetails","description":"Get job-specific details based on job relevance","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"UtilityTools.Weather.getWeatherInfo","description":"Get the current weather information for a given day","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"}},"required":["location"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today at 3pm, I plan to go to the library to study, there is a study room on the first floor of the library on the east side of the campus, where the environment is very quiet and perfect for test preparation. Remember to bring your laptop and pen so we can meet at the library entrance.
+query:I took a taxi to the location mentioned in my notebook last Friday at 8pm. It was raining, can you find the trip details?<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A Tyrannosaurus rex ate half of a small triceratops it had hunted. When it left, a pack of velociraptors scavenged half of what was left. A group of lazy Allosaurus gulped down the last 270 kilograms of meat. How many kilograms of meat were on the triceratops before the T-Rex ate?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the initial amount of meat on the triceratops as \( x \) kilograms.
+
+1. The Tyrannosaurus rex ate half of the meat, so it left with \( \frac{x}{2} \) kilograms.
+2. The pack of velociraptors then ate half of what was left, which is \( \frac{1}{2} \times \frac{x}{2} = \frac{x}{4} \) kilograms.
+3. The remaining meat after the velociraptors ate is \( \frac{x}{2} - \frac{x}{4} = \frac{x}{4

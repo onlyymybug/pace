@@ -1,0 +1,30 @@
+To solve for the length of of median \(\overline{QM}\) in \(\triangle PQR\) where \(PQ = QR = 34\) and \(PR = 32\), we can use the formula for the length of of median in a triangle. The formula for the median from vertex \(P\) to the midpoint \(M\) of of side \(QR\) is given by:
+
+\[
+QM = \sqrt{\frac{2PQ^2 + 2QR^2 - PR^2}{4}}
+\]
+
+Given:
+\[
+PQ = QR = 34 \quad \text{and} \quad PR = 32
+\]
+
+Substitute these values into the formula:
+
+\[
+QM = \sqrt{\frac{2(34)^2 + 2(34)^2 - (32)^2}{4}}
+\]
+
+First, calculate \(34^2\) and \(32^2\):
+
+\[
+34^2 = 1156
+\]
+\[
+32^2 = 1024
+\]
+
+Now substitute these values back into the formula:
+
+\[
+QM = \sqrt{\frac{2(1156)

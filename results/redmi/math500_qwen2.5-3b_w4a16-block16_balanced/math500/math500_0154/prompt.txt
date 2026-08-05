@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: A set of three points is chosen randomly from the grid shown. Each three-point set has the same probability of being chosen. What is the probability that the points lie on the same straight line?
+
+[asy]
+size(50);
+for (int i=0; i<3; ++i) {
+for (int j=0; j<3; ++j) {
+dot((i,j));};}
+[/asy]

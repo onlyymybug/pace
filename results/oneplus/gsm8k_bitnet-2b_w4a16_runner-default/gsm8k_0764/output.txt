@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Rob, Royce, and Pedro are contractors getting ready to put a new roof on three homes. If the three homes will need 250 cases of shingles, with the first house needing 1/2 of the second, and the third needing double the first. How many cases of shingles will the third house need?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of cases of shingles needed for the first house as \( x \). According to the problem, the second house needs half as many shingles as the first, so it needs \( \frac{x}{2} \) cases. The third house needs double the first house, so it needs \( 2x \) cases.
+
+The total number of cases needed for all three houses is given as 250. Therefore, we can write the equation:
+
+\[ x + \frac{x}{2} + 2x = 250 \]
+
+To solve for \( x \), we first combine the terms on the

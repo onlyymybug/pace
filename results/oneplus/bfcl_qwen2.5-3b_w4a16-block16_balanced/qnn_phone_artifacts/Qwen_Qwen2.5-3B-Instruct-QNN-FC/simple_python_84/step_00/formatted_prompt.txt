@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_bmi", "description": "Calculate the Body Mass Index (BMI) of a person. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"weight": {"type": "integer", "description": "Weight of the person in kilograms."}, "height": {"type": "integer", "description": "Height of the person in centimeters."}, "unit": {"type": "string", "description": "Optional parameter to choose between 'imperial' and 'metric' systems. Default is 'metric'."}}, "required": ["weight", "height"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the Body Mass Index (BMI) of a person with a weight of 85 kilograms and height of 180 cm.<|im_end|>
+<|im_start|>assistant

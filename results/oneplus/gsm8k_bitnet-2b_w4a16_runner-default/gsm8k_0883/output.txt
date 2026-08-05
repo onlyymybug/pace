@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Kelly is grocery shopping at a supermarket and is making sure she has enough in her budget for the items in her cart. Her 5 packs of bacon cost $10 in total and she has 6 packets of chicken which each cost twice as much as a pack of bacon. She also has 3 packs of strawberries, priced at $4 each, and 7 packs of apples, each priced at half the price of a pack of strawberries. If Kelly’s budget is $65 then how much money, in dollars, does she have left in her budget?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money Kelly has left, we first need to calculate the total cost of all the items she is buying.
+
+1. Cost of bacon:
+   - 5 packs of bacon at $10 total.
+
+2. Cost of chicken:
+   - Each pack of chicken costs twice as much as a pack of bacon.
+   - Cost of one pack of chicken = $10 / 5 = $2.
+   - Total cost for 6 packs of chicken = 6 * $2 = $12.
+
+3. Cost of strawberries:
+   - Each pack of strawberries costs $4.
+   - Total cost for 3

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It's strawberry-picking time on Grandma Concetta's farm.  Tony can pick 6 quarts of strawberries per hour, while Bobby picks one less quart of strawberries per hour than Tony.  Kathy can pick twice as many strawberries per hour as Bobby, and Ricky picks two fewer quarts of strawberries per hour than does Kathy.  In total, how many quarts of strawberries can Tony, Bobby, Ricky, and Kathy pick per hour on Grandma Concetta's farm? To solve this problem, we need to determine the number of quarts of of strawberries each person can pick per hour and then sum these amounts.
+
+1. **Tony's Picking Rate:**
+   - Tony can pick 6 quarts per hour.
+
+2. **Bobby's Picking Rate:**
+   - Bobby picks one less quart per hour than Tony.
+   - Therefore, Bobby picks \( 6 - 1 = 5 \) quarts per hour.
+
+3. **Kathy's Picking Rate:**
+   - Kathy can pick twice as many strawberries per hour as Bobby.
+   - Therefore, Kathy picks \(

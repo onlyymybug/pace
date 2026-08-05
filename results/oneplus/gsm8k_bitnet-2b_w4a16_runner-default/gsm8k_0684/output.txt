@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Chris has a two-speed lawn mower. He can mow his entire lawn in "turtle" mode in 1 hour, or 40 minutes in "rabbit" mode. Today, he experimented by mowing half in turtle mode and half in rabbit mode. How many minutes did it take him to mow the lawn?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the mowing rates for both turtle and rabbit modes. 
+
+In turtle mode, Chris can mow the entire lawn in 1 hour, which is 60 minutes. So, his mowing rate in turtle mode is:
+\[ \text{Rate}_{\text{turtle}} = \frac{1 \text{ lawn}}{60 \text{ minutes}} \]
+
+In rabbit mode, Chris can mow the entire lawn in 40 minutes. So, his mowing rate in rabbit mode is:
+\[ \text{Rate}_{\text{rabbit}} = \frac{

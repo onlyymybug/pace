@@ -1,0 +1,66 @@
+adb -P 5037 -s 192.168.110.76:5555 shell 'cd /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced || exit 1; mkdir -p /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/generated_text.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/speed.txt /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.log; export LD_LIBRARY_PATH=$PWD; export ADSP_LIBRARY_PATH=$PWD; export QNN_OP_PACKAGE_PATHS='"'"''"'"'; rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/sampler.pid;
+pace_sample() {
+  printf '"'"'__PACE_SAMPLE_BEGIN__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+  printf '"'"'__PACE_TS_BEGIN__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+  dumpsys thermalservice >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw 2>&1;
+  printf '"'"'__PACE_MEMORY__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+  if [ -r "/proc/$runner_pid/status" ]; then
+    printf '"'"'pid=%s\n'"'"' "$runner_pid" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+    awk '"'"'/^VmRSS:/{print "rss_kb=" $2}          /^VmHWM:/{print "vmhwm_kb=" $2}'"'"' "/proc/$runner_pid/status" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+  fi;
+  printf '"'"'__PACE_TS_END__='"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw; date +%s%3N >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+  printf '"'"'__PACE_SAMPLE_END__\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+};
+./qnn_llama_runner --decoder_model_version qwen2_5 --model_path hybrid_llama_qnn.pte --tokenizer_path . --prompt '"'"'<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "US_president.in_year", "description": "Retrieve the name of the U.S. president in a given year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"year": {"type": "integer", "description": "The year in question."}, "full_name": {"type": "boolean", "default": true, "description": "Option to return full name with middle initial, if applicable."}}, "required": ["year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Who was the full name of the president of the United States in 1861?<|im_end|>
+<|im_start|>assistant
+'"'"' --system_prompt '"'"''"'"' --seq_len 1024 --eval_mode 1 --temperature 0.0 --num_iters 1 --shared_buffer --output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/generated_text.txt --performance_output_path /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/speed.txt > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.log 2>&1 &
+runner_pid=$!;
+printf '"'"'%s\n'"'"' "$runner_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.pid;
+(
+  sampler_started=$(date +%s);
+  pace_sample;
+  while kill -0 "$runner_pid" 2>/dev/null; do
+    [ -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.stop ] && break;
+    sampler_now=$(date +%s);
+    if [ $((sampler_now - sampler_started)) -ge 1800 ]; then
+      printf '"'"'__PACE_WATCHDOG_TIMEOUT__=1800\n'"'"' >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.raw;
+      kill -TERM "$runner_pid" 2>/dev/null || true;
+      sleep 1;
+      kill -KILL "$runner_pid" 2>/dev/null || true;
+      break;
+    fi;
+    sleep 0.5;
+    pace_sample;
+  done;
+  pace_sample;
+) &
+sampler_pid=$!;
+printf '"'"'%s\n'"'"' "$sampler_pid" > /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/sampler.pid;
+pace_cleanup() {
+  touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.stop;
+  kill -TERM "$runner_pid" 2>/dev/null || true;
+  wait "$sampler_pid" 2>/dev/null || true;
+};
+trap '"'"'pace_cleanup; exit 130'"'"' HUP INT TERM;
+wait "$runner_pid"; runner_rc=$?;
+printf '"'"'\nrunner_returncode=%s\n'"'"' "$runner_rc" >> /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.log;
+touch /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.stop;
+wait "$sampler_pid" 2>/dev/null || true;
+trap - HUP INT TERM;
+rm -f /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/telemetry.stop /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/runner.pid /data/local/tmp/lyy/executorch/qwen25_3b_qnn237_balanced/outputs/bfcl/Qwen_Qwen2.5-3B-Instruct-QNN-FC/simple_python_239/step_00/sampler.pid;
+exit "$runner_rc"'

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Travel.ScenicAreaServices.createScenicSpotBooking","description":"Create a scenic spot reservation for the user","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"},"booking_date":{"type":"string","description":"Ordered Date"},"number_of_people":{"type":"integer","description":"Booking Persons"}},"required":["name","booking_date","number_of_people"]}}
+{"name":"SocialCommunication.SocialMedia.sendMediumMessage","description":"Send a message to a specific friend in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"name":{"type":"string","description":"Friend's nickname"},"content":{"type":"string","description":"Content "},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","name","content","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.sendMessage","description":"Send a text message to a specific contact or group","parameters":{"type":"object","properties":{"receiver_name":{"type":"string","description":"Name of the contact or group receiving the message"},"message_content":{"type":"string","description":"Text content to send"}},"required":["receiver_name","message_content"]}}
+{"name":"SocialCommunication.InstantMessaging.sendSystemMessage","description":"Send a system text message to a specific number or contact","parameters":{"type":"object","properties":{"receiver_number":{"type":"string","description":"Phone number to receive SMS messages"},"receiver_name":{"type":"string","description":"Username to receive SMS"},"message_content":{"type":"string","description":"Text content of the text message to be sent"},"attachment_path":{"type":"string","description":"Image or file URL"}},"required":["receiver_number","receiver_name","message_content","attachment_path"]}}
+{"name":"OfficeSoftware.Email.createDraftMail","description":"Create draft message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To create a draft box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We went to Huangshan together on the weekend, where the scenery was very beautiful, especially the sea of clouds and strange stones, which made people go back and forth. We also climbed to the top of the light and looked at the mountains. It was a real trip. Next time you get the chance, let's explore the rest of Huangshan!
+query:I want to go to the place mentioned in Tom's text message to me next Saturday, can you book it for me alone?<|im_end|>
+<|im_start|>assistant

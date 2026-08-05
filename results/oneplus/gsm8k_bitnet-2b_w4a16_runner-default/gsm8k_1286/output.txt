@@ -1,0 +1,20 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The recent floods in Mamou’s country have left many families without food or shelter. To help, Mamou has volunteered to distribute 1,360 meals to the affected families. She gave out 64 meals on Friday, 30 meals on Saturday, and 48 meals on Sunday. How many meals does she have left to distribute?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many meals Mamou has left, we need to subtract the number of meals she distributed over the three days from the total number of meals she had.
+
+Total meals = 1,360
+Meals distributed on Friday = 64
+Meals distributed on Saturday = 30
+Meals distributed on Sunday = 48
+
+First, add the meals distributed over the three days:
+64 + 30 + 48 = 142
+
+Now, subtract the total meals distributed from the total meals:
+1,360 - 142 = 1,218
+
+The answer is 1,218 meals.<|eot_id|>

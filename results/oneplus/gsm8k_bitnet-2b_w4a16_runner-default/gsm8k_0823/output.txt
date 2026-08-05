@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John does 30 cycles of work a day.  Each cycle has 5 different tasks and each task pays $1.20.  How much does he make if he works a full 7 day week?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much John makes in a week, we need to calculate the total number of tasks he completes in a week and then multiply that by the payment per task.
+
+1. Calculate the number of tasks John completes in one day:
+   - John does 30 cycles of work a day.
+   - Each cycle has 5 different tasks.
+   - So, the number of tasks per day is \(30 \text{ cycles/day} \times 5 \text{ tasks/cycle} = 150 \text{ tasks/day}\).
+
+2. Calculate the number of tasks John completes in one week:
+   - There are 

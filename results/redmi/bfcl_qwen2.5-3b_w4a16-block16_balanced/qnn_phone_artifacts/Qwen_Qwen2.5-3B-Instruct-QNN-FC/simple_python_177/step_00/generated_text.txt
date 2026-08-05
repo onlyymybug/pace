@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "get_lawsuit_cases", "description": "Retrieve all lawsuit cases related to a specific company during a particular year. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"company_name": {"type": "string", "description": "The name of the company."}, "year": {"type": "integer", "description": "The specific year to search for lawsuit cases."}, "status": {"type": "string", "enum": ["open", "closed", "all"], "description": "The status of the lawsuit cases to retrieve. If not specified, defaults to 'all'."}}, "required": ["company_name", "year"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find all Patent lawsuit cases of Facebook in 2018.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "get_lawsuit_cases", "arguments": {"company_name": "Facebook", "year": 2018, "status": "all"}}
+</tool_call><|im_end|>

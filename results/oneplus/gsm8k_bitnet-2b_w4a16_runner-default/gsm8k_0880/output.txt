@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At a spa, Iris spent $400 to do her hair, 1/4 as much to do a manicure, and 3/4 as much money as a manicure to do a pedicure. How much money did she spend at the spa?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the amount Iris spent on each service and then add those amounts together.
+
+1. Iris spent $400 on her hair.
+2. She spent 1/4 as much on a manicure, which is:
+   \[
+   \frac{1}{4} \times 400 = 100
+   \]
+   dollars on a manicure.
+3. She spent 3/4 as much on a pedicure as on a manicure, which is:
+   \[
+   \frac{3}{4} \times 100 = 75
+   \]
+   dollars

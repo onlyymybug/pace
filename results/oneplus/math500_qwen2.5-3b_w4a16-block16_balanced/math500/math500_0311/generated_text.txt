@@ -1,0 +1,26 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The operation @ is defined as $\frac{m}{n}@\frac{p}{q} = (m)(p)\left(\frac{q}{n}\right)$ for simplified fractions $\frac{p}{q}$.  What is the simplified value of $\frac{7}{30}@\frac{10}{21}$? To solve the problem, we need to use the given operation definition \(\frac{m}{n} @ \frac{p}{q} = (m)(p)\left(\frac{q}{n}\right)\). We are given \(\frac{7}{30} @ \frac{10}{21}\).
+
+First, identify \(m\), \(n\), \(p\), and \(q\) from the fractions:
+\[
+\frac{m}{n} = \frac{7}{30}, \quad \frac{p}{q} = \frac{10}{21}
+\]
+
+According to the operation definition:
+\[
+\frac{7}{30} @ \frac{10}{21} = (7)(10)\left(\frac{21}{10}\right)
+\]
+
+Now, calculate each part step by step:
+1. Calculate \((7)(10)\):
+\[
+(7)(10) = 70
+\]
+
+2. Calculate \(\left(\frac{21}{10}\right)\):
+\[
+\left(\frac{21}{10}\right) = 2.1
+\]
+
+3.

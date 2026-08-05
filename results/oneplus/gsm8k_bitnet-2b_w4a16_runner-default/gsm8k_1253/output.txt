@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dominick went to his team's changing room and saw half as many robots as helmets and half as many helmets as footballs kept there. If there were 20 helmets, calculate the total number of items Dominick saw.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we need to determine the number of robots and helmets first, and then use those numbers to find the number of footballs.
+
+1. **Determine the number of helmets:**
+   Given that there are 20 helmets.
+
+2. **Determine the number of robots:**
+   There are half as many robots as helmets.
+   \[
+   \text{Number of robots} = \frac{1}{2} \times \text{Number of helmets} = \frac{1}{2} \times 20 = 10
+   \]
+
+3. **Determine the number of footballs

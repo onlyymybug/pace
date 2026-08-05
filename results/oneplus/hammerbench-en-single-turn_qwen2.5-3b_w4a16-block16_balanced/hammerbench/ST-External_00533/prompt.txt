@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"OnlineShopping.ExpressDelivery.rateExpressService","description":"Rate courier service","parameters":{"type":"object","properties":{"express_id":{"type":"string","description":"Tracking Number"},"signing_date":{"type":"string","description":"The date of signing"},"rating":{"type":"string","description":"Rating, 1-5 points"},"comment":{"type":"string","description":"Scoring contents"}},"required":["express_id","signing_date","rating","comment"]}}
+{"name":"SocialCommunication.Community.likeCommunityComment","description":"Like a comment from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where the review is to be liked"},"comment_name":{"type":"string","description":"Comments to like"}},"required":["community_name","comment_name"]}}
+{"name":"OnlineShopping.SecondhandTrading.evaluateSecondhandSaleOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods_name":{"type":"string","description":"Product Name"}},"required":["goods_name"]}}
+{"name":"OnlineShopping.Mall.evaluateCommodityOrders","description":"Evaluate the order based on the product name and other conditions","parameters":{"type":"object","properties":{"goods":{"type":"string","description":"Product Name"},"evaluation":{"type":"string","description":"Content of the review"}},"required":["goods","evaluation"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today, I saw a smart watch in the Electronics City, the model is Xiaomi Mi Watch 3, which is quite full-featured, with health monitoring, GPS positioning, payment functions, and 14 days of ultra-long standby. The strap is black, the screen is clear, and the price is 1299 yuan. Consider giving it to your mom as a birthday present and check back tomorrow to see if there are any promotions.
+query:Give a 4-star review to the items mentioned in the notepad. It is full-featured, but the battery is not very good.<|im_end|>
+<|im_start|>assistant

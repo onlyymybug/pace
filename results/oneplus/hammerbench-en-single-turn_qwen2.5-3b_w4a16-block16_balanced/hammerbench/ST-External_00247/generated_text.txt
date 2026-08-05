@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","description":"Send a friend request to a specific user in a specific medium","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"nick_name":{"type":"string","description":"Friend's nickname"},"account_number":{"type":"string","description":"Friend's account"}},"required":["medium_name","nick_name","account_number"]}}
+{"name":"SocialCommunication.InstantMessaging.addFriend","description":"Add friends by phone number or username","parameters":{"type":"object","properties":{"user_name":{"type":"string","description":"username"},"phone_number":{"type":"string","description":"Phone No."}},"required":["user_name","phone_number"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskAddAddresbookFriend","description":"Add friends to Drive","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Your Friends Name"}},"required":["name"]}}
+{"name":"OnlineShopping.Mall.addMyFollow","description":"Follow an item or store","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi Alice! We met at a party last week. I would like to organize an outdoor activity this weekend, do not know if you are free to participate? The event starts around 9am on Saturday and we go hiking in the suburban forest park which ends around 4pm. If it is convenient, I hope you can come, we can prepare in advance. Looking forward to hearing from you!
+query:I want to add the [friend's name] mentioned in WeChat as a friend in the cloud disk.<|im_end|>
+<|im_start|>assistant
+{"name":"SocialCommunication.SocialMedia.addMediumFriend","parameters":{"medium_name":"CloudDisk","nick_name":"EK","account_number":"friend's_wechat_account"}}<|im_end|>

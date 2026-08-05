@@ -1,0 +1,8 @@
+{
+  "name": "Navigation.TrainTickets.queryHighSpeedRailRoutes",
+  "arguments": {
+    "departure_station": "Beijing",
+    "destination_station": "Tianjin",
+    "max_results": 3
+  }
+}

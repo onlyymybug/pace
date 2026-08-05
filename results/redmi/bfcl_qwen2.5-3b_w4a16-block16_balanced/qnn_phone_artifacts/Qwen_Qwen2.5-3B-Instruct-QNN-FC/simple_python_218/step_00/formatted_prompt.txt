@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "patient.get_mri_report", "description": "Fetch the brain MRI report of the patient for a given status. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"patient_id": {"type": "string", "description": "The patient identifier."}, "mri_type": {"type": "string", "description": "Type of the MRI. Default to be 'brain'.", "enum": ["brain", "spinal", "chest", "abdominal"]}, "status": {"type": "string", "description": "Status of the report, could be 'in progress', 'concluded' or 'draft'.", "enum": ["in progress", "concluded", "draft"]}}, "required": ["patient_id", "status"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Given patient with id 546382, retrieve their brain MRI report with the status 'concluded'.<|im_end|>
+<|im_start|>assistant

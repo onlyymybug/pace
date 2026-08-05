@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John brings his dog to the vet. His dog needs 2 vaccines, which are $20 each, and a heartworm check. The heartworm check is 60% of his total bill. If he brought $125 with him, how much does he leave with?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total cost of the vaccines and the heartworm check. Then, we subtract this total from the amount John brought with him.
+
+1. Calculate the cost of the vaccines:
+   - Each vaccine costs $20.
+   - John needs 2 vaccines.
+   - Total cost for vaccines = 2 * $20 = $40.
+
+2. Calculate the cost of the heartworm check:
+   - The heartworm check is 60% of the total bill.
+   - Total bill = $40 (vaccines) + $60 (heartworm check) = $100.
+  

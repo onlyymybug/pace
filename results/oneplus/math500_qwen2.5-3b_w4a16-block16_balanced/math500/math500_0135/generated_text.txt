@@ -1,0 +1,18 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $F_1 = (10,2)$ and $F_ 2= (-16,2).$  Then the set of points $P$ such that
+\[|PF_1 - PF_2| = 24\]form a hyperbola.  The equation of this hyperbola can be written as
+\[\frac{(x - h)^2}{a^2} - \frac{(y - k)^2}{b^2} = 1.\]Find $h + k + a + b.$
+To solve the problem, we need to determine the equation of of of the hyperbola formed by the set of points \(P\) such that \(|PF_1 - PF_2| = 24\), where \(F_1 = (10, 2)\) and \(F_2 = (-16, 2)\).
+
+First, we identify the key components of of the hyperbola:
+- The foci \(F_1\) and \(F_2\) are given as \(F_1 = (10, 2)\) and \(F_2 = (-16, 2)\).
+- The constant difference \(|PF_1 - PF_2| = 24\).
+
+The standard form of of a hyperbola centered at \((h, k)\) with a horizontal transverse axis is:
+\[
+\frac{(x - h)^2}{a^2} - \frac{(y - k)^2}{b^2} = 1
+\]
+where \(2a\) is the distance between the vertices and \(2c\) is the distance between the foci. Here, \(c\) is the distance from the center to each focus.
+
+The center \

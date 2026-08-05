@@ -1,0 +1,15 @@
+To find the maximum value of of
+\[
+\frac{x - y}{x^4 + y^4 + 6},
+\]
+we start by analyzing the expression and considering different cases for \(x\) and \(y\).
+
+First, let's set \(x = y\). Substituting \(x = y\) into the expression, we get:
+\[
+\frac{x - y}{x^4 + y^4 + 6} = \frac{x - x}{x^4 + x^4 + 6} = \frac{0}{2x^4 + 6} = 0.
+\]
+So, when \(x = y\), the expression evaluates to 0.
+
+Next, we need to determine if there is a larger value for \(x \neq y\). Let's consider the case where \(x = ky\) for some constant \(k \neq 1\). Substituting \(x = ky\) into the expression, we get:
+\[
+\frac{ky - y}{(ky)^4 + y^4 + 6} = \frac{y(k-1)}{k^4 y^4 + y^4 + 6} = \frac{y

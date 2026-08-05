@@ -1,0 +1,13 @@
+To solve the problem, we start with the given equation:
+
+\[
+\arccos x + \arccos 2x + \arccos 3x = \pi
+\]
+
+First, recall that if \(\theta = \arccos x\), then \(x = \cos \theta\) and \(0 \leq \theta \leq \pi\). The equation becomes:
+
+\[
+\theta + \arccos (2\cos \theta) + \arccos (3\cos \theta) = \pi
+\]
+
+Since \(\arccos\) is the

@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A restaurant has 40 tables with 4 legs and 50 tables with 3 legs. Calculate the total number of legs the restaurant's tables have.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of legs, we need to calculate the legs from both types of tables and then add them together.
+
+For the tables with 4 legs:
+Number of tables = 40
+Legs per table = 4
+Total legs from these tables = 40 tables * 4 legs/table = 160 legs
+
+For the tables with 3 legs:
+Number of tables = 50
+Legs per table = 3
+Total legs from these tables = 50 tables * 3 legs/table = 150 legs
+
+Total number of legs = Legs from 4-legged tables + Legs from 3-legged tables

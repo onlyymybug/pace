@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "market_performance.get_data", "arguments": {"indexes": ["S&P 500", "Dow Jones"], "days": 5}}
+</tool_call><|im_end|>

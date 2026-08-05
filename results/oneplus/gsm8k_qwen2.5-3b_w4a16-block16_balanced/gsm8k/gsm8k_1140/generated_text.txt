@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Russell orders his favorite bagels online.  Each pack of bagels costs $10.00 and has 9 bagels in the pack.  If he orders 4 packs of bagels, he will receive a 10% discount.  After ordering 4 bags, how much will each single bagel cost? To solve this, first calculate the total cost of for 4 packs, then apply the discount, then divide by the total number of bagels.
+
+Total cost for 4 packs: 4 * $10.00 = $40.00
+
+Apply 10% discount: $40.00 * 0.90 = $36.00
+
+Total number of bagels: 4 packs * 9 bagels/pack = 36 bagels
+
+Cost per bagel: $36.00 / 36 bagels = $1.00/b

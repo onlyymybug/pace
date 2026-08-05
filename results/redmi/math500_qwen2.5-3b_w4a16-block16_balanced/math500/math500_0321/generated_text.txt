@@ -1,0 +1,34 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In the diagram below, we have $\sin \angle RPQ = \frac{7}{25}$.  What is $\cos \angle RPS$?
+
+[asy]
+
+pair R,P,Q,SS;
+
+SS = (-2,0);
+
+P = (0,0);
+
+Q = (2,0);
+
+R = rotate(aSin(7/25))*(1.5,0);
+
+dot("$S$",SS,S);
+
+dot("$Q$",Q,S);
+
+dot("$R$",R,N);
+
+dot("$P$",P,S);
+
+draw(Q--SS);
+
+draw(P--R);
+
+[/asy] To solve the problem, we need to determine \(\cos \angle RPS\) given that \(\sin \angle RPQ = \frac{7}{25}\).
+
+First, let's analyze the given information and the geometric setup. We have a right triangle \(PQR\) with \(\angle RPQ\) as one of its angles. The sine of of of an angle in a right triangle is defined as the ratio of of the length of of of the side opposite the angle to the length of of of the hypotenuse. Therefore, we have:
+
+\[
+\sin \angle RPQ = \frac{\text

@@ -1,0 +1,14 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Farmer Brown has 20 animals on his farm, all either chickens or cows. They have a total of 70 legs, all together. How many of the animals are chickens? To solve this, let's use variables to represent the unknowns. Let 'c' be the number of chickens and 'w' be the number of cows. 
+
+We know that:
+1) c + w = 20 (total animals)
+2) 2c + 4w = 70 (total legs)
+
+From equation 1, we can express w in terms of:
+w = 20 - c
+
+Substituting into equation 2:
+2c + 4(20 - c) = 70
+2c + 80 - 4c = 70

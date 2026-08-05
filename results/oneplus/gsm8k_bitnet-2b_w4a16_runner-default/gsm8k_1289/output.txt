@@ -1,0 +1,14 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Every day Charisma meditates for 15 minutes when she first wakes up and again before she goes to sleep.  5 days a week she practices 1 hour of yoga.  in 4 weeks, how much time has she spent on meditation/yoga practice?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to calculate the total time Charisma spends on meditation and yoga over the 4 weeks.
+
+First, let's calculate the total time spent on meditation:
+- Charisma meditates for 15 minutes each day.
+- There are 7 days in a week.
+- She practices meditation for 5 days a week.
+- So, the total time spent on meditation per week is \( 15 \text{ minutes/day} \times 5 \text{ days/week} = 75 \text{ minutes/week} \).
+- Over 4 weeks, the total time spent on meditation is

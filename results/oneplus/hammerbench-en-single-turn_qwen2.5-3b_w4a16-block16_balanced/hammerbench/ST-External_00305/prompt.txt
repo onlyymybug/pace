@@ -1,0 +1,26 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.cancelDoctorAppointment","description":"Cancelling an appointment with a doctor","parameters":{"type":"object","properties":{"doctor_name":{"type":"string","description":"Doctor Name"},"appointment_time":{"type":"string","description":"Specific time of appointment '"}},"required":["doctor_name","appointment_time"]}}
+{"name":"OfficeSoftware.Conferencing.removeParticipants","description":"Remove participants from the meeting","parameters":{"type":"object","properties":{"meeting_id":{"type":"string","description":"Conference No."},"title":{"type":"string","description":"Meeting Title:"},"time":{"type":"string","description":"Meeting Date"},"participant_list":{"type":"string","description":"Remove people list"}},"required":["meeting_id","title","time","participant_list"]}}
+{"name":"Education.OnlineClasses.cancelCourse","description":"Cancel Enrolled Courses","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"}},"required":["course_name"]}}
+{"name":"UtilityTools.AlarmClock.deleteTimer","description":"Remove Timer","parameters":{"type":"object","properties":{"timer_name":{"type":"string","description":"Timer name, empty by default"},"timer":{"type":"string","description":"Timer time"}},"required":["timer_name","timer"]}}
+{"name":"MusicRadio.RadioStations.radioUncollectRadio","description":"Unfavorite station by station name","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Radio Name"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Team Member,
+
+Hello, Regarding next week's project progress meeting, it is now scheduled to start on time this Friday at 3pm.The meeting will be conducted via online video and a link to the meeting will be sent to your email address 30 minutes prior to the start of the meeting.Please be sure to debug the equipment in advance to ensure that the meeting can run smoothly.At that time, we will have a detailed discussion on the progress of the current stage of the project, existing problems and the next work plan. Members are requested to prepare relevant information and report in advance.
+
+Let me know if you have any questions.
+
+Best,
+
+Project Management Team
+10 October 2023
+query:I want to cancel Dr. Li's appointment at the time mentioned in the email, can you help me handle it?<|im_end|>
+<|im_start|>assistant

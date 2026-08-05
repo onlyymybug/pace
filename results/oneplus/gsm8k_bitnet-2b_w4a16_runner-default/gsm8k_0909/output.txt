@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dean has 30 marbles. He gives 1/5  of them to Jamie and gives 10 to Donald. How many marbles are left for Dean?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, first calculate how many marbles Dean gives to Jamie. Since he gives 1/5 of his 30 marbles to Jamie:
+
+1/5 of 30 = (1/5) * 30 = 6 marbles
+
+Dean gives 6 marbles to Jamie. Now, subtract the marbles given to Jamie and the marbles given to Donald from the total number of marbles Dean originally had:
+
+30 marbles - 6 marbles (to Jamie) - 10 marbles (to Donald) = 14 marbles
+
+Dean has 14 marbles left for himself. The answer

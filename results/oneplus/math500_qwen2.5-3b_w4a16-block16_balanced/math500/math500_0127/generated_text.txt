@@ -1,0 +1,25 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Let $F(z)=\frac{z+i}{z-i}$ for all complex numbers $z\not= i,$ and let $z_n=F(z_{n-1})$ for all positive integers $n.$ Given that $z_0=\frac 1{137}+i,$ find $z_{2002}.$
+To solve for \( z_{2002} \) given the function \( F(z) = \frac{z+i}{z-i} \) and the initial condition \( z_0 = \frac{1}{137} + i \), we need to understand the behavior of the sequence \( z_n \).
+
+First, let's compute \( F(z) \) and see if there is a pattern:
+\[
+F(z) = \frac{z+i}{z-i}
+\]
+
+Next, we need to find \( F(F(z)) \):
+\[
+F(F(z)) = F\left( \frac{z+i}{z-i} \right)
+\]
+Let \( w = \frac{z+i}{z-i} \). Then,
+\[
+F(w) = \frac{w+i}{w-i}
+\]
+Substitute \( w = \frac{z+i}{z-i} \) into \( F \):
+\[
+F\left( \frac{z+i}{z-i} \right) = \frac{\frac{z+i}{z-i} + i}{\frac{z+i}{z-i} - i}
+\]
+Simplify the numerator and the denominator:
+\[
+\

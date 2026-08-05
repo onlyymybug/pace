@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Health.MedicalServices.evaluateHospitals","description":"Evaluate based on hospital name and visit date","parameters":{"type":"object","properties":{"hospital_name":{"type":"string","description":"Hospital Name"},"visit_date":{"type":"string","description":"Date of Visit :"},"content":{"type":"string","description":"Review Content"}},"required":["hospital_name","visit_date","content"]}}
+{"name":"NewsMagazines.NewspapersMagazines.rateMagazine","description":"Rating and evaluation of newspapers and magazines","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Magazine Name"},"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["name","rating","comment"]}}
+{"name":"Navigation.Bicycles.rateRidingExperience","description":"Rate this bike ride","parameters":{"type":"object","properties":{"rating":{"type":"integer","description":"Rating"},"comment":{"type":"string","description":"Review Content"}},"required":["rating","comment"]}}
+{"name":"UtilityTools.AIGC.aigcPictureEnhancement","description":"Adjust the contrast of an image that is too dark or too bright to make the image more vivid","parameters":{"type":"object","properties":{"file":{"type":"string","description":"Pending Picture File Path"}},"required":["file"]}}
+{"name":"SocialCommunication.Community.likeCommunityPost","description":"Like a post from a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community where you want to like the post"},"post_name":{"type":"string","description":"Title of the post to like"}},"required":["community_name","post_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Wang, remember that on April 2, we had a project meeting, which started at 10 am and was located in the meeting room on the third floor of the company. The meeting will take about two hours. Everyone can have lunch together at noon. How about that?
+query:I would like to evaluate Sunshine Children's Hospital. The child's doctor is very patient and the environment is suitable for children. The time is mentioned in the WeChat message Xiao Li sent me.<|im_end|>
+<|im_start|>assistant
+{"name":"Health.MedicalServices.evaluateHospitals","parameters":{"hospital_name":"Sunshine Children's Hospital","visit_date":"April 2","content":"The child's doctor is very patient and the environment is suitable for children."}}<|im_end|>

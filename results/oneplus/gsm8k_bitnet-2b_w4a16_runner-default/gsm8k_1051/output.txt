@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: It is approximately 1955 kilometers from San Diego, California to New York City, New York. If Bernice drove 325 kilometers for 4 days, how many kilometers will she still need to drive?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many kilometers Bernice will still need to drive, we first need to determine how many kilometers she has already covered. Since she drove 325 kilometers for 4 days, we can calculate the total distance she covered by multiplying the distance per day by the number of days:
+
+Distance covered = Distance per day × Number of days
+Distance covered = 325 kilometers/day × 4 days
+Distance covered = 1300 kilometers
+
+Now, we subtract the distance she has already covered from the total distance to find out how many kilometers she still needs to drive:
+
+Distance remaining = Total distance - Distance covered
+Distance remaining = 

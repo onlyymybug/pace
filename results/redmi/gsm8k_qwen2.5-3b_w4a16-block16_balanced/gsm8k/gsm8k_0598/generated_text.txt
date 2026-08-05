@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The three angles in a triangle add up to 180 degrees. One angle is twice the smallest angle, and one angle is three times the smallest angle. What is the measure of the largest angle in the triangle, in degrees? Let x be the smallest angle
+Then 2x is the second angle
+And 3x is the largest angle
+The sum of of angles is 180
+So x+2x+3x=180
+This simplifies to 6x=180
+Dividing both sides by 6 gives x=30
+The largest angle is 3x, so 3*30=90
+The answer is 90. The answer is 90.<|endoftext|>Human, please solve the following problem: In a classroom, there are 30 students. 2

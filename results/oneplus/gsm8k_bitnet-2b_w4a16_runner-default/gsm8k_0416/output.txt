@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: While Joanne is gathering apples from her family’s orchard, her sister comes outside to help her. Joanne gathers 30 apples from the tallest trees, half this amount from the shortest trees, and more apples from the average trees. Compared with Joanne, her sister gathers twice as many apples from the tallest trees and 3 times as many apples from the shortest trees. She doesn't take any from the average trees. If the sisters have gathered a combined total of 500 apples, how many apples did Joanne gather from the average trees?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of apples Joanne gathered from the average trees as \( x \).
+
+Joanne gathered:
+- 30 apples from the tallest trees
+- \( \frac{30}{2} = 15 \) apples from the shortest trees
+- \( x \) apples from the average trees
+
+Her sister gathered:
+- Twice as many apples from the tallest trees as Joanne, which is \( 2 \times 30 = 60 \) apples
+- Three times as many apples from the shortest trees as Joanne, which is \( 3 \times 15 = 45 \) apples
+-

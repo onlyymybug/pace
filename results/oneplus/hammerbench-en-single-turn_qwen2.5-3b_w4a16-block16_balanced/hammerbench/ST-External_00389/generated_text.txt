@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"OfficeSoftware.Email.collectMail","description":"Favorite a specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to favorite"}},"required":["mail_title"]}}
+{"name":"UtilityTools.Weather.setPersonalizedReminder","description":"Set personalized alerts for specific cities and weather conditions","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Location, defaults to local"},"weather":{"type":"string","description":"Weather conditions."}},"required":["location","weather"]}}
+{"name":"SocialCommunication.Calling.quickPhoneCallReply","description":"Set up some common response statements ahead of time, or set them up individually for a contact to send quickly during a call","parameters":{"type":"object","properties":{"reply_content":{"type":"string","description":"Quick replies"},"contact_name":{"type":"string","description":"Contact person"}},"required":["reply_content","contact_name"]}}
+{"name":"UtilityTools.Weather.getLivingIndex","description":"Get the Life Services Index for a given day and a given location","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date, defaults to current time"},"location":{"type":"string","description":"Location, defaults to local"}},"required":["date","location"]}}
+{"name":"Travel.ItineraryServices.searchTravelPackage","description":"Search travel packages by destination, time, price, and more","parameters":{"type":"object","properties":{"origin":{"type":"string","description":"Origination"},"destination":{"type":"string","description":"destination"},"start_time":{"type":"string","description":"Start date"},"end_time":{"type":"string","description":"End Date"},"price":{"type":"float","description":"Price, unit (yuan)"}},"required":["origin","destination","start_time","end_time","price"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hey, Xiao Li, remember our agreed trip to Sanya at the end of this month? I have checked the itinerary, we can see the sunrise in the corner of Sanya, and then go diving in the Great East Sea in the afternoon to experience the underwater world there. In the evening, we can also taste authentic Hainanese food such as Wenchang chicken and coconut rice in downtown Sanya, which sounds heartwarming! Don't forget to bring your swimsuit and sunscreen - we'll see you in Sanya!
+query:I want to find a place from Wuhan to go to the beach vacation mentioned in the Xiaoming QQ message. I will leave on November 5 and return on November 12 with a budget of about 6500 yuan.<|im_end|>
+<|im_start|>assistant
+{"name":"Travel.ItineraryServices.searchTravelPackage","parameters":{"origin":"Wuhan","destination":"Sanya","start_time":"2023-11-05","end_time":"2023-11-12","price":6500}}<|im_end|>

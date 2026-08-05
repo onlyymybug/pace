@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_magnetic_field_strength", "description": "Calculate the magnetic field strength at a point a certain distance away from a long wire carrying a current. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"current": {"type": "integer", "description": "The current flowing through the wire in Amperes."}, "distance": {"type": "integer", "description": "The perpendicular distance from the wire to the point where the magnetic field is being calculated."}, "permeability": {"type": "float", "description": "The permeability of the medium. Default is 12.57e-7 (Vacuum Permeability)."}}, "required": ["current", "distance"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the magnetic field strength 10 meters away from a long wire carrying a current of 20 Amperes.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Emily can peel 6 shrimp a minute and saute 30 shrimp in 10 minutes. How long will it take her to peel and cook 90 shrimp? To solve this problem, we need to calculate the time required for both peeling and sauteeing 90 shrimp.
+
+First, we calculate the time for peeling 90 shrimp:
+- Emily peels 6 shrimp per minute.
+- Therefore, to peel 90 shrimp, it would take her 90 / 6 = 15 minutes.
+
+Next, we calculate the time for sauteeing 90 shrimp:
+- Emily sautes 30 shrimp in 10 minutes.
+- Therefore, to sautee 90 shrimp, it would take her 10 * (90 /

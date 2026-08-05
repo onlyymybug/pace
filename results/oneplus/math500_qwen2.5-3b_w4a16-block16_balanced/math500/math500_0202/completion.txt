@@ -1,0 +1,15 @@
+To solve the problem, we need to find the number of students \( N \) such that when divided by 8, the remainder is 5, and when divided by 6, the remainder is 3. Mathematically, this can be expressed as:
+\[ N \equiv 5 \pmod{8} \]
+\[ N \equiv 3 \pmod{6} \]
+Additionally, we know that \( N < 50 \).
+
+First, let's express \( N \) in terms of in the first congruence:
+\[ N = 8k + 5 \]
+for some integer \( k \). Substituting this into the second congruence, we get:
+\[ 8k + 5 \equiv 3 \pmod{6} \]
+Simplifying the left side modulo 6:
+\[ 8k + 5 \equiv 2k + 5 \equiv 3 \pmod{6} \]
+This simplifies to:
+\[ 2k + 5 \equiv 3 \pmod{6} \]
+\[ 2k \equiv -2 \pmod{6} \]
+\[ 2k \equiv 4 \pmod{6}

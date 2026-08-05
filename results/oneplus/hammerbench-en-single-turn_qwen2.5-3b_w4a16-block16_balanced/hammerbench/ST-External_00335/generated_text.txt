@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AlarmClock.addWorldclock","description":"Add world clock for selected cities","parameters":{"type":"object","properties":{"city":{"type":"string","description":"World address added"}},"required":["city"]}}
+{"name":"MusicRadio.OnlineMusic.addSongForPlaylist","description":"Add songs to your playlist by songlist name and song title","parameters":{"type":"object","properties":{"song_name":{"type":"string","description":"Song name"},"playlist_name":{"type":"string","description":"Song List Name"}},"required":["song_name","playlist_name"]}}
+{"name":"UtilityTools.Weather.addCity","description":"Add specified city to weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+{"name":"SystemTools.SystemSettings.addEmergencyContact","description":"Add emergency contact","parameters":{"type":"object","properties":{"phone_number":{"type":"string","description":"Emergency contact's phone number"},"user_name":{"type":"string","description":"Name of emergency contact"}},"required":["phone_number","user_name"]}}
+{"name":"UtilityTools.Reading.addReadingBookShelf","description":"Add online and local books to your shelves","parameters":{"type":"object","properties":{"book_name":{"type":"string","description":"Book Name"},"book_author":{"type":"string","description":"Author name"},"path":{"type":"string","description":"Local Book Path"}},"required":["book_name","book_author","path"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:We will meet at Ueno Park in Tokyo tomorrow morning at 9am to see the cherry blossoms together. Remember to bring your camera and a bottle of water. The cherry blossoms in Ueno Park are very beautiful, so don't miss the best time to see them. We meet at the main entrance of the park.
+query:Can I add the locations mentioned in my notepad to my weather watch list?<|im_end|>
+<|im_start|>assistant
+{"name":"UtilityTools.Weather.addCity","parameters":{"city":"Ueno Park"}}<|im_end|>

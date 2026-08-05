@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Josie grows grapes on her 10-acre farm.  Each acre produces 5 tons of grapes per year, and each ton of grapes makes 2 barrels of wine.  How many barrels of wine does her farm produce per year? Step 1: Calculate total tons of grapes produced annually.
+Total acres = 10
+Tons per acre = 5
+Total tons = Total acres * Tons per acre
+Total tons = 10 * 5
+Total tons = 50 tons
+
+Step 2: Calculate total barrels of wine produced annually.
+Barrels per ton = 2
+Total barrels = Total tons * Barrels per ton
+Total barrels = 50 * 2
+Total barrels = 100 barrels
+
+The answer is 100. The answer is 100.<|endoftext|>Human: Solve the following

@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The rug is 5 feet wider than the chair. The couch is 2 feet longer than twice the width of the rug. If the chair is 3 feet wide. How many feet long is the couch? Step 1: Determine the rug's width
+Since the rug is 5 feet wider than the chair, and the chair is 3 feet wide, the rug's width is 3 + 5 = 8 feet.
+
+Step 2: Calculate the chair's width
+The chair's width is given as 3 feet.
+
+Step 3: Calculate the rug's width
+The rug's width is 8 feet.
+
+Step 4: Calculate the couch's length
+The couch is 2 feet longer than twice the rug's width. Twice the rug's width is 2 * 8 = 16 feet. Adding

@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.queryResidentialPermitInfo","description":"Check the progress of the residence permit, the validity period, etc.","parameters":{"type":"object","properties":{"applicant_name":{"type":"string","description":"Name of Applicant"}},"required":["applicant_name"]}}
+{"name":"OfficeSoftware.Documents.setDocumentPermissions","description":"Set access rights for the specified document","parameters":{"type":"object","properties":{"document_name":{"type":"string","description":"Document name to set permissions, required"}},"required":["document_name"]}}
+{"name":"Finance.Insurance.getInsuranceFAQ","description":"Frequently asked questions and answers about insurance","parameters":{"type":"object","properties":{"keyword":{"type":"string","description":"Question Keywords"}},"required":["keyword"]}}
+{"name":"OfficeSoftware.CloudStorage.netdiskSetFileAccessPermission","description":"Set access rights for files in Drive","parameters":{"type":"object","properties":{"file_path":{"type":"string","description":"File Path"},"permission_level":{"type":"string","description":"Permission level, such as public, private, etc."}},"required":["file_path","permission_level"]}}
+{"name":"ConvenientLiving.GovernmentServices.queryEducationalQualificationVerification","description":"Verify the authenticity of your qualifications by querying relevant information about your qualifications","parameters":{"type":"object","properties":{"graduate_name":{"type":"string","description":"Graduate Name"},"school_name":{"type":"string","description":"Graduate School Name"}},"required":["graduate_name","school_name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hello, Zhang San! The meeting place on Saturday was set at the newly opened Italian restaurant at the World Trade Center. Remember to bring Li Si and Wang Wu, and we will go together. Lunch time is 12 o'clock, don't be late, everyone is looking forward to meeting you. If you have any questions, you can contact me anytime.
+query:Check the progress and validity of the residence permit of the friend's name mentioned in WeChat.<|im_end|>
+<|im_start|>assistant

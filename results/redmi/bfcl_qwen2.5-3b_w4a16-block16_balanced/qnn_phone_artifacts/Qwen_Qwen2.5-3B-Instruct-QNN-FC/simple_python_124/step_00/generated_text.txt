@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "t_test", "description": "Perform a statistical t-test to check if the means of two independent datasets are statistically different. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"dataset_A": {"type": "array", "items": {"type": "integer"}, "description": "Dataset A for comparison."}, "dataset_B": {"type": "array", "items": {"type": "integer"}, "description": "Dataset B for comparison."}, "alpha": {"type": "float", "description": "Significance level for the test. Default is 0.05."}}, "required": ["dataset_A", "dataset_B"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Find the statistical significance between two set of variables, dataset_A with the values 12, 24, 36 and dataset_B with the values 15, 30, 45.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "t_test", "arguments": {"dataset_A": [12, 24, 36], "dataset_B": [15, 30, 45], "alpha": 0.05}}
+</tool_call><|im_end|>

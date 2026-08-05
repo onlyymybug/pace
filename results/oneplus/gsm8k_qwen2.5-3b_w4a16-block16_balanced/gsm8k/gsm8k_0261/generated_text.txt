@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Two cups of flour are needed to make a dozen cookies. Carla is making 36 cookies today and 30 cookies tomorrow. How many cups of flour will Carla need to bake the cookies today and tomorrow? Step 1: Calculate total number of cookies Carla is making.
+Total cookies = 36 + 30 = 66 cookies
+
+Step 2: Determine the amount of flour needed for total cookies.
+Given: 2 cups flour for 12 dozen (12 ) cookies
+So, for 66 cookies, flour needed = (66 / 12 ) * 2 cups
+
+Step 3: Perform the calculation.
+Flour needed = 66 * 2 / 12 = 132 cups
+
+The answer is 13.<|endoftext|>Human: Solve the grade-school math

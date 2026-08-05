@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Candice put 80 post-it notes in her purse before she headed out to her job at the coffee shop.  On her way, she stopped off at the store and purchased a package of Post-it notes;  At work, she placed a single Post-it note on each of 220 different cups of coffee.  If she had 23 post-it notes remaining overall, how many Post-it notes were in the package that she purchased? 
+Solution: Let's break down the problem step by step:
+
+1. Initially, Candice had 80 post-it notes.
+2. Let's denote the number of post-it notes in the new package as \( x \).
+3. After buying the new package, she had \( 80 + x \) post-it notes.
+4. She then placed a single post-it note on each of 220 different cups of coffee, which means she used 220 post-it notes.
+5. After placing the post-it notes on the cups, she had 23 remaining.
+
+So, the equation representing the

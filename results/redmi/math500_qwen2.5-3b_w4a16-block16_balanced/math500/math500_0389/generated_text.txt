@@ -1,0 +1,17 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: What is the smallest real number $x$ in the domain of the function $$g(x) = \sqrt{(x-3)^2-(x-8)^2}~?$$
+
+To determine the smallest real number \( x \) in the domain of of of the function \( g(x) = \sqrt{(x-3)^2 - (x-8)^2} \), we need to ensure that the expression inside the square root is non-negative. This means we need to solve the inequality:
+
+\[
+(x-3)^2 - (x-8)^2 \ge 0
+\]
+
+We start by expanding the squares:
+
+\[
+(x-3)^2 = x^2 - 6x + 9
+\]
+\[
+(x-8)^2 = x^2 - 

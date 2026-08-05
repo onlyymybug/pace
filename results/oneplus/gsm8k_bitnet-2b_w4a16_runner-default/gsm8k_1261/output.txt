@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jade bought a new cell phone with an incredible camera, so she spent all week taking pictures of her daily life. At the end of the week, she had taken 210 photos. She wants to upload all her photos on her Instagram. If she uploads 7 photos in one batch and she uploads 6 batches each day, how many days will she need to upload all of her photos?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many days Jade will need to upload all her photos, we first need to determine how many photos she uploads per day. Since she uploads 7 photos in one batch and she uploads 6 batches each day, the total number of photos she uploads per day is:
+
+7 photos/batch * 6 batches/day = 42 photos/day
+
+Now, we need to divide the total number of photos she has by the number of photos she uploads per day to find out how many days it will take her to upload all her photos:
+
+210 photos / 42 photos/day = 5 days
+
+The answer is 5 days

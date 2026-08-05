@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Josh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the profit Josh made, we first need to determine the new value of the house after the repairs. Since the repairs increased the value by 150%, we can calculate the new value by adding 150% of the original value to the original value itself.
+
+First, calculate 150% of the original value:
+150% of $80,000 = 1.5 * $80,000 = $120,000
+
+Now, add this amount to the original value to find the new value of the house:
+New value = Original value + Increase
+New value = $80,000 + $120,000
+New value

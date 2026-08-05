@@ -1,0 +1,14 @@
+To find the equation of of of the plane containing the points \((0, -1, -1)\), \((-4, 4, 4)\), and \((4, 5, 1)\), we need to determine the coefficients \(A\), \(B\), \(C\), and \(D\) such that the equation \(Ax + By + Cz + D = 0\) holds for all three points. We will use the determinant method to find these coefficients.
+
+The general form of of the plane equation is \(Ax + By + Cz + D = 0\). We can use the points to form a system of of equations. The points \((0, -1, -1)\), \((-4, 4, 4)\), and \((4, 5, 1)\) give us the following system of:
+
+\[
+\begin{vmatrix}
+x & y & z & 1 \\
+0 & -1 & -1 & 1 \\
+-4 & 4 & 4 & 1 \\
+4 & 5 & 1 & 1 \\
+\end{vmatrix} = 0
+\]
+
+Expanding the determinant along the first row, we get

@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Janet buys a brooch for her daughter.  She pays $500 for the material to make it and then another $800 for the jeweler to construct it.  After that, she pays 10% of that to get it insured.  How much did she pay?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much Janet paid, we need to add up the costs of the material, the construction, and the insurance.
+
+1. Cost of material: $500
+2. Cost of construction: $800
+3. Cost of insurance: 10% of the construction cost
+
+First, calculate the insurance cost:
+Insurance cost = 10% of $800 = 0.10 * $800 = $80
+
+Now, add up all the costs:
+Total cost = Cost of material + Cost of construction + Insurance cost
+Total cost = $500 + $800 + $80
+Total cost = $1380
+
+The

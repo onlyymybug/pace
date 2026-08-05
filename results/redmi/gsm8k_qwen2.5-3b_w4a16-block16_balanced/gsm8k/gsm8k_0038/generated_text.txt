@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: John plans to sell all his toys and use the money to buy video games. He has 13 lego sets and he sells them for $15 each. He ends up buying 8 video games for $20 each and has $5 left. How many lego sets does he still have? Step 1: Calculate total money earned from selling lego sets.
+Total money from lego sets = 13 * 15 = 195 dollars
+
+Step 2: Calculate total money spent on video games.
+Total money spent on video games = 8 * 20 = 160 dollars
+
+Step 3: Calculate total money left after buying video games.
+Money left after buying games = 195 - 160 = 35 dollars
+
+Step 4: Verify the remaining money.
+Given that he has $5 left, we see that the calculation aligns with 3

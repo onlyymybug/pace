@@ -1,0 +1,13 @@
+To solve the problem, we need to track the number of people on the train after each stop.
+
+1. Initially, there are 172 people on the train.
+2. At the first stop, 47 people get off, so we subtract 47 from 172:
+   \[
+   172 - 47 = 125
+   \]
+   Now there are 125 people left.
+3. At the next stop, 13 more people get on, so we add 13 to 125:
+   \[
+   125 + 13 = 138
+   \]
+   Now there are 138 people left.

@@ -1,0 +1,13 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Russell works at a pet store and is distributing straw among the rodents. The rats are kept in 3 cages in equal groups and each rat is given 6 pieces of straw. There are 10 cages of hamsters that are kept alone and each hamster is given 5 pieces of straw. There is also a pen of rabbits where 20 pieces of straw are distributed among the rabbits. No straw is used anywhere else in the store. If 160 pieces of straw have been distributed among the small rodents, how many rats are in each cage?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the number of rats in each cage as \( r \). Since there are 3 cages with equal groups of rats, the total number of rats is \( 3r \).
+
+Each rat gets 6 pieces of straw, so the total number of pieces of straw given to the rats is \( 6 \times 3r = 18r \).
+
+There are 10 cages of hamsters, and each hamster gets 5 pieces of straw. So, the total number of pieces of straw given to the hamsters is \( 5 \times 10 = 50 \).
+
+There is also a pen of

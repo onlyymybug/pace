@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Carson lives in an old house where the pipes will freeze if the temperature inside the house falls below 32 degrees. Every log of wood Carson burns heats the house up by 5 degrees. If it was 45 degrees during the day, and it's 33 degrees colder during the night compared to the day, how many logs does Carson need to burn to prevent the pipes from freezing?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to determine the temperature inside the house at night and then figure out how many logs of wood Carson needs to burn to bring it back up to 32 degrees.
+
+1. **Determine the temperature at night:**
+   - During the day, the temperature is 45 degrees.
+   - It is 33 degrees colder at night compared to the day.
+   - Therefore, the temperature at night is:
+     \[
+     45 - 33 = 12 \text{ degrees}
+     \]
+
+2. **Calculate the temperature needed to prevent the pipes from freezing:**
+   - The pipes will

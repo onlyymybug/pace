@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SystemTools.SystemSettings.setSystemRingtone","description":"set the ringtone","parameters":{"type":"object","properties":{"ringtoneType":{"type":"string","description":"Ringtone type, such as mobile phone ringtone, notification tone, etc."},"ringtone":{"type":"string","description":"Ringtone file path or URL"}},"required":["ringtoneType","ringtone"]}}
+{"name":"SocialCommunication.Calling.setCallRingtone","description":"Set a ringtone for the specified contact","parameters":{"type":"object","properties":{"ringtone":{"type":"string","description":"*Ringtones"},"contact_name":{"type":"string","description":"Contact person"}},"required":["ringtone","contact_name"]}}
+{"name":"OnlineShopping.ExpressDelivery.signForOrderExpress","description":"Sign and receive courier orders according to the designated courier number","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Express date"},"express_id":{"type":"string","description":"Tracking Number"}},"required":["date","express_id"]}}
+{"name":"SocialCommunication.Community.pinCommunityPost","description":"Pin a post to a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to pin the post to"},"post_name":{"type":"string","description":"Title of the post to sticky"}},"required":["community_name","post_name"]}}
+{"name":"Navigation.TaxiCarRental.createCarRentalOrder","description":"Book a rental car","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Pick-up from"},"start_time":{"type":"string","description":"Start Time "},"end_time":{"type":"string","description":"drop-off date"}},"required":["location","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Today I went to the mall and saw a very beautiful spring item called "Spring". This item is a lightweight spring coat in a fresh light green color with a simple and generous design that is perfect for the spring atmosphere. The label is 100% cotton and feels very soft to the touch and breathable. The price is 299 yuan, I think it is very cost-effective, so consider getting started.
+query:Set the item mentioned in the notepad as the ringtone for Li Ming<|im_end|>
+<|im_start|>assistant
+{"name":"SystemTools.SystemSettings.setSystemRingtone","parameters":{"ringtoneType":"notification","ringtone":"Spring"}}<|im_end|>

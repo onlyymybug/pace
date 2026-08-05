@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Alisa biked 12 miles per hour for 4.5 hours. Stanley biked at 10 miles per hour for 2.5 hours. How many miles did Alisa and Stanley bike in total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total distance biked by Alisa and Stanley, we need to calculate the distance each of them biked separately and then add those distances together.
+
+First, calculate the distance Alisa biked:
+Distance = Speed × Time
+Distance = 12 miles/hour × 4.5 hours
+Distance = 12 × 4.5
+Distance = 54 miles
+
+Next, calculate the distance Stanley biked:
+Distance = Speed × Time
+Distance = 10 miles/hour × 2.5 hours
+Distance = 10 × 2.5
+Distance = 25 miles
+
+Now, add the distances

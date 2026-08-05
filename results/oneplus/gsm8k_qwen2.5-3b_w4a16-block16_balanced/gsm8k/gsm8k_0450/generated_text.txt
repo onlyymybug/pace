@@ -1,0 +1,16 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Beatrice bought ten packets of crayons for her Art class. Six of the packets had eight pieces of colors each, and the other four packets had sixteen pieces of colors each. How many colors of crayons did Beatrice buy in all? To solve this problem, calculate total pieces of colors Beatrice bought.
+
+First, calculate the total pieces from the six packets with eight pieces each:
+6 packets * 8 pieces/packet = 48 pieces
+
+Next, calculate the total pieces from the four packets with sixteen pieces each:
+4 packets * 16 pieces/packet = 64 pieces
+
+Now, add the totals together to find the overall number of pieces:
+48 pieces + 64 pieces = 112 pieces
+
+Therefore, Beatrice bought 112 pieces of of colors in total.
+
+The answer is 112.<|endoftext|>Human

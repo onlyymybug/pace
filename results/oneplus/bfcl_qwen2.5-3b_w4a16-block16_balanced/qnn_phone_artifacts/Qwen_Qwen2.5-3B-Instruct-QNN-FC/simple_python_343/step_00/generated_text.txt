@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "game_stats.fetch_player_statistics", "description": "Fetch player statistics for a specific video game for a given user. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"game": {"type": "string", "description": "The name of the video game."}, "username": {"type": "string", "description": "The username of the player."}, "platform": {"type": "string", "description": "The platform user is playing on.", "default": "PC"}}, "required": ["game", "username"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Fetch player statistics of 'Zelda' on Switch for user 'Sam'.<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "game_stats.fetch_player_statistics", "arguments": {"game": "Zelda", "username": "Sam", "platform": "Switch"}}
+</tool_call><|im_end|>

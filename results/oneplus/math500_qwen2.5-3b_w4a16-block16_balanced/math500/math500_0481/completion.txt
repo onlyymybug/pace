@@ -1,0 +1,8 @@
+Given that \(\omega\) is a complex number such that \(\omega^3 = 1\), we know that \(\omega\) is a primitive cube root of of unity. The roots of of the equation \(x^3 - 1 = 0\) are \(1, \omega, \omega^2\), where \(\omega = e^{2\pi i / 3}\) and \(\omega^2 = e^{-2\pi i / 3}\). These roots satisfy the relations \(\omega^3 = 1\) and \(1 + \omega + \omega^2 = 0\).
+
+We need to find the value of of of \(\frac{1}{1 + \omega} + \frac{1}{1 + \omega^2}\).
+
+First, let's simplify \(\frac{1}{1 + \omega} + \frac{1}{1 + \omega^2}\):
+
+\[
+\frac{1}{1 + \omega} + \frac{1}{1 + \omega^2} = \frac{(1 + \omega^2) + (1 + \omega)}{1 + \omega + 1 + \omega^2} = \frac

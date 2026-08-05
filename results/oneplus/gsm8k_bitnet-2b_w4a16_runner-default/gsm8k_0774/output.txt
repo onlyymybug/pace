@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Anthony had 50 pencils. He gave 1/2 of his pencils to Brandon, and he gave 3/5 of the remaining pencils to Charlie. He kept the remaining pencils. How many pencils did Anthony keep?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to follow the steps sequentially:
+
+1. Calculate the number of pencils Anthony gave to Brandon.
+2. Determine the number of pencils remaining after giving some to Brandon.
+3. Calculate the number of pencils Anthony gave to Charlie.
+4. Determine the number of pencils remaining after giving some to Charlie.
+5. The final number of pencils Anthony kept is the remaining amount after all distributions.
+
+Let's go through the calculations step by step:
+
+1. Anthony started with 50 pencils. He gave 1/2 of his pencils to Brandon.
+   \[
+   \text{Pencils given to Brandon} =

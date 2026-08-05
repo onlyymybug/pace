@@ -1,0 +1,13 @@
+To solve this problem, we first need to convert all distances to the same unit. Since the speeds are given in feet per minute, we'll convert miles to feet. 
+
+1 mile = 5280 feet
+
+Steve's distance: 3 miles * 5280 feet/mile = 15840 feet
+Tim's distance: 2 miles * 5280 feet/mile = 10560 feet
+
+Next, we calculate the time it takes for each to travel their respective distances.
+
+Time = Distance / Speed
+
+For Steve:
+Time = 15840

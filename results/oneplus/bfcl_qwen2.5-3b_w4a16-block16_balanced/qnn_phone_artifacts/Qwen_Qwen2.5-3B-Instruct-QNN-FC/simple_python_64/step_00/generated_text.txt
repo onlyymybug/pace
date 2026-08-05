@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_genotype_frequency", "description": "Calculate the frequency of homozygous dominant genotype based on the allele frequency using Hardy Weinberg Principle. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"allele_frequency": {"type": "float", "description": "The frequency of the dominant allele in the population."}, "genotype": {"type": "string", "description": "The genotype which frequency is needed.", "enum": ["AA", "Aa", "aa"]}}, "required": ["allele_frequency", "genotype"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+What is the genotype frequency of AA genotype in a population, given that allele frequency of A is 0.3?<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "calculate_genotype_frequency", "arguments": {"allele_frequency": 0.3, "genotype": "AA"}}
+</tool_call><|im_end|>

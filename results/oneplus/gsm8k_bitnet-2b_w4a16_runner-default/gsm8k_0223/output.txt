@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Andy plants 90 geraniums and 40 fewer petunias that geraniums. How many flowers does he plant total?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total number of flowers Andy plants, we need to add the number of geraniums to the number of petunias.
+
+Number of geraniums = 90
+Number of petunias = 90 - 40 = 50
+
+Total number of flowers = Number of geraniums + Number of petunias
+Total number of flowers = 90 + 50
+Total number of flowers = 140
+
+The answer is 140.<|eot_id|>

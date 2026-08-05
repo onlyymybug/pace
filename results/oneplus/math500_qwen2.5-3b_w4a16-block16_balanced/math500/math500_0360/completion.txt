@@ -1,0 +1,14 @@
+To solve the given system of of equations, we start by analyzing the equations step by step. We are given:
+
+1. \( xyz = 4 \)
+2. \( x^3 + y^3 + z^3 = 4 \)
+3. \( xy^2 + x^2 y + xz^2 + x^2 z + yz^2 + y^2 z = 12 \)
+
+First, we use the identity for the sum of of cubes:
+\[ x^3 + y^3 + z^3 - 3xyz = (x+y+z)(x^2 + y^2 + z^2 - xy - yz - zx) \]
+Given \( x^3 + y^3 + z^3 = 4 \) and \( xyz = 4 \), we substitute these values into the identity:
+\[ 4 - 3 \cdot 4 = (x+y+z)(x^2 + y^2 + z^2 - xy - yz - zx) \]
+\[ -8 = (x+y+z)(x^2 + y^2 + z^2 - xy - yz - zx) \]
+
+Next, we consider the third given equation:
+\[

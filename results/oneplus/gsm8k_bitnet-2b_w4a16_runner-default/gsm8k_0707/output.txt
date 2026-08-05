@@ -1,0 +1,19 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The local firefighters are doing a “fill the boot” fundraiser. Their goal is to raise $6300. After the first 3 hours, they have raised $2100.  For how many hours do they have to fundraise in total to reach their goal, assuming an equal amount raised in every hour?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how many more hours the firefighters need to raise $4200, we divide the remaining amount needed by the amount raised per hour.
+
+Remaining amount needed = Total goal - Amount raised in the first 3 hours
+Remaining amount needed = $6300 - $2100
+Remaining amount needed = $4200
+
+Since they raise an equal amount in every hour, we divide the remaining amount by the hourly amount raised.
+
+Hourly amount raised = Amount raised in the first 3 hours / Number of hours
+Hourly amount raised = $2100 / 3
+Hourly amount raised = $700
+
+Now, we divide

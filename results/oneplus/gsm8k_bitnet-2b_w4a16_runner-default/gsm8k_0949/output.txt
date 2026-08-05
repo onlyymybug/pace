@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Cayley markets various newspapers to get a commission on each copy sold. He gets a 10% commission on each copy of the New York Times and an 8% commission on each of the Wall Street Journal. How much commission will he earn in total from the sales of 6 copies of the New York Times and 10 copies of Wall Street Journal if each costs $5 and $15 respectively?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total commission Cayley earns, we need to calculate the commission from the New York Times and the Wall Street Journal separately, then add them together.
+
+1. Commission from the New York Times:
+   - Number of copies sold: 6
+   - Price per copy: $5
+   - Commission rate: 10%
+   - Total commission from New York Times = 6 * $5 * 10% = 6 * $5 * 0.10 = $3
+
+2. Commission from the Wall Street Journal:
+   - Number of copies sold: 10
+   - Price per copy: $15

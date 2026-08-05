@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A zookeeper is counting how many lions are in their enclosure. She counts 12 female lions, half as many male lions, and 14 lion cubs. How many lions are in the enclosure? Step 1: Count the number of male lions.
+Since there are 12 female lions and half as many male lions, the number of male lions is 12 / 2 = 6.
+
+Step 2: Count the total number of lions.
+To find the total number of lions, add the number of female lions, male lions, and cubs together: 12 (female) + 6 (male) + 14 (cubs) = 32.
+
+The answer is 32.<|endoftext|>Human, please solve the following problem. You should reason it step-by-step and clearly. Feel

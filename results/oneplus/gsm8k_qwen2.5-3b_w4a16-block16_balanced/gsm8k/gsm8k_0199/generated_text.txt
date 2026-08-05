@@ -1,0 +1,7 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Elaine initially had 20 Pokemon cards. After a month, she collected three times that number. In the second month, she collected 20 fewer cards than those she collected in the first month. In the third month, she collected twice the combined number of pokemon cards she collected in the first and second months. How many pokemon cards does she have now in total? Step 1: Initial number of of Pokemon cards Elaine had is 20.
+
+Step 2: After a month, she collected three times that number, so she collected 3 * 20 = 6 cards. Total cards after one month: 20 + 6 = 26.
+
+Step 3: In the second month, she collected 20 fewer cards than those in the first month, so 6 - 20 = -14 cards. Since it's not possible to collect a negative number of cards, we need to reassess this step. Given the problem's setup, it seems

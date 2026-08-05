@@ -1,0 +1,18 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are 220 castles in Scotland.  40 percent of them are ruins, and half of the ruined castles are unmanned.  How many unmanned ruined castles are there in Scotland?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the number of unmanned ruined castles, we first need to determine how many castles are ruined and then how many of those are unmanned.
+
+1. Calculate the number of ruined castles:
+   - Total castles = 220
+   - Percentage of ruined castles = 40%
+   - Number of ruined castles = Total castles * Percentage of ruined castles
+   - Number of ruined castles = 220 * 0.40
+   - Number of ruined castles = 88
+
+2. Calculate the number of unmanned ruined castles:
+   - Half of the ruined castles are unmanned
+  

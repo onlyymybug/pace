@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Altitudes $\overline{AD}$ and $\overline{BE}$ of $\triangle ABC$ intersect at $H$.  If $\angle BAC = 54^\circ$ and $\angle ABC = 52^\circ$, then what is $\angle AHB$? To solve for \(\angle AHB\) in the given triangle \(ABC\) with altitudes \(\overline{AD}\) and \(\overline{BE}\) intersecting at the orthocenter \(H\), we need to follow these steps:
+
+1. **Determine \(\angle ACB\):**
+   Since the sum of of of the angles in a triangle is \(180^\circ\), we can find \(\angle ACB\) as follows:
+   \[
+   \angle ACB = 180^\circ - \angle BAC - \angle ABC
+   \]
+   Substituting the given values:
+   \[
+   \angle ACB = 180^\circ - 54^\circ - 52^\circ = 74^\circ
+   \]
+
+2. **Identify the properties of of of the orthocenter:**
+   The orthocenter \(H\) of of the triangle is the point where all three altitudes intersect. The key property we use here is that the measure of of of \(\angle AHB\) is supplementary to the measure of of of \(\angle ACB\). This is because \(\angle AHB\) is the

@@ -1,0 +1,12 @@
+To determine the number of distinct arrangements of of 2 IMO gold medals and 2 IPhO gold medals in a row, we can treat the problem as finding the number of permutations of of a multiset.
+
+Given:
+- 2 IMO gold medals (let's denote them as \( I \))
+- 2 IPhO gold medals (let's denote them as \( P \))
+
+We need to find the number of distinct arrangements of of these 4 medals where the order matters.
+
+The formula for permutations of a multiset is given by:
+
+\[
+\frac{n!

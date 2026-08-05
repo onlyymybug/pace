@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calc_heat_capacity", "description": "Calculate the heat capacity at constant pressure of air using its temperature and volume. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"temp": {"type": "integer", "description": "The temperature of the gas in Kelvin."}, "volume": {"type": "integer", "description": "The volume of the gas in m^3."}, "gas": {"type": "string", "description": "Type of gas, with 'air' as default."}}, "required": ["temp", "volume"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the heat capacity at constant pressure for air, given its temperature is 298K and volume is 10 m^3.<|im_end|>
+<|im_start|>assistant

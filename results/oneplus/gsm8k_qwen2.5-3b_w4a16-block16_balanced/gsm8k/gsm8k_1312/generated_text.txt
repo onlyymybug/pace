@@ -1,0 +1,11 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: The caretaker of the docks needs to buy some new line. He wants 3 feet of line for every foot of dock. Right now, there is 200 feet of dock, and he has 6 feet of new line. How many feet of line does he need to buy in total? Step 1: Calculate total feet needed for the dock.
+Total feet needed = Current dock length + (Current dock length * feet per foot of)
+Total feet needed = 200 + (200 * 3) = 200 + 600 = 800 feet
+
+Step 2: Subtract the line he already has from total feet needed.
+Line to buy = Total feet needed - Current line
+Line to buy = 800 - 6 = 794 feet
+
+The answer is 794. The calculation shows the total feet of of line the caretaker

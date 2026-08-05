@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Henry needs to assemble some toys, specifically 57 cars and 73 motorcycles. Henry knows that to assemble all the toys he will need 4 wheels for each car and 2 wheels for each motorcycle. How many wheels will be left if he has a box with 650 wheels in it?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to calculate the total number of wheels required for the cars and motorcycles.
+
+For the cars:
+Number of cars = 57
+Wheels per car = 4
+Total wheels for cars = Number of cars * Wheels per car = 57 * 4 = 228
+
+For the motorcycles:
+Number of motorcycles = 73
+Wheels per motorcycle = 2
+Total wheels for motorcycles = Number of motorcycles * Wheels per motorcycle = 73 * 2 = 146
+
+Total wheels needed = Total wheels for cars + Total wheels for motorcycles = 228 + 146 = 374
+
+Henry

@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.BuyingRentingHomes.favoriteHouse","description":"Collect homes of interest","parameters":{"type":"object","properties":{"house_name":{"type":"string","description":"Property name"}},"required":["house_name"]}}
+{"name":"Navigation.MapNavigation.collectLocation","description":"Favorite a place","parameters":{"type":"object","properties":{"location":{"type":"string","description":"Places to save"}},"required":["location"]}}
+{"name":"ConvenientLiving.JobRecruitment.collectJob","description":"Favorite posts of interest","parameters":{"type":"object","properties":{"job_name":{"type":"string","description":"Position name"},"company_name":{"type":"string","description":"Company name"}},"required":["job_name","company_name"]}}
+{"name":"NewsMagazines.News.getSavedNewsList","description":"Get a list of saved news in a user's favorites","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:New Year's plan: On January 1, go to Tiananmen Square in Beijing to watch the flag-raising ceremony and feel the solemn atmosphere of the New Year. After that, plan to take a stroll to the Bund of Shanghai to enjoy the night view and feel the New Year atmosphere of the metropolis. On February 10, participate in the traditional flower market of Guangzhou and experience the New Year customs of the southern country. On February 15, go to the wide and narrow alley of Chengdu to taste the authentic Sichuan food and feel the slow life of Sichuan. Throughout the New Year, I hope that by traveling, I can not only relax, but also gain a deep understanding of the cultural characteristics of different regions in China.
+query:Can you collect the locations mentioned in the notepad?<|im_end|>
+<|im_start|>assistant
+{"name":"Navigation.MapNavigation.collectLocation","parameters":{"location":["Tiananmen Square","Bund","Guangzhou Flower Market","Wide and Narrow Alleys"]}}<|im_end|>

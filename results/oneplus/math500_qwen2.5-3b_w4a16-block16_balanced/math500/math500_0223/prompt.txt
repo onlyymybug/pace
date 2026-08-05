@@ -1,0 +1,10 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The area of $\triangle ABC$ is 6 square centimeters. $\overline{AB}\|\overline{DE}$. $BD=4BC$. What is the number of square centimeters in the area of $\triangle CDE$? [asy]
+draw((-.3,-3)--(.1,1)--(-1,0)--(3,0)--cycle);
+label("$A$",(.1,1),N);
+label("$B$",(-1,0),W);
+label("$C$",(0,0),NE);
+label("$D$",(3,0),E);
+label("$E$",(-.3,-3),S);
+[/asy]

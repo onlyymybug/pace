@@ -1,0 +1,15 @@
+To solve the problem, we need to find the surface area of of one of the pieces formed by a plane parallel to edges \(AB\) and \(CD\) and lying halfway between them in a regular tetrahedron with side length 2.
+
+1. **Identify the Geometry and Setup:**
+   - A regular tetrahedron \(ABCD\) has side length 2.
+   - The plane cuts the tetrahedron such that it is halfway between edges \(AB\) and \(CD\).
+   - This plane is parallel to \(AB\) and \(CD\) and is at a distance of 1 unit from each of these edges.
+
+2. **Determine the Shape of of of the Cut:**
+   - The plane cuts the tetrahedron into two parts: a smaller tetrahedron and a frustum (a truncated pyramid).
+   - The smaller tetrahedron is similar to the original tetrahedron \(ABCD\) but with half the side length (since the plane is halfway between the edges).
+
+3. **Calculate the Side Length of of the Smaller Tetrahedron:**
+   - The side length of of of the smaller tetrahedron is \(1\).
+
+4. **Calculate the Surface

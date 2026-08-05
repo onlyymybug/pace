@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"OfficeSoftware.Email.openDraftMail","description":"Open message draft","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"To open the drafts box title"},"content":{"type":"string","description":"Email Content"},"receivers":{"type":"string","description":"Recipient of the email"}},"required":["mail_title","content","receivers"]}}
+{"name":"OfficeSoftware.Email.forwardMail","description":"Forward the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to forward"},"receivers":{"type":"string","description":"Recipient of the forwarded message"}},"required":["mail_title","receivers"]}}
+{"name":"Navigation.PublicTransit.queryBusRoutes","description":"Query bus route information by condition","parameters":{"type":"object","properties":{"departure":{"type":"string","description":"Starting location, default current location"},"destination":{"type":"string","description":"destination"},"preferred_line":{"type":"string","description":"Departure time, the default departure time is now; the preferred route type, such as the shortest time, less transfer, less walking, etc."}},"required":["departure","destination","preferred_line"]}}
+{"name":"OnlineShopping.ExpressDelivery.placeExpressOrder","description":"Initiating a Sender to a Specified Recipient","parameters":{"type":"object","properties":{"recipient_name":{"type":"string","description":"Recipient's name"},"recipient_phone":{"type":"string","description":"Recipient phone number"},"recipient_address":{"type":"string","description":"<g id=\"Bold\">Receiver's</g> <g id=\"Bold\">Address:</g>"}},"required":["recipient_name","recipient_phone","recipient_address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Let's go to Xintiandi for dinner on the weekend. There is a new restaurant there. I heard it tastes good. If it's convenient for you, why don't we meet at the Starbucks there at 5 pm and go to dinner together?
+query:I want to start from the Oriental Pearl and go to the place mentioned in Tom's text message to help me find a bus route with minimal walking.<|im_end|>
+<|im_start|>assistant

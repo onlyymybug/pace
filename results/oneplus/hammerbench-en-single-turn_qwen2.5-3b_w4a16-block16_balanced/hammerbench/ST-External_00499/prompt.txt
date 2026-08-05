@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.InstantMessaging.receiveFile","description":"Receive files from specified contacts or groups","parameters":{"type":"object","properties":{"sender_name":{"type":"string","description":"The contact or group who sent the file"}},"required":["sender_name"]}}
+{"name":"SocialCommunication.Calling.makePhoneCall","description":"Used to call designated contacts","parameters":{"type":"object","properties":{"contact_name":{"type":"string","description":"Name of the contact to call"},"phone_number":{"type":"string","description":"Call the number directly"}},"required":["contact_name","phone_number"]}}
+{"name":"OfficeSoftware.Email.forwardMail","description":"Forward the specified message","parameters":{"type":"object","properties":{"mail_title":{"type":"string","description":"Title of the message to forward"},"receivers":{"type":"string","description":"Recipient of the forwarded message"}},"required":["mail_title","receivers"]}}
+{"name":"Finance.Stocks.cancelorderStock","description":"Withdrawal of Designated Shares","parameters":{"type":"object","properties":{"stock_code":{"type":"string","description":"Ticker"},"stock_name":{"type":"string","description":"Stock Key Name"},"price":{"type":"float","description":"Amount in Yuan"},"amount":{"type":"string","description":"Shipment quantity; specific value; full warehouse; half warehouse; 1/3 warehouse; 1/4 warehouse"}},"required":["stock_code","stock_name","price","amount"]}}
+{"name":"OnlineShopping.ExpressDelivery.returnExpressPreOrder","description":"Specify a time to initiate the shipment to the courier","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Shipping time"},"recipient_address":{"type":"string","description":"<g id=\"Bold\">Receiver's</g> <g id=\"Bold\">Address:</g>"}},"required":["date","recipient_address"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Zhang San, are you free this weekend? Let's go to the movie together. I heard that "Missing She" is quite hot. You said before that you like suspense movies, you should like them. If not, I still have a slot next week, and I can do it at that time. Anyway, let me know when it's convenient for you!
+query:Call the friend mentioned in the message received from QQ 13678902345<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Adam bought himself some new trousers for $30. His mother gave him $6 for this purpose, and his father gave him twice as much. How much money did Adam have to contribute from his savings?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we first need to determine the total amount of money Adam received from his parents. Adam's father gave him twice as much as Adam's mother, who gave him $6. Therefore, Adam's father gave him 2 * $6 = $12.
+
+The total amount of money Adam received from his parents is the sum of the money from his mother and his father: $6 + $12 = $18.
+
+Adam spent $30 on trousers. To find out how much money Adam had to contribute from his savings, we subtract the total amount he spent from the total amount he received: $18 - $30

@@ -1,0 +1,27 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"UtilityTools.Weather.getLivingIndex","description":"Get the Life Services Index for a given day and a given location","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date, defaults to current time"},"location":{"type":"string","description":"Location, defaults to local"}},"required":["date","location"]}}
+{"name":"Navigation.TrafficViolations.queryDrivingLicensePoints","description":"Check the remaining points on your driver's license","parameters":{"type":"object","properties":{"driving_license_number":{"type":"string","description":"Licence Number:"}},"required":["driving_license_number"]}}
+{"name":"Education.OnlineClasses.evaluateCourse","description":"Rate a course","parameters":{"type":"object","properties":{"course_name":{"type":"string","description":"Course Title"},"rating":{"type":"string","description":"Rating"}},"required":["course_name","rating"]}}
+{"name":"UtilityTools.Weather.getQualityIndex","description":"Get the environmental index for a given day and a given place","parameters":{"type":"object","properties":{"date":{"type":"string","description":"Date, defaults to current time"},"location":{"type":"string","description":"Location, defaults to local"}},"required":["date","location"]}}
+{"name":"Travel.ScenicAreaServices.getScenicSpotRating","description":"Get user ratings for selected scenic spots","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Name of the tourist area"}},"required":["name"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear Colleagues,
+
+Hello everyone! Regarding the annual sales conference held in Chongqing this Friday (April 14, 2023), the specific arrangements are as follows:
+
+The meeting will be held at the Hyatt Regency Hotel on Guanyinqiao Pedestrian Street in Jiangbei District, Chongqing from 9am to 5pm.Please be sure to arrive on time so that we can keep our agenda running smoothly.After the meeting, we will hold a dinner in the same place to provide opportunities for everyone to communicate.
+
+Please be prepared in advance and do not hesitate to contact the Organizing Committee if you have any questions or suggestions.I hope that our gathering in Chongqing will be a complete success, and I look forward to hearing everyone's insights at the meeting.
+
+Best regards,
+
+[Company name] Meeting Organizing Committee
+query:I would like to know what is the car wash index for the locations mentioned in yesterday's email?<|im_end|>
+<|im_start|>assistant

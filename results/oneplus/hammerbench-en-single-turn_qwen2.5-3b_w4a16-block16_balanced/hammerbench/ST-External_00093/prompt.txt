@@ -1,0 +1,19 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"Navigation.TrainTickets.queryTrainSchedule","description":"Find departure, arrival, and stops for specific trips","parameters":{"type":"object","properties":{"train_number":{"type":"string","description":"Trips to inquire about"},"time":{"type":"string","description":"Query Date"}},"required":["train_number","time"]}}
+{"name":"Navigation.PublicTransit.viewBusInfo","description":"View the details of a bus, including stops, departure times, last shift times, fares, etc.","parameters":{"type":"object","properties":{"bus_name":{"type":"string","description":"Bus name"}},"required":["bus_name"]}}
+{"name":"ConvenientLiving.FoodDelivery.getRestaurantOrderDeliveryEstimate","description":"Estimated time to get deliveries based on orders","parameters":{"type":"object","properties":{"order_name":{"type":"string","description":"Contents of the order"}},"required":["order_name"]}}
+{"name":"MusicRadio.OnlineMusic.getConcertInfo","description":"Get information about a concert by keyword, concert location, concert date","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Concert Name"},"location":{"type":"string","description":"Location of the concert"},"date":{"type":"string","description":"Concert dates"}},"required":["name","location","date"]}}
+{"name":"Photography.VideoEditing.videoEditCut","description":"Capture clips from specific time periods in the video","parameters":{"type":"object","properties":{"name_or_path":{"type":"string","description":"The name or path of the video"},"start_time":{"type":"integer","description":"Start time period for capturing video, in seconds"},"end_time":{"type":"integer","description":"End time period for intercepted video, in seconds"}},"required":["name_or_path","start_time","end_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Dear customer, 
+
+Hello! Regarding the train number Z789 you have purchased, we have arranged the relevant procedures for you. Thank you for your support and understanding. If you have any questions or need further help, please feel free to contact us. Wish you a pleasant journey!
+query:Check the departure time, arrival time and stops of the train number mentioned in the email on April 15th.<|im_end|>
+<|im_start|>assistant

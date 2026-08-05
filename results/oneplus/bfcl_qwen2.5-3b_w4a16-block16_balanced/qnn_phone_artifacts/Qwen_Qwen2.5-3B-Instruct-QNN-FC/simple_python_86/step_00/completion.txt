@@ -1,0 +1,3 @@
+<tool_call>
+{"name": "city_distance.find_shortest", "arguments": {"start_city": "New York", "end_city": "Los Angeles", "transportation": "train", "allow_transfer": true}}
+</tool_call><|im_end|>

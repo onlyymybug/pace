@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A bus has a capacity of 200 people. When it departed Chengli city, it had 20 people. On the first stop, 40 people entered the bus. On the second station, 3/4 of the total number of people who entered the bus at the first station entered the bus. If the number of passengers on the bus doubled at the third station, calculate the total number of people required to fill the remaining spaces on the bus.<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, let's break it down step by step:
+
+1. **Initial number of passengers**: The bus had 20 people when it departed Chengli city.
+
+2. **First stop**: 40 people entered the bus. 
+   - Total passengers after the first stop = 20 (initial) + 40 (new) = 60 people.
+
+3. **Second station**: 3/4 of the total number of people who entered the bus at the first station entered the bus.
+   - Number of people who entered at the second station = (3/4) * 40 = 30 people.
+  

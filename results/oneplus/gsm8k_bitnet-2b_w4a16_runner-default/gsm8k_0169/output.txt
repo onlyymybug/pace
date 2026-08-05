@@ -1,0 +1,17 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jimmy has $2 more than twice the money Ethel has. If Ethal has $8, how much money is Jimmy having?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve the problem, we first need to express the amount of money Jimmy has in terms of the amount Ethel has. We know that Ethel has $8. Jimmy has $2 more than twice the money Ethel has. So, we can write the equation:
+
+Jimmy's money = 2 * Ethel's money + $2
+
+Substituting Ethel's money with $8:
+
+Jimmy's money = 2 * $8 + $2
+Jimmy's money = $16 + $2
+Jimmy's money = $18
+
+The answer is $18.<|eot_id|>

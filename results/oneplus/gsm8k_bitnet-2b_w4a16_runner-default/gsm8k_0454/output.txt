@@ -1,0 +1,11 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Jenna starts out with 8 sapphires. She trades 3 sapphires for two rubies. If sapphires are worth $800 and rubies are worth $1200, how much money are all her jewels worth?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To solve this problem, we need to first determine how many sapphires Jenna has after trading some away. She starts with 8 sapphires and trades 3 of them for 2 rubies. This means she now has 8 - 3 = 5 sapphires left.
+
+Next, we calculate the total value of her remaining sapphires. Since each sapphire is worth $800, the total value of her sapphires is 5 * $800 = $4000.
+
+We also need to calculate the total value of the rubies she received. Since each ruby is worth $

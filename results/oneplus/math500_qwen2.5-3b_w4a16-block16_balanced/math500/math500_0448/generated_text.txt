@@ -1,0 +1,16 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: Thirty-five students attend a math club meeting. The number of girls at the meeting is a multiple of 13, and there are more girls than boys attending the meeting. How many boys are at the meeting? To solve the problem, we need to determine the number of boys at the meeting given the constraints. Let's denote the number of girls by \( g \) and the number of boys by \( b \). We know the following:
+
+1. The total number of students is 35.
+2. The number of girls is a multiple of 13.
+3. There are more girls than boys.
+
+From the first constraint, we have:
+\[ g + b = 35 \]
+
+From the second constraint, the number of girls \( g \) must be a multiple of 13. Therefore, \( g \) can be one of the following: 13, 26, or 39. However, since \( g + b = 35 \), \( g \) cannot be 39 because that would imply \( b = 0 \), which is not possible since there are more girls than boys. So, \( g \) can only be 13 or 26.
+
+Next, we need to check which of these values for \( g \) satisfies the condition that there are more girls than boys, i.e., \( g > b \).
+
+1. If \( g = 13 \),

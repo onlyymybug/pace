@@ -1,0 +1,12 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: At the beginning of the party, there were 25 men and 15 women. After an hour, 1/4 of the total number of people left. How many women are left if 22 men stayed at the party?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the total number of people at the beginning of the party as T. We know that T = 25 men + 15 women = 40 people.
+
+After an hour, 1/4 of the total number of people left. So, the number of people who left is (1/4)T = (1/4) * 40 = 10 people.
+
+We are given that 22 men stayed at the party. Since the total number of people who left is 10, the number of women who left is 10 - 22 = -12. This means 12 women left the party.
+

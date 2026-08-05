@@ -1,0 +1,15 @@
+Step 1: Calculate total number of cookies
+Number ofCookies = NumberofPacks * CookiesPerPack
+NumberofPacks = 10
+CookiesPerPack = 6
+NumberofCookies = 10 * 6 = 60
+
+Step 2: Calculate total cost of of cookies
+TotalCost = NumberofCookies * CostPerCookie
+CostPerCookie = 0.10
+TotalCost = 60 * 0.10 = 6
+
+Step 3: Calculate change received
+TotalPaid = 10
+ChangeReceived = TotalPaid - TotalCost
+ChangeReceived

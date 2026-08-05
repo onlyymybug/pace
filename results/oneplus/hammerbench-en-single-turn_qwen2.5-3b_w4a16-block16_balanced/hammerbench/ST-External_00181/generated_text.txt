@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.AutoLife.compareCarModels","description":"Compare the key parameters of the specified multiple models","parameters":{"type":"object","properties":{"brand":{"type":"string","description":"Car Brand"},"models":{"type":"string","description":"List of models to compare"}},"required":["brand","models"]}}
+{"name":"MusicRadio.OnlineMusic.participateInMusicTopicDiscussion","description":"Participate in musical conversations by topic and comment content","parameters":{"type":"object","properties":{"topic":{"type":"string","description":"Topic"},"comment":{"type":"string","description":"Comments"}},"required":["topic","comment"]}}
+{"name":"UtilityTools.AIGC.aigcTextSummary","description":"Compress longer text content, retaining only the main information and key points of the original text","parameters":{"type":"object","properties":{"text":{"type":"string","description":"Long text content"}},"required":["text"]}}
+{"name":"Travel.ItineraryServices.viewTravelItinerary","description":"View a user-created trip by trip name or keyword","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Trip name or keyword"}},"required":["name"]}}
+{"name":"Finance.Funds.getFundHistoryNetWorth","description":"Historical Net Worth of Designated Funds","parameters":{"type":"object","properties":{"fund_name":{"type":"string","description":"Fund name"},"fund_code":{"type":"string","description":"Fund  Code"},"start_date":{"type":"string","description":"Start date"},"end_date":{"type":"string","description":"结束日期"}},"required":["fund_name","fund_code","start_date","end_date"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Purchase BMW-related accessories, including original wipers, air filters and brake pads, for a total of 1200 yuan. Accessories have been confirmed for all BMW models and are expected to arrive next Friday.
+query:I want to compare the key parameters of X3 and X5 mentioned in Notepad, can you help me?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.compareCarModels","parameters":{"brand":"BMW","models":"X3,X5"}}<|im_end|>

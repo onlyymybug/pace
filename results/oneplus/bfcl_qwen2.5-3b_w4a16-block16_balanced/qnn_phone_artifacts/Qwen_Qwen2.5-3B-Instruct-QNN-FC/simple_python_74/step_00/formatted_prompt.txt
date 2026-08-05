@@ -1,0 +1,17 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "calculate_bacteria_evolution_rate", "description": "Calculate the evolution rate of bacteria given the starting number, duplication frequency and total duration. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"start_population": {"type": "integer", "description": "The starting population of bacteria."}, "duplication_frequency": {"type": "integer", "description": "The frequency of bacteria duplication per hour."}, "duration": {"type": "integer", "description": "Total duration in hours."}, "generation_time": {"type": "integer", "description": "The average generation time of the bacteria in minutes. Default is 20 minutes"}}, "required": ["start_population", "duplication_frequency", "duration"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Calculate the evolution rate of a bacteria population, start with 5000 bacteria, each bacteria duplicates every hour for 6 hours.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,20 @@
+<|im_start|>system
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{"name": "sports_ranking.get_team_position", "description": "Retrieve a team's position and stats in the basketball league for a given season. Note that the provided function is in Python 3 syntax.", "parameters": {"type": "dict", "properties": {"team": {"type": "string", "description": "The name of the team."}, "season": {"type": "string", "description": "The season for which data should be fetched."}, "detailed": {"type": "boolean", "description": "Flag to retrieve detailed stats or just the position.", "default": false}}, "required": ["team", "season"]}}
+</tools>
+
+For each function call, return a json object with function name and arguments within <tool_call></tool_call> XML tags:
+<tool_call>
+{"name": <function-name>, "arguments": <args-json-object>}
+</tool_call><|im_end|>
+<|im_start|>user
+Fetch the basketball league standings, where Golden State Warriors stand in current 2022-2023 season with details<|im_end|>
+<|im_start|>assistant
+<tool_call>
+{"name": "sports_ranking.get_team_position", "arguments": {"team": "Golden State Warriors", "season": "2022-2023", "detailed": true}}
+</tool_call><|im_end|>

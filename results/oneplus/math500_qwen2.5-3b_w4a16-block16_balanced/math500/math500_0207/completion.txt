@@ -1,0 +1,30 @@
+To find the equation of of of the line in the form \( y = mx + b \), we start by expressing the given line in parametric form:
+\[
+\begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} 8 \\ -1 \end{pmatrix} + t \begin{pmatrix} 2 \\ 3 \end{pmatrix}.
+\]
+This gives us the parametric equations:
+\[
+x = 8 + 2t,
+\]
+\[
+y = -1 + 3t.
+\]
+
+To eliminate the parameter \( t \), we solve the first equation for \( t \):
+\[
+t = \frac{x - 8}{2}.
+\]
+
+Next, we substitute this expression for \( t \) into the second equation:
+\[
+y = -1 + 3 \left( \frac{x - 8}{2} \right).
+\]
+
+Simplify the expression inside the parentheses:
+\[
+y = -1 + \frac{3(x - 8)}{2}.
+\]
+
+Distribute the \( \frac{3}{2} \):
+\[
+y = -1 + \frac{3x - 24}{

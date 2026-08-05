@@ -1,0 +1,12 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Dax went to their farm to pick some apples and found half as many bugs as ants in the garden. If there were 50 ants, calculate the total number of insects in the garden. To solve this problem, we first need to determine the number of bugs Dax found. Given that there were 50 ants and the number of bugs is half the number of ants, we can calculate the number of bugs as follows:
+
+Number of of bugs = 0.5 * Numberof ants
+Numberof bugs = 0.5 * 50
+Numberof bugs = 25
+
+Next, we calculate the total number of insects by adding the number of ants and the number of bugs:
+
+Total number of insects = Numberof ants + Numberof bugs
+Total number of insects = 50 + 2

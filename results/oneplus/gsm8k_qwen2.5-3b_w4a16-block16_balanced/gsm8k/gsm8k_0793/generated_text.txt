@@ -1,0 +1,9 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Damien created a currency based on bottle caps and got his friends to take part.  He finds 10 bottle caps a day on his way home and each bottle cap is worth $.25.  How much money does he make in a 30 day month? To solve this, we need to calculate the total value of of the bottle caps Damien collects in a month.
+
+1. First, we determine how many bottle caps Damien collects in a day: 10 bottle caps.
+2. Then, we find the value of of of these bottle caps: 10 bottle caps * $0.25 per bottle cap = $2.50 per day.
+3. Finally, we calculate the total value Damien makes in a month: $2.50 per day * 30 days = $75.
+
+The answer is 75.<|endoftext|>Human: Given the problem,

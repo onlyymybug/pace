@@ -1,0 +1,14 @@
+To solve the problem, we need to understand the shape and perimeter of \( S \) formed by the union of of the set of all points inside a regular nonagon with side length 2 units and the set of all points less than 1 unit away from a point on the perimeter of of the nonagon.
+
+1. **Understanding the Nonagon and its Interior:**
+   - A regular nonagon has 9 sides, each of 2 units long.
+   - The perimeter of of the nonagon is \( 9 \times 2 = 18 \) units.
+   - The area of of the nonagon can be calculated using the formula for the area of a regular nonagon with side length \( s \):
+     \[
+     \text{Area} = \frac{9s^2}{4} \tan\left(\frac{\pi}{9}\right)
+     \]
+     Substituting \( s = 2 \):
+     \[
+     \text{Area} = \frac{9 \times 2^2}{4} \tan\left(\frac{\pi}{9}\right) = 9 \tan\left(\frac{\pi}{9}\right)
+     \]
+     Using the approximation \(

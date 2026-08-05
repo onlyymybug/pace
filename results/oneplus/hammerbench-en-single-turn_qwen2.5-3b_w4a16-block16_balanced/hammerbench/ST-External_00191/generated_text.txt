@@ -1,0 +1,18 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"SocialCommunication.Community.followCommunityUser","description":"Users following a specific community","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"Name of the community to be actioned"},"user_nickname":{"type":"string","description":"User nickname to follow"}},"required":["community_name","user_nickname"]}}
+{"name":"OnlineShopping.Mall.addMyFollow","description":"Follow an item or store","parameters":{"type":"object","properties":{},"required":[]}}
+{"name":"VideoPlayback.LiveStreaming.followLiveStream","description":"Follow live bloggers","parameters":{"type":"object","properties":{"streamer_name":{"type":"string","description":"Broadcaster Name"},"channel_name":{"type":"string","description":"Channel name"}},"required":["streamer_name","channel_name"]}}
+{"name":"UtilityTools.Weather.addCity","description":"Add specified city to weather watchlist","parameters":{"type":"object","properties":{"city":{"type":"string","description":"City"}},"required":["city"]}}
+{"name":"ConvenientLiving.AutoLife.followCarModels","description":"Keep an eye on the car models you're interested in so you can stay up to date.","parameters":{"type":"object","properties":{"brands":{"type":"string","description":"Car Brand"}},"required":["brands"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Hi, I've been thinking about a new car lately and got my eye on Ford's Explorer, which has the performance and space to suit my needs. How much do you know about this car? Or do you have any better recommendations? Looking forward to hearing from you!
+query:I want to follow the latest developments of Mustang Mach-E, can you help me set it up?<|im_end|>
+<|im_start|>assistant
+{"name":"ConvenientLiving.AutoLife.followCarModels","parameters":{"brands":"Mustang Mach-E"}}<|im_end|>

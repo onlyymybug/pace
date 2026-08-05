@@ -1,0 +1,10 @@
+To solve this, first calculate the total number of kilobytes (kb) Ashley gets in one hour, then convert that to megabits (Mb).
+
+1 hour = 3600 seconds
+So, total kb in 1 hour = 3600 * 20 kb
+
+Since 1 Mb = 1000 kb, we can convert kb to Mb by dividing the total kb by 1000.
+
+Let's calculate this.
+total_kb_in_1_hour = 3600 * 20
+total_Mb_in_1_hour = total_kb_in_1_hour

@@ -1,0 +1,18 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: A tub of ice cream costing $13 is now sold at $11. A packet of milk was sold at a discount of $0.5. How much will you save if you buy 2 tubs of ice cream and 4 packets of milk? Step 1: Calculate savings on ice cream
+Ice cream discount = Original price - Sale price
+Ice cream discount = $13 - $11
+Ice cream discount = $2
+
+Step 2: Calculate savings on milk
+Milk discount = $0.5
+Total milk discount for 4 packets = 4 * $0.5
+Total milk discount for 4 packets = $2
+
+Step 3: Calculate total savings
+Total savings = Savings on ice cream + Savings on milk
+Total savings = $2 + $2
+Total savings = $4
+
+The answer is 4.<|endoftext|>Human:

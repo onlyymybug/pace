@@ -1,0 +1,13 @@
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Tim decides to light off some fireworks for the fourth of July.  He buys a package of fireworks worth $400 and another pack worth twice that much.  He gets a 20% discount on them.  He also buys a finale firework that costs $150.  How much did he spend in total? Step 1: Calculate the cost of of the second pack of fireworks.
+Second pack cost = 2 * $400 = $800
+
+Step 2: Calculate the total cost before discount.
+Total cost before discount = Cost of of first pack + Cost of of second pack
+Total cost before discount = $400 + $800 = $1200
+
+Step 3: Calculate the discount amount.
+Discount amount = 20% of $1200 = 0.20 * $1200 = $240
+
+Step 4: Calculate the total

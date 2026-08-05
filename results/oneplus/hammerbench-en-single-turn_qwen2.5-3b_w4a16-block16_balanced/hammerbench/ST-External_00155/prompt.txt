@@ -1,0 +1,17 @@
+<|im_start|>system
+You select and call one tool for the user's current request.
+Available tools are listed inside <tools> tags:
+<tools>
+{"name":"ConvenientLiving.GovernmentServices.applyForEducationGrant","description":"Submit an application for an education grant","parameters":{"type":"object","properties":{"name":{"type":"string","description":"Applicant, default user self"},"school":{"type":"string","description":"Schools"}},"required":["name","school"]}}
+{"name":"Finance.Funds.recommendFunds","description":"Recommend user-friendly funds based on investment objectives and duration","parameters":{"type":"object","properties":{"objective":{"type":"string","description":"Investment objectives such as robust, aggressive"},"investment_term":{"type":"string","description":"Investment term, e.g. short term, long term"}},"required":["objective","investment_term"]}}
+{"name":"SocialCommunication.Community.markCommunityNotificationRead","description":"Mark notifications for the specified community as read (defaults to all read)","parameters":{"type":"object","properties":{"community_name":{"type":"string","description":"The name of the community to be notified"},"notification_name":{"type":"string","description":"Notifications to mark as read"}},"required":["community_name","notification_name"]}}
+{"name":"ConvenientLiving.GovernmentServices.applyForResidentPermit","description":"Provide a residence permit application service for the user","parameters":{"type":"object","properties":{"identity_card_number":{"type":"string","description":"User ID number, default user himself"},"address":{"type":"string","description":"Residential Address"}},"required":["identity_card_number","address"]}}
+{"name":"SocialCommunication.SocialMedia.collectMediumTrends","description":"Favorite specified activity in specified media","parameters":{"type":"object","properties":{"medium_name":{"type":"string","description":"Media name"},"correlation":{"type":"string","description":"Dynamic Related Content"},"publisher":{"type":"string","description":"Posted by/publisher?"},"publish_time":{"type":"string","description":"Release Date"}},"required":["medium_name","correlation","publisher","publish_time"]}}
+</tools>
+Return exactly one JSON object in this form:
+{"name":"fully.qualified.tool.name","parameters":{"parameter":"value"}}
+Use the key parameters, not arguments. Do not include Markdown, explanations, or any text outside the JSON object.<|im_end|>
+<|im_start|>user
+EK:Zhang San, come to the weekend party. The place is still the same. Remember to bring some snacks. Everyone is looking forward to meeting you.
+query:I would like to apply for an education grant for a Stanford graduate student for the person mentioned in the text.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,21 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: There are five phones on a phone plan. The main phone costs twice as much as each additional phone. If the main phone plan costs $20, how much does the whole phone plan cost?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+Let's denote the cost of each additional phone as x. Since the main phone costs twice as much as each additional phone, the cost of the main phone is 2x. We know that the total cost of the main phone and the five additional phones is $20. So, we can write the equation:
+
+2x + 5x = 20
+
+Combine like terms:
+
+7x = 20
+
+Divide both sides by 7:
+
+x = 20 / 7
+
+x = 2.8571...
+
+Since the cost of each additional phone is $2.8571..., the cost of the main phone is

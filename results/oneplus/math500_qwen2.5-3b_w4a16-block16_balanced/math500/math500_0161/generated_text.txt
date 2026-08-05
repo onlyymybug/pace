@@ -1,0 +1,26 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: The product of two consecutive positive even integers is 288. What is the greater of the two integers? To solve the problem, we need to find two consecutive positive even integers whose product is 288. Let's denote the smaller even integer by \( x \). Then the next consecutive even integer is \( x + 2 \).
+
+We are given that the product of of these two integers is 288. Therefore, we can write the equation:
+\[
+x(x + 2) = 288
+\]
+
+First, we expand and rearrange the equation to form a standard quadratic equation:
+\[
+x^2 + 2x - 288 = 0
+\]
+
+Next, we solve this quadratic equation using the quadratic formula, which is given by:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+where \( a = 1 \), \( b = 2 \), and \( c = -288 \).
+
+Substituting these values into the quadratic formula, we get:
+\[
+x = \frac{-2 \pm \sqrt{2^2 - 4 \cdot 1 \cdot (-288)}}{2 \cdot 1}
+\]
+\[
+x = \frac{2 \pm

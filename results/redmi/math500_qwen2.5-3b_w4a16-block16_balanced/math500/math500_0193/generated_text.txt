@@ -1,0 +1,11 @@
+Solve the competition mathematics problem. Show your reasoning briefly. End with exactly: Final answer: \boxed{<answer>}. Put only the final mathematical expression inside \boxed{}.
+
+Problem: In $\triangle PQR$, we have $PQ = QR = 34$ and $PR = 32$.  Find the length of median $\overline{QM}$. To solve for the length of of median \(\overline{QM}\) in \(\triangle PQR\) where \(PQ = QR = 34\) and \(PR = 32\), we can use the formula for the length of of median in a triangle. The formula for the median from vertex \(P\) to the midpoint \(M\) of of side \(QR\) is given by:
+
+\[
+QM = \sqrt{\frac{2PQ^2 + 2QR^2 - PR^2}{4}}
+\]
+
+Given:
+\[
+PQ = QR = 34 \quad \

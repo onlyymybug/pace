@@ -1,0 +1,15 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: David has $12.48 and wants to buy 16 bolts from a bin at the hardware store. Each bolt costs $0.03. How much money does David have left after paying for the bolts?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find out how much money David has left, we need to calculate the total cost of the 16 bolts and then subtract that from the $12.48 he has.
+
+First, calculate the total cost of the 16 bolts:
+\[ \text{Total cost} = 16 \times 0.03 = 0.48 \]
+
+Now, subtract the total cost from the amount of money David has:
+\[ \text{Money left} = 12.48 - 0.48 = 12 \]
+
+The answer is 12.<|eot_id|>

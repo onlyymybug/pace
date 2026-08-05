@@ -1,0 +1,16 @@
+<|begin_of_text|><|start_header_id|>user<|end_header_id|>
+
+Solve the grade-school math problem. Show your reasoning briefly. End with exactly: The answer is <scalar>. In that final sentence, <scalar> must be a plain integer, decimal, or a/b fraction. Do not use LaTeX, units, currency symbols, commas, or percent signs in the final answer.
+
+Problem: Justin has a jar with many coins in it. The jar has 32 quarters, 95 dimes, 120 nickels, and 750 pennies. What is the total dollar amount in the jar?<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+To find the total dollar amount, we need to calculate the value of each type of coin and then add them together.
+
+- Quarters: 32 quarters * $0.25 = $8.00
+- Dimes: 95 dimes * $0.10 = $9.50
+- Nickels: 120 nickels * $0.05 = $6.00
+- Pennies: 750 pennies * $0.01 = $7.50
+
+Now, add the values together:
+
+$8.00 + $9.50 + $6.00 + $7.50 = $31
